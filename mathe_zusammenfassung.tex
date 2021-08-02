@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+
+%opening
+\title{Unimathematik für den Studiengang: ??? \\ Zusammenfassung}
+\author{Konstantin Lukas}
+\date{02.08.2021}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{braket}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{bbold}
+\usepackage{etoc}
+\usepackage{blindtext}
+\usepackage{tikz}
+\usepackage{array}
+\DeclareRobustCommand{\bigfrac}[3][5pt]{%
+	\frac{\hspace{#1}#2\hspace{#1}}{\hspace{#1}#3\hspace{#1}}}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\etocsettocstyle{\noindent\rule{\linewidth}{.4pt}}
+
+\section{Mengen}
+\subsection{Vereinigung}
+	\begin{flalign*}
+		\begin{tikzpicture}
+		\fill[yellow] (3,0) circle (2cm);
+		\fill[yellow] (0,0) circle (2cm);
+		\draw (0,0) circle (2cm);
+		\draw (3,0) circle (2cm);
+		\draw (0,0) node {A};
+		\draw (3,0) node {B};
+		\end{tikzpicture}&&
+	\end{flalign*}
+	\begin{flalign*}
+		A \cup B := \{x \mid x \in A \: oder \: x \in B\}&&
+	\end{flalign*}
+\subsection{Durchschnitt}
+	\begin{flalign*}
+		\begin{tikzpicture}
+		\begin{scope}
+			\draw [clip](0,0) circle (2cm);
+			\fill[yellow] (3,0) circle (2cm);
+		\end{scope}
+		\draw (0,0) circle (2cm);
+		\draw (3,0) circle (2cm);
+		\draw (0,0) node {A};
+		\draw (3.2,0) node {B};
+		\end{tikzpicture}&&
+	\end{flalign*}
+	\begin{flalign*}
+		A \cap B := \{x \mid x \in A \: und \: x \in B\}&&
+	\end{flalign*}
+\subsection{Differenz}
+	\begin{flalign*}
+		\begin{tikzpicture}
+		\begin{scope}
+			\fill[yellow] (0,0) circle (2cm);
+			\clip (3,0) circle(2cm);
+			\fill[white] (3,0) circle (2cm);
+		\end{scope}
+		\draw (0,0) circle (2cm);
+		\draw (3,0) circle (2cm);
+		\draw (0,0) node {A};
+		\draw (3,0) node {B};
+		\end{tikzpicture}&&
+	\end{flalign*}
+	\begin{flalign*}
+		A \setminus B := \{x \mid x \in A \: und \: x \notin B\}&&
+	\end{flalign*}
+\subsection{Symmetrische Differenz}
+	\begin{flalign*}
+		\begin{tikzpicture}
+			\fill[yellow] (0,0) circle (2cm);
+			\fill[yellow] (3,0) circle (2cm);
+			\begin{scope}
+				\draw [clip](0,0) circle (2cm);
+				\fill[white] (3,0) circle (2cm);
+			\end{scope}
+			\draw (0,0) circle (2cm);
+			\draw (3,0) circle (2cm);
+			\draw (0,0) node {A};
+			\draw (3,0) node {B};
+			\end{tikzpicture}&&
+		\end{flalign*}
+	\begin{flalign*}
+		A \triangle B := \{ x \mid (x \in A) \: \veebar \: ( x \in B ) \}&&
+		A \triangle B := \{ x \mid (x \in A) \: \nleftrightarrow \: ( x \in B ) \}&&
+	\end{flalign*}
+\subsection{Natürliche Zahlen}
+	\begin{flalign*}
+		\mathbb{N} = \{ 1; 2; 3; ... \}&&
+	\end{flalign*}
+\subsection{Menge der Natürliche Zahlen}
+	\begin{flalign*}
+		\mathbb{N}_0 = \{ 0; 1; 2; 3; ... \}&&
+	\end{flalign*}
+\subsection{Ganze Zahlen}
+	\begin{flalign*}
+		\mathbb{Z} = \{ ... ; -2; -1; 0; 1; 2; 3; ... \}&&
+	\end{flalign*}
+\subsection{Rationale Zahlen}
+	\begin{flalign*}
+		\mathbb{Q} = \left\{ \frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0 \right\}&&
+	\end{flalign*}
+\subsection{Reelle Zahlen}
+	Die reellen Zahlen umfassen die rationalen Zahlen und die irrationalen Zahlen.
+\subsection{Irrationale Zahlen}
+	\begin{flalign*}
+		\mathbb{R} \setminus \mathbb{Q}&&
+	\end{flalign*}
+\section{Betrag}
+	\begin{flalign*}
+		\vert a \vert = \left\{ a \atop -a \right. \;\;&
+		a \ge 0 \atop a < 0 &
+	\end{flalign*}
+	\begin{flalign*}
+		\vert -a \vert = \vert a \vert&&
+	\end{flalign*}
+\section{Intervalle}
+	\subsection{Abgeschlossene Intervalle}
+		$[a;b] := \{ x \in \mathbb{R} \mid a \le x \le b \}$
+	\subsection{Offene Intervalle}
+		$(a;b) = \: ]a;b[ \: := \{ x \in \mathbb{R} \mid a < x < b \}$
+	\subsection{Halboffene Intervalle}
+		Rechtsoffen \newline
+		$[a;b) = \: [a;b[ \: :=  \{ x \in \mathbb{R} \mid a \le x < b \}$ \newline\newline
+		Linksoffen \newline
+		$(a;b] = \: ]a;b] \: :=  \{ x \in \mathbb{R} \mid a < x \le b \}$
+\section{Binomische Formeln}
+	$(a+b)^2 = a^2 + 2ab + b^2$ \newline\newline
+	$(a-b)^2 = a^2 - 2ab + b^2$ \newline\newline
+	$(a+b)(a-b) = a^2 - b^2$
+\section{Euklidischer Algorithmus}
+	Der euklidische Algorithmus findet den größten gemeinsamen Teiler zweier Zahlen. Das eignet sich ausgezeichnet dazu, Brüche zu kürzen. Der vorletzte Rest bevor $R = 0$ eintritt, ist das Ergebnis.
+	\begin{flalign*}
+		& 2160 : 2592 = 0 \;\;\; R = 2160 \\
+		& 2592 : 2160 = 1 \;\;\; R = 432 \\
+		& 2160 : 432 = 5 \;\;\; R = 0 &&
+	\end{flalign*}
+	\begin{flalign*}
+	\frac{2592}{2160} = \frac{6 \cdot 432}{5 \cdot 432} = \frac{6}{5}&&
+	\end{flalign*}
+\section{Brüche dividieren}
+	Um zwei Brüche zu dividieren bildet man den Kehrwert vom Divisor und multipliziert diesen mit dem Dividend.
+	\begin{flalign*}
+	\frac{p_1}{q_1} : \frac{p_2}{q_2} = \frac{p_1}{q_1} \cdot \frac{q_2}{p_2}&&
+	\end{flalign*}
+	\begin{flalign*}
+	\bigfrac {\frac{p_1}{q_1}}  {\frac{p_2}{q_2}} = \frac{p_1}{q_1} \cdot \frac{q_2}{p_2}&&
+	\end{flalign*}
+\end{document}

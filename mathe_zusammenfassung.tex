@@ -6,7 +6,7 @@
 \date{02.08.2021}
 \usepackage{amsmath,amsfonts,amssymb,amsthm}
 \usepackage{braket}
-\usepackage[margin=1.0in]{geometry}
+\usepackage[margin=2cm]{geometry}
 \usepackage{bbold}
 \usepackage{etoc}
 \usepackage{blindtext}
@@ -149,4 +149,68 @@
 	\begin{flalign*}
 	\bigfrac {\frac{p_1}{q_1}}  {\frac{p_2}{q_2}} = \frac{p_1}{q_1} \cdot \frac{q_2}{p_2}&&
 	\end{flalign*}
+\section{Potenzgesetze}
+	\begin{flalign*}
+		& a^k \cdot a^m = a^{k+m} \\\\
+		& \cfrac{b^k}{b^m} = b^{k-m} \\\\
+		& a^k \cdot b^k = (a \cdot b)^k \\\\
+		& \cfrac{a^k}{b^k} = \left( \frac{a}{b} \right)^k \\\\
+		& (a^k)^m = a^{k \cdot m} && 
+	\end{flalign*}
+	Für $a>0$ und jede rationale Zahl $\frac{p}{q}$ (mit $p,q \in \mathbb{Z}$ und $q>0$) ist
+	\begin{flalign*}
+	a^{\frac{p}{q}} = \sqrt[q]{a^p} = (\sqrt[q]{a})^p && 
+	\end{flalign*}
+	Beispiel: Bestimmen Sie $m$ und $n$ so, dass gilt: $(9x^7)^2 = mx^n$
+	\begin{flalign*}
+		(9x^7)^2 = mx^n \\
+		81x^{14} = mx^n &&
+	\end{flalign*}
+	$m = 81$ und $n = 14$
+\section{Wurzelgesetze}
+	Für $a,b,c \in \mathbb{R}$ mit $a,b \ge 0, c > 0$ und $m, n \in \mathbb{N}$ gilt
+	\begin{flalign*}
+		& \sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b} \\\\
+		& \sqrt[n]{\frac{a}{c}} = \frac{\sqrt[n]{a}}{\sqrt[n]{c}} \\\\
+		& \sqrt[n]{\sqrt[m]{a}} = \sqrt[n \cdot m]{a} && 
+	\end{flalign*}
+	Beispiel: Nach der dritten Binomischen Formel gilt für $a,b > 0, a \neq b$:
+	\begin{flalign*}
+	& \cfrac{1}{\sqrt{a}+\sqrt{b}} & \cdot (\sqrt{a}-\sqrt{b}) && \\
+	= & \cfrac{\sqrt{a}-\sqrt{b}}{(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})} \\ 
+	= & \cfrac{\sqrt{a}-\sqrt{b}}{\sqrt{a}^2-\sqrt{b}^2} \\ 
+	= & \cfrac{\sqrt{a}-\sqrt{b}}{a-b} &&
+	\end{flalign*}
+	Beispiel
+	\begin{flalign*}
+	& \frac{\sqrt{(1+a^2) \cdot (a-b)^2}}{\sqrt[4]{16(1+a^2)^2}} \\
+	= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{\sqrt{16(1+a^2)^2}}} \\ 
+	= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{4(1+a)^2}} \\ 
+	= & \frac{1}{2}\sqrt{(a-b)^2} \\ 
+	= & \frac{\mid a-b \mid}{2} &&
+	\end{flalign*}
+	\subsection{Wurzeltherme vereinfachen (Beispiele)}
+		\begin{flalign*}
+			\sqrt{2}+\dfrac{2}{2\sqrt{2}+3} & = \dfrac{}{}\sqrt{2}+\dfrac{ 2\cdot ( 2\sqrt{2}-] ) }{\left( 2\sqrt{2}+3\right) \left( 2\sqrt{2}-3\right) } \\
+			& = \sqrt{2}+\dfrac{4\sqrt{2}-6}{\left( 2\sqrt{2}\right) ^{2}-3^{2}} \\
+			& = \sqrt{2}+\dfrac{4\sqrt{2}-6}{-1} \\
+			& = \sqrt{2}-4\sqrt{2}+6 \\
+			& = 6-3\sqrt{2} &&
+		\end{flalign*}
+		\hrulefill
+		\begin{flalign*}
+		\dfrac{1}{\sqrt{1+x^{2}}-1}-\dfrac{1}{\sqrt{1+x^{2}}+1} & = \dfrac{\sqrt{1+x^{2}}+1}{\left( \sqrt{1+x^{2}}-1\right) \cdot \left( \sqrt{1+x^{2}}+1\right) } - \dfrac{\sqrt{1+x^{2}}-1}{\left( \sqrt{1+x^{2}}+1\right) \cdot \left( \sqrt{1+x^{2}}-1\right) } \\
+		& = \dfrac{\left( \sqrt{1+x^{2}}+1\right) -\left( \sqrt{1+x^{2}}-1\right) }{1+x^{2}-1} \\
+		& = \frac{2}{x^2} &&
+		\end{flalign*}
+		\hrulefill\newline\newline
+		Beispiel 3: Bestimmen Sie $x$ und $y$, sodass $\frac{x}{y}$ vollständig gekürzt ist.
+		\begin{flalign*}
+			\dfrac{2\cdot 2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
+			2 \cdot \dfrac{2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
+			2 \cdot 2^{\frac{5}{2}-\frac{1}{4}} = 2^{\frac{x}{y}} \\
+			2 \cdot 2^{\frac{9}{4}} = 2^{\frac{x}{y}} \\
+			2^{\frac{13}{4}} = 2^{\frac{x}{y}} &&
+		\end{flalign*}
+		Damit gilt $x = 13$ und $y = 4$.
 \end{document}

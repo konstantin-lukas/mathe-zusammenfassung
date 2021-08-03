@@ -1,23 +1,26 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\contentsline {section}{\numberline {1}Mengen}{2}%
-\contentsline {subsection}{\numberline {1.1}Vereinigung}{2}%
-\contentsline {subsection}{\numberline {1.2}Durchschnitt}{2}%
-\contentsline {subsection}{\numberline {1.3}Differenz}{2}%
-\contentsline {subsection}{\numberline {1.4}Symmetrische Differenz}{3}%
-\contentsline {subsection}{\numberline {1.5}Natürliche Zahlen}{3}%
-\contentsline {subsection}{\numberline {1.6}Menge der Natürliche Zahlen}{3}%
-\contentsline {subsection}{\numberline {1.7}Ganze Zahlen}{3}%
-\contentsline {subsection}{\numberline {1.8}Rationale Zahlen}{3}%
-\contentsline {subsection}{\numberline {1.9}Reelle Zahlen}{3}%
-\contentsline {subsection}{\numberline {1.10}Irrationale Zahlen}{3}%
-\contentsline {section}{\numberline {2}Betrag}{3}%
-\contentsline {section}{\numberline {3}Intervalle}{4}%
-\contentsline {subsection}{\numberline {3.1}Abgeschlossene Intervalle}{4}%
-\contentsline {subsection}{\numberline {3.2}Offene Intervalle}{4}%
-\contentsline {subsection}{\numberline {3.3}Halboffene Intervalle}{4}%
-\contentsline {section}{\numberline {4}Binomische Formeln}{4}%
-\contentsline {section}{\numberline {5}Euklidischer Algorithmus}{4}%
-\contentsline {section}{\numberline {6}Brüche dividieren}{4}%
-\contentsline {section}{\numberline {7}Potenzgesetze}{5}%
-\contentsline {section}{\numberline {8}Wurzelgesetze}{5}%
-\contentsline {subsection}{\numberline {8.1}Wurzeltherme vereinfachen (Beispiele)}{6}%
+\contentsline {section}{\numberline {1}Mengen}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Vereinigung}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Durchschnitt}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Differenz}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Symmetrische Differenz}{3}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Definierte Zahlenmengen}{3}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Betrag}{3}{section.2}%
+\contentsline {section}{\numberline {3}Intervalle}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Abgeschlossene Intervalle}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Offene Intervalle}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Halboffene Intervalle}{4}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Binomische Formeln}{4}{section.4}%
+\contentsline {section}{\numberline {5}Euklidischer Algorithmus}{4}{section.5}%
+\contentsline {section}{\numberline {6}Brüche dividieren}{4}{section.6}%
+\contentsline {section}{\numberline {7}Potenzgesetze}{5}{section.7}%
+\contentsline {section}{\numberline {8}Wurzelgesetze}{5}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Wurzeltherme vereinfachen (Beispiele)}{6}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Lösungsmenge}{7}{section.9}%
+\contentsline {section}{\numberline {10}Normalform}{8}{section.10}%
+\contentsline {subsection}{\numberline {10.1}p-q-Formel}{8}{subsection.10.1}%
+\contentsline {section}{\numberline {11}Quadratische Ergänzung}{8}{section.11}%
+\contentsline {section}{\numberline {12}Faktorisieren}{9}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Faktorisierung durch Ausklammern}{9}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Faktorisierung mit binomischen Formeln}{9}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Faktorisierung mit dem Satz von Viëta}{10}{subsection.12.3}%

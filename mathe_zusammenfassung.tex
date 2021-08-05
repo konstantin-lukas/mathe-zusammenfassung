@@ -3,7 +3,7 @@
 %opening
 \title{Unimathematik für Informatikstudiengänge \\ Zusammenfassung}
 \author{Konstantin Lukas}
-\date{Fassung vom 04.08.2021}
+\date{Fassung vom 05.08.2021}
 \usepackage{amsmath,amsfonts,amssymb,amsthm}
 \usepackage{braket}
 \usepackage[margin=2cm]{geometry}
@@ -16,6 +16,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{pgfplots}
 \usepackage{tocloft}
+\newcommand{\highlight}[2]{\textcolor{blue}{\hyperref[#1]{#2}} (S. \pageref{#1})}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \DeclareRobustCommand{\bigfrac}[3][5pt]{%
 	\frac{\hspace{#1}#2\hspace{#1}}{\hspace{#1}#3\hspace{#1}}}
@@ -124,6 +125,7 @@ Rationale Zahlen
 		\vert -a \vert = \vert a \vert&&
 	\end{flalign*}
 \section{Intervalle}
+\label{sec:intervalle}
 	\subsection{Abgeschlossene Intervalle}
 		$[a;b] := \{ x \in \mathbb{R} \mid a \le x \le b \}$
 	\subsection{Offene Intervalle}
@@ -156,7 +158,7 @@ Rationale Zahlen
 	\bigfrac {\frac{p_1}{q_1}}  {\frac{p_2}{q_2}} = \frac{p_1}{q_1} \cdot \frac{q_2}{p_2}&&
 	\end{flalign*}
 \section{Potenzgesetze}
-	\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=1cm,right=1cm, bottom=.8cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+	\begin{tcolorbox}[boxsep=0pt,top=.35cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 		\begin{flalign*}
 			& a^k \cdot a^m = a^{k+m} \\\\
 			& \cfrac{b^k}{b^m} = b^{k-m} \\\\
@@ -176,7 +178,7 @@ Rationale Zahlen
 	\end{flalign*}
 	$m = 81$ und $n = 14$
 \section{Wurzelgesetze}
-	\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=1cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.7cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 		Für $a,b,c \in \mathbb{R}$ mit $a,b \ge 0, c > 0$ und $m, n \in \mathbb{N}$ gilt
 		\begin{flalign*}
 			& \sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b} \\\\
@@ -253,7 +255,7 @@ Rationale Zahlen
 	Man kann eine quadratische Gleichung in die Normalform überführen, indem man durch $a$ teilt: $x^2+\frac{b}{a}x+\frac{c}{a}=0$.
 	\subsection{p-q-Formel}
 	\label{subsec:pqformel}
-	\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 	Um die Nullstellen einer quadratischen Gleichung in der Normalform zu finden, kann man die p-q-Formel benutzen: $x_{\pm}=-\frac{p}{2}\pm\sqrt{\left(\frac{p}{2}\right)^2-q}$.
 	\end{tcolorbox}
 	\noindent$D=\left(\frac{p}{2}\right)^2-q$ ist die Diskriminante. Sie gibt Aufschluss über die Lösungsmenge.
@@ -287,7 +289,7 @@ Rationale Zahlen
 			x^2 &= 0\;oder\;(x^2+2x+3) = 0\\
 			\mathbb{L} &= \{0\}&&
 		\end{flalign*}
-		Für $x^2+2x+3 = 0$ existiert keine reelle Lösung (s. \textcolor{blue}{\nameref{subsec:pqformel}}).
+		Für $x^2+2x+3 = 0$ existiert keine reelle Lösung (\highlight{pqformel}{p-q-Formel}).
 	\subsection{Faktorisierung mit binomischen Formeln}
 		Beispiel:
 		\begin{flalign*}
@@ -299,7 +301,7 @@ Rationale Zahlen
 		\mathbb{L}&=\left\{-\frac{5}{3}\right\}&&
 		\end{flalign*}
 	\subsection{Faktorisierung mit dem Satz von Viëta}
-		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 		Der Satz von Viëta besagt, dass $x^2+px+q=(x-x_1)\cdot(x-x_2)$ ist. $p$ und $q$ lassen sich auf die Nullstellen zurückführen: $x_1+x_2=-p$ und $x_1\cdot x_2 = q$.
 		\end{tcolorbox}
 		\noindent Daraus lässt sich $x_2=\frac{q}{x_1}$ ableiten. Wenn man also durch Raten eine Nullstelle findet, kann man so die andere Nullstelle auch ganz einfach finden.\newline\newline
@@ -362,7 +364,21 @@ Rationale Zahlen
 		\end{tikzpicture}
 	\end{center}
 	Mithilfe dieser Grafik kann man das Ergebnis wunderbar visualisieren, denn das Ergebnis ist der $x$-Wert des Schnittpunkts der beiden Funktionen, die man aus der linken und rechten Seite der Wurzelgleichung entnehmen kann.
+	\subsection{Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}
+	\begin{flalign*}
+		\sqrt{8x-14}+\sqrt{5x-2}&=\sqrt{27x-36}\\
+		(\sqrt{8x-14}+\sqrt{5x-2})^2&=27x-36\\
+		8x-14+2\sqrt{(8x-14)(5x-2)}+5x-2&=27x-36\\
+		2\sqrt{(8x-14)(5x-2)}&=14x-20\\
+		\sqrt{(8x-14)(5x-2)}&=7x-10\\
+		40x^2-86x+28&=(7x-10)^2\\
+		40x^2-86x+28&=49x^2-140x+100\\
+		0&=9x^2-54x+72\\
+		0&=x^2-6x+8&&
+	\end{flalign*}
+	Jetzt kann man die \highlight{pqformel}{p-q-Formel} anwenden und erhält die Lösungsmenge $\mathbb{L}=\{2;4\}$.
 \section{Betragsgleichungen}
+\label{sec:betragsgleichungen}
 	Um mit Betragsgleichungen oder auch Betragsfunktionen rechnen zu können muss man mehrere Fälle betrachten. Nämlich einmal den Fall, dass im Betrag ein Wert größer oder gleich $0$ entsteht und einmal den Fall, dass das Ergebnis im Betrag kleiner als Null ist. Betrachten wir einmal ein Beispiel, wo man den Schnittpunkt zwischen $f(x)=\vert x+1\vert$ und $f(x)=x+2$ finden soll.\newline
 	\begin{center}
 		\begin{tikzpicture}
@@ -475,11 +491,153 @@ Rationale Zahlen
 	u^2-15u-16&=0\\
 	u_{\pm}&=\frac{15}{2}\pm\sqrt{\left(\frac{-15}{2}\right)^2+6}&&
 	\end{flalign*}
-	Diesen Term wiederum können wir ganz einfach mit der \textcolor{blue}{\nameref{subsec:pqformel}} lösen. Dabei erhalten wir $u_+=16$ und $u_-=-1$. Um unsere endgültige Lösungsmenge zu bekommen, müssen wir noch resubstituieren.
+	Diesen Term wiederum können wir ganz einfach mit der \highlight{pqformel}{p-q-Formel} lösen. Dabei erhalten wir $u_+=16$ und $u_-=-1$. Um unsere endgültige Lösungsmenge zu bekommen, müssen wir noch resubstituieren.
 	\begin{flalign*}
 	x^4&=u_+=16\\
 	x_1&=2\\
 	x_2&=-2&&
 	\end{flalign*}
 	Da es kein $x$ gibt, das $x^4=-1$ erfüllt, haben wir bereits unsere komplette Lösungsmenge:\newline\newline$\mathbb{L}=\{-2;2\}$.
+\section{Ungleichungen}
+	\subsection{Rechenregeln}
+	\label{subsec:unglrechrgl}
+		Wenn man ein Ungleichung mit einer negativen Zahl multipliziert oder durch diese teilt, muss das Vergleichszeichen umgekehrt werden.
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			Für $c<0$ gilt:
+			\begin{flalign*}
+				&a<b\iff c\cdot  a>c\cdot b\\
+				&a<b\iff \frac{a}{c}>\frac{b}{c} &&
+			\end{flalign*}
+		\end{tcolorbox}
+	\subsection{Quadratische Ungleichungen}
+		Um die Lösungsmenge einer quadratischen Ungleichung zu finden, formt man die Ungleichung zunächst so um, dass auf einer Seite $0$ steht. Auf der anderen Seite hat man dann optimalerweise eine quadratische Funktion. Schauen wir uns mal das Beispiel $x^2>2x+7$ an.
+		\begin{center}
+			\begin{tikzpicture}
+			\node [color=blue] at (5,1) {$f(x)=x^2-2x-7$};
+			\begin{axis}[
+			domain=-3:10,
+			xmin=-3, xmax=10,
+			ymin=-10, ymax=10,
+			samples=200,
+			axis y line=center,
+			axis x line=middle,
+			]
+			\addplot+[mark=none,color=blue] {x^2-2*x-7};
+			\end{axis}
+			\end{tikzpicture}
+		\end{center}
+		Wir stellen also zunächst um und erhalten $x^2-2x-7>0$. Daraus ergibt sich auch die Funktion oben. An der Grafik erkennt man sehr gut, was wir eigentlich suchen. Denn unsere Lösungsmenge sind alle $x$, für die $f(x)$ größer als $0$ ist. Und wie kriegen wir das raus? Indem wir die Nullstellen berechnen. Das Intervall von Unendlich bis zur linken Nullstelle ist ein Teil unserer Lösung und der andere ist das Intervall von der rechten Nullstelle bis unendlich. Dabei muss man stets verschiedene Fälle beachten. Für eine nach unten geöffnete Funktion ($-x^2$) suchen wir den Bereich zwischen den Nullstellen. Für eine Funktion oberhalb der $x$-Achse, die keine Nullstellen hat, sind alle reellen Zahlen unsere Lösungsmenge, wohingegen eine Funktion ohne Nullstellen unterhalb der $x$-Achse eine leere Lösungsmenge liefern würde. Eine Funktion mit genau einer Nullstelle liefert hingegen eine Lösungsmenge aller reellen Zahlen außer der Nullstelle. Es gibt je nach Art der Funktion und Vergleichszeichen in unserer Ungleichung viele unterschiedliche Szenarien, weshalb es immer ratsam ist eine Skizze anzufertigen. Für das Beispiel oben können wir die \highlight{subsec:pqformel}{p-q-Formel} verwenden, um die Nullstellen zu berechnen.
+		\begin{flalign*}
+		x_{\pm}&=-\frac{-2}{2}\pm \sqrt{\left(\frac{-2}{2}\right)^2+7}\\
+		x_1&=1-2\sqrt{2}\\
+		x_2&=1+2\sqrt{2}&&
+		\end{flalign*}
+		Jetzt, wo wir die Nullstellen haben, ist es nicht schwer die Lösungsmenge anzugeben. Dabei sollte man darauf achten, dass man abgeschlossene und offene \highlight{sec:intervalle}{Intervalle} nicht verwechselt.
+		\begin{flalign*}
+			\mathbb{L}=\mathbb{R}\setminus \left[1-2\sqrt{2};1+2\sqrt{2}\right]=\left(-\infty;1-2\sqrt{2}\right)\cup\left(1+2\sqrt{2}\right)&&
+		\end{flalign*}
+	\subsection{Ungleichungen mit Beträgen}
+		Das Vorgehen bei Betragsungleichungen ist im Grunde genommen dasselbe Prinzip, wie bei den quadratischen. Schauen wir uns das Beispiel $\vert x \vert -3 < 0$ an. 
+		\begin{center}
+			\begin{tikzpicture}
+			\node [color=blue] at (5,1.75) {$f(x)=\vert x \vert -3$};
+			\begin{axis}[
+			domain=-10:10,
+			xmin=-10, xmax=10,
+			ymin=-10, ymax=10,
+			samples=200,
+			axis y line=center,
+			axis x line=middle,
+			]
+			\addplot+[mark=none,color=blue] {abs(x)-3};
+			\end{axis}
+			\end{tikzpicture}
+		\end{center}
+		Wir erkennen die Nullstellen in dem Fall sehr leicht. Das sind $-3$ und $3$. Erkennt man das nicht sofort, muss man eine \highlight{sec:betragsgleichungen}{Fallunterscheidung} durchführen. Jetzt können wir aber erst mal unsere Lösungsmenge definieren, denn wir wissen, dass wir alle $x$ suchen für die $f(x)<0$ gilt.
+		\begin{flalign*}
+		\mathbb{L}=(-3;3)&&
+		\end{flalign*}
+		Hinweis: Wäre unsere Ausgangsungleichung $\vert x \vert -3 \le 0$, sehe unsere Lösungsmenge jetzt so aus:
+		\begin{flalign*}
+		\mathbb{L}=[-3;3]&&
+		\end{flalign*}
+	\subsection{Ungleichungen mit Variable im Nenner – Teil I}
+		Aus den vorherigen Erklärungen kann man sich herleiten, wie man das macht. Deshalb ist hier nur noch mal ein erklärendes Beispiel: $2\le \frac{14}{\vert 2x+5\vert}$.
+		\begin{center}
+			\begin{tikzpicture}
+			\node [color=blue] at (1,3) {$f(x)=\dfrac{14}{\vert 2x+5\vert}-2$};
+			\begin{axis}[
+			domain=-10:3,
+			xmin=-10, xmax=3,
+			ymin=-3, ymax=10,
+			samples=200,
+			axis y line=center,
+			axis x line=middle,
+			]
+			\addplot+[mark=none,color=blue] {(14/abs(2*x+5))-2};
+			\end{axis}
+			\end{tikzpicture}
+		\end{center}
+		Wichtig ist, dass wir zunächst alle $x$ ausschließen, für die im Nenner $0$ rauskommt. In diesem Fall ist dass $-\frac{5}{2}$.
+		\begin{flalign*}
+			2&\le \frac{14}{\vert 2x+5\vert}\\
+			2\vert 2x+5\vert&\le 14\\
+			\vert 2x+5\vert&\le 7&&
+		\end{flalign*}
+		Fall 1: $2x+5>0$
+		\begin{flalign*}
+		2x+5&\le 7\\
+		2x&\le 2\\
+		x&\le 1&&
+		\end{flalign*}
+		Fall 2: $2x+5<0$
+		\begin{flalign*}
+		-2x-5&\le 7\\
+		-2x&\le 12\\
+		x&\ge -6&&
+		\end{flalign*}
+		\begin{flalign*}
+		\mathbb{L}=\left[-6;-\frac{5}{2}\right)\cup\left(-\frac{5}{2};1\right]&&
+		\end{flalign*}
+	\subsection{Ungleichungen mit Variable im Nenner – Teil II}
+		Wenn wir uns an die \highlight{subsec:unglrechrgl}{Rechenregeln} für Ungleichungen erinnern, könnte man sich fragen, was passiert, wenn der Nenner mit einer Variable sowohl positiv als auch negativ sein kann. Denn wenn wir mit einer negativen Zahl multiplizieren, müssten wir das Vorzeichen umkehren. Hier muss man wieder verschiedene Fälle unterscheiden.\newline\newline
+		Beispiel: $\frac{1}{x-2}\le-x$
+		\begin{center}
+			\begin{tikzpicture}
+			\node [color=blue] at (4,1) {$f(x)=\frac{1}{x-2}+x$};
+			\begin{axis}[
+			domain=-2:10,
+			restrict y to domain=-20:20
+			xmin=-2, xmax=10,
+			ymin=-10, ymax=10,
+			samples=200,
+			axis y line=center,
+			axis x line=middle,
+			]
+			\addplot+[mark=none,color=blue] {(1/(x-2))+x};
+			\end{axis}
+			\end{tikzpicture}
+		\end{center}
+		Der Fall $x=2$ ist aufgrund des $x$ im Nenner wieder auszuschließen.
+		Fall 1: $x>2$
+		\begin{flalign*}
+			\frac{1}{x-2}&\le-x\\
+			1&\le -x(x-2)\\
+			1&\le -x^2+2x\\
+			x^2-2x+1&\le 0\\
+			(x-1)^2&\le 0&&
+		\end{flalign*}
+		Dieser Fall gilt für $x=1$. Das widerspricht allerdings der Bedingung $x>2$ und das Ergebnis ist entsprechend nicht Teil unserer Lösungsmenge.\newline\newline
+		Fall 2: $x<2$
+		\begin{flalign*}
+			\frac{1}{x-2}&\le-x\\
+			1&\ge -x(x-2)\\
+			1&\ge -x^2+2x\\
+			x^2-2x+1&\ge 0\\
+			(x-1)^2&\ge 0&&
+		\end{flalign*}
+		Dieser Fall ist für alle $x$ erfüllt, daher gehören alle $x<2$ zur Lösungsmenge.
+		\begin{flalign*}
+		\mathbb{L}=(-\infty;2)&&
+		\end{flalign*}
 \end{document}

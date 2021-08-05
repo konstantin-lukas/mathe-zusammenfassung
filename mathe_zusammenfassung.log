@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  4 AUG 2021 18:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  5 AUG 2021 19:58
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -933,22 +933,22 @@ Package tocloft Info: The document has section divisions on input line 51.
 (mathe_zusammenfassung.aux)
 \openout1 = `mathe_zusammenfassung.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -989,7 +989,7 @@ LaTeX Font Info:    ... okay on input line 23.
 Package etoc Warning: Package `tocloft' was loaded after `etoc'!
 **** to prevent it from overwriting \tableofcontents, it will be tricked
 **** into believing to have been loaded with option `titles'. For better
-**** compatibility, please load `tocloft' before `etoc' on input line 23.
+**** compatibility, please load `tocloft' before `etoc' on input line 24.
 
 ABD: EveryShipout initializing macros
 ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
@@ -1018,7 +1018,7 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@posthook=\toks52
 )
 \AtBeginShipoutBox=\box125
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 24.
 
 ("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1031,9 +1031,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count355
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (mathe_zusammenfassung.out) (mathe_zusammenfassung.out)
 \@outlinefile=\write6
@@ -1044,14 +1044,14 @@ LaTeX Info: Redefining \nameref on input line 23.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 23.
+ on input line 24.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
@@ -1063,11 +1063,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {C:/Users/Konstantin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 9
-9.
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 1
+00.
 
 ("C:\Program Files\MiKTeX\tex/latex/bbold\ubbold.fd")
-Underfull \hbox (badness 10000) in paragraph at lines 111--115
+Underfull \hbox (badness 10000) in paragraph at lines 112--116
 
  []
 
@@ -1075,139 +1075,178 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--115
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 122.
+(amsmath)                 on input line 123.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--136
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
 
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
+Underfull \hbox (badness 10000) in paragraph at lines 195--198
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 216--219
+Underfull \hbox (badness 10000) in paragraph at lines 218--221
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 228--237
+Underfull \hbox (badness 10000) in paragraph at lines 230--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--237
+Underfull \hbox (badness 10000) in paragraph at lines 230--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--237
+Underfull \hbox (badness 10000) in paragraph at lines 230--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--237
+Underfull \hbox (badness 10000) in paragraph at lines 230--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--237
+Underfull \hbox (badness 10000) in paragraph at lines 230--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--254
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
  []
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 305--307
+
+LaTeX Warning: Hyper reference `pqformel' on page 10 undefined on input line 29
+2.
+
+
+LaTeX Warning: Reference `pqformel' on page 10 undefined on input line 292.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--309
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--315
+Underfull \hbox (badness 10000) in paragraph at lines 315--317
 
  []
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
- []
+LaTeX Warning: Hyper reference `pqformel' on page 12 undefined on input line 37
+9.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--388
+LaTeX Warning: Reference `pqformel' on page 12 undefined on input line 379.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 391--394
+Underfull \hbox (badness 10000) in paragraph at lines 401--404
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--429
+Underfull \hbox (badness 10000) in paragraph at lines 407--410
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 440--443
+Underfull \hbox (badness 10000) in paragraph at lines 442--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--461
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--461
+Underfull \hbox (badness 10000) in paragraph at lines 456--459
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 471--474
+Underfull \hbox (badness 10000) in paragraph at lines 474--477
 
  []
 
 
-Package etoc Warning: Please load `tocloft' /before/ `etoc'! on input line 485.
+Underfull \hbox (badness 10000) in paragraph at lines 474--477
+
+ []
 
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 483--485
+Underfull \hbox (badness 10000) in paragraph at lines 487--490
 
  []
 
 [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 485.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 485.
+
+LaTeX Warning: Hyper reference `pqformel' on page 16 undefined on input line 49
+4.
+
+
+LaTeX Warning: Reference `pqformel' on page 16 undefined on input line 494.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--501
+
+ []
+
+[16] [17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 603--605
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--632
+
+ []
+
+[19]
+
+Package etoc Warning: Please load `tocloft' /before/ `etoc'! on input line 643.
+
+
+[20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 643.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 643.
  (mathe_zusammenfassung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 485.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 485.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 643.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 643.
 Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
-(rerunfilecheck)             Checksum: A55F093A8961E7442F591998617198C0;1809.
+(rerunfilecheck)             Checksum: D59E7EEF5DD3E7C149A9196970F419C6;2386.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 35311 strings out of 480790
- 846976 string characters out of 2907040
- 1323572 words of memory out of 3000000
- 50672 multiletter control sequences out of 15000+200000
+ 35397 strings out of 480790
+ 848492 string characters out of 2907040
+ 1327391 words of memory out of 3000000
+ 50746 multiletter control sequences out of 15000+200000
  541652 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,19n,103p,858b,1943s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,19n,103p,1301b,1947s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Konstantin\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi60
 0\bbold12.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
@@ -1222,9 +1261,9 @@ m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX
 nts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb>
-Output written on mathe_zusammenfassung.pdf (15 pages, 233247 bytes).
+Output written on mathe_zusammenfassung.pdf (20 pages, 263150 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 389 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 398 PDF objects out of 1000 (max. 8388607)
+ 59 named destinations out of 1000 (max. 500000)
+ 445 words of extra memory for PDF output out of 10000 (max. 10000000)
 

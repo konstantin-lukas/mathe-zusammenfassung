@@ -3,7 +3,7 @@
 %opening
 \title{Unimathematik für Informatikstudiengänge \\ Zusammenfassung}
 \author{Konstantin Lukas}
-\date{Fassung vom 05.08.2021}
+\date{Fassung vom 06.08.2021}
 \usepackage{amsmath,amsfonts,amssymb,amsthm}
 \usepackage{braket}
 \usepackage[margin=2cm]{geometry}
@@ -16,6 +16,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{pgfplots}
 \usepackage{tocloft}
+\definecolor{gridgray}{HTML}{AAAAAA}
 \newcommand{\highlight}[2]{\textcolor{blue}{\hyperref[#1]{#2}} (S. \pageref{#1})}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \DeclareRobustCommand{\bigfrac}[3][5pt]{%
@@ -24,6 +25,7 @@
 \begin{document}
 \maketitle
 \tableofcontents
+\pagebreak
 \etocsettocstyle{\noindent\rule{\linewidth}{.4pt}}
 
 \section{Mengen}
@@ -245,6 +247,11 @@ Rationale Zahlen
 		samples=200,
 		axis y line=center,
 		axis x line=middle,
+		ticklabel style={fill=white},
+		minor tick num=2,
+		grid=both,
+		grid style={line width=.1pt, draw=gridgray!10},
+		major grid style={line width=.2pt,draw=gridgray!50}
 		]
 		\addplot+[mark=none] {5-x^2};
 		\end{axis}
@@ -289,7 +296,7 @@ Rationale Zahlen
 			x^2 &= 0\;oder\;(x^2+2x+3) = 0\\
 			\mathbb{L} &= \{0\}&&
 		\end{flalign*}
-		Für $x^2+2x+3 = 0$ existiert keine reelle Lösung (\highlight{pqformel}{p-q-Formel}).
+		Für $x^2+2x+3 = 0$ existiert keine reelle Lösung $\Rightarrow$ \highlight{subsec:pqformel}{p-q-Formel}.
 	\subsection{Faktorisierung mit binomischen Formeln}
 		Beispiel:
 		\begin{flalign*}
@@ -348,8 +355,6 @@ Rationale Zahlen
 	Übrigens: Wenn man mehrere Wurzeln in der Gleichung hat, muss man den Definitionsbereich für den Radikanden jeder Wurzel bestimmen.
 	\begin{center}
 		\begin{tikzpicture}
-		\node [color=blue] at (2,3.5) {$f(x)=\sqrt{2x+1}$};
-		\node [color=red] at (2.7,1) {$f(x)=x-17$};
 		\begin{axis}[
 		domain=-0.5:30,
 		xmin=-0.5, xmax=30,
@@ -357,10 +362,17 @@ Rationale Zahlen
 		samples=200,
 		axis y line=center,
 		axis x line=middle,
+		ticklabel style={fill=white},
+		minor tick num=2,
+		grid=both,
+		grid style={line width=.1pt, draw=gridgray!10},
+		major grid style={line width=.2pt,draw=gridgray!50}
 		]
 		\addplot+[mark=none,color=blue] {sqrt(2*x+1)};
 		\addplot+[mark=none,color=red] {x-17};
 		\end{axis}
+		\node [color=blue] at (2,3.5) {$f(x)=\sqrt{2x+1}$};
+		\node [color=red] at (2.7,1) {$f(x)=x-17$};
 		\end{tikzpicture}
 	\end{center}
 	Mithilfe dieser Grafik kann man das Ergebnis wunderbar visualisieren, denn das Ergebnis ist der $x$-Wert des Schnittpunkts der beiden Funktionen, die man aus der linken und rechten Seite der Wurzelgleichung entnehmen kann.
@@ -376,7 +388,7 @@ Rationale Zahlen
 		0&=9x^2-54x+72\\
 		0&=x^2-6x+8&&
 	\end{flalign*}
-	Jetzt kann man die \highlight{pqformel}{p-q-Formel} anwenden und erhält die Lösungsmenge $\mathbb{L}=\{2;4\}$.
+	Jetzt kann man die \highlight{subsec:pqformel}{p-q-Formel} anwenden und erhält die Lösungsmenge $\mathbb{L}=\{2;4\}$.
 \section{Betragsgleichungen}
 \label{sec:betragsgleichungen}
 	Um mit Betragsgleichungen oder auch Betragsfunktionen rechnen zu können muss man mehrere Fälle betrachten. Nämlich einmal den Fall, dass im Betrag ein Wert größer oder gleich $0$ entsteht und einmal den Fall, dass das Ergebnis im Betrag kleiner als Null ist. Betrachten wir einmal ein Beispiel, wo man den Schnittpunkt zwischen $f(x)=\vert x+1\vert$ und $f(x)=x+2$ finden soll.\newline
@@ -389,6 +401,11 @@ Rationale Zahlen
 			samples=200,
 			axis y line=center,
 			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
 			]
 			\addplot+[mark=none] {x+2};
 			\addplot+[mark=none] {abs(x+1)};
@@ -421,8 +438,6 @@ Rationale Zahlen
 		Haben wir mehrere Beträge in unserer Gleichung, haben wir auch mehrere Fälle zu betrachten. Schon wir uns das an einem Beispiel an, indem wir die Schnittpunkte von $f(x)=\vert x+1 \vert + 5$ und $f(x)=\vert 2x-4 \vert$ suchen.
 		\begin{center}
 			\begin{tikzpicture}
-			\node [color=blue] at (7,4) {$f(x)=\vert x+1 \vert + 5$};
-			\node [color=red] at (5.5,1.7) {$f(x)=\vert 2x-4 \vert$};
 			\begin{axis}[
 			domain=-5:15,
 			xmin=-5, xmax=15,
@@ -430,10 +445,17 @@ Rationale Zahlen
 			samples=200,
 			axis y line=center,
 			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
 			]
 			\addplot+[mark=none,color=blue] {abs(x+1)+5};
 			\addplot+[mark=none,color=red] {abs(2*x-4)};
 			\end{axis}
+			\node [color=blue] at (7,4) {$f(x)=\vert x+1 \vert + 5$};
+			\node [color=red] at (5.5,1.7) {$f(x)=\vert 2x-4 \vert$};
 			\end{tikzpicture}
 		\end{center}
 		Zunächst setzen wir die Funktionen wieder gleich.
@@ -491,7 +513,7 @@ Rationale Zahlen
 	u^2-15u-16&=0\\
 	u_{\pm}&=\frac{15}{2}\pm\sqrt{\left(\frac{-15}{2}\right)^2+6}&&
 	\end{flalign*}
-	Diesen Term wiederum können wir ganz einfach mit der \highlight{pqformel}{p-q-Formel} lösen. Dabei erhalten wir $u_+=16$ und $u_-=-1$. Um unsere endgültige Lösungsmenge zu bekommen, müssen wir noch resubstituieren.
+	Diesen Term wiederum können wir ganz einfach mit der \highlight{subsec:pqformel}{p-q-Formel} lösen. Dabei erhalten wir $u_+=16$ und $u_-=-1$. Um unsere endgültige Lösungsmenge zu bekommen, müssen wir noch resubstituieren.
 	\begin{flalign*}
 	x^4&=u_+=16\\
 	x_1&=2\\
@@ -513,7 +535,6 @@ Rationale Zahlen
 		Um die Lösungsmenge einer quadratischen Ungleichung zu finden, formt man die Ungleichung zunächst so um, dass auf einer Seite $0$ steht. Auf der anderen Seite hat man dann optimalerweise eine quadratische Funktion. Schauen wir uns mal das Beispiel $x^2>2x+7$ an.
 		\begin{center}
 			\begin{tikzpicture}
-			\node [color=blue] at (5,1) {$f(x)=x^2-2x-7$};
 			\begin{axis}[
 			domain=-3:10,
 			xmin=-3, xmax=10,
@@ -521,9 +542,15 @@ Rationale Zahlen
 			samples=200,
 			axis y line=center,
 			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
 			]
 			\addplot+[mark=none,color=blue] {x^2-2*x-7};
 			\end{axis}
+			\node [color=blue] at (5,1) {$f(x)=x^2-2x-7$};
 			\end{tikzpicture}
 		\end{center}
 		Wir stellen also zunächst um und erhalten $x^2-2x-7>0$. Daraus ergibt sich auch die Funktion oben. An der Grafik erkennt man sehr gut, was wir eigentlich suchen. Denn unsere Lösungsmenge sind alle $x$, für die $f(x)$ größer als $0$ ist. Und wie kriegen wir das raus? Indem wir die Nullstellen berechnen. Das Intervall von Unendlich bis zur linken Nullstelle ist ein Teil unserer Lösung und der andere ist das Intervall von der rechten Nullstelle bis unendlich. Dabei muss man stets verschiedene Fälle beachten. Für eine nach unten geöffnete Funktion ($-x^2$) suchen wir den Bereich zwischen den Nullstellen. Für eine Funktion oberhalb der $x$-Achse, die keine Nullstellen hat, sind alle reellen Zahlen unsere Lösungsmenge, wohingegen eine Funktion ohne Nullstellen unterhalb der $x$-Achse eine leere Lösungsmenge liefern würde. Eine Funktion mit genau einer Nullstelle liefert hingegen eine Lösungsmenge aller reellen Zahlen außer der Nullstelle. Es gibt je nach Art der Funktion und Vergleichszeichen in unserer Ungleichung viele unterschiedliche Szenarien, weshalb es immer ratsam ist eine Skizze anzufertigen. Für das Beispiel oben können wir die \highlight{subsec:pqformel}{p-q-Formel} verwenden, um die Nullstellen zu berechnen.
@@ -540,7 +567,6 @@ Rationale Zahlen
 		Das Vorgehen bei Betragsungleichungen ist im Grunde genommen dasselbe Prinzip, wie bei den quadratischen. Schauen wir uns das Beispiel $\vert x \vert -3 < 0$ an. 
 		\begin{center}
 			\begin{tikzpicture}
-			\node [color=blue] at (5,1.75) {$f(x)=\vert x \vert -3$};
 			\begin{axis}[
 			domain=-10:10,
 			xmin=-10, xmax=10,
@@ -548,9 +574,15 @@ Rationale Zahlen
 			samples=200,
 			axis y line=center,
 			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
 			]
 			\addplot+[mark=none,color=blue] {abs(x)-3};
 			\end{axis}
+			\node [color=blue] at (5,1.75) {$f(x)=\vert x \vert -3$};
 			\end{tikzpicture}
 		\end{center}
 		Wir erkennen die Nullstellen in dem Fall sehr leicht. Das sind $-3$ und $3$. Erkennt man das nicht sofort, muss man eine \highlight{sec:betragsgleichungen}{Fallunterscheidung} durchführen. Jetzt können wir aber erst mal unsere Lösungsmenge definieren, denn wir wissen, dass wir alle $x$ suchen für die $f(x)<0$ gilt.
@@ -565,7 +597,6 @@ Rationale Zahlen
 		Aus den vorherigen Erklärungen kann man sich herleiten, wie man das macht. Deshalb ist hier nur noch mal ein erklärendes Beispiel: $2\le \frac{14}{\vert 2x+5\vert}$.
 		\begin{center}
 			\begin{tikzpicture}
-			\node [color=blue] at (1,3) {$f(x)=\dfrac{14}{\vert 2x+5\vert}-2$};
 			\begin{axis}[
 			domain=-10:3,
 			xmin=-10, xmax=3,
@@ -573,9 +604,15 @@ Rationale Zahlen
 			samples=200,
 			axis y line=center,
 			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
 			]
 			\addplot+[mark=none,color=blue] {(14/abs(2*x+5))-2};
 			\end{axis}
+			\node [color=blue] at (1,3) {$f(x)=\dfrac{14}{\vert 2x+5\vert}-2$};
 			\end{tikzpicture}
 		\end{center}
 		Wichtig ist, dass wir zunächst alle $x$ ausschließen, für die im Nenner $0$ rauskommt. In diesem Fall ist dass $-\frac{5}{2}$.
@@ -604,18 +641,23 @@ Rationale Zahlen
 		Beispiel: $\frac{1}{x-2}\le-x$
 		\begin{center}
 			\begin{tikzpicture}
-			\node [color=blue] at (4,1) {$f(x)=\frac{1}{x-2}+x$};
 			\begin{axis}[
 			domain=-2:10,
-			restrict y to domain=-20:20
+			restrict y to domain=-20:20,
 			xmin=-2, xmax=10,
 			ymin=-10, ymax=10,
 			samples=200,
 			axis y line=center,
 			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
 			]
 			\addplot+[mark=none,color=blue] {(1/(x-2))+x};
 			\end{axis}
+			\node [color=blue] at (4,1) {$f(x)=\frac{1}{x-2}+x$};
 			\end{tikzpicture}
 		\end{center}
 		Der Fall $x=2$ ist aufgrund des $x$ im Nenner wieder auszuschließen.
@@ -638,6 +680,196 @@ Rationale Zahlen
 		\end{flalign*}
 		Dieser Fall ist für alle $x$ erfüllt, daher gehören alle $x<2$ zur Lösungsmenge.
 		\begin{flalign*}
-		\mathbb{L}=(-\infty;2)&&
+			\mathbb{L}=(-\infty;2)&&
+		\end{flalign*}\hrulefill\newline\newline
+		Beispiel: $\frac{1}{x-9}\le8$
+		\begin{center}
+			\begin{tikzpicture}
+			\begin{axis}[
+			domain=-3:16,
+			restrict y to domain=-30:60,
+			xmin=-3, xmax=16,
+			ymin=-20, ymax=3,
+			samples=300,
+			axis y line=center,
+			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
+			]
+			\addplot+[mark=none,color=blue] {(1/(x-9))-8};
+			\end{axis}
+			\node [color=blue] at (2.75,.5) {$f(x)=\frac{1}{x-9}-8$};
+			\end{tikzpicture}
+		\end{center}
+		Fall 1: $x>9$
+		\begin{flalign*}
+			\frac{1}{x-9}&\le 8\\
+			1&\le 8x-72\\
+			8x&\ge 73\\
+			x&\ge \frac{73}{8}&&
 		\end{flalign*}
+		Fall 2: $x<9$
+		\begin{flalign*}
+			\frac{1}{x-9}&\le 8\\
+			1&\ge 8x-72\\
+			8x&\le 73\\
+			x&\le \frac{73}{8}&&
+		\end{flalign*}
+		\begin{flalign*}
+			\mathbb{L}=(-\infty;9)\cup \left[\frac{73}{8};\infty\right)&&
+		\end{flalign*}
+	\section{Lineare Gleichungssysteme}
+		Ein Gleichungssystem ist eine Sammlung an Gleichungen, für die man eine gemeinsame Lösung sucht. Für das Beispiel unten, ist die Lösung $x=2,y=3,z=-4$ oder anders ausgedrückt $\mathbb{L}=\{(2;3;-4)\}$. Wie man darauf kommt, wird unten erklärt.
+		\begin{flalign*}
+			(I)&&x+2y+z&=4\\
+			(II)&&x-y+ \frac{3}{2}z&=-7\\
+			(III)&&-4x+2y&=-2&&&&&&&&&&&&
+		\end{flalign*}
+		\subsection{Einsetzungsverfahren}
+			Eine Möglichkeit hat man, wenn man eine Funktion nach einer beliebigen Variable umstellt und diese dann in einer anderen Funktion einsetzt.\newline\newline
+			$(III)$
+			\begin{flalign*}
+				-4x+2y&=-2\\
+				-4x&=-2-2y\\
+				x&=\frac{1}{2}+\frac{1}{2}y&&
+			\end{flalign*}
+			$(I)$
+			\begin{flalign*}
+				x+2y+z&=4\\
+				\frac{1}{2}+\frac{1}{2}y+2y+z&=4\\
+				\frac{1}{2}+\frac{5}{2}y+z&=4\\
+				z&=3,5-\frac{5}{2}y&&
+			\end{flalign*}
+			$(II)$
+			\begin{flalign*}
+				x-y+ \frac{3}{2}z&=-7\\
+				\frac{1}{2}+\frac{1}{2}y-y+ \frac{3}{2}\left(3,5-\frac{5}{2}y\right)&=-7\\
+				\frac{1}{2}+\frac{1}{2}y-y+ 5,25-\frac{15}{4}y&=-7\\
+				5,75-\frac{1}{2}y-\frac{15}{4}y&=-7\\
+				-\frac{17}{4}y&=-\frac{51}{4}\\
+				y&=3&&
+			\end{flalign*}
+			$(III)$
+			\begin{flalign*}
+				-4x+2y&=-2\\
+				-4x+2\cdot 3&=-2\\
+				-4x+6&=-2\\
+				-4x&=-8\\
+				x&=2&&
+			\end{flalign*}
+			$(I)$
+			\begin{flalign*}
+				x+2y+z&=4\\
+				2+2\cdot 3+z&=4\\
+				z&=-4&&
+			\end{flalign*}
+		\subsection{Additionsverfahren}
+			Eine andere Möglichkeit ist es, eine oder mehrere Gleichungen mit einer Zahl zu multiplizieren, sodass eine Variable entfällt, wenn man zwei Gleichungen addiert.\newline\newline
+			$(I)-(III)$
+			\begin{flalign*}
+			5x+z&=6\\
+			z&=6-5x&&
+			\end{flalign*}
+			$(I)+2(II)$
+			\begin{flalign*}
+			3x+4z&=-10\\
+			3x+4(6-5x)&=-10\\
+			3x+24-20x&=-10\\
+			-17x&=-34\\
+			x&=2&&
+			\end{flalign*}
+			$(III)$
+			\begin{flalign*}
+			-4x+2y&=-2\\
+			-4\cdot 2+2y&=-2\\
+			-8+2y&=-2\\
+			2y&=6\\
+			y&=3&&
+			\end{flalign*}
+			$(I)$
+			\begin{flalign*}
+			x+2y+z&=4\\
+			2+2\cdot 3+z&=4\\
+			z&=-4&&
+			\end{flalign*}
+		Hinweis: sind zwei Gleichungen identisch, so gibt es unendlich viele Lösungsmengen und man muss nur die entsprechende Notation für die Lösungsmenge kennen.
+		\begin{flalign*}
+			(I)&&-4x-2y&=-14\\
+			(II)&&4x+2y&=14&&&&&&&&&&&&
+		\end{flalign*}
+		\begin{flalign*}
+			\mathbb{L}=\{(x;7-2x)\mid x \in \mathbb{R}\}&&
+		\end{flalign*}
+		\subsection{Gauß-Verfahren}
+			Das Gauß-Verfahren ist eine bestimmte Vorgehensweise fürs Additionsverfahrens, bei dem man die Gleichungen so umformt, dass man das LGS in die Stufenform bringt und es einfach lösen kann.
+			\begin{flalign*}
+			(I)&&x+2y+z&=4\\
+			(II)&&x-y+ \frac{3}{2}z&=-7\;\;\;\;\;\;\mid -\frac{3}{2}(I)\\
+			(III)&&-4x+2y&=-2&&&&&&&&&&&&
+			\end{flalign*}
+			\begin{flalign*}
+			(I)&&x+2y+z&=4\\
+			(II)&&-\frac{1}{2}x-4y&=-13\\
+			(III)&&-4x+2y&=-2\;\;\;\;\;\;\mid +\frac{1}{2}(II)&&&&&&&&&&&&
+			\end{flalign*}
+			\begin{flalign*}
+			(I)&&x+2y+z&=4\\
+			(II)&&-\frac{1}{2}x-4y&=-13\\
+			(III)&&-\frac{17}{4}x&=-\frac{17}{2}&&&&&&&&&&&&
+			\end{flalign*}
+			$(III)$
+			\begin{flalign*}
+			-\frac{17}{4}x&=-\frac{17}{2}\\
+			x&=2&&
+			\end{flalign*}
+			$(II)$
+			\begin{flalign*}
+			-\frac{1}{2}x-4y&=-13\\
+			-1-4y&=-13\\
+			-4y&=-12\\
+			y&=3&&
+			\end{flalign*}
+			$(I)$
+			\begin{flalign*}
+			x+2y+z&=4\\
+			2+6+z&=4\\
+			z&=-4&
+			\end{flalign*}
+		\subsection{LGS mit Parameter}
+			Kommt in einem LGS ein Parameter vor, dann muss man eine Fallunterscheidung vornehmen und den Parameter in die Lösungsmenge mit einbeziehen.
+			\begin{flalign*}
+			(I)&&x-2y&=0\\
+			(II)&&y+\frac{1}{3}z&=-1\\
+			(III)&&(a-3)y&=1&&&&&&&&&&&&
+			\end{flalign*}
+			Wenn $a=3$, dann kommt bei der letzten Gleichung $0=1$ raus. Dadurch können wir schon mal sagen, was die Lösungsmenge für den Fall $a=3$ ist.
+			\begin{flalign*}
+				\mathbb{L}=\emptyset, falls\;a=3&&
+			\end{flalign*}
+			Als nächstes schauen wir uns den Fall $a\neq0$ an.\newline\newline
+			$(III)$
+			\begin{flalign*}
+				(a-3)y&=1\\
+				y&=\frac{1}{a-3}&&
+			\end{flalign*}
+			$(II)$
+			\begin{flalign*}
+				\frac{1}{a-3}+\frac{1}{3}z&=-1\\
+				\frac{1}{3}z&=-\frac{1}{a-3}-1\\
+				z&=3\left(-\frac{1}{a-3}-1\right)\\
+				z&=-\frac{3}{a-3}-\frac{3a-9}{a-3}\\
+				z&=\frac{6-3a}{a-3}&&
+			\end{flalign*}
+			$(I)$
+			\begin{flalign*}
+				x-2y&=0\\
+				x-2\left(\frac{1}{a-3}\right)&=0\\
+				x&=\frac{2}{a-3}&&
+			\end{flalign*}
+			\begin{flalign*}
+			\mathbb{L}=\left\{\left(\frac{2}{a-3};\frac{1}{a-3};\frac{6-3a}{a-3}\right)\right\},\;falls\;a\neq 3&&
+			\end{flalign*}
 \end{document}

@@ -3,7 +3,7 @@
 %opening
 \title{Unimathematik für Informatikstudiengänge \\ Zusammenfassung}
 \author{Konstantin Lukas}
-\date{Fassung vom 06.08.2021}
+\date{Fassung vom 07.08.2021}
 \usepackage{amsmath,amsfonts,amssymb,amsthm}
 \usepackage{braket}
 \usepackage[margin=2cm]{geometry}
@@ -16,6 +16,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{pgfplots}
 \usepackage{tocloft}
+\usepackage{tkz-euclide}
 \definecolor{gridgray}{HTML}{AAAAAA}
 \newcommand{\highlight}[2]{\textcolor{blue}{\hyperref[#1]{#2}} (S. \pageref{#1})}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
@@ -169,7 +170,7 @@ Rationale Zahlen
 			& (a^k)^m = a^{k \cdot m} && 
 		\end{flalign*}
 	\end{tcolorbox}
-	Für $a>0$ und jede rationale Zahl $\frac{p}{q}$ (mit $p,q \in \mathbb{Z}$ und $q>0$) ist
+	\noindent Für $a>0$ und jede rationale Zahl $\frac{p}{q}$ (mit $p,q \in \mathbb{Z}$ und $q>0$) ist
 	\begin{flalign*}
 	a^{\frac{p}{q}} = \sqrt[q]{a^p} = (\sqrt[q]{a})^p && 
 	\end{flalign*}
@@ -188,9 +189,9 @@ Rationale Zahlen
 			& \sqrt[n]{\sqrt[m]{a}} = \sqrt[n \cdot m]{a} && 
 		\end{flalign*}
 	\end{tcolorbox}
-	Beispiel 1: Nach der dritten Binomischen Formel gilt für $a,b > 0, a \neq b$:
+	\noindent Beispiel 1: Nach der dritten Binomischen Formel gilt für $a,b > 0, a \neq b$:
 	\begin{flalign*}
-	& \cfrac{1}{\sqrt{a}+\sqrt{b}} & \cdot (\sqrt{a}-\sqrt{b}) && \\
+	& \cfrac{1}{\sqrt{a}+\sqrt{b}} & \mid \cdot (\sqrt{a}-\sqrt{b}) &&&&&&&&&&&& \\
 	= & \cfrac{\sqrt{a}-\sqrt{b}}{(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})} \\ 
 	= & \cfrac{\sqrt{a}-\sqrt{b}}{\sqrt{a}^2-\sqrt{b}^2} \\ 
 	= & \cfrac{\sqrt{a}-\sqrt{b}}{a-b} &&
@@ -872,4 +873,132 @@ Rationale Zahlen
 			\begin{flalign*}
 			\mathbb{L}=\left\{\left(\frac{2}{a-3};\frac{1}{a-3};\frac{6-3a}{a-3}\right)\right\},\;falls\;a\neq 3&&
 			\end{flalign*}
+	\section{Geometrie}
+		\subsection{Rechtwinklige Dreiecke}
+			\begin{center}
+				\begin{tikzpicture}[scale=1.25]%,cap=round,>=latex]
+					\coordinate [label=left:$B$] (B) at (-2cm,-1.cm);
+					\coordinate [label=right:$A$] (A) at (2.2cm,-1.0cm);
+					\coordinate [label=above:$C$] (C) at (1cm,1.0cm);
+					\coordinate [label=above:$S$] (A-|B) at (0.8cm,-1.0cm);
+					\draw (A) -- node[sloped,below] {\;\;\;\;\;\;\;\;\;\;q\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;p} (B) -- node[sloped,above] {a} (C) -- node[sloped,above] {b} (A);
+					\draw[dashed, opacity=.4] (C) -- (C|-A) ;
+					\tikzset{/tkzmkangle/mark=none}
+					\tkzMarkAngle[size=0.65cm](B,C,A)
+					
+					\tkzMarkAngle[size=0.8cm](C,A,B)
+					\tkzLabelAngle[pos = 0.5](C,A,B){$\alpha$}
+					
+					\tkzMarkAngle[size=1cm](A,B,C)
+					\tkzLabelAngle[pos = 0.7](A,B,C){$\beta$}
+				\end{tikzpicture}
+				\hspace{2cm}
+				\begin{tikzpicture}[scale=1.25]%,cap=round,>=latex]
+					\coordinate (B) at (-2cm,-1.cm);
+					\coordinate (A) at (2.2cm,-1.0cm);
+					\coordinate (C) at (1cm,1.0cm);
+					\draw (A) -- node[below] {Hypotenuse} (B) -- node[sloped,above] {Gegenkathete von $\alpha$} (C) -- node[sloped,above] {Ankathete von $\alpha$} (A);
+					\tikzset{/tkzmkangle/mark=none}
+					\tkzMarkAngle[size=0.65cm](B,C,A)
+					\tkzLabelAngle[pos = 0.4](B,C,A){$\gamma$}
+					
+					\tkzMarkAngle[size=0.8cm](C,A,B)
+					\tkzLabelAngle[pos = 0.5](C,A,B){$\alpha$}
+					
+					\tkzMarkAngle[size=1cm](A,B,C)
+					\tkzLabelAngle[pos = 0.7](A,B,C){$\beta$}
+				\end{tikzpicture}
+			\end{center}
+			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				\subsubsection{Kathetensatz}
+				Im rechtwinkligen Dreieck ist das Quadrat über einer Kathete flächengleich zu dem Rechteck aus der Hypotenuse und dem der Kathete anliegenden Hypotenusenabschnitt.
+				\begin{flalign*}
+				b^2=p\cdot c\\
+				a^2=q\cdot c&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				\subsubsection{Höhensatz}
+				Im rechtwinkligen Dreieck ist das Quadrat über der Höhe flächengleich zu dem Rechteck aus den beiden Hypotenusenabschnitten.
+				\begin{flalign*}
+				h^2=p\cdot q&&
+				\end{flalign*}
+			\end{tcolorbox}
+				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				\subsubsection{Sinus, Kosinus und Tangens}
+				Sinus, Kosinus und Tangens ordnen einem Winkel im rechtwinkligen Dreieck die Längenverhältnisse der Katheten und Hypotenuse zu.\newline
+				\begin{flalign*}
+				&\sin(\alpha)=\frac{a}{c}=\frac{Gegenkathete\;von\;\alpha}{Hypotenuse}\\\\
+				&\cos(\alpha)=\frac{b}{c}=\frac{Ankathete\;von\;\alpha}{Hypothenuse}\\\\
+				&\tan(\alpha)=\frac{a}{b}=\frac{Gegenkathete\;von\;\alpha}{Ankathete\;von\;\alpha}=\frac{\sin(\alpha)}{\cos(\alpha)}\\\\
+				&\sin(90°-\alpha)=\cos(\alpha)\\\\
+				&\cos(90°-\alpha)=\sin(\alpha)\\\\
+				&(\sin(\alpha))^2+(\cos(\alpha))^2=1&&
+				\end{flalign*}
+			\end{tcolorbox}
+		\subsection{Rechnen mit Flächen (Formeln)}
+			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				\subsubsection{Dreieck}
+				Für ein Dreieck mit der Grundseite $c$ und der Höhe $h_c$ gilt:
+				\begin{flalign*}
+				&F=\frac{1}{2}\cdot c \cdot h_c&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				\subsubsection{Kreis}
+				Für einen Kreis mit dem Radius $r$, dem Umfang $U$ und der Fläche $F$ gilt:
+				\begin{flalign*}
+				&U=2\pi r\\\\
+				&F=\pi r^2&&
+				\end{flalign*}
+				Für einen Kreissektor mit dem Radius $r$, der Bogenlänge $b$, der Fläche $F$ und dem Winkel $\alpha$ gilt:
+				\begin{flalign*}
+				&F=\frac{br}{2}&&
+				\end{flalign*}
+				Für ein Kreissegment mit dem Radius $r$, der Bogenlänge $b$, der Fläche $F$ und dem Winkel $\alpha$ gilt:
+				\begin{flalign*}
+				&F=\frac{br}{2}-\frac{1}{2}r^2\cdot \sin(\alpha)&&
+				\end{flalign*}
+			\end{tcolorbox}
+		\subsection{Rechnen mit Körpern (Formeln)}
+		\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			\subsubsection{Prisma}
+			Für ein Prisma mit der Mantelfläche $M$, der Grundfläche $A$, dem Grundflächenumfang $U$, der Oberfläche $O$, dem Volumen $V$ und der Höhe $h$ gilt:
+			\begin{flalign*}
+			&V=A\cdot h\\\\
+			&M=U\cdot h\\\\
+			&O=2\cdot A+M&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			\subsubsection{Pyramide}
+			Für eine Pyramide mit der Mantelfläche $M$, der Grundfläche $A$, der Oberfläche $O$, dem Volumen $V$ und der Höhe $h$ gilt:
+			\begin{flalign*}
+			&V=\frac{1}{3}\cdot A \cdot h\\\\
+			&O=2\cdot A+M&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			\subsubsection{Zylinder}
+			Für einen Zylinder mit der Grundfläche $A$, dem Radius der Grundfläche $r$, der Oberfläche $O$, dem Volumen $V$ und der Höhe $h$ gilt:
+			\begin{flalign*}
+			V=\pi \cdot r^2\cdot h&&
+			\end{flalign*}
+			Für einen geraden Zylinder gilt außerdem:
+			\begin{flalign*}
+				O=2\pi r\cdot (r+h)&&
+			\end{flalign*}
+		\end{tcolorbox}		
+		\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			\subsubsection{Kegel}
+			Für einen Kegel mit der Grundfläche $A$, dem Radius der Grundfläche $r$, der Oberfläche $O$, dem Volumen $V$, dem Abstand der Spitze zu einem Punkt der Kreislinie $s$ und der Höhe $h$ gilt:
+			\begin{flalign*}
+			V=\frac{1}{3}\pi\cdot r^2 \cdot h&&
+			\end{flalign*}
+			Für einen geraden Kegel gilt außerdem:
+			\begin{flalign*}
+			&s=\sqrt{h^2+r^2}\\\\
+			&O=\pi r \cdot (r+s)&&
+			\end{flalign*}
+		\end{tcolorbox}
 \end{document}

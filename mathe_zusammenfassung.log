@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  6 AUG 2021 20:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  7 AUG 2021 19:02
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -930,25 +930,280 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cfttabindent=\skip89
 \cfttabnumwidth=\skip90
 )
-(mathe_zusammenfassung.aux)
+("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-euclide.sty"
+2020/03/18 3.06c tkz-euclide.sty
+Package: tkz-euclide 2020/03/18 3.06c for euclidan geometry 
+("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-base.sty"
+2020/03/18 3.06c tkz-base.sty
+Package: tkz-base 2020/03/18 3.06c tkz-base
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+aryangles.code.tex"
+File: tikzlibraryangles.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+aryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\arrowsize=\dimen296
+))
+("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.
+tex"
+File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowinset=\dimen297
+\pgfarrowlength=\dimen298
+\pgfarrowwidth=\dimen299
+\pgfarrowlinewidth=\dimen300
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+arybabel.code.tex"
+File: tikzlibrarybabel.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+arycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+arydecorations.markings.code.tex"
+("C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecor
+ations.markings.code.tex"))
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+arydecorations.shapes.code.tex"
+("C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecor
+ations.shapes.code.tex"))
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+arydecorations.text.code.tex"
+("C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecor
+ations.text.code.tex"
+\pgf@lib@dec@text@box=\box124
+)
+\tikz@lib@dec@te@box=\box125
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+aryintersections.code.tex"
+("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryintersections.cod
+e.tex"
+\pgf@intersect@solutions=\count348
+))
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+arypatterns.code.tex"
+File: tikzlibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
+"
+File: pgflibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+arypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+aryquotes.code.tex"
+File: tikzlibraryquotes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+aryshadows.code.tex"
+File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+aryshapes.misc.code.tex"
+File: tikzlibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.mis
+c.code.tex"
+File: pgflibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
+arythrough.code.tex"
+File: tikzlibrarythrough.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+) ("C:\Program Files\MiKTeX\tex/latex/numprint\numprint.sty"
+Package: numprint 2012/08/20 v1.39 Print numbers (HH)
+\c@nprt@mantissa@digitsbefore=\count349
+\c@nprt@mantissa@digitsafter=\count350
+\c@nprt@exponent@digitsbefore=\count351
+\c@nprt@exponent@digitsafter=\count352
+\nprt@digitwidth=\skip91
+\nprt@sepwidth=\skip92
+\nprt@decimalwidth=\skip93
+\nprt@blockwidth=\skip94
+\nprt@digittoks=\toks49
+\nprt@pretoks=\toks50
+\nprt@posttoks=\toks51
+\nprt@thisdigit=\count353
+\nprt@curpos=\count354
+\nprt@rndpos=\count355
+\c@nprt@digitsfirstblock=\count356
+\c@nprt@blockcnt=\count357
+\c@nprt@cntprint=\count358
+ No configuration file `numprint.cfg' found.)
+("C:\Program Files\MiKTeX\tex/latex/l3packages/xfp\xfp.sty"
+Package: xfp 2020-05-15 L3 Floating point unit
+)
+("C:\Program Files\MiKTeX\tex/latex/fp\fp.sty"
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+("C:\Program Files\MiKTeX\tex/latex/fp\defpattern.sty"
+Package: defpattern 1994/10/12
+\actioncount=\count359
+)
+("C:\Program Files\MiKTeX\tex/latex/fp\fp-basic.sty"
+Package: fp-basic 1996/05/13
+\FP@xs=\count360
+\FP@xia=\count361
+\FP@xib=\count362
+\FP@xfa=\count363
+\FP@xfb=\count364
+\FP@rega=\count365
+\FP@regb=\count366
+\FP@regs=\count367
+\FP@times=\count368
+)
+("C:\Program Files\MiKTeX\tex/latex/fp\fp-addons.sty"
+Package: fp-addons 1995/03/15
+)
+("C:\Program Files\MiKTeX\tex/latex/fp\fp-snap.sty"
+Package: fp-snap 1995/04/05
+)
+("C:\Program Files\MiKTeX\tex/latex/fp\fp-exp.sty"
+Package: fp-exp 1995/04/03
+)
+("C:\Program Files\MiKTeX\tex/latex/fp\fp-trigo.sty"
+Package: fp-trigo 1995/04/14
+)
+("C:\Program Files\MiKTeX\tex/latex/fp\fp-pas.sty"
+Package: fp-pas 1994/08/29
+)
+("C:\Program Files\MiKTeX\tex/latex/fp\fp-random.sty"
+Package: fp-random 1995/02/23
+\FPseed=\count369
+)
+("C:\Program Files\MiKTeX\tex/latex/fp\fp-eqn.sty"
+Package: fp-eqn 1995/04/03
+)
+("C:\Program Files\MiKTeX\tex/latex/fp\fp-upn.sty"
+Package: fp-upn 1996/10/21
+)
+("C:\Program Files\MiKTeX\tex/latex/fp\fp-eval.sty"
+Package: fp-eval 1995/04/03
+))
+\tkzRadius=\dimen301
+\tkzLength=\dimen302
+\tkz@radi=\dimen303
+\tkz@ax=\dimen304
+\tkz@ay=\dimen305
+\tkz@bx=\dimen306
+\tkz@by=\dimen307
+\tkz@cx=\dimen308
+\tkz@cy=\dimen309
+\tkz@dx=\dimen310
+\tkz@dy=\dimen311
+\tkz@tax=\dimen312
+\tkz@tay=\dimen313
+\tkz@tbx=\dimen314
+\tkz@tby=\dimen315
+\tkz@tcx=\dimen316
+\tkz@tcy=\dimen317
+\tkz@tdx=\dimen318
+\tkz@tdy=\dimen319
+\tkz@cntmk=\count370
+
+Local configuration file tkz-base.cfg found and used
+("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-base.cfg"
+2020/03/18 3.06c tkz-base.cfg
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-tools-modules.tex"
+2020/03/18 3.06c tkz-tools-utilities.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-lib-marks.tex"
+2020/03/18 3.06c tkz-lib-symbols.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-tools-base.tex"
+2020/03/18 3.06c tkz-tools-base.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-tools-utilities.tex"
+2020/03/18 3.06c tkz-tools-utilities.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-tools-math.tex"
+2020/03/18 3.06c tkz-tools-math.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-tools-text.tex"
+2020/03/18 3.06c tkz-tools-text.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-tools-BB.tex"
+2020/03/18 3.06c tkz-obj-BB.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-tools-arith.tex"
+2020/03/18 3.06c tkz-tools-arith.tex
+File: tkz-tool-arith.tex tkz-tool-arith 3.02 c
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-tools-print.tex"
+2020/03/18 3.06c tkz-tools-print.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-tools-misc.tex"
+2020/03/18 3.06c tkz-tools-misc.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-obj-axes.tex"
+2020/03/18 3.06c tkz-obj-axes.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-obj-grids.tex"
+2020/03/18 3.06c tkz-obj-grids.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-obj-marks.tex"
+2020/03/18 3.07c tkz-obj-marks.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-obj-points.tex"
+2020/03/18 3.06c tkz-obj-points.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-obj-rep.tex"
+2020/03/18 3.06c tkz-obj-rep.tex
+)) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-tools-intersections.tex"
+2020/03/18 3.06c tkz-tools-intersections.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-tools-angles.tex"
+2020/03/18 3.06c tkz-tools-angles.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-angles.tex"
+2020/03/18 3.06c tkz-tool-eu-angles.tex
+\tkz@arcsize=\dimen320
+\tkz@fillsize=\dimen321
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-arcs.tex"
+2020/03/23 3.06c tkz-obj-eu-arcs.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-compass.tex"
+2020/03/18 3.06c tkz-obj-eu-compass.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-circles.tex"
+2020/03/18 3.06c tkz-obj-eu-circles.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-draw-circles.tex"
+2020/03/18 3.06c tkz-obj-eu-draw-circles.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-draw-lines.tex"
+2020/03/18 3.06c tkz-obj-eu-draw-lines.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-draw-polygons.tex"
+2020/03/18 3.06c tkz-obj-eu-polygons.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-draw-triangles.tex
+") ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-lines.tex"
+2020/03/18 3.06c tkz-obj-eu-lines.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-points.tex"
+2020/03/18 3.06c tkz-obj-eu-points.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-points-by.tex"
+2020/03/18 3.06c tkz-tools-eu-points-by.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-points-rnd.tex"
+2020/03/18 3.06c tkz-obj-eu-points-rnd.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-points-with.tex"
+2020/03/18 3.06c tkz-obj-eu-points-with.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-polygons.tex"
+2020/03/18 3.06c tkz-obj-eu-polygons.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-protractor.tex"
+2020/03/18 3.06c tkz-obj-eu-protractor.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-sectors.tex"
+2020/03/18 3.06c tkz-obj-eu-sectors.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-show.tex"
+2020/03/18 3.06c tkz-obj-eu-show.tex
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-obj-eu-triangles.tex"
+2020/03/18 3.06c tkz-obj-eu-triangles.tex
+)) (mathe_zusammenfassung.aux)
 \openout1 = `mathe_zusammenfassung.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -989,36 +1244,36 @@ LaTeX Font Info:    ... okay on input line 25.
 Package etoc Warning: Package `tocloft' was loaded after `etoc'!
 **** to prevent it from overwriting \tableofcontents, it will be tricked
 **** into believing to have been loaded with option `titles'. For better
-**** compatibility, please load `tocloft' before `etoc' on input line 25.
+**** compatibility, please load `tocloft' before `etoc' on input line 26.
 
 ABD: EveryShipout initializing macros
 ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count348
-\scratchdimen=\dimen296
-\scratchbox=\box124
-\nofMPsegments=\count349
-\nofMParguments=\count350
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count351
-\MPscratchDim=\dimen297
-\MPnumerator=\count352
-\makeMPintoPDFobject=\count353
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count371
+\scratchdimen=\dimen322
+\scratchbox=\box126
+\nofMPsegments=\count372
+\nofMParguments=\count373
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count374
+\MPscratchDim=\dimen323
+\MPnumerator=\count375
+\makeMPintoPDFobject=\count376
+\everyMPtoPDFconversion=\toks53
 ) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\c@lstlisting=\count354
+\c@lstlisting=\count377
 
 ("C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks51
-\inpenc@posthook=\toks52
+\inpenc@prehook=\toks54
+\inpenc@posthook=\toks55
 )
-\AtBeginShipoutBox=\box125
-Package hyperref Info: Link coloring OFF on input line 25.
+\AtBeginShipoutBox=\box127
+Package hyperref Info: Link coloring OFF on input line 26.
 
 ("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1029,11 +1284,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ("C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count355
+\c@section@level=\count378
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
 
 (mathe_zusammenfassung.out) (mathe_zusammenfassung.out)
 \@outlinefile=\write6
@@ -1044,14 +1299,14 @@ LaTeX Info: Redefining \nameref on input line 25.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 25.
+ on input line 26.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
@@ -1064,180 +1319,214 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Konstantin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3]
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 1
-02.
+03.
 
 ("C:\Program Files\MiKTeX\tex/latex/bbold\ubbold.fd")
-Underfull \hbox (badness 10000) in paragraph at lines 114--118
+Underfull \hbox (badness 10000) in paragraph at lines 115--119
 
  []
 
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 125.
+(amsmath)                 on input line 126.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--144
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--144
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
  []
 
 [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 197--200
+Underfull \hbox (badness 10000) in paragraph at lines 198--201
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 220--223
+Underfull \hbox (badness 10000) in paragraph at lines 221--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--241
+Underfull \hbox (badness 10000) in paragraph at lines 233--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--241
+Underfull \hbox (badness 10000) in paragraph at lines 233--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--241
+Underfull \hbox (badness 10000) in paragraph at lines 233--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--241
+Underfull \hbox (badness 10000) in paragraph at lines 233--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--241
+Underfull \hbox (badness 10000) in paragraph at lines 233--242
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 261--263
+Underfull \hbox (badness 10000) in paragraph at lines 262--264
 
  []
 
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 314--316
+Underfull \hbox (badness 10000) in paragraph at lines 315--317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--324
+Underfull \hbox (badness 10000) in paragraph at lines 323--325
 
  []
 
 [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--421
+Underfull \hbox (badness 10000) in paragraph at lines 419--422
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 424--427
+Underfull \hbox (badness 10000) in paragraph at lines 425--428
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--467
+Underfull \hbox (badness 10000) in paragraph at lines 465--468
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 478--481
+Underfull \hbox (badness 10000) in paragraph at lines 479--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--499
+Underfull \hbox (badness 10000) in paragraph at lines 497--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--499
+Underfull \hbox (badness 10000) in paragraph at lines 497--500
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 509--512
+Underfull \hbox (badness 10000) in paragraph at lines 510--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--523
+Underfull \hbox (badness 10000) in paragraph at lines 522--524
 
  []
 
 [16] [17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 640--642
+Underfull \hbox (badness 10000) in paragraph at lines 641--643
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 671--674
+Underfull \hbox (badness 10000) in paragraph at lines 672--675
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--686
+Underfull \hbox (badness 10000) in paragraph at lines 685--687
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 732--734
+Underfull \hbox (badness 10000) in paragraph at lines 733--735
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 770--772
+Underfull \hbox (badness 10000) in paragraph at lines 771--773
 
  []
 
 [22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 851--854
+Underfull \hbox (badness 10000) in paragraph at lines 852--855
 
  []
 
-[24]
+[24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 929--930
 
-Package etoc Warning: Please load `tocloft' /before/ `etoc'! on input line 875.
+ []
 
 
-[25]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 875.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 875.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 937.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 937.
+
+Missing character: There is no ° in font cmr12!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 937.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 937.
+
+Missing character: There is no ° in font cmr12!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 937.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 937.
+
+Missing character: There is no ° in font cmr12!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 937.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 937.
+
+Missing character: There is no ° in font cmr12!
+[26] [27] [28]
+
+Package etoc Warning: Please load `tocloft' /before/ `etoc'! on input line 1004
+.
+
+[29]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1004.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1004.
  (mathe_zusammenfassung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 875.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 875.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1004.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1004.
+
 Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
-(rerunfilecheck)             Checksum: 0543FF292559DD2600A77FE2B1D9E9A7;2728.
+(rerunfilecheck)             Checksum: B295C8E2363DC2043259A554674F82FF;3667.
  ) 
 Here is how much of TeX's memory you used:
- 35429 strings out of 480790
- 848981 string characters out of 2907040
- 1336394 words of memory out of 3000000
- 50768 multiletter control sequences out of 15000+200000
- 541652 words of font info for 61 fonts, out of 3000000 for 9000
+ 40646 strings out of 480790
+ 973782 string characters out of 2907040
+ 1489812 words of memory out of 3000000
+ 55743 multiletter control sequences out of 15000+200000
+ 541989 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,19n,103p,1301b,1962s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,19n,103p,1301b,2076s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Konstantin\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi60
 0\bbold12.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
@@ -1252,9 +1541,9 @@ m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX
 nts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.p
 fb>
-Output written on mathe_zusammenfassung.pdf (25 pages, 286779 bytes).
+Output written on mathe_zusammenfassung.pdf (29 pages, 307355 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 485 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 537 PDF objects out of 1000 (max. 8388607)
+ 86 named destinations out of 1000 (max. 500000)
+ 589 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,7 +3,20 @@
 %opening
 \title{Unimathematik für Informatikstudiengänge \\ Zusammenfassung}
 \author{Konstantin Lukas}
-\date{Fassung vom 07.08.2021}
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\usepackage{xstring}
+\usepackage{catchfile}
+
+\CatchFileDef{\headfull}{.git/HEAD.}{}
+\StrGobbleRight{\headfull}{1}[\head]
+\StrBehind[2]{\head}{/}[\branch]
+\IfFileExists{.git/refs/heads/\branch.}{%
+	\CatchFileDef{\commit}{.git/refs/heads/\branch.}{}}{%
+	\newcommand{\commit}{\dots~(in \emph{packed-refs})}}
+\newcommand{\monthword}[1]{\ifcase#1\or Januar\or Februar\or März\or April\or
+	Mai\or Juni\or Juli\or August\or
+	September\or Oktober\or November\or Dezember\fi}
+\date{Fassung vom \the\day . \monthword{\month} \the\year}
 \usepackage{amsmath,amsfonts,amssymb,amsthm}
 \usepackage{braket}
 \usepackage[margin=2cm]{geometry}
@@ -25,6 +38,7 @@
 
 \begin{document}
 \maketitle
+\centerline{Commit: \commit, Branch: \branch}
 \tableofcontents
 \pagebreak
 \etocsettocstyle{\noindent\rule{\linewidth}{.4pt}}

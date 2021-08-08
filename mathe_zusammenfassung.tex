@@ -319,193 +319,6 @@ Rationale Zahlen
 			(x-1)\cdot (x+\sqrt{2})&=0\\
 			\mathbb{L}=\{1;-\sqrt{2}\}&&
 		\end{flalign*}
-\section{Wurzelgleichungen}
-	Bei Wurzelgleichungen wird zuerst der Definitionsbereich bestimmt werden, also die Menge an reellen Zahlen, für die der Radikand positiv oder gleich Null ist. Zur Lösung von Wurzelgleichungen wird die Wurzel auf einer Seite der Gleichung isoliert. Dann werden beide Seiten der Gleichung mit dem Wurzelexponenten (im Falle der Quadratwurzel also mit 2) so lange potenziert, bis alle Wurzeln eliminiert sind. Man bekommt also unter Umständen durch das Quadrieren (das Potenzieren mit einer geraden Zahl ist keine Äquivalenzumformung) neue Lösungen (Scheinlösungen) hinzu, die die ursprüngliche Gleichung nicht hatte. Die Probe ist folglich für Wurzelgleichungen unverzichtbar!\newline\newline
-	Beispiel ($\sqrt{2x+1}=x-17$):
-	\begin{flalign*}
-	2x+1&\ge 0\\
-	x&\ge -\frac{1}{2}&&
-	\end{flalign*}
-	Damit haben wir den Definitionsbereich. Jetzt kann man nach der Lösung suchen.
-	\begin{flalign*}
-		\sqrt{2x+1}&=x-17\\
-		2x+1&=(x-17)^2\\
-		2x+1&=x^2-34x+289\\
-		x^2-36x+288&=0\\
-		x_1&=12\\
-		x_2&=24&&
-	\end{flalign*}
-	Jetzt MUSS man das Ergebnis noch überprüfen, indem man die Werte $x_1$ und $x_2$ in die ursprüngliche Gleichung einsetzt.
-	\begin{flalign*}
-		\sqrt{2x_1+1}&=x_1-17\\
-		\sqrt{2\cdot 12+1}&=12-17\\
-		\sqrt{25}&=-5\\
-		5&=-5&&
-	\end{flalign*}
-	Das Einsetzen von $x_1$ liefert keine wahre Aussage und ist somit nicht Teil der Lösungsmenge.
-	\begin{flalign*}
-		\sqrt{2x_2+1}&=x_2-17\\
-		\sqrt{2\cdot 24+1}&=24-17\\
-		\sqrt{49}&=7\\
-		7&=7&&
-	\end{flalign*}
-	Da $x_2$ im Definitionsbereich liegt und beim Einsetzen eine wahre Aussage ergibt, ist es in der Lösungsmenge enthalten.
-	\begin{flalign*}
-	\mathbb{L}=\{24\}&&
-	\end{flalign*}
-	Übrigens: Wenn man mehrere Wurzeln in der Gleichung hat, muss man den Definitionsbereich für den Radikanden jeder Wurzel bestimmen.
-	\begin{center}
-		\begin{tikzpicture}
-		\begin{axis}[
-		domain=-0.5:30,
-		xmin=-0.5, xmax=30,
-		ymin=0, ymax=10,
-		samples=200,
-		axis y line=center,
-		axis x line=middle,
-		ticklabel style={fill=white},
-		minor tick num=2,
-		grid=both,
-		grid style={line width=.1pt, draw=gridgray!10},
-		major grid style={line width=.2pt,draw=gridgray!50}
-		]
-		\addplot+[mark=none,color=blue] {sqrt(2*x+1)};
-		\addplot+[mark=none,color=red] {x-17};
-		\end{axis}
-		\node [color=blue] at (2,3.5) {$f(x)=\sqrt{2x+1}$};
-		\node [color=red] at (2.7,1) {$f(x)=x-17$};
-		\end{tikzpicture}
-	\end{center}
-	Mithilfe dieser Grafik kann man das Ergebnis wunderbar visualisieren, denn das Ergebnis ist der $x$-Wert des Schnittpunkts der beiden Funktionen, die man aus der linken und rechten Seite der Wurzelgleichung entnehmen kann.
-	\subsection{Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}
-	\begin{flalign*}
-		\sqrt{8x-14}+\sqrt{5x-2}&=\sqrt{27x-36}\\
-		(\sqrt{8x-14}+\sqrt{5x-2})^2&=27x-36\\
-		8x-14+2\sqrt{(8x-14)(5x-2)}+5x-2&=27x-36\\
-		2\sqrt{(8x-14)(5x-2)}&=14x-20\\
-		\sqrt{(8x-14)(5x-2)}&=7x-10\\
-		40x^2-86x+28&=(7x-10)^2\\
-		40x^2-86x+28&=49x^2-140x+100\\
-		0&=9x^2-54x+72\\
-		0&=x^2-6x+8&&
-	\end{flalign*}
-	Jetzt kann man die \highlight{subsec:pqformel}{p-q-Formel} anwenden und erhält die Lösungsmenge $\mathbb{L}=\{2;4\}$.
-\section{Betragsgleichungen}
-\label{sec:betragsgleichungen}
-	Um mit Betragsgleichungen oder auch Betragsfunktionen rechnen zu können muss man mehrere Fälle betrachten. Nämlich einmal den Fall, dass im Betrag ein Wert größer oder gleich $0$ entsteht und einmal den Fall, dass das Ergebnis im Betrag kleiner als Null ist. Betrachten wir einmal ein Beispiel, wo man den Schnittpunkt zwischen $f(x)=\vert x+1\vert$ und $f(x)=x+2$ finden soll.\newline
-	\begin{center}
-		\begin{tikzpicture}
-			\begin{axis}[
-			domain=-5:5,
-			xmin=-5, xmax=5,
-			ymin=-5, ymax=5,
-			samples=200,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none] {x+2};
-			\addplot+[mark=none] {abs(x+1)};
-			\end{axis}
-		\end{tikzpicture}
-	\end{center}
-	Zunächst setzen wir unsere Funktionen gleich und erhalten eine Betragsgleichung. Dann betrachten wir die verschiedenen Fälle für den Betrag.
-	\begin{flalign*}
-		\vert x+1\vert &= \left\{x+1\;\;\;\;\;\;\;\;\;Fall\;x\ge -1  \atop -(x+1)\;\;\;\;Fall\;x<-1 \right.&&
-	\end{flalign*}
-	Durch die Fallunterscheidung kann man die Betragsstriche weglassen, indem man jeden Fall einzeln betrachtet. Hinterher muss man aber noch überprüfen, ob das Ergebnis der Bedingung für $x$ in dem Fall entspricht.\newline\newline
-	Fall $x\ge-1$ ($x+1$ ist positiv):
-	\begin{flalign*}
-	x+1&=x+2 &\mid-x &&&&&&&&&&\\
-	1&=2&&
-	\end{flalign*}
-	Für den Fall $x\ge-1$ gibt es keine Lösung, also weiter zum nächsten Fall.\newline\newline
-	Fall $x<-1$ ($x+1$ ist negativ):
-	\begin{flalign*}
-	-x-1&=x+2 &\mid+x-2 &&&&&&&&&&\\
-	2x&=-3\\
-	x&=-\frac{3}{2}&&
-	\end{flalign*}
-	Damit haben wir unsere Lösungsmenge, denn wir bekommen für den Fall $-(x<-1)$ ein Ergebnis, welches dem Kriterium $x<-1$ entspricht.
-	\begin{flalign*}
-	\mathbb{L}=\left\{-\frac{3}{2}\right\}&&
-	\end{flalign*}
-	Durch einsetzen dieser $x$-Koordinate, finden wir auch den dazugehörigen $y$-Wert: $P\left(-\frac{3}{2}\mid\frac{1}{2}\right)$:
-	\subsection{Betragsgleichungen mit mehreren Beträgen}
-		Haben wir mehrere Beträge in unserer Gleichung, haben wir auch mehrere Fälle zu betrachten. Schon wir uns das an einem Beispiel an, indem wir die Schnittpunkte von $f(x)=\vert x+1 \vert + 5$ und $f(x)=\vert 2x-4 \vert$ suchen.
-		\begin{center}
-			\begin{tikzpicture}
-			\begin{axis}[
-			domain=-5:15,
-			xmin=-5, xmax=15,
-			ymin=0, ymax=20,
-			samples=200,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none,color=blue] {abs(x+1)+5};
-			\addplot+[mark=none,color=red] {abs(2*x-4)};
-			\end{axis}
-			\node [color=blue] at (7,4) {$f(x)=\vert x+1 \vert + 5$};
-			\node [color=red] at (5.5,1.7) {$f(x)=\vert 2x-4 \vert$};
-			\end{tikzpicture}
-		\end{center}
-		Zunächst setzen wir die Funktionen wieder gleich.
-		\begin{flalign*}
-		\vert x+1 \vert + 5=\vert 2x-4 \vert&&
-		\end{flalign*}
-		Die Fälle müssen wir alle einzeln betrachten. Das heißt, wir haben insgesamt 4 Fälle. Wir schauen uns zunächst die beiden Fälle eines Betrages an und dann innerhalb dieser Fälle betrachten wir die Fälle für den zweiten Betrag.\newline\newline
-		1. Fall für $\vert x+1 \vert$: $x\ge-1$ ($x+1$ ist positiv)
-		\begin{flalign*}
-			x+1+5&=\vert 2x-4\vert\\
-			x+6&=\vert 2x-4\vert&&
-		\end{flalign*}
-		Innerhalb dieses ersten Falles unterscheiden wir jetzt noch einmal für den übrigen Betrag.
-		\begin{tcolorbox}[boxsep=0pt, left=2em, top=1em, bottom=1em,right=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
-			1. Fall für $\vert2x-4\vert$: $x\ge2$ ($2x-4$ ist positiv)
-			\begin{flalign*}
-			x+6&=2x-4\\
-			x+10&=2x\\
-			10&=x&&
-			\end{flalign*}
-			Jetzt müssen wir überprüfen, ob $x\ge2$ und $x\ge-1$ für $x=10$ gelten. Das ist der Fall daher haben wir schon mal einen Teil unserer Lösungsmenge. Auf der Grafik kann man auch sehen, dass sich die beiden Graphen dort schneiden.\newline\newline
-			2. Fall für $\vert2x-4\vert$: $x<2$ ($2x-4$ ist negativ)
-			\begin{flalign*}
-			x+6&=-(2x-4)\\
-			x+6&=-2x+4\\
-			3x+6&=4\\
-			3x&=-2\\
-			x&=-\frac{2}{3}&&
-			\end{flalign*}
-			Wir überprüfen jetzt wieder, ob $x<2$ und $x\ge-1$ für $x=-\frac{2}{3}$ gelten. Da das der Fall ist, können wir auch dieses $x$ zu unserer Lösungsmenge hinzufügen.
-		\end{tcolorbox}
-		\noindent 2. Fall für $\vert x+1 \vert$: $x<-1$ ($x+1$ ist negativ)
-		\begin{flalign*}
-		-(x+1)+5&=\vert 2x-4\vert\\
-		-x+4&=\vert 2x-4\vert&&
-		\end{flalign*}
-		\begin{tcolorbox}[boxsep=0pt, left=2em, top=1em, bottom=1em,right=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
-			1. Fall für $\vert2x-4\vert$: $x\ge2$ ($2x-4$ ist positiv)\newline\newline
-			In diesem Fall müssen wir gar nicht erst versuchen $x$ auszurechnen, denn es gibt keine Zahl, die sowohl $x\ge2$, als auch $x<-1$ erfüllt.\newline\newline
-			2. Fall für $\vert2x-4\vert$: $x<2$ ($2x-4$ ist negativ)
-			\begin{flalign*}
-			-x+4&=-(2x-4)\\
-			-x+4&=-2x+4\\
-			-x&=-2x\\
-			x&=0&&
-			\end{flalign*}
-			Wir haben jetzt $x=0$ als Lösung, jedoch erfüllt dieses Ergebnis nicht die Bedingung $x<-1$ und ist daher auch nicht in der Lösungsmenge enthalten.
-		\end{tcolorbox}
-		\noindent Abschließend können wir feststellen, dass unsere Lösungsmenge $\mathbb{L}=\left\{10;-\frac{2}{3}\right\}$ ist. Durch Einsetzen in eine der beiden Funktionen erhalten wir dann unsere Schnittpunkte $P_1(10\mid 16)$ und $P_2\left(-\frac{2}{3}\mid\frac{16}{3}\right)$.
 \section{Substitution}
 	Substitution erlaubt es uns manchmal Gleichungen zu vereinfachen, um leichter mit ihnen rechnen zu können.\newline\newline
 	Beispiel: $x^8-15x^4-16=0$\newline
@@ -586,7 +399,7 @@ Rationale Zahlen
 			\node [color=blue] at (5,1.75) {$f(x)=\vert x \vert -3$};
 			\end{tikzpicture}
 		\end{center}
-		Wir erkennen die Nullstellen in dem Fall sehr leicht. Das sind $-3$ und $3$. Erkennt man das nicht sofort, muss man eine \highlight{sec:betragsgleichungen}{Fallunterscheidung} durchführen. Jetzt können wir aber erst mal unsere Lösungsmenge definieren, denn wir wissen, dass wir alle $x$ suchen für die $f(x)<0$ gilt.
+		Wir erkennen die Nullstellen in dem Fall sehr leicht. Das sind $-3$ und $3$. Erkennt man das nicht sofort, muss man eine \highlight{subsec:betragsfunktionen}{Fallunterscheidung} durchführen. Jetzt können wir aber erst mal unsere Lösungsmenge definieren, denn wir wissen, dass wir alle $x$ suchen für die $f(x)<0$ gilt.
 		\begin{flalign*}
 		\mathbb{L}=(-3;3)&&
 		\end{flalign*}
@@ -1001,4 +814,371 @@ Rationale Zahlen
 			&O=\pi r \cdot (r+s)&&
 			\end{flalign*}
 		\end{tcolorbox}
+	\section{Funktionen}
+		\subsection{Allgemeines}
+				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+					\subsubsection{Monotonie}
+						Seien $x_1$ und $x_2$ zwei Argumente einer Funktion, so gelten folgende Definitionen:\newline\newline
+						\textbf{Monoton wachsend}
+						\begin{flalign*}
+						wenn\;x_1\le x_2\; und\; f(x_1)\le f(x_2)&&
+						\end{flalign*}
+						\textbf{Streng monoton wachsend}
+						\begin{flalign*}
+						wenn\;x_1< x_2\; und\; f(x_1)< f(x_2)&&
+						\end{flalign*}
+						\textbf{Monoton fallend}
+						\begin{flalign*}
+						wenn\;x_1\le x_2\; und\; f(x_1)\ge f(x_2)&&
+						\end{flalign*}
+						\textbf{Streng monoton fallend}
+						\begin{flalign*}
+						wenn\;x_1< x_2\; und\; f(x_1)> f(x_2)&&
+						\end{flalign*}
+				\end{tcolorbox}
+				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+					\subsubsection{Besondere Stellen}
+					Für manche Stelle einer Funktion werden besondere Begriffe benutzt. Hinweis: $D_f$ ist der Definitionsbereich der Funktion und $I$ ein beliebig kleiner offener Intervall, der $x_{max}$ bzw. $x_{min}$ beinhaltet.\newline\newline
+					\textbf{Globale Maximalstelle}
+					\begin{flalign*}
+						wenn\;f(x_{max})\ge f(x)\; aller\;x\in D_f&&
+					\end{flalign*}
+					\textbf{Lokale Maximalstelle}
+					\begin{flalign*}
+						wenn\;f(x_{max})\ge f(x)\; aller\;x\in D_f\cap I&&
+					\end{flalign*}
+					\textbf{Globale Minimalstelle}
+					\begin{flalign*}
+						wenn\;f(x_{max})\le f(x)\; aller\;x\in D_f&&
+					\end{flalign*}
+					\textbf{Lokale Minimalstelle}
+					\begin{flalign*}
+						wenn\;f(x_{max})\le f(x)\; aller\;x\in D_f\cap I&&
+					\end{flalign*}
+					Maximal- und Minimalstellen werden auch als Extremalstellen bezeichnet.\newline\newline
+					\textbf{Gerade}
+					\begin{flalign*}
+						wenn\;f(-x)=f(x)&&
+					\end{flalign*}
+					\textbf{Ungerade}
+					\begin{flalign*}
+						wenn\;f(-x)=-f(x)&&
+					\end{flalign*}
+					Achtung: Eine Funktion kann nur gerade oder ungerade sein, wenn ihr Definitionsbereich symmetrisch zum Nullpunkt auf $x$-Achse ist.
+				\end{tcolorbox}
+		\subsection{Potenz- und Wurzelfunktionen}
+			Generelle Form für $m\in\mathbb{Z}$ und $n\in\mathbb{N}$:
+			\begin{flalign*}
+			f(x)=x^{\frac{m}{n}}=\sqrt[n]{x^m}=(\sqrt[n]{x})^m&&
+			\end{flalign*}
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=blue] {x^3};
+				\end{axis}
+				\node [color=blue] at (4.75,2) {$f(x)=x^3$};
+				\end{tikzpicture}
+				\hspace{1cm}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=red] {x^2};
+				\end{axis}
+				\node [color=red] at (4.75,2) {$f(x)=x^2$};
+				\end{tikzpicture}
+				\newline\newline\newline
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=teal] {x^(3/2)};
+				\addplot+[mark=none,color=violet] {x^(2/3)};
+				\end{axis}
+				\node [color=teal] at (4.75,2) {$f(x)=x^{\frac{3}{2}}$};
+				\node [color=violet] at (4.75,1.35) {$f(x)=x^{\frac{2}{3}}$};
+				\end{tikzpicture}
+				\hspace{1cm}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				restrict y to domain=-30:60,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=magenta] {x^(-(1/2))};
+				\end{axis}
+				\node [color=magenta] at (4.75,2) {$f(x)=x^{-\frac{1}{2}}$};
+				\end{tikzpicture}
+				\newline\newline\newline
+					\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				restrict y to domain=-30:60,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=orange] {x^(-2)};
+				\end{axis}
+				\node [color=orange] at (4.75,2) {$f(x)=x^{-2}$};
+				\end{tikzpicture}
+				\hspace{1cm}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				restrict y to domain=-30:60,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=purple] {x^(-3)};
+				\end{axis}
+				\node [color=purple] at (4.75,2) {$f(x)=x^{-3}$};
+				\end{tikzpicture}
+			\end{center}
+			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.85cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				Potenzfunktionen in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}, wenn $n\ge 2$ gilt und der Bruch keine ganze Zahl ist.
+			\end{tcolorbox}
+			\subsubsection{Wurzelgleichungen}
+			Bei Wurzelgleichungen wird zuerst der Definitionsbereich bestimmt werden, also die Menge an reellen Zahlen, für die der Radikand positiv oder gleich Null ist. Zur Lösung von Wurzelgleichungen wird die Wurzel auf einer Seite der Gleichung isoliert. Dann werden beide Seiten der Gleichung mit dem Wurzelexponenten (im Falle der Quadratwurzel also mit 2) so lange potenziert, bis alle Wurzeln eliminiert sind. Man bekommt also unter Umständen durch das Quadrieren (das Potenzieren mit einer geraden Zahl ist keine Äquivalenzumformung) neue Lösungen (Scheinlösungen) hinzu, die die ursprüngliche Gleichung nicht hatte. Die Probe ist folglich für Wurzelgleichungen unverzichtbar!\newline\newline
+			Beispiel ($\sqrt{2x+1}=x-17$):
+			\begin{flalign*}
+			2x+1&\ge 0\\
+			x&\ge -\frac{1}{2}&&
+			\end{flalign*}
+			Damit haben wir den Definitionsbereich. Jetzt kann man nach der Lösung suchen.
+			\begin{flalign*}
+			\sqrt{2x+1}&=x-17\\
+			2x+1&=(x-17)^2\\
+			2x+1&=x^2-34x+289\\
+			x^2-36x+288&=0\\
+			x_1&=12\\
+			x_2&=24&&
+			\end{flalign*}
+			Jetzt MUSS man das Ergebnis noch überprüfen, indem man die Werte $x_1$ und $x_2$ in die ursprüngliche Gleichung einsetzt.
+			\begin{flalign*}
+			\sqrt{2x_1+1}&=x_1-17\\
+			\sqrt{2\cdot 12+1}&=12-17\\
+			\sqrt{25}&=-5\\
+			5&=-5&&
+			\end{flalign*}
+			Das Einsetzen von $x_1$ liefert keine wahre Aussage und ist somit nicht Teil der Lösungsmenge.
+			\begin{flalign*}
+			\sqrt{2x_2+1}&=x_2-17\\
+			\sqrt{2\cdot 24+1}&=24-17\\
+			\sqrt{49}&=7\\
+			7&=7&&
+			\end{flalign*}
+			Da $x_2$ im Definitionsbereich liegt und beim Einsetzen eine wahre Aussage ergibt, ist es in der Lösungsmenge enthalten.
+			\begin{flalign*}
+			\mathbb{L}=\{24\}&&
+			\end{flalign*}
+			Übrigens: Wenn man mehrere Wurzeln in der Gleichung hat, muss man den Definitionsbereich für den Radikanden jeder Wurzel bestimmen.
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-0.5:30,
+				xmin=-0.5, xmax=30,
+				ymin=0, ymax=10,
+				samples=200,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=blue] {sqrt(2*x+1)};
+				\addplot+[mark=none,color=red] {x-17};
+				\end{axis}
+				\node [color=blue] at (2,3.5) {$f(x)=\sqrt{2x+1}$};
+				\node [color=red] at (2.7,1) {$f(x)=x-17$};
+				\end{tikzpicture}
+			\end{center}
+			Mithilfe dieser Grafik kann man das Ergebnis wunderbar visualisieren, denn das Ergebnis ist der $x$-Wert des Schnittpunkts der beiden Funktionen, die man aus der linken und rechten Seite der Wurzelgleichung entnehmen kann.
+			\subsubsection{Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}
+			\begin{flalign*}
+			\sqrt{8x-14}+\sqrt{5x-2}&=\sqrt{27x-36}\\
+			(\sqrt{8x-14}+\sqrt{5x-2})^2&=27x-36\\
+			8x-14+2\sqrt{(8x-14)(5x-2)}+5x-2&=27x-36\\
+			2\sqrt{(8x-14)(5x-2)}&=14x-20\\
+			\sqrt{(8x-14)(5x-2)}&=7x-10\\
+			40x^2-86x+28&=(7x-10)^2\\
+			40x^2-86x+28&=49x^2-140x+100\\
+			0&=9x^2-54x+72\\
+			0&=x^2-6x+8&&
+			\end{flalign*}
+			Jetzt kann man die \highlight{subsec:pqformel}{p-q-Formel} anwenden und erhält die Lösungsmenge $\mathbb{L}=\{2;4\}$.
+		\subsection{Betragsfunktionen}
+		\label{subsec:betragsfunktionen}
+		Um mit Betragsgleichungen oder auch Betragsfunktionen rechnen zu können muss man mehrere Fälle betrachten. Nämlich einmal den Fall, dass im Betrag ein Wert größer oder gleich $0$ entsteht und einmal den Fall, dass das Ergebnis im Betrag kleiner als Null ist. Betrachten wir einmal ein Beispiel, wo man den Schnittpunkt zwischen $f(x)=\vert x+1\vert$ und $f(x)=x+2$ finden soll.\newline
+		\begin{center}
+			\begin{tikzpicture}
+			\begin{axis}[
+			domain=-5:5,
+			xmin=-5, xmax=5,
+			ymin=-5, ymax=5,
+			samples=200,
+			axis y line=center,
+			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
+			]
+			\addplot+[mark=none] {x+2};
+			\addplot+[mark=none] {abs(x+1)};
+			\end{axis}
+			\end{tikzpicture}
+		\end{center}
+		Zunächst setzen wir unsere Funktionen gleich und erhalten eine Betragsgleichung. Dann betrachten wir die verschiedenen Fälle für den Betrag.
+		\begin{flalign*}
+		\vert x+1\vert &= \left\{x+1\;\;\;\;\;\;\;\;\;Fall\;x\ge -1  \atop -(x+1)\;\;\;\;Fall\;x<-1 \right.&&
+		\end{flalign*}
+		Durch die Fallunterscheidung kann man die Betragsstriche weglassen, indem man jeden Fall einzeln betrachtet. Hinterher muss man aber noch überprüfen, ob das Ergebnis der Bedingung für $x$ in dem Fall entspricht.\newline\newline
+		Fall $x\ge-1$ ($x+1$ ist positiv):
+		\begin{flalign*}
+		x+1&=x+2 &\mid-x &&&&&&&&&&\\
+		1&=2&&
+		\end{flalign*}
+		Für den Fall $x\ge-1$ gibt es keine Lösung, also weiter zum nächsten Fall.\newline\newline
+		Fall $x<-1$ ($x+1$ ist negativ):
+		\begin{flalign*}
+		-x-1&=x+2 &\mid+x-2 &&&&&&&&&&\\
+		2x&=-3\\
+		x&=-\frac{3}{2}&&
+		\end{flalign*}
+		Damit haben wir unsere Lösungsmenge, denn wir bekommen für den Fall $-(x<-1)$ ein Ergebnis, welches dem Kriterium $x<-1$ entspricht.
+		\begin{flalign*}
+		\mathbb{L}=\left\{-\frac{3}{2}\right\}&&
+		\end{flalign*}
+		Durch einsetzen dieser $x$-Koordinate, finden wir auch den dazugehörigen $y$-Wert: $P\left(-\frac{3}{2}\mid\frac{1}{2}\right)$:
+		\subsubsection{Betragsgleichungen mit mehreren Beträgen}
+		Haben wir mehrere Beträge in unserer Gleichung, haben wir auch mehrere Fälle zu betrachten. Schon wir uns das an einem Beispiel an, indem wir die Schnittpunkte von $f(x)=\vert x+1 \vert + 5$ und $f(x)=\vert 2x-4 \vert$ suchen.
+		\begin{center}
+			\begin{tikzpicture}
+			\begin{axis}[
+			domain=-5:15,
+			xmin=-5, xmax=15,
+			ymin=0, ymax=20,
+			samples=200,
+			axis y line=center,
+			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
+			]
+			\addplot+[mark=none,color=blue] {abs(x+1)+5};
+			\addplot+[mark=none,color=red] {abs(2*x-4)};
+			\end{axis}
+			\node [color=blue] at (7,4) {$f(x)=\vert x+1 \vert + 5$};
+			\node [color=red] at (5.5,1.7) {$f(x)=\vert 2x-4 \vert$};
+			\end{tikzpicture}
+		\end{center}
+		Zunächst setzen wir die Funktionen wieder gleich.
+		\begin{flalign*}
+		\vert x+1 \vert + 5=\vert 2x-4 \vert&&
+		\end{flalign*}
+		Die Fälle müssen wir alle einzeln betrachten. Das heißt, wir haben insgesamt 4 Fälle. Wir schauen uns zunächst die beiden Fälle eines Betrages an und dann innerhalb dieser Fälle betrachten wir die Fälle für den zweiten Betrag.\newline\newline
+		1. Fall für $\vert x+1 \vert$: $x\ge-1$ ($x+1$ ist positiv)
+		\begin{flalign*}
+		x+1+5&=\vert 2x-4\vert\\
+		x+6&=\vert 2x-4\vert&&
+		\end{flalign*}
+		Innerhalb dieses ersten Falles unterscheiden wir jetzt noch einmal für den übrigen Betrag.
+		\begin{tcolorbox}[boxsep=0pt, left=2em, top=1em, bottom=1em,right=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			1. Fall für $\vert2x-4\vert$: $x\ge2$ ($2x-4$ ist positiv)
+			\begin{flalign*}
+			x+6&=2x-4\\
+			x+10&=2x\\
+			10&=x&&
+			\end{flalign*}
+			Jetzt müssen wir überprüfen, ob $x\ge2$ und $x\ge-1$ für $x=10$ gelten. Das ist der Fall daher haben wir schon mal einen Teil unserer Lösungsmenge. Auf der Grafik kann man auch sehen, dass sich die beiden Graphen dort schneiden.\newline\newline
+			2. Fall für $\vert2x-4\vert$: $x<2$ ($2x-4$ ist negativ)
+			\begin{flalign*}
+			x+6&=-(2x-4)\\
+			x+6&=-2x+4\\
+			3x+6&=4\\
+			3x&=-2\\
+			x&=-\frac{2}{3}&&
+			\end{flalign*}
+			Wir überprüfen jetzt wieder, ob $x<2$ und $x\ge-1$ für $x=-\frac{2}{3}$ gelten. Da das der Fall ist, können wir auch dieses $x$ zu unserer Lösungsmenge hinzufügen.
+		\end{tcolorbox}
+		\noindent 2. Fall für $\vert x+1 \vert$: $x<-1$ ($x+1$ ist negativ)
+		\begin{flalign*}
+		-(x+1)+5&=\vert 2x-4\vert\\
+		-x+4&=\vert 2x-4\vert&&
+		\end{flalign*}
+		\begin{tcolorbox}[boxsep=0pt, left=2em, top=1em, bottom=1em,right=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			1. Fall für $\vert2x-4\vert$: $x\ge2$ ($2x-4$ ist positiv)\newline\newline
+			In diesem Fall müssen wir gar nicht erst versuchen $x$ auszurechnen, denn es gibt keine Zahl, die sowohl $x\ge2$, als auch $x<-1$ erfüllt.\newline\newline
+			2. Fall für $\vert2x-4\vert$: $x<2$ ($2x-4$ ist negativ)
+			\begin{flalign*}
+			-x+4&=-(2x-4)\\
+			-x+4&=-2x+4\\
+			-x&=-2x\\
+			x&=0&&
+			\end{flalign*}
+			Wir haben jetzt $x=0$ als Lösung, jedoch erfüllt dieses Ergebnis nicht die Bedingung $x<-1$ und ist daher auch nicht in der Lösungsmenge enthalten.
+		\end{tcolorbox}
+		\noindent Abschließend können wir feststellen, dass unsere Lösungsmenge $\mathbb{L}=\left\{10;-\frac{2}{3}\right\}$ ist. Durch Einsetzen in eine der beiden Funktionen erhalten wir dann unsere Schnittpunkte $P_1(10\mid 16)$ und $P_2\left(-\frac{2}{3}\mid\frac{16}{3}\right)$.
 \end{document}

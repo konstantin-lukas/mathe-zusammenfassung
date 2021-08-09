@@ -7,12 +7,6 @@
 \usepackage{xstring}
 \usepackage{catchfile}
 
-\CatchFileDef{\headfull}{.git/HEAD.}{}
-\StrGobbleRight{\headfull}{1}[\head]
-\StrBehind[2]{\head}{/}[\branch]
-\IfFileExists{.git/refs/heads/\branch.}{%
-	\CatchFileDef{\commit}{.git/refs/heads/\branch.}{}}{%
-	\newcommand{\commit}{\dots~(in \emph{packed-refs})}}
 \newcommand{\monthword}[1]{\ifcase#1\or Januar\or Februar\or März\or April\or
 	Mai\or Juni\or Juli\or August\or
 	September\or Oktober\or November\or Dezember\fi}
@@ -29,6 +23,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{pgfplots}
 \usepackage{tocloft}
+\usepackage{polynom}
 \usepackage{tkz-euclide}
 \definecolor{gridgray}{HTML}{AAAAAA}
 \newcommand{\highlight}[2]{\textcolor{blue}{\hyperref[#1]{#2}} (S. \pageref{#1})}
@@ -38,66 +33,47 @@
 
 \begin{document}
 \maketitle
-\centerline{Commit: \commit, Branch: \branch}
 \tableofcontents
 \pagebreak
 \etocsettocstyle{\noindent\rule{\linewidth}{.4pt}}
 
 \section{Mengen}
-\subsection{Vereinigung}
-	\begin{flalign*}
-		\begin{tikzpicture}
-		\fill[yellow] (3,0) circle (2cm);
-		\fill[yellow] (0,0) circle (2cm);
-		\draw (0,0) circle (2cm);
-		\draw (3,0) circle (2cm);
-		\draw (0,0) node {A};
-		\draw (3,0) node {B};
-		\end{tikzpicture}&&
-	\end{flalign*}
-	\begin{flalign*}
-		A \cup B := \{x \mid x \in A \: oder \: x \in B\}&&
-	\end{flalign*}
-\subsection{Durchschnitt}
-	\begin{flalign*}
-		\begin{tikzpicture}
-		\begin{scope}
-			\draw [clip](0,0) circle (2cm);
+	\subsection{Vereinigung}
+		\begin{flalign*}
+			\begin{tikzpicture}
 			\fill[yellow] (3,0) circle (2cm);
-		\end{scope}
-		\draw (0,0) circle (2cm);
-		\draw (3,0) circle (2cm);
-		\draw (0,0) node {A};
-		\draw (3.2,0) node {B};
-		\end{tikzpicture}&&
-	\end{flalign*}
-	\begin{flalign*}
-		A \cap B := \{x \mid x \in A \: und \: x \in B\}&&
-	\end{flalign*}
-\subsection{Differenz}
-	\begin{flalign*}
-		\begin{tikzpicture}
-		\begin{scope}
 			\fill[yellow] (0,0) circle (2cm);
-			\clip (3,0) circle(2cm);
-			\fill[white] (3,0) circle (2cm);
-		\end{scope}
-		\draw (0,0) circle (2cm);
-		\draw (3,0) circle (2cm);
-		\draw (0,0) node {A};
-		\draw (3,0) node {B};
-		\end{tikzpicture}&&
-	\end{flalign*}
-	\begin{flalign*}
-		A \setminus B := \{x \mid x \in A \: und \: x \notin B\}&&
-	\end{flalign*}
-\subsection{Symmetrische Differenz}
-	\begin{flalign*}
-		\begin{tikzpicture}
-			\fill[yellow] (0,0) circle (2cm);
-			\fill[yellow] (3,0) circle (2cm);
+			\draw (0,0) circle (2cm);
+			\draw (3,0) circle (2cm);
+			\draw (0,0) node {A};
+			\draw (3,0) node {B};
+			\end{tikzpicture}&&
+		\end{flalign*}
+		\begin{flalign*}
+			A \cup B := \{x \mid x \in A \: oder \: x \in B\}&&
+		\end{flalign*}
+	\subsection{Durchschnitt}
+		\begin{flalign*}
+			\begin{tikzpicture}
 			\begin{scope}
 				\draw [clip](0,0) circle (2cm);
+				\fill[yellow] (3,0) circle (2cm);
+			\end{scope}
+			\draw (0,0) circle (2cm);
+			\draw (3,0) circle (2cm);
+			\draw (0,0) node {A};
+			\draw (3.2,0) node {B};
+			\end{tikzpicture}&&
+		\end{flalign*}
+		\begin{flalign*}
+			A \cap B := \{x \mid x \in A \: und \: x \in B\}&&
+		\end{flalign*}
+	\subsection{Differenz}
+		\begin{flalign*}
+			\begin{tikzpicture}
+			\begin{scope}
+				\fill[yellow] (0,0) circle (2cm);
+				\clip (3,0) circle(2cm);
 				\fill[white] (3,0) circle (2cm);
 			\end{scope}
 			\draw (0,0) circle (2cm);
@@ -106,248 +82,304 @@
 			\draw (3,0) node {B};
 			\end{tikzpicture}&&
 		\end{flalign*}
-	\begin{flalign*}
-		A \triangle B := \{ x \mid (x \in A) \: \veebar \: ( x \in B ) \}&&
-		A \triangle B := \{ x \mid (x \in A) \: \nleftrightarrow \: ( x \in B ) \}&&
-	\end{flalign*}
-\subsection{Definierte Zahlenmengen}
-Natürliche Zahlen
-	\begin{flalign*}
-		\mathbb{N} = \{ 1; 2; 3; ... \}&&
-	\end{flalign*}\newline
-Menge der Natürliche Zahlen
-	\begin{flalign*}
-		\mathbb{N}_0 = \{ 0; 1; 2; 3; ... \}&&
-	\end{flalign*}\newline
-Ganze Zahlen
-	\begin{flalign*}
-		\mathbb{Z} = \{ ... ; -2; -1; 0; 1; 2; 3; ... \}&&
-	\end{flalign*}\newline
-Rationale Zahlen
-	\begin{flalign*}
-		\mathbb{Q} = \left\{ \frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0 \right\}&&
-	\end{flalign*}\newline
-	Reelle Zahlen\newline
-	Die reellen Zahlen umfassen die rationalen Zahlen und die irrationalen Zahlen.\newline\newline
-	Irrationale Zahlen
-	\begin{flalign*}
-		\mathbb{R} \setminus \mathbb{Q}&&
-	\end{flalign*}
-\section{Betrag}
-	\begin{flalign*}
-		\vert a \vert = \left\{ a \atop -a \right. \;\;&
-		a \ge 0 \atop a < 0 &
-	\end{flalign*}
-	\begin{flalign*}
-		\vert -a \vert = \vert a \vert&&
-	\end{flalign*}
-\section{Intervalle}
-\label{sec:intervalle}
-	\subsection{Abgeschlossene Intervalle}
+		\begin{flalign*}
+			A \setminus B := \{x \mid x \in A \: und \: x \notin B\}&&
+		\end{flalign*}
+	\subsection{Symmetrische Differenz}
+		\begin{flalign*}
+			\begin{tikzpicture}
+				\fill[yellow] (0,0) circle (2cm);
+				\fill[yellow] (3,0) circle (2cm);
+				\begin{scope}
+					\draw [clip](0,0) circle (2cm);
+					\fill[white] (3,0) circle (2cm);
+				\end{scope}
+				\draw (0,0) circle (2cm);
+				\draw (3,0) circle (2cm);
+				\draw (0,0) node {A};
+				\draw (3,0) node {B};
+				\end{tikzpicture}&&
+			\end{flalign*}
+		\begin{flalign*}
+			A \triangle B := \{ x \mid (x \in A) \: \veebar \: ( x \in B ) \}&&
+			A \triangle B := \{ x \mid (x \in A) \: \nleftrightarrow \: ( x \in B ) \}&&
+		\end{flalign*}
+	\subsection{Definierte Zahlenmengen}
+	Natürliche Zahlen
+		\begin{flalign*}
+			\mathbb{N} = \{ 1; 2; 3; ... \}&&
+		\end{flalign*}\newline
+	Menge der Natürliche Zahlen
+		\begin{flalign*}
+			\mathbb{N}_0 = \{ 0; 1; 2; 3; ... \}&&
+		\end{flalign*}\newline
+	Ganze Zahlen
+		\begin{flalign*}
+			\mathbb{Z} = \{ ... ; -2; -1; 0; 1; 2; 3; ... \}&&
+		\end{flalign*}\newline
+	Rationale Zahlen
+		\begin{flalign*}
+			\mathbb{Q} = \left\{ \frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0 \right\}&&
+		\end{flalign*}\newline
+		Reelle Zahlen\newline
+		Die reellen Zahlen umfassen die rationalen Zahlen und die irrationalen Zahlen.\newline\newline
+		Irrationale Zahlen
+		\begin{flalign*}
+			\mathbb{R} \setminus \mathbb{Q}&&
+		\end{flalign*}
+\section{Elementare Rechengesetze, -verfahren und -notationen}
+	\subsection{Brüche dividieren}
+		Um zwei Brüche zu dividieren bildet man den Kehrwert vom Divisor und multipliziert diesen mit dem Dividend.
+		\begin{flalign*}
+		\frac{p_1}{q_1} : \frac{p_2}{q_2} = \frac{p_1}{q_1} \cdot \frac{q_2}{p_2}&&
+		\end{flalign*}
+		\begin{flalign*}
+		\bigfrac {\frac{p_1}{q_1}}  {\frac{p_2}{q_2}} = \frac{p_1}{q_1} \cdot \frac{q_2}{p_2}&&
+		\end{flalign*}
+	\subsection{Lösungsmenge}
+		Beispiel 1 ($x^2=-1$):\newline
+		$\mathbb{L} = \emptyset$ \newline\newline
+		Beispiel 2 ($x^2 = 4$):\newline
+		$\mathbb{L} = \{-2;2\}$\newline\newline
+		Beispiel 3 ($sin(x) = 0$):\newline
+		$\mathbb{L} = \{...;-2\pi;-\pi;0;\pi;2\pi; ...\}$\newline\newline
+		Beispiel 4 ($x^2 + y = 5$):\newline
+		$\mathbb{L} = \{(x_0;y_0)\in\mathbb{R}^2\mid x^2_0 + y_0 = 5\} = \{(x_0;5-x^2_0) \mid x_0\in\mathbb{R}^2\}$\newline\newline
+		In diesem Fall ist die Lösungsmenge die Funktion $y=5-x^2$.\newline
+		\begin{center}
+			\begin{tikzpicture}
+			\begin{axis}[
+			domain=-10:10,
+			xmin=-10, xmax=10,
+			ymin=-10, ymax=10,
+			samples=200,
+			axis y line=center,
+			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
+			]
+			\addplot+[mark=none] {5-x^2};
+			\end{axis}
+			\end{tikzpicture}
+		\end{center}
+	\subsection{Normalform}
+		Eine Gleichung in der Form $ax^2+bx+c=0$ mit $a\neq0$ und $b,c\in \mathbb{R}$, heißt quadratisch. Spezial bezeichnet man $x^2+px+q=0$ mir $p,q\in \mathbb{R}$, als quadratische Gleichung in Normalform.\newline\newline
+		Man kann eine quadratische Gleichung in die Normalform überführen, indem man durch $a$ teilt: $x^2+\frac{b}{a}x+\frac{c}{a}=0$.
+		\subsubsection{p-q-Formel}
+		\label{subsubsec:pqformel}
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			Um die Nullstellen einer quadratischen Gleichung in der Normalform zu finden, kann man die p-q-Formel benutzen: $x_{\pm}=-\frac{p}{2}\pm\sqrt{\left(\frac{p}{2}\right)^2-q}$.
+		\end{tcolorbox}
+		\noindent$D=\left(\frac{p}{2}\right)^2-q$ ist die Diskriminante. Sie gibt Aufschluss über die Lösungsmenge.
+		\begin{flalign*}
+		&D>0\Rightarrow Es\;gibt\;zwei\;Lsg.\\
+		&D=0\Rightarrow Es\;gibt\;eine\;Lsg.\\
+		&D<0\Rightarrow Es\;gibt\;keine\;Lsg.&&
+		\end{flalign*}
+	\subsection{Intervalle}
+		\label{subsec:intervalle}
+		\subsubsection{Abgeschlossene Intervalle}
 		$[a;b] := \{ x \in \mathbb{R} \mid a \le x \le b \}$
-	\subsection{Offene Intervalle}
+		\subsubsection{Offene Intervalle}
 		$(a;b) = \: ]a;b[ \: := \{ x \in \mathbb{R} \mid a < x < b \}$
-	\subsection{Halboffene Intervalle}
+		\subsubsection{Halboffene Intervalle}
 		Rechtsoffen \newline
 		$[a;b) = \: [a;b[ \: :=  \{ x \in \mathbb{R} \mid a \le x < b \}$ \newline\newline
 		Linksoffen \newline
 		$(a;b] = \: ]a;b] \: :=  \{ x \in \mathbb{R} \mid a < x \le b \}$
-\section{Binomische Formeln}
+	\subsection{Beträge}
+		\begin{flalign*}
+		\vert a \vert = \left\{ a \atop -a \right. \;\;&
+		a \ge 0 \atop a < 0 &
+		\end{flalign*}
+		\begin{flalign*}
+		\vert -a \vert = \vert a \vert&&
+		\end{flalign*}
+	\subsection{Binomische Formeln}
+	\label{sec:binomischeformeln}
 	$(a+b)^2 = a^2 + 2ab + b^2$ \newline\newline
 	$(a-b)^2 = a^2 - 2ab + b^2$ \newline\newline
 	$(a+b)(a-b) = a^2 - b^2$
-\section{Euklidischer Algorithmus}
-	Der euklidische Algorithmus findet den größten gemeinsamen Teiler zweier Zahlen. Das eignet sich ausgezeichnet dazu, Brüche zu kürzen. Der vorletzte Rest bevor $R = 0$ eintritt, ist das Ergebnis.
-	\begin{flalign*}
+	\subsection{Euklidischer Algorithmus}
+		Der euklidische Algorithmus findet den größten gemeinsamen Teiler zweier Zahlen. Das eignet sich ausgezeichnet dazu, Brüche zu kürzen. Der vorletzte Rest bevor $R = 0$ eintritt, ist das Ergebnis.
+		\begin{flalign*}
 		& 2160 : 2592 = 0 \;\;\; R = 2160 \\
 		& 2592 : 2160 = 1 \;\;\; R = 432 \\
 		& 2160 : 432 = 5 \;\;\; R = 0 &&
-	\end{flalign*}
-	\begin{flalign*}
-	\frac{2592}{2160} = \frac{6 \cdot 432}{5 \cdot 432} = \frac{6}{5}&&
-	\end{flalign*}
-\section{Brüche dividieren}
-	Um zwei Brüche zu dividieren bildet man den Kehrwert vom Divisor und multipliziert diesen mit dem Dividend.
-	\begin{flalign*}
-	\frac{p_1}{q_1} : \frac{p_2}{q_2} = \frac{p_1}{q_1} \cdot \frac{q_2}{p_2}&&
-	\end{flalign*}
-	\begin{flalign*}
-	\bigfrac {\frac{p_1}{q_1}}  {\frac{p_2}{q_2}} = \frac{p_1}{q_1} \cdot \frac{q_2}{p_2}&&
-	\end{flalign*}
-\section{Potenzgesetze}
-	\begin{tcolorbox}[boxsep=0pt,top=.35cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-		\begin{flalign*}
-			& a^k \cdot a^m = a^{k+m} \\\\
-			& \cfrac{b^k}{b^m} = b^{k-m} \\\\
-			& a^k \cdot b^k = (a \cdot b)^k \\\\
-			& \cfrac{a^k}{b^k} = \left( \frac{a}{b} \right)^k \\\\
-			& (a^k)^m = a^{k \cdot m} && 
 		\end{flalign*}
-	\end{tcolorbox}
-	\noindent Für $a>0$ und jede rationale Zahl $\frac{p}{q}$ (mit $p,q \in \mathbb{Z}$ und $q>0$) ist
-	\begin{flalign*}
-	a^{\frac{p}{q}} = \sqrt[q]{a^p} = (\sqrt[q]{a})^p && 
-	\end{flalign*}
-	Beispiel: Bestimmen Sie $m$ und $n$ so, dass gilt: $(9x^7)^2 = mx^n$
-	\begin{flalign*}
-		(9x^7)^2 = mx^n \\
-		81x^{14} = mx^n &&
-	\end{flalign*}
-	$m = 81$ und $n = 14$
-\section{Wurzelgesetze}
-	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.7cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-		Für $a,b,c \in \mathbb{R}$ mit $a,b \ge 0, c > 0$ und $m, n \in \mathbb{N}$ gilt
 		\begin{flalign*}
-			& \sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b} \\\\
-			& \sqrt[n]{\frac{a}{c}} = \frac{\sqrt[n]{a}}{\sqrt[n]{c}} \\\\
-			& \sqrt[n]{\sqrt[m]{a}} = \sqrt[n \cdot m]{a} && 
+		\frac{2592}{2160} = \frac{6 \cdot 432}{5 \cdot 432} = \frac{6}{5}&&
 		\end{flalign*}
-	\end{tcolorbox}
-	\noindent Beispiel 1: Nach der dritten Binomischen Formel gilt für $a,b > 0, a \neq b$:
-	\begin{flalign*}
-	& \cfrac{1}{\sqrt{a}+\sqrt{b}} & \mid \cdot (\sqrt{a}-\sqrt{b}) &&&&&&&&&&&& \\
-	= & \cfrac{\sqrt{a}-\sqrt{b}}{(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})} \\ 
-	= & \cfrac{\sqrt{a}-\sqrt{b}}{\sqrt{a}^2-\sqrt{b}^2} \\ 
-	= & \cfrac{\sqrt{a}-\sqrt{b}}{a-b} &&
-	\end{flalign*}
-	\hrulefill\newline\newline
-	Beispiel 2:
-	\begin{flalign*}
-	& \frac{\sqrt{(1+a^2) \cdot (a-b)^2}}{\sqrt[4]{16(1+a^2)^2}} \\
-	= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{\sqrt{16(1+a^2)^2}}} \\ 
-	= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{4(1+a)^2}} \\ 
-	= & \frac{1}{2}\sqrt{(a-b)^2} \\ 
-	= & \frac{\mid a-b \mid}{2} &&
-	\end{flalign*}
-	\subsection{Wurzeltherme vereinfachen (Beispiele)}
+	\subsection{Potenzgesetze}
+	\label{subsec:potenzgesetze}
+		\begin{tcolorbox}[boxsep=0pt,top=.35cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			\begin{flalign*}
+				& a^k \cdot a^m = a^{k+m} \\\\
+				& \cfrac{b^k}{b^m} = b^{k-m} \\\\
+				& a^k \cdot b^k = (a \cdot b)^k \\\\
+				& \cfrac{a^k}{b^k} = \left( \frac{a}{b} \right)^k \\\\
+				& (a^k)^m = a^{k \cdot m} && 
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Für $a>0$ und jede rationale Zahl $\frac{p}{q}$ (mit $p,q \in \mathbb{Z}$ und $q>0$) ist
 		\begin{flalign*}
-			\sqrt{2}+\dfrac{2}{2\sqrt{2}+3} & = \dfrac{}{}\sqrt{2}+\dfrac{ 2\cdot ( 2\sqrt{2}-] ) }{\left( 2\sqrt{2}+3\right) \left( 2\sqrt{2}-3\right) } \\
-			& = \sqrt{2}+\dfrac{4\sqrt{2}-6}{\left( 2\sqrt{2}\right) ^{2}-3^{2}} \\
-			& = \sqrt{2}+\dfrac{4\sqrt{2}-6}{-1} \\
-			& = \sqrt{2}-4\sqrt{2}+6 \\
-			& = 6-3\sqrt{2} &&
+		a^{\frac{p}{q}} = \sqrt[q]{a^p} = (\sqrt[q]{a})^p && 
 		\end{flalign*}
-		\hrulefill
+		Beispiel: Bestimmen Sie $m$ und $n$ so, dass gilt: $(9x^7)^2 = mx^n$
 		\begin{flalign*}
-		\dfrac{1}{\sqrt{1+x^{2}}-1}-\dfrac{1}{\sqrt{1+x^{2}}+1} & = \dfrac{\sqrt{1+x^{2}}+1}{\left( \sqrt{1+x^{2}}-1\right) \cdot \left( \sqrt{1+x^{2}}+1\right) } - \dfrac{\sqrt{1+x^{2}}-1}{\left( \sqrt{1+x^{2}}+1\right) \cdot \left( \sqrt{1+x^{2}}-1\right) } \\
-		& = \dfrac{\left( \sqrt{1+x^{2}}+1\right) -\left( \sqrt{1+x^{2}}-1\right) }{1+x^{2}-1} \\
-		& = \frac{2}{x^2} &&
+			(9x^7)^2 = mx^n \\
+			81x^{14} = mx^n &&
+		\end{flalign*}
+		$m = 81$ und $n = 14$
+	\subsection{Wurzelgesetze}
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.7cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			Für $a,b,c \in \mathbb{R}$ mit $a,b \ge 0, c > 0$ und $m, n \in \mathbb{N}$ gilt
+			\begin{flalign*}
+				& \sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b} \\\\
+				& \sqrt[n]{\frac{a}{c}} = \frac{\sqrt[n]{a}}{\sqrt[n]{c}} \\\\
+				& \sqrt[n]{\sqrt[m]{a}} = \sqrt[n \cdot m]{a} && 
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Beispiel 1: Nach der dritten Binomischen Formel gilt für $a,b > 0, a \neq b$:
+		\begin{flalign*}
+		& \cfrac{1}{\sqrt{a}+\sqrt{b}} & \mid \cdot (\sqrt{a}-\sqrt{b}) &&&&&&&&&&&& \\
+		= & \cfrac{\sqrt{a}-\sqrt{b}}{(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})} \\ 
+		= & \cfrac{\sqrt{a}-\sqrt{b}}{\sqrt{a}^2-\sqrt{b}^2} \\ 
+		= & \cfrac{\sqrt{a}-\sqrt{b}}{a-b} &&
 		\end{flalign*}
 		\hrulefill\newline\newline
-		Beispiel 3: Bestimmen Sie $x$ und $y$, sodass $\frac{x}{y}$ vollständig gekürzt ist.
+		Beispiel 2:
 		\begin{flalign*}
-			\dfrac{2\cdot 2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
-			2 \cdot \dfrac{2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
-			2 \cdot 2^{\frac{5}{2}-\frac{1}{4}} = 2^{\frac{x}{y}} \\
-			2 \cdot 2^{\frac{9}{4}} = 2^{\frac{x}{y}} \\
-			2^{\frac{13}{4}} = 2^{\frac{x}{y}} &&
+		& \frac{\sqrt{(1+a^2) \cdot (a-b)^2}}{\sqrt[4]{16(1+a^2)^2}} \\
+		= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{\sqrt{16(1+a^2)^2}}} \\ 
+		= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{4(1+a)^2}} \\ 
+		= & \frac{1}{2}\sqrt{(a-b)^2} \\ 
+		= & \frac{\mid a-b \mid}{2} &&
 		\end{flalign*}
-		Damit gilt $x = 13$ und $y = 4$.
-\section{Lösungsmenge}
-	Beispiel 1 ($x^2=-1$):\newline
-	$\mathbb{L} = \emptyset$ \newline\newline
-	Beispiel 2 ($x^2 = 4$):\newline
-	$\mathbb{L} = \{-2;2\}$\newline\newline
-	Beispiel 3 ($sin(x) = 0$):\newline
-	$\mathbb{L} = \{...;-2\pi;-\pi;0;\pi;2\pi; ...\}$\newline\newline
-	Beispiel 4 ($x^2 + y = 5$):\newline
-	$\mathbb{L} = \{(x_0;y_0)\in\mathbb{R}^2\mid x^2_0 + y_0 = 5\} = \{(x_0;5-x^2_0) \mid x_0\in\mathbb{R}^2\}$\newline\newline
-	In diesem Fall ist die Lösungsmenge die Funktion $y=5-x^2$.\newline
-	\begin{center}
-		\begin{tikzpicture}
-		\begin{axis}[
-		domain=-10:10,
-		xmin=-10, xmax=10,
-		ymin=-10, ymax=10,
-		samples=200,
-		axis y line=center,
-		axis x line=middle,
-		ticklabel style={fill=white},
-		minor tick num=2,
-		grid=both,
-		grid style={line width=.1pt, draw=gridgray!10},
-		major grid style={line width=.2pt,draw=gridgray!50}
-		]
-		\addplot+[mark=none] {5-x^2};
-		\end{axis}
-		\end{tikzpicture}
-	\end{center}
-\section{Normalform}
-	Eine Gleichung in der Form $ax^2+bx+c=0$ mit $a\neq0$ und $b,c\in \mathbb{R}$, heißt quadratisch. Spezial bezeichnet man $x^2+px+q=0$ mir $p,q\in \mathbb{R}$, als quadratische Gleichung in Normalform.\newline\newline
-	Man kann eine quadratische Gleichung in die Normalform überführen, indem man durch $a$ teilt: $x^2+\frac{b}{a}x+\frac{c}{a}=0$.
-	\subsection{p-q-Formel}
-	\label{subsec:pqformel}
-	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-	Um die Nullstellen einer quadratischen Gleichung in der Normalform zu finden, kann man die p-q-Formel benutzen: $x_{\pm}=-\frac{p}{2}\pm\sqrt{\left(\frac{p}{2}\right)^2-q}$.
-	\end{tcolorbox}
-	\noindent$D=\left(\frac{p}{2}\right)^2-q$ ist die Diskriminante. Sie gibt Aufschluss über die Lösungsmenge.
-	\begin{flalign*}
-	&D>0\Rightarrow Es\;gibt\;zwei\;Lsg.\\
-	&D=0\Rightarrow Es\;gibt\;eine\;Lsg.\\
-	&D<0\Rightarrow Es\;gibt\;keine\;Lsg.&&
-	\end{flalign*}
-\section{Quadratische Ergänzung}
-	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-		Die äquivalente Umformung der quadratischen Gleichung in Normalform $x^2+px+q=0$ in $\left(x+\frac{p}{2}\right)^2=-q+\left(\frac{p}{2}\right)^2$ wird als quadratische Ergänzung bezeichnet. In anderen Worten fügt man den Term $+\left(\frac{p}{2}\right)^2-\left(\frac{p}{2}\right)^2$ hinzu.
-	\end{tcolorbox}
-	\noindent Beispiel:
-		\begin{flalign*}
-	x^2+8x+7 &= 0\\
-	x^2+8x+\left(\frac{8}{2}\right)^2+\left(\frac{8}{2}\right)^2+7 &= 0\\
-	x^2+8x+4^2+4^2+7 &= 0\\
-	(x+4)^2+4^2+7 &= 0\\
-	(x+4)^2-9 &= 0\;\;\;\;\;\;\;\;\;\mid+9\\
-	(x+4)^2 &= 9\;\;\;\;\;\;\;\;\;\mid\sqrt{\ }\\
-	x&=\pm\sqrt{9}-4\\
-	\mathbb{L}&=\{-1;-7\}&&
-	\end{flalign*}
-\section{Faktorisieren}
-	Um die Nullstellen eines Terms zu finden, bietet es sich an, ihn als Produkt einfacher Terme zu schreiben, denn ist ein Faktor $0$, ist das Produkt ebenfalls $0$. Den Term in so eine Form zu überführen, nennt sich Faktorisieren.
-	\subsection{Faktorisierung durch Ausklammern}
-		Beispiel:
-		\begin{flalign*}
-			x^4+2x^3+3x^2 &= 0\\
-			x^2(x^2+2x+3) &= 0\\
-			x^2 &= 0\;oder\;(x^2+2x+3) = 0\\
-			\mathbb{L} &= \{0\}&&
-		\end{flalign*}
-		Für $x^2+2x+3 = 0$ existiert keine reelle Lösung $\Rightarrow$ \highlight{subsec:pqformel}{p-q-Formel}.
-	\subsection{Faktorisierung mit binomischen Formeln}
-		Beispiel:
-		\begin{flalign*}
-		9x^2+30x+25& = 0\\
-		(3x+5)^2& = 0\\
-		3x+5&=0\;\;\;\;\;\;\;\;\;\mid-5\\
-		3x&=-5\;\;\;\;\;\;\;\;\;\mid:3\\
-		x&=-\frac{5}{3}\\
-		\mathbb{L}&=\left\{-\frac{5}{3}\right\}&&
-		\end{flalign*}
-	\subsection{Faktorisierung mit dem Satz von Viëta}
-		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-		Der Satz von Viëta besagt, dass $x^2+px+q=(x-x_1)\cdot(x-x_2)$ ist. $p$ und $q$ lassen sich auf die Nullstellen zurückführen: $x_1+x_2=-p$ und $x_1\cdot x_2 = q$.
+		\subsubsection{Wurzeltherme vereinfachen (Beispiele)}
+			\begin{flalign*}
+				\sqrt{2}+\dfrac{2}{2\sqrt{2}+3} & = \dfrac{}{}\sqrt{2}+\dfrac{ 2\cdot ( 2\sqrt{2}-] ) }{\left( 2\sqrt{2}+3\right) \left( 2\sqrt{2}-3\right) } \\
+				& = \sqrt{2}+\dfrac{4\sqrt{2}-6}{\left( 2\sqrt{2}\right) ^{2}-3^{2}} \\
+				& = \sqrt{2}+\dfrac{4\sqrt{2}-6}{-1} \\
+				& = \sqrt{2}-4\sqrt{2}+6 \\
+				& = 6-3\sqrt{2} &&
+			\end{flalign*}
+			\hrulefill
+			\begin{flalign*}
+			\dfrac{1}{\sqrt{1+x^{2}}-1}-\dfrac{1}{\sqrt{1+x^{2}}+1} & = \dfrac{\sqrt{1+x^{2}}+1}{\left( \sqrt{1+x^{2}}-1\right) \cdot \left( \sqrt{1+x^{2}}+1\right) } - \dfrac{\sqrt{1+x^{2}}-1}{\left( \sqrt{1+x^{2}}+1\right) \cdot \left( \sqrt{1+x^{2}}-1\right) } \\
+			& = \dfrac{\left( \sqrt{1+x^{2}}+1\right) -\left( \sqrt{1+x^{2}}-1\right) }{1+x^{2}-1} \\
+			& = \frac{2}{x^2} &&
+			\end{flalign*}
+			\hrulefill\newline\newline
+			Beispiel 3: Bestimmen Sie $x$ und $y$, sodass $\frac{x}{y}$ vollständig gekürzt ist.
+			\begin{flalign*}
+				\dfrac{2\cdot 2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
+				2 \cdot \dfrac{2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
+				2 \cdot 2^{\frac{5}{2}-\frac{1}{4}} = 2^{\frac{x}{y}} \\
+				2 \cdot 2^{\frac{9}{4}} = 2^{\frac{x}{y}} \\
+				2^{\frac{13}{4}} = 2^{\frac{x}{y}} &&
+			\end{flalign*}
+			Damit gilt $x = 13$ und $y = 4$.
+	\subsection{Logarithmusgesetze}
+	\label{subsec:logarithmusgesetze}
+		\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=1cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			Die Logarithmusrechnung dient dazu das $x$ im Term $b^x=a$ zu bestimmen. Es ist damit quasi das Gegenstück zur Potenzrechnung. Rechnen wir z.~B. $9^3$, kommen wir auf $729$. Umgekehrt können wir jetzt aber auch $log_{9}729$ rechnen und kommen auf $3$. Es gibt außerdem die speziellen Notationen $ln$ und $lg$, die jeweils \textit{natürlicher Logarithmus} und \textit{dekadischer Logarithmus} genannt werden.
+			\begin{flalign*}
+				ln(b):=log_e(b)&&
+			\end{flalign*}
+			\begin{flalign*}
+				lg(b):=log_{10}(b)&&
+			\end{flalign*}
+			\begin{flalign*}
+				log_b(b)=1&&
+			\end{flalign*}
+			\begin{flalign*}
+				log_b(1)=0&&
+			\end{flalign*}
+			\begin{flalign*}
+				log_b(u\cdot v)=log_b(u)+log_b(v)&&
+			\end{flalign*}
+			\begin{flalign*}
+				log_b\left(\frac{u}{v}\right)=log_b(u)-log_b(v)&&
+			\end{flalign*}
+			\begin{flalign*}
+				log_b(u^v)=v\cdot log_b(u)&&
+			\end{flalign*}
+			\begin{flalign*}
+				log_b(\sqrt[u]{v})=\frac{log_b(v)}{u}&&
+			\end{flalign*}
+			\begin{flalign*}
+				log_a(v)=\frac{log_b(v)}{log_b(a)}&&
+			\end{flalign*}
 		\end{tcolorbox}
-		\noindent Daraus lässt sich $x_2=\frac{q}{x_1}$ ableiten. Wenn man also durch Raten eine Nullstelle findet, kann man so die andere Nullstelle auch ganz einfach finden.\newline\newline
-		Beispiel (eine Nullstelle ist $1$, die andere ergibt sich als $\sqrt{2} = \frac{\sqrt{2}}{1}$):
-		\begin{flalign*}
-			x^2+(\sqrt{2}-1)x-\sqrt{2}&=0\\
-			(x-1)\cdot (x+\sqrt{2})&=0\\
-			\mathbb{L}=\{1;-\sqrt{2}\}&&
+\section{Vereinfachungen zum Lösen von Gleichungen}
+	\subsection{Quadratische Ergänzung}
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			Die äquivalente Umformung der quadratischen Gleichung in Normalform $x^2+px+q=0$ in $\left(x+\frac{p}{2}\right)^2=-q+\left(\frac{p}{2}\right)^2$ wird als quadratische Ergänzung bezeichnet. In anderen Worten fügt man den Term $+\left(\frac{p}{2}\right)^2-\left(\frac{p}{2}\right)^2$ hinzu.
+		\end{tcolorbox}
+		\noindent Beispiel:
+			\begin{flalign*}
+		x^2+8x+7 &= 0\\
+		x^2+8x+\left(\frac{8}{2}\right)^2+\left(\frac{8}{2}\right)^2+7 &= 0\\
+		x^2+8x+4^2+4^2+7 &= 0\\
+		(x+4)^2+4^2+7 &= 0\\
+		(x+4)^2-9 &= 0\;\;\;\;\;\;\;\;\;\mid+9\\
+		(x+4)^2 &= 9\;\;\;\;\;\;\;\;\;\mid\sqrt{\ }\\
+		x&=\pm\sqrt{9}-4\\
+		\mathbb{L}&=\{-1;-7\}&&
 		\end{flalign*}
-\section{Substitution}
-	Substitution erlaubt es uns manchmal Gleichungen zu vereinfachen, um leichter mit ihnen rechnen zu können.\newline\newline
-	Beispiel: $x^8-15x^4-16=0$\newline
-	Hier bietet es sich an $x^4$ durch $u$ zu ersetzen.
-	\begin{flalign*}
-	u^2-15u-16&=0\\
-	u_{\pm}&=\frac{15}{2}\pm\sqrt{\left(\frac{-15}{2}\right)^2+6}&&
-	\end{flalign*}
-	Diesen Term wiederum können wir ganz einfach mit der \highlight{subsec:pqformel}{p-q-Formel} lösen. Dabei erhalten wir $u_+=16$ und $u_-=-1$. Um unsere endgültige Lösungsmenge zu bekommen, müssen wir noch resubstituieren.
-	\begin{flalign*}
-	x^4&=u_+=16\\
-	x_1&=2\\
-	x_2&=-2&&
-	\end{flalign*}
-	Da es kein $x$ gibt, das $x^4=-1$ erfüllt, haben wir bereits unsere komplette Lösungsmenge:\newline\newline$\mathbb{L}=\{-2;2\}$.
+	\subsection{Faktorisieren}
+		Um die Nullstellen eines Terms zu finden, bietet es sich an, ihn als Produkt einfacher Terme zu schreiben, denn ist ein Faktor $0$, ist das Produkt ebenfalls $0$. Den Term in so eine Form zu überführen, nennt sich Faktorisieren.
+		\subsubsection{Faktorisierung durch Ausklammern}
+		\label{subsubsec:ausklammern}
+			Beispiel:
+			\begin{flalign*}
+				x^4+2x^3+3x^2 &= 0\\
+				x^2(x^2+2x+3) &= 0\\
+				x^2 &= 0\;oder\;(x^2+2x+3) = 0\\
+				\mathbb{L} &= \{0\}&&
+			\end{flalign*}
+			Für $x^2+2x+3 = 0$ existiert keine reelle Lösung $\Rightarrow$ \highlight{subsubsec:pqformel}{p-q-Formel}.
+		\subsubsection{Faktorisierung mit binomischen Formeln}
+			Beispiel:
+			\begin{flalign*}
+			9x^2+30x+25& = 0\\
+			(3x+5)^2& = 0\\
+			3x+5&=0\;\;\;\;\;\;\;\;\;\mid-5\\
+			3x&=-5\;\;\;\;\;\;\;\;\;\mid:3\\
+			x&=-\frac{5}{3}\\
+			\mathbb{L}&=\left\{-\frac{5}{3}\right\}&&
+			\end{flalign*}
+		\subsubsection{Faktorisierung mit dem Satz von Viëta}
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			Der Satz von Viëta besagt, dass $x^2+px+q=(x-x_1)\cdot(x-x_2)$ ist. $p$ und $q$ lassen sich auf die Nullstellen zurückführen: $x_1+x_2=-p$ und $x_1\cdot x_2 = q$.
+			\end{tcolorbox}
+			\noindent Daraus lässt sich $x_2=\frac{q}{x_1}$ ableiten. Wenn man also durch Raten eine Nullstelle findet, kann man so die andere Nullstelle auch ganz einfach finden.\newline\newline
+			Beispiel (eine Nullstelle ist $1$, die andere ergibt sich als $\sqrt{2} = \frac{\sqrt{2}}{1}$):
+			\begin{flalign*}
+				x^2+(\sqrt{2}-1)x-\sqrt{2}&=0\\
+				(x-1)\cdot (x+\sqrt{2})&=0\\
+				\mathbb{L}=\{1;-\sqrt{2}\}&&
+			\end{flalign*}
+	\subsection{Substitution}
+	\label{subsec:substitution}
+		Substitution erlaubt es uns manchmal Gleichungen zu vereinfachen, um leichter mit ihnen rechnen zu können.\newline\newline
+		Beispiel: $x^8-15x^4-16=0$\newline
+		Hier bietet es sich an $x^4$ durch $u$ zu ersetzen.
+		\begin{flalign*}
+		u^2-15u-16&=0\\
+		u_{\pm}&=\frac{15}{2}\pm\sqrt{\left(\frac{-15}{2}\right)^2+6}&&
+		\end{flalign*}
+		Diesen Term wiederum können wir ganz einfach mit der \highlight{subsubsec:pqformel}{p-q-Formel} lösen. Dabei erhalten wir $u_+=16$ und $u_-=-1$. Um unsere endgültige Lösungsmenge zu bekommen, müssen wir noch resubstituieren.
+		\begin{flalign*}
+		x^4&=u_+=16\\
+		x_1&=2\\
+		x_2&=-2&&
+		\end{flalign*}
+		Da es kein $x$ gibt, das $x^4=-1$ erfüllt, haben wir bereits unsere komplette Lösungsmenge:\newline\newline$\mathbb{L}=\{-2;2\}$.
 \section{Ungleichungen}
 	\subsection{Rechenregeln}
 	\label{subsec:unglrechrgl}
@@ -381,13 +413,13 @@ Rationale Zahlen
 			\node [color=blue] at (5,1) {$f(x)=x^2-2x-7$};
 			\end{tikzpicture}
 		\end{center}
-		Wir stellen also zunächst um und erhalten $x^2-2x-7>0$. Daraus ergibt sich auch die Funktion oben. An der Grafik erkennt man sehr gut, was wir eigentlich suchen. Denn unsere Lösungsmenge sind alle $x$, für die $f(x)$ größer als $0$ ist. Und wie kriegen wir das raus? Indem wir die Nullstellen berechnen. Das Intervall von Unendlich bis zur linken Nullstelle ist ein Teil unserer Lösung und der andere ist das Intervall von der rechten Nullstelle bis unendlich. Dabei muss man stets verschiedene Fälle beachten. Für eine nach unten geöffnete Funktion ($-x^2$) suchen wir den Bereich zwischen den Nullstellen. Für eine Funktion oberhalb der $x$-Achse, die keine Nullstellen hat, sind alle reellen Zahlen unsere Lösungsmenge, wohingegen eine Funktion ohne Nullstellen unterhalb der $x$-Achse eine leere Lösungsmenge liefern würde. Eine Funktion mit genau einer Nullstelle liefert hingegen eine Lösungsmenge aller reellen Zahlen außer der Nullstelle. Es gibt je nach Art der Funktion und Vergleichszeichen in unserer Ungleichung viele unterschiedliche Szenarien, weshalb es immer ratsam ist eine Skizze anzufertigen. Für das Beispiel oben können wir die \highlight{subsec:pqformel}{p-q-Formel} verwenden, um die Nullstellen zu berechnen.
+		Wir stellen also zunächst um und erhalten $x^2-2x-7>0$. Daraus ergibt sich auch die Funktion oben. An der Grafik erkennt man sehr gut, was wir eigentlich suchen. Denn unsere Lösungsmenge sind alle $x$, für die $f(x)$ größer als $0$ ist. Und wie kriegen wir das raus? Indem wir die Nullstellen berechnen. Das Intervall von Unendlich bis zur linken Nullstelle ist ein Teil unserer Lösung und der andere ist das Intervall von der rechten Nullstelle bis unendlich. Dabei muss man stets verschiedene Fälle beachten. Für eine nach unten geöffnete Funktion ($-x^2$) suchen wir den Bereich zwischen den Nullstellen. Für eine Funktion oberhalb der $x$-Achse, die keine Nullstellen hat, sind alle reellen Zahlen unsere Lösungsmenge, wohingegen eine Funktion ohne Nullstellen unterhalb der $x$-Achse eine leere Lösungsmenge liefern würde. Eine Funktion mit genau einer Nullstelle liefert hingegen eine Lösungsmenge aller reellen Zahlen außer der Nullstelle. Es gibt je nach Art der Funktion und Vergleichszeichen in unserer Ungleichung viele unterschiedliche Szenarien, weshalb es immer ratsam ist eine Skizze anzufertigen. Für das Beispiel oben können wir die \highlight{subsubsec:pqformel}{p-q-Formel} verwenden, um die Nullstellen zu berechnen.
 		\begin{flalign*}
 		x_{\pm}&=-\frac{-2}{2}\pm \sqrt{\left(\frac{-2}{2}\right)^2+7}\\
 		x_1&=1-2\sqrt{2}\\
 		x_2&=1+2\sqrt{2}&&
 		\end{flalign*}
-		Jetzt, wo wir die Nullstellen haben, ist es nicht schwer die Lösungsmenge anzugeben. Dabei sollte man darauf achten, dass man abgeschlossene und offene \highlight{sec:intervalle}{Intervalle} nicht verwechselt.
+		Jetzt, wo wir die Nullstellen haben, ist es nicht schwer die Lösungsmenge anzugeben. Dabei sollte man darauf achten, dass man abgeschlossene und offene \highlight{subsec:intervalle}{Intervalle} nicht verwechselt.
 		\begin{flalign*}
 			\mathbb{L}=\mathbb{R}\setminus \left[1-2\sqrt{2};1+2\sqrt{2}\right]=\left(-\infty;1-2\sqrt{2}\right)\cup\left(1+2\sqrt{2}\right)&&
 		\end{flalign*}
@@ -554,7 +586,7 @@ Rationale Zahlen
 		\begin{flalign*}
 			(I)&&x+2y+z&=4\\
 			(II)&&x-y+ \frac{3}{2}z&=-7\\
-			(III)&&-4x+2y&=-2&&&&&&&&&&&&
+			(III)&&-4x+2y&=-2&&&&&&&&
 		\end{flalign*}
 		\subsection{Einsetzungsverfahren}
 			Eine Möglichkeit hat man, wenn man eine Funktion nach einer beliebigen Variable umstellt und diese dann in einer anderen Funktion einsetzt.\newline\newline
@@ -1078,17 +1110,173 @@ Rationale Zahlen
 			0&=9x^2-54x+72\\
 			0&=x^2-6x+8&&
 			\end{flalign*}
-			Jetzt kann man die \highlight{subsec:pqformel}{p-q-Formel} anwenden und erhält die Lösungsmenge $\mathbb{L}=\{2;4\}$.
+			Jetzt kann man die \highlight{subsubsec:pqformel}{p-q-Formel} anwenden und erhält die Lösungsmenge $\mathbb{L}=\{2;4\}$.
 		\subsection{Betragsfunktionen}
-		\label{subsec:betragsfunktionen}
-		Um mit Betragsgleichungen oder auch Betragsfunktionen rechnen zu können muss man mehrere Fälle betrachten. Nämlich einmal den Fall, dass im Betrag ein Wert größer oder gleich $0$ entsteht und einmal den Fall, dass das Ergebnis im Betrag kleiner als Null ist. Betrachten wir einmal ein Beispiel, wo man den Schnittpunkt zwischen $f(x)=\vert x+1\vert$ und $f(x)=x+2$ finden soll.\newline
+			\label{subsec:betragsfunktionen}
+			Um mit Betragsgleichungen oder auch Betragsfunktionen rechnen zu können muss man mehrere Fälle betrachten. Nämlich einmal den Fall, dass im Betrag ein Wert größer oder gleich $0$ entsteht und einmal den Fall, dass das Ergebnis im Betrag kleiner als Null ist. Betrachten wir einmal ein Beispiel, wo man den Schnittpunkt zwischen $f(x)=\vert x+1\vert$ und $f(x)=x+2$ finden soll.\newline
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=200,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none] {x+2};
+				\addplot+[mark=none] {abs(x+1)};
+				\end{axis}
+				\end{tikzpicture}
+			\end{center}
+			Zunächst setzen wir unsere Funktionen gleich und erhalten eine Betragsgleichung. Dann betrachten wir die verschiedenen Fälle für den Betrag.
+			\begin{flalign*}
+			\vert x+1\vert &= \left\{x+1\;\;\;\;\;\;\;\;\;Fall\;x\ge -1  \atop -(x+1)\;\;\;\;Fall\;x<-1 \right.&&
+			\end{flalign*}
+			Durch die Fallunterscheidung kann man die Betragsstriche weglassen, indem man jeden Fall einzeln betrachtet. Hinterher muss man aber noch überprüfen, ob das Ergebnis der Bedingung für $x$ in dem Fall entspricht.\newline\newline
+			Fall $x\ge-1$ ($x+1$ ist positiv):
+			\begin{flalign*}
+			x+1&=x+2 &\mid-x &&&&&&&&&&\\
+			1&=2&&
+			\end{flalign*}
+			Für den Fall $x\ge-1$ gibt es keine Lösung, also weiter zum nächsten Fall.\newline\newline
+			Fall $x<-1$ ($x+1$ ist negativ):
+			\begin{flalign*}
+			-x-1&=x+2 &\mid+x-2 &&&&&&&&&&\\
+			2x&=-3\\
+			x&=-\frac{3}{2}&&
+			\end{flalign*}
+			Damit haben wir unsere Lösungsmenge, denn wir bekommen für den Fall $-(x<-1)$ ein Ergebnis, welches dem Kriterium $x<-1$ entspricht.
+			\begin{flalign*}
+			\mathbb{L}=\left\{-\frac{3}{2}\right\}&&
+			\end{flalign*}
+			Durch einsetzen dieser $x$-Koordinate, finden wir auch den dazugehörigen $y$-Wert: $P\left(-\frac{3}{2}\mid\frac{1}{2}\right)$:
+			\subsubsection{Betragsgleichungen mit mehreren Beträgen}
+			Haben wir mehrere Beträge in unserer Gleichung, haben wir auch mehrere Fälle zu betrachten. Schon wir uns das an einem Beispiel an, indem wir die Schnittpunkte von $f(x)=\vert x+1 \vert + 5$ und $f(x)=\vert 2x-4 \vert$ suchen.
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:15,
+				xmin=-5, xmax=15,
+				ymin=0, ymax=20,
+				samples=200,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=blue] {abs(x+1)+5};
+				\addplot+[mark=none,color=red] {abs(2*x-4)};
+				\end{axis}
+				\node [color=blue] at (7,4) {$f(x)=\vert x+1 \vert + 5$};
+				\node [color=red] at (5.5,1.7) {$f(x)=\vert 2x-4 \vert$};
+				\end{tikzpicture}
+			\end{center}
+			Zunächst setzen wir die Funktionen wieder gleich.
+			\begin{flalign*}
+			\vert x+1 \vert + 5=\vert 2x-4 \vert&&
+			\end{flalign*}
+			Die Fälle müssen wir alle einzeln betrachten. Das heißt, wir haben insgesamt 4 Fälle. Wir schauen uns zunächst die beiden Fälle eines Betrages an und dann innerhalb dieser Fälle betrachten wir die Fälle für den zweiten Betrag.\newline\newline
+			1. Fall für $\vert x+1 \vert$: $x\ge-1$ ($x+1$ ist positiv)
+			\begin{flalign*}
+			x+1+5&=\vert 2x-4\vert\\
+			x+6&=\vert 2x-4\vert&&
+			\end{flalign*}
+			Innerhalb dieses ersten Falles unterscheiden wir jetzt noch einmal für den übrigen Betrag.
+			\begin{tcolorbox}[boxsep=0pt, left=2em, top=1em, bottom=1em,right=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				1. Fall für $\vert2x-4\vert$: $x\ge2$ ($2x-4$ ist positiv)
+				\begin{flalign*}
+				x+6&=2x-4\\
+				x+10&=2x\\
+				10&=x&&
+				\end{flalign*}
+				Jetzt müssen wir überprüfen, ob $x\ge2$ und $x\ge-1$ für $x=10$ gelten. Das ist der Fall daher haben wir schon mal einen Teil unserer Lösungsmenge. Auf der Grafik kann man auch sehen, dass sich die beiden Graphen dort schneiden.\newline\newline
+				2. Fall für $\vert2x-4\vert$: $x<2$ ($2x-4$ ist negativ)
+				\begin{flalign*}
+				x+6&=-(2x-4)\\
+				x+6&=-2x+4\\
+				3x+6&=4\\
+				3x&=-2\\
+				x&=-\frac{2}{3}&&
+				\end{flalign*}
+				Wir überprüfen jetzt wieder, ob $x<2$ und $x\ge-1$ für $x=-\frac{2}{3}$ gelten. Da das der Fall ist, können wir auch dieses $x$ zu unserer Lösungsmenge hinzufügen.
+			\end{tcolorbox}
+			\noindent 2. Fall für $\vert x+1 \vert$: $x<-1$ ($x+1$ ist negativ)
+			\begin{flalign*}
+			-(x+1)+5&=\vert 2x-4\vert\\
+			-x+4&=\vert 2x-4\vert&&
+			\end{flalign*}
+			\begin{tcolorbox}[boxsep=0pt, left=2em, top=1em, bottom=1em,right=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				1. Fall für $\vert2x-4\vert$: $x\ge2$ ($2x-4$ ist positiv)\newline\newline
+				In diesem Fall müssen wir gar nicht erst versuchen $x$ auszurechnen, denn es gibt keine Zahl, die sowohl $x\ge2$, als auch $x<-1$ erfüllt.\newline\newline
+				2. Fall für $\vert2x-4\vert$: $x<2$ ($2x-4$ ist negativ)
+				\begin{flalign*}
+				-x+4&=-(2x-4)\\
+				-x+4&=-2x+4\\
+				-x&=-2x\\
+				x&=0&&
+				\end{flalign*}
+				Wir haben jetzt $x=0$ als Lösung, jedoch erfüllt dieses Ergebnis nicht die Bedingung $x<-1$ und ist daher auch nicht in der Lösungsmenge enthalten.
+			\end{tcolorbox}
+			\noindent Abschließend können wir feststellen, dass unsere Lösungsmenge $\mathbb{L}=\left\{10;-\frac{2}{3}\right\}$ ist. Durch Einsetzen in eine der beiden Funktionen erhalten wir dann unsere Schnittpunkte $P_1(10\mid 16)$ und $P_2\left(-\frac{2}{3}\mid\frac{16}{3}\right)$.
+		\subsection{Polynomfunktionen}
+			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.85cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				Polynome sind die Summe aus den Vielfachen von Monomen. Eine Polynomfunktion mit den Koeffizienten $a_n$ hat folgende Form:
+				\begin{flalign*}
+				p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x^1+1_0&&
+				\end{flalign*}
+				Das Verhalten einer Polynomfunktion hängt für $x\to \infty$ vom Summanden mit der höchsten Potenz und für $x\to 0$ vom Summanden mit der niedrigsten Potenz ab.\newline\newline
+				\textbf{Nullstellen}\newline\newline
+				Polynome n-ten Grades haben maximal n Nullstellen.
+				\begin{flalign*}
+					p(x)=a_{2k-1}x^{2k-1}+...+a_1x+a_0,\;wenn\;a_{2k-1}\neq 0&&
+				\end{flalign*}
+				Polynome ungeraden Grades haben mindestens eine Nullstelle.
+				\begin{flalign*}
+					p(x)=a_{2k}x^{2k}+...+a_2x^2+a_0,\;wenn\;a_{2k}\ge 0\;und\;a_0>0&&
+				\end{flalign*}
+				Polynome geraden Grades besitzen keine Nullstellen.\newline
+				\begin{center}
+					\begin{tikzpicture}
+					\begin{axis}[
+					domain=-4:4,
+					xmin=-7, xmax=2.5,
+					ymin=-4, ymax=4,
+					samples=300,
+					axis y line=center,
+					axis x line=middle,
+					ticklabel style={fill=white},
+					minor tick num=2,
+					grid=both,
+					grid style={line width=.1pt, draw=gridgray!10},
+					major grid style={line width=.2pt,draw=gridgray!50}
+					]
+					\addplot+[mark=none,color=blue] {x^4-x^3-2*x^2};
+					\addplot+[mark=none,color=red] {x^4};
+					\addplot+[mark=none,color=teal] {-2*x^2};
+					\end{axis}
+					\node [color=blue] at (2.3,1.85) {$f(x)=x^4-x^3-2x^2$};
+					\node [color=red] at (2.8,5) {$f(x)=x^4$};
+					\node [color=teal] at (2.8,1) {$f(x)=-2x^2$};
+					\end{tikzpicture}
+				\end{center}
+			\end{tcolorbox}
 		\begin{center}
 			\begin{tikzpicture}
 			\begin{axis}[
 			domain=-5:5,
+			restrict y to domain=-30:60,
 			xmin=-5, xmax=5,
 			ymin=-5, ymax=5,
-			samples=200,
+			samples=300,
 			axis y line=center,
 			axis x line=middle,
 			ticklabel style={fill=white},
@@ -1097,42 +1285,105 @@ Rationale Zahlen
 			grid style={line width=.1pt, draw=gridgray!10},
 			major grid style={line width=.2pt,draw=gridgray!50}
 			]
-			\addplot+[mark=none] {x+2};
-			\addplot+[mark=none] {abs(x+1)};
+			\addplot+[mark=none,color=blue] {4*x^6+x^4-3*x^2+2};
 			\end{axis}
+			\node [color=blue] at (3.78,3.2) {$f(x)=4x^6+x^4-3x^2+2$};
+			\end{tikzpicture}
+			\hspace{1cm}
+			\begin{tikzpicture}
+			\begin{axis}[
+			domain=-5:5,
+			restrict y to domain=-30:60,
+			xmin=-5, xmax=5,
+			ymin=-5, ymax=5,
+			samples=300,
+			axis y line=center,
+			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
+			]
+			\addplot+[mark=none,color=red] {3*x^5+2*x^4-3*x^3+1};
+			\end{axis}
+			\node [color=red] at (5,2.15) {$f(x)=3x^5+2x^4-3x^3+1$};
+			\end{tikzpicture}\newline\newline\newline
+			\begin{tcolorbox}[boxsep=0pt, left=2.2cm, top=0cm, bottom=0cm,right=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{center}
+					\begin{tikzpicture}
+					\begin{axis}[
+					domain=-5:5,
+					restrict y to domain=-30:60,
+					xmin=-5, xmax=5,
+					ymin=-5, ymax=5,
+					samples=300,
+					axis y line=center,
+					axis x line=middle,
+					ticklabel style={fill=white},
+					minor tick num=2,
+					grid=both,
+					grid style={line width=.1pt, draw=gridgray!10},
+					major grid style={line width=.2pt,draw=gridgray!50}
+					]
+					\addplot+[mark=none,color=teal] {x^5+2*x^4-3*x^3-3*x^2+4*x};
+					\end{axis}
+					\node [color=teal] at (7,1) {$f(x)=x^5+2x^4-3x^3-3x^2+4x$};
+					\end{tikzpicture}
+				\end{center}
+			\end{tcolorbox}
+		\end{center}
+		\subsubsection{Lösen durch Substitution}
+		In diesem Beispiel werden die Nullstellen der Funktion mithilfe von \highlight{subsec:substitution}{Substitution} und anschließendem Anwenden der \highlight{subsubsec:pqformel}{p-q-Formel} ermittelt.\newline
+		\begin{center}
+			\begin{tikzpicture}
+				\begin{axis}[
+				width=17cm,
+				height=7cm,
+				domain=-5:10,
+				restrict y to domain=-30:60,
+				xmin=-6, xmax=6,
+				ymin=-6, ymax=6,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=blue] {x^4-5*x^2+2};
+				\end{axis}
+				\node [color=blue] at (12.5,1.3) {$p(x)=x^4-5x^2+2$};
 			\end{tikzpicture}
 		\end{center}
-		Zunächst setzen wir unsere Funktionen gleich und erhalten eine Betragsgleichung. Dann betrachten wir die verschiedenen Fälle für den Betrag.
 		\begin{flalign*}
-		\vert x+1\vert &= \left\{x+1\;\;\;\;\;\;\;\;\;Fall\;x\ge -1  \atop -(x+1)\;\;\;\;Fall\;x<-1 \right.&&
+			p(x)&=x^4-5x^2+2\\
+			0&=x^4-5x^2+2\\
+			0&=u^2-5u+2\\
+			u_{1,2}&=\frac{5}{2}\pm\sqrt{\left(-\frac{5}{2}\right)^2-2}\\
+			u_1&=\frac{5+\sqrt{17}}{2}\\
+			u_2&=\frac{5-\sqrt{17}}{2}\\\\
+			x_{1,2}^2&=\frac{5+\sqrt{17}}{2}\\
+			x_{1,2}^2&=\pm 2,135779205\\\\
+			x_{3,4}^2&=\frac{5-\sqrt{17}}{2}\\
+			x_{3,4}^2&=0,6621534469\\\\
+			\mathbb{L}&=\{-2,135779205;-0,6621534469;0,6621534469;2,135779205\}&&
 		\end{flalign*}
-		Durch die Fallunterscheidung kann man die Betragsstriche weglassen, indem man jeden Fall einzeln betrachtet. Hinterher muss man aber noch überprüfen, ob das Ergebnis der Bedingung für $x$ in dem Fall entspricht.\newline\newline
-		Fall $x\ge-1$ ($x+1$ ist positiv):
-		\begin{flalign*}
-		x+1&=x+2 &\mid-x &&&&&&&&&&\\
-		1&=2&&
-		\end{flalign*}
-		Für den Fall $x\ge-1$ gibt es keine Lösung, also weiter zum nächsten Fall.\newline\newline
-		Fall $x<-1$ ($x+1$ ist negativ):
-		\begin{flalign*}
-		-x-1&=x+2 &\mid+x-2 &&&&&&&&&&\\
-		2x&=-3\\
-		x&=-\frac{3}{2}&&
-		\end{flalign*}
-		Damit haben wir unsere Lösungsmenge, denn wir bekommen für den Fall $-(x<-1)$ ein Ergebnis, welches dem Kriterium $x<-1$ entspricht.
-		\begin{flalign*}
-		\mathbb{L}=\left\{-\frac{3}{2}\right\}&&
-		\end{flalign*}
-		Durch einsetzen dieser $x$-Koordinate, finden wir auch den dazugehörigen $y$-Wert: $P\left(-\frac{3}{2}\mid\frac{1}{2}\right)$:
-		\subsubsection{Betragsgleichungen mit mehreren Beträgen}
-		Haben wir mehrere Beträge in unserer Gleichung, haben wir auch mehrere Fälle zu betrachten. Schon wir uns das an einem Beispiel an, indem wir die Schnittpunkte von $f(x)=\vert x+1 \vert + 5$ und $f(x)=\vert 2x-4 \vert$ suchen.
+		\hrulefill
+		\subsubsection{Lösen durch Faktorisierung}
+		In diesem Beispiel werden die Nullstellen der Funktion mithilfe von \highlight{subsubsec:ausklammern}{Faktorisierung durch Ausklammern} ermittelt.\newline
 		\begin{center}
 			\begin{tikzpicture}
 			\begin{axis}[
-			domain=-5:15,
-			xmin=-5, xmax=15,
-			ymin=0, ymax=20,
-			samples=200,
+			width=17cm,
+			height=7cm,
+			domain=-5:10,
+			restrict y to domain=-30:60,
+			xmin=-6, xmax=6,
+			ymin=-6, ymax=6,
+			samples=300,
 			axis y line=center,
 			axis x line=middle,
 			ticklabel style={fill=white},
@@ -1141,58 +1392,316 @@ Rationale Zahlen
 			grid style={line width=.1pt, draw=gridgray!10},
 			major grid style={line width=.2pt,draw=gridgray!50}
 			]
-			\addplot+[mark=none,color=blue] {abs(x+1)+5};
-			\addplot+[mark=none,color=red] {abs(2*x-4)};
+			\addplot+[mark=none,color=blue] {x^5-3*x^3};
 			\end{axis}
-			\node [color=blue] at (7,4) {$f(x)=\vert x+1 \vert + 5$};
-			\node [color=red] at (5.5,1.7) {$f(x)=\vert 2x-4 \vert$};
+			\node [color=blue] at (11.75,1.3) {$p(x)=x^5-3x^3$};
 			\end{tikzpicture}
 		\end{center}
-		Zunächst setzen wir die Funktionen wieder gleich.
 		\begin{flalign*}
-		\vert x+1 \vert + 5=\vert 2x-4 \vert&&
+		p(x)&=x^5-3x^3\\
+		0&=x^5-3x^3\\
+		0&=x^2(x^2-3)\\
+		0&=x^2(x^2-\sqrt{3})(x^2+\sqrt{3})\\
+		\mathbb{L}&=\{-\sqrt{3};0;\sqrt{3}\}&&
 		\end{flalign*}
-		Die Fälle müssen wir alle einzeln betrachten. Das heißt, wir haben insgesamt 4 Fälle. Wir schauen uns zunächst die beiden Fälle eines Betrages an und dann innerhalb dieser Fälle betrachten wir die Fälle für den zweiten Betrag.\newline\newline
-		1. Fall für $\vert x+1 \vert$: $x\ge-1$ ($x+1$ ist positiv)
+		\hrulefill
+		\subsubsection{Lösen mit binomischen Formeln}
+		In diesem Beispiel wird Funktion mithilfe der \highlight{sec:binomischeformeln}{binomischen Formeln} so vereinfacht, dass man die Nullstellen ganz einfach ablesen kann.\newline
+		\begin{center}
+			\begin{tikzpicture}
+			\begin{axis}[
+			width=17cm,
+			height=7cm,
+			domain=-5:10,
+			restrict y to domain=-30:60,
+			xmin=-6, xmax=6,
+			ymin=-6, ymax=6,
+			samples=300,
+			axis y line=center,
+			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50}
+			]
+			\addplot+[mark=none,color=blue] {x^4-2*x^2+1};
+			\end{axis}
+			\node [color=blue] at (11.6,3.2) {$p(x)=x^4-2x^2+1$};
+			\end{tikzpicture}
+		\end{center}
 		\begin{flalign*}
-		x+1+5&=\vert 2x-4\vert\\
-		x+6&=\vert 2x-4\vert&&
+		p(x)&=x^4-4x^2+1\\
+		0&=x^4-4x^2+1\\
+		0&=(x^2-1)^2\\
+		x&=\pm 1\\
+		\mathbb{L}&=\{-1;1\}&&
 		\end{flalign*}
-		Innerhalb dieses ersten Falles unterscheiden wir jetzt noch einmal für den übrigen Betrag.
-		\begin{tcolorbox}[boxsep=0pt, left=2em, top=1em, bottom=1em,right=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
-			1. Fall für $\vert2x-4\vert$: $x\ge2$ ($2x-4$ ist positiv)
+		\hrulefill
+		\subsubsection{Lösen durch Polynomdivision}
+			Wenn alle anderen Stränge reißen, ist man leider gezwungen die Polynomdivision durchzuführen. Um damit beginnen zu können, braucht man aber mindestens eine Nullstelle, die man durch Raten findet. Für das Beispiel unten finden wir so heraus, dass eine Nullstelle $x_1=1$ ist. Jetzt stellen wir $x=1$ nach $0$ um und erhalten $0=x-1$. Anschließend teilen wir unser Polynom durch $x-1$.\newline
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				width=17cm,
+				height=7cm,
+				domain=-5:10,
+				restrict y to domain=-30:60,
+				xmin=-6, xmax=6,
+				ymin=-6, ymax=6,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=blue] {2*x^3-5*x^2-2*x+5};
+				\end{axis}
+				\node [color=blue] at (3.9,3.2) {$p(x)=2x^3-5x^2-2x+5$};
+				\end{tikzpicture}
+			\end{center}
 			\begin{flalign*}
-			x+6&=2x-4\\
-			x+10&=2x\\
-			10&=x&&
+			(2x^3-5x^2-2x+5):(x-1)&&
 			\end{flalign*}
-			Jetzt müssen wir überprüfen, ob $x\ge2$ und $x\ge-1$ für $x=10$ gelten. Das ist der Fall daher haben wir schon mal einen Teil unserer Lösungsmenge. Auf der Grafik kann man auch sehen, dass sich die beiden Graphen dort schneiden.\newline\newline
-			2. Fall für $\vert2x-4\vert$: $x<2$ ($2x-4$ ist negativ)
+			Zunächst teilt man den Term mit der höchsten Potenz $2x^3$ durch $x$ und erhält $2x^2$. Das ist der erste Teil unseres Ergebnisses.
 			\begin{flalign*}
-			x+6&=-(2x-4)\\
-			x+6&=-2x+4\\
-			3x+6&=4\\
-			3x&=-2\\
-			x&=-\frac{2}{3}&&
+			(2x^3-5x^2-2x+5):(x-1)=2x^2...&&
 			\end{flalign*}
-			Wir überprüfen jetzt wieder, ob $x<2$ und $x\ge-1$ für $x=-\frac{2}{3}$ gelten. Da das der Fall ist, können wir auch dieses $x$ zu unserer Lösungsmenge hinzufügen.
-		\end{tcolorbox}
-		\noindent 2. Fall für $\vert x+1 \vert$: $x<-1$ ($x+1$ ist negativ)
-		\begin{flalign*}
-		-(x+1)+5&=\vert 2x-4\vert\\
-		-x+4&=\vert 2x-4\vert&&
-		\end{flalign*}
-		\begin{tcolorbox}[boxsep=0pt, left=2em, top=1em, bottom=1em,right=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
-			1. Fall für $\vert2x-4\vert$: $x\ge2$ ($2x-4$ ist positiv)\newline\newline
-			In diesem Fall müssen wir gar nicht erst versuchen $x$ auszurechnen, denn es gibt keine Zahl, die sowohl $x\ge2$, als auch $x<-1$ erfüllt.\newline\newline
-			2. Fall für $\vert2x-4\vert$: $x<2$ ($2x-4$ ist negativ)
+			Jetzt muss man zurück multiplizieren, indem man den Term $2x^2$, den wir gerade bekommen haben, mit unserem ursprünglichen Divisor $x-1$ multiplizieren. Das Ergebnis ziehen wir von unserem Polynom ab und holen anschließend den nächsten Ausdruck runter. Diesen Prozess wiederholen wir jetzt so oft, wie möglich.\newline\newline
+			\polylongdiv[style=C,div=:]{2x^3-5x^2-2x+5}{x-1}\newline\newline
+			Mit der Funktion, die wir jetzt haben, können wir ganz einfach die restlichen Nullstellen errechnen.\newline
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				width=17cm,
+				height=7cm,
+				domain=-5:10,
+				restrict y to domain=-30:60,
+				xmin=-6, xmax=6,
+				ymin=-10, ymax=10,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=blue] {2*x^2-3*x-5};
+				\end{axis}
+				\node [color=blue] at (3.9,3.2) {$f(x)=2x^2-3x-5$};
+				\end{tikzpicture}
+			\end{center}
 			\begin{flalign*}
-			-x+4&=-(2x-4)\\
-			-x+4&=-2x+4\\
-			-x&=-2x\\
-			x&=0&&
+				f(x)&=2x^2-3x-5\\
+				0&=2x^2-3x-5\\
+				0&=x^2-1,5x-2,5\\
+				x_{1,2}&=\frac{1,5}{2}\pm\sqrt{\left(-\frac{1,5}{2}\right)^2+2,5}\\
+				x_1&=2,5\\
+				x_2&=-1\\
+				\mathbb{L}&=\{-1;1;2,5\}&&
 			\end{flalign*}
-			Wir haben jetzt $x=0$ als Lösung, jedoch erfüllt dieses Ergebnis nicht die Bedingung $x<-1$ und ist daher auch nicht in der Lösungsmenge enthalten.
-		\end{tcolorbox}
-		\noindent Abschließend können wir feststellen, dass unsere Lösungsmenge $\mathbb{L}=\left\{10;-\frac{2}{3}\right\}$ ist. Durch Einsetzen in eine der beiden Funktionen erhalten wir dann unsere Schnittpunkte $P_1(10\mid 16)$ und $P_2\left(-\frac{2}{3}\mid\frac{16}{3}\right)$.
+		\subsection{Exponentialfunktionen}
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				Eine Funktion der Form $f(x)=a^x$ wird als Exponentialfunktion bezeichnet, denn die Variable $x$ steht im Exponenten. Speziell wird die Funktion $f(x)=e^x$ als \textit{natürliche Exponentialfunktion} bezeichnet.
+			\end{tcolorbox}
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				restrict y to domain=-30:60,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=blue] {e^x};
+				\end{axis}
+				\node [color=blue] at (4.9,3.3) {$f(x)=e^x$};
+				\end{tikzpicture}
+				\hspace{1cm}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				restrict y to domain=-30:60,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=red] {e^(-x)};
+				\end{axis}
+				\node [color=red] at (2,3.3) {$f(x)=e^{-x}$};
+				\end{tikzpicture}
+			\end{center}
+			\subsubsection{Lösen von Exponentialgleichungen}
+				Zum Lösen von Exponentialgleichungen brauchen wir in der Regel den \highlight{subsec:logarithmusgesetze}{Logarithmus}. Wie das funktioniert, sehen wir an dem Beispiel hier drunter. Dabei ist die Nullstelle der Funktion zu bestimmen. In diesem Beispiel sollte man sich außerdem nochmal daran erinnern, dass $\sqrt[n]{x}$ dasselbe ist, wie $x^{\frac{1}{n}}$.
+				\begin{center}
+					\begin{tikzpicture}
+					\begin{axis}[
+					width=17cm,
+					height=7cm,
+					domain=-6:6,
+					restrict y to domain=-30:60,
+					xmin=-6, xmax=6,
+					ymin=-10, ymax=10,
+					samples=300,
+					axis y line=center,
+					axis x line=middle,
+					ticklabel style={fill=white},
+					minor tick num=2,
+					grid=both,
+					grid style={line width=.1pt, draw=gridgray!10},
+					major grid style={line width=.2pt,draw=gridgray!50}
+					]
+					\addplot+[mark=none,color=blue] {(7^x)^(1/4)-4};
+					\end{axis}
+					\node [color=blue] at (10,3.2) {$f(x)=\sqrt[4]{7^x}-4$};
+					\end{tikzpicture}
+				\end{center}
+				\begin{flalign*}
+					f(x)&=\sqrt[4]{7^x}-4\\
+					0&=\sqrt[4]{7^x}-4 && \mid +4 &&&&&&&&&&&&& \\
+					4&=7^{\frac{x}{4}} && \mid log_7() &&&&&&&&&&&&& \\
+					0,7124143742&=\frac{x}{4} && \mid \cdot 4 &&&&&&&&&&&&& \\
+					x&=2,849657497\\
+					\mathbb{L}=\{2,849657497\}&&
+				\end{flalign*}
+		\subsection{Logarithmusfunktionen}
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				Funktionen wie $f(x)=log_3(x^2)$ werden als Logarithmusfunktionen bezeichnet, da sie einen oder mehrere Logarithmen beinhalten. Speziell bezeichnet man $f(x)=ln(x)$ als \textit{natürliche Logarithmusfunktion} und $f(x)=lg(x)$ als \textit{dekadische Logarithmusfunktion}.
+			\end{tcolorbox}
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				restrict y to domain=-30:60,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=blue] {ln(x)};
+				\end{axis}
+				\node [color=blue] at (4.9,4.3) {$f(x)=ln(x)$};
+				\end{tikzpicture}
+				\hspace{1cm}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				restrict y to domain=-30:60,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=red] {log10(x)};
+				\end{axis}
+				\node [color=red] at (2,3.3) {$f(x)=lg(x)$};
+				\end{tikzpicture}
+				\newline\newline\newline
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				restrict y to domain=-30:60,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=teal] {-ln(abs(x))};
+				\end{axis}
+				\node [color=teal] at (5.1,1.3) {$f(x)=-ln(\vert x\vert)$};
+				\end{tikzpicture}
+				\hspace{1cm}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=-5:5,
+				restrict y to domain=-30:60,
+				xmin=-5, xmax=5,
+				ymin=-5, ymax=5,
+				samples=300,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\addplot+[mark=none,color=violet] {log2(x)};
+				\end{axis}
+				\node [color=violet] at (1.9,3.2) {$f(x)=log_2(x)$};
+				\end{tikzpicture}
+			\end{center}
+			\subsubsection{Lösen von Logarithmusgleichungen}
+				Gesucht ist hier die Nullstelle einer Logarithmusfunktion. Hinweis: Um einen Logarithmus aufzulösen musst du beide Seiten der Gleichung als Exponent zur Basis des jeweiligen Logarithmus setzen. Um dort hinzu kommen hilft es enorm, die Gleichung zunächst umzuformen. Wenn du Schwierigkeiten mit den Umformungen in diesem Beispiel hast, schaue dir noch einmal die \highlight{subsec:potenzgesetze}{Potenzgesetze} und \highlight{subsec:logarithmusgesetze}{Logarithmusgesetze} an.
+				\begin{center}
+					\begin{tikzpicture}
+					\begin{axis}[
+					width=17cm,
+					height=7cm,
+					domain=-10:10,
+					restrict y to domain=-30:30,
+					xmin=-10, xmax=10,
+					ymin=-10, ymax=10,
+					samples=300,
+					axis y line=center,
+					axis x line=middle,
+					ticklabel style={fill=white},
+					minor tick num=2,
+					grid=both,
+					grid style={line width=.1pt, draw=gridgray!10},
+					major grid style={line width=.2pt,draw=gridgray!50}
+					]
+					\addplot+[mark=none,color=blue] {3*log10(x^3)-2*log10(x^2)-4};
+					\end{axis}
+					\node [color=blue] at (11,3.3) {$f(x)=3\cdot lg(x^3)-2\cdot lg(x^2)-4$};
+					\end{tikzpicture}
+				\end{center}
+				\begin{flalign*}
+					f(x)&=3\cdot lg(x^3)-2\cdot lg(x^2)-4\\
+					0&=3\cdot lg(x^3)-2\cdot lg(x^2)-4\\
+					0&=lg((x^3)^3)-lg((x^2)^2)-4&&\mid +4&&&&&&&&&&&\\
+					lg\left(\frac{x^9}{x^4} \right)&=4\\
+					lg(x^5)&=4&&\mid 10^{()}\\
+					10^{lg(x^5)}&=10^4\\
+					x^5&=10^4&&\mid \sqrt[5]{\;}\\
+					x&=6,309573445\\
+					\mathbb{L}&=\{6,309573445\}&&
+				\end{flalign*}
 \end{document}

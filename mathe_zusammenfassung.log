@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  8 AUG 2021 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  9 AUG 2021 19:07
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -42,9 +42,8 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 
 ("C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-))) (.git/HEAD.)
-(.git/refs/heads/main.) ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
-"
+)))
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
 
@@ -940,6 +939,10 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cfttabindent=\skip89
 \cfttabnumwidth=\skip90
 )
+("C:\Program Files\MiKTeX\tex/latex/polynom\polynom.sty"
+Package: polynom 2017/07/17 0.19 (CH,HA)
+\pld@currstage=\count350
+)
 ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-euclide.sty"
 2020/03/18 3.06c tkz-euclide.sty
 Package: tkz-euclide 2020/03/18 3.06c for euclidan geometry 
@@ -995,7 +998,7 @@ ations.text.code.tex"
 aryintersections.code.tex"
 ("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryintersections.cod
 e.tex"
-\pgf@intersect@solutions=\count350
+\pgf@intersect@solutions=\count351
 ))
 ("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
 arypatterns.code.tex"
@@ -1030,10 +1033,10 @@ arythrough.code.tex"
 File: tikzlibrarythrough.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) ("C:\Program Files\MiKTeX\tex/latex/numprint\numprint.sty"
 Package: numprint 2012/08/20 v1.39 Print numbers (HH)
-\c@nprt@mantissa@digitsbefore=\count351
-\c@nprt@mantissa@digitsafter=\count352
-\c@nprt@exponent@digitsbefore=\count353
-\c@nprt@exponent@digitsafter=\count354
+\c@nprt@mantissa@digitsbefore=\count352
+\c@nprt@mantissa@digitsafter=\count353
+\c@nprt@exponent@digitsbefore=\count354
+\c@nprt@exponent@digitsafter=\count355
 \nprt@digitwidth=\skip91
 \nprt@sepwidth=\skip92
 \nprt@decimalwidth=\skip93
@@ -1041,12 +1044,12 @@ Package: numprint 2012/08/20 v1.39 Print numbers (HH)
 \nprt@digittoks=\toks49
 \nprt@pretoks=\toks50
 \nprt@posttoks=\toks51
-\nprt@thisdigit=\count355
-\nprt@curpos=\count356
-\nprt@rndpos=\count357
-\c@nprt@digitsfirstblock=\count358
-\c@nprt@blockcnt=\count359
-\c@nprt@cntprint=\count360
+\nprt@thisdigit=\count356
+\nprt@curpos=\count357
+\nprt@rndpos=\count358
+\c@nprt@digitsfirstblock=\count359
+\c@nprt@blockcnt=\count360
+\c@nprt@cntprint=\count361
  No configuration file `numprint.cfg' found.)
 ("C:\Program Files\MiKTeX\tex/latex/l3packages/xfp\xfp.sty"
 Package: xfp 2020-05-15 L3 Floating point unit
@@ -1057,19 +1060,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 ("C:\Program Files\MiKTeX\tex/latex/fp\defpattern.sty"
 Package: defpattern 1994/10/12
-\actioncount=\count361
+\actioncount=\count362
 )
 ("C:\Program Files\MiKTeX\tex/latex/fp\fp-basic.sty"
 Package: fp-basic 1996/05/13
-\FP@xs=\count362
-\FP@xia=\count363
-\FP@xib=\count364
-\FP@xfa=\count365
-\FP@xfb=\count366
-\FP@rega=\count367
-\FP@regb=\count368
-\FP@regs=\count369
-\FP@times=\count370
+\FP@xs=\count363
+\FP@xia=\count364
+\FP@xib=\count365
+\FP@xfa=\count366
+\FP@xfb=\count367
+\FP@rega=\count368
+\FP@regb=\count369
+\FP@regs=\count370
+\FP@times=\count371
 )
 ("C:\Program Files\MiKTeX\tex/latex/fp\fp-addons.sty"
 Package: fp-addons 1995/03/15
@@ -1088,7 +1091,7 @@ Package: fp-pas 1994/08/29
 )
 ("C:\Program Files\MiKTeX\tex/latex/fp\fp-random.sty"
 Package: fp-random 1995/02/23
-\FPseed=\count371
+\FPseed=\count372
 )
 ("C:\Program Files\MiKTeX\tex/latex/fp\fp-eqn.sty"
 Package: fp-eqn 1995/04/03
@@ -1118,7 +1121,7 @@ Package: fp-eval 1995/04/03
 \tkz@tcy=\dimen317
 \tkz@tdx=\dimen318
 \tkz@tdy=\dimen319
-\tkz@cntmk=\count372
+\tkz@cntmk=\count373
 
 Local configuration file tkz-base.cfg found and used
 ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-base.cfg"
@@ -1198,22 +1201,22 @@ File: tkz-tool-arith.tex tkz-tool-arith 3.02 c
 )) (mathe_zusammenfassung.aux)
 \openout1 = `mathe_zusammenfassung.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1254,28 +1257,28 @@ LaTeX Font Info:    ... okay on input line 39.
 Package etoc Warning: Package `tocloft' was loaded after `etoc'!
 **** to prevent it from overwriting \tableofcontents, it will be tricked
 **** into believing to have been loaded with option `titles'. For better
-**** compatibility, please load `tocloft' before `etoc' on input line 39.
+**** compatibility, please load `tocloft' before `etoc' on input line 34.
 
 ABD: EveryShipout initializing macros
 ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count373
+\scratchcounter=\count374
 \scratchdimen=\dimen322
 \scratchbox=\box126
-\nofMPsegments=\count374
-\nofMParguments=\count375
+\nofMPsegments=\count375
+\nofMParguments=\count376
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count376
+\MPscratchCnt=\count377
 \MPscratchDim=\dimen323
-\MPnumerator=\count377
-\makeMPintoPDFobject=\count378
+\MPnumerator=\count378
+\makeMPintoPDFobject=\count379
 \everyMPtoPDFconversion=\toks53
 ) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\c@lstlisting=\count379
+\c@lstlisting=\count380
 
 ("C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
@@ -1283,7 +1286,7 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@posthook=\toks55
 )
 \AtBeginShipoutBox=\box127
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 34.
 
 ("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1294,11 +1297,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ("C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count380
+\c@section@level=\count381
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
 (mathe_zusammenfassung.out) (mathe_zusammenfassung.out)
 \@outlinefile=\write6
@@ -1309,14 +1312,14 @@ LaTeX Info: Redefining \nameref on input line 39.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 39.
+ on input line 34.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
@@ -1329,167 +1332,167 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Konstantin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3]
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 1
-17.
+11.
 
 ("C:\Program Files\MiKTeX\tex/latex/bbold\ubbold.fd")
-Underfull \hbox (badness 10000) in paragraph at lines 129--133
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 140--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
 
  []
 
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 140.
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 151--155
-
- []
+(amsmath)                 on input line 197.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
+Underfull \hbox (badness 10000) in paragraph at lines 203--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
+Underfull \hbox (badness 10000) in paragraph at lines 203--206
 
  []
 
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 212--215
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 235--238
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--256
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--256
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--256
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--256
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--256
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 252--255
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 276--278
+Underfull \hbox (badness 10000) in paragraph at lines 275--278
 
  []
 
-[9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 329--331
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 337--340
+[9] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 360--362
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--351
+Underfull \hbox (badness 10000) in paragraph at lines 369--372
 
  []
 
-[11] [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 468--470
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 381--383
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 499--502
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 512--514
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 500--502
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 560--562
+Underfull \hbox (badness 10000) in paragraph at lines 531--534
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--546
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 598--600
+Underfull \hbox (badness 10000) in paragraph at lines 592--594
 
  []
 
-[17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 679--682
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 630--632
 
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 756--757
+[18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 711--714
+
+ []
+
+[20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 788--789
 
  []
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 764.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 796.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 764.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 796.
 
 Missing character: There is no ° in font cmr12!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 764.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 796.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 764.
-
-Missing character: There is no ° in font cmr12!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 764.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 764.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 796.
 
 Missing character: There is no ° in font cmr12!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 764.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 796.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 764.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 796.
 
 Missing character: There is no ° in font cmr12!
-[20] [21] [22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 835--837
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 796.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 796.
+
+Missing character: There is no ° in font cmr12!
+[22] [23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 867--869
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 855--857
+Underfull \hbox (badness 10000) in paragraph at lines 887--889
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 871--874
+Underfull \hbox (badness 10000) in paragraph at lines 903--906
 
  []
 
-[24]
+[25] [26]
 NOTE: coordinate (2Y5.0e0],3Y0.0e0]) has been dropped because it is unbounded (
 in y). (see also unbounded coords=jump). 
 NOTE: coordinate (2Y4.9665562e0],3Y0.0e0]) has been dropped because it is unbou
@@ -2090,68 +2093,124 @@ NOTE: coordinate (2Y5.032028e-2],3Y0.0e0]) has been dropped because it is unbou
 nded (in y). (see also unbounded coords=jump). 
 NOTE: coordinate (2Y1.6876381e-2],3Y0.0e0]) has been dropped because it is unbo
 unded (in y). (see also unbounded coords=jump). 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 1012--1014
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1046
 
  []
 
-[26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 1084--1085
-
- []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 1108--1111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1114--1117
-
- []
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 1154--1157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1168--1171
+[28] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 1116--1117
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 1186--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1140--1143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1186--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1146--1149
 
  []
-
-
-Package etoc Warning: Please load `tocloft' /before/ `etoc'! on input line 1198
-.
 
 [31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1198.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1198.
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1200--1203
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1218--1221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1218--1221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1245--1247
+
+ []
+
+[33] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 1337--1338
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1377
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1442--1443
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 1472--1476
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1472--1476
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1472--1476
+
+ []
+
+[38] [39] [40]
+Overfull \hbox (10.39499pt too wide) in paragraph at lines 1672--1673
+\OT1/cmr/m/n/12 Gesucht ist hier die Null-stelle einer Log-a-rith-mus-funk-tion
+. Hin-weis: Um einen Log-a-rith-mus aufzulosen
+ []
+
+
+Package etoc Warning: Please load `tocloft' /before/ `etoc'! on input line 1707
+.
+
+[41]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1707.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1707.
  (mathe_zusammenfassung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1198.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1198.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1707.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1707.
 
 Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
-(rerunfilecheck)             Checksum: 99E72432A96C36CBB995F69DEBFB1D4D;4066.
+(rerunfilecheck)             Checksum: 011ED8F66D57FC094FDB4287239E6D74;5238.
  ) 
 Here is how much of TeX's memory you used:
- 41028 strings out of 480790
- 979658 string characters out of 2907040
- 1558410 words of memory out of 3000000
- 56097 multiletter control sequences out of 15000+200000
- 541989 words of font info for 62 fonts, out of 3000000 for 9000
+ 41600 strings out of 480790
+ 988965 string characters out of 2907040
+ 1581692 words of memory out of 3000000
+ 56653 multiletter control sequences out of 15000+200000
+ 542336 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,19n,103p,1301b,2076s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,19n,103p,1306b,2315s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Konstantin\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi60
 0\bbold12.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
@@ -2163,12 +2222,12 @@ pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/m
-sam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.p
-fb>
-Output written on mathe_zusammenfassung.pdf (31 pages, 333213 bytes).
+nts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12
+.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C
+:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on mathe_zusammenfassung.pdf (41 pages, 434830 bytes).
 PDF statistics:
- 572 PDF objects out of 1000 (max. 8388607)
- 93 named destinations out of 1000 (max. 500000)
- 629 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 699 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 725 words of extra memory for PDF output out of 10000 (max. 10000000)
 

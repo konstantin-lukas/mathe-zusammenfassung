@@ -26,11 +26,86 @@
 \usepackage{polynom}
 \usepackage{tkz-euclide}
 \definecolor{gridgray}{HTML}{AAAAAA}
-\newcommand{\highlight}[2]{\textcolor{blue}{\hyperref[#1]{#2}} (S. \pageref{#1})}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \DeclareRobustCommand{\bigfrac}[3][5pt]{%
 	\frac{\hspace{#1}#2\hspace{#1}}{\hspace{#1}#3\hspace{#1}}}
-
+\newcommand{\highlight}[2]{\textcolor{blue}{\hyperref[#1]{#2}} (S. \pageref{#1})}
+\newcommand\fullwidthplot[9]{
+	\def\tempa{#1}
+	\def\tempb{#2}
+	\def\tempc{#3}
+	\def\tempd{#4}
+	\def\tempe{#5}
+	\def\tempf{#6}
+	\def\tempg{#7}
+	\def\temph{#8}
+	\def\tempi{#9}
+	\foo
+}
+\newcommand{\foo}[1]{
+	\begin{center}
+		\begin{tikzpicture}
+		\begin{axis}[
+		domain=\tempe:\tempf,
+		width=17cm,
+		height=7cm,
+		restrict y to domain=#1,
+		xmin=\tempe, xmax=\tempf,
+		ymin=\tempg, ymax=\temph,
+		samples=\tempi,
+		axis y line=center,
+		axis x line=middle,
+		ticklabel style={fill=white},
+		minor tick num=2,
+		grid=both,
+		grid style={line width=.1pt, draw=gridgray!10},
+		major grid style={line width=.2pt,draw=gridgray!50}
+		]
+		\addplot+[mark=none, color=\tempc] {\tempa};
+		\end{axis}
+		\node [color=\tempc] at (\tempd) {\tempb};
+		\end{tikzpicture}
+	\end{center}
+}
+\newcommand\fullwidthplots[9]{
+	\def\tempa{#1}
+	\def\tempb{#2}
+	\def\tempc{#3}
+	\def\tempd{#4}
+	\def\tempe{#5}
+	\def\tempf{#6}
+	\def\tempg{#7}
+	\def\temph{#8}
+	\def\tempi{#9}
+	\fooo
+}
+\newcommand{\fooo}[5]{
+	\begin{center}
+		\begin{tikzpicture}
+		\begin{axis}[
+		domain=\tempi:#1,
+		width=17cm,
+		height=7cm,
+		restrict y to domain=#5,
+		xmin=\tempi, xmax=#1,
+		ymin=#2, ymax=#3,
+		samples=#4,
+		axis y line=center,
+		axis x line=middle,
+		ticklabel style={fill=white},
+		minor tick num=2,
+		grid=both,
+		grid style={line width=.1pt, draw=gridgray!10},
+		major grid style={line width=.2pt,draw=gridgray!50}
+		]
+		\addplot+[mark=none, color=\tempc] {\tempa};
+		\addplot+[mark=none, color=\tempg] {\tempe};
+		\end{axis}
+		\node [color=\tempc] at (\tempd) {\tempb};
+		\node [color=\tempg] at (\temph) {\tempf};
+		\end{tikzpicture}
+	\end{center}
+}
 \begin{document}
 \maketitle
 \tableofcontents
@@ -146,25 +221,7 @@
 		Beispiel 4 ($x^2 + y = 5$):\newline
 		$\mathbb{L} = \{(x_0;y_0)\in\mathbb{R}^2\mid x^2_0 + y_0 = 5\} = \{(x_0;5-x^2_0) \mid x_0\in\mathbb{R}^2\}$\newline\newline
 		In diesem Fall ist die Lösungsmenge die Funktion $y=5-x^2$.\newline
-		\begin{center}
-			\begin{tikzpicture}
-			\begin{axis}[
-			domain=-10:10,
-			xmin=-10, xmax=10,
-			ymin=-10, ymax=10,
-			samples=200,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none] {5-x^2};
-			\end{axis}
-			\end{tikzpicture}
-		\end{center}
+		\fullwidthplot{5-x^2}{$f(x)=5-x^2$}{blue}{11,3.3}{-10}{10}{-10}{10}{330}{-30:30}
 	\subsection{Normalform}
 		Eine Gleichung in der Form $ax^2+bx+c=0$ mit $a\neq0$ und $b,c\in \mathbb{R}$, heißt quadratisch. Spezial bezeichnet man $x^2+px+q=0$ mir $p,q\in \mathbb{R}$, als quadratische Gleichung in Normalform.\newline\newline
 		Man kann eine quadratische Gleichung in die Normalform überführen, indem man durch $a$ teilt: $x^2+\frac{b}{a}x+\frac{c}{a}=0$.
@@ -393,26 +450,7 @@
 		\end{tcolorbox}
 	\subsection{Quadratische Ungleichungen}
 		Um die Lösungsmenge einer quadratischen Ungleichung zu finden, formt man die Ungleichung zunächst so um, dass auf einer Seite $0$ steht. Auf der anderen Seite hat man dann optimalerweise eine quadratische Funktion. Schauen wir uns mal das Beispiel $x^2>2x+7$ an.
-		\begin{center}
-			\begin{tikzpicture}
-			\begin{axis}[
-			domain=-3:10,
-			xmin=-3, xmax=10,
-			ymin=-10, ymax=10,
-			samples=200,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none,color=blue] {x^2-2*x-7};
-			\end{axis}
-			\node [color=blue] at (5,1) {$f(x)=x^2-2x-7$};
-			\end{tikzpicture}
-		\end{center}
+		\fullwidthplot{x^2-2*x-7}{$f(x)=x^2-2x-7$}{blue}{5,1}{-10}{10}{-10}{10}{330}{-30:30}
 		Wir stellen also zunächst um und erhalten $x^2-2x-7>0$. Daraus ergibt sich auch die Funktion oben. An der Grafik erkennt man sehr gut, was wir eigentlich suchen. Denn unsere Lösungsmenge sind alle $x$, für die $f(x)$ größer als $0$ ist. Und wie kriegen wir das raus? Indem wir die Nullstellen berechnen. Das Intervall von Unendlich bis zur linken Nullstelle ist ein Teil unserer Lösung und der andere ist das Intervall von der rechten Nullstelle bis unendlich. Dabei muss man stets verschiedene Fälle beachten. Für eine nach unten geöffnete Funktion ($-x^2$) suchen wir den Bereich zwischen den Nullstellen. Für eine Funktion oberhalb der $x$-Achse, die keine Nullstellen hat, sind alle reellen Zahlen unsere Lösungsmenge, wohingegen eine Funktion ohne Nullstellen unterhalb der $x$-Achse eine leere Lösungsmenge liefern würde. Eine Funktion mit genau einer Nullstelle liefert hingegen eine Lösungsmenge aller reellen Zahlen außer der Nullstelle. Es gibt je nach Art der Funktion und Vergleichszeichen in unserer Ungleichung viele unterschiedliche Szenarien, weshalb es immer ratsam ist eine Skizze anzufertigen. Für das Beispiel oben können wir die \highlight{subsubsec:pqformel}{p-q-Formel} verwenden, um die Nullstellen zu berechnen.
 		\begin{flalign*}
 		x_{\pm}&=-\frac{-2}{2}\pm \sqrt{\left(\frac{-2}{2}\right)^2+7}\\
@@ -424,27 +462,8 @@
 			\mathbb{L}=\mathbb{R}\setminus \left[1-2\sqrt{2};1+2\sqrt{2}\right]=\left(-\infty;1-2\sqrt{2}\right)\cup\left(1+2\sqrt{2}\right)&&
 		\end{flalign*}
 	\subsection{Ungleichungen mit Beträgen}
-		Das Vorgehen bei Betragsungleichungen ist im Grunde genommen dasselbe Prinzip, wie bei den quadratischen. Schauen wir uns das Beispiel $\vert x \vert -3 < 0$ an. 
-		\begin{center}
-			\begin{tikzpicture}
-			\begin{axis}[
-			domain=-10:10,
-			xmin=-10, xmax=10,
-			ymin=-10, ymax=10,
-			samples=200,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none,color=blue] {abs(x)-3};
-			\end{axis}
-			\node [color=blue] at (5,1.75) {$f(x)=\vert x \vert -3$};
-			\end{tikzpicture}
-		\end{center}
+		Das Vorgehen bei Betragsungleichungen ist im Grunde genommen dasselbe Prinzip, wie bei den quadratischen. Schauen wir uns das Beispiel $\vert x \vert -3 < 0$ an.
+		\fullwidthplot{abs(x)-3}{$f(x)=\vert x \vert -3$}{blue}{5,1.75}{-10}{10}{-10}{10}{330}{-30:30}
 		Wir erkennen die Nullstellen in dem Fall sehr leicht. Das sind $-3$ und $3$. Erkennt man das nicht sofort, muss man eine \highlight{subsec:betragsfunktionen}{Fallunterscheidung} durchführen. Jetzt können wir aber erst mal unsere Lösungsmenge definieren, denn wir wissen, dass wir alle $x$ suchen für die $f(x)<0$ gilt.
 		\begin{flalign*}
 		\mathbb{L}=(-3;3)&&
@@ -455,26 +474,7 @@
 		\end{flalign*}
 	\subsection{Ungleichungen mit Variable im Nenner – Teil I}
 		Aus den vorherigen Erklärungen kann man sich herleiten, wie man das macht. Deshalb ist hier nur noch mal ein erklärendes Beispiel: $2\le \frac{14}{\vert 2x+5\vert}$.
-		\begin{center}
-			\begin{tikzpicture}
-			\begin{axis}[
-			domain=-10:3,
-			xmin=-10, xmax=3,
-			ymin=-3, ymax=10,
-			samples=200,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none,color=blue] {(14/abs(2*x+5))-2};
-			\end{axis}
-			\node [color=blue] at (1,3) {$f(x)=\dfrac{14}{\vert 2x+5\vert}-2$};
-			\end{tikzpicture}
-		\end{center}
+		\fullwidthplot{(14/abs(2*x+5))-2}{$f(x)=\dfrac{14}{\vert 2x+5\vert}-2$}{blue}{10,2}{-10}{10}{-2}{10}{200}{-30:30}
 		Wichtig ist, dass wir zunächst alle $x$ ausschließen, für die im Nenner $0$ rauskommt. In diesem Fall ist dass $-\frac{5}{2}$.
 		\begin{flalign*}
 			2&\le \frac{14}{\vert 2x+5\vert}\\
@@ -499,27 +499,7 @@
 	\subsection{Ungleichungen mit Variable im Nenner – Teil II}
 		Wenn wir uns an die \highlight{subsec:unglrechrgl}{Rechenregeln} für Ungleichungen erinnern, könnte man sich fragen, was passiert, wenn der Nenner mit einer Variable sowohl positiv als auch negativ sein kann. Denn wenn wir mit einer negativen Zahl multiplizieren, müssten wir das Vorzeichen umkehren. Hier muss man wieder verschiedene Fälle unterscheiden.\newline\newline
 		Beispiel: $\frac{1}{x-2}\le-x$
-		\begin{center}
-			\begin{tikzpicture}
-			\begin{axis}[
-			domain=-2:10,
-			restrict y to domain=-20:20,
-			xmin=-2, xmax=10,
-			ymin=-10, ymax=10,
-			samples=200,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none,color=blue] {(1/(x-2))+x};
-			\end{axis}
-			\node [color=blue] at (4,1) {$f(x)=\frac{1}{x-2}+x$};
-			\end{tikzpicture}
-		\end{center}
+		\fullwidthplot{(1/(x-2))+x}{$f(x)=\frac{1}{x-2}+x$}{blue}{11,1}{-10}{10}{-10}{10}{350}{-20:20}
 		Der Fall $x=2$ ist aufgrund des $x$ im Nenner wieder auszuschließen.
 		Fall 1: $x>2$
 		\begin{flalign*}
@@ -543,27 +523,7 @@
 			\mathbb{L}=(-\infty;2)&&
 		\end{flalign*}\hrulefill\newline\newline
 		Beispiel: $\frac{1}{x-9}\le8$
-		\begin{center}
-			\begin{tikzpicture}
-			\begin{axis}[
-			domain=-3:16,
-			restrict y to domain=-30:60,
-			xmin=-3, xmax=16,
-			ymin=-20, ymax=3,
-			samples=300,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none,color=blue] {(1/(x-9))-8};
-			\end{axis}
-			\node [color=blue] at (2.75,.5) {$f(x)=\frac{1}{x-9}-8$};
-			\end{tikzpicture}
-		\end{center}
+		\fullwidthplot{(1/(x-9))-8}{$f(x)=\frac{1}{x-9}-8$}{blue}{11,1.5}{-2}{16}{-20}{5}{330}{-30:60}
 		Fall 1: $x>9$
 		\begin{flalign*}
 			\frac{1}{x-9}&\le 8\\
@@ -1075,28 +1035,7 @@
 			\mathbb{L}=\{24\}&&
 			\end{flalign*}
 			Übrigens: Wenn man mehrere Wurzeln in der Gleichung hat, muss man den Definitionsbereich für den Radikanden jeder Wurzel bestimmen.
-			\begin{center}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-0.5:30,
-				xmin=-0.5, xmax=30,
-				ymin=0, ymax=10,
-				samples=200,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=blue] {sqrt(2*x+1)};
-				\addplot+[mark=none,color=red] {x-17};
-				\end{axis}
-				\node [color=blue] at (2,3.5) {$f(x)=\sqrt{2x+1}$};
-				\node [color=red] at (2.7,1) {$f(x)=x-17$};
-				\end{tikzpicture}
-			\end{center}
+			\fullwidthplots{sqrt(abs(2*x+1))}{$f(x)=\sqrt{2x+1}$}{blue}{6.5,3.6}{x-17}{$f(x)=x-17$}{red}{8.3,1.4}{0}{30}{0}{10}{600}{-60:60}
 			Mithilfe dieser Grafik kann man das Ergebnis wunderbar visualisieren, denn das Ergebnis ist der $x$-Wert des Schnittpunkts der beiden Funktionen, die man aus der linken und rechten Seite der Wurzelgleichung entnehmen kann.
 			\subsubsection{Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}
 			\begin{flalign*}
@@ -1114,26 +1053,7 @@
 		\subsection{Betragsfunktionen}
 			\label{subsec:betragsfunktionen}
 			Um mit Betragsgleichungen oder auch Betragsfunktionen rechnen zu können muss man mehrere Fälle betrachten. Nämlich einmal den Fall, dass im Betrag ein Wert größer oder gleich $0$ entsteht und einmal den Fall, dass das Ergebnis im Betrag kleiner als Null ist. Betrachten wir einmal ein Beispiel, wo man den Schnittpunkt zwischen $f(x)=\vert x+1\vert$ und $f(x)=x+2$ finden soll.\newline
-			\begin{center}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=200,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none] {x+2};
-				\addplot+[mark=none] {abs(x+1)};
-				\end{axis}
-				\end{tikzpicture}
-			\end{center}
+			\fullwidthplots{x+2}{$f(x)=x+2$}{blue}{5.5,4}{abs(x+1)}{$f(x)=\vert x+1\vert$}{red}{9.5,3.2}{-5}{5}{-4}{4}{100}{-10:10}
 			Zunächst setzen wir unsere Funktionen gleich und erhalten eine Betragsgleichung. Dann betrachten wir die verschiedenen Fälle für den Betrag.
 			\begin{flalign*}
 			\vert x+1\vert &= \left\{x+1\;\;\;\;\;\;\;\;\;Fall\;x\ge -1  \atop -(x+1)\;\;\;\;Fall\;x<-1 \right.&&
@@ -1158,28 +1078,7 @@
 			Durch einsetzen dieser $x$-Koordinate, finden wir auch den dazugehörigen $y$-Wert: $P\left(-\frac{3}{2}\mid\frac{1}{2}\right)$:
 			\subsubsection{Betragsgleichungen mit mehreren Beträgen}
 			Haben wir mehrere Beträge in unserer Gleichung, haben wir auch mehrere Fälle zu betrachten. Schon wir uns das an einem Beispiel an, indem wir die Schnittpunkte von $f(x)=\vert x+1 \vert + 5$ und $f(x)=\vert 2x-4 \vert$ suchen.
-			\begin{center}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:15,
-				xmin=-5, xmax=15,
-				ymin=0, ymax=20,
-				samples=200,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=blue] {abs(x+1)+5};
-				\addplot+[mark=none,color=red] {abs(2*x-4)};
-				\end{axis}
-				\node [color=blue] at (7,4) {$f(x)=\vert x+1 \vert + 5$};
-				\node [color=red] at (5.5,1.7) {$f(x)=\vert 2x-4 \vert$};
-				\end{tikzpicture}
-			\end{center}
+			\fullwidthplots{abs(x+1)+5}{$f(x)=\vert x+1 \vert + 5$}{blue}{6.9,3.6}{abs(2*x-4)}{$f(x)=\vert 2x-4 \vert$}{red}{10,1.7}{-4}{14}{0}{20}{300}{0:20}
 			Zunächst setzen wir die Funktionen wieder gleich.
 			\begin{flalign*}
 			\vert x+1 \vert + 5=\vert 2x-4 \vert&&
@@ -1248,9 +1147,11 @@
 					\begin{tikzpicture}
 					\begin{axis}[
 					domain=-4:4,
-					xmin=-7, xmax=2.5,
+					width=14cm,
+					height=7cm,
+					xmin=-7, xmax=3,
 					ymin=-4, ymax=4,
-					samples=300,
+					samples=400,
 					axis y line=center,
 					axis x line=middle,
 					ticklabel style={fill=white},
@@ -1263,9 +1164,9 @@
 					\addplot+[mark=none,color=red] {x^4};
 					\addplot+[mark=none,color=teal] {-2*x^2};
 					\end{axis}
-					\node [color=blue] at (2.3,1.85) {$f(x)=x^4-x^3-2x^2$};
-					\node [color=red] at (2.8,5) {$f(x)=x^4$};
-					\node [color=teal] at (2.8,1) {$f(x)=-2x^2$};
+					\node [color=blue] at (5,3.2) {$f(x)=x^4-x^3-2x^2$};
+					\node [color=red] at (5.7,5) {$f(x)=x^4$};
+					\node [color=teal] at (5.9,1) {$f(x)=-2x^2$};
 					\end{tikzpicture}
 				\end{center}
 			\end{tcolorbox}
@@ -1335,29 +1236,7 @@
 		\end{center}
 		\subsubsection{Lösen durch Substitution}
 		In diesem Beispiel werden die Nullstellen der Funktion mithilfe von \highlight{subsec:substitution}{Substitution} und anschließendem Anwenden der \highlight{subsubsec:pqformel}{p-q-Formel} ermittelt.\newline
-		\begin{center}
-			\begin{tikzpicture}
-				\begin{axis}[
-				width=17cm,
-				height=7cm,
-				domain=-5:10,
-				restrict y to domain=-30:60,
-				xmin=-6, xmax=6,
-				ymin=-6, ymax=6,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=blue] {x^4-5*x^2+2};
-				\end{axis}
-				\node [color=blue] at (12.5,1.3) {$p(x)=x^4-5x^2+2$};
-			\end{tikzpicture}
-		\end{center}
+		\fullwidthplot{x^4-5*x^2+2}{$p(x)=x^4-5x^2+2$}{blue}{12.5,1.3}{-6}{6}{-6}{6}{300}{-30:60}
 		\begin{flalign*}
 			p(x)&=x^4-5x^2+2\\
 			0&=x^4-5x^2+2\\
@@ -1374,29 +1253,7 @@
 		\hrulefill
 		\subsubsection{Lösen durch Faktorisierung}
 		In diesem Beispiel werden die Nullstellen der Funktion mithilfe von \highlight{subsubsec:ausklammern}{Faktorisierung durch Ausklammern} ermittelt.\newline
-		\begin{center}
-			\begin{tikzpicture}
-			\begin{axis}[
-			width=17cm,
-			height=7cm,
-			domain=-5:10,
-			restrict y to domain=-30:60,
-			xmin=-6, xmax=6,
-			ymin=-6, ymax=6,
-			samples=300,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none,color=blue] {x^5-3*x^3};
-			\end{axis}
-			\node [color=blue] at (11.75,1.3) {$p(x)=x^5-3x^3$};
-			\end{tikzpicture}
-		\end{center}
+		\fullwidthplot{x^5-3*x^3}{$p(x)=x^5-3x^3$}{blue}{11.75,1.3}{-6}{6}{-6}{6}{300}{-30:60}
 		\begin{flalign*}
 		p(x)&=x^5-3x^3\\
 		0&=x^5-3x^3\\
@@ -1407,29 +1264,7 @@
 		\hrulefill
 		\subsubsection{Lösen mit binomischen Formeln}
 		In diesem Beispiel wird Funktion mithilfe der \highlight{sec:binomischeformeln}{binomischen Formeln} so vereinfacht, dass man die Nullstellen ganz einfach ablesen kann.\newline
-		\begin{center}
-			\begin{tikzpicture}
-			\begin{axis}[
-			width=17cm,
-			height=7cm,
-			domain=-5:10,
-			restrict y to domain=-30:60,
-			xmin=-6, xmax=6,
-			ymin=-6, ymax=6,
-			samples=300,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none,color=blue] {x^4-2*x^2+1};
-			\end{axis}
-			\node [color=blue] at (11.6,3.2) {$p(x)=x^4-2x^2+1$};
-			\end{tikzpicture}
-		\end{center}
+		\fullwidthplot{x^4-2*x^2+1}{$p(x)=x^4-2x^2+1$}{blue}{11.6,3.2}{-6}{6}{-6}{6}{300}{-30:60}
 		\begin{flalign*}
 		p(x)&=x^4-4x^2+1\\
 		0&=x^4-4x^2+1\\
@@ -1440,29 +1275,7 @@
 		\hrulefill
 		\subsubsection{Lösen durch Polynomdivision}
 			Wenn alle anderen Stränge reißen, ist man leider gezwungen die Polynomdivision durchzuführen. Um damit beginnen zu können, braucht man aber mindestens eine Nullstelle, die man durch Raten findet. Für das Beispiel unten finden wir so heraus, dass eine Nullstelle $x_1=1$ ist. Jetzt stellen wir $x=1$ nach $0$ um und erhalten $0=x-1$. Anschließend teilen wir unser Polynom durch $x-1$.\newline
-			\begin{center}
-				\begin{tikzpicture}
-				\begin{axis}[
-				width=17cm,
-				height=7cm,
-				domain=-5:10,
-				restrict y to domain=-30:60,
-				xmin=-6, xmax=6,
-				ymin=-6, ymax=6,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=blue] {2*x^3-5*x^2-2*x+5};
-				\end{axis}
-				\node [color=blue] at (3.9,3.2) {$p(x)=2x^3-5x^2-2x+5$};
-				\end{tikzpicture}
-			\end{center}
+			\fullwidthplot{2*x^3-5*x^2-2*x+5}{$p(x)=2x^3-5x^2-2x+5$}{blue}{3.9,3.2}{-6}{6}{-6}{6}{300}{-30:60}
 			\begin{flalign*}
 			(2x^3-5x^2-2x+5):(x-1)&&
 			\end{flalign*}
@@ -1473,29 +1286,7 @@
 			Jetzt muss man zurück multiplizieren, indem man den Term $2x^2$, den wir gerade bekommen haben, mit unserem ursprünglichen Divisor $x-1$ multiplizieren. Das Ergebnis ziehen wir von unserem Polynom ab und holen anschließend den nächsten Ausdruck runter. Diesen Prozess wiederholen wir jetzt so oft, wie möglich.\newline\newline
 			\polylongdiv[style=C,div=:]{2x^3-5x^2-2x+5}{x-1}\newline\newline
 			Mit der Funktion, die wir jetzt haben, können wir ganz einfach die restlichen Nullstellen errechnen.\newline
-			\begin{center}
-				\begin{tikzpicture}
-				\begin{axis}[
-				width=17cm,
-				height=7cm,
-				domain=-5:10,
-				restrict y to domain=-30:60,
-				xmin=-6, xmax=6,
-				ymin=-10, ymax=10,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=blue] {2*x^2-3*x-5};
-				\end{axis}
-				\node [color=blue] at (3.9,3.2) {$f(x)=2x^2-3x-5$};
-				\end{tikzpicture}
-			\end{center}
+			\fullwidthplot{2*x^2-3*x-5}{$f(x)=2x^2-3x-5$}{blue}{3.9,3.2}{-6}{6}{-10}{10}{300}{-30:60}
 			\begin{flalign*}
 				f(x)&=2x^2-3x-5\\
 				0&=2x^2-3x-5\\
@@ -1552,29 +1343,7 @@
 			\end{center}
 			\subsubsection{Lösen von Exponentialgleichungen}
 				Zum Lösen von Exponentialgleichungen brauchen wir in der Regel den \highlight{subsec:logarithmusgesetze}{Logarithmus}. Wie das funktioniert, sehen wir an dem Beispiel hier drunter. Dabei ist die Nullstelle der Funktion zu bestimmen. In diesem Beispiel sollte man sich außerdem nochmal daran erinnern, dass $\sqrt[n]{x}$ dasselbe ist, wie $x^{\frac{1}{n}}$.
-				\begin{center}
-					\begin{tikzpicture}
-					\begin{axis}[
-					width=17cm,
-					height=7cm,
-					domain=-6:6,
-					restrict y to domain=-30:60,
-					xmin=-6, xmax=6,
-					ymin=-10, ymax=10,
-					samples=300,
-					axis y line=center,
-					axis x line=middle,
-					ticklabel style={fill=white},
-					minor tick num=2,
-					grid=both,
-					grid style={line width=.1pt, draw=gridgray!10},
-					major grid style={line width=.2pt,draw=gridgray!50}
-					]
-					\addplot+[mark=none,color=blue] {(7^x)^(1/4)-4};
-					\end{axis}
-					\node [color=blue] at (10,3.2) {$f(x)=\sqrt[4]{7^x}-4$};
-					\end{tikzpicture}
-				\end{center}
+				\fullwidthplot{(7^x)^(1/4)-4}{$f(x)=\sqrt[4]{7^x}-4$}{blue}{10,3.2}{-6}{6}{-10}{10}{300}{-30:60}
 				\begin{flalign*}
 					f(x)&=\sqrt[4]{7^x}-4\\
 					0&=\sqrt[4]{7^x}-4 && \mid +4 &&&&&&&&&&&&& \\
@@ -1670,29 +1439,7 @@
 			\end{center}
 			\subsubsection{Lösen von Logarithmusgleichungen}
 				Gesucht ist hier die Nullstelle einer Logarithmusfunktion. Hinweis: Um einen Logarithmus aufzulösen musst du beide Seiten der Gleichung als Exponent zur Basis des jeweiligen Logarithmus setzen. Um dort hinzu kommen hilft es enorm, die Gleichung zunächst umzuformen. Wenn du Schwierigkeiten mit den Umformungen in diesem Beispiel hast, schaue dir noch einmal die \highlight{subsec:potenzgesetze}{Potenzgesetze} und \highlight{subsec:logarithmusgesetze}{Logarithmusgesetze} an.
-				\begin{center}
-					\begin{tikzpicture}
-					\begin{axis}[
-					width=17cm,
-					height=7cm,
-					domain=-10:10,
-					restrict y to domain=-30:30,
-					xmin=-10, xmax=10,
-					ymin=-10, ymax=10,
-					samples=300,
-					axis y line=center,
-					axis x line=middle,
-					ticklabel style={fill=white},
-					minor tick num=2,
-					grid=both,
-					grid style={line width=.1pt, draw=gridgray!10},
-					major grid style={line width=.2pt,draw=gridgray!50}
-					]
-					\addplot+[mark=none,color=blue] {3*log10(x^3)-2*log10(x^2)-4};
-					\end{axis}
-					\node [color=blue] at (11,3.3) {$f(x)=3\cdot lg(x^3)-2\cdot lg(x^2)-4$};
-					\end{tikzpicture}
-				\end{center}
+				\fullwidthplot{3*log10(x^3)-2*log10(x^2)-4}{$f(x)=3\cdot lg(x^3)-2\cdot lg(x^2)-4$}{blue}{11,3.3}{-10}{10}{-10}{10}{300}{-30:60}
 				\begin{flalign*}
 					f(x)&=3\cdot lg(x^3)-2\cdot lg(x^2)-4\\
 					0&=3\cdot lg(x^3)-2\cdot lg(x^2)-4\\

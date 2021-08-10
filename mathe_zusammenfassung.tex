@@ -15,6 +15,8 @@
 \usepackage{braket}
 \usepackage[margin=2cm]{geometry}
 \usepackage{bbold}
+\usepackage{pgffor,listofitems}
+\usepackage{tocloft}
 \usepackage{etoc}
 \usepackage{blindtext}
 \usepackage{tikz}
@@ -106,6 +108,53 @@
 		\end{tikzpicture}
 	\end{center}
 }
+
+\newcommand{\getcolor}[1]{\ifcase#1\or blue\or red\or teal\or violet\or
+	magenta\or orange\or purple\or brown\fi}
+\newcommand{\makeplot}[8]{
+	\readlist\xlimits{#4}
+	\def\xlower{\xlimits[1]}
+	\def\xupper{\xlimits[2]}
+	\readlist\ylimits{#5}
+	\def\ylower{\ylimits[1]}
+	\def\yupper{\ylimits[2]}
+	\readlist\dimensions{#8}
+	\def\width{\dimensions[1]}
+	\def\height{\dimensions[2]}
+	\begin{center}
+		\begin{tikzpicture}
+		\begin{axis}[
+		domain=\xlower:\xupper,
+		width=\width,
+		height=\height,
+		restrict y to domain=#6,
+		xmin=\xlower, xmax=\xupper,
+		ymin=\ylower, ymax=\yupper,
+		samples=#7,
+		axis y line=center,
+		axis x line=middle,
+		ticklabel style={fill=white},
+		minor tick num=2,
+		grid=both,
+		grid style={line width=.1pt, draw=gridgray!10},
+		major grid style={line width=.2pt,draw=gridgray!50}
+		]
+		\foreach \graph [count=\i] in {#1} {
+			\edef\temp{\noexpand\addplot+[mark=none, color=\getcolor{\i}, solid] {\graph};}
+			\temp
+		}
+		
+		
+		\end{axis}
+		\readlist\pos{#3}
+		\foreach \label [count=\i] in {#2} {
+			\node [color=\getcolor{\i}] at (\pos[\i]) {\label};
+		}
+		
+		\end{tikzpicture}
+	\end{center}
+}
+
 \begin{document}
 \maketitle
 \tableofcontents
@@ -221,7 +270,7 @@
 		Beispiel 4 ($x^2 + y = 5$):\newline
 		$\mathbb{L} = \{(x_0;y_0)\in\mathbb{R}^2\mid x^2_0 + y_0 = 5\} = \{(x_0;5-x^2_0) \mid x_0\in\mathbb{R}^2\}$\newline\newline
 		In diesem Fall ist die Lösungsmenge die Funktion $y=5-x^2$.\newline
-		\fullwidthplot{5-x^2}{$f(x)=5-x^2$}{blue}{11,3.3}{-10}{10}{-10}{10}{330}{-30:30}
+		\makeplot{{5-x^2}}{{$f(x)=5-x^2$}}{{11,3.3}}{-10,10}{-10,10}{-30:30}{330}{17cm,7cm}
 	\subsection{Normalform}
 		Eine Gleichung in der Form $ax^2+bx+c=0$ mit $a\neq0$ und $b,c\in \mathbb{R}$, heißt quadratisch. Spezial bezeichnet man $x^2+px+q=0$ mir $p,q\in \mathbb{R}$, als quadratische Gleichung in Normalform.\newline\newline
 		Man kann eine quadratische Gleichung in die Normalform überführen, indem man durch $a$ teilt: $x^2+\frac{b}{a}x+\frac{c}{a}=0$.
@@ -450,7 +499,7 @@
 		\end{tcolorbox}
 	\subsection{Quadratische Ungleichungen}
 		Um die Lösungsmenge einer quadratischen Ungleichung zu finden, formt man die Ungleichung zunächst so um, dass auf einer Seite $0$ steht. Auf der anderen Seite hat man dann optimalerweise eine quadratische Funktion. Schauen wir uns mal das Beispiel $x^2>2x+7$ an.
-		\fullwidthplot{x^2-2*x-7}{$f(x)=x^2-2x-7$}{blue}{5,1}{-10}{10}{-10}{10}{330}{-30:30}
+		\makeplot{{x^2-2*x-7}}{{$f(x)=x^2-2x-7$}}{{5,1}}{-10,10}{-10,10}{-30:30}{330}{17cm,7cm}
 		Wir stellen also zunächst um und erhalten $x^2-2x-7>0$. Daraus ergibt sich auch die Funktion oben. An der Grafik erkennt man sehr gut, was wir eigentlich suchen. Denn unsere Lösungsmenge sind alle $x$, für die $f(x)$ größer als $0$ ist. Und wie kriegen wir das raus? Indem wir die Nullstellen berechnen. Das Intervall von Unendlich bis zur linken Nullstelle ist ein Teil unserer Lösung und der andere ist das Intervall von der rechten Nullstelle bis unendlich. Dabei muss man stets verschiedene Fälle beachten. Für eine nach unten geöffnete Funktion ($-x^2$) suchen wir den Bereich zwischen den Nullstellen. Für eine Funktion oberhalb der $x$-Achse, die keine Nullstellen hat, sind alle reellen Zahlen unsere Lösungsmenge, wohingegen eine Funktion ohne Nullstellen unterhalb der $x$-Achse eine leere Lösungsmenge liefern würde. Eine Funktion mit genau einer Nullstelle liefert hingegen eine Lösungsmenge aller reellen Zahlen außer der Nullstelle. Es gibt je nach Art der Funktion und Vergleichszeichen in unserer Ungleichung viele unterschiedliche Szenarien, weshalb es immer ratsam ist eine Skizze anzufertigen. Für das Beispiel oben können wir die \highlight{subsubsec:pqformel}{p-q-Formel} verwenden, um die Nullstellen zu berechnen.
 		\begin{flalign*}
 		x_{\pm}&=-\frac{-2}{2}\pm \sqrt{\left(\frac{-2}{2}\right)^2+7}\\
@@ -463,7 +512,7 @@
 		\end{flalign*}
 	\subsection{Ungleichungen mit Beträgen}
 		Das Vorgehen bei Betragsungleichungen ist im Grunde genommen dasselbe Prinzip, wie bei den quadratischen. Schauen wir uns das Beispiel $\vert x \vert -3 < 0$ an.
-		\fullwidthplot{abs(x)-3}{$f(x)=\vert x \vert -3$}{blue}{5,1.75}{-10}{10}{-10}{10}{330}{-30:30}
+		\makeplot{{abs(x)-3}}{{$f(x)=\vert x \vert -3$}}{{5,1.75}}{-10,10}{-10,10}{-30:30}{330}{17cm,7cm}
 		Wir erkennen die Nullstellen in dem Fall sehr leicht. Das sind $-3$ und $3$. Erkennt man das nicht sofort, muss man eine \highlight{subsec:betragsfunktionen}{Fallunterscheidung} durchführen. Jetzt können wir aber erst mal unsere Lösungsmenge definieren, denn wir wissen, dass wir alle $x$ suchen für die $f(x)<0$ gilt.
 		\begin{flalign*}
 		\mathbb{L}=(-3;3)&&
@@ -474,7 +523,7 @@
 		\end{flalign*}
 	\subsection{Ungleichungen mit Variable im Nenner – Teil I}
 		Aus den vorherigen Erklärungen kann man sich herleiten, wie man das macht. Deshalb ist hier nur noch mal ein erklärendes Beispiel: $2\le \frac{14}{\vert 2x+5\vert}$.
-		\fullwidthplot{(14/abs(2*x+5))-2}{$f(x)=\dfrac{14}{\vert 2x+5\vert}-2$}{blue}{10,2}{-10}{10}{-2}{10}{200}{-30:30}
+		\makeplot{{(14/abs(2*x+5))-2}}{{$f(x)=\dfrac{14}{\vert 2x+5\vert}-2$}}{{10,3.5}}{-10,10}{-10,10}{-30:30}{200}{17cm,7cm}
 		Wichtig ist, dass wir zunächst alle $x$ ausschließen, für die im Nenner $0$ rauskommt. In diesem Fall ist dass $-\frac{5}{2}$.
 		\begin{flalign*}
 			2&\le \frac{14}{\vert 2x+5\vert}\\
@@ -499,7 +548,7 @@
 	\subsection{Ungleichungen mit Variable im Nenner – Teil II}
 		Wenn wir uns an die \highlight{subsec:unglrechrgl}{Rechenregeln} für Ungleichungen erinnern, könnte man sich fragen, was passiert, wenn der Nenner mit einer Variable sowohl positiv als auch negativ sein kann. Denn wenn wir mit einer negativen Zahl multiplizieren, müssten wir das Vorzeichen umkehren. Hier muss man wieder verschiedene Fälle unterscheiden.\newline\newline
 		Beispiel: $\frac{1}{x-2}\le-x$
-		\fullwidthplot{(1/(x-2))+x}{$f(x)=\frac{1}{x-2}+x$}{blue}{11,1}{-10}{10}{-10}{10}{350}{-20:20}
+		\makeplot{{(1/(x-2))+x}}{{$f(x)=\dfrac{1}{x-2}+x$}}{{11.1,0.65}}{-10,10}{-10,10}{-20:20}{350}{17cm,7cm}
 		Der Fall $x=2$ ist aufgrund des $x$ im Nenner wieder auszuschließen.
 		Fall 1: $x>2$
 		\begin{flalign*}
@@ -523,7 +572,7 @@
 			\mathbb{L}=(-\infty;2)&&
 		\end{flalign*}\hrulefill\newline\newline
 		Beispiel: $\frac{1}{x-9}\le8$
-		\fullwidthplot{(1/(x-9))-8}{$f(x)=\frac{1}{x-9}-8$}{blue}{11,1.5}{-2}{16}{-20}{5}{330}{-30:60}
+		\makeplot{{(1/(x-9))-8}}{{$f(x)=\dfrac{1}{x-9}-8$}}{{11,1.6}}{-2,16}{-20,5}{-30:60}{330}{17cm,7cm}
 		Fall 1: $x>9$
 		\begin{flalign*}
 			\frac{1}{x-9}&\le 8\\
@@ -693,6 +742,7 @@
 			\mathbb{L}=\left\{\left(\frac{2}{a-3};\frac{1}{a-3};\frac{6-3a}{a-3}\right)\right\},\;falls\;a\neq 3&&
 			\end{flalign*}
 	\section{Geometrie}
+	\label{sec:geometrie}
 		\subsection{Rechtwinklige Dreiecke}
 			\begin{center}
 				\begin{tikzpicture}[scale=1.25]%,cap=round,>=latex]
@@ -873,132 +923,9 @@
 					Achtung: Eine Funktion kann nur gerade oder ungerade sein, wenn ihr Definitionsbereich symmetrisch zum Nullpunkt auf $x$-Achse ist.
 				\end{tcolorbox}
 		\subsection{Potenz- und Wurzelfunktionen}
-			Generelle Form für $m\in\mathbb{Z}$ und $n\in\mathbb{N}$:
-			\begin{flalign*}
-			f(x)=x^{\frac{m}{n}}=\sqrt[n]{x^m}=(\sqrt[n]{x})^m&&
-			\end{flalign*}
-			\begin{center}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=blue] {x^3};
-				\end{axis}
-				\node [color=blue] at (4.75,2) {$f(x)=x^3$};
-				\end{tikzpicture}
-				\hspace{1cm}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=red] {x^2};
-				\end{axis}
-				\node [color=red] at (4.75,2) {$f(x)=x^2$};
-				\end{tikzpicture}
-				\newline\newline\newline
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=teal] {x^(3/2)};
-				\addplot+[mark=none,color=violet] {x^(2/3)};
-				\end{axis}
-				\node [color=teal] at (4.75,2) {$f(x)=x^{\frac{3}{2}}$};
-				\node [color=violet] at (4.75,1.35) {$f(x)=x^{\frac{2}{3}}$};
-				\end{tikzpicture}
-				\hspace{1cm}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				restrict y to domain=-30:60,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=magenta] {x^(-(1/2))};
-				\end{axis}
-				\node [color=magenta] at (4.75,2) {$f(x)=x^{-\frac{1}{2}}$};
-				\end{tikzpicture}
-				\newline\newline\newline
-					\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				restrict y to domain=-30:60,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=orange] {x^(-2)};
-				\end{axis}
-				\node [color=orange] at (4.75,2) {$f(x)=x^{-2}$};
-				\end{tikzpicture}
-				\hspace{1cm}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				restrict y to domain=-30:60,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=purple] {x^(-3)};
-				\end{axis}
-				\node [color=purple] at (4.75,2) {$f(x)=x^{-3}$};
-				\end{tikzpicture}
-			\end{center}
 			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.85cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-				Potenzfunktionen in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}, wenn $n\ge 2$ gilt und der Bruch keine ganze Zahl ist.
+				Potenzfunktionen in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}, wenn $n\ge 2$ gilt und der Bruch keine ganze Zahl ist. Hier sind einige Beispiele für Graphen von Wurzelfunktionen:\newline
+				\makeplot{{x^3},{x^2},{x^(3/2)},{x^(2/3)},{x^(-1/2)},{x^(-2)},{x^(-3)}}{{$f(x)=x^3$},{$f(x)=x^2$},{$f(x)=x^{\frac{3}{2}}$},{$f(x)=x^{\frac{2}{3}}$},{$f(x)=x^{-\frac{1}{2}}$},{$f(x)=x^{-2}$},{$f(x)=x^{-3}$}}{{1,-1},{1,-2},{4,-1},{4,-2},{7,-1},{7,-2},{10,-1}}{-6,6}{-6,6}{-10:10}{300}{14cm,7cm}
 			\end{tcolorbox}
 			\subsubsection{Wurzelgleichungen}
 			Bei Wurzelgleichungen wird zuerst der Definitionsbereich bestimmt werden, also die Menge an reellen Zahlen, für die der Radikand positiv oder gleich Null ist. Zur Lösung von Wurzelgleichungen wird die Wurzel auf einer Seite der Gleichung isoliert. Dann werden beide Seiten der Gleichung mit dem Wurzelexponenten (im Falle der Quadratwurzel also mit 2) so lange potenziert, bis alle Wurzeln eliminiert sind. Man bekommt also unter Umständen durch das Quadrieren (das Potenzieren mit einer geraden Zahl ist keine Äquivalenzumformung) neue Lösungen (Scheinlösungen) hinzu, die die ursprüngliche Gleichung nicht hatte. Die Probe ist folglich für Wurzelgleichungen unverzichtbar!\newline\newline
@@ -1035,7 +962,7 @@
 			\mathbb{L}=\{24\}&&
 			\end{flalign*}
 			Übrigens: Wenn man mehrere Wurzeln in der Gleichung hat, muss man den Definitionsbereich für den Radikanden jeder Wurzel bestimmen.
-			\fullwidthplots{sqrt(abs(2*x+1))}{$f(x)=\sqrt{2x+1}$}{blue}{6.5,3.6}{x-17}{$f(x)=x-17$}{red}{8.3,1.4}{0}{30}{0}{10}{600}{-60:60}
+			\makeplot{{sqrt(abs(2*x+1))},{x-17}}{{$f(x)=\sqrt{2x+1}$},{$f(x)=x-17$}}{{6.5,3.6},{8.3,1.4}}{0,30}{0,10}{-60:60}{600}{17cm,7cm}
 			Mithilfe dieser Grafik kann man das Ergebnis wunderbar visualisieren, denn das Ergebnis ist der $x$-Wert des Schnittpunkts der beiden Funktionen, die man aus der linken und rechten Seite der Wurzelgleichung entnehmen kann.
 			\subsubsection{Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}
 			\begin{flalign*}
@@ -1053,7 +980,7 @@
 		\subsection{Betragsfunktionen}
 			\label{subsec:betragsfunktionen}
 			Um mit Betragsgleichungen oder auch Betragsfunktionen rechnen zu können muss man mehrere Fälle betrachten. Nämlich einmal den Fall, dass im Betrag ein Wert größer oder gleich $0$ entsteht und einmal den Fall, dass das Ergebnis im Betrag kleiner als Null ist. Betrachten wir einmal ein Beispiel, wo man den Schnittpunkt zwischen $f(x)=\vert x+1\vert$ und $f(x)=x+2$ finden soll.\newline
-			\fullwidthplots{x+2}{$f(x)=x+2$}{blue}{5.5,4}{abs(x+1)}{$f(x)=\vert x+1\vert$}{red}{9.5,3.2}{-5}{5}{-4}{4}{100}{-10:10}
+			\makeplot{{x+2},{abs(x+1)}}{{$f(x)=x+2$},{$f(x)=\vert x+1\vert$}}{{5.5,4},{9.5,3.2}}{-5,5}{-4,4}{-10:10}{100}{17cm,7cm}
 			Zunächst setzen wir unsere Funktionen gleich und erhalten eine Betragsgleichung. Dann betrachten wir die verschiedenen Fälle für den Betrag.
 			\begin{flalign*}
 			\vert x+1\vert &= \left\{x+1\;\;\;\;\;\;\;\;\;Fall\;x\ge -1  \atop -(x+1)\;\;\;\;Fall\;x<-1 \right.&&
@@ -1078,7 +1005,7 @@
 			Durch einsetzen dieser $x$-Koordinate, finden wir auch den dazugehörigen $y$-Wert: $P\left(-\frac{3}{2}\mid\frac{1}{2}\right)$:
 			\subsubsection{Betragsgleichungen mit mehreren Beträgen}
 			Haben wir mehrere Beträge in unserer Gleichung, haben wir auch mehrere Fälle zu betrachten. Schon wir uns das an einem Beispiel an, indem wir die Schnittpunkte von $f(x)=\vert x+1 \vert + 5$ und $f(x)=\vert 2x-4 \vert$ suchen.
-			\fullwidthplots{abs(x+1)+5}{$f(x)=\vert x+1 \vert + 5$}{blue}{6.9,3.6}{abs(2*x-4)}{$f(x)=\vert 2x-4 \vert$}{red}{10,1.7}{-4}{14}{0}{20}{300}{0:20}
+			\makeplot{{abs(x+1)+5},{abs(2*x-4)}}{{$f(x)=\vert x+1 \vert + 5$},{$f(x)=\vert 2x-4 \vert$}}{{6.9,3.6},{10,1.7}}{-4,14}{0,20}{0:20}{300}{17cm,7cm}
 			Zunächst setzen wir die Funktionen wieder gleich.
 			\begin{flalign*}
 			\vert x+1 \vert + 5=\vert 2x-4 \vert&&
@@ -1143,100 +1070,12 @@
 					p(x)=a_{2k}x^{2k}+...+a_2x^2+a_0,\;wenn\;a_{2k}\ge 0\;und\;a_0>0&&
 				\end{flalign*}
 				Polynome geraden Grades besitzen keine Nullstellen.\newline
-				\begin{center}
-					\begin{tikzpicture}
-					\begin{axis}[
-					domain=-4:4,
-					width=14cm,
-					height=7cm,
-					xmin=-7, xmax=3,
-					ymin=-4, ymax=4,
-					samples=400,
-					axis y line=center,
-					axis x line=middle,
-					ticklabel style={fill=white},
-					minor tick num=2,
-					grid=both,
-					grid style={line width=.1pt, draw=gridgray!10},
-					major grid style={line width=.2pt,draw=gridgray!50}
-					]
-					\addplot+[mark=none,color=blue] {x^4-x^3-2*x^2};
-					\addplot+[mark=none,color=red] {x^4};
-					\addplot+[mark=none,color=teal] {-2*x^2};
-					\end{axis}
-					\node [color=blue] at (5,3.2) {$f(x)=x^4-x^3-2x^2$};
-					\node [color=red] at (5.7,5) {$f(x)=x^4$};
-					\node [color=teal] at (5.9,1) {$f(x)=-2x^2$};
-					\end{tikzpicture}
-				\end{center}
+				\makeplot{{x^4-x^3-2*x^2},{x^4},{-2*x^2}}{{$f(x)=x^4-x^3-2x^2$},{$f(x)=x^4$},{$f(x)=-2x^2$}}{{5,3.2},{5.7,5},{5.9,1}}{-7,3}{-4,4}{-10:10}{400}{14cm,7cm}
 			\end{tcolorbox}
-		\begin{center}
-			\begin{tikzpicture}
-			\begin{axis}[
-			domain=-5:5,
-			restrict y to domain=-30:60,
-			xmin=-5, xmax=5,
-			ymin=-5, ymax=5,
-			samples=300,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none,color=blue] {4*x^6+x^4-3*x^2+2};
-			\end{axis}
-			\node [color=blue] at (3.78,3.2) {$f(x)=4x^6+x^4-3x^2+2$};
-			\end{tikzpicture}
-			\hspace{1cm}
-			\begin{tikzpicture}
-			\begin{axis}[
-			domain=-5:5,
-			restrict y to domain=-30:60,
-			xmin=-5, xmax=5,
-			ymin=-5, ymax=5,
-			samples=300,
-			axis y line=center,
-			axis x line=middle,
-			ticklabel style={fill=white},
-			minor tick num=2,
-			grid=both,
-			grid style={line width=.1pt, draw=gridgray!10},
-			major grid style={line width=.2pt,draw=gridgray!50}
-			]
-			\addplot+[mark=none,color=red] {3*x^5+2*x^4-3*x^3+1};
-			\end{axis}
-			\node [color=red] at (5,2.15) {$f(x)=3x^5+2x^4-3x^3+1$};
-			\end{tikzpicture}\newline\newline\newline
-			\begin{tcolorbox}[boxsep=0pt, left=2.2cm, top=0cm, bottom=0cm,right=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
-				\begin{center}
-					\begin{tikzpicture}
-					\begin{axis}[
-					domain=-5:5,
-					restrict y to domain=-30:60,
-					xmin=-5, xmax=5,
-					ymin=-5, ymax=5,
-					samples=300,
-					axis y line=center,
-					axis x line=middle,
-					ticklabel style={fill=white},
-					minor tick num=2,
-					grid=both,
-					grid style={line width=.1pt, draw=gridgray!10},
-					major grid style={line width=.2pt,draw=gridgray!50}
-					]
-					\addplot+[mark=none,color=teal] {x^5+2*x^4-3*x^3-3*x^2+4*x};
-					\end{axis}
-					\node [color=teal] at (7,1) {$f(x)=x^5+2x^4-3x^3-3x^2+4x$};
-					\end{tikzpicture}
-				\end{center}
-			\end{tcolorbox}
-		\end{center}
+	
 		\subsubsection{Lösen durch Substitution}
 		In diesem Beispiel werden die Nullstellen der Funktion mithilfe von \highlight{subsec:substitution}{Substitution} und anschließendem Anwenden der \highlight{subsubsec:pqformel}{p-q-Formel} ermittelt.\newline
-		\fullwidthplot{x^4-5*x^2+2}{$p(x)=x^4-5x^2+2$}{blue}{12.5,1.3}{-6}{6}{-6}{6}{300}{-30:60}
+		\makeplot{{x^4-5*x^2+2}}{{$p(x)=x^4-5x^2+2$}}{{12.5,1.3}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}
 		\begin{flalign*}
 			p(x)&=x^4-5x^2+2\\
 			0&=x^4-5x^2+2\\
@@ -1253,7 +1092,7 @@
 		\hrulefill
 		\subsubsection{Lösen durch Faktorisierung}
 		In diesem Beispiel werden die Nullstellen der Funktion mithilfe von \highlight{subsubsec:ausklammern}{Faktorisierung durch Ausklammern} ermittelt.\newline
-		\fullwidthplot{x^5-3*x^3}{$p(x)=x^5-3x^3$}{blue}{11.75,1.3}{-6}{6}{-6}{6}{300}{-30:60}
+		\makeplot{{x^5-3*x^3}}{{$p(x)=x^5-3x^3$}}{{11.75,1.3}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}
 		\begin{flalign*}
 		p(x)&=x^5-3x^3\\
 		0&=x^5-3x^3\\
@@ -1264,7 +1103,7 @@
 		\hrulefill
 		\subsubsection{Lösen mit binomischen Formeln}
 		In diesem Beispiel wird Funktion mithilfe der \highlight{sec:binomischeformeln}{binomischen Formeln} so vereinfacht, dass man die Nullstellen ganz einfach ablesen kann.\newline
-		\fullwidthplot{x^4-2*x^2+1}{$p(x)=x^4-2x^2+1$}{blue}{11.6,3.2}{-6}{6}{-6}{6}{300}{-30:60}
+		\makeplot{{x^4-2*x^2+1}}{{$p(x)=x^4-2x^2+1$}}{{11.6,3.2}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}
 		\begin{flalign*}
 		p(x)&=x^4-4x^2+1\\
 		0&=x^4-4x^2+1\\
@@ -1275,7 +1114,7 @@
 		\hrulefill
 		\subsubsection{Lösen durch Polynomdivision}
 			Wenn alle anderen Stränge reißen, ist man leider gezwungen die Polynomdivision durchzuführen. Um damit beginnen zu können, braucht man aber mindestens eine Nullstelle, die man durch Raten findet. Für das Beispiel unten finden wir so heraus, dass eine Nullstelle $x_1=1$ ist. Jetzt stellen wir $x=1$ nach $0$ um und erhalten $0=x-1$. Anschließend teilen wir unser Polynom durch $x-1$.\newline
-			\fullwidthplot{2*x^3-5*x^2-2*x+5}{$p(x)=2x^3-5x^2-2x+5$}{blue}{3.9,3.2}{-6}{6}{-6}{6}{300}{-30:60}
+			\makeplot{{2*x^3-5*x^2-2*x+5}}{{$p(x)=2x^3-5x^2-2x+5$}}{{3.9,3.2}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}
 			\begin{flalign*}
 			(2x^3-5x^2-2x+5):(x-1)&&
 			\end{flalign*}
@@ -1286,7 +1125,7 @@
 			Jetzt muss man zurück multiplizieren, indem man den Term $2x^2$, den wir gerade bekommen haben, mit unserem ursprünglichen Divisor $x-1$ multiplizieren. Das Ergebnis ziehen wir von unserem Polynom ab und holen anschließend den nächsten Ausdruck runter. Diesen Prozess wiederholen wir jetzt so oft, wie möglich.\newline\newline
 			\polylongdiv[style=C,div=:]{2x^3-5x^2-2x+5}{x-1}\newline\newline
 			Mit der Funktion, die wir jetzt haben, können wir ganz einfach die restlichen Nullstellen errechnen.\newline
-			\fullwidthplot{2*x^2-3*x-5}{$f(x)=2x^2-3x-5$}{blue}{3.9,3.2}{-6}{6}{-10}{10}{300}{-30:60}
+			\makeplot{{2*x^2-3*x-5}}{{$f(x)=2x^2-3x-5$}}{{3.9,3.2}}{-6,6}{-10,10}{-30:60}{300}{17cm,7cm}
 			\begin{flalign*}
 				f(x)&=2x^2-3x-5\\
 				0&=2x^2-3x-5\\
@@ -1299,51 +1138,11 @@
 		\subsection{Exponentialfunktionen}
 			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 				Eine Funktion der Form $f(x)=a^x$ wird als Exponentialfunktion bezeichnet, denn die Variable $x$ steht im Exponenten. Speziell wird die Funktion $f(x)=e^x$ als \textit{natürliche Exponentialfunktion} bezeichnet.
+				\makeplot{{e^x},{e^(-x)}}{{$f(x)=e^x$},{$f(x)=e^{-x}$}}{{8,3.3},{4.1,3.3}}{-6,6}{-6,6}{-10:10}{300}{14cm,7cm}
 			\end{tcolorbox}
-			\begin{center}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				restrict y to domain=-30:60,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=blue] {e^x};
-				\end{axis}
-				\node [color=blue] at (4.9,3.3) {$f(x)=e^x$};
-				\end{tikzpicture}
-				\hspace{1cm}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				restrict y to domain=-30:60,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=red] {e^(-x)};
-				\end{axis}
-				\node [color=red] at (2,3.3) {$f(x)=e^{-x}$};
-				\end{tikzpicture}
-			\end{center}
 			\subsubsection{Lösen von Exponentialgleichungen}
 				Zum Lösen von Exponentialgleichungen brauchen wir in der Regel den \highlight{subsec:logarithmusgesetze}{Logarithmus}. Wie das funktioniert, sehen wir an dem Beispiel hier drunter. Dabei ist die Nullstelle der Funktion zu bestimmen. In diesem Beispiel sollte man sich außerdem nochmal daran erinnern, dass $\sqrt[n]{x}$ dasselbe ist, wie $x^{\frac{1}{n}}$.
-				\fullwidthplot{(7^x)^(1/4)-4}{$f(x)=\sqrt[4]{7^x}-4$}{blue}{10,3.2}{-6}{6}{-10}{10}{300}{-30:60}
+				\makeplot{{(7^x)^(1/4)-4}}{{$f(x)=\sqrt[4]{7^x}-4$}}{{10,3.2}}{-6,6}{-10,10}{-30:30}{300}{17cm,7cm}
 				\begin{flalign*}
 					f(x)&=\sqrt[4]{7^x}-4\\
 					0&=\sqrt[4]{7^x}-4 && \mid +4 &&&&&&&&&&&&& \\
@@ -1355,91 +1154,11 @@
 		\subsection{Logarithmusfunktionen}
 			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 				Funktionen wie $f(x)=log_3(x^2)$ werden als Logarithmusfunktionen bezeichnet, da sie einen oder mehrere Logarithmen beinhalten. Speziell bezeichnet man $f(x)=ln(x)$ als \textit{natürliche Logarithmusfunktion} und $f(x)=lg(x)$ als \textit{dekadische Logarithmusfunktion}.
+				\makeplot{{ln(x)},{log10(x)},{-ln(abs(x))}, {log2(x)}}{{$f(x)=ln(x)$},{$f(x)=lg(x)$},{$f(x)=-ln(\vert x\vert)$},{$f(x)=log_2(x)$}}{{8,4.3},{11,4.8},{2,1},{8,1}}{-6,6}{-4,4}{-200:200}{500}{14cm,7cm}
 			\end{tcolorbox}
-			\begin{center}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				restrict y to domain=-30:60,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=blue] {ln(x)};
-				\end{axis}
-				\node [color=blue] at (4.9,4.3) {$f(x)=ln(x)$};
-				\end{tikzpicture}
-				\hspace{1cm}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				restrict y to domain=-30:60,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=red] {log10(x)};
-				\end{axis}
-				\node [color=red] at (2,3.3) {$f(x)=lg(x)$};
-				\end{tikzpicture}
-				\newline\newline\newline
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				restrict y to domain=-30:60,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=teal] {-ln(abs(x))};
-				\end{axis}
-				\node [color=teal] at (5.1,1.3) {$f(x)=-ln(\vert x\vert)$};
-				\end{tikzpicture}
-				\hspace{1cm}
-				\begin{tikzpicture}
-				\begin{axis}[
-				domain=-5:5,
-				restrict y to domain=-30:60,
-				xmin=-5, xmax=5,
-				ymin=-5, ymax=5,
-				samples=300,
-				axis y line=center,
-				axis x line=middle,
-				ticklabel style={fill=white},
-				minor tick num=2,
-				grid=both,
-				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
-				]
-				\addplot+[mark=none,color=violet] {log2(x)};
-				\end{axis}
-				\node [color=violet] at (1.9,3.2) {$f(x)=log_2(x)$};
-				\end{tikzpicture}
-			\end{center}
 			\subsubsection{Lösen von Logarithmusgleichungen}
-				Gesucht ist hier die Nullstelle einer Logarithmusfunktion. Hinweis: Um einen Logarithmus aufzulösen musst du beide Seiten der Gleichung als Exponent zur Basis des jeweiligen Logarithmus setzen. Um dort hinzu kommen hilft es enorm, die Gleichung zunächst umzuformen. Wenn du Schwierigkeiten mit den Umformungen in diesem Beispiel hast, schaue dir noch einmal die \highlight{subsec:potenzgesetze}{Potenzgesetze} und \highlight{subsec:logarithmusgesetze}{Logarithmusgesetze} an.
-				\fullwidthplot{3*log10(x^3)-2*log10(x^2)-4}{$f(x)=3\cdot lg(x^3)-2\cdot lg(x^2)-4$}{blue}{11,3.3}{-10}{10}{-10}{10}{300}{-30:60}
+				Gesucht wird hier die Nullstelle einer Logarithmusfunktion gesucht. Hinweis: Um einen Logarithmus aufzulösen musst du beide Seiten der Gleichung als Exponent zur Basis des jeweiligen Logarithmus setzen. Um dort hinzu kommen hilft es enorm, die Gleichung zunächst umzuformen. Wenn du Schwierigkeiten mit den Umformungen in diesem Beispiel hast, schaue dir noch einmal die \highlight{subsec:potenzgesetze}{Potenzgesetze} und \highlight{subsec:logarithmusgesetze}{Logarithmusgesetze} an.
+				\makeplot{{3*log10(x^3)-2*log10(x^2)-4}}{{$f(x)=3\cdot lg(x^3)-2\cdot lg(x^2)-4$}}{{11,3.3}}{-10,10}{-10,10}{-20:20}{300}{17cm,7cm}
 				\begin{flalign*}
 					f(x)&=3\cdot lg(x^3)-2\cdot lg(x^2)-4\\
 					0&=3\cdot lg(x^3)-2\cdot lg(x^2)-4\\
@@ -1451,4 +1170,8 @@
 					x&=6,309573445\\
 					\mathbb{L}&=\{6,309573445\}&&
 				\end{flalign*}
+		\subsection{Trigonometrische Funktionen}
+			\begin{tcolorbox}[boxsep=0pt,top=.85cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				Trigonometrische Funktionen oder auch Winkelfunktionen genannt, beinhalten die aus der \highlight{sec:geometrie}{Geometrie} bekannten winkelabhängigen Funktionen, wie Sinus, Kosinus und Tangens. Dabei sind diese Funktionen hier allerdings abhängig von der Variable $x$ und damit im Bogenmaß, nicht im Gradmaß. Beim Taschenrechner muss man darauf achten, dass der richtige Modus eingestellt ist, ansonsten kann es sein, dass man versehentlich im falschen Maß rechnet. Auf dem CASIO fx-86DE PLUS, drückt man Shift, dann Setup und wählt dort die 3:Deg (engl. degree) für Gradmaß oder 4:Rad (engl. radian) fürs Bogenmaß.
+			\end{tcolorbox}
 \end{document}

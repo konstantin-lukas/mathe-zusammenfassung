@@ -32,83 +32,6 @@
 \DeclareRobustCommand{\bigfrac}[3][5pt]{%
 	\frac{\hspace{#1}#2\hspace{#1}}{\hspace{#1}#3\hspace{#1}}}
 \newcommand{\highlight}[2]{\textcolor{blue}{\hyperref[#1]{#2}} (S. \pageref{#1})}
-\newcommand\fullwidthplot[9]{
-	\def\tempa{#1}
-	\def\tempb{#2}
-	\def\tempc{#3}
-	\def\tempd{#4}
-	\def\tempe{#5}
-	\def\tempf{#6}
-	\def\tempg{#7}
-	\def\temph{#8}
-	\def\tempi{#9}
-	\foo
-}
-\newcommand{\foo}[1]{
-	\begin{center}
-		\begin{tikzpicture}
-		\begin{axis}[
-		domain=\tempe:\tempf,
-		width=17cm,
-		height=7cm,
-		restrict y to domain=#1,
-		xmin=\tempe, xmax=\tempf,
-		ymin=\tempg, ymax=\temph,
-		samples=\tempi,
-		axis y line=center,
-		axis x line=middle,
-		ticklabel style={fill=white},
-		minor tick num=2,
-		grid=both,
-		grid style={line width=.1pt, draw=gridgray!10},
-		major grid style={line width=.2pt,draw=gridgray!50}
-		]
-		\addplot+[mark=none, color=\tempc] {\tempa};
-		\end{axis}
-		\node [color=\tempc] at (\tempd) {\tempb};
-		\end{tikzpicture}
-	\end{center}
-}
-\newcommand\fullwidthplots[9]{
-	\def\tempa{#1}
-	\def\tempb{#2}
-	\def\tempc{#3}
-	\def\tempd{#4}
-	\def\tempe{#5}
-	\def\tempf{#6}
-	\def\tempg{#7}
-	\def\temph{#8}
-	\def\tempi{#9}
-	\fooo
-}
-\newcommand{\fooo}[5]{
-	\begin{center}
-		\begin{tikzpicture}
-		\begin{axis}[
-		domain=\tempi:#1,
-		width=17cm,
-		height=7cm,
-		restrict y to domain=#5,
-		xmin=\tempi, xmax=#1,
-		ymin=#2, ymax=#3,
-		samples=#4,
-		axis y line=center,
-		axis x line=middle,
-		ticklabel style={fill=white},
-		minor tick num=2,
-		grid=both,
-		grid style={line width=.1pt, draw=gridgray!10},
-		major grid style={line width=.2pt,draw=gridgray!50}
-		]
-		\addplot+[mark=none, color=\tempc] {\tempa};
-		\addplot+[mark=none, color=\tempg] {\tempe};
-		\end{axis}
-		\node [color=\tempc] at (\tempd) {\tempb};
-		\node [color=\tempg] at (\temph) {\tempf};
-		\end{tikzpicture}
-	\end{center}
-}
-
 \newcommand{\getcolor}[1]{\ifcase#1\or blue\or red\or teal\or violet\or
 	magenta\or orange\or purple\or brown\fi}
 \newcommand{\makeplot}[8]{
@@ -924,7 +847,7 @@
 				\end{tcolorbox}
 		\subsection{Potenz- und Wurzelfunktionen}
 			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.85cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-				Potenzfunktionen in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}, wenn $n\ge 2$ gilt und der Bruch keine ganze Zahl ist. Hier sind einige Beispiele für Graphen von Wurzelfunktionen:\newline
+				Potenzfunktionen in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}, wenn $n\ge 2$ gilt und der Bruch keine ganze Zahl ist. An der Potenz kann man erkennen, ob eine Funktion gerade ($x^{2n}$) oder ungerade ($x^{2n-1}$) ist. Hier sind einige Beispiele für Graphen von Wurzelfunktionen:\newline
 				\makeplot{{x^3},{x^2},{x^(3/2)},{x^(2/3)},{x^(-1/2)},{x^(-2)},{x^(-3)}}{{$f(x)=x^3$},{$f(x)=x^2$},{$f(x)=x^{\frac{3}{2}}$},{$f(x)=x^{\frac{2}{3}}$},{$f(x)=x^{-\frac{1}{2}}$},{$f(x)=x^{-2}$},{$f(x)=x^{-3}$}}{{1,-1},{1,-2},{4,-1},{4,-2},{7,-1},{7,-2},{10,-1}}{-6,6}{-6,6}{-10:10}{300}{14cm,7cm}
 			\end{tcolorbox}
 			\subsubsection{Wurzelgleichungen}
@@ -1059,7 +982,7 @@
 				\begin{flalign*}
 				p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x^1+1_0&&
 				\end{flalign*}
-				Das Verhalten einer Polynomfunktion hängt für $x\to \infty$ vom Summanden mit der höchsten Potenz und für $x\to 0$ vom Summanden mit der niedrigsten Potenz ab.\newline\newline
+				Das Verhalten einer Polynomfunktion hängt für $x\to \infty$ vom Summanden mit der höchsten Potenz und für $x\to 0$ vom Summanden mit der niedrigsten Potenz ab. Für die Symmetrie der Funktion gilt weiterhin, dass bei geraden Potenzen eine gerade Funktion vorliegt und bei ungeraden Potenzen eine ungerade Funktion. Hat ein Polynom jedoch sowohl gerade, wie auch ungerade Exponenten, so kann man beides ausschließen.\newline\newline
 				\textbf{Nullstellen}\newline\newline
 				Polynome n-ten Grades haben maximal n Nullstellen.
 				\begin{flalign*}
@@ -1173,5 +1096,12 @@
 		\subsection{Trigonometrische Funktionen}
 			\begin{tcolorbox}[boxsep=0pt,top=.85cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 				Trigonometrische Funktionen oder auch Winkelfunktionen genannt, beinhalten die aus der \highlight{sec:geometrie}{Geometrie} bekannten winkelabhängigen Funktionen, wie Sinus, Kosinus und Tangens. Dabei sind diese Funktionen hier allerdings abhängig von der Variable $x$ und damit im Bogenmaß, nicht im Gradmaß. Beim Taschenrechner muss man darauf achten, dass der richtige Modus eingestellt ist, ansonsten kann es sein, dass man versehentlich im falschen Maß rechnet. Auf dem CASIO fx-86DE PLUS, drückt man Shift, dann Setup und wählt dort die 3:Deg (engl. degree) für Gradmaß oder 4:Rad (engl. radian) fürs Bogenmaß.
+				\makeplot{{sin(deg(x))},{cos(deg(x))},{tan(deg(x))}}{{$f(x)=\sin(x)$},{$f(x)=\cos(x)$},{$f(x)=\tan(x)$}}{{1.5,-1},{4.5,-1},{7.5,-1}}{-10,10}{-2,2}{-10:10}{200}{14cm,7cm}
+				Anmerkung: Die Nullstellen des Sinus sind die Extremstellen des Kosinus und umgekehrt. Ebenso habe Sinus und Tanges dieselben Nullstellen.
+			\end{tcolorbox}
+		\subsection{Verkettete Funktionen}
+				\begin{tcolorbox}[boxsep=0pt,top=.85cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				Verkettungen sind eigentliche keine eigene Funktionsart, sondern eine Möglichkeit Funktionen durch Zusammensetzung zu transformieren. Man schreibt das als $f\circ g$ ("f nach g"). Man spricht hier bei $g$ auch von der \textit{inneren Funktion}, da sie als Argument in die \textit{äußere Funktion} $f$ eingesetzt wird.
+				\makeplot{{sin(deg(x))},{(x^2)/2},{sin(deg((x^2)/2))}}{{$f(x)=\sin(x)$},{$g(x)=\frac{x^2}{3}$},{$f\circ g(x)=\sin(\frac{x^2}{3})$}}{{1.5,-1},{4.5,-1},{8,-1}}{-10,10}{-2,2}{-10:10}{500}{14cm,7cm}
 			\end{tcolorbox}
 \end{document}

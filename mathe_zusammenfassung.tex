@@ -13,7 +13,7 @@
 \date{Fassung vom \the\day . \monthword{\month} \the\year}
 \usepackage{amsmath,amsfonts,amssymb,amsthm}
 \usepackage{braket}
-\usepackage[margin=2cm]{geometry}
+\usepackage[a4paper, margin=2cm]{geometry}
 \usepackage{bbold}
 \usepackage{pgffor,listofitems}
 \usepackage{tocloft}
@@ -34,7 +34,7 @@
 \newcommand{\highlight}[2]{\textcolor{blue}{\hyperref[#1]{#2}} (S. \pageref{#1})}
 \newcommand{\getcolor}[1]{\ifcase#1\or blue\or red\or teal\or violet\or
 	magenta\or orange\or purple\or brown\fi}
-\newcommand{\makeplot}[8]{
+\newcommand{\makeplot}[9]{
 	\readlist\xlimits{#4}
 	\def\xlower{\xlimits[1]}
 	\def\xupper{\xlimits[2]}
@@ -63,7 +63,7 @@
 		major grid style={line width=.2pt,draw=gridgray!50}
 		]
 		\foreach \graph [count=\i] in {#1} {
-			\edef\temp{\noexpand\addplot+[mark=none, color=\getcolor{\i}, solid] {\graph};}
+			\edef\temp{\noexpand\addplot+[mark=none, color=\getcolor{\i}, solid, #9] {\graph};}
 			\temp
 		}
 		
@@ -175,6 +175,7 @@
 			\mathbb{R} \setminus \mathbb{Q}&&
 		\end{flalign*}
 \section{Elementare Rechengesetze, -verfahren und -notationen}
+\label{sec:rechengesetze}
 	\subsection{Brüche dividieren}
 		Um zwei Brüche zu dividieren bildet man den Kehrwert vom Divisor und multipliziert diesen mit dem Dividend.
 		\begin{flalign*}
@@ -193,7 +194,7 @@
 		Beispiel 4 ($x^2 + y = 5$):\newline
 		$\mathbb{L} = \{(x_0;y_0)\in\mathbb{R}^2\mid x^2_0 + y_0 = 5\} = \{(x_0;5-x^2_0) \mid x_0\in\mathbb{R}^2\}$\newline\newline
 		In diesem Fall ist die Lösungsmenge die Funktion $y=5-x^2$.\newline
-		\makeplot{{5-x^2}}{{$f(x)=5-x^2$}}{{11,3.3}}{-10,10}{-10,10}{-30:30}{330}{17cm,7cm}
+		\makeplot{{5-x^2}}{{$f(x)=5-x^2$}}{{11,3.3}}{-10,10}{-10,10}{-30:30}{330}{17cm,7cm}{smooth}
 	\subsection{Normalform}
 		Eine Gleichung in der Form $ax^2+bx+c=0$ mit $a\neq0$ und $b,c\in \mathbb{R}$, heißt quadratisch. Spezial bezeichnet man $x^2+px+q=0$ mir $p,q\in \mathbb{R}$, als quadratische Gleichung in Normalform.\newline\newline
 		Man kann eine quadratische Gleichung in die Normalform überführen, indem man durch $a$ teilt: $x^2+\frac{b}{a}x+\frac{c}{a}=0$.
@@ -279,7 +280,7 @@
 		= & \cfrac{\sqrt{a}-\sqrt{b}}{\sqrt{a}^2-\sqrt{b}^2} \\ 
 		= & \cfrac{\sqrt{a}-\sqrt{b}}{a-b} &&
 		\end{flalign*}
-		\hrulefill\newline\newline
+		\newline\newline\hrule
 		Beispiel 2:
 		\begin{flalign*}
 		& \frac{\sqrt{(1+a^2) \cdot (a-b)^2}}{\sqrt[4]{16(1+a^2)^2}} \\
@@ -296,13 +297,13 @@
 				& = \sqrt{2}-4\sqrt{2}+6 \\
 				& = 6-3\sqrt{2} &&
 			\end{flalign*}
-			\hrulefill
+			\hrule
 			\begin{flalign*}
 			\dfrac{1}{\sqrt{1+x^{2}}-1}-\dfrac{1}{\sqrt{1+x^{2}}+1} & = \dfrac{\sqrt{1+x^{2}}+1}{\left( \sqrt{1+x^{2}}-1\right) \cdot \left( \sqrt{1+x^{2}}+1\right) } - \dfrac{\sqrt{1+x^{2}}-1}{\left( \sqrt{1+x^{2}}+1\right) \cdot \left( \sqrt{1+x^{2}}-1\right) } \\
 			& = \dfrac{\left( \sqrt{1+x^{2}}+1\right) -\left( \sqrt{1+x^{2}}-1\right) }{1+x^{2}-1} \\
 			& = \frac{2}{x^2} &&
 			\end{flalign*}
-			\hrulefill\newline\newline
+			\newline\newline\hrule
 			Beispiel 3: Bestimmen Sie $x$ und $y$, sodass $\frac{x}{y}$ vollständig gekürzt ist.
 			\begin{flalign*}
 				\dfrac{2\cdot 2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
@@ -422,7 +423,7 @@
 		\end{tcolorbox}
 	\subsection{Quadratische Ungleichungen}
 		Um die Lösungsmenge einer quadratischen Ungleichung zu finden, formt man die Ungleichung zunächst so um, dass auf einer Seite $0$ steht. Auf der anderen Seite hat man dann optimalerweise eine quadratische Funktion. Schauen wir uns mal das Beispiel $x^2>2x+7$ an.
-		\makeplot{{x^2-2*x-7}}{{$f(x)=x^2-2x-7$}}{{5,1}}{-10,10}{-10,10}{-30:30}{330}{17cm,7cm}
+		\makeplot{{x^2-2*x-7}}{{$f(x)=x^2-2x-7$}}{{5,1}}{-10,10}{-10,10}{-30:30}{330}{17cm,7cm}{smooth}
 		Wir stellen also zunächst um und erhalten $x^2-2x-7>0$. Daraus ergibt sich auch die Funktion oben. An der Grafik erkennt man sehr gut, was wir eigentlich suchen. Denn unsere Lösungsmenge sind alle $x$, für die $f(x)$ größer als $0$ ist. Und wie kriegen wir das raus? Indem wir die Nullstellen berechnen. Das Intervall von Unendlich bis zur linken Nullstelle ist ein Teil unserer Lösung und der andere ist das Intervall von der rechten Nullstelle bis unendlich. Dabei muss man stets verschiedene Fälle beachten. Für eine nach unten geöffnete Funktion ($-x^2$) suchen wir den Bereich zwischen den Nullstellen. Für eine Funktion oberhalb der $x$-Achse, die keine Nullstellen hat, sind alle reellen Zahlen unsere Lösungsmenge, wohingegen eine Funktion ohne Nullstellen unterhalb der $x$-Achse eine leere Lösungsmenge liefern würde. Eine Funktion mit genau einer Nullstelle liefert hingegen eine Lösungsmenge aller reellen Zahlen außer der Nullstelle. Es gibt je nach Art der Funktion und Vergleichszeichen in unserer Ungleichung viele unterschiedliche Szenarien, weshalb es immer ratsam ist eine Skizze anzufertigen. Für das Beispiel oben können wir die \highlight{subsubsec:pqformel}{p-q-Formel} verwenden, um die Nullstellen zu berechnen.
 		\begin{flalign*}
 		x_{\pm}&=-\frac{-2}{2}\pm \sqrt{\left(\frac{-2}{2}\right)^2+7}\\
@@ -435,7 +436,7 @@
 		\end{flalign*}
 	\subsection{Ungleichungen mit Beträgen}
 		Das Vorgehen bei Betragsungleichungen ist im Grunde genommen dasselbe Prinzip, wie bei den quadratischen. Schauen wir uns das Beispiel $\vert x \vert -3 < 0$ an.
-		\makeplot{{abs(x)-3}}{{$f(x)=\vert x \vert -3$}}{{5,1.75}}{-10,10}{-10,10}{-30:30}{330}{17cm,7cm}
+		\makeplot{{abs(x)-3}}{{$f(x)=\vert x \vert -3$}}{{5,1.75}}{-10,10}{-10,10}{-30:30}{330}{17cm,7cm}{sharp plot}
 		Wir erkennen die Nullstellen in dem Fall sehr leicht. Das sind $-3$ und $3$. Erkennt man das nicht sofort, muss man eine \highlight{subsec:betragsfunktionen}{Fallunterscheidung} durchführen. Jetzt können wir aber erst mal unsere Lösungsmenge definieren, denn wir wissen, dass wir alle $x$ suchen für die $f(x)<0$ gilt.
 		\begin{flalign*}
 		\mathbb{L}=(-3;3)&&
@@ -446,7 +447,7 @@
 		\end{flalign*}
 	\subsection{Ungleichungen mit Variable im Nenner – Teil I}
 		Aus den vorherigen Erklärungen kann man sich herleiten, wie man das macht. Deshalb ist hier nur noch mal ein erklärendes Beispiel: $2\le \frac{14}{\vert 2x+5\vert}$.
-		\makeplot{{(14/abs(2*x+5))-2}}{{$f(x)=\dfrac{14}{\vert 2x+5\vert}-2$}}{{10,3.5}}{-10,10}{-10,10}{-30:30}{200}{17cm,7cm}
+		\makeplot{{(14/abs(2*x+5))-2}}{{$f(x)=\dfrac{14}{\vert 2x+5\vert}-2$}}{{10,3.5}}{-10,10}{-10,10}{-30:30}{200}{17cm,7cm}{sharp plot}
 		Wichtig ist, dass wir zunächst alle $x$ ausschließen, für die im Nenner $0$ rauskommt. In diesem Fall ist dass $-\frac{5}{2}$.
 		\begin{flalign*}
 			2&\le \frac{14}{\vert 2x+5\vert}\\
@@ -471,7 +472,7 @@
 	\subsection{Ungleichungen mit Variable im Nenner – Teil II}
 		Wenn wir uns an die \highlight{subsec:unglrechrgl}{Rechenregeln} für Ungleichungen erinnern, könnte man sich fragen, was passiert, wenn der Nenner mit einer Variable sowohl positiv als auch negativ sein kann. Denn wenn wir mit einer negativen Zahl multiplizieren, müssten wir das Vorzeichen umkehren. Hier muss man wieder verschiedene Fälle unterscheiden.\newline\newline
 		Beispiel: $\frac{1}{x-2}\le-x$
-		\makeplot{{(1/(x-2))+x}}{{$f(x)=\dfrac{1}{x-2}+x$}}{{11.1,0.65}}{-10,10}{-10,10}{-20:20}{350}{17cm,7cm}
+		\makeplot{{(1/(x-2))+x}}{{$f(x)=\dfrac{1}{x-2}+x$}}{{11.1,0.65}}{-10,10}{-10,10}{-20:20}{350}{17cm,7cm}{sharp plot}
 		Der Fall $x=2$ ist aufgrund des $x$ im Nenner wieder auszuschließen.
 		Fall 1: $x>2$
 		\begin{flalign*}
@@ -493,9 +494,9 @@
 		Dieser Fall ist für alle $x$ erfüllt, daher gehören alle $x<2$ zur Lösungsmenge.
 		\begin{flalign*}
 			\mathbb{L}=(-\infty;2)&&
-		\end{flalign*}\hrulefill\newline\newline
+		\end{flalign*}\newline\newline\hrule
 		Beispiel: $\frac{1}{x-9}\le8$
-		\makeplot{{(1/(x-9))-8}}{{$f(x)=\dfrac{1}{x-9}-8$}}{{11,1.6}}{-2,16}{-20,5}{-30:60}{330}{17cm,7cm}
+		\makeplot{{(1/(x-9))-8}}{{$f(x)=\dfrac{1}{x-9}-8$}}{{11,1.6}}{-2,16}{-20,5}{-30:60}{330}{17cm,7cm}{smooth}
 		Fall 1: $x>9$
 		\begin{flalign*}
 			\frac{1}{x-9}&\le 8\\
@@ -846,10 +847,8 @@
 					Achtung: Eine Funktion kann nur gerade oder ungerade sein, wenn ihr Definitionsbereich symmetrisch zum Nullpunkt auf $x$-Achse ist.
 				\end{tcolorbox}
 		\subsection{Potenz- und Wurzelfunktionen}
-			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.85cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-				Potenzfunktionen in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}, wenn $n\ge 2$ gilt und der Bruch keine ganze Zahl ist. An der Potenz kann man erkennen, ob eine Funktion gerade ($x^{2n}$) oder ungerade ($x^{2n-1}$) ist. Hier sind einige Beispiele für Graphen von Wurzelfunktionen:\newline
-				\makeplot{{x^3},{x^2},{x^(3/2)},{x^(2/3)},{x^(-1/2)},{x^(-2)},{x^(-3)}}{{$f(x)=x^3$},{$f(x)=x^2$},{$f(x)=x^{\frac{3}{2}}$},{$f(x)=x^{\frac{2}{3}}$},{$f(x)=x^{-\frac{1}{2}}$},{$f(x)=x^{-2}$},{$f(x)=x^{-3}$}}{{1,-1},{1,-2},{4,-1},{4,-2},{7,-1},{7,-2},{10,-1}}{-6,6}{-6,6}{-10:10}{300}{14cm,7cm}
-			\end{tcolorbox}
+			Potenzfunktionen in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}, wenn $n\ge 2$ gilt und der Bruch keine ganze Zahl ist. An der Potenz kann man erkennen, ob eine Funktion gerade ($x^{2n}$) oder ungerade ($x^{2n-1}$) ist. Hier sind einige Beispiele für Graphen von Wurzelfunktionen:\newline
+			\makeplot{{x^3},{x^2},{x^(3/2)},{x^(2/3)},{x^(-1/2)},{x^(-2)},{x^(-3)}}{{$f(x)=x^3$},{$f(x)=x^2$},{$f(x)=x^{\frac{3}{2}}$},{$f(x)=x^{\frac{2}{3}}$},{$f(x)=x^{-\frac{1}{2}}$},{$f(x)=x^{-2}$},{$f(x)=x^{-3}$}}{{1,-1},{1,-2},{4,-1},{4,-2},{7,-1},{7,-2},{10,-1}}{-6,6}{-6,6}{-10:10}{300}{17cm,7cm}{smooth}
 			\subsubsection{Wurzelgleichungen}
 			Bei Wurzelgleichungen wird zuerst der Definitionsbereich bestimmt werden, also die Menge an reellen Zahlen, für die der Radikand positiv oder gleich Null ist. Zur Lösung von Wurzelgleichungen wird die Wurzel auf einer Seite der Gleichung isoliert. Dann werden beide Seiten der Gleichung mit dem Wurzelexponenten (im Falle der Quadratwurzel also mit 2) so lange potenziert, bis alle Wurzeln eliminiert sind. Man bekommt also unter Umständen durch das Quadrieren (das Potenzieren mit einer geraden Zahl ist keine Äquivalenzumformung) neue Lösungen (Scheinlösungen) hinzu, die die ursprüngliche Gleichung nicht hatte. Die Probe ist folglich für Wurzelgleichungen unverzichtbar!\newline\newline
 			Beispiel ($\sqrt{2x+1}=x-17$):
@@ -885,7 +884,7 @@
 			\mathbb{L}=\{24\}&&
 			\end{flalign*}
 			Übrigens: Wenn man mehrere Wurzeln in der Gleichung hat, muss man den Definitionsbereich für den Radikanden jeder Wurzel bestimmen.
-			\makeplot{{sqrt(abs(2*x+1))},{x-17}}{{$f(x)=\sqrt{2x+1}$},{$f(x)=x-17$}}{{6.5,3.6},{8.3,1.4}}{0,30}{0,10}{-60:60}{600}{17cm,7cm}
+			\makeplot{{sqrt(abs(2*x+1))},{x-17}}{{$f(x)=\sqrt{2x+1}$},{$f(x)=x-17$}}{{6.5,3.6},{8.3,1.4}}{0,30}{0,10}{-60:60}{600}{17cm,7cm}{smooth}
 			Mithilfe dieser Grafik kann man das Ergebnis wunderbar visualisieren, denn das Ergebnis ist der $x$-Wert des Schnittpunkts der beiden Funktionen, die man aus der linken und rechten Seite der Wurzelgleichung entnehmen kann.
 			\subsubsection{Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}
 			\begin{flalign*}
@@ -903,7 +902,7 @@
 		\subsection{Betragsfunktionen}
 			\label{subsec:betragsfunktionen}
 			Um mit Betragsgleichungen oder auch Betragsfunktionen rechnen zu können muss man mehrere Fälle betrachten. Nämlich einmal den Fall, dass im Betrag ein Wert größer oder gleich $0$ entsteht und einmal den Fall, dass das Ergebnis im Betrag kleiner als Null ist. Betrachten wir einmal ein Beispiel, wo man den Schnittpunkt zwischen $f(x)=\vert x+1\vert$ und $f(x)=x+2$ finden soll.\newline
-			\makeplot{{x+2},{abs(x+1)}}{{$f(x)=x+2$},{$f(x)=\vert x+1\vert$}}{{5.5,4},{9.5,3.2}}{-5,5}{-4,4}{-10:10}{100}{17cm,7cm}
+			\makeplot{{x+2},{abs(x+1)}}{{$f(x)=x+2$},{$f(x)=\vert x+1\vert$}}{{5.5,4},{9.5,3.2}}{-5,5}{-4,4}{-10:10}{100}{17cm,7cm}{sharp plot}
 			Zunächst setzen wir unsere Funktionen gleich und erhalten eine Betragsgleichung. Dann betrachten wir die verschiedenen Fälle für den Betrag.
 			\begin{flalign*}
 			\vert x+1\vert &= \left\{x+1\;\;\;\;\;\;\;\;\;Fall\;x\ge -1  \atop -(x+1)\;\;\;\;Fall\;x<-1 \right.&&
@@ -928,7 +927,7 @@
 			Durch einsetzen dieser $x$-Koordinate, finden wir auch den dazugehörigen $y$-Wert: $P\left(-\frac{3}{2}\mid\frac{1}{2}\right)$:
 			\subsubsection{Betragsgleichungen mit mehreren Beträgen}
 			Haben wir mehrere Beträge in unserer Gleichung, haben wir auch mehrere Fälle zu betrachten. Schon wir uns das an einem Beispiel an, indem wir die Schnittpunkte von $f(x)=\vert x+1 \vert + 5$ und $f(x)=\vert 2x-4 \vert$ suchen.
-			\makeplot{{abs(x+1)+5},{abs(2*x-4)}}{{$f(x)=\vert x+1 \vert + 5$},{$f(x)=\vert 2x-4 \vert$}}{{6.9,3.6},{10,1.7}}{-4,14}{0,20}{0:20}{300}{17cm,7cm}
+			\makeplot{{abs(x+1)+5},{abs(2*x-4)}}{{$f(x)=\vert x+1 \vert + 5$},{$f(x)=\vert 2x-4 \vert$}}{{6.9,3.6},{10,1.7}}{-4,14}{0,20}{0:20}{300}{17cm,7cm}{sharp plot}
 			Zunächst setzen wir die Funktionen wieder gleich.
 			\begin{flalign*}
 			\vert x+1 \vert + 5=\vert 2x-4 \vert&&
@@ -977,28 +976,31 @@
 			\end{tcolorbox}
 			\noindent Abschließend können wir feststellen, dass unsere Lösungsmenge $\mathbb{L}=\left\{10;-\frac{2}{3}\right\}$ ist. Durch Einsetzen in eine der beiden Funktionen erhalten wir dann unsere Schnittpunkte $P_1(10\mid 16)$ und $P_2\left(-\frac{2}{3}\mid\frac{16}{3}\right)$.
 		\subsection{Polynomfunktionen}
-			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.85cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-				Polynome sind die Summe aus den Vielfachen von Monomen. Eine Polynomfunktion mit den Koeffizienten $a_n$ hat folgende Form:
-				\begin{flalign*}
-				p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x^1+1_0&&
-				\end{flalign*}
-				Das Verhalten einer Polynomfunktion hängt für $x\to \infty$ vom Summanden mit der höchsten Potenz und für $x\to 0$ vom Summanden mit der niedrigsten Potenz ab. Für die Symmetrie der Funktion gilt weiterhin, dass bei geraden Potenzen eine gerade Funktion vorliegt und bei ungeraden Potenzen eine ungerade Funktion. Hat ein Polynom jedoch sowohl gerade, wie auch ungerade Exponenten, so kann man beides ausschließen.\newline\newline
+			Polynome sind die Summe aus den Vielfachen von Monomen. Eine Polynomfunktion mit den Koeffizienten $a_n$ hat folgende Form:
+			\begin{flalign*}
+			p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x^1+1_0&&
+			\end{flalign*}
+			Das Verhalten einer Polynomfunktion hängt für $x\to \infty$ vom Summanden mit der höchsten Potenz und für $x\to 0$ vom Summanden mit der niedrigsten Potenz ab.
+			\makeplot{{x^4-x^3-2*x^2},{x^4},{-2*x^2}}{{$f(x)=x^4-x^3-2x^2$},{$f(x)=x^4$},{$f(x)=-2x^2$}}{{6.5,3.2},{7.2,5},{7.4,1}}{-7,3}{-4,4}{-10:10}{400}{17cm,7cm}{smooth}
+			\begin{tcolorbox}[boxsep=0pt,top=.85cm,left=1cm,right=1cm, bottom=.85cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 				\textbf{Nullstellen}\newline\newline
 				Polynome n-ten Grades haben maximal n Nullstellen.
 				\begin{flalign*}
-					p(x)=a_{2k-1}x^{2k-1}+...+a_1x+a_0,\;wenn\;a_{2k-1}\neq 0&&
+				p(x)=a_{2k-1}x^{2k-1}+...+a_1x+a_0,\;wenn\;a_{2k-1}\neq 0&&
 				\end{flalign*}
 				Polynome ungeraden Grades haben mindestens eine Nullstelle.
 				\begin{flalign*}
-					p(x)=a_{2k}x^{2k}+...+a_2x^2+a_0,\;wenn\;a_{2k}\ge 0\;und\;a_0>0&&
+				p(x)=a_{2k}x^{2k}+...+a_2x^2+a_0,\;wenn\;a_{2k}\ge 0\;und\;a_0>0&&
 				\end{flalign*}
-				Polynome geraden Grades besitzen keine Nullstellen.\newline
-				\makeplot{{x^4-x^3-2*x^2},{x^4},{-2*x^2}}{{$f(x)=x^4-x^3-2x^2$},{$f(x)=x^4$},{$f(x)=-2x^2$}}{{5,3.2},{5.7,5},{5.9,1}}{-7,3}{-4,4}{-10:10}{400}{14cm,7cm}
+				Polynome geraden Grades besitzen keine Nullstellen.
 			\end{tcolorbox}
-	
+			\begin{tcolorbox}[boxsep=0pt,top=.85cm,left=1cm,right=1cm, bottom=.85cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				\textbf{Symmetrie}\newline\newline
+				Für die Symmetrie der Funktion gilt wie bei Monomen weiterhin, dass bei geraden Potenzen eine gerade Funktion vorliegt und bei ungeraden Potenzen eine ungerade Funktion. Hat ein Polynom jedoch sowohl gerade, wie auch ungerade Exponenten, so kann man beides ausschließen.
+			\end{tcolorbox}
 		\subsubsection{Lösen durch Substitution}
 		In diesem Beispiel werden die Nullstellen der Funktion mithilfe von \highlight{subsec:substitution}{Substitution} und anschließendem Anwenden der \highlight{subsubsec:pqformel}{p-q-Formel} ermittelt.\newline
-		\makeplot{{x^4-5*x^2+2}}{{$p(x)=x^4-5x^2+2$}}{{12.5,1.3}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}
+		\makeplot{{x^4-5*x^2+2}}{{$p(x)=x^4-5x^2+2$}}{{12.5,1.3}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}{smooth}
 		\begin{flalign*}
 			p(x)&=x^4-5x^2+2\\
 			0&=x^4-5x^2+2\\
@@ -1012,10 +1014,10 @@
 			x_{3,4}^2&=0,6621534469\\\\
 			\mathbb{L}&=\{-2,135779205;-0,6621534469;0,6621534469;2,135779205\}&&
 		\end{flalign*}
-		\hrulefill
+		\hrule
 		\subsubsection{Lösen durch Faktorisierung}
 		In diesem Beispiel werden die Nullstellen der Funktion mithilfe von \highlight{subsubsec:ausklammern}{Faktorisierung durch Ausklammern} ermittelt.\newline
-		\makeplot{{x^5-3*x^3}}{{$p(x)=x^5-3x^3$}}{{11.75,1.3}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}
+		\makeplot{{x^5-3*x^3}}{{$p(x)=x^5-3x^3$}}{{11.75,1.3}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}{smooth}
 		\begin{flalign*}
 		p(x)&=x^5-3x^3\\
 		0&=x^5-3x^3\\
@@ -1023,10 +1025,10 @@
 		0&=x^2(x^2-\sqrt{3})(x^2+\sqrt{3})\\
 		\mathbb{L}&=\{-\sqrt{3};0;\sqrt{3}\}&&
 		\end{flalign*}
-		\hrulefill
+		\hrule
 		\subsubsection{Lösen mit binomischen Formeln}
 		In diesem Beispiel wird Funktion mithilfe der \highlight{sec:binomischeformeln}{binomischen Formeln} so vereinfacht, dass man die Nullstellen ganz einfach ablesen kann.\newline
-		\makeplot{{x^4-2*x^2+1}}{{$p(x)=x^4-2x^2+1$}}{{11.6,3.2}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}
+		\makeplot{{x^4-2*x^2+1}}{{$p(x)=x^4-2x^2+1$}}{{11.6,3.2}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}{smooth}
 		\begin{flalign*}
 		p(x)&=x^4-4x^2+1\\
 		0&=x^4-4x^2+1\\
@@ -1034,10 +1036,10 @@
 		x&=\pm 1\\
 		\mathbb{L}&=\{-1;1\}&&
 		\end{flalign*}
-		\hrulefill
+		\hrule
 		\subsubsection{Lösen durch Polynomdivision}
 			Wenn alle anderen Stränge reißen, ist man leider gezwungen die Polynomdivision durchzuführen. Um damit beginnen zu können, braucht man aber mindestens eine Nullstelle, die man durch Raten findet. Für das Beispiel unten finden wir so heraus, dass eine Nullstelle $x_1=1$ ist. Jetzt stellen wir $x=1$ nach $0$ um und erhalten $0=x-1$. Anschließend teilen wir unser Polynom durch $x-1$.\newline
-			\makeplot{{2*x^3-5*x^2-2*x+5}}{{$p(x)=2x^3-5x^2-2x+5$}}{{3.9,3.2}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}
+			\makeplot{{2*x^3-5*x^2-2*x+5}}{{$p(x)=2x^3-5x^2-2x+5$}}{{3.9,3.2}}{-6,6}{-6,6}{-30:60}{300}{17cm,7cm}{smooth}
 			\begin{flalign*}
 			(2x^3-5x^2-2x+5):(x-1)&&
 			\end{flalign*}
@@ -1048,7 +1050,7 @@
 			Jetzt muss man zurück multiplizieren, indem man den Term $2x^2$, den wir gerade bekommen haben, mit unserem ursprünglichen Divisor $x-1$ multiplizieren. Das Ergebnis ziehen wir von unserem Polynom ab und holen anschließend den nächsten Ausdruck runter. Diesen Prozess wiederholen wir jetzt so oft, wie möglich.\newline\newline
 			\polylongdiv[style=C,div=:]{2x^3-5x^2-2x+5}{x-1}\newline\newline
 			Mit der Funktion, die wir jetzt haben, können wir ganz einfach die restlichen Nullstellen errechnen.\newline
-			\makeplot{{2*x^2-3*x-5}}{{$f(x)=2x^2-3x-5$}}{{3.9,3.2}}{-6,6}{-10,10}{-30:60}{300}{17cm,7cm}
+			\makeplot{{2*x^2-3*x-5}}{{$f(x)=2x^2-3x-5$}}{{3.9,3.2}}{-6,6}{-10,10}{-30:60}{300}{17cm,7cm}{smooth}
 			\begin{flalign*}
 				f(x)&=2x^2-3x-5\\
 				0&=2x^2-3x-5\\
@@ -1059,13 +1061,11 @@
 				\mathbb{L}&=\{-1;1;2,5\}&&
 			\end{flalign*}
 		\subsection{Exponentialfunktionen}
-			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-				Eine Funktion der Form $f(x)=a^x$ wird als Exponentialfunktion bezeichnet, denn die Variable $x$ steht im Exponenten. Speziell wird die Funktion $f(x)=e^x$ als \textit{natürliche Exponentialfunktion} bezeichnet.
-				\makeplot{{e^x},{e^(-x)}}{{$f(x)=e^x$},{$f(x)=e^{-x}$}}{{8,3.3},{4.1,3.3}}{-6,6}{-6,6}{-10:10}{300}{14cm,7cm}
-			\end{tcolorbox}
+			Eine Funktion der Form $f(x)=a^x$ wird als Exponentialfunktion bezeichnet, denn die Variable $x$ steht im Exponenten. Speziell wird die Funktion $f(x)=e^x$ als \textit{natürliche Exponentialfunktion} bezeichnet.
+			\makeplot{{e^x},{e^(-x)}}{{$f(x)=e^x$},{$f(x)=e^{-x}$}}{{9.5,3.3},{5.6,3.3}}{-6,6}{-6,6}{-10:10}{300}{17cm,7cm}{smooth}
 			\subsubsection{Lösen von Exponentialgleichungen}
 				Zum Lösen von Exponentialgleichungen brauchen wir in der Regel den \highlight{subsec:logarithmusgesetze}{Logarithmus}. Wie das funktioniert, sehen wir an dem Beispiel hier drunter. Dabei ist die Nullstelle der Funktion zu bestimmen. In diesem Beispiel sollte man sich außerdem nochmal daran erinnern, dass $\sqrt[n]{x}$ dasselbe ist, wie $x^{\frac{1}{n}}$.
-				\makeplot{{(7^x)^(1/4)-4}}{{$f(x)=\sqrt[4]{7^x}-4$}}{{10,3.2}}{-6,6}{-10,10}{-30:30}{300}{17cm,7cm}
+				\makeplot{{(7^x)^(1/4)-4}}{{$f(x)=\sqrt[4]{7^x}-4$}}{{10,3.2}}{-6,6}{-10,10}{-30:30}{300}{17cm,7cm}{smooth}
 				\begin{flalign*}
 					f(x)&=\sqrt[4]{7^x}-4\\
 					0&=\sqrt[4]{7^x}-4 && \mid +4 &&&&&&&&&&&&& \\
@@ -1075,13 +1075,11 @@
 					\mathbb{L}=\{2,849657497\}&&
 				\end{flalign*}
 		\subsection{Logarithmusfunktionen}
-			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-				Funktionen wie $f(x)=log_3(x^2)$ werden als Logarithmusfunktionen bezeichnet, da sie einen oder mehrere Logarithmen beinhalten. Speziell bezeichnet man $f(x)=ln(x)$ als \textit{natürliche Logarithmusfunktion} und $f(x)=lg(x)$ als \textit{dekadische Logarithmusfunktion}.
-				\makeplot{{ln(x)},{log10(x)},{-ln(abs(x))}, {log2(x)}}{{$f(x)=ln(x)$},{$f(x)=lg(x)$},{$f(x)=-ln(\vert x\vert)$},{$f(x)=log_2(x)$}}{{8,4.3},{11,4.8},{2,1},{8,1}}{-6,6}{-4,4}{-200:200}{500}{14cm,7cm}
-			\end{tcolorbox}
+			Funktionen wie $f(x)=log_3(x^2)$ werden als Logarithmusfunktionen bezeichnet, da sie einen oder mehrere Logarithmen beinhalten. Speziell bezeichnet man $f(x)=ln(x)$ als \textit{natürliche Logarithmusfunktion} und $f(x)=lg(x)$ als \textit{dekadische Logarithmusfunktion}.
+			\makeplot{{ln(x)},{log10(x)},{-ln(abs(x))}, {log2(x)}}{{$f(x)=ln(x)$},{$f(x)=lg(x)$},{$f(x)=-ln(\vert x\vert)$},{$f(x)=log_2(x)$}}{{9.5,4.3},{12.5,4.8},{3.5,1},{9.5,1}}{-6,6}{-4,4}{-200:200}{500}{17cm,7cm}{smooth}
 			\subsubsection{Lösen von Logarithmusgleichungen}
 				Gesucht wird hier die Nullstelle einer Logarithmusfunktion gesucht. Hinweis: Um einen Logarithmus aufzulösen musst du beide Seiten der Gleichung als Exponent zur Basis des jeweiligen Logarithmus setzen. Um dort hinzu kommen hilft es enorm, die Gleichung zunächst umzuformen. Wenn du Schwierigkeiten mit den Umformungen in diesem Beispiel hast, schaue dir noch einmal die \highlight{subsec:potenzgesetze}{Potenzgesetze} und \highlight{subsec:logarithmusgesetze}{Logarithmusgesetze} an.
-				\makeplot{{3*log10(x^3)-2*log10(x^2)-4}}{{$f(x)=3\cdot lg(x^3)-2\cdot lg(x^2)-4$}}{{11,3.3}}{-10,10}{-10,10}{-20:20}{300}{17cm,7cm}
+				\makeplot{{3*log10(x^3)-2*log10(x^2)-4}}{{$f(x)=3\cdot lg(x^3)-2\cdot lg(x^2)-4$}}{{11,3.3}}{-10,10}{-10,10}{-20:20}{300}{17cm,7cm}{smooth}
 				\begin{flalign*}
 					f(x)&=3\cdot lg(x^3)-2\cdot lg(x^2)-4\\
 					0&=3\cdot lg(x^3)-2\cdot lg(x^2)-4\\
@@ -1094,14 +1092,69 @@
 					\mathbb{L}&=\{6,309573445\}&&
 				\end{flalign*}
 		\subsection{Trigonometrische Funktionen}
-			\begin{tcolorbox}[boxsep=0pt,top=.85cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-				Trigonometrische Funktionen oder auch Winkelfunktionen genannt, beinhalten die aus der \highlight{sec:geometrie}{Geometrie} bekannten winkelabhängigen Funktionen, wie Sinus, Kosinus und Tangens. Dabei sind diese Funktionen hier allerdings abhängig von der Variable $x$ und damit im Bogenmaß, nicht im Gradmaß. Beim Taschenrechner muss man darauf achten, dass der richtige Modus eingestellt ist, ansonsten kann es sein, dass man versehentlich im falschen Maß rechnet. Auf dem CASIO fx-86DE PLUS, drückt man Shift, dann Setup und wählt dort die 3:Deg (engl. degree) für Gradmaß oder 4:Rad (engl. radian) fürs Bogenmaß.
-				\makeplot{{sin(deg(x))},{cos(deg(x))},{tan(deg(x))}}{{$f(x)=\sin(x)$},{$f(x)=\cos(x)$},{$f(x)=\tan(x)$}}{{1.5,-1},{4.5,-1},{7.5,-1}}{-10,10}{-2,2}{-10:10}{200}{14cm,7cm}
-				Anmerkung: Die Nullstellen des Sinus sind die Extremstellen des Kosinus und umgekehrt. Ebenso habe Sinus und Tanges dieselben Nullstellen.
-			\end{tcolorbox}
+			Trigonometrische Funktionen oder auch Winkelfunktionen genannt, beinhalten die aus der \highlight{sec:geometrie}{Geometrie} bekannten winkelabhängigen Funktionen, wie Sinus, Kosinus und Tangens. Dabei sind diese Funktionen hier allerdings abhängig von der Variable $x$ und damit im Bogenmaß, nicht im Gradmaß. Beim Taschenrechner muss man darauf achten, dass der richtige Modus eingestellt ist, ansonsten kann es sein, dass man versehentlich im falschen Maß rechnet. Auf dem CASIO fx-86DE PLUS, drückt man Shift, dann Setup und wählt dort die 3:Deg (engl. degree) für Gradmaß oder 4:Rad (engl. radian) fürs Bogenmaß.
+			\makeplot{{sin(deg(x))},{cos(deg(x))},{tan(deg(x))}}{{$f(x)=\sin(x)$},{$f(x)=\cos(x)$},{$f(x)=\tan(x)$}}{{1.5,-1},{4.5,-1},{7.5,-1}}{-10,10}{-2,2}{-10:10}{200}{17cm,7cm}{smooth}
+			Anmerkung: Die Nullstellen des Sinus sind die Extremstellen des Kosinus und umgekehrt. Ebenso habe Sinus und Tanges dieselben Nullstellen.
 		\subsection{Verkettete Funktionen}
-				\begin{tcolorbox}[boxsep=0pt,top=.85cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-				Verkettungen sind eigentliche keine eigene Funktionsart, sondern eine Möglichkeit Funktionen durch Zusammensetzung zu transformieren. Man schreibt das als $f\circ g$ ("f nach g"). Man spricht hier bei $g$ auch von der \textit{inneren Funktion}, da sie als Argument in die \textit{äußere Funktion} $f$ eingesetzt wird.
-				\makeplot{{sin(deg(x))},{(x^2)/2},{sin(deg((x^2)/2))}}{{$f(x)=\sin(x)$},{$g(x)=\frac{x^2}{3}$},{$f\circ g(x)=\sin(\frac{x^2}{3})$}}{{1.5,-1},{4.5,-1},{8,-1}}{-10,10}{-2,2}{-10:10}{500}{14cm,7cm}
-			\end{tcolorbox}
+			Verkettungen sind eigentliche keine eigene Funktionsart, sondern eine Möglichkeit Funktionen durch Zusammensetzung zu transformieren. Man schreibt das als $f\circ g$ ("f nach g"). Man spricht hier bei $g$ auch von der \textit{inneren Funktion}, da sie als Argument in die \textit{äußere Funktion} $f$ eingesetzt wird.
+			\makeplot{{sin(deg(x))},{(x^2)/2},{sin(deg((x^2)/2))}}{{$f(x)=\sin(x)$},{$g(x)=\frac{x^2}{3}$},{$f\circ g(x)=\sin(\frac{x^2}{3})$}}{{1.5,-1},{4.5,-1},{8,-1}}{-10,10}{-2,2}{-10:10}{200}{17cm,7cm}{smooth}
+	\section{Differenzialrechnung}
+		\subsection{Die Ableitung}
+		\label{subsec:ableitung}
+				Die Ableitung einer Funktion gibt Aufschluss über ihr Steigungsverhalten, denn die Werte der Ableitung $f^{\prime} (x)$ einer Funktion $f(x)$ entsprechen dem Anstieg einer Tangente an derselben Stelle von $f(x)$. Das kann man auch an dem unten stehenden Beispiel erkennen. Um eine Funktion abzuleiten, nehmen wir den Exponenten von jedem $x$ und holen ihn hinunter, um ihn vor das jeweilige $x$ zu schreiben. Anschließend reduzieren wir den Exponenten um $1$. Dabei ist zu beachten, dass die Ableitung einer reinen Zahl ohne $x$ immer $0$ ist und, dass die Ableitung von $x=1$ ist, denn $x^0$ entspricht $1$.
+			\makeplot{{x^2},{2*x}}{{$f(x)=x^2$},{$f^{\prime}(x)=2x$}}{{4,3.5},{3,1}}{-10,10}{-10,10}{-20:20}{200}{17cm,7cm}{smooth}
+			Hinweis: Um Fehler zu vermeiden, sollte man zunächst alle Terme so umformen, dass man einfach ableiten kann. Dafür solltest du die wichtigsten \highlight{sec:rechengesetze}{Rechengesetze} beherrschen.
+			\subsubsection{Differenzenquotient}
+			\label{subsubsec:differenzenquotient}
+				Um die Steigung einer Sekante zwischen zwei Punkten zu berechnen, benutzen wir den Differenzenquotient.
+				Dieser Quotient berechnet sich indem man $x$ und $y$ der beiden Punkte jeweils voneinander abzieht und dann $y$ durch $x$ teilt.
+				\begin{flalign*}
+				m=\frac{y_2-y_1}{x_2-x_1}&&
+				\end{flalign*}
+				\begin{center}
+					\begin{tikzpicture}
+					\begin{axis}[
+					domain=-10:10,
+					width=17cm,
+					height=7cm,
+					restrict y to domain=-10:20,
+					xmin=-10, xmax=10,
+					ymin=-5, ymax=10,
+					samples=100,
+					axis y line=center,
+					axis x line=middle,
+					ticklabel style={fill=white},
+					minor tick num=2,
+					grid=both,
+					grid style={line width=.1pt, draw=gridgray!10},
+					major grid style={line width=.2pt,draw=gridgray!50}
+					]
+					\addplot+[mark=none, color=blue, solid, name path=A, smooth] {x^3+2};
+					\draw [color=red, name path=B] (axis cs: .2,0.75) -- (axis cs: 2.2,9);
+					\fill [name intersections={of=A and B, by={a,b}}]
+					(a) circle(2.5pt) node[below right] {$A(x_1\mid y_1)$}
+					(b) circle (2.5pt) node[right] {$B(x_2\mid y_2)$};
+					\end{axis}
+					\node [color=blue] at (4.75,3) {$f(x)=x^3+2$};
+					\end{tikzpicture}
+				\end{center}
+				Allgemeiner ausgedrückt, gilt die Formel:
+				\begin{flalign*}
+				m=\frac{f(x+h)-f(x)}{x+h-x}=\frac{f(x+h)-f(x)}{h}&&
+				\end{flalign*}
+				Dabei ist $h$ eine beliebige Zahl, mit deren Hilfe wir uns jetzt an die genaue Steigung in einem Punkt annähern können. Je kleiner wir den Abstand $h$ wählen, desto genauer kommen wir an die Tangente oder auch Steigung der Stelle $x$.
+			\subsubsection{Differentialquotient}
+				Der Differenzenquotient erlaubt es uns die Steigung einer Funktion an einer bestimmten Stelle zu bestimmen. Im Abschnitt über den \highlight{subsubsec:differenzenquotient}{Differenzenquotient} haben wir schon geklärt, das wir näher an den Anstieg an der Stelle $x$ kommen, wenn wir den Abstand $h$ verringern. Der kleinstmögliche Abstand wäre $0$. Das geht allerdings nicht, da wir nicht $h=0$ in die Formel für den Differenzenquotient einsetzen und den Divisor somit gleich $0$ setzen dürfen. Um ums zu überlegen, was also für ein minimal kleines $h$ passieren würde, brauchen wir den Limes.
+				\begin{flalign*}
+				\lim_{h \to 0}	m=\lim_{h \to 0}\frac{f(x+h)-f(x)}{h}=f^{\prime}(x)&&
+				\end{flalign*}
+				Da setzen wir jetzt unsere Funktion $f(x)=x^3+2$ ein und formen solange um, bis wir das $h$ aus dem Divisor kriegen, damit wir für $h$ die Zahl $0$ einsetzen können. Hinweis: Nachdem du für $h$ die Zahl $0$ eingesetzt hast, darfst du nicht mehr Limes davor schreiben!
+				\begin{flalign*}
+				&\lim_{h \to 0}\frac{(x+h)^3+2-x^3-2}{h}\\
+				=&\lim_{h \to 0}\frac{x^3+3hx^2+2xh^2+h^3+2-x^3-2}{h}\\
+				=&\lim_{h \to 0}\frac{3hx^2+2xh^2+h^3}{h}\\
+				=&\lim_{h \to 0}(3x^2+2xh+h^2)\\
+				=&3x^2&&
+				\end{flalign*}
+				Das, was wir jetzt haben ist die erste Ableitung $f^{\prime}(x)$. Sofern nicht anders gewünscht, kann man diese aber auch wesentlich leichter bestimmen, indem man die \highlight{subsec:ableitung}{Ableitungsregeln} kennt.
 \end{document}

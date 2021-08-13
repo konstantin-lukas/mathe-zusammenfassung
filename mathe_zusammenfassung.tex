@@ -27,6 +27,9 @@
 \usepackage{tocloft}
 \usepackage{polynom}
 \usepackage{tkz-euclide}
+\usepackage[ngerman]{babel}
+\usepackage{hyphenat}
+\hyphenation{Mathe-matik wieder-gewinnen}
 \definecolor{gridgray}{HTML}{AAAAAA}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \DeclareRobustCommand{\bigfrac}[3][5pt]{%
@@ -1157,4 +1160,112 @@
 				=&3x^2&&
 				\end{flalign*}
 				Das, was wir jetzt haben ist die erste Ableitung $f^{\prime}(x)$. Sofern nicht anders gewünscht, kann man diese aber auch wesentlich leichter bestimmen, indem man die \highlight{subsec:ableitung}{Ableitungsregeln} kennt.
+	\subsection{Limes: Der Grenzwert}
+	Für manche Funktionen ist es nicht möglich den Werte einer bestimmten Stelle zu errechnen. Manchmal will man auch das Verhalten einer Funktion wissen, wenn $x$ gegen unendlich geht. In u.a. diesen Fällen braucht man dem Limes. Um den Grenzwert einer Funktion für $x\to a$ zu ermitteln muss man den links- und den rechtsseitigen Grenzwert betrachten. Es gilt Folgendes: 
+	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+		Um zu überprüfen, ob für eine Funktion mit $x$ gegen $a$ ein Grenzwert existiert, schaut man sich jeweils den linksseitigen und rechtsseitigen Grenzwert an. Sind diese gleich, so existiert ein Grenzwert. Sind sie unterschiedlich, existiert kein Grenzwert.
+	\end{tcolorbox}
+	\noindent Beim Grenzwert setzt man Zahlen ein, die sich in die Richtung von $a$ bewegen. Nehmen wir beispielsweise $f(x)=\frac{1}{x}$. $0$ können wir ja nicht für $x$ einsetzen, da wir nicht durch Null teilen dürfen. Was wir aber machen können ist sehr kleine Zahlen einsetzen, um zu schauen, ob wir eine Tendenz feststellen können.
+	\begin{flalign*}
+		f(1)&=\frac{1}{1}=1\\
+		f(0,1)&=\frac{1}{0,1}=10\\
+		f(00,1)&=\frac{1}{00,1}=100\\
+		f(000,1)&=\frac{1}{000,1}=1000\\
+		\lim_{x\searrow 0}\frac{1}{x}&=\infty&&
+	\end{flalign*}
+	Wir sehen also, dass sich unsere Funktion für $x$ gegen Null Unendlich nähert. Das, was wir uns jetzt angeguckt haben, ist aber nur der \text{rechtsseitige Grenzwert}, da wir Werte größer als $0$ eingesetzt haben und uns somit von rechts angenähert haben. Jetzt machen wir das Ganze noch einmal von links.
+	\begin{flalign*}
+		f(-1)&=\frac{1}{-1}=-1\\
+		f(-0,1)&=\frac{1}{-0,1}=-10\\
+		f(-00,1)&=\frac{1}{-00,1}=-100\\
+		f(-000,1)&=\frac{1}{-000,1}=-1000\\
+		\lim_{x\nearrow 0}\frac{1}{x}&=-\infty&&
+	\end{flalign*}
+	Wir sehen, dass $\infty \neq -\infty$ gilt. Somit haben wir keinen Grenzwert für $x\to 0$. Übrigens gibt es für den links- und rechtsseitigen Grenzwert unterschiedliche Notationen. Ich benutze hier, die Variante mit den diagonalen Pfeilen, da ich finde, dass sie gut darstellt, was man bei der Annäherung mit dem $x$ anstellt.
+	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+		\begin{multicols}{2}
+			\begin{flushleft}
+				\textbf{Linksseitiger Grenzwert}
+				\begin{flalign*}
+				\lim_{x\to a^-}\;oder\;\lim_{x\uparrow a}\;oder\;\lim_{x\nearrow a}\;oder\;\lim_{\substack{x\to a\\ x<a}}&&
+				\end{flalign*}
+			\end{flushleft}
+			\begin{flushleft}
+				\textbf{Rechtsseitiger Grenzwert}
+				\begin{flalign*}
+				\lim_{x\to a^+}\;oder\;\lim_{x\downarrow a}\;oder\;\lim_{x\searrow a}\;oder\;\lim_{\substack{x\to a\\ x>a}}&&
+				\end{flalign*}
+			\end{flushleft}
+		\end{multicols}
+	\end{tcolorbox}
+	\subsection{Differenzierbarkeit}
+	\begin{center}
+		\begin{tikzpicture}
+		\begin{axis}[
+		domain=-10:10,
+		width=17cm,
+		height=7cm,
+		restrict y to domain=-20:20,
+		xmin=-10, xmax=10,
+		ymin=-5, ymax=15,
+		samples=200,
+		axis y line=center,
+		axis x line=middle,
+		ticklabel style={fill=white},
+		minor tick num=2,
+		grid=both,
+		grid style={line width=.1pt, draw=gridgray!10},
+		major grid style={line width=.2pt,draw=gridgray!50}
+		]
+		\addplot+[mark=none, color=blue, solid, smooth, domain=-10:2] {x^2};
+		\addplot+[mark=none, color=blue, solid, smooth, domain=2:10] {0.5*x^2};
+		
+		
+		\end{axis}
+		\node [color=blue] at (12.1,2.1) {$f(x)=\left\{x^2;\;\;\;\;\;\;\;x<2\atop\frac{1}{2}x^2;\;\;\;\;x\ge2\right.$};
+		
+		\end{tikzpicture}
+	\end{center}
+	Was uns an dem obigen Beispiel jetzt speziell interessiert, ist die Stelle $x=2$. Wir wollen wissen, ob $f$ in dieser Stelle stetig bzw. differenzierbar ist. Das heißt quasi, dass wir wissen wollen, ob man die Funktion zeichnen kann, ohne den Stift abzusetzen. Aber Achtung: Das ist keine sehr akkurate Definition, denn es gibt auch Funktionen, die stetig sind, obwohl man sie nicht durchzeichnen kann. Deshalb hier die mathematischen Bedingungen, die erfüllt sein müssen.
+	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+		Wenn eine Funktion $f(x)$ an der Stelle $x_0$ folgende Bedingungen erfüllt, so ist sie in dieser Stelle \textit{differenzierbar} bzw. \textit{stetig}.
+		\begin{flalign*}
+			&1.\;x_0 \in \mathbb{D}\\\\
+			&2.\;\lim_{x\to x_0}f(x)\;existiert\\\\
+			&3.\;\lim_{x\to x_0}f(x) = f(x_0)&&
+		\end{flalign*}
+		Sind die obigen Bedingungen für alle $x$ der Definitionsmenge erfüllt, so spricht man von einer \textit{stetigen Funktion}.
+	\end{tcolorbox}
+	\noindent Schauen wir uns das einmal für unser Beispiel an. Die erste Bedingung ist erfüllt, denn für $x=2$ ist $x$ definiert und es gilt $f(2)=\frac{1}{2}(2)^2=2$. Als nächsten prüfen wir die zweite Bedingung.
+	\begin{multicols}{2}
+		\noindent\begin{flalign*}
+		\lim_{x\nearrow 2}f(x)&=\lim_{x\nearrow 2}x^2=2^2=4&&
+		\end{flalign*}
+		\begin{flalign*}
+		\lim_{x\searrow 2}f(x)&=\lim_{x\searrow 2}\frac{1}{2}x^2=\frac{1}{2}\cdot 2^2=2&&
+		\end{flalign*}
+	\end{multicols}
+	\noindent Unsere zweite Bedingung ist somit nicht erfüllt. Der linksseitige und der rechtsseitige Grenzwert sind unterschiedlich und somit existiert an dieser Stelle auch kein Grenzwert. Daher brauchen wir die letzte Bedingung gar nicht erst überprüfen und können es sogar nicht, da uns der Grenzwert fehlt.
+	\subsubsection{Stetige Erweiterung}
+	Eine Funktion wie z.~B. $f(x)=\frac{1}{x}$ hat zwar keinen Grenzwert für $x\to 0$, allerdings ist sie trotzdem stetig, da ihr Definitionsbereich $\mathbb{D}=\mathbb{R}\setminus\{0\}$ die $0$ ausschließt. Das ist wichtig zu wissen bei der Bestimmung der Differenzierbarkeit.
+	\makeplot{{1/x}}{{$f(x)=\frac{1}{x}$}}{{5,1.4}}{-10,10}{-10,10}{-25:25}{300}{17cm,7cm}{smooth}
+	Jetzt kann es aber sein, dass wir gerne die Definitionslücken unserer Funktion definieren wollen. Das geht sogar mithilfe der stetigen Erweiterung, allerdings nicht für jede Lücke. Eine Lücke, die man bestimmen kann, nennt man (be)hebbar. Damit eine Lücke behebbar ist, müssen die Bedingungen für die Differenzierbarkeit gegeben sein, außer der, dass $x_0$ nicht im Definitionsbereich liegt. Würde $x$ im Definitionsbereich liegen hätten wir natürlich auch keine Lücke. Logisch. Das Kriterium, dass der Grenzwert dem Funktionswert an der Stelle $x_0$ entspricht entfällt dementsprechend auch.
+	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+		Ist eine Lücke einer Funktion \textit{(be)hebbar}, so sind folgende Bedingungen erfüllt:
+		\begin{flalign*}
+		&1.\;x_0 \notin \mathbb{D}\\\\
+		&2.\;\lim_{x\to x_0}f(x)\;existiert&&
+		\end{flalign*}
+	\end{tcolorbox}
+	\noindent Für $x\to 0$ bei $f(x)=\frac{1}{x}$ haben wir keinen Grenzwert, somit ist die Funktion an der Stelle $x=0$ nicht stetig erweiterbar. Es folgt noch ein Beispiel einer stetig erweiterbaren Lücke.
+	\makeplot{{((x^3)/x)-5}}{{$f(x)=\frac{x^3}{x}-5$}}{{12.2,4.6}}{-10,10}{-10,10}{-25:25}{300}{17cm,7cm}{smooth}
+	Diese Funktion verhält sich jetzt wie eine Normalparabel. Leider ist sie für $x=0$ nicht definiert, da wir nicht durch $0$ teilen dürfen, also schauen wir, ob wir sie an dieser Stelle stetig erweitern können. In diesem Fall können wir uns den Test für links- und rechtsseitigen Grenzwert sparen, denn ich denke, man erkennt hier, dass wir einen Grenzwert haben.
+	\begin{flalign*}
+		\lim_{x\to 0}\frac{x^3}{x}-5&=\lim_{x\to 0}(x^2-5)\\
+		&=-5&&
+	\end{flalign*}
+	Mit dem Grenzwert können wir jetzt eine zusammengesetzte Funktion aufstellen.
+	\begin{flalign*}
+		f(x)=\left\{\frac{x^3}{x};\;\;\;\;x\neq 0\atop -5;\;\;\;\;\;x=0\right.&&
+	\end{flalign*}
 \end{document}

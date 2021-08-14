@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  13 AUG 2021 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  14 AUG 2021 18:35
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -1673,21 +1673,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 1052--1056
 
  []
 
-[35] [36] [37] [38] [39] [40] [41] [42] [43] [44]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1271.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1271.
+[35] [36] [37] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 1111--1114
+
+ []
+
+
+Overfull \hbox (63.66138pt too wide) detected at line 1129
+[]
+ []
+
+[39] [40] [41] [42] [43] [44] [45]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1293.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1293.
  (mathe_zusammenfassung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1271.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1271.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1293.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1293.
 
 Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
 (rerunfilecheck)             Checksum: 653CC5CEB6C9E64E9443105BA824309E;5882.
  ) 
 Here is how much of TeX's memory you used:
- 42686 strings out of 480790
- 1004991 string characters out of 2907040
- 1843124 words of memory out of 3000000
- 57693 multiletter control sequences out of 15000+200000
+ 42688 strings out of 480790
+ 1005014 string characters out of 2907040
+ 1916124 words of memory out of 3000000
+ 57694 multiletter control sequences out of 15000+200000
  542336 words of font info for 63 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  67i,19n,348p,1306b,2259s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1705,9 +1715,9 @@ m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX
 nts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12
 .pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C
 :/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mathe_zusammenfassung.pdf (44 pages, 645870 bytes).
+Output written on mathe_zusammenfassung.pdf (45 pages, 645519 bytes).
 PDF statistics:
- 767 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
+ 772 PDF objects out of 1000 (max. 8388607)
+ 127 named destinations out of 1000 (max. 500000)
  797 words of extra memory for PDF output out of 10000 (max. 10000000)
 

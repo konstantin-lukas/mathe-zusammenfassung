@@ -1104,9 +1104,31 @@
 	\section{Differenzialrechnung}
 		\subsection{Die Ableitung}
 		\label{subsec:ableitung}
-				Die Ableitung einer Funktion gibt Aufschluss über ihr Steigungsverhalten, denn die Werte der Ableitung $f^{\prime} (x)$ einer Funktion $f(x)$ entsprechen dem Anstieg einer Tangente an derselben Stelle von $f(x)$. Das kann man auch an dem unten stehenden Beispiel erkennen. Um eine Funktion abzuleiten, nehmen wir den Exponenten von jedem $x$ und holen ihn hinunter, um ihn vor das jeweilige $x$ zu schreiben. Anschließend reduzieren wir den Exponenten um $1$. Dabei ist zu beachten, dass die Ableitung einer reinen Zahl ohne $x$ immer $0$ ist und, dass die Ableitung von $x=1$ ist, denn $x^0$ entspricht $1$.
+				Die Ableitung einer Funktion gibt Aufschluss über ihr Steigungsverhalten, denn die Werte der Ableitung $f^{\prime} (x)$ einer Funktion $f(x)$ entsprechen dem Anstieg einer Tangente an derselben Stelle von $f(x)$. Das kann man auch an dem unten stehenden Beispiel erkennen. Um eine Potenzfunktion abzuleiten, nehmen wir den Exponenten von jedem $x$ und holen ihn hinunter, um ihn vor das jeweilige $x$ zu schreiben. Anschließend reduzieren wir den Exponenten um $1$. Dabei ist zu beachten, dass die Ableitung einer reinen Zahl ohne $x$ immer $0$ ist und, dass die Ableitung von $x=1$ ist, denn $x^0$ entspricht $1$.
 			\makeplot{{x^2},{2*x}}{{$f(x)=x^2$},{$f^{\prime}(x)=2x$}}{{4,3.5},{3,1}}{-10,10}{-10,10}{-20:20}{200}{17cm,7cm}{smooth}
 			Hinweis: Um Fehler zu vermeiden, sollte man zunächst alle Terme so umformen, dass man einfach ableiten kann. Dafür solltest du die wichtigsten \highlight{sec:rechengesetze}{Rechengesetze} beherrschen.
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+				\textbf{Ableitungsregeln}\newline\newline
+				Neben der oben genannten Regel zur Ableitung von Funktionen, gibt es noch einige andere, die einem das Leben erleichtern:
+				\begin{multicols}{2}
+					\noindent\begin{flalign*}
+					&c&\rightarrow&\;\;0\\\\
+					&x^n&\rightarrow&\;\;nx^{n-1}\\\\
+					&\sqrt{x}&\rightarrow&\;\;\frac{1}{2\sqrt{x}}\\\\
+					&e^x&\rightarrow&\;\;e^x\\\\
+					&ln(x)&\rightarrow&\;\;\frac{1}{x}\\\\
+					&a^x(a>0)&\rightarrow&\;\;ln(a\cdot a^x)&&&&&&&&&&&
+					\end{flalign*}
+					\begin{flalign*}
+					&\sin(x)&\rightarrow&\;\; \cos(x)\\\\
+					&\cos(x)&\rightarrow&\;\;-\sin(x)\\\\
+					&\tan(x)&\rightarrow&\;\;\frac{1}{\cos^2x}\\\\
+					&u(x)\cdot v(x)&\rightarrow&\;\;u^{\prime}(x)\cdot v(x)+u(x)\cdot v(x)^{\prime}\\\\
+					&\frac{u(x)}{v(x)}&\rightarrow&\;\;\frac{u^{\prime}(x)\cdot v(x)-u(x)\cdot v(x)^{\prime}}{(h(x))^2}\\\\
+					&(u\circ v)(x)&\rightarrow&\;\;u^{\prime}(v(x))\cdot v^{\prime}(x)&&&&&&&&&&&
+					\end{flalign*}
+				\end{multicols}
+			\end{tcolorbox}
 			\subsubsection{Differenzenquotient}
 			\label{subsubsec:differenzenquotient}
 				Um die Steigung einer Sekante zwischen zwei Punkten zu berechnen, benutzen wir den Differenzenquotient.

@@ -1324,8 +1324,23 @@
 	\begin{flalign*}
 		f(x)=\left\{\frac{x^3}{x};\;\;\;\;x\neq 0\atop -5;\;\;\;\;\;x=0\right.&&
 	\end{flalign*}
+	\subsection{Tangentengleichung}
+		Wenn man Extremal- und Wendepunkte untersucht, kann es vorkommen, dass man eine Tangenten für diese Punkte aufstellen soll. Das ist nicht schwer, denn man muss nur zwei Konstanten bestimmen. Da eine Tangente eine lineare Funktion ist, hat sie die grundlegende Form $T(x)=mx+n$. Sagen wir, wir wollen die Tangentengleichung an der Stelle $x=2$ der Funktion $f(x)=x^2+4$ aufstellen. Um $m$ zu bestimmen brauchen wir den Anstieg an der Stelle $x$. Diesen können wir mit der ersten Ableitung an der Stelle $x$ ermitteln.
+		\begin{flalign*}
+			f(x)&=x^2+4\\
+			f^{\prime}(x)&=2x\\
+			f^{\prime}(2)&=4&&
+		\end{flalign*}
+		Das können wir schon mal in unsere Gleichung einsetzen und erhalten $T(x)=4x+n$. Jetzt fehlt uns noch $n$, welches wir durch Umstellen bestimmen können, nachdem wir $x$ und $T(x)$ eingesetzt haben. Gesucht ist ja die Tangente an der Stelle $x=2$. Den $x$-Wert haben wir also schon mal und $T(x)$ können wir ganz einfach durch Einsetzen in die Funktion berechnen.
+		\begin{flalign*}
+			f(2)&=8\\
+			f(2)&=4\cdot 2+n\\
+			8&=4\cdot 2+n\\
+			n&=0&&
+		\end{flalign*}
+		Da $n=0$ ist, können wir es weglassen und haben bereits unsere vollständige Tangentengleichung. Hier nochmal eine Abbildung, um zu zeigen, dass das Ergebnis auch wirklich richtig ist.
+		\makeplot{{x^2+4},{4*x}}{{$f(x)=x^2+4$},{$T(x)=4x$}}{{4,3},{10.5,2}}{-10,10}{0,20}{-5:25}{200}{17cm,7cm}{smooth}
 	\subsection{Rationalen Funktionen}
 	\subsection{Grenzverhalten von ganzrationalen Funktionen}
-	\subsection{Tangentengleichung}
 	\subsection{Kurvendiskussion}
 \end{document}

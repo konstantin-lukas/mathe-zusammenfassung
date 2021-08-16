@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  14 AUG 2021 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  16 AUG 2021 15:58
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -1563,141 +1563,211 @@ Grund-
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 804--806
+Underfull \hbox (badness 10000) in paragraph at lines 805--807
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 823--828
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 824--826
+Underfull \hbox (badness 10000) in paragraph at lines 823--828
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 840--843
+Underfull \hbox (badness 10000) in paragraph at lines 823--828
 
  []
 
-[24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 853--854
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--828
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--828
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--828
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 846--849
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 865--866
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 856--858
+Underfull \hbox (badness 10000) in paragraph at lines 868--870
 
  []
 
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 907--908
-
- []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 912--915
+[27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 919--920
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 918--921
+Underfull \hbox (badness 10000) in paragraph at lines 924--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 930--933
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 937--940
+Underfull \hbox (badness 10000) in paragraph at lines 949--952
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 951--954
+Underfull \hbox (badness 10000) in paragraph at lines 963--966
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 969--972
+Underfull \hbox (badness 10000) in paragraph at lines 981--984
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 969--972
+Underfull \hbox (badness 10000) in paragraph at lines 981--984
 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 989--991
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1001--1003
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1005--1006
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1015
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1018
 
  []
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1023
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1035
 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1034
+Underfull \hbox (badness 10000) in paragraph at lines 1045--1046
 
  []
 
 
-Overfull \hbox (0.62164pt too wide) in paragraph at lines 1044--1045
+Overfull \hbox (0.62164pt too wide) in paragraph at lines 1056--1057
 \OT1/cmr/m/n/12 Wenn al-le an-de-ren Str[]ange rei-en, ist man lei-der ge-zwun
 -gen die Po-ly-nom-di-vi-si-on durch-zuf[]uhren.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1044--1045
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1057
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1052--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1064--1068
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1052--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1064--1068
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1052--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1064--1068
 
  []
 
 [35] [36] [37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1111--1114
+Underfull \hbox (badness 10000) in paragraph at lines 1123--1126
 
  []
 
 
-Overfull \hbox (63.66138pt too wide) detected at line 1129
+Overfull \hbox (63.66138pt too wide) detected at line 1142
 []
  []
 
-[39] [40] [41] [42] [43] [44] [45]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1293.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1293.
+[39] [40] [41]
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1217
+
+ []
+
+[42] [43] [44] [45] [46]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1331.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1331.
  (mathe_zusammenfassung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1293.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1293.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1331.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1331.
 
 Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
-(rerunfilecheck)             Checksum: 653CC5CEB6C9E64E9443105BA824309E;5882.
+(rerunfilecheck)             Checksum: AEBF2F889CFF297AB98A46F29D6CA39B;6344.
  ) 
 Here is how much of TeX's memory you used:
- 42688 strings out of 480790
- 1005014 string characters out of 2907040
- 1916124 words of memory out of 3000000
- 57694 multiletter control sequences out of 15000+200000
+ 42733 strings out of 480790
+ 1005813 string characters out of 2907040
+ 1925779 words of memory out of 3000000
+ 57732 multiletter control sequences out of 15000+200000
  542336 words of font info for 63 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  67i,19n,348p,1306b,2259s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1715,9 +1785,9 @@ m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX
 nts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12
 .pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C
 :/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mathe_zusammenfassung.pdf (45 pages, 645519 bytes).
+Output written on mathe_zusammenfassung.pdf (46 pages, 667758 bytes).
 PDF statistics:
- 772 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
- 797 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 814 PDF objects out of 1000 (max. 8388607)
+ 134 named destinations out of 1000 (max. 500000)
+ 845 words of extra memory for PDF output out of 10000 (max. 10000000)
 

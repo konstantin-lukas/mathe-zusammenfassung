@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 
 %opening
-\title{Unimathematik für Informatikstudiengänge \\ Zusammenfassung}
+\title{Mathematik fürs Informatikstudium und Abitur:\\Eine Zusammenfassung}
 \author{Konstantin Lukas}
 \renewcommand{\contentsname}{Inhaltsverzeichnis}
 \usepackage{xstring}
@@ -799,8 +799,9 @@
 		\end{tcolorbox}
 	\section{Funktionen}
 		\subsection{Allgemeines}
+			\subsubsection{Monotonie}
+			\label{subsubsec:monotonie}
 				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-					\subsubsection{Monotonie}
 						Seien $x_1$ und $x_2$ zwei Argumente einer Funktion, so gelten folgende Definitionen:\newline\newline
 						\textbf{Monoton wachsend}
 						\begin{flalign*}
@@ -819,9 +820,14 @@
 						wenn\;x_1< x_2\; und\; f(x_1)> f(x_2)&&
 						\end{flalign*}
 				\end{tcolorbox}
+				\noindent Des Weiteren kann man, das Monotonieverhalten einer Funktion mithilfe ihrer \highlight{subsec:ableitung}{Ableitung} bestimmen. Ist die Ableitung $f^{\prime}$ einer Funktion größer oder gleich Null, so ist sie monoton wachsend. Ist sie größer als und ungleich Null, ist sie sogar streng monoton wachsend. Dasselbe gilt umgekehrt für monoton fallende Funktion, wenn ihre Ableitung an der untersuchten Stelle negativ ist.\newline\newline
+				\textbf{Monoton wachsend}: $f^{\prime}(x)\ge 0$\newline\newline
+				\textbf{Streng monoton wachsend}: $f^{\prime}(x)> 0$\newline\newline
+				\textbf{Monoton fallend}: $f^{\prime}(x)\le 0$\newline\newline
+				\textbf{Streng monoton fallend}: $f^{\prime}(x)< 0$\newline\newline
+				\subsubsection{Besondere Stellen}
+				Für manche Stellen einer Funktion werden besondere Begriffe benutzt. Hinweis: $D_f$ ist der Definitionsbereich der Funktion und $I$ ein beliebig kleiner offener Intervall, der $x_{max}$ bzw. $x_{min}$ beinhaltet.
 				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-					\subsubsection{Besondere Stellen}
-					Für manche Stelle einer Funktion werden besondere Begriffe benutzt. Hinweis: $D_f$ ist der Definitionsbereich der Funktion und $I$ ein beliebig kleiner offener Intervall, der $x_{max}$ bzw. $x_{min}$ beinhaltet.\newline\newline
 					\textbf{Globale Maximalstelle}
 					\begin{flalign*}
 						wenn\;f(x_{max})\ge f(x)\; aller\;x\in D_f&&
@@ -838,17 +844,23 @@
 					\begin{flalign*}
 						wenn\;f(x_{max})\le f(x)\; aller\;x\in D_f\cap I&&
 					\end{flalign*}
-					Maximal- und Minimalstellen werden auch als Extremalstellen bezeichnet.\newline\newline
+					\textbf{Strikte Extrema}\newline\newline
+					Ersetzt man bei den obigen Definitionen das $\ge$ bzw. $\le$ durch $>$ bzw. $<$, spricht man von einem strickten Maximum oder Minimum.
+				\end{tcolorbox}
+				\noindent Hinweis: Maximal- und Minimalstellen werden auch als Extremalstellen bezeichnet.
+				\subsubsection{Symmetrie}
+				Wenn man Funktionen untersucht, schaut man sich auch oft an, wie deren Symmetrie ist. Ist eine Funktion achsensymmetrisch zur $y$-Achse, spricht man von \textit{gerade} und wenn sie punktsymmetrisch zum Nullpunkt ist, von \textit{ungerade}.
+				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 					\textbf{Gerade}
 					\begin{flalign*}
-						wenn\;f(-x)=f(x)&&
+					wenn\;f(-x)=f(x)&&
 					\end{flalign*}
 					\textbf{Ungerade}
 					\begin{flalign*}
-						wenn\;f(-x)=-f(x)&&
+					wenn\;f(-x)=-f(x)&&
 					\end{flalign*}
-					Achtung: Eine Funktion kann nur gerade oder ungerade sein, wenn ihr Definitionsbereich symmetrisch zum Nullpunkt auf $x$-Achse ist.
 				\end{tcolorbox}
+				\noindent Achtung: Eine Funktion kann nur gerade oder ungerade sein, wenn ihr Definitionsbereich symmetrisch zur Nullpunkt auf der $x$-Achse ist.
 		\subsection{Potenz- und Wurzelfunktionen}
 			Potenzfunktionen in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}, wenn $n\ge 2$ gilt und der Bruch keine ganze Zahl ist. An der Potenz kann man erkennen, ob eine Funktion gerade ($x^{2n}$) oder ungerade ($x^{2n-1}$) ist. Hier sind einige Beispiele für Graphen von Wurzelfunktionen:\newline
 			\makeplot{{x^3},{x^2},{x^(3/2)},{x^(2/3)},{x^(-1/2)},{x^(-2)},{x^(-3)}}{{$f(x)=x^3$},{$f(x)=x^2$},{$f(x)=x^{\frac{3}{2}}$},{$f(x)=x^{\frac{2}{3}}$},{$f(x)=x^{-\frac{1}{2}}$},{$f(x)=x^{-2}$},{$f(x)=x^{-3}$}}{{1,-1},{1,-2},{4,-1},{4,-2},{7,-1},{7,-2},{10,-1}}{-6,6}{-6,6}{-10:10}{300}{17cm,7cm}{smooth}
@@ -1104,7 +1116,7 @@
 	\section{Differenzialrechnung}
 		\subsection{Die Ableitung}
 		\label{subsec:ableitung}
-				Die Ableitung einer Funktion gibt Aufschluss über ihr Steigungsverhalten, denn die Werte der Ableitung $f^{\prime} (x)$ einer Funktion $f(x)$ entsprechen dem Anstieg einer Tangente an derselben Stelle von $f(x)$. Das kann man auch an dem unten stehenden Beispiel erkennen. Um eine Potenzfunktion abzuleiten, nehmen wir den Exponenten von jedem $x$ und holen ihn hinunter, um ihn vor das jeweilige $x$ zu schreiben. Anschließend reduzieren wir den Exponenten um $1$. Dabei ist zu beachten, dass die Ableitung einer reinen Zahl ohne $x$ immer $0$ ist und, dass die Ableitung von $x=1$ ist, denn $x^0$ entspricht $1$.
+				Die Ableitung einer Funktion gibt Aufschluss über ihr \highlight{subsubsec:monotonie}{Monotonieverhalten} und die Veränderung ihres Anstiegs, denn die Werte der Ableitung $f^{\prime} (x)$ einer Funktion $f(x)$ entsprechen dem Anstieg einer Tangente an derselben Stelle von $f(x)$. Das kann man auch an dem unten stehenden Beispiel erkennen. Um eine Potenzfunktion abzuleiten, nehmen wir den Exponenten von jedem $x$ und holen ihn hinunter, um ihn vor das jeweilige $x$ zu schreiben. Anschließend reduzieren wir den Exponenten um $1$. Dabei ist zu beachten, dass die Ableitung einer reinen Zahl ohne $x$ immer $0$ ist und, dass die Ableitung von $x=1$ ist, denn $x^0$ entspricht $1$.
 			\makeplot{{x^2},{2*x}}{{$f(x)=x^2$},{$f^{\prime}(x)=2x$}}{{4,3.5},{3,1}}{-10,10}{-10,10}{-20:20}{200}{17cm,7cm}{smooth}
 			Hinweis: Um Fehler zu vermeiden, sollte man zunächst alle Terme so umformen, dass man einfach ableiten kann. Dafür solltest du die wichtigsten \highlight{sec:rechengesetze}{Rechengesetze} beherrschen.
 			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
@@ -1117,18 +1129,20 @@
 					&\sqrt{x}&\rightarrow&\;\;\frac{1}{2\sqrt{x}}\\\\
 					&e^x&\rightarrow&\;\;e^x\\\\
 					&ln(x)&\rightarrow&\;\;\frac{1}{x}\\\\
-					&a^x(a>0)&\rightarrow&\;\;ln(a\cdot a^x)&&&&&&&&&&&
+					&a^x(a>0)&\rightarrow&\;\;ln(a\cdot a^x)\\\\
+					&\frac{1}{x^n}&\rightarrow&\;\;-\frac{n}{x^{n+1}}&&&&&&&&&&&
 					\end{flalign*}
 					\begin{flalign*}
 					&\sin(x)&\rightarrow&\;\; \cos(x)\\\\
 					&\cos(x)&\rightarrow&\;\;-\sin(x)\\\\
 					&\tan(x)&\rightarrow&\;\;\frac{1}{\cos^2x}\\\\
-					&u(x)\cdot v(x)&\rightarrow&\;\;u^{\prime}(x)\cdot v(x)+u(x)\cdot v(x)^{\prime}\\\\
-					&\frac{u(x)}{v(x)}&\rightarrow&\;\;\frac{u^{\prime}(x)\cdot v(x)-u(x)\cdot v(x)^{\prime}}{(h(x))^2}\\\\
+					&u(x)\cdot v(x)&\rightarrow&\;\;u^{\prime}(x)\cdot v(x)+u(x)\cdot v^{\prime}(x)\\\\
+					&\frac{u(x)}{v(x)}&\rightarrow&\;\;\frac{u^{\prime}(x)\cdot v(x)-u(x)\cdot v^{\prime}(x)}{(v(x))^2}\\\\
 					&(u\circ v)(x)&\rightarrow&\;\;u^{\prime}(v(x))\cdot v^{\prime}(x)&&&&&&&&&&&
 					\end{flalign*}
 				\end{multicols}
 			\end{tcolorbox}
+			Tipp: Solltest du es einmal nicht schaffen, eine Funktion mit den Ableitungsregeln abzuleiten oder diese vergessen haben, kannst du die Ableitung immer noch mithilfe des \highlight{subsubsec:differentialquotient}{Differentialquotionen!} bestimmen.
 			\subsubsection{Differenzenquotient}
 			\label{subsubsec:differenzenquotient}
 				Um die Steigung einer Sekante zwischen zwei Punkten zu berechnen, benutzen wir den Differenzenquotient.
@@ -1169,6 +1183,7 @@
 				\end{flalign*}
 				Dabei ist $h$ eine beliebige Zahl, mit deren Hilfe wir uns jetzt an die genaue Steigung in einem Punkt annähern können. Je kleiner wir den Abstand $h$ wählen, desto genauer kommen wir an die Tangente oder auch Steigung der Stelle $x$.
 			\subsubsection{Differentialquotient}
+			\label{subsubsec:differentialquotient}
 				Der Differenzenquotient erlaubt es uns die Steigung einer Funktion an einer bestimmten Stelle zu bestimmen. Im Abschnitt über den \highlight{subsubsec:differenzenquotient}{Differenzenquotient} haben wir schon geklärt, das wir näher an den Anstieg an der Stelle $x$ kommen, wenn wir den Abstand $h$ verringern. Der kleinstmögliche Abstand wäre $0$. Das geht allerdings nicht, da wir nicht $h=0$ in die Formel für den Differenzenquotient einsetzen und den Divisor somit gleich $0$ setzen dürfen. Um ums zu überlegen, was also für ein minimal kleines $h$ passieren würde, brauchen wir den Limes.
 				\begin{flalign*}
 				\lim_{h \to 0}	m=\lim_{h \to 0}\frac{f(x+h)-f(x)}{h}=f^{\prime}(x)&&
@@ -1181,7 +1196,26 @@
 				=&\lim_{h \to 0}(3x^2+2xh+h^2)\\
 				=&3x^2&&
 				\end{flalign*}
-				Das, was wir jetzt haben ist die erste Ableitung $f^{\prime}(x)$. Sofern nicht anders gewünscht, kann man diese aber auch wesentlich leichter bestimmen, indem man die \highlight{subsec:ableitung}{Ableitungsregeln} kennt.
+				Das, was wir jetzt haben ist die erste Ableitung $f^{\prime}(x)$. Sofern nicht anders gewünscht, kann man diese oft auch wesentlich leichter bestimmen, indem man die \highlight{subsec:ableitung}{Ableitungsregeln} kennt.
+			\subsubsection{Eine Funktion und ihre Ableitungen}
+				Leitet man die Ableitung einer Funktion noch mal ab, erhält man die zweite Ableitung $f^{\prime\prime}(x)$. Ebenso verhält es sich mit der dritten und allen weiteren Ableitungen. In der folgenden Abbildung sieht man eine Funktion und ihre erste, zweite sowie dritte Ableitung.
+				\makeplot{{x^4+2*x^3-2*x^2+x-3},{4*x^3+6*x^2-4*x+1},{12*x^2+12*x-4},{24*x+12}}{{$f(x)=x^4+2x^3-2x^2+x-3$},{$f^{\prime}(x)=4x^3+6x^2-4x+1$},{$f^{\prime\prime}(x)=12x^2+12x-4$},{$f^{\prime\prime\prime}(x)=24x+12$}}{{12,2.4},{11.7,1.75},{11.4,1.1},{10.9,0.45}}{-6,6}{-20,10}{-30:20}{200}{17cm,7cm}{smooth}
+				Man spricht bei den Bedingungen zur Bestimmung besonderer Punkte von notwendigen Bedingungen. Es existieren zudem weitere Bedingungen, mit deren Hilfe man diese Punkt genauer untersuchen kann, die sogenannten hinreichenden Bedingungen. Die obige Abbildung soll helfen, diese Bedingungen nachzuvollziehen.
+				\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+					\textbf{Notwendige Bedingungen}\newline\newline
+					Wenn \colorbox{blue!30}{$f^{\prime}(x)=0$} gilt, dann ist bei $x$ ein \colorbox{blue!30}{Extremal- o. Sattelpunkt} von $f$.\newline\newline
+					Wenn \colorbox{red!30}{$f^{\prime\prime}(x)=0$} gilt, dann ist bei $x$ ein \colorbox{red!30}{Wendepunkt} von $f(x)$.
+				\end{tcolorbox}
+				\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+					\textbf{Hinreichende Bedingungen}\newline\newline
+					Wenn \colorbox{teal!30}{$f^{\prime}(x)=0\land f^{\prime\prime}(x)\neq 0$} gilt, besitzt $f$ eine \colorbox{teal!30}{Extremalpunkt} bei $x$.\newline\newline
+					Wenn \colorbox{yellow!30}{$f^{\prime}(x)=0\land f^{\prime\prime}(x)>0$} gilt, dann ist bei $x$ ein \colorbox{yellow!30}{Minimum} von $f$.\newline\newline
+					Wenn \colorbox{green!30}{$f^{\prime}(x)=0\land f^{\prime\prime}(x)<0$} gilt, dann ist bei $x$ ein \colorbox{green!30}{Maximum} von $f$.\newline\newline\newline
+					Wenn \colorbox{violet!30}{$f^{\prime\prime}(x)=0\land f^{\prime}(x)=0$} gilt, besitzt $f$ einen \colorbox{violet!30}{Sattelpunkt} bei $x$.\newline\newline
+					Wenn \colorbox{purple!30}{$f^{\prime\prime}(x)=0\land f^{\prime\prime\prime}(x)<0$} gilt, dann ist bei $x$ eine \colorbox{purple!30}{Links-Rechts-Krümmung.}\newline\newline
+					Wenn \colorbox{orange!30}{$f^{\prime\prime}(x)=0\land f^{\prime\prime\prime}(x)>0$} gilt, dann ist bei $x$ eine \colorbox{orange!30}{Rechts-Links-Krümmung.}
+				\end{tcolorbox}
+				\noindent Hinweis: Das Zeichen $\land$ bedeutet »und«, während $\lor$ »oder« bedeutet.
 	\subsection{Limes: Der Grenzwert}
 	Für manche Funktionen ist es nicht möglich den Werte einer bestimmten Stelle zu errechnen. Manchmal will man auch das Verhalten einer Funktion wissen, wenn $x$ gegen unendlich geht. In u.a. diesen Fällen braucht man dem Limes. Um den Grenzwert einer Funktion für $x\to a$ zu ermitteln muss man den links- und den rechtsseitigen Grenzwert betrachten. Es gilt Folgendes: 
 	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
@@ -1290,4 +1324,8 @@
 	\begin{flalign*}
 		f(x)=\left\{\frac{x^3}{x};\;\;\;\;x\neq 0\atop -5;\;\;\;\;\;x=0\right.&&
 	\end{flalign*}
+	\subsection{Rationalen Funktionen}
+	\subsection{Grenzverhalten von ganzrationalen Funktionen}
+	\subsection{Tangentengleichung}
+	\subsection{Kurvendiskussion}
 \end{document}

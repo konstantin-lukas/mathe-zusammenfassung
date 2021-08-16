@@ -57,10 +57,11 @@
 \contentsline {section}{\numberline {7}Funktionen}{25}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Allgemeines}{25}{subsection.7.1}%
 \contentsline {subsubsection}{\numberline {7.1.1}Monotonie}{25}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Besondere Stellen}{26}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.2}Besondere Stellen}{25}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Symmetrie}{26}{subsubsection.7.1.3}%
 \contentsline {subsection}{\numberline {7.2}Potenz- und Wurzelfunktionen}{26}{subsection.7.2}%
 \contentsline {subsubsection}{\numberline {7.2.1}Wurzelgleichungen}{27}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}{28}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.2}Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}{29}{subsubsection.7.2.2}%
 \contentsline {subsection}{\numberline {7.3}Betragsfunktionen}{29}{subsection.7.3}%
 \contentsline {subsubsection}{\numberline {7.3.1}Betragsgleichungen mit mehreren Beträgen}{30}{subsubsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.4}Polynomfunktionen}{32}{subsection.7.4}%
@@ -78,6 +79,11 @@
 \contentsline {subsection}{\numberline {8.1}Die Ableitung}{39}{subsection.8.1}%
 \contentsline {subsubsection}{\numberline {8.1.1}Differenzenquotient}{40}{subsubsection.8.1.1}%
 \contentsline {subsubsection}{\numberline {8.1.2}Differentialquotient}{41}{subsubsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.2}Limes: Der Grenzwert}{41}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Differenzierbarkeit}{43}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}Stetige Erweiterung}{43}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.1.3}Eine Funktion und ihre Ableitungen}{41}{subsubsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.2}Limes: Der Grenzwert}{42}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Differenzierbarkeit}{44}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Stetige Erweiterung}{45}{subsubsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.4}Rationalen Funktionen}{46}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Grenzverhalten von ganzrationalen Funktionen}{46}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Tangentengleichung}{46}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Kurvendiskussion}{46}{subsection.8.7}%

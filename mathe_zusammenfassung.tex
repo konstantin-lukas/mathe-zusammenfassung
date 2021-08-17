@@ -349,6 +349,7 @@
 			\end{flalign*}
 		\end{tcolorbox}
 \section{Vereinfachungen zum Lösen von Gleichungen}
+	\label{sec:gleichungenvereinfachen}
 	\subsection{Quadratische Ergänzung}
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 			Die äquivalente Umformung der quadratischen Gleichung in Normalform $x^2+px+q=0$ in $\left(x+\frac{p}{2}\right)^2=-q+\left(\frac{p}{2}\right)^2$ wird als quadratische Ergänzung bezeichnet. In anderen Worten fügt man den Term $+\left(\frac{p}{2}\right)^2-\left(\frac{p}{2}\right)^2$ hinzu.
@@ -356,9 +357,9 @@
 		\noindent Beispiel:
 			\begin{flalign*}
 		x^2+8x+7 &= 0\\
-		x^2+8x+\left(\frac{8}{2}\right)^2+\left(\frac{8}{2}\right)^2+7 &= 0\\
-		x^2+8x+4^2+4^2+7 &= 0\\
-		(x+4)^2+4^2+7 &= 0\\
+		x^2+8x+\left(\frac{8}{2}\right)^2-\left(\frac{8}{2}\right)^2+7 &= 0\\
+		x^2+8x+4^2-4^2+7 &= 0\\
+		(x+4)^2-4^2+7 &= 0\\
 		(x+4)^2-9 &= 0\;\;\;\;\;\;\;\;\;\mid+9\\
 		(x+4)^2 &= 9\;\;\;\;\;\;\;\;\;\mid\sqrt{\ }\\
 		x&=\pm\sqrt{9}-4\\
@@ -849,6 +850,7 @@
 				\end{tcolorbox}
 				\noindent Hinweis: Maximal- und Minimalstellen werden auch als Extremalstellen bezeichnet.
 				\subsubsection{Symmetrie}
+				\label{subsubsec:symmetrie}
 				Wenn man Funktionen untersucht, schaut man sich auch oft an, wie deren Symmetrie ist. Ist eine Funktion achsensymmetrisch zur $y$-Achse, spricht man von \textit{gerade} und wenn sie punktsymmetrisch zum Nullpunkt ist, von \textit{ungerade}.
 				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 					\textbf{Gerade}
@@ -862,7 +864,7 @@
 				\end{tcolorbox}
 				\noindent Achtung: Eine Funktion kann nur gerade oder ungerade sein, wenn ihr Definitionsbereich symmetrisch zur Nullpunkt auf der $x$-Achse ist.
 		\subsection{Potenz- und Wurzelfunktionen}
-			Potenzfunktionen in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}, wenn $n\ge 2$ gilt und der Bruch keine ganze Zahl ist. An der Potenz kann man erkennen, ob eine Funktion gerade ($x^{2n}$) oder ungerade ($x^{2n-1}$) ist. Hier sind einige Beispiele für Graphen von Wurzelfunktionen:\newline
+			Potenzfunktionen in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}, wenn $n\ge 2$ gilt und der Bruch keine ganze Zahl ist. An der Potenz kann man erkennen, ob eine Funktion gerade ($x^{2n}$) oder ungerade ($x^{2n-1}$) ist. Hier sind einige Beispiele für Graphen von Potenz- und Wurzelfunktionen:\newline
 			\makeplot{{x^3},{x^2},{x^(3/2)},{x^(2/3)},{x^(-1/2)},{x^(-2)},{x^(-3)}}{{$f(x)=x^3$},{$f(x)=x^2$},{$f(x)=x^{\frac{3}{2}}$},{$f(x)=x^{\frac{2}{3}}$},{$f(x)=x^{-\frac{1}{2}}$},{$f(x)=x^{-2}$},{$f(x)=x^{-3}$}}{{1,-1},{1,-2},{4,-1},{4,-2},{7,-1},{7,-2},{10,-1}}{-6,6}{-6,6}{-10:10}{300}{17cm,7cm}{smooth}
 			\subsubsection{Wurzelgleichungen}
 			Bei Wurzelgleichungen wird zuerst der Definitionsbereich bestimmt werden, also die Menge an reellen Zahlen, für die der Radikand positiv oder gleich Null ist. Zur Lösung von Wurzelgleichungen wird die Wurzel auf einer Seite der Gleichung isoliert. Dann werden beide Seiten der Gleichung mit dem Wurzelexponenten (im Falle der Quadratwurzel also mit 2) so lange potenziert, bis alle Wurzeln eliminiert sind. Man bekommt also unter Umständen durch das Quadrieren (das Potenzieren mit einer geraden Zahl ist keine Äquivalenzumformung) neue Lösungen (Scheinlösungen) hinzu, die die ursprüngliche Gleichung nicht hatte. Die Probe ist folglich für Wurzelgleichungen unverzichtbar!\newline\newline
@@ -990,8 +992,8 @@
 				Wir haben jetzt $x=0$ als Lösung, jedoch erfüllt dieses Ergebnis nicht die Bedingung $x<-1$ und ist daher auch nicht in der Lösungsmenge enthalten.
 			\end{tcolorbox}
 			\noindent Abschließend können wir feststellen, dass unsere Lösungsmenge $\mathbb{L}=\left\{10;-\frac{2}{3}\right\}$ ist. Durch Einsetzen in eine der beiden Funktionen erhalten wir dann unsere Schnittpunkte $P_1(10\mid 16)$ und $P_2\left(-\frac{2}{3}\mid\frac{16}{3}\right)$.
-		\subsection{Polynomfunktionen}
-			Polynome sind die Summe aus den Vielfachen von Monomen. Eine Polynomfunktion mit den Koeffizienten $a_n$ hat folgende Form:
+		\subsection{Ganzrationale Funktionen}
+			Polynome sind die Summe aus den Vielfachen von Monomen. Eine ganzrationale Funktion oder auch Polynomfunktion genannt mit dem Koeffizienten $a_n$ hat folgende Form:
 			\begin{flalign*}
 			p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x^1+1_0&&
 			\end{flalign*}
@@ -1074,6 +1076,47 @@
 				x_1&=2,5\\
 				x_2&=-1\\
 				\mathbb{L}&=\{-1;1;2,5\}&&
+			\end{flalign*}
+			\subsubsection{Grenzverhalten von ganzrationalen Funktionen}
+				Hat man eine Funktion wie z.~B. $f(x)=-x^5+2x^3+3x^2+x+2$ und untersucht, wie sie sich gegen (minus) Unendlich verhält, würde man intuitiv sagen, sie nähert sich (minus) Unendlich an. Hier soll es darum gehen, wie man das auch rechnerisch herausfinden kann und sicher unterscheidet, ob nun plus oder minus Unendlich richtig ist. Der Trick bei Funktionen dieser Form ist es, das $x$ mit dem höchsten Exponenten auszuklammern.
+				\makeplot{{-x^5+2*x^3+3*x^2+x+2}}{{$f(x)=-x^5+2x^3+3x^2+x+2$}}{{12.2,4.6}}{-10,10}{-5,15}{-10:20}{200}{17cm,7cm}{smooth}
+				\begin{flalign*}
+				&\lim_{x\to\infty}-x^5+2x^3+3x^2+x+2\\
+				&\lim_{x\to\infty}x^5(\frac{-x^5}{x^5}+\frac{2x^3}{x^5}+\frac{3x^2}{x^5}+\frac{x}{x^5}+\frac{2}{x^5})\\
+				&\lim_{x\to\infty}x^5(-1+\frac{2}{x^2}+\frac{3}{x^3}+\frac{1}{x^4}+\frac{2}{x^5})&&
+				\end{flalign*}
+				Wir sehen, dass sich die Brüche in der Klammer alle Null annähern, somit bleibt dort nur noch $-1$. Währenddessen nähert sich $x^5$ Unendlich an. Multipliziert mit $-1$ ergibt das dann minus Unendlich.
+				\begin{flalign*}
+				&\infty^5(-1+\frac{2}{\infty^2}+\frac{3}{\infty^3}+\frac{1}{\infty^4}+\frac{2}{\infty^5})\\
+				=&\infty^5(-1+0+0+0+0)\\
+				=&-\infty&&
+				\end{flalign*}
+				Dasselbe kann man jetzt natürlich auch für $x\to -\infty$ testen.
+				\begin{flalign*}
+				&-\infty^5(-1-\frac{2}{\infty^2}-\frac{3}{\infty^3}-\frac{1}{\infty^4}-\frac{2}{\infty^5})\\
+				=&-\infty^5(-1-0-0-0-0)\\
+				=&\infty&&
+				\end{flalign*}
+				Hinweis: Wenn man mit $x\to(-)\infty$ arbeitet, setzt man $\infty$ normalerweise nicht in die Funktion ein. Hier habe ich es einmal gemacht, damit man das Ergebnis besser nachvollziehen kann. Wenn man ausführlicher zu arbeiten will/muss, kann man den Limes von jedem Term einzeln aufstellen, um das Endergebnis zu begründen.
+		\subsection{(Gebrochen)rationale Funktionen}
+			Wenn wir von (gebrochen)rationalen Funktionen reden, meinem wir eine Funktion mit einem Polynom im Nenner eines Bruches. $f(x)=\frac{2}{x^3}$ ist z.~B. eine rationale Funktion, $f(x)=\frac{x^3}{2}$ jedoch nicht.
+			\makeplot{{((2*x^4-10)/(x^3-3))}}{{$f(x)=\dfrac{2x^4-10}{x^3-3}$}}{{4.5,2.8}}{-6,6}{-5,10}{-22:20}{600}{17cm,7cm}{smooth}
+			Das Besondere an rationalen Funktionen der Form $f(x)=\frac{g(x)}{h(x)}$ ist, dass wir zum Bestimmen von Nullstellen und Definitionslücken den Zähler und Nenner einzeln betrachten können. Mithilfe des Zählers bestimmen wir ganz einfach Nullstellen der Funktion.
+			\begin{flalign*}
+				g(x)&=0\\
+				0&=2x^4-10\\
+				10&=2x^4\\
+				5&=x^4\\
+				x&=\pm\sqrt[4]{5}\\
+				\mathbb{L}&=\{-\sqrt[4]{5};\sqrt[4]{5}\}&&
+			\end{flalign*}
+			Mithilfe des Nenners bestimmen wir Definitionslücken.
+			\begin{flalign*}
+				h(x)&=0\\
+				0&=x^3-3\\
+				3&=x^3\\
+				x&=\sqrt[3]{3}\\
+				\mathbb{L}&=\{\sqrt[3]{3}\}&&
 			\end{flalign*}
 		\subsection{Exponentialfunktionen}
 			Eine Funktion der Form $f(x)=a^x$ wird als Exponentialfunktion bezeichnet, denn die Variable $x$ steht im Exponenten. Speziell wird die Funktion $f(x)=e^x$ als \textit{natürliche Exponentialfunktion} bezeichnet.
@@ -1197,7 +1240,8 @@
 				=&3x^2&&
 				\end{flalign*}
 				Das, was wir jetzt haben ist die erste Ableitung $f^{\prime}(x)$. Sofern nicht anders gewünscht, kann man diese oft auch wesentlich leichter bestimmen, indem man die \highlight{subsec:ableitung}{Ableitungsregeln} kennt.
-			\subsubsection{Eine Funktion und ihre Ableitungen}
+			\subsubsection{Extrem- und Wendepunkte}
+				\label{subsubsec:extrema}
 				Leitet man die Ableitung einer Funktion noch mal ab, erhält man die zweite Ableitung $f^{\prime\prime}(x)$. Ebenso verhält es sich mit der dritten und allen weiteren Ableitungen. In der folgenden Abbildung sieht man eine Funktion und ihre erste, zweite sowie dritte Ableitung.
 				\makeplot{{x^4+2*x^3-2*x^2+x-3},{4*x^3+6*x^2-4*x+1},{12*x^2+12*x-4},{24*x+12}}{{$f(x)=x^4+2x^3-2x^2+x-3$},{$f^{\prime}(x)=4x^3+6x^2-4x+1$},{$f^{\prime\prime}(x)=12x^2+12x-4$},{$f^{\prime\prime\prime}(x)=24x+12$}}{{12,2.4},{11.7,1.75},{11.4,1.1},{10.9,0.45}}{-6,6}{-20,10}{-30:20}{200}{17cm,7cm}{smooth}
 				Man spricht bei den Bedingungen zur Bestimmung besonderer Punkte von notwendigen Bedingungen. Es existieren zudem weitere Bedingungen, mit deren Hilfe man diese Punkt genauer untersuchen kann, die sogenannten hinreichenden Bedingungen. Die obige Abbildung soll helfen, diese Bedingungen nachzuvollziehen.
@@ -1217,6 +1261,7 @@
 				\end{tcolorbox}
 				\noindent Hinweis: Das Zeichen $\land$ bedeutet »und«, während $\lor$ »oder« bedeutet.
 	\subsection{Limes: Der Grenzwert}
+	\label{subsec:limes}
 	Für manche Funktionen ist es nicht möglich den Werte einer bestimmten Stelle zu errechnen. Manchmal will man auch das Verhalten einer Funktion wissen, wenn $x$ gegen unendlich geht. In u.a. diesen Fällen braucht man dem Limes. Um den Grenzwert einer Funktion für $x\to a$ zu ermitteln muss man den links- und den rechtsseitigen Grenzwert betrachten. Es gilt Folgendes: 
 	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
 		Um zu überprüfen, ob für eine Funktion mit $x$ gegen $a$ ein Grenzwert existiert, schaut man sich jeweils den linksseitigen und rechtsseitigen Grenzwert an. Sind diese gleich, so existiert ein Grenzwert. Sind sie unterschiedlich, existiert kein Grenzwert.
@@ -1325,22 +1370,77 @@
 		f(x)=\left\{\frac{x^3}{x};\;\;\;\;x\neq 0\atop -5;\;\;\;\;\;x=0\right.&&
 	\end{flalign*}
 	\subsection{Tangentengleichung}
+	\label{subsec:tangentengleichung}
 		Wenn man Extremal- und Wendepunkte untersucht, kann es vorkommen, dass man eine Tangenten für diese Punkte aufstellen soll. Das ist nicht schwer, denn man muss nur zwei Konstanten bestimmen. Da eine Tangente eine lineare Funktion ist, hat sie die grundlegende Form $T(x)=mx+n$. Sagen wir, wir wollen die Tangentengleichung an der Stelle $x=2$ der Funktion $f(x)=x^2+4$ aufstellen. Um $m$ zu bestimmen brauchen wir den Anstieg an der Stelle $x$. Diesen können wir mit der ersten Ableitung an der Stelle $x$ ermitteln.
 		\begin{flalign*}
 			f(x)&=x^2+4\\
 			f^{\prime}(x)&=2x\\
 			f^{\prime}(2)&=4&&
 		\end{flalign*}
-		Das können wir schon mal in unsere Gleichung einsetzen und erhalten $T(x)=4x+n$. Jetzt fehlt uns noch $n$, welches wir durch Umstellen bestimmen können, nachdem wir $x$ und $T(x)$ eingesetzt haben. Gesucht ist ja die Tangente an der Stelle $x=2$. Den $x$-Wert haben wir also schon mal und $T(x)$ können wir ganz einfach durch Einsetzen in die Funktion berechnen.
+		Das können wir schon mal in unsere Gleichung einsetzen und erhalten $T(x)=4x+n$. Jetzt fehlt uns noch $n$, welches wir durch Umstellen bestimmen können, nachdem wir $x$ und $T(x)$ eingesetzt haben. Gesucht ist ja die Tangente an der Stelle $x=2$. Den $x$-Wert haben wir also schon mal und $f(x)$ bzw. $T(x)$ (Punkt existiert auf beiden Funktionen) können wir ganz einfach durch Einsetzen in die Funktion berechnen.
 		\begin{flalign*}
-			f(2)&=8\\
-			f(2)&=4\cdot 2+n\\
+			f(2)&=8=T(2)\\
+			T(2)&=4\cdot 2+n\\
 			8&=4\cdot 2+n\\
 			n&=0&&
 		\end{flalign*}
 		Da $n=0$ ist, können wir es weglassen und haben bereits unsere vollständige Tangentengleichung. Hier nochmal eine Abbildung, um zu zeigen, dass das Ergebnis auch wirklich richtig ist.
 		\makeplot{{x^2+4},{4*x}}{{$f(x)=x^2+4$},{$T(x)=4x$}}{{4,3},{10.5,2}}{-10,10}{0,20}{-5:25}{200}{17cm,7cm}{smooth}
-	\subsection{Rationalen Funktionen}
-	\subsection{Grenzverhalten von ganzrationalen Funktionen}
 	\subsection{Kurvendiskussion}
+		In einer Kurvendiskussion untersucht man verschiedene Eigenschaften einer Funktion. Wie man diese Eigenschaften jeweils untersucht wird an anderen Stellen erklärt, die auch noch mal genannt werden. Im Folgenden wird einmal eine komplette Kurvendiskussion beispielhaft durchgeführt. Da man normalerweise keine Abbildung zur Verfügung hat, weil man die Funktion selber skizzieren soll, gibt es den Graphen der Funktion erst am Ende. Die zu untersuchende Funktion ist:\newline\newline
+		$f(x)=-\dfrac{x^{5}-12x^{4}+36x^{3}+25x^{2}-150x}{50}$
+		\subsubsection{Symmetrie}
+			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man die \highlight{subsubsec:symmetrie}{Symmetrie} einer Funktion bestimmt.\newline\newline
+			\textbf{Aufgabe:}\newline Bestimme begründet, ob die Funktion gerade, ungerade oder weder noch ist.\newline\newline
+			\textbf{Lösung:}\newline
+			Diese ganzrationale Funktion kann weder gerade noch ungerade sein, da sie sowohl gerade, wie auch ungerade Exponenten enthält. Dennoch möchte ich es der Vollständig halber einmal rechnerisch belegen. Dafür überprüfen wir $f(-x)$. Sollte es mit $f(x)$ oder $-f(x)$ übereinstimmen, hätten wir Symmetrie.
+			\begin{flalign*}
+				f(-x)&=-\dfrac{(-x)^{5}-12\cdot (-x)^{4}+36\cdot (-x)^{3}+25\cdot (-x)^{2}-150\cdot (-x)}{50}\\
+				&=-\dfrac{-x^{5}-12x^{4}-36x^{3}+25x^{2}+150x}{50}\\
+				-f(x)&=-\left(-\dfrac{x^{5}-12x^{4}+36x^{3}+25x^{2}-150x}{50}\right)\\
+				&=\dfrac{x^{5}-12x^{4}+36x^{3}+25x^{2}-150x}{50}\\
+				f(-x)&\neq -f(x)\neq f(x)&&
+			\end{flalign*}
+		\subsubsection{Nullstellen}
+			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man \highlight{sec:gleichungenvereinfachen}{Gleichungen} lösen kann.\newline\newline
+			\textbf{Aufgabe:}\newline Bestimme alle Nullstellen der Funktion.\newline\newline
+			\textbf{Lösung:}
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=7cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+					&&0&=-\frac{x^5-12x^4+35x^3+25x^2-150x}{50}\\
+					\Leftrightarrow&&0&=\frac{-x^5+12x^4-35x^3-25x^2+150x}{50}\\
+					\Leftrightarrow&&0&=\frac{1}{50}(-x^5+12x^4-35x^3-25x^2+150x)\\
+					\Leftrightarrow&&0&=-\frac{1}{50}x^5+\frac{6}{25}x^4-\frac{18}{25}x^3-\frac{1}{2}x^2+3x\\
+					\Leftrightarrow&&0&=x\left(-\frac{1}{50}x^4+\frac{6}{25}x^3-\frac{18}{25}x^2-\frac{1}{2}x+3\right)&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Eine Nullstelle haben wir dank Faktorisierung als $x=0$ bestimmt. Eine weitere Nullstelle können wir bestimmen, indem wir nur den zweiten Faktor betrachten. Durch Herumprobieren finden wir die Nullstelle $x=5$. Damit können wir jetzt eine Polynomdivision durchführen.\newline\newline
+			\polylongdiv[style=C,div=:]{-(1/50)x^4+(6/25)x^3-(18/25)x^2-(1/2)x+3}{x-5}\newline\newline
+			Durch weiteres Herumprobieren, finden wir jetzt auch die Nullstelle $x=6$. Damit können wir jetzt ein zweites Mal die Polynomdivision durchführen.\newline\newline
+			\polylongdiv[style=C,div=:]{-(1/50)x^3+(7/50)x^2-(1/50)x-(3/5)}{x-6}\newline\newline
+			Mit dem übrigen Polynom können wir jetzt die restlichen Nullstellen bestimmen.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=7cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+						&&0&=-\frac{1}{50}x^2+\frac{1}{50}x+\frac{1}{10}&&\mid : -\frac{1}{50}\\
+						\Leftrightarrow&&0&=x^2-x-5&&\mid \text{p-q-Formel}\\
+						&&x_{1,2}&=\frac{1}{2}\pm\sqrt{\left(\frac{-1}{2}\right)^2+5}\\
+						&&x_{1}&=\frac{1+\sqrt{21}}{2}\\
+						&&x_{2}&=\frac{1-\sqrt{21}}{2}&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Da eine Polynomfunktion 5. Grades maximal 5 Nullstellen haben kann, können wir uns sicher sein, dass wir alle Nullstellen gefunden haben.
+			\begin{flalign*}
+				\mathbb{L}=\left\{\frac{1-\sqrt{21}}{2};0;\frac{1+\sqrt{21}}{2};5;6 \right\}
+			\end{flalign*}
+		\subsubsection{Schnittpunkt mit y-Achse}
+			Den $y$-Achsenschnittpunkt zu bestimmen, ist ganz einfach. Man muss nur $x=0$ einsetzen und das Ergebnis ausrechnen.\newline\newline
+		\subsubsection{Grenzverhalten}
+			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man den \highlight{subsec:limes}{Limes} benutzt.\newline\newline
+		\subsubsection{Extrema}
+			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man \highlight{subsubsec:extrema}{Extrema} bestimmt.\newline\newline
+		\subsubsection{Wendepunkte}
+			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man \highlight{subsubsec:extrema}{Wendepunkte} bestimmt.\newline\newline
+		\subsubsection{Tangentengleichungen der Wendepunkte}
+			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man eine \highlight{subsec:tangentengleichung}{Tangentengleichung} aufstellt.\newline\newline
+		\subsubsection{Flächenberechnung}
 \end{document}

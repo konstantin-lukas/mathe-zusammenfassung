@@ -88,8 +88,10 @@
 \etocsettocstyle{\noindent\rule{\linewidth}{.4pt}}
 
 \section{Mengen}
-	\subsection{Vereinigung}
-		\begin{flalign*}
+	\begin{multicols}{2}
+		\begin{flushleft}
+			\subsection{Vereinigung}
+			\begin{flalign*}
 			\begin{tikzpicture}
 			\fill[yellow] (3,0) circle (2cm);
 			\fill[yellow] (0,0) circle (2cm);
@@ -98,85 +100,114 @@
 			\draw (0,0) node {A};
 			\draw (3,0) node {B};
 			\end{tikzpicture}&&
-		\end{flalign*}
-		\begin{flalign*}
+			\end{flalign*}
+			\begin{flalign*}
 			A \cup B := \{x \mid x \in A \: oder \: x \in B\}&&
-		\end{flalign*}
-	\subsection{Durchschnitt}
-		\begin{flalign*}
+			\end{flalign*}
+		\end{flushleft}
+		\begin{flushleft}
+			\subsection{Durchschnitt}
+			\begin{flalign*}
 			\begin{tikzpicture}
 			\begin{scope}
-				\draw [clip](0,0) circle (2cm);
-				\fill[yellow] (3,0) circle (2cm);
+			\draw [clip](0,0) circle (2cm);
+			\fill[yellow] (3,0) circle (2cm);
 			\end{scope}
 			\draw (0,0) circle (2cm);
 			\draw (3,0) circle (2cm);
 			\draw (0,0) node {A};
 			\draw (3.2,0) node {B};
 			\end{tikzpicture}&&
-		\end{flalign*}
-		\begin{flalign*}
+			\end{flalign*}
+			\begin{flalign*}
 			A \cap B := \{x \mid x \in A \: und \: x \in B\}&&
-		\end{flalign*}
-	\subsection{Differenz}
-		\begin{flalign*}
+			\end{flalign*}
+		\end{flushleft}
+	\end{multicols}
+	\vspace{1cm}
+	\begin{multicols}{2}
+		\begin{flushleft}
+			\subsection{Differenz}
+			\begin{flalign*}
 			\begin{tikzpicture}
 			\begin{scope}
-				\fill[yellow] (0,0) circle (2cm);
-				\clip (3,0) circle(2cm);
-				\fill[white] (3,0) circle (2cm);
+			\fill[yellow] (0,0) circle (2cm);
+			\clip (3,0) circle(2cm);
+			\fill[white] (3,0) circle (2cm);
 			\end{scope}
 			\draw (0,0) circle (2cm);
 			\draw (3,0) circle (2cm);
 			\draw (0,0) node {A};
 			\draw (3,0) node {B};
 			\end{tikzpicture}&&
-		\end{flalign*}
-		\begin{flalign*}
-			A \setminus B := \{x \mid x \in A \: und \: x \notin B\}&&
-		\end{flalign*}
-	\subsection{Symmetrische Differenz}
-		\begin{flalign*}
-			\begin{tikzpicture}
-				\fill[yellow] (0,0) circle (2cm);
-				\fill[yellow] (3,0) circle (2cm);
-				\begin{scope}
-					\draw [clip](0,0) circle (2cm);
-					\fill[white] (3,0) circle (2cm);
-				\end{scope}
-				\draw (0,0) circle (2cm);
-				\draw (3,0) circle (2cm);
-				\draw (0,0) node {A};
-				\draw (3,0) node {B};
-				\end{tikzpicture}&&
 			\end{flalign*}
-		\begin{flalign*}
-			A \triangle B := \{ x \mid (x \in A) \: \veebar \: ( x \in B ) \}&&
-			A \triangle B := \{ x \mid (x \in A) \: \nleftrightarrow \: ( x \in B ) \}&&
-		\end{flalign*}
+			\begin{flalign*}
+			A \setminus B := \{x \mid x \in A \: und \: x \notin B\}&&
+			\end{flalign*}
+		\end{flushleft}
+		\begin{flushleft}
+			\subsection{Symmetrische Differenz}
+			\begin{flalign*}
+			\begin{tikzpicture}
+			\fill[yellow] (0,0) circle (2cm);
+			\fill[yellow] (3,0) circle (2cm);
+			\begin{scope}
+			\draw [clip](0,0) circle (2cm);
+			\fill[white] (3,0) circle (2cm);
+			\end{scope}
+			\draw (0,0) circle (2cm);
+			\draw (3,0) circle (2cm);
+			\draw (0,0) node {A};
+			\draw (3,0) node {B};
+			\end{tikzpicture}&&
+			\end{flalign*}
+			\begin{flalign*}
+			&A \triangle B := \{ x \mid (x \in A) \: \veebar \: ( x \in B ) \}\\
+			&A \triangle B := \{ x \mid (x \in A) \: \nleftrightarrow \: ( x \in B ) \}&&
+			\end{flalign*}
+		\end{flushleft}
+	\end{multicols}
 	\subsection{Definierte Zahlenmengen}
-	Natürliche Zahlen
-		\begin{flalign*}
+	\begin{multicols}{2}
+		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm]
+			\textbf{Natürliche Zahlen}
+			\begin{flalign*}
 			\mathbb{N} = \{ 1; 2; 3; ... \}&&
-		\end{flalign*}\newline
-	Menge der Natürliche Zahlen
-		\begin{flalign*}
+			\end{flalign*}
+		\end{tcolorbox}
+		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm]
+			\textbf{Menge der Natürliche Zahlen}
+			\begin{flalign*}
 			\mathbb{N}_0 = \{ 0; 1; 2; 3; ... \}&&
-		\end{flalign*}\newline
-	Ganze Zahlen
-		\begin{flalign*}
+			\end{flalign*}
+		\end{tcolorbox}
+	\end{multicols}
+	\begin{multicols}{2}
+		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+			\textbf{Ganze Zahlen}
+			\begin{flalign*}
 			\mathbb{Z} = \{ ... ; -2; -1; 0; 1; 2; 3; ... \}&&
-		\end{flalign*}\newline
-	Rationale Zahlen
-		\begin{flalign*}
-			\mathbb{Q} = \left\{ \frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0 \right\}&&
-		\end{flalign*}\newline
-		Reelle Zahlen\newline
-		Die reellen Zahlen umfassen die rationalen Zahlen und die irrationalen Zahlen.\newline\newline
-		Irrationale Zahlen
-		\begin{flalign*}
+			\end{flalign*}
+		\end{tcolorbox}
+		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+			\textbf{Irrationale Zahlen}
+			\begin{flalign*}
 			\mathbb{R} \setminus \mathbb{Q}&&
+			\end{flalign*}
+		\end{tcolorbox}
+	\end{multicols}
+	\begin{multicols}{2}
+	\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+		\textbf{Reelle Zahlen}\newline
+		Die reellen Zahlen $\mathbb{R}$ umfassen die rationalen Zahlen und die irrationalen Zahlen.
+	\end{tcolorbox}
+	\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+		\textbf{Rationale Zahlen}
+		\begin{flalign*}
+		\mathbb{Q} = \left\{ \frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0 \right\}&&
 		\end{flalign*}
+	\end{tcolorbox}
+	\end{multicols}
 \section{Elementare Rechengesetze, -verfahren und -notationen}
 \label{sec:rechengesetze}
 	\subsection{Brüche dividieren}

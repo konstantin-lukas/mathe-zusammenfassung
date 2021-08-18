@@ -1077,6 +1077,41 @@
 				x_2&=-1\\
 				\mathbb{L}&=\{-1;1;2,5\}&&
 			\end{flalign*}
+		\subsubsection{Lösen mit dem Newtonverfahren}
+		\label{subsubsec:newtonverfahren}
+			Bei Polynomen 3. oder höheren gerade kann es passieren, dass man keine Nullstelle findet. Manchmal nicht einmal durch Raten. Die Funktion zu vereinfachen durch Polynomdivision ist auch erst möglich, wenn man eine Nullstelle gefunden hat. In diesem hilft das Newtonverfahren sich einem Wert zu nähern. Hier ist ein Beispiel für so einen Fall.
+			\makeplot{{x^3+2*x^2-x-1}}{{$f(x)=x^{3}+2x^{2}-x-1$}}{{3.9,3.5}}{-6,6}{-10,10}{-20:20}{300}{17cm,7cm}{smooth}
+			Als erstes legt man eine Wertetabelle an, um die grobe Positionen der Nullstellen zu finden. Dabei will man wissen, zwischen welchen Stellen das Vorzeichen wechselt.
+			\begin{center}
+				\bgroup
+				\def\arraystretch{1.5}
+				\begin{tabular}{ | l | c | c | c | c | c | c | c | }
+					\hline
+					\textbf{x} & -3 & -2 & -1 & 0 & 1 & 2 & 3 \\ \hline
+					\textbf{f(x)} & -7 & 1 & 1 & -1 & 1 & 13 & 41 \\
+					\hline
+				\end{tabular}
+				\egroup
+			\end{center}
+			Wir untersuchen jetzt einmal die Nullstelle zwischen $-1$ und $0$. Um uns der Nullstelle anzunähern teilen wir die Funktion durch ihre Ableitung an einer der beiden Stellen, zwischen denen unsere gesuchte Nullstelle liegt. Es gilt folgende Formel:
+			\begin{tcolorbox}[boxsep=0pt,top=.3cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.45cm]
+				\begin{flalign*}
+					x_{n+1}=x_{n}-\frac{f(x_{n})}{f^{\prime}(x_{n})}
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Um diese Formel anzuwenden, brauchen wir als erstes die Ableitung und dann wiederholen wir diesen Prozess solange, bis wir genügend Nachkommastellen oder die tatsächliche Nullstelle gefunden haben.
+			\begin{flalign*}
+				f^{\prime}(x)=3x^2+4x-1&&
+			\end{flalign*}
+			\begin{flalign*}
+				x_1&=(-1)-\frac{(-1)^{3}+2(-1)^{2}-(-1)-1}{3(-1)^2+4(-1)-1}=-\frac{1}{2}\\
+				x_2&=(-\frac{1}{2})-\frac{(-\frac{1}{2})^{3}+2(-\frac{1}{2})^{2}-(-\frac{1}{2})-1}{3(-\frac{1}{2})^2+4(-\frac{1}{2})-1}=-\frac{5}{9}\\
+				x_3&=(-\frac{5}{9})-\frac{(-\frac{5}{9})^{3}+2(-\frac{5}{9})^{2}-(-\frac{5}{9})-1}{3(-\frac{5}{9})^2+4(-\frac{5}{9})-1}=-\frac{929}{1674}\\
+				x_4&=(-\frac{929}{1674})-\frac{(-\frac{929}{1674})^{3}+2(-\frac{929}{1674})^{2}-(-\frac{929}{1674})-1}{3(-\frac{929}{1674})^2+4(-\frac{929}{1674})-1}=-0,5549581321\\
+				x_5&=(-0,5549581321)-\frac{(-0,5549581321)^{3}+2(-0,5549581321)^{2}-(-0,5549581321)-1}{3(-0,5549581321)^2+4(-0,5549581321)-1}\\
+				&=-0,5549581321&&
+			\end{flalign*}
+			Wenn man zwei Mal den gleich Wert bekommt, weiß man, dass man den endgültigen Wert erreicht hat. Damit haben wir jetzt eine Nullstelle bestimmt, mit der wir z.B. die Polynomdivision anwenden können.
 			\subsubsection{Grenzverhalten von ganzrationalen Funktionen}
 				Hat man eine Funktion wie z.~B. $f(x)=-x^5+2x^3+3x^2+x+2$ und untersucht, wie sie sich gegen (minus) Unendlich verhält, würde man intuitiv sagen, sie nähert sich (minus) Unendlich an. Hier soll es darum gehen, wie man das auch rechnerisch herausfinden kann und sicher unterscheidet, ob nun plus oder minus Unendlich richtig ist. Der Trick bei Funktionen dieser Form ist es, das $x$ mit dem höchsten Exponenten auszuklammern.
 				\makeplot{{-x^5+2*x^3+3*x^2+x+2}}{{$f(x)=-x^5+2x^3+3x^2+x+2$}}{{12.2,4.6}}{-10,10}{-5,15}{-10:20}{200}{17cm,7cm}{smooth}
@@ -1388,59 +1423,171 @@
 		\makeplot{{x^2+4},{4*x}}{{$f(x)=x^2+4$},{$T(x)=4x$}}{{4,3},{10.5,2}}{-10,10}{0,20}{-5:25}{200}{17cm,7cm}{smooth}
 	\subsection{Kurvendiskussion}
 		In einer Kurvendiskussion untersucht man verschiedene Eigenschaften einer Funktion. Wie man diese Eigenschaften jeweils untersucht wird an anderen Stellen erklärt, die auch noch mal genannt werden. Im Folgenden wird einmal eine komplette Kurvendiskussion beispielhaft durchgeführt. Da man normalerweise keine Abbildung zur Verfügung hat, weil man die Funktion selber skizzieren soll, gibt es den Graphen der Funktion erst am Ende. Die zu untersuchende Funktion ist:\newline\newline
-		$f(x)=-\dfrac{x^{5}-12x^{4}+36x^{3}+25x^{2}-150x}{50}$
+		$f(x)=x^{5}-3x^{3}+2x$
 		\subsubsection{Symmetrie}
 			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man die \highlight{subsubsec:symmetrie}{Symmetrie} einer Funktion bestimmt.\newline\newline
 			\textbf{Aufgabe:}\newline Bestimme begründet, ob die Funktion gerade, ungerade oder weder noch ist.\newline\newline
-			\textbf{Lösung:}\newline
-			Diese ganzrationale Funktion kann weder gerade noch ungerade sein, da sie sowohl gerade, wie auch ungerade Exponenten enthält. Dennoch möchte ich es der Vollständig halber einmal rechnerisch belegen. Dafür überprüfen wir $f(-x)$. Sollte es mit $f(x)$ oder $-f(x)$ übereinstimmen, hätten wir Symmetrie.
+			\textbf{Lösung:}\newline Dazu müssen wir $f(-x)$ betrachten. Ist es gleich $f(x)$ haben wir eine gerade Funktion, ist es gleich $-f(x)$ haben wir eine ungerade Funktion, ansonsten haben wir weder noch.
 			\begin{flalign*}
-				f(-x)&=-\dfrac{(-x)^{5}-12\cdot (-x)^{4}+36\cdot (-x)^{3}+25\cdot (-x)^{2}-150\cdot (-x)}{50}\\
-				&=-\dfrac{-x^{5}-12x^{4}-36x^{3}+25x^{2}+150x}{50}\\
-				-f(x)&=-\left(-\dfrac{x^{5}-12x^{4}+36x^{3}+25x^{2}-150x}{50}\right)\\
-				&=\dfrac{x^{5}-12x^{4}+36x^{3}+25x^{2}-150x}{50}\\
-				f(-x)&\neq -f(x)\neq f(x)&&
+				f(-x)&=(-x)^5-3\cdot (-x)^3+2\cdot (-x)\\
+				f(-x)&=-x^5+3x^3-2x\\
+				-f(x)&=-(x^5-3x^3+2x)\\
+				-f(x)&=-x^5+3x^3-2x&&
 			\end{flalign*}
+			Da $f(-x)=-f(x)$ gilt, liegt hier eine ungerade Funktion vor.
 		\subsubsection{Nullstellen}
 			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man \highlight{sec:gleichungenvereinfachen}{Gleichungen} lösen kann.\newline\newline
 			\textbf{Aufgabe:}\newline Bestimme alle Nullstellen der Funktion.\newline\newline
 			\textbf{Lösung:}
-			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=7cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
 				\begin{flalign*}
-					&&0&=-\frac{x^5-12x^4+35x^3+25x^2-150x}{50}\\
-					\Leftrightarrow&&0&=\frac{-x^5+12x^4-35x^3-25x^2+150x}{50}\\
-					\Leftrightarrow&&0&=\frac{1}{50}(-x^5+12x^4-35x^3-25x^2+150x)\\
-					\Leftrightarrow&&0&=-\frac{1}{50}x^5+\frac{6}{25}x^4-\frac{18}{25}x^3-\frac{1}{2}x^2+3x\\
-					\Leftrightarrow&&0&=x\left(-\frac{1}{50}x^4+\frac{6}{25}x^3-\frac{18}{25}x^2-\frac{1}{2}x+3\right)&&
+					&&x^5-3x^3+2x&=0&&\mid \text{Faktorisierung durch Ausklammern von }x\\
+					\Leftrightarrow &&x(x^4-3x^2+2)&=0\\
+					\Rightarrow &&x^4-3x^2+2&=0&&\mid \text{Substitution: }u=x^2\\
+					\Rightarrow &&u^2-3u+2&=0&&\mid \text{p-q-Formel}\\
+					\Rightarrow &&u_{1,2}&=\frac{3}{2}\pm\sqrt{\left(-\frac{3}{2}\right)^2-2}\\
+					\Rightarrow &&u_1&=2&&\mid \text{Resubstitution: }u=x^2\\
+					\Rightarrow &&x^2&=2\\
+					\Rightarrow &&x_{1,2}&=\pm\sqrt{2}\\
+					\Rightarrow &&u_2&=1&&\mid \text{Resubstitution: }u=x^2\\
+					\Rightarrow &&x^2&=1\\
+					\Rightarrow &&x_{3,4}&=\pm 1&&
 				\end{flalign*}
 			\end{tcolorbox}
-			\noindent Eine Nullstelle haben wir dank Faktorisierung als $x=0$ bestimmt. Eine weitere Nullstelle können wir bestimmen, indem wir nur den zweiten Faktor betrachten. Durch Herumprobieren finden wir die Nullstelle $x=5$. Damit können wir jetzt eine Polynomdivision durchführen.\newline\newline
-			\polylongdiv[style=C,div=:]{-(1/50)x^4+(6/25)x^3-(18/25)x^2-(1/2)x+3}{x-5}\newline\newline
-			Durch weiteres Herumprobieren, finden wir jetzt auch die Nullstelle $x=6$. Damit können wir jetzt ein zweites Mal die Polynomdivision durchführen.\newline\newline
-			\polylongdiv[style=C,div=:]{-(1/50)x^3+(7/50)x^2-(1/50)x-(3/5)}{x-6}\newline\newline
-			Mit dem übrigen Polynom können wir jetzt die restlichen Nullstellen bestimmen.
-			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=7cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=white]
-				\begin{flalign*}
-						&&0&=-\frac{1}{50}x^2+\frac{1}{50}x+\frac{1}{10}&&\mid : -\frac{1}{50}\\
-						\Leftrightarrow&&0&=x^2-x-5&&\mid \text{p-q-Formel}\\
-						&&x_{1,2}&=\frac{1}{2}\pm\sqrt{\left(\frac{-1}{2}\right)^2+5}\\
-						&&x_{1}&=\frac{1+\sqrt{21}}{2}\\
-						&&x_{2}&=\frac{1-\sqrt{21}}{2}&&
-				\end{flalign*}
-			\end{tcolorbox}
-			\noindent Da eine Polynomfunktion 5. Grades maximal 5 Nullstellen haben kann, können wir uns sicher sein, dass wir alle Nullstellen gefunden haben.
 			\begin{flalign*}
-				\mathbb{L}=\left\{\frac{1-\sqrt{21}}{2};0;\frac{1+\sqrt{21}}{2};5;6 \right\}
+				\mathbb{L}=\left\{-\sqrt{2};-1;0;1;\sqrt{2}\right\}&&
 			\end{flalign*}
 		\subsubsection{Schnittpunkt mit y-Achse}
 			Den $y$-Achsenschnittpunkt zu bestimmen, ist ganz einfach. Man muss nur $x=0$ einsetzen und das Ergebnis ausrechnen.\newline\newline
+			\textbf{Aufgabe:}\newline Bestimme den Schnittpunkt mit der $y$-Achse der Funktion.\newline\newline
+			\textbf{Lösung:}\newline
+			In diesem Fall müssen wir eigentlich gar nicht rechnen, da wir bereits wissen, dass bei $x=0$ eine Nullstelle vorliegt. Trotzdem ist hier noch einmal der rechnerische Nachweis.
+			\begin{flalign*}
+				f(x)&=x^{5}-3x^{3}+2x\\
+				\Rightarrow\qquad f(0)&=0^{5}-3\cdot 0^{3}+2\cdot 0\\
+				\Leftrightarrow\qquad f(0)&=0&&
+			\end{flalign*}
+			Damit ist der Schnittpunkt mit der $y$-Achse der Punkt $S(0\mid 0)$.
 		\subsubsection{Grenzverhalten}
 			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man den \highlight{subsec:limes}{Limes} benutzt.\newline\newline
+			\textbf{Aufgabe:}\newline Bestimme das Verhalten der Funktion für $x\to\pm\infty$.\newline\newline
+			\textbf{Lösung:}\newline
+			Zunächst stellen wir die Funktion so um, dass wir den Grenzwert jedes Terms leicht einzeln betrachten können.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&f(x)=&x^5-3x^3+2x&&\mid x^5\text{ ausklammern}\\
+				\Leftrightarrow &&=&x^5\left(\frac{x^5}{x^5}-\frac{3x^3}{x^5}+\frac{2x}{x^5}\right)\\
+				\Leftrightarrow &&=&x^5\left(1-\frac{3}{x^2}+\frac{2}{x^4}\right)&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Durch das Umstellen ist der Grenzwert der Funktion wesentlich einfacher zu zeigen.
+			\begin{flalign*}
+			&\lim_{x\to -\infty}x^5\left(1-\frac{3}{x^2}+\frac{2}{x^4}\right)=-\infty\\
+			&\lim_{x\to \infty}x^5\left(1-\frac{3}{x^2}+\frac{2}{x^4}\right)=\infty&&
+			\end{flalign*}
 		\subsubsection{Extrema}
 			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man \highlight{subsubsec:extrema}{Extrema} bestimmt.\newline\newline
+			\textbf{Aufgabe:}\newline Bestimme alle Extrempunkte der Funktion und gib an, ob es sich jeweils um Maxima oder Minima handelt.\newline\newline
+			\textbf{Lösung:}\newline
+			In den folgenden Abschnitten werden wir die Ableitungen benötigen, daher hier einmal alle Funktionen gesammelt:
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&f(x)=&x^{5}-3x^{3}+2x\\
+				\Rightarrow &&f^{\prime}(x)=&5x^{4}-9x^{2}+2\\
+				\Rightarrow &&f^{\prime\prime}(x)=&20x^{3}-18x\\
+				\Rightarrow &&f^{\prime\prime\prime}(x)=&60x^{2}-18&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Notwendige Bedingung für Extrempunkte: $f^{\prime}(x)=0$
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&f^{\prime}(x)=&5x^{4}-9x^{2}+2\\
+				\Rightarrow &&0=&5x^{4}-9x^{2}+2&&\mid \text{Substitution: }u=x^2\\
+				\Rightarrow &&0=&5u^{2}-9u+2&&\mid :5\\
+				\Leftrightarrow &&0=&u^{2}-1,8u+0,4&&\mid \text{p-q-Formel}\\
+				\Rightarrow &&u_{1,2}=&\frac{1,8}{2}\pm\sqrt{\left(-\frac{1,8}{2}\right)^2-0,4}\\
+				\Rightarrow &&u_1=&\frac{9+\sqrt{41}}{10}&&\mid \text{Resubstitution: }u=x^2\\
+				\Rightarrow &&x^2=&\frac{9+\sqrt{41}}{10}\\
+				\Rightarrow &&x_{1,2}=&\pm 1,241093237\\
+				\Rightarrow &&u_2=&\frac{9-\sqrt{41}}{10}&&\mid \text{Resubstitution: }u=x^2\\
+				\Rightarrow &&x^2=&\frac{9-\sqrt{41}}{10}\\
+				\Rightarrow &&x_{3,4}=&\pm 0,5095955026&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Durch Einsetzen der ermittelten $x$-Werte, bekommen wir auch die $y$-Werte für die Punkte.
+			\begin{flalign*}
+				\mathbb{L}=\{&(-1,241093237;0,3082564193),(-0,5095955026;-0,656550059),\\
+				&(0,5095955026;-0,656550059),(1,241093237;0,3082564193)\}&&
+			\end{flalign*}
+			Hinreichende Bedingung für Maxima: $f^{\prime}(x)=0\land f^{\prime\prime}(x)<0$\newline
+			Hinreichende Bedingung für Minima: $f^{\prime}(x)=0\land f^{\prime\prime}(x)>0$
+			\begin{flalign*}
+				&f^{\prime\prime}(-1,241093237)=20\cdot (-1,241093237)^{3}-18\cdot (-1,241093237)=-15,89374835<0\\
+				&f^{\prime\prime}(-0,5095955026)=20\cdot (-0,5095955026)^{3}-18\cdot (-0,5095955026)=6,526006628>0&&
+			\end{flalign*}
+			Da unsere Funktion ungerade ist, können wir darauf schließen, dass die Extrema auf der anderen Seite der $y$-Achse genau gegenteilig sind. Daher gilt also:
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+					&x=-1,241093237\Rightarrow&\text{Maximalstelle}\\
+					&x=-0,5095955026\Rightarrow&\text{Minimalstelle}\\
+					&x=0,5095955026\Rightarrow&\text{Maximalstelle}\\
+					&x=1,241093237\Rightarrow&\text{Minimalstelle}&&
+				\end{flalign*}
+			\end{tcolorbox}
 		\subsubsection{Wendepunkte}
 			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man \highlight{subsubsec:extrema}{Wendepunkte} bestimmt.\newline\newline
+			\textbf{Aufgabe:}\newline Bestimme alle Wendepunkte der Funktion und gib an, ob gib ihr Krümmungsverhalten an.\newline\newline
+			\textbf{Lösung:}\newline
+			Notwendige Bedingung für Wendepunkte: $f^{\prime\prime}(x)=0$
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&f^{\prime\prime}(x)=&20x^{3}-18x\\
+				\Rightarrow &&0=&20x^{3}-18x&&\mid \text{Faktorisierung durch Ausklammern von }x\\
+				\Rightarrow &&0=&x(20x^{2}-18)&&\mid \text{Ein Wendepunkt ist }x_1=0\\
+				\Rightarrow &&0=&20x^{2}-18&&\mid +18\\
+				\Leftrightarrow &&18=&20x^{2}&&\mid :20\\
+				\Leftrightarrow &&\frac{9}{10}=&x^{2}&&\mid \sqrt{\ }\\
+				\Rightarrow &&x_{2,3}=&\pm\sqrt{\frac{9}{10}}&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\begin{flalign*}
+				\mathbb{L}=\left\{\left(-\sqrt{\frac{9}{10}};-0,1043551628\right),(0;0),\left(\sqrt{\frac{9}{10}};0,1043551628\right)\right\}&&
+			\end{flalign*}
+			\noindent Hinreichende Bedingung für Links-Rechts-Krümmung: $f^{\prime}(x)=0\land f^{\prime\prime\prime}(x)<0$\newline
+			Hinreichende Bedingung für Rechts-Links-Krümmung: $f^{\prime}(x)=0\land f^{\prime\prime\prime}(x)>0$
+			\begin{flalign*}
+				&f^{\prime\prime\prime}\left(-\sqrt{\frac{9}{10}}\right)=60\cdot\left(-\sqrt{\frac{9}{10}}\right)^2-18=36>0\\
+				&f^{\prime\prime\prime}(0)=60\cdot(0)^2-18=-18<0\\
+				&f^{\prime\prime\prime}\left(\sqrt{\frac{9}{10}}\right)=60\cdot\left(\sqrt{\frac{9}{10}}\right)^2-18=36>0&&
+			\end{flalign*}
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+					&x=-\sqrt{\frac{9}{10}}\Rightarrow&\text{Rechts-Links-Krümmung}\\
+					&x=0\Rightarrow&\text{Links-Rechts-Krümmung}\\
+					&x=\sqrt{\frac{9}{10}}\Rightarrow&\text{Rechts-Links-Krümmung}&&
+				\end{flalign*}
+			\end{tcolorbox}
 		\subsubsection{Tangentengleichungen der Wendepunkte}
 			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man eine \highlight{subsec:tangentengleichung}{Tangentengleichung} aufstellt.\newline\newline
+			\textbf{Aufgabe:}\newline Stelle eine Tangentengleichung für die Wendestelle mit dem kleinsten $x$-Wert auf.\newline\newline
+			\textbf{Lösung:}\newline
+			Die Grundgleichung für eine lineare Funktion ist $T(x)=mx+n$. Wir müssen dafür $m$ und $n$ bestimmen. Den Anstieg $m$ erhalten wir aus der ersten Ableitung an der Wendestelle.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+					&&f^{\prime}(x)=&5x^{4}-9x^{2}+2\\
+					\Rightarrow &&f^{\prime}\left(-\sqrt{\frac{9}{10}}\right)=&5\left(-\sqrt{\frac{9}{10}}\right)^{4}-9\left(-\sqrt{\frac{9}{10}}\right)^{2}+2\\
+					\Leftrightarrow &&=&-\frac{41}{20}&&
+				\end{flalign*}
+			\end{tcolorbox}
+			Jetzt, wo wir $m$ bestimmt haben, können wir die Koordinaten von unserem Wendepunkt einsetzen und nach $n$ umstellen.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=.3cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&-0,1043551628=&-\frac{41}{20}\cdot \left(-\sqrt{\frac{9}{10}}\right)+n\\
+				\Leftrightarrow&&-0,1043551628=&1,944800761+n&&\mid -1,944800761\\
+				\Leftrightarrow&&n=&-2,049155924&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Damit ist unsere Tangentengleichung $T(x)=-\frac{41}{20}x-2.049155924$. Mit den ermittelten Informationen können wir folgende Abbildung zeichnen:
+			\makeplot{{x^5-3*x^3+2*x},{-(41/20)*x-2.049155924}}{{$f(x)=x^{5}-3x^{3}+2x$},{$T(x)=-\frac{41}{20}x-2.049155924$}}{{2.1,3.5},{10.5,0.6}}{-3,3}{-1,1}{-5:5}{300}{17cm,7cm}{smooth}
 		\subsubsection{Flächenberechnung}
 \end{document}

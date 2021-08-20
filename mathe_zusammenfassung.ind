@@ -19,12 +19,13 @@
 
   \item Basis, \hyperpage{40}
   \item Behebbar, \hyperpage{48}
+  \item Bestimmtes Integral, \hyperpage{57}
   \item Betrag, \hyperpage{29, 30}
   \item Betragsfunktion, \hyperpage{29}
   \item Betragsgleichung, \hyperpage{29}
   \item Betragsstrich, \hyperpage{29}
   \item Betragsungleichung, \hyperpage{14}
-  \item Binomische Formel, \hyperpage{7, 8}, \hyperpage{34}
+  \item Binomische Formel, \hyperpage{6}, \hyperpage{8}, \hyperpage{34}
   \item Bogenlänge, \hyperpage{23}
   \item Bogenmaß, \hyperpage{41}
   \item Bruch, \hyperpage{26}, \hyperpage{38}
@@ -38,6 +39,7 @@
   \item Differenz, \hyperpage{4}
   \item Differenzenquotient, \hyperpage{43, 44}
   \item Differenzierbar, \hyperpage{47}
+  \item Differenzieren, \hyperpage{57}
   \item Diskriminante, \hyperpage{6}
   \item Dividend, \hyperpage{5}
   \item Divisor, \hyperpage{5}, \hyperpage{35}, \hyperpage{44}
@@ -68,7 +70,7 @@
   \item Fallen, \hyperpage{25}
   \item Fallunterscheidung, \hyperpage{14}, \hyperpage{20}, 
 		\hyperpage{29}
-  \item Fläche, \hyperpage{23}
+  \item Fläche, \hyperpage{23}, \hyperpage{55}, \hyperpage{57}
   \item Formel, \hyperpage{37}
   \item Funktion, \hyperpage{25}, \hyperpage{29}, \hyperpage{33}, 
 		\hyperpage{37}, \hyperpage{39}, \hyperpage{42}, 
@@ -111,6 +113,7 @@
   \indexspace
 
   \item Innere Funktion, \hyperpage{42}
+  \item Integrieren, \hyperpage{57}
   \item Intervall, \hyperpage{13}, \hyperpage{25}
   \item Irrationale Zahl, \hyperpage{4}
 
@@ -135,6 +138,7 @@
   \item Limes, \hyperpage{38}, \hyperpage{44}, \hyperpage{46}, 
 		\hyperpage{51}
   \item Lineare Funktion, \hyperpage{49}, \hyperpage{54}
+  \item Lineare Gleichung, \hyperpage{57}
   \item Lineares Gleichungssystem, \hyperpage{19, 20}
   \item Links-Rechts-Krümmung, \hyperpage{54}
   \item Linksoffen, \hyperpage{6}
@@ -218,13 +222,13 @@
   \item Rationale Zahl, \hyperpage{5}, \hyperpage{7}
   \item Rechengesetz, \hyperpage{43}
   \item Rechenregel, \hyperpage{15}
-  \item Rechteck, \hyperpage{21}
+  \item Rechteck, \hyperpage{21}, \hyperpage{57}
   \item Rechts-Links-Krümmung, \hyperpage{54}
   \item Rechtsoffen, \hyperpage{6}
   \item Rechtsseitger Grenzwert, \hyperpage{46}
   \item Rechtsseitiger Grenzwert, \hyperpage{46}, \hyperpage{48}
   \item Rechtwinkliges Dreieck, \hyperpage{21, 22}
-  \item Reelle Zahl, \hyperpage{4}, \hyperpage{13}, \hyperpage{27}
+  \item Reelle Zahl, \hyperpage{5}, \hyperpage{13}, \hyperpage{27}
   \item Resubstitution, \hyperpage{12}
 
   \indexspace
@@ -234,6 +238,7 @@
   \item Schnittpunkt, \hyperpage{28--31}
   \item Sekante, \hyperpage{43}
   \item Sinus, \hyperpage{22}, \hyperpage{41}
+  \item Stammfunktion, \hyperpage{58}
   \item Steigung, \hyperpage{43, 44}
   \item Stetig, \hyperpage{47}
   \item Stetige Erweiterung, \hyperpage{48}

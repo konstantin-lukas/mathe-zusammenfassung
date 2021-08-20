@@ -7,7 +7,7 @@
 \indexentry{Menge der natürlichen Zahlen|hyperpage}{4}
 \indexentry{Ganze Zahl|hyperpage}{4}
 \indexentry{Irrationale Zahl|hyperpage}{4}
-\indexentry{Reelle Zahl|hyperpage}{4}
+\indexentry{Reelle Zahl|hyperpage}{5}
 \indexentry{Rationale Zahl|hyperpage}{5}
 \indexentry{Kehrwert|hyperpage}{5}
 \indexentry{Divisor|hyperpage}{5}
@@ -22,7 +22,7 @@
 \indexentry{Halboffenes Intervall|hyperpage}{6}
 \indexentry{Rechtsoffen|hyperpage}{6}
 \indexentry{Linksoffen|hyperpage}{6}
-\indexentry{Binomische Formel|hyperpage}{7}
+\indexentry{Binomische Formel|hyperpage}{6}
 \indexentry{Euklidischer Algorithmus|hyperpage}{7}
 \indexentry{Größter gemeinsamer Teiler|hyperpage}{7}
 \indexentry{Kürzen|hyperpage}{7}
@@ -432,3 +432,11 @@
 \indexentry{Wendepunkt|hyperpage}{55}
 \indexentry{Einsetzen|hyperpage}{55}
 \indexentry{Umstellen|hyperpage}{55}
+\indexentry{Fläche|hyperpage}{55}
+\indexentry{Bestimmtes Integral|hyperpage}{57}
+\indexentry{Lineare Gleichung|hyperpage}{57}
+\indexentry{Fläche|hyperpage}{57}
+\indexentry{Rechteck|hyperpage}{57}
+\indexentry{Differenzieren|hyperpage}{57}
+\indexentry{Integrieren|hyperpage}{57}
+\indexentry{Stammfunktion|hyperpage}{58}

@@ -1642,7 +1642,7 @@
 			\makeplot{{x^5-3*x^3+2*x},{-(41/20)*x-2.049155924}}{{$f(x)=x^{5}-3x^{3}+2x$},{$T(x)=-\frac{41}{20}x-2.049155924$}}{{2.1,3.5},{10.5,0.6}}{-3,3}{-1,1}{-5:5}{300}{17cm,7cm}{smooth}
 		\subsubsection{Flächenberechnung}
 			\label{subsubsec:flaechenberechnung}
-			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man \highlight{subsec:integralrechnung}{Integralrechnung} durchführt.\newline\newline
+			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man \highlight{sec:integralrechnung}{Integralrechnung} durchführt.\newline\newline
 			\textbf{Aufgabe:}\newline Berechne die Fläche\index{Fläche}, die zwischen den äußersten Nullstellen von Funktion und $x$-Achse eingeschlossen wird. \newline\newline
 			\textbf{Lösung:}\newline
 			Zunächst müssen wir die Stammfunktion bilden. Diese lautet $F(x)=\frac{1}{6}x^6-\frac{3}{4}x^4+x^2+k$. Anschließend bilden wir das Integral mit den Grenzen $-\sqrt{2}$ und $-1$, sowie mit den Grenzen $0$ und $1$. Welche Flächen wir damit berechnen, kann man an der obigen Skizze gut erkennen. Da durch die Punktsymmetrie der Funktion zum Nullpunkt diese Flächen jeweils zwei Mal vorliegen, müssen wir das Ergebnis nur verdoppeln und haben die Gesamtfläche.
@@ -1661,10 +1661,10 @@
 				&=\frac{5}{12}&&
 			\end{flalign*}
 			\begin{flalign*}
-				F=2\cdot \left(\frac{1}{12}+\frac{5}{12}\right)=1\text{ Flächeneinheiten}^2&&
+				F=2\cdot \left(\frac{1}{12}+\frac{5}{12}\right)=1\text{ Flächeneinheiten}&&
 			\end{flalign*}
-	\subsection{Integralrechnung}
-	\label{subsec:integralrechnung}
+	\section{Integralrechnung}
+	\label{sec:integralrechnung}
 		Ein Integral gibt den Flächeninhalt zwischen einer Funktion und der $x$-Achse in einem bestimmten Intervall wieder. Dabei ist zu beachten, dass die Flächen unterhalb der $x$-Achse negativ sind, weshalb man jeden Abschnitt einzeln berechnen und anschließend addieren sollte.
 		\begin{center}
 			\begin{tikzpicture} 
@@ -1701,6 +1701,12 @@
 			\node [color=blue] at (7.725,3.3) {\colorbox{transparentblue}{\Huge $+$}};
 			\end{tikzpicture}
 		\end{center}
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			Das unbestimmte Integral\index{Unbestimmtes Integral} ist die Menge der Stammfunktionen einer Funktion $f(x)$:
+			\begin{flalign*}
+				\int f(x)dx=F(x)+k&&
+			\end{flalign*}
+		\end{tcolorbox}
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 			Für das bestimmte Integral\index{Bestimmtes Integral} mit den Integrationsgrenzen $a$ und $b$, sowie der Integrationsvariable $x$ und dem Differential $dx$ gilt folgende Notation:
 			\begin{flalign*}
@@ -1784,25 +1790,147 @@
 		Genau diese immer kleiner werdenden Rechteck\index{Rechteck} werden durch das Integral dargestellt. Man rechnet die Stammfunktion an der obereren Grenze minus die Stammfunktion an der unteren Grenze. In der Kurvendiskussion gibt es ein rechnerisches \highlight{subsubsec:flaechenberechnung}{Beispiel} für die Anwendung des Integrals.
 		\subsection{Die Stammfunktion}
 			Das Gegenteil vom Differenzieren\index{Differenzieren} ist das Integrieren\index{Integrieren}. Damit kann man von einer Ableitung auf die nächst niedrigere Ableitung schließen, z.~B. von $f^{\prime\prime}(x)$ auf $f^{\prime}(x)$. Die Funktion, die man daraus erhält, nennt man Stammfunktion\index{Stammfunktion}. Auch eine nicht abgeleitete Funktion besitzt eine Stammfunktion. Diese wird mit einem großen $F(x)$ bezeichnet. Da das Integrieren das Gegenteil des Differenzieren ist, gelten dieselben \highlight{subsec:ableitung}{Regeln}, jedoch umgekehrt. Anstatt z.~B. den Exponenten um $1$ zu reduzieren und mit ihm zu multiplizieren, wird er um $1$ erhöht und durch ihn geteilt. Beim Integrieren fügt man jedoch noch $k$ für eine beliebige Zahl hinzu, denn beim Ableiten geht diese verloren. Daher sind Stammfunktionen nicht eindeutig, wie es die Ableitungen sind. Die Stammfunktion von $f(x)=2x$ ist beispielsweise $F(x)=x^2+k$.
-			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
-				\textbf{Regeln zur Bildung der Stammfunktion}\newline\newline
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+				\textbf{Integrationsregeln}\newline\newline
 				Da es manchmal schwierig sein kann, umgekehrt zu denken, hier noch mal die wichtigsten Regeln zur Bildung der Stammfunktion:
 				\begin{multicols}{2}
 					\noindent\begin{flalign*}
 					&c&\rightarrow&\;\;c\cdot x+k\\\\
 					&x^n&\rightarrow&\;\;\frac{1}{n+1}x^{n+1}+k\\\\
 					&\frac{1}{x}&\rightarrow&\;\;\ln{\vert x\vert}+k\\\\
-					&\sqrt[n]{x}&\rightarrow&\;\;\frac{1}{\frac{1}{n}+1}x^{\frac{1}{n}+1}+k&&&&&&&&&&&
+					&\sqrt[n]{x}&\rightarrow&\;\;\frac{1}{\frac{1}{n}+1}x^{\frac{1}{n}+1}+k\\\\
+					&e^x&\rightarrow&\;\;e^x\\\\&&&&&&&&&&&
 					\end{flalign*}
 					\begin{flalign*}
-					&e^x&\rightarrow&\;\;e^x\\\\
 					&ln(x)&\rightarrow&\;\;-x+x\cdot \ln(x)+k\\\\
 					&\sin(x)&\rightarrow&\;\; -\cos(x)+k\\\\
 					&\cos(x)&\rightarrow&\;\;\sin(x)+k\\\\
-					&\tan(x)&\rightarrow&\;\;-\ln\vert\cos(x)\vert + k&&&&&&&&&&&
+					&\tan(x)&\rightarrow&\;\;-\ln\vert\cos(x)\vert + k\\\\
+					&\frac{f^{\prime}(x)}{f(x)}&\rightarrow&\;\;\ln f(x)+k&&&&&&&&&&&
 					\end{flalign*}
 				\end{multicols}
 			\end{tcolorbox}
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+				\textbf{Die lineare Substitution}\label{Lineare Substitution}\newline\newline
+				Haben wir eine verkettete Funktion deren innere Funktion eine lineare Funktion ist, so gilt folgende Integrationsregel:
+				\begin{flalign*}
+					\int f(mx+b)dx=\frac{1}{m}F(mx+b)+k&&
+				\end{flalign*}
+			\end{tcolorbox}
+		\subsection{Integration durch Substitution}
+			Möchte man eine verkettete Funktion integrieren, wird es mit den bisherigen Regeln schwierig. Wir müssen hier substituieren, um eine Stammfunktion zu erzeugen. Schauen wir uns das mal an einem Beispiel an.
+			\begin{flalign*}
+				\int^0_{-1}\left(\sqrt{1-2x}\right)dx&&
+			\end{flalign*}
+			Diesen Term können wir so erst einmal nicht integrieren. Wenn wir jetzt jedoch die innere Funktion mit $u$ substituieren, geht das schon. Wir sagen also, dass $u=1-2x$ gilt.
+			\begin{flalign*}
+				\int\sqrt{u}&&
+			\end{flalign*}
+			Das war jedoch nicht alles, denn jetzt, wo wir $u$ in unserer Funktion haben, müssen wir unsere Grenzen und das Differenzial anpassen. Das funktioniert, in dem wir die Ableitung\index{Ableitung} von $u$ bilden.
+			\begin{flalign*}
+				u^{\prime}=-2=\frac{du}{dx}&&
+			\end{flalign*}
+			Wichtig ist sich zu merken, dass wir sagen können, dass $\frac{du}{dx}$ das Gleiche ist, wie die Ableitung. Jetzt stellen wir nach $dx$ um, damit wir auch das Differenzial ersetzen können.
+			\begin{flalign*}
+				\int\sqrt{u}\cdot\left(-\frac{1}{2}\right)du&&
+			\end{flalign*}
+			Letztlich müssen wir nur noch unsere Grenzen anpassen, indem wir $x$ in $u$ einsetzen.
+			\begin{flalign*}
+			&\int^{u(0)}_{u(-1)}\sqrt{u}\cdot\left(-\frac{1}{2}\right)du\\
+			=&\int^1_3\sqrt{u}\cdot\left(-\frac{1}{2}\right)du\\
+			=&\left[-\frac{1}{3}u^{\frac{3}{2}}\right]\\
+			\approx&1,399&&
+			\end{flalign*}
+			Hinweis: Hat man ein unbestimmtes Integral, muss man resubstituieren. Also in dem Fall:
+			\begin{flalign*}
+			\int\left(\sqrt{1-2x}\right)dx=\left[-\frac{1}{3}(1-2x)^{\frac{3}{2}}+k\right]&&
+			\end{flalign*}
+		\subsection{Partielle Integration}
+			Wenn man ein Produkt integrieren möchte, braucht man die partielle Integration. Abgeleitet aus der Produktregel\index{Produktregel} der Differentialrechnung, ergibt sich folgende Formel:
+			\begin{tcolorbox}[boxsep=0pt,top=.25cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+				\begin{flalign*}
+					\int f^{\prime}(x)\cdot g(x) dx=f(x)\cdot g(x)-\int f(x)\cdot g^{\prime}(x) dx
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Zum besseren Verständnis noch mal ein Beispiel: $\int x\cdot e^xdx$.
+			\begin{flalign*}
+				&\int (x\cdot e^x)dx\\
+				=&e^x\cdot x - \int(e^x\cdot 1)dx\\
+				=&e^x\cdot x - e^x+k\\
+				=&e^x\cdot (x-1)+k&&
+			\end{flalign*}
+		\subsection{Die Fläche zwischen zwei Graphen}
+			Wollen wir die Fläche zwischen zwei Funktionen berechnen, bilden wir einfach das Integral der Differenzfunktion\index{Differenzfunktion} dieser zwei Funktionen ermitteln.
+			\begin{tcolorbox}[boxsep=0pt,top=.25cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+				\begin{flalign*}
+				\int^b_a \vert f(x)-g(x) \vert dx
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Achtung: Wenn die Differenzfunktion Nullstellen hat, bzw. die Funktionen sich schneiden, muss die Fläche schrittweise ermittelt werden. Dazu ein Beispiel:\newline\newline
+			\begin{center}
+				\begin{tikzpicture} 
+				\begin{axis}[
+				domain=-3:3,
+				width=17cm,
+				height=7cm,
+				xmin=-3, xmax=3,
+				ymin=-2, ymax=2,
+				samples=100,
+				axis y line=center,
+				axis x line=middle,
+				minor tick num=0,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}]
+				\addplot [name path = A,
+				-latex,
+				samples = 200,
+				color=blue] {-x^3+2*x^2};
+				
+
+				\addplot [name path = B,
+				-latex,
+				color=red] {-0.5*x+1};
+				
+				\addplot [color=teal,
+				-latex,
+				samples = 200] {-x^3+2*x^2+0.5*x-1};
+				
+				\addplot [fill=blue, fill opacity=0.2] fill between [of = A and B, soft clip={domain=0:2}, opacity=.2];
+				\end{axis}
+				\node [color=blue] at (2,0.75) {$f(x)=-x^{3}+2x^{2}$};
+				\node [color=red] at (1.8,1.75) {$g(x)=-\frac{1}{2}x+1$};
+				\node [color=teal] at (10.5,0.75) {$d(x)=-x^{3}+2x^{2}+\frac{1}{2}x-1$};
+				\end{tikzpicture}
+			\end{center}
+			Gesucht ist die blau markierte Fläche im Intervall $[0,2]$. Wenn wir den gezeichneten Graphen nicht vorliegen hätten, dann müssten wir erst testen, ob eine Nullstelle\index{Nullstelle} in diesem Intervall\index{Intervall} vorliegt. Dazu können wir z.~B. eine Wertetabelle\index{Wertetabelle} anlegen.
+			\begin{center}
+				\bgroup
+				\def\arraystretch{1.5}
+				\begin{tabular}{ | l | c | c | c | c | c | }
+					\hline
+					\textbf{x} & 0 & 0,5 & 1 & 1,5 & 2 \\ \hline
+					\textbf{f(x)} & -1 & -0,375 & 0,5 & 0,875 & 0 \\
+					\hline
+				\end{tabular}
+				\egroup
+			\end{center}
+			Jetzt können wir das \highlight{subsubsec:newtonverfahren}{Newtonverfahren}\label{Newtonverfahren} anwenden, um die Nullstelle zu finden. Dafür brauchen wir die Ableitung\index{Ableitung} der Differenzfunktion\index{Differenzfunktion} $d^{\prime}(x)=-3x^2+4x+\frac{1}{2}$.
+			\begin{flalign*}
+			x_1&=(0,5)-\frac{-(0,5)^{3}+2(0,5)^{2}+\frac{1}{2}(0,5)-1}{-3(0,5)^2+4(0,5)+\frac{1}{2}}=\frac{5}{7}\\
+			x_2&=\left(\frac{5}{7}\right)-\frac{-(\frac{5}{7})^{3}+2(\frac{5}{7})^{2}+\frac{1}{2}(\frac{5}{7})-1}{-3(\frac{5}{7})^2+4(\frac{5}{7})+\frac{1}{2}}=\frac{886}{1253}\\
+			x_3&=\left(\frac{886}{1253}\right)-\frac{-(\frac{886}{1253})^{3}+2(\frac{886}{1253})^{2}+\frac{1}{2}(\frac{886}{1253})-1}{-3(\frac{886}{1253})^2+4(\frac{886}{1253})+\frac{1}{2}}=0,7071067812\\
+			x_4&=(0,7071067812)-\frac{-(0,7071067812)^{3}+2(0,7071067812)^{2}+\frac{1}{2}(0,7071067812)-1}{-3(0,7071067812)^2+4(0,7071067812)+\frac{1}{2}}\\
+			&=0,7071067812&&
+			\end{flalign*}
+			Der Einfachheit halber kürzen wir die Nullstelle auf $x_0=0,707$, bevor die Teilintegrale berechnen.
+			\begin{flalign*}
+				\int_0^{0,707}\left(-x^{3}+2x^{2}+\frac{1}{2}x-1\right)dx=\left[-\frac{1}{4}x^{4}+\frac{2}{3}x^{3}+\frac{1}{4}x^2-x+k\right]_0^{0,707}\approx-0,408&&
+			\end{flalign*}
+			\begin{flalign*}
+			\int_{0,707}^2\left(-x^{3}+2x^{2}+\frac{1}{2}x-1\right)dx=\left[-\frac{1}{4}x^{4}+\frac{2}{3}x^{3}+\frac{1}{4}x^2-x+k\right]_{0,707}^2\approx0,742&&
+			\end{flalign*}
+			Damit ist die gesuchte Fläche $\vert-0,408\vert + 0,742$ bzw. $1,15$ Flächeneinheiten groß.
 	\pagebreak
 	\printindex
 \end{document}

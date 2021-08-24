@@ -32,6 +32,8 @@
 \usepackage{tkz-euclide}
 \usepackage[ngerman]{babel}
 \usepackage{hyphenat}
+\usepgfplotslibrary{external} 
+\tikzexternalize[prefix=figures/]
 \hyphenation{Mathe-matik wieder-gewinnen}
 \definecolor{gridgray}{HTML}{AAAAAA}
 \definecolor{transparentblue}{HTML}{CCCCFF}
@@ -94,6 +96,7 @@
 		x filter/.code=\pgfmathparse{\pgfmathresult-((#2-#1)/\integralsegments)/2}
 	}
 }
+\pgfplotsset{compat=1.5.1}
 \begin{document}
 \renewcommand\indexname{Stichwortverzeichnis}
 \maketitle
@@ -549,8 +552,8 @@
 		Dieser Fall\index{Fall} ist für alle $x$ erfüllt, daher gehören alle $x<2$ zur Lösungsmenge.
 		\begin{flalign*}
 			\mathbb{L}=(-\infty;2)&&
-		\end{flalign*}\newline\newline\hrule
-		Beispiel: $\frac{1}{x-9}\le8$
+		\end{flalign*}\hrule
+		\noindent\newline\newline Beispiel: $\frac{1}{x-9}\le8$
 		\makeplot{{(1/(x-9))-8}}{{$f(x)=\dfrac{1}{x-9}-8$}}{{11,1.6}}{-2,16}{-20,5}{-30:60}{330}{17cm,7cm}{smooth}
 		Fall 1: $x>9$
 		\begin{flalign*}
@@ -778,11 +781,27 @@
 				\begin{flalign*}
 				&\sin(\alpha)=\frac{a}{c}=\frac{Gegenkathete\;von\;\alpha}{Hypotenuse}\\\\
 				&\cos(\alpha)=\frac{b}{c}=\frac{Ankathete\;von\;\alpha}{Hypothenuse}\\\\
-				&\tan(\alpha)=\frac{a}{b}=\frac{Gegenkathete\;von\;\alpha}{Ankathete\;von\;\alpha}=\frac{\sin(\alpha)}{\cos(\alpha)}\\\\
-				&\sin(90°-\alpha)=\cos(\alpha)\\\\
-				&\cos(90°-\alpha)=\sin(\alpha)\\\\
-				&(\sin(\alpha))^2+(\cos(\alpha))^2=1&&
+				&\tan(\alpha)=\frac{a}{b}=\frac{Gegenkathete\;von\;\alpha}{Ankathete\;von\;\alpha}=\frac{\sin(\alpha)}{\cos(\alpha)}&&
 				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Um mit \highlight{subsec:trigonometrisch}{trigonometrischen Funktionen}\index{Trigonometrische Funktion} umgehen zu können, hilft es außerdem einige Regeln zu kennen, die beim Vereinfachen\index{Vereinfachen} und Umformen von trigonometrischen Termen helfen.
+			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				\textbf{Sinus, Kosinus und Tangens Umformen und Vereinfachen}
+				\begin{multicols}{2}
+					\noindent\begin{flalign*}
+					&\cos(-x)=\cos(-x)\\
+					&\sin(-x)=-\sin(x)\\
+					&\tan(-x)=-\tan(x)\\
+					&\cos\left(x+\frac{\pi}{2}\right)=-\sin(x)\\
+					&\sin\left(x+\frac{\pi}{2}\right)=\cos(x)&&
+					\end{flalign*}
+					\begin{flalign*}
+					&\tan\left(x+\frac{\pi}{2}\right)=\frac{1}{\tan(x)}\\
+					&\cos(x+\pi)=-\cos(\pi)\\
+					&\sin(x+\pi)=-\sin(x)\\
+					&\tan(x+\pi)=\tan(x)&&
+					\end{flalign*}
+				\end{multicols}
 			\end{tcolorbox}
 		\subsection{Rechnen mit Flächen (Formeln)}
 			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
@@ -849,7 +868,7 @@
 			&O=\pi r \cdot (r+s)&&
 			\end{flalign*}
 		\end{tcolorbox}
-	\section{Funktionen}
+	\section{2D-Koordinatensystem}
 		\subsection{Allgemeines}
 			\subsubsection{Monotonie}
 			\label{subsubsec:monotonie}
@@ -1236,12 +1255,46 @@
 					\mathbb{L}&=\{6,309573445\}&&
 				\end{flalign*}
 		\subsection{Trigonometrische Funktionen}
+		\label{subsec:trigonometrisch}
 			Trigonometrische Funktionen\index{Trigonometrische Funktion} oder auch Winkelfunktionen\index{Winkelfunktion} genannt, beinhalten die aus der \highlight{sec:geometrie}{Geometrie}\index{Geometrie} bekannten winkelabhängigen Funktionen, wie Sinus\index{Sinus}, Kosinus\index{Kosinus} und Tangens\index{Tangens}. Dabei sind diese Funktionen hier allerdings abhängig von der Variable\index{Variable} $x$ und damit im Bogenmaß\index{Bogenmaß}, nicht im Gradmaß\index{Gradmaß}. Beim Taschenrechner\index{Taschenrechner} muss man darauf achten, dass der richtige Modus eingestellt ist, ansonsten kann es sein, dass man versehentlich im falschen Maß rechnet. Auf dem CASIO fx-86DE PLUS, drückt man Shift, dann Setup und wählt dort die 3:Deg (engl. degree) für Gradmaß oder 4:Rad (engl. radian) fürs Bogenmaß.
 			\makeplot{{sin(deg(x))},{cos(deg(x))},{tan(deg(x))}}{{$f(x)=\sin(x)$},{$f(x)=\cos(x)$},{$f(x)=\tan(x)$}}{{1.5,-1},{4.5,-1},{7.5,-1}}{-10,10}{-2,2}{-10:10}{200}{17cm,7cm}{smooth}
 			Anmerkung: Die Nullstellen des Sinus sind die Extremstellen\index{Extremstelle} des Kosinus und umgekehrt. Ebenso haben Sinus und Tanges dieselben Nullstellen\index{Nullstelle}.
 		\subsection{Verkettete Funktionen}
 			Verkettungen\index{Verkettung} sind eigentliche keine eigene Funktionsart, sondern eine Möglichkeit Funktionen durch Zusammensetzung zu transformieren\index{Transformieren}. Man schreibt das als $f\circ g$ ("f nach g"). Man spricht hier bei $g$ auch von der \textit{inneren Funktion}\index{Innere Funktion}, da sie als Argument in die \textit{äußere Funktion}\index{Äußere Funktion} $f$ eingesetzt wird.
 			\makeplot{{sin(deg(x))},{(x^2)/2},{sin(deg((x^2)/2))}}{{$f(x)=\sin(x)$},{$g(x)=\frac{x^2}{3}$},{$f\circ g(x)=\sin(\frac{x^2}{3})$}}{{1.5,-1},{4.5,-1},{8,-1}}{-10,10}{-2,2}{-10:10}{200}{17cm,7cm}{smooth}
+		\subsection{Kreisgleichungen}
+			Bei Funktionen ist es so, dass jedem Abszess\index{Abszess} ($x$-Achsenwert) genau eine Ordinate\index{Ordinate} ($y$-Achsenwert) zugeordnet werden kann. Das ist eine Besonderheit von Funktionen und nicht des Koordinatensystems an sich. Im Koordinatensystem\index{Koordinatensystem} können wir noch viele andere Gebilde darstellen, so z.~B. auch einen Kreis\index{Kreis}.
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.45cm]
+				Für die Koordinatenform\index{Koordinatenform} eines Kreises mit dem Radius $r$ und dem Mittelpunkt $M(x_m\mid y_m)$ gilt folgende Notation:
+				\begin{flalign*}
+				(x-x_m)^2+(y-y_m)^2=r^2&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				domain=0:10,
+				width=17cm,
+				height=7cm,
+				restrict y to domain=0:10,
+				xmin=0, xmax=28,
+				ymin=0, ymax=10,
+				axis equal image,
+				samples=100,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50}
+				]
+				\draw[color=blue] (axis cs:14,5) circle [radius=3];
+				\end{axis}
+				\node [color=blue] at (3,1.6) {$(x-14)^2+(y-5)^2=3$};
+				
+				\end{tikzpicture}
+			\end{center}
 	\section{Differenzialrechnung}
 		\subsection{Die Ableitung}
 		\label{subsec:ableitung}

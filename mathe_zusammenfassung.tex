@@ -26,14 +26,15 @@
 \usepackage[most]{tcolorbox}
 \usepackage[hidelinks]{hyperref}
 \usepackage{pgfplots}
+\usepgfplotslibrary{external} 
+\tikzexternalize[prefix=figures/]
+%\tikzset{external/force remake}
 \usepgfplotslibrary{fillbetween}
 \usepackage{tocloft}
 \usepackage{polynom}
 \usepackage{tkz-euclide}
 \usepackage[ngerman]{babel}
 \usepackage{hyphenat}
-\usepgfplotslibrary{external} 
-\tikzexternalize[prefix=figures/]
 \hyphenation{Mathe-matik wieder-gewinnen}
 \definecolor{gridgray}{HTML}{AAAAAA}
 \definecolor{transparentblue}{HTML}{CCCCFF}
@@ -231,6 +232,7 @@
 			\end{flalign*}
 		\end{tcolorbox}
 	\end{multicols}
+\pagebreak
 \section{Elementare Rechengesetze, -verfahren und -notationen}
 \label{sec:rechengesetze}
 	\subsection{Brüche dividieren}
@@ -337,8 +339,8 @@
 		= & \cfrac{\sqrt{a}-\sqrt{b}}{\sqrt{a}^2-\sqrt{b}^2} \\ 
 		= & \cfrac{\sqrt{a}-\sqrt{b}}{a-b} &&
 		\end{flalign*}
-		\newline\newline\hrule
-		Beispiel 2:
+		\hrule
+		\noindent\newline\newline Beispiel 2:
 		\begin{flalign*}
 		& \frac{\sqrt{(1+a^2) \cdot (a-b)^2}}{\sqrt[4]{16(1+a^2)^2}} \\
 		= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{\sqrt{16(1+a^2)^2}}} \\ 
@@ -360,8 +362,8 @@
 			& = \dfrac{\left( \sqrt{1+x^{2}}+1\right) -\left( \sqrt{1+x^{2}}-1\right) }{1+x^{2}-1} \\
 			& = \frac{2}{x^2} &&
 			\end{flalign*}
-			\newline\newline\hrule
-			Beispiel 3: Bestimmen Sie $x$ und $y$, sodass $\frac{x}{y}$ vollständig gekürzt\index{Gekürzt} ist.
+			\hrule
+			\noindent\newline\newline Beispiel 3: Bestimmen Sie $x$ und $y$, sodass $\frac{x}{y}$ vollständig gekürzt\index{Gekürzt} ist.
 			\begin{flalign*}
 				\dfrac{2\cdot 2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
 				2 \cdot \dfrac{2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
@@ -402,6 +404,7 @@
 				log_a(v)=\frac{log_b(v)}{log_b(a)}&&
 			\end{flalign*}
 		\end{tcolorbox}
+\pagebreak
 \section{Vereinfachungen zum Lösen von Gleichungen}
 	\label{sec:gleichungenvereinfachen}
 	\subsection{Quadratische Ergänzung}
@@ -468,6 +471,7 @@
 		x_2&=-2&&
 		\end{flalign*}
 		Da es kein $x$ gibt, das $x^4=-1$ erfüllt, haben wir bereits unsere komplette Lösungsmenge\index{Lösungsmenge}:\newline\newline$\mathbb{L}=\{-2;2\}$.
+\pagebreak
 \section{Ungleichungen}
 	\subsection{Rechenregeln}
 	\label{subsec:unglrechrgl}
@@ -572,6 +576,7 @@
 		\begin{flalign*}
 			\mathbb{L}=(-\infty;9)\cup \left[\frac{73}{8};\infty\right)&&
 		\end{flalign*}
+\pagebreak
 	\section{Lineare Gleichungssysteme}
 		Ein Gleichungssystem\index{Gleichungssystem} ist eine Sammlung an Gleichungen, für die man eine gemeinsame Lösung sucht. Für das Beispiel unten, ist die Lösung $x=2,y=3,z=-4$ oder anders ausgedrückt $\mathbb{L}=\{(2;3;-4)\}$. Wie man darauf kommt, wird unten erklärt.
 		\begin{flalign*}
@@ -723,6 +728,7 @@
 			\begin{flalign*}
 			\mathbb{L}=\left\{\left(\frac{2}{a-3};\frac{1}{a-3};\frac{6-3a}{a-3}\right)\right\},\;falls\;a\neq 3&&
 			\end{flalign*}
+\pagebreak
 	\section{Geometrie}
 	\label{sec:geometrie}
 		\subsection{Rechtwinklige Dreiecke}
@@ -868,6 +874,249 @@
 			&O=\pi r \cdot (r+s)&&
 			\end{flalign*}
 		\end{tcolorbox}
+	\pagebreak
+	\section{Vektorgeometrie}
+		Vektoren kommen häufig in der Physik zum Einsatz, denn oftmals interessieren wir uns nicht nur für eine Größe an sich, sondern auch für ihre Richtung\index{Richtung}. Vektoren werden durch Pfeile gekennzeichnet $\vec v$, ihr Betrag $\vert\vec v\vert$ gibt uns ihre Länge. Wenn zwei gleichlange Vektoren in genau die entgegengesetzte Richtung zeigen ($\vec v$ und $-\vec v$), sprechen wir von \textit{Gegenvektoren}\index{Gegenvektor}. Ein Vektor mit der Länge Null, wird auch als \textit{Nullvektor}\index{Nullvektor} bezeichnet. Neben Vektoren, sind Pfeile ein wichtiger Begriff. Diese werden definiert durch ihren Anfangspunkt sowie, ihrem Endpunkt bzw. ihrer Länge und Richtung. Alle Pfeile der selben Länge und Richtung können in einer \textit{Pfeilklasse}\index{Pfeilklasse} zusammengefasst werden. Vektoren können als Pfeilklassen interpretiert werden, denn sie werden nicht durch ihren Anfangspunkt definiert, sondern nur durch Richtung und Länge. Vektoren können jedoch einen festen Anfangspunkt besitzen. In diesem Fall spricht man von \textit{gebundenen Vektoren}\index{Gebundener Vektor}, andernfalls von \textit{freien Vektoren}\index{Freier Vektor}. Außerdem existiert eine besondere Art von gebundenen Vektoren, die sogenannten \textit{Ortsvektoren}\index{Ortsvektor}, die ihren Anfangspunkt im Koordinatenursprung haben. Der Koordinatenursprung\index{Koordinatenursprung} wird mit $O=(0;0)$ bezeichnet.
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			Vektoren werden folgendermaßen notiert:
+			\begin{flalign*}
+				&\text{2D: }\overrightarrow{PQ}=\begin{pmatrix}Q_x-P_x\\Q_y-P_y\end{pmatrix}=\begin{pmatrix}x\\y\end{pmatrix}\\\\
+				&\text{3D: }\overrightarrow{PQ}=\begin{pmatrix}Q_x-P_x\\Q_y-P_y\\Q_z-P_z\end{pmatrix}=\begin{pmatrix}x\\y\\z\end{pmatrix}&&
+			\end{flalign*}
+			Diese Notation dient dazu sie von Punkten zu unterscheiden. Man spricht hierbei von \textit{Spaltenvektoren}\index{Spaltenvektor}.
+		\end{tcolorbox}
+		\noindent Die Länge eines Vektors können wir mithilfe des Satz des Pythagoras berechnen, denn wir können einer Vektor auch als Hypotenuse\index{Hypotenuse} eines rechtwinkligen Dreiecks sehen, bei dem die Katheten die $x$- und $y$-Werte sind.
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+			\begin{multicols}{2}
+				Für die Berechnung der Länge eines Vektors gelten folgende Formeln:
+				\vspace{.3cm}
+				\begin{flalign*}
+				&\text{2D: }\vert\vec v\vert = \sqrt{v_x^2+v_y^2}\\\\
+				&\text{3D: }\vert\vec v\vert = \sqrt{v_x^2+v_y^2+v_z^2}&&
+				\end{flalign*}
+				\newline
+				\begin{tikzpicture}
+				\begin{axis}[
+				width=8cm,
+				height=6cm,
+				xmin=0, xmax=16,
+				ymin=0, ymax=10,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50},
+				axis equal image,
+				yticklabels={,,},
+				xticklabels={,,}
+				]
+				\addplot [-stealth, thick, teal] coordinates { (6,2) (14,2)};
+				\addplot [-stealth, thick, red] coordinates { (14,2) (14,8)};
+				\addplot [-stealth, thick, blue] coordinates { (6,2) (14,8)};
+				\end{axis}
+				\node at (2.5,2.75) {$\textcolor{blue}{\left\vert\begin{pmatrix}\textcolor{teal}{8}\\\textcolor{red}{6}\end{pmatrix}\right\vert}=\sqrt{\textcolor{teal}{8}^2+\textcolor{red}{6}^2}=\textcolor{blue}{10}$};
+				\node at (4.5,1.2) {$\textcolor{teal}{8}$};
+				\node at (6,2) {$\textcolor{red}{6}$};
+				\end{tikzpicture}
+			\end{multicols}
+		\end{tcolorbox}
+		\subsection{Rechnen mit Vektoren}
+			Wenn wir Vektoren addieren wollen, können wir das ganz einfach tun, indem wir ihre jeweiligen Werte miteinander addieren. Die untere Abbildung zeigt, dass es egal ist, in welcher Reihenfolge wir das tun und auch, dass die Position von Vektoren keine Rolle spielt.
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				width=17cm,
+				height=7cm,
+				xmin=0, xmax=28,
+				ymin=0, ymax=10,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50},
+				axis equal image,
+				yticklabels={,,},
+				xticklabels={,,}
+				]
+				\addplot [-stealth, thick, blue] coordinates { (11,2) (15,2)};
+				\addplot [-stealth, thick, blue] coordinates { (13,8) (17,8)};
+				\addplot [-stealth, thick, red] coordinates { (15,2) (17,8)};
+				\addplot [-stealth, thick, red] coordinates { (11,2) (13,8)};
+				\addplot [-stealth, thick, teal] coordinates { (11,2) (17,8)};
+				\end{axis}
+				\node at (3.75,3.75) {$\textcolor{blue}{\begin{pmatrix}4\\0\end{pmatrix}}+\textcolor{red}{\begin{pmatrix}2\\6\end{pmatrix}}=\textcolor{teal}{\begin{pmatrix}6\\6\end{pmatrix}}$};
+				\end{tikzpicture}
+			\end{center}
+			Ebenso können wir Vektoren ganz einfach mit einer Zahl (Skalar\index{Skalar}) multiplizieren. Dabei spricht man von \textit{skalarer Multiplikation}\index{skalare Multiplikation}. Dabei können sagen, dass zwei Vektoren parallel sind, wenn es ein $\lambda$ gibt, welches $\lambda\cdot\vec c=\vec w$ erfüllt. Das gilt jedoch nicht für den Nullvektor\index{Nullvektor}.
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				width=17cm,
+				height=7cm,
+				xmin=0, xmax=28,
+				ymin=0, ymax=10,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50},
+				axis equal image,
+				yticklabels={,,},
+				xticklabels={,,}
+				]
+				\addplot [|-stealth, thick, red] coordinates { (3,2) (9,6.5)};
+				\addplot [-stealth, thick, blue] coordinates { (3,2) (7,5)};
+				\addplot [-stealth, thick, teal] coordinates { (20,5) (12,8)};
+				\addplot [|-stealth, thick, violet] coordinates { (20,5) (24,3.5)};
+				\end{axis}
+				\node at (2.5,3.75) {$\dfrac{3}{2}\cdot\textcolor{blue}{\begin{pmatrix}4\\3\end{pmatrix}}=\textcolor{red}{\begin{pmatrix}6\\4,5\end{pmatrix}}$};
+				\node at (9,1.6) {$-\dfrac{1}{2}\cdot\textcolor{teal}{\begin{pmatrix}-8\\3\end{pmatrix}}=\textcolor{violet}{\begin{pmatrix}4\\-1,5\end{pmatrix}}$};
+				\end{tikzpicture}
+			\end{center}
+			Neben der Multiplikation mit einer Zahl, können wir auch zwei Vektoren miteinander multiplizieren. Das ist das Skalarprodukt\index{Skalarprodukt}, welches man nicht mit skalarer Multiplikation verwechseln sollte. Das Skalarprodukt kann man benutzen, um die Länge von Vektoren sowie, den Winkel zwischen ihnen zu bestimmen. Insbesondere gilt: Wenn das Skalarprodukt gleich Null ist, dann haben wir einen rechten Winkel und die Vektoren sind orthogonal\index{Orthogonal} bzw. liegen senkrecht aufeinander. Das Skalarprodukt heißt übrigens so, weil unser Ergebnis ein Skalar\index{Skalar} ist.
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				width=17cm,
+				height=7cm,
+				xmin=0, xmax=28,
+				ymin=0, ymax=10,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=2,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50},
+				axis equal image,
+				yticklabels={,,},
+				xticklabels={,,}
+				]
+				\draw (axis cs:2.9,2)arc[radius=.5cm,start angle=0,end angle=90];
+				\addplot [-stealth, thick, red] coordinates { (2,2) (2,4)};
+				\addplot [-stealth, thick, blue] coordinates { (2,2) (7,2)};
+				\addplot [-stealth, thick, teal] coordinates { (20,5) (12,8)};
+				\addplot [-stealth, thick, violet] coordinates { (20,5) (24,7)};
+				\end{axis}
+				\node at (2.5,3.75) {$\textcolor{blue}{\begin{pmatrix}5\\0\end{pmatrix}}\cdot\textcolor{red}{\begin{pmatrix}0\\2\end{pmatrix}}=0$};
+				\node at (9,1.6) {$\textcolor{teal}{\begin{pmatrix}-8\\3\end{pmatrix}}\cdot\textcolor{violet}{\begin{pmatrix}4\\1,5\end{pmatrix}}=-27,5$};
+				\node at (1.25,1.25) {\Huge $\cdot$};
+				\end{tikzpicture}
+			\end{center}
+			Wenn das Skalarprodukt nicht Null ist, können wir trotzdem den Winkel bestimmen, es ist nur etwas komplizierter. Dafür rechnet man das Skalarprodukt durch das Produkt der beiden Vektorlängen und erhält damit den Kosinuswert.
+			\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				\textbf{Winkelberechnung zwischen Vektoren}
+				\begin{flalign*}
+					\cos(\alpha)=\frac{\vec v\cdot \vec w}{\vert\vec v\vert\cdot\vert\vec w\vert}&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Nehmen wir dazu das Beispiel $\textcolor{teal}{\begin{pmatrix}-8\\3\end{pmatrix}}\cdot\textcolor{violet}{\begin{pmatrix}4\\1,5\end{pmatrix}}$.
+			\begin{flalign*}
+				\cos(\alpha)&=\frac{
+					\begin{pmatrix}-8\\3\end{pmatrix}\cdot\begin{pmatrix}4\\1,5\end{pmatrix}}{\left\vert\begin{pmatrix}-8\\3\end{pmatrix}\right\vert\cdot\left\vert\begin{pmatrix}4\\1,5\end{pmatrix}\right\vert}\\
+				&=\frac{-27,5}{\sqrt{73}\cdot\frac{\sqrt{73}}{2}}\\
+				&=\dfrac{-27,5}{\frac{73}{2}}\\
+				&=-\frac{55}{73}\\
+				\Rightarrow\alpha&\approx 138,9^{\circ}&&
+			\end{flalign*}
+			Achtung: Achte darauf, dass du im Taschenrechner das Gradmaß und nicht das Bogenmaß eingestellt hast!\newline\newline
+			Mit dem Skalarprodukt finden wir alternativ zum Satz des Pythagoras\index{Satz des Pythagoras} auch die Länge eines Vektors, denn es gilt $\vec v \cdot \vec v=\vert \vec v\vert^2$. Wenn wir also das Skalarprodukt eines Vektors mit sich selber bilden und anschließend die Wurzel vom Betrag des Skalarproduktes ziehen, erhalten wir die Länge des Vektors.\newline\newline
+			Beispiel:
+			\begin{flalign*}
+				\left\vert\begin{pmatrix}4\\-1\end{pmatrix}\cdot\begin{pmatrix}4\\-1\end{pmatrix}\right\vert^2&=17\\
+				\Rightarrow\sqrt{17}&\approx 4,123&&
+			\end{flalign*}
+			Hinweis: All die genannten Rechengesetze, wie z.~B. das Skalarprodukt lassen sich im dreidimensionalen Raum genauso anwenden wie im zweidimensionalen.
+			\subsection{Ebenen}
+				Um eine Ebene aufzustellen, braucht man drei Punkte, die paarweise verschieden sind und nicht auf einer Geraden liegen.\newline\newline
+				\begin{multicols}{2}
+					\begin{flushleft}
+						\textbf{Parameterform}\newline\newline
+						Bei dieser Notationsform werden an einen Ortsvektor – genannt \textcolor{blue}{Stützvektor}\index{Stützvektor} – zwei \textcolor{red}{Richtungsvektoren}\index{Richtungsvektor} oder auch \textcolor{red}{Spannvektoren}\index{Spannvektor} angelegt. Diese beiden \textcolor{red}{Vektoren} liegen jetzt auf einer \textcolor{teal}{Ebene}. Da die Länge der \textcolor{red}{Spannvektoren} egal ist, nimmt man noch die Skalaren\index{Skalar} $r$ und $s$ hinzu.
+						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+							\begin{flalign*}
+							E:\vec{x}=\overrightarrow{OP}+r\cdot\overrightarrow{PQ}+s\cdot\overrightarrow{PR}&&
+							\end{flalign*}
+						\end{tcolorbox}
+					\end{flushleft}
+					\begin{center}
+						\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+						\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
+						\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
+						\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
+						
+						\foreach \coo in {-7,-6,...,6}
+						{
+							\draw (\coo,-1.5pt) -- (\coo,1.5pt);
+							\draw (-1.5pt,\coo) -- (1.5pt,\coo);
+							\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
+						}
+					
+						\fill[<->,teal,opacity=.2] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=3,y=-3,z=-2) -- (xyz cs:x=-4,y=2,z=1);
+						
+						\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=3,z=1);
+						\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=0,z=0);
+						\draw[-stealth,blue] (xyz cs:x=0,y=0,z=0) -- (xyz cs:x=4,y=3,z=1);
+						
+						\draw[dashed] (xyz cs:x=3,y=-3,z=-2) -- (xyz cs:x=3,y=0,z=-2);
+						\draw[dashed] (xyz cs:x=3,y=0,z=-2) -- (xyz cs:x=3,y=0,z=0);
+						\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=3,y=-3,z=-2);
+						
+						\draw[dashed] (xyz cs:x=-4,y=2,z=1) -- (xyz cs:x=-4,y=0,z=1);
+						\draw[dashed] (xyz cs:x=-4,y=0,z=1) -- (xyz cs:x=-4,y=0,z=0);
+						\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=-4,y=2,z=1);
+						
+						\node [above right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
+						\node [below right] at (xyz cs:x=3,y=-3,z=-2) {$Q(3;-3;-2)$};
+						\node [above] at (xyz cs:x=-4,y=2,z=1) {$R(-4;2;1)$};
+						\end{tikzpicture}
+					\end{center}
+				\end{multicols}
+				\vspace{.15cm}
+				\hrule
+				\vspace{.5cm}
+				\begin{multicols}{2}
+					\begin{flushleft}
+						\textbf{Normalenform/Koordinatenform}\newline\newline
+						Bei dieser Notationsform braucht man nur zwei Vektoren: Einmal die \textcolor{blue}{Stützvektor} und einmal den \textcolor{red}{Normalenvektor}. Der \textcolor{red}{Normalenvektor}\index{Normalenvektor} ist ein Vektor, der orthogonal\index{Orthogonal} zur \textcolor{teal}{Ebene} liegt. Daher kann dieser die beiden Spannvektoren ersetzen.
+						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+							\begin{flalign*}
+							&E:\vec{n}\cdot[\vec{x}-\overrightarrow{OP}]=0\text{ (Normalenform)}\\
+							&E:ax+by+cz=d\text{ (Koordinatenform)}&&
+							\end{flalign*}
+						\end{tcolorbox}
+					\end{flushleft}
+					\begin{center}
+						\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+						\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
+						\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
+						\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
+						
+						\foreach \coo in {-7,-6,...,6}
+						{
+							\draw (\coo,-1.5pt) -- (\coo,1.5pt);
+							\draw (-1.5pt,\coo) -- (1.5pt,\coo);
+							\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
+						}
+						\fill[<->,teal,opacity=.2] (xyz cs:x=6,y=3,z=3) -- (xyz cs:x=6,y=3,z=-1) -- (xyz cs:x=2,y=3,z=-1) -- (xyz cs:x=2,y=3,z=3);
+						
+						\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=3,z=1);
+						\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=0,z=0);
+						\draw[-stealth,blue] (xyz cs:x=0,y=0,z=0) -- (xyz cs:x=4,y=3,z=1);
+						
+						\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=4,y=5,z=1);
+						
+						\node [below right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
+						\end{tikzpicture}
+					\end{center}
+				\end{multicols}
+	\pagebreak
 	\section{2D-Koordinatensystem}
 		\subsection{Allgemeines}
 			\subsubsection{Monotonie}
@@ -933,6 +1182,41 @@
 					\end{flalign*}
 				\end{tcolorbox}
 				\noindent Achtung: Eine Funktion kann nur gerade oder ungerade sein, wenn ihr Definitionsbereich\index{Definitionsbereich} symmetrisch zur Nullpunkt auf der $x$-Achse ist.
+			\subsubsection{Newtonverfahren}
+			\label{subsubsec:newtonverfahren}
+			Bei komplizierten Funktion kann es passieren, dass – obwohl welche existieren – man keine Nullstellen\index{Nullstelle} findet. Manchmal nicht einmal durch Raten. Eine ganzrationale Funktion zu vereinfachen durch Polynomdivision\index{Polynomdivision} ist z.~B. ebenfalls erst möglich, wenn man eine Nullstelle gefunden hat. Dennoch findet man online viele Rechner, die einem die Nullstellen geben, aber wie machen die das? In diesem Fall hilft das Newtonverfahren\index{Newtonverfahren} sich einem Wert zu nähern. Hier ist ein Beispiel für so einen Fall.
+			\makeplot{{x^3+2*x^2-x-1}}{{$f(x)=x^{3}+2x^{2}-x-1$}}{{3.9,3.5}}{-6,6}{-10,10}{-20:20}{300}{17cm,7cm}{smooth}
+			Als erstes legt man eine Wertetabelle\index{Wertetabelle} an, um die grobe Positionen der Nullstellen zu finden. Dabei will man wissen, zwischen welchen Stellen das Vorzeichen\index{Vorzeichen} wechselt.
+			\begin{center}
+				\bgroup
+				\def\arraystretch{1.5}
+				\begin{tabular}{ | l | c | c | c | c | c | c | c | }
+					\hline
+					\textbf{x} & -3 & -2 & -1 & 0 & 1 & 2 & 3 \\ \hline
+					\textbf{f(x)} & -7 & 1 & 1 & -1 & 1 & 13 & 41 \\
+					\hline
+				\end{tabular}
+				\egroup
+			\end{center}
+			Wir untersuchen jetzt einmal die Nullstelle zwischen $-1$ und $0$. Um uns der Nullstelle anzunähern\index{Annähern} teilen wir die Funktion\index{Funktion} durch ihre Ableitung\index{Ableitung} an einer der beiden Stellen, zwischen denen unsere gesuchte Nullstelle\index{Nullstelle} liegt. Es gilt folgende Formel:
+			\begin{tcolorbox}[boxsep=0pt,top=.3cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.45cm]
+				\begin{flalign*}
+				x_{n+1}=x_{n}-\frac{f(x_{n})}{f^{\prime}(x_{n})}
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Um diese Formel\index{Formel} anzuwenden, brauchen wir als erstes die Ableitung und dann wiederholen wir diesen Prozess solange, bis wir genügend Nachkommastellen\index{Nachkommastelle} oder die tatsächliche Nullstelle gefunden haben.
+			\begin{flalign*}
+			f^{\prime}(x)=3x^2+4x-1&&
+			\end{flalign*}
+			\begin{flalign*}
+			x_1&=(-1)-\frac{(-1)^{3}+2(-1)^{2}-(-1)-1}{3(-1)^2+4(-1)-1}=-\frac{1}{2}\\
+			x_2&=(-\frac{1}{2})-\frac{(-\frac{1}{2})^{3}+2(-\frac{1}{2})^{2}-(-\frac{1}{2})-1}{3(-\frac{1}{2})^2+4(-\frac{1}{2})-1}=-\frac{5}{9}\\
+			x_3&=(-\frac{5}{9})-\frac{(-\frac{5}{9})^{3}+2(-\frac{5}{9})^{2}-(-\frac{5}{9})-1}{3(-\frac{5}{9})^2+4(-\frac{5}{9})-1}=-\frac{929}{1674}\\
+			x_4&=(-\frac{929}{1674})-\frac{(-\frac{929}{1674})^{3}+2(-\frac{929}{1674})^{2}-(-\frac{929}{1674})-1}{3(-\frac{929}{1674})^2+4(-\frac{929}{1674})-1}=-0,5549581321\\
+			x_5&=(-0,5549581321)-\frac{(-0,5549581321)^{3}+2(-0,5549581321)^{2}-(-0,5549581321)-1}{3(-0,5549581321)^2+4(-0,5549581321)-1}\\
+			&=-0,5549581321&&
+			\end{flalign*}
+			Wenn man zwei Mal den gleich Wert bekommt, weiß man, dass man den endgültigen Wert erreicht hat. Damit haben wir jetzt eine Nullstelle bestimmt, mit der wir z.B. die Polynomdivision\index{Polynomdivision} anwenden können.
 		\subsection{Potenz- und Wurzelfunktionen}
 			Potenzfunktionen\index{Potenzfunktion} in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}\index{Wurzelfunktion}, wenn $n\ge 2$ gilt und der Bruch\index{Bruch} keine ganze Zahl\index{Ganze Zahl} ist. An der Potenz\index{Potenz} kann man erkennen, ob eine Funktion gerade\index{Gerade} ($x^{2n}$) oder ungerade\index{Ungerade} ($x^{2n-1}$) ist. Hier sind einige Beispiele für Graphen\index{Graph} von Potenz- und Wurzelfunktionen:\newline
 			\makeplot{{x^3},{x^2},{x^(3/2)},{x^(2/3)},{x^(-1/2)},{x^(-2)},{x^(-3)}}{{$f(x)=x^3$},{$f(x)=x^2$},{$f(x)=x^{\frac{3}{2}}$},{$f(x)=x^{\frac{2}{3}}$},{$f(x)=x^{-\frac{1}{2}}$},{$f(x)=x^{-2}$},{$f(x)=x^{-3}$}}{{1,-1},{1,-2},{4,-1},{4,-2},{7,-1},{7,-2},{10,-1}}{-6,6}{-6,6}{-10:10}{300}{17cm,7cm}{smooth}
@@ -1147,41 +1431,6 @@
 				x_2&=-1\\
 				\mathbb{L}&=\{-1;1;2,5\}&&
 			\end{flalign*}
-		\subsubsection{Lösen mit dem Newtonverfahren}
-		\label{subsubsec:newtonverfahren}
-			Bei Polynomen\index{Polynom} 3. oder höheren gerade kann es passieren, dass man keine Nullstelle\index{Nullstelle} findet. Manchmal nicht einmal durch Raten. Die Funktion zu vereinfachen durch Polynomdivision\index{Polynomdivision} ist auch erst möglich, wenn man eine Nullstelle gefunden hat. In diesem hilft das Newtonverfahren\index{Newtonverfahren} sich einem Wert zu nähern. Hier ist ein Beispiel für so einen Fall.
-			\makeplot{{x^3+2*x^2-x-1}}{{$f(x)=x^{3}+2x^{2}-x-1$}}{{3.9,3.5}}{-6,6}{-10,10}{-20:20}{300}{17cm,7cm}{smooth}
-			Als erstes legt man eine Wertetabelle\index{Wertetabelle} an, um die grobe Positionen der Nullstellen zu finden. Dabei will man wissen, zwischen welchen Stellen das Vorzeichen\index{Vorzeichen} wechselt.
-			\begin{center}
-				\bgroup
-				\def\arraystretch{1.5}
-				\begin{tabular}{ | l | c | c | c | c | c | c | c | }
-					\hline
-					\textbf{x} & -3 & -2 & -1 & 0 & 1 & 2 & 3 \\ \hline
-					\textbf{f(x)} & -7 & 1 & 1 & -1 & 1 & 13 & 41 \\
-					\hline
-				\end{tabular}
-				\egroup
-			\end{center}
-			Wir untersuchen jetzt einmal die Nullstelle zwischen $-1$ und $0$. Um uns der Nullstelle anzunähern\index{Annähern} teilen wir die Funktion\index{Funktion} durch ihre Ableitung\index{Ableitung} an einer der beiden Stellen, zwischen denen unsere gesuchte Nullstelle\index{Nullstelle} liegt. Es gilt folgende Formel:
-			\begin{tcolorbox}[boxsep=0pt,top=.3cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.45cm]
-				\begin{flalign*}
-					x_{n+1}=x_{n}-\frac{f(x_{n})}{f^{\prime}(x_{n})}
-				\end{flalign*}
-			\end{tcolorbox}
-			\noindent Um diese Formel\index{Formel} anzuwenden, brauchen wir als erstes die Ableitung und dann wiederholen wir diesen Prozess solange, bis wir genügend Nachkommastellen\index{Nachkommastelle} oder die tatsächliche Nullstelle gefunden haben.
-			\begin{flalign*}
-				f^{\prime}(x)=3x^2+4x-1&&
-			\end{flalign*}
-			\begin{flalign*}
-				x_1&=(-1)-\frac{(-1)^{3}+2(-1)^{2}-(-1)-1}{3(-1)^2+4(-1)-1}=-\frac{1}{2}\\
-				x_2&=(-\frac{1}{2})-\frac{(-\frac{1}{2})^{3}+2(-\frac{1}{2})^{2}-(-\frac{1}{2})-1}{3(-\frac{1}{2})^2+4(-\frac{1}{2})-1}=-\frac{5}{9}\\
-				x_3&=(-\frac{5}{9})-\frac{(-\frac{5}{9})^{3}+2(-\frac{5}{9})^{2}-(-\frac{5}{9})-1}{3(-\frac{5}{9})^2+4(-\frac{5}{9})-1}=-\frac{929}{1674}\\
-				x_4&=(-\frac{929}{1674})-\frac{(-\frac{929}{1674})^{3}+2(-\frac{929}{1674})^{2}-(-\frac{929}{1674})-1}{3(-\frac{929}{1674})^2+4(-\frac{929}{1674})-1}=-0,5549581321\\
-				x_5&=(-0,5549581321)-\frac{(-0,5549581321)^{3}+2(-0,5549581321)^{2}-(-0,5549581321)-1}{3(-0,5549581321)^2+4(-0,5549581321)-1}\\
-				&=-0,5549581321&&
-			\end{flalign*}
-			Wenn man zwei Mal den gleich Wert bekommt, weiß man, dass man den endgültigen Wert erreicht hat. Damit haben wir jetzt eine Nullstelle bestimmt, mit der wir z.B. die Polynomdivision\index{Polynomdivision} anwenden können.
 			\subsubsection{Grenzverhalten von ganzrationalen Funktionen}
 				Hat man eine Funktion wie z.~B. $f(x)=-x^5+2x^3+3x^2+x+2$ und untersucht, wie sie sich gegen (minus) Unendlich\index{Unendlich} verhält, würde man intuitiv sagen, sie nähert sich (minus) Unendlich an. Hier soll es darum gehen, wie man das auch rechnerisch herausfinden kann und sicher unterscheidet, ob nun plus oder minus Unendlich richtig ist. Der Trick bei Funktionen dieser Form ist es, das $x$ mit dem höchsten Exponenten\index{Exponent} auszuklammern\index{Ausklammern}.
 				\makeplot{{-x^5+2*x^3+3*x^2+x+2}}{{$f(x)=-x^5+2x^3+3x^2+x+2$}}{{12.2,4.6}}{-10,10}{-5,15}{-10:20}{200}{17cm,7cm}{smooth}
@@ -1292,9 +1541,9 @@
 				\draw[color=blue] (axis cs:14,5) circle [radius=3];
 				\end{axis}
 				\node [color=blue] at (3,1.6) {$(x-14)^2+(y-5)^2=3$};
-				
 				\end{tikzpicture}
 			\end{center}
+	\pagebreak
 	\section{Differenzialrechnung}
 		\subsection{Die Ableitung}
 		\label{subsec:ableitung}
@@ -1716,6 +1965,7 @@
 			\begin{flalign*}
 				F=2\cdot \left(\frac{1}{12}+\frac{5}{12}\right)=1\text{ Flächeneinheiten}&&
 			\end{flalign*}
+	\pagebreak
 	\section{Integralrechnung}
 	\label{sec:integralrechnung}
 		Ein Integral gibt den Flächeninhalt zwischen einer Funktion und der $x$-Achse in einem bestimmten Intervall wieder. Dabei ist zu beachten, dass die Flächen unterhalb der $x$-Achse negativ sind, weshalb man jeden Abschnitt einzeln berechnen und anschließend addieren sollte.

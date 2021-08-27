@@ -21,6 +21,8 @@
 \usepackage{tocloft}
 \usepackage{etoc}
 \usepackage{blindtext}
+\usepackage{tabularx}
+\renewcommand\tabularxcolumn[1]{m{#1}}
 \usepackage{tikz}
 \usepackage{array}
 \usepackage[most]{tcolorbox}
@@ -578,6 +580,7 @@
 		\end{flalign*}
 \pagebreak
 	\section{Lineare Gleichungssysteme}
+	\label{sec:gleichungssysteme}
 		Ein Gleichungssystem\index{Gleichungssystem} ist eine Sammlung an Gleichungen, für die man eine gemeinsame Lösung sucht. Für das Beispiel unten, ist die Lösung $x=2,y=3,z=-4$ oder anders ausgedrückt $\mathbb{L}=\{(2;3;-4)\}$. Wie man darauf kommt, wird unten erklärt.
 		\begin{flalign*}
 			(I)&&x+2y+z&=4\\
@@ -1032,90 +1035,196 @@
 				\left\vert\begin{pmatrix}4\\-1\end{pmatrix}\cdot\begin{pmatrix}4\\-1\end{pmatrix}\right\vert^2&=17\\
 				\Rightarrow\sqrt{17}&\approx 4,123&&
 			\end{flalign*}
-			Hinweis: All die genannten Rechengesetze, wie z.~B. das Skalarprodukt lassen sich im dreidimensionalen Raum genauso anwenden wie im zweidimensionalen.
+			Hinweis: All die oben genannten Rechengesetze, wie z.~B. das Skalarprodukt lassen sich im dreidimensionalen Raum genauso anwenden wie im zweidimensionalen.
+			\vspace{.5cm}\hrule\vspace{.7cm}
+			\noindent Neben dem Skalarprodukt gibt es noch eine Möglichkeit das Produkt aus zwei Vektoren zu bilden, nämlich das sogenannte \textit{Kreuzprodukt}\index{Kreuzprodukt}. Mit dem Kreuzprodukt kriegen wir den Normalenvektor heraus. Das ist ein Vektor, der Orthogonal zu deinen beiden ursprünglichen Vektoren ist. Um Das Kreuzprodukt zu berechnen schreibt man nebeneinander die Werte der Vektoren jeweils zwei mal übereinander und multipliziert wie unten angeben über Kreuz: Erst die blauen Linien und dann Minus die roten.
+			\begin{center}
+				\begin{tikzpicture}
+				\draw [blue] (1.15,-1) rectangle (2.35,1);
+				\draw [red] (2.75,-1) rectangle (3.95,1);
+				\node[align=left,violet] at (8,0) {$x_1$\\$y_1$\\$z_1$\\$x_1$\\$y_1$\\$z_1$};
+				\node[align=left,orange] at (10,0) {$x_1$\\$y_1$\\$z_1$\\$x_1$\\$y_1$\\$z_1$};
+				\node at (0,0) {$\textcolor{violet}{\vec{v_1}}\times\textcolor{orange}{\vec{v_2}}=\begin{pmatrix}\textcolor{violet}{x_1}\\\textcolor{violet}{y_1}\\\textcolor{violet}{z_1}\end{pmatrix}\times\begin{pmatrix}\textcolor{orange}{x_2}\\\textcolor{orange}{y_2}\\\textcolor{orange}{z_2}\end{pmatrix}=\begin{pmatrix}\textcolor{violet}{y_1}\textcolor{orange}{z_2}-\textcolor{violet}{z_1}\textcolor{orange}{y_2}\\\textcolor{violet}{z_1}\textcolor{orange}{x_2}-\textcolor{violet}{x_1}\textcolor{orange}{z_2}\\\textcolor{violet}{x_1}\textcolor{orange}{y_2}-\textcolor{violet}{y_1}\textcolor{orange}{x_2}\end{pmatrix}$};
+				\draw[solid, red] (8.3,0.35) -- (9.6,0.75);
+				\draw[solid, red] (8.3,-0.15) -- (9.6,0.25);
+				\draw[solid, red] (8.3,-0.65) -- (9.6,-0.25);
+				\draw[solid, blue] (8.3,0.75) -- (9.6,0.35);
+				\draw[solid, blue] (8.3,0.25) -- (9.6,-0.15);
+				\draw[solid, blue] (8.3,-0.25) -- (9.6,-0.65);
+				\end{tikzpicture}
+			\end{center}
+			Anmerkung: Um den Normalenvektor zu ermitteln, kann man alternativ auch ein Gleichungssystem aufstellen, indem man sagt, dass das Skalarprodukt aus dem Normalenvektor und jeweils einem der beiden Richtungsvektoren Null ergibt. Man hätte dann zwei Gleichungen der Form $\vec{n}\cdot\vec{v}=0$.
+			\subsection{Geraden}
+				Um eine Gerade aufzustellen, braucht man zwei von einander verschiedene Punkte.
 			\subsection{Ebenen}
-				Um eine Ebene aufzustellen, braucht man drei Punkte, die paarweise verschieden sind und nicht auf einer Geraden liegen.\newline\newline
-				\begin{multicols}{2}
-					\begin{flushleft}
+				Um eine Ebene aufzustellen, braucht man drei Punkte, die paarweise verschieden sind und nicht auf einer Geraden liegen.
+				\begin{center}
+					\bgroup
+					\def\arraystretch{0}
+					\def\tabcolsep{0pt}
+					\begin{tabularx}{\linewidth}{XX}
 						\textbf{Parameterform}\newline\newline
-						Bei dieser Notationsform werden an einen Ortsvektor – genannt \textcolor{blue}{Stützvektor}\index{Stützvektor} – zwei \textcolor{red}{Richtungsvektoren}\index{Richtungsvektor} oder auch \textcolor{red}{Spannvektoren}\index{Spannvektor} angelegt. Diese beiden \textcolor{red}{Vektoren} liegen jetzt auf einer \textcolor{teal}{Ebene}. Da die Länge der \textcolor{red}{Spannvektoren} egal ist, nimmt man noch die Skalaren\index{Skalar} $r$ und $s$ hinzu.
-						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+						\index{Parameterform}Bei dieser Notationsform werden an einen Ortsvektor – genannt \textcolor{blue}{Stützvektor}\index{Stützvektor} – zwei \textcolor{red}{Richtungsvektoren}\index{Richtungsvektor} oder auch \textcolor{red}{Spannvektoren}\index{Spannvektor} angelegt. Diese beiden \textcolor{red}{Vektoren} liegen jetzt auf einer \textcolor{teal}{Ebene}. Da die Länge der \textcolor{red}{Spannvektoren} egal ist, nimmt man noch die Skalaren\index{Skalar} $r$ und $s$ hinzu.
+						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.5cm]
 							\begin{flalign*}
-							E:\vec{x}=\overrightarrow{OP}+r\cdot\overrightarrow{PQ}+s\cdot\overrightarrow{PR}&&
+							E:\vec{x}=\overrightarrow{OP}+r\cdot\overrightarrow{PQ}+s\cdot\overrightarrow{PR}
 							\end{flalign*}
 						\end{tcolorbox}
-					\end{flushleft}
-					\begin{center}
-						\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
-						\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
-						\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
-						\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
-						
-						\foreach \coo in {-7,-6,...,6}
-						{
-							\draw (\coo,-1.5pt) -- (\coo,1.5pt);
-							\draw (-1.5pt,\coo) -- (1.5pt,\coo);
-							\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
-						}
-					
-						\fill[<->,teal,opacity=.2] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=3,y=-3,z=-2) -- (xyz cs:x=-4,y=2,z=1);
-						
-						\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=3,z=1);
-						\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=0,z=0);
-						\draw[-stealth,blue] (xyz cs:x=0,y=0,z=0) -- (xyz cs:x=4,y=3,z=1);
-						
-						\draw[dashed] (xyz cs:x=3,y=-3,z=-2) -- (xyz cs:x=3,y=0,z=-2);
-						\draw[dashed] (xyz cs:x=3,y=0,z=-2) -- (xyz cs:x=3,y=0,z=0);
-						\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=3,y=-3,z=-2);
-						
-						\draw[dashed] (xyz cs:x=-4,y=2,z=1) -- (xyz cs:x=-4,y=0,z=1);
-						\draw[dashed] (xyz cs:x=-4,y=0,z=1) -- (xyz cs:x=-4,y=0,z=0);
-						\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=-4,y=2,z=1);
-						
-						\node [above right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
-						\node [below right] at (xyz cs:x=3,y=-3,z=-2) {$Q(3;-3;-2)$};
-						\node [above] at (xyz cs:x=-4,y=2,z=1) {$R(-4;2;1)$};
-						\end{tikzpicture}
-					\end{center}
-				\end{multicols}
-				\vspace{.15cm}
+						&
+						\begin{flushright}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
+							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
+							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
+							
+							\foreach \coo in {-7,-6,...,6}
+							{
+								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
+								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
+								\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
+							}
+							
+							\fill[<->,teal,opacity=.2] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=3,y=-3,z=-2) -- (xyz cs:x=-4,y=2,z=1);
+							
+							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=3,z=1);
+							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=0,z=0);
+							\draw[-stealth,blue] (xyz cs:x=0,y=0,z=0) -- (xyz cs:x=4,y=3,z=1);
+							
+							\draw[dashed] (xyz cs:x=3,y=-3,z=-2) -- (xyz cs:x=3,y=0,z=-2);
+							\draw[dashed] (xyz cs:x=3,y=0,z=-2) -- (xyz cs:x=3,y=0,z=0);
+							\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=3,y=-3,z=-2);
+							
+							\draw[dashed] (xyz cs:x=-4,y=2,z=1) -- (xyz cs:x=-4,y=0,z=1);
+							\draw[dashed] (xyz cs:x=-4,y=0,z=1) -- (xyz cs:x=-4,y=0,z=0);
+							\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=-4,y=2,z=1);
+							
+							\node [above right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
+							\node [below right] at (xyz cs:x=3,y=-3,z=-2) {$Q(3;-3;-2)$};
+							\node [above] at (xyz cs:x=-4,y=2,z=1) {$R(-4;2;1)$};
+							\end{tikzpicture}
+						\end{flushright}
+					\end{tabularx}
+					\egroup
+				\end{center}
 				\hrule
-				\vspace{.5cm}
-				\begin{multicols}{2}
-					\begin{flushleft}
-						\textbf{Normalenform/Koordinatenform}\newline\newline
-						Bei dieser Notationsform braucht man nur zwei Vektoren: Einmal die \textcolor{blue}{Stützvektor} und einmal den \textcolor{red}{Normalenvektor}. Der \textcolor{red}{Normalenvektor}\index{Normalenvektor} ist ein Vektor, der orthogonal\index{Orthogonal} zur \textcolor{teal}{Ebene} liegt. Daher kann dieser die beiden Spannvektoren ersetzen.
-						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+				\begin{center}
+					\bgroup
+					\def\arraystretch{0}
+					\def\tabcolsep{0pt}
+					\begin{tabularx}{\linewidth}{XX}
+						\textbf{Normalenform}\newline\newline
+						\index{Normalenform}Bei dieser Notationsform braucht man nur zwei Vektoren: Einmal den \textcolor{blue}{Stützvektor} und einmal den \textcolor{red}{Normalenvektor}. Der \textcolor{red}{Normalenvektor}\index{Normalenvektor} ist ein Vektor, der orthogonal\index{Orthogonal} zur \textcolor{teal}{Ebene} liegt. Da durch ihn die Ebene eindeutig identifiziert werden kann, kann er die beiden Spannvektoren ersetzen.
+						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black,enlarge top by=0.5cm]
 							\begin{flalign*}
-							&E:\vec{n}\cdot[\vec{x}-\overrightarrow{OP}]=0\text{ (Normalenform)}\\
-							&E:ax+by+cz=d\text{ (Koordinatenform)}&&
+							E:\vec{n}\cdot[\vec{x}-\overrightarrow{OP}]=0
 							\end{flalign*}
 						\end{tcolorbox}
-					\end{flushleft}
-					\begin{center}
-						\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
-						\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
-						\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
-						\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
-						
-						\foreach \coo in {-7,-6,...,6}
-						{
-							\draw (\coo,-1.5pt) -- (\coo,1.5pt);
-							\draw (-1.5pt,\coo) -- (1.5pt,\coo);
-							\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
-						}
-						\fill[<->,teal,opacity=.2] (xyz cs:x=6,y=3,z=3) -- (xyz cs:x=6,y=3,z=-1) -- (xyz cs:x=2,y=3,z=-1) -- (xyz cs:x=2,y=3,z=3);
-						
-						\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=3,z=1);
-						\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=0,z=0);
-						\draw[-stealth,blue] (xyz cs:x=0,y=0,z=0) -- (xyz cs:x=4,y=3,z=1);
-						
-						\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=4,y=5,z=1);
-						
-						\node [below right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
-						\end{tikzpicture}
-					\end{center}
-				\end{multicols}
+						&
+						\begin{flushright}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
+							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
+							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
+							
+							\foreach \coo in {-7,-6,...,6}
+							{
+								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
+								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
+								\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
+							}
+							\fill[<->,teal,opacity=.2] (xyz cs:x=6,y=3,z=3) -- (xyz cs:x=6,y=3,z=-1) -- (xyz cs:x=2,y=3,z=-1) -- (xyz cs:x=2,y=3,z=3);
+							
+							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=3,z=1);
+							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=0,z=0);
+							\draw[-stealth,blue] (xyz cs:x=0,y=0,z=0) -- (xyz cs:x=4,y=3,z=1);
+							
+							\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=4,y=5,z=1);
+							
+							\node [below right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
+							\end{tikzpicture}
+						\end{flushright}
+					\end{tabularx}
+					\egroup
+				\end{center}
+				\hrule
+				\begin{center}
+					\bgroup
+					\def\arraystretch{0}
+					\def\tabcolsep{0pt}
+					\begin{tabularx}{\linewidth}{XX}
+						\textbf{Koordinatenform}\newline\newline
+						\index{Koordinatenform}Diese Notation ist wahrscheinlich am einfachsten zu verstehen, denn man hat drei \textcolor{red}{Punkte}, die zusammen eine \textcolor{teal}{Ebene} aufspannen. Genauer gesagt, handelt es sich um die \textcolor{red}{Spurpunkte}\index{Spurpunkt}, d.~h. die Schnittpunkte mit den Achsen.
+						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black,enlarge top by=0.5cm]
+							\begin{flalign*}
+								E:ax+by+cz=d
+							\end{flalign*}
+						\end{tcolorbox}
+						&
+						\begin{flushright}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
+							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
+							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
+							
+							\foreach \coo in {-7,-6,...,6}
+							{
+								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
+								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
+								\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
+							}
+							\fill[<->,teal,opacity=.2] (xyz cs:x=0,y=3,z=0) -- (xyz cs:x=4,y=0,z=0) -- (xyz cs:x=0,y=0,z=-3);
+							\node[fill,circle,inner sep=1.5pt,label={left:$P(0;3;0)$}, red] at (xyz cs:x=0,y=3,z=0) {};
+							\node[fill,circle,inner sep=1.5pt,label={below:$Q(4;0;0)$}, red] at (xyz cs:x=4,y=0,z=0) {};
+							\node[fill,circle,inner sep=1.5pt,label={left:$R(0;0;-3)$}, red] at (xyz cs:x=0,y=0,z=-3) {};
+							\end{tikzpicture}
+						\end{flushright}
+					\end{tabularx}
+					\egroup
+				\end{center}
+		\subsubsection{Umwandeln von Ebenengleichungen}
+		\noindent Manchmal muss man zwischen den verschiedenen Formeln umwandeln. Dazu hier eine Übersicht:
+		\begin{center}
+			\bgroup
+			\def\arraystretch{1.75}
+			\begin{tabularx}{\textwidth}{|l|l|X|}
+				\hline
+				\textbf{Von} & \textbf{Nach} & \textbf{Wie?} \\ \hline
+				Parameterform & Normalenform & Normalenvektor aufstellen mithilfe der Richtungsvektoren: Entweder Kreuzprodukt bilden oder Gleichungssystem aufstellen \\ \hline
+				Normalenform & Koordinatenform & Den kompletten Term ausmultiplizieren \\ \hline
+				Koordinatenform & Parameterform & x durch r und y durch s ersetzen und dann nach z umstellen und Parameterform aufstellen \\ \hline
+				Koordinatenform & Normalenform & Normalenvektor ablesen (Koeffizienten vor xyz) und Stützvektor berechnen, indem man die Gleichung der Koordinatenform löst \\
+				\hline
+			\end{tabularx}
+			\egroup
+		\end{center}
+		Für die nicht aufgeführten Umwandlungen muss man erst in eine andere Form als Zwischenschritt umwandeln. Zum besseren Verständnis folgt für jede Umwandlung noch ein Beispiel.\newline\newline
+		\textbf{Von Parameterform nach Normalenform}
+		\begin{flalign*}
+			&E:\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}3\\2\\1\end{pmatrix}+r\cdot\begin{pmatrix}0\\2\\1\end{pmatrix}+s\cdot\begin{pmatrix}-3\\-7\\0\end{pmatrix}\\
+			\Rightarrow&E:\begin{pmatrix}0\\2\\1\end{pmatrix}\times\begin{pmatrix}-3\\-7\\0\end{pmatrix}\cdot\left[\begin{pmatrix}x\\y\\z\end{pmatrix}-\begin{pmatrix}2\\3\\1\end{pmatrix}\right]\\
+			\Rightarrow&E:\begin{pmatrix}7\\-3\\6\end{pmatrix}\cdot\left[\begin{pmatrix}x\\y\\z\end{pmatrix}-\begin{pmatrix}2\\3\\1\end{pmatrix}\right]&&
+		\end{flalign*}\newline
+		\textbf{Von Normalenform nach Koordinatenform}
+		\begin{flalign*}
+		&E:\begin{pmatrix}7\\-3\\6\end{pmatrix}\cdot\left[\begin{pmatrix}x\\y\\z\end{pmatrix}-\begin{pmatrix}2\\3\\1\end{pmatrix}\right]\\
+		\Rightarrow&E:\begin{pmatrix}7\\-3\\6\end{pmatrix}\cdot\begin{pmatrix}x\\y\\z\end{pmatrix}-\begin{pmatrix}7\\-3\\6\end{pmatrix}\cdot\begin{pmatrix}2\\3\\1\end{pmatrix}\\
+		\Rightarrow&E:7x-3y+6z=11&&
+		\end{flalign*}\newline
+		\textbf{Von Koordinatenform nach Parameterform}
+		\begin{flalign*}
+		&E:7x-3y+6z=11\\
+		\Rightarrow&E:7r-3s+6z=11\\
+		\Rightarrow&E:6z=11-7r+3s\\
+		\Rightarrow&E:z=\frac{11}{6}-\frac{7}{6}r+\frac{1}{2}s\\
+		\Rightarrow&E:\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}0&r&0\\0&0&s\\\frac{11}{6}&-\frac{7}{6}r&\frac{1}{2}s\end{pmatrix}=\begin{pmatrix}0\\0\\\frac{11}{6}\end{pmatrix}+r\cdot\begin{pmatrix}1\\0\\-\frac{7}{6}\end{pmatrix}+r\cdot\begin{pmatrix}0\\1\\\frac{1}{2}\end{pmatrix}&&
+		\end{flalign*}
+		Hinweis: Sollten von $x,y$ und $z$ nicht alle gegeben sein, einfach an der entsprechenden Stelle $0$ einsetzen. Übrigens nicht wundern, dass nicht dasselbe wie bei den vorherigen Beispiel rauskommt. Es gibt schließlich unendliche viele Möglichkeiten eine Ebenengleichung\index{Ebenengleichung} aufzustellen.\newline\newline\newline
+		\textbf{Von Koordinatenform nach Normalenform}
+		\begin{flalign*}
+		&E:7x-3y+6z=11\\
+		\Rightarrow&E:\begin{pmatrix}7\\-3\\6\end{pmatrix}\cdot\left[\begin{pmatrix}x\\y\\z\end{pmatrix}-\begin{pmatrix}2\\3\\1\end{pmatrix}\right]&&
+		\end{flalign*}
+		Hinweis: Für den Stützvektor können auch komplett andere Werte benutzt werden, solange sie die Gleichung in Koordinatenform erfüllen.
 	\pagebreak
 	\section{2D-Koordinatensystem}
 		\subsection{Allgemeines}

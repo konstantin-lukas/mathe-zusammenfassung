@@ -37,6 +37,7 @@
 \usepackage{tkz-euclide}
 \usepackage[ngerman]{babel}
 \usepackage{hyphenat}
+\usepackage{adjustbox}
 \hyphenation{Mathe-matik wieder-gewinnen}
 \definecolor{gridgray}{HTML}{AAAAAA}
 \definecolor{transparentblue}{HTML}{CCCCFF}
@@ -193,47 +194,57 @@
 	\end{multicols}
 	\subsection{Definierte Zahlenmengen}
 	\index{Mengen}
-	\begin{multicols}{2}
-		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm]
-			\textbf{Natürliche Zahlen}\index{Natürliche Zahl}
-			\begin{flalign*}
-			\mathbb{N} = \{ 1; 2; 3; ... \}&&
-			\end{flalign*}
-		\end{tcolorbox}
-		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm]
-			\textbf{Menge der Natürliche Zahlen}\index{Menge der natürlichen Zahlen}
-			\begin{flalign*}
-			\mathbb{N}_0 = \{ 0; 1; 2; 3; ... \}&&
-			\end{flalign*}
-		\end{tcolorbox}
-	\end{multicols}
-	\begin{multicols}{2}
+	\begin{center}
+		\bgroup
+		\def\arraystretch{0}
+		\def\tabcolsep{0pt}
+		\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
+			\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+				\textbf{Natürliche Zahlen}\index{Natürliche Zahl}\newline\newline
+				$\mathbb{N} = \{ 1; 2; 3; ... \}$
+			\end{tcolorbox}
+			&
+			\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+				\textbf{Menge der Natürliche Zahlen}\index{Menge der natürlichen Zahlen}\newline\newline
+				$\mathbb{N}_0 = \{ 0; 1; 2; 3; ... \}$
+			\end{tcolorbox}
+		\end{tabularx}
+		\egroup
+	\end{center}
+	\begin{center}
+	\bgroup
+	\def\arraystretch{0}
+	\def\tabcolsep{0pt}
+	\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
 		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-			\textbf{Ganze Zahlen}\index{Ganze Zahl}
-			\begin{flalign*}
-			\mathbb{Z} = \{ ... ; -2; -1; 0; 1; 2; 3; ... \}&&
-			\end{flalign*}
+			\textbf{Ganze Zahlen}\index{Ganze Zahl}\newline\newline
+			$\mathbb{Z} = \{ ... ; -2; -1; 0; 1; 2; 3; ... \}$
 		\end{tcolorbox}
+		&
 		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-			\textbf{Irrationale Zahlen}\index{Irrationale Zahl}
-			\begin{flalign*}
-			\mathbb{R} \setminus \mathbb{Q}&&
-			\end{flalign*}
+			\textbf{Irrationale Zahlen}\index{Irrationale Zahl}\newline\newline
+			$\mathbb{R} \setminus \mathbb{Q}$
 		\end{tcolorbox}
-	\end{multicols}
-	\vspace{1cm}
-	\begin{multicols}{2}
-		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-			\textbf{Reelle Zahlen}\index{Reelle Zahl}\newline
-			Die reellen Zahlen $\mathbb{R}$ umfassen die rationalen Zahlen und die irrationalen Zahlen.
-		\end{tcolorbox}
-		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-			\textbf{Rationale Zahlen}\index{Rationale Zahl}
-			\begin{flalign*}
-			\mathbb{Q} = \left\{ \frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0 \right\}&&
-			\end{flalign*}
-		\end{tcolorbox}
-	\end{multicols}
+	\end{tabularx}
+	\egroup
+	\end{center}
+	\begin{center}
+		\bgroup
+		\def\arraystretch{0}
+		\def\tabcolsep{0pt}
+		\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
+			\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+				\textbf{Reelle Zahlen}\index{Reelle Zahl}\newline\newline
+				Die reellen Zahlen $\mathbb{R}$ umfassen die rationalen und irrationalen Zahlen.
+			\end{tcolorbox}}
+			&
+			\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+				\textbf{Rationale Zahlen}\index{Rationale Zahl}\newline\newline
+				$\mathbb{Q} = \left\{ \frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0 \right\}$
+			\end{tcolorbox}}
+		\end{tabularx}
+		\egroup
+	\end{center}
 \pagebreak
 \section{Elementare Rechengesetze, -verfahren und -notationen}
 \label{sec:rechengesetze}
@@ -1056,8 +1067,158 @@
 			Anmerkung: Um den Normalenvektor zu ermitteln, kann man alternativ auch ein Gleichungssystem aufstellen, indem man sagt, dass das Skalarprodukt aus dem Normalenvektor und jeweils einem der beiden Richtungsvektoren Null ergibt. Man hätte dann zwei Gleichungen der Form $\vec{n}\cdot\vec{v}=0$.
 			\subsection{Geraden}
 				Um eine Gerade aufzustellen, braucht man zwei von einander verschiedene Punkte.
+				\begin{center}
+					\bgroup
+					\def\arraystretch{0}
+					\def\tabcolsep{0pt}
+					\begin{tabularx}{\linewidth}{XX}
+						\textbf{Koordinatenform}\newline\newline
+						\index{Koordinatenform}Diese Notation ist wahrscheinlich am einfachsten zu verstehen, denn man hat zwei \textcolor{red}{Punkte}, zwischen denen man eine \textcolor{teal}{Gerade} zeichnen kann.
+						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black,enlarge top by=0.5cm]
+							\begin{flalign*}
+							g:ax+by=c
+							\end{flalign*}
+						\end{tcolorbox}
+						&
+						\begin{flushright}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
+							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
+							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
+							
+							\foreach \coo in {-7,-6,...,6}
+							{
+								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
+								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
+								\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
+							}
+							
+							\draw[dashed] (xyz cs:x=-3,y=3,z=2) -- (xyz cs:x=-3,y=0,z=2);
+							\draw[dashed] (xyz cs:x=-3,y=0,z=2) -- (xyz cs:x=-3,y=0,z=0);
+							\draw[dashed] (xyz cs:x=4,y=-2,z=-3) -- (xyz cs:x=4,y=0,z=-3);
+							\draw[dashed] (xyz cs:x=4,y=0,z=-3) -- (xyz cs:x=4,y=0,z=0);
+							\draw[solid,teal] (xyz cs:x=-3,y=3,z=2) -- (xyz cs:x=4,y=-2,z=-3);
+							\node[fill,circle,inner sep=1.5pt,label={left:$P(-3;3;2)$}, red] at (xyz cs:x=-3,y=3,z=2) {};
+							\node[fill,circle,inner sep=1.5pt,label={right:$Q(4;-2;-3)$}, red] at (xyz cs:x=4,y=-2,z=-3) {};
+							\end{tikzpicture}
+						\end{flushright}
+					\end{tabularx}
+					\egroup
+				\end{center}
+				\hrule
+				\begin{center}
+					\bgroup
+					\def\arraystretch{0}
+					\def\tabcolsep{0pt}
+					\begin{tabularx}{\linewidth}{XX}
+						\textbf{Parameterform}\newline\newline
+						\index{Parameterform}Bei dieser Notationsform wird an einen Ortsvektor – genannt \textcolor{blue}{Stützvektor}\index{Stützvektor} – ein \textcolor{red}{Richtungsvektoren}\index{Richtungsvektor} angelegt. Dieser \textcolor{red}{Vektor} liegt jetzt auf einer \textcolor{teal}{Geraden}. Da die Länge des \textcolor{red}{Richtungsvektors} egal ist, nimmt man noch den Skalar\index{Skalar} $r$ hinzu.
+						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.5cm]
+							\begin{flalign*}
+							g:\vec{x}=\overrightarrow{OP}+r\cdot\overrightarrow{PQ}
+							\end{flalign*}
+						\end{tcolorbox}
+						&
+						\begin{flushright}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
+							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
+							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
+							
+							\foreach \coo in {-7,-6,...,6}
+							{
+								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
+								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
+								\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
+							}
+							
+							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=3,z=1);
+							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=0,z=0);
+							\draw[-stealth,blue] (xyz cs:x=0,y=0,z=0) -- (xyz cs:x=4,y=3,z=1);
+							
+							\draw[dashed] (xyz cs:x=-4,y=2,z=1) -- (xyz cs:x=-4,y=0,z=1);
+							\draw[dashed] (xyz cs:x=-4,y=0,z=1) -- (xyz cs:x=-4,y=0,z=0);
+							\draw[solid,teal] (xyz cs:x=6,y=3.25,z=1) -- (xyz cs:x=-6,y=1.75,z=1);
+							\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=-4,y=2,z=1);
+							
+							\node [above right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
+							\node [above] at (xyz cs:x=-4,y=2,z=1) {$Q(-4;2;1)$};
+							\end{tikzpicture}
+						\end{flushright}
+					\end{tabularx}
+					\egroup
+				\end{center}
+				\hrule
+				\begin{center}
+					\bgroup
+					\def\arraystretch{0}
+					\def\tabcolsep{0pt}
+					\begin{tabularx}{\linewidth}{XX}
+						\textbf{Normalenform}\newline\newline
+						\index{Normalenform}Bei dieser Notationsform braucht einen \textcolor{blue}{Stützvektor} und einen \textcolor{red}{Normalenvektor}, der orthogonal\index{Orthogonal} zu einer \textcolor{teal}{Geraden} ist. Die Normalenform für Geraden existiert nur in $\mathbb{R}^2$, denn in drei Dimension gibt es keinen eindeutigen Normalenvektor, der orthogonal zum Stützvektor ist.
+						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black,enlarge top by=0.5cm]
+							\begin{flalign*}
+							g:\vec{n}\cdot[\vec{x}-\overrightarrow{OP}]=0
+							\end{flalign*}
+						\end{tcolorbox}
+						&
+						\begin{flushright}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
+							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
+							
+							\foreach \coo in {-7,-6,...,6}
+							{
+								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
+								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
+							}
+							
+							\node [above right] at (2,1) {$P(2;1)$};
+							\draw[solid,teal] (2,6) -- (2,-6);
+							\draw[-stealth,blue] (0,0) -- (2,1);
+							\draw[-stealth,red] (2,1) -- (5,1);
+							\end{tikzpicture}
+						\end{flushright}
+					\end{tabularx}
+					\egroup
+				\end{center}
 			\subsection{Ebenen}
 				Um eine Ebene aufzustellen, braucht man drei Punkte, die paarweise verschieden sind und nicht auf einer Geraden liegen.
+				\begin{center}
+					\bgroup
+					\def\arraystretch{0}
+					\def\tabcolsep{0pt}
+					\begin{tabularx}{\linewidth}{XX}
+						\textbf{Koordinatenform}\newline\newline
+						\index{Koordinatenform}Diese Notation ist wahrscheinlich am einfachsten zu verstehen, denn man hat drei \textcolor{red}{Punkte}, die zusammen eine \textcolor{teal}{Ebene} aufspannen. Genauer gesagt, handelt es sich um die \textcolor{red}{Spurpunkte}\index{Spurpunkt}, d.~h. die Schnittpunkte mit den Achsen.
+						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black,enlarge top by=0.5cm]
+							\begin{flalign*}
+							E:ax+by+cz=d
+							\end{flalign*}
+						\end{tcolorbox}
+						&
+						\begin{flushright}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
+							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
+							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
+							
+							\foreach \coo in {-7,-6,...,6}
+							{
+								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
+								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
+								\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
+							}
+							\fill[<->,teal,opacity=.2] (xyz cs:x=0,y=3,z=0) -- (xyz cs:x=4,y=0,z=0) -- (xyz cs:x=0,y=0,z=-3);
+							\node[fill,circle,inner sep=1.5pt,label={left:$P(0;3;0)$}, red] at (xyz cs:x=0,y=3,z=0) {};
+							\node[fill,circle,inner sep=1.5pt,label={below:$Q(4;0;0)$}, red] at (xyz cs:x=4,y=0,z=0) {};
+							\node[fill,circle,inner sep=1.5pt,label={left:$R(0;0;-3)$}, red] at (xyz cs:x=0,y=0,z=-3) {};
+							\end{tikzpicture}
+						\end{flushright}
+					\end{tabularx}
+					\egroup
+				\end{center}
+				\hrule
 				\begin{center}
 					\bgroup
 					\def\arraystretch{0}
@@ -1146,52 +1307,17 @@
 					\end{tabularx}
 					\egroup
 				\end{center}
-				\hrule
-				\begin{center}
-					\bgroup
-					\def\arraystretch{0}
-					\def\tabcolsep{0pt}
-					\begin{tabularx}{\linewidth}{XX}
-						\textbf{Koordinatenform}\newline\newline
-						\index{Koordinatenform}Diese Notation ist wahrscheinlich am einfachsten zu verstehen, denn man hat drei \textcolor{red}{Punkte}, die zusammen eine \textcolor{teal}{Ebene} aufspannen. Genauer gesagt, handelt es sich um die \textcolor{red}{Spurpunkte}\index{Spurpunkt}, d.~h. die Schnittpunkte mit den Achsen.
-						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black,enlarge top by=0.5cm]
-							\begin{flalign*}
-								E:ax+by+cz=d
-							\end{flalign*}
-						\end{tcolorbox}
-						&
-						\begin{flushright}
-							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
-							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
-							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
-							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
-							
-							\foreach \coo in {-7,-6,...,6}
-							{
-								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
-								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
-								\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
-							}
-							\fill[<->,teal,opacity=.2] (xyz cs:x=0,y=3,z=0) -- (xyz cs:x=4,y=0,z=0) -- (xyz cs:x=0,y=0,z=-3);
-							\node[fill,circle,inner sep=1.5pt,label={left:$P(0;3;0)$}, red] at (xyz cs:x=0,y=3,z=0) {};
-							\node[fill,circle,inner sep=1.5pt,label={below:$Q(4;0;0)$}, red] at (xyz cs:x=4,y=0,z=0) {};
-							\node[fill,circle,inner sep=1.5pt,label={left:$R(0;0;-3)$}, red] at (xyz cs:x=0,y=0,z=-3) {};
-							\end{tikzpicture}
-						\end{flushright}
-					\end{tabularx}
-					\egroup
-				\end{center}
-		\subsubsection{Umwandeln von Ebenengleichungen}
-		\noindent Manchmal muss man zwischen den verschiedenen Formeln umwandeln. Dazu hier eine Übersicht:
+		\subsection{Umwandeln von Ebenengleichungen}
+		\noindent Manchmal muss man zwischen den verschiedenen Formeln umwandeln. Dazu folgt hier eine Übersicht. Dazu sei gesagt, dass diese Tabelle für Ebenen- und Geradengleichung gleichermaßen gilt.
 		\begin{center}
 			\bgroup
 			\def\arraystretch{1.75}
 			\begin{tabularx}{\textwidth}{|l|l|X|}
 				\hline
 				\textbf{Von} & \textbf{Nach} & \textbf{Wie?} \\ \hline
-				Parameterform & Normalenform & Normalenvektor aufstellen mithilfe der Richtungsvektoren: Entweder Kreuzprodukt bilden oder Gleichungssystem aufstellen \\ \hline
+				Parameterform & Normalenform & Normalenvektor aufstellen mithilfe der Richtungsvektoren: Entweder Kreuzprodukt bilden oder Gleichungssystem aufstellen (Kreuzprodukt geht nicht bei Geradengleichungen) \\ \hline
 				Normalenform & Koordinatenform & Den kompletten Term ausmultiplizieren \\ \hline
-				Koordinatenform & Parameterform & x durch r und y durch s ersetzen und dann nach z umstellen und Parameterform aufstellen \\ \hline
+				Koordinatenform & Parameterform & x durch r und y durch s ersetzen (soweit vorhanden) und dann nach z umstellen und Parameterform aufstellen \\ \hline
 				Koordinatenform & Normalenform & Normalenvektor ablesen (Koeffizienten vor xyz) und Stützvektor berechnen, indem man die Gleichung der Koordinatenform löst \\
 				\hline
 			\end{tabularx}
@@ -1225,6 +1351,102 @@
 		\Rightarrow&E:\begin{pmatrix}7\\-3\\6\end{pmatrix}\cdot\left[\begin{pmatrix}x\\y\\z\end{pmatrix}-\begin{pmatrix}2\\3\\1\end{pmatrix}\right]&&
 		\end{flalign*}
 		Hinweis: Für den Stützvektor können auch komplett andere Werte benutzt werden, solange sie die Gleichung in Koordinatenform erfüllen.
+	\subsection{Lagebeziehungen}
+		In der analytischen Geometrie schaut man sich oft an, wie Punkte, Geraden und Ebenen zueinander stehen. Von Interesse ist u.~a., ob sich Geraden schneiden, ob Punkte auf einer Geraden liegen oder auch, ob Ebenen parallel sind. Für dieses Kapitel solltest du \highlight{sec:gleichungssysteme}{Gleichungssysteme} lösen können. Vorab noch eine kleine Begriffsklärung: \textit{Windschief}\index{Windschief} bedeutet, dass zwei Geraden sich weder schneiden, noch parallel sind.
+		\subsubsection{Punkt – Punkt}
+			Für die Beziehung zwischen zwei Punkten gibt es nur ein Szenario: Entweder sie sind gleich oder nicht und das ist wirklich einfach zu überprüfen. Haben zwei Punkte dieselben Koordinaten, so sind sie gleich.
+		\subsubsection{Punkt – Gerade/Ebene}
+			Ein Punkt kann auf einer Geraden bzw. einer Ebene liegen oder nicht. Das überprüft man, indem man den Punkt für $\vec{x}$ in die Parameterform einsetzt und daraus ein Gleichungssystem\index{Gleichungssystem} aufstellt. Ist dieses lösbar, so liegt der Punkt auf der Geraden oder auf der Ebene. Dazu ein Beispiel mit dem Punkt $P(-3;-2;5)$ und einer Geraden:
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+					&&g:\vec{x}=&\begin{pmatrix}4\\1\\3\end{pmatrix}+s\cdot\begin{pmatrix}2\\1\\-2\end{pmatrix}\\
+					\Rightarrow&&\begin{pmatrix}-3\\-2\\5\end{pmatrix}=&\begin{pmatrix}4\\1\\3\end{pmatrix}+s\cdot\begin{pmatrix}2\\1\\-2\end{pmatrix}&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				(I)&&-3=&4+2s\\
+				(II)&&-2=&1+s&&\mid -1\\
+				(III)&&5=&3-2s&&\mid (II)\text{ einsetzen}\\
+				&&\Downarrow&&\\
+				(III)&&5=&3-2(-2-1)\\
+				&&5=&9&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Wir erhalten eine unwahre Aussage. Damit ist das Gleichungssystem nicht lösbar und der Punkte liegt nicht auf der Geraden.
+		\subsubsection{Gerade – Gerade/Ebene}
+			\textbf{Schnittpunkt}\newline
+			Um zu überprüfen, ob sich zwei Geraden schneiden oder eine Gerade mit einer Ebene schneidet, so setzt man diese gleich und stellt daraus ein Gleichungssystem auf. Es gilt ganz einfach, dass wenn das Gleichungssystem lösbar ist, dann existiert auch Schnittpunkt. Vorsicht, man darf für den Skalar $s$ im Gleichungssystem nicht den gleichen Buchstaben verwenden, denn unsere Richtungsvektoren dürfen unterschiedlich skaliert werden. Wenn es kein Ergebnis gibt, dann heißt das für den Fall Gerade/Ebene, dass diese parallel zueinander liegen.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&\begin{pmatrix}4\\1\\3\end{pmatrix}+s\cdot\begin{pmatrix}2\\1\\-2\end{pmatrix}=&\begin{pmatrix}1\\2\\4\end{pmatrix}+r\cdot\begin{pmatrix}-2\\-1\\3\end{pmatrix}\\
+				&&\Downarrow&&\\
+				(I)&&4+2s=&1-2r\\
+				(II)&&1+s=&2-r&&\mid -1\\
+				(III)&&3-2s=&4+3r&&\mid (II)\text{ einsetzen}\\
+				&&\Downarrow&&\\
+				(III)&&3-2(1-r)=&4+3r\\
+				\Leftrightarrow&&1+2r=&4+3r\\
+				\Leftrightarrow&&-3=&r\\
+				&&\Downarrow&&\\
+				(I)&&4+2s=&1-2r&&\mid (II)\text{ einsetzen}\\
+				\Rightarrow&&4+2(1-r)=&1-2r&&\mid (III)\text{ einsetzen}\\
+				\Rightarrow&&4+2(1+3)=&1+6\\
+				\Leftrightarrow&&12=&7&&
+				\end{flalign*}
+			\end{tcolorbox}
+			Das Gleichungssystem ist nicht lösbar. Damit schneiden sich die beiden Geraden nicht.\newline\newline
+			\textbf{Parallelität (nur Geraden)}\newline
+			Sind die Richtungsvektoren\index{Richtungsvektor} von zwei Geraden Vielfache voneinander, so verlaufen sie parallel. Das kann man wieder mit einem Gleichungssystem ganz einfach beweisen.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&\begin{pmatrix}2\\1\\-2\end{pmatrix}=&a\cdot\begin{pmatrix}-2\\-1\\3\end{pmatrix}\\
+				&&\Downarrow&&\\
+				(I)&&2=&-2a\\
+				(II)&&1=&-1a\\
+				(III)&&-2=&3a&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Für dieses Beispiel sind die Geraden nicht parallel, denn für $(I)$ und $(II)$ erhält man die Lösung $1$, diese erfüllt jedoch nicht die dritte Gleichung. Folglich sind diese beiden Vektoren und damit auch mögliche in Verbindung stehende Gerade nicht parallel zueinander.\newline\newline
+			Achtung: Windschief\index{Windschief} sind sie erst, wenn man auch bewiesen hat, dass sie keinen Schnittpunkt haben.
+		\subsubsection{Ebene – Ebene}
+			Der größte Unterschied bei der Betrachtung des Lageverhältnisses zwischen zwei Ebenen, besteht bei der Interpretation des Ergebnisses. Kriegt man am Ende ein unwahre Aussage, liegen die Ebenen logischerweise parallel zu einander aber nicht aufeinander. Bekommen wir eine wahre Aussage als Ergebnis, sind die Ebenen identisch. Sollten am Ende ein oder zwei Parameter übrig bleiben, existiert eine Schnittgerade\index{Schnittgerade} der beiden Ebenen. In diesem Fall rechnet es sich am einfachsten, wenn man eine Gleichung in der Koordinatenform\index{Koordinatenform} und die andere in der Parameterform hat. Dazu ein Beispiel:
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&E_1:\begin{pmatrix}x\\y\\z\end{pmatrix}=&\begin{pmatrix}3\\1\\-2\end{pmatrix}+r\cdot\begin{pmatrix}2\\2\\2\end{pmatrix}+s\cdot\begin{pmatrix}3\\0\\-0,5\end{pmatrix}\\
+				&&E_2:3x+y+2z=&10\\
+				&&\Downarrow&&\\
+				&&x=&3+2r+3s\\
+				&&y=&1+2r\\
+				&&z=&-2+2r-0,5s\\
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Diese Werte aus $E_1$ setzen wir jetzt in $E_2$ ein.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&3x+y+2z=&10\\
+				\Rightarrow&&3(3+2r+3s)+1+2r+2(-2+2r-0,5s)=&10\\
+				\Leftrightarrow&&9+6r+9s+1+2r-4+4r-s=&10\\
+				\Leftrightarrow&&12r+8s=&4&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Mithilfe dieses Ergebnisses kann man jetzt eine Schnittgeradengleichung aufstellen. Dafür muss man zunächst nach $r$ oder nach $s$ umstellen.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&12r+8s=&4\\
+				\Leftrightarrow&&8s=4-12r\\
+				\Leftrightarrow&&s=\frac{1}{2}-\frac{3}{2}r&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Dieses $s$ setzt man jetzt in die Ebenengleichung in Parameterform ein und erhält damit die Schnittgerade.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&g_s:\begin{pmatrix}x\\y\\z\end{pmatrix}=&\begin{pmatrix}3\\1\\-2\end{pmatrix}+r\cdot\begin{pmatrix}2\\2\\2\end{pmatrix}+\left(\frac{1}{2}-\frac{3}{2}r\right)\cdot\begin{pmatrix}3\\0\\-0,5\end{pmatrix}\\
+				\Leftrightarrow&&g_s:\begin{pmatrix}x\\y\\z\end{pmatrix}=&\begin{pmatrix}3\\1\\-2\end{pmatrix}+r\cdot\begin{pmatrix}2\\2\\2\end{pmatrix}+\begin{pmatrix}3\left(\frac{1}{2}-\frac{3}{2}r\right)\\0\\-0,5\left(\frac{1}{2}-\frac{3}{2}r\right)\end{pmatrix}\\
+				\Leftrightarrow&&g_s:\begin{pmatrix}x\\y\\z\end{pmatrix}=&\begin{pmatrix}3\\1\\-2\end{pmatrix}+r\cdot\begin{pmatrix}2\\2\\2\end{pmatrix}+\begin{pmatrix}\frac{3}{2}-\frac{9}{2}r\\0\\-\frac{1}{4}+\frac{3}{4}r\end{pmatrix}\\
+				\Leftrightarrow&&g_s:\begin{pmatrix}x\\y\\z\end{pmatrix}=&\begin{pmatrix}4,5\\1\\-2,25\end{pmatrix}+r\cdot\begin{pmatrix}-2,5\\2\\2,75\end{pmatrix}&&
+				\end{flalign*}
+			\end{tcolorbox}
 	\pagebreak
 	\section{2D-Koordinatensystem}
 		\subsection{Allgemeines}

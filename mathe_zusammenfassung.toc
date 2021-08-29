@@ -50,53 +50,58 @@
 \contentsline {section}{\numberline {7}Vektorgeometrie}{28}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Rechnen mit Vektoren}{29}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Geraden}{31}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Ebenen}{31}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Umwandeln von Ebenengleichungen}{32}{subsubsection.7.3.1}%
-\contentsline {section}{\numberline {8}2D-Koordinatensystem}{34}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Allgemeines}{34}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Monotonie}{34}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Besondere Stellen}{34}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Symmetrie}{35}{subsubsection.8.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.4}Newtonverfahren}{35}{subsubsection.8.1.4}%
-\contentsline {subsection}{\numberline {8.2}Potenz- und Wurzelfunktionen}{37}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Wurzelgleichungen}{37}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}{39}{subsubsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.3}Betragsfunktionen}{39}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}Betragsgleichungen mit mehreren Beträgen}{40}{subsubsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.4}Ganzrationale Funktionen}{42}{subsection.8.4}%
-\contentsline {subsubsection}{\numberline {8.4.1}Lösen durch Substitution}{42}{subsubsection.8.4.1}%
-\contentsline {subsubsection}{\numberline {8.4.2}Lösen durch Faktorisierung}{43}{subsubsection.8.4.2}%
-\contentsline {subsubsection}{\numberline {8.4.3}Lösen mit binomischen Formeln}{44}{subsubsection.8.4.3}%
-\contentsline {subsubsection}{\numberline {8.4.4}Lösen durch Polynomdivision}{45}{subsubsection.8.4.4}%
-\contentsline {subsubsection}{\numberline {8.4.5}Grenzverhalten von ganzrationalen Funktionen}{46}{subsubsection.8.4.5}%
-\contentsline {subsection}{\numberline {8.5}(Gebrochen)rationale Funktionen}{47}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}Exponentialfunktionen}{48}{subsection.8.6}%
-\contentsline {subsubsection}{\numberline {8.6.1}Lösen von Exponentialgleichungen}{48}{subsubsection.8.6.1}%
-\contentsline {subsection}{\numberline {8.7}Logarithmusfunktionen}{49}{subsection.8.7}%
-\contentsline {subsubsection}{\numberline {8.7.1}Lösen von Logarithmusgleichungen}{49}{subsubsection.8.7.1}%
-\contentsline {subsection}{\numberline {8.8}Trigonometrische Funktionen}{50}{subsection.8.8}%
-\contentsline {subsection}{\numberline {8.9}Verkettete Funktionen}{50}{subsection.8.9}%
-\contentsline {subsection}{\numberline {8.10}Kreisgleichungen}{51}{subsection.8.10}%
-\contentsline {section}{\numberline {9}Differenzialrechnung}{52}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Die Ableitung}{52}{subsection.9.1}%
-\contentsline {subsubsection}{\numberline {9.1.1}Differenzenquotient}{53}{subsubsection.9.1.1}%
-\contentsline {subsubsection}{\numberline {9.1.2}Differentialquotient}{54}{subsubsection.9.1.2}%
-\contentsline {subsubsection}{\numberline {9.1.3}Extrem- und Wendepunkte}{54}{subsubsection.9.1.3}%
-\contentsline {subsection}{\numberline {9.2}Limes: Der Grenzwert}{55}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Differenzierbarkeit}{57}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Stetige Erweiterung}{58}{subsubsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.4}Tangentengleichung}{59}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Kurvendiskussion}{60}{subsection.9.5}%
-\contentsline {subsubsection}{\numberline {9.5.1}Symmetrie}{60}{subsubsection.9.5.1}%
-\contentsline {subsubsection}{\numberline {9.5.2}Nullstellen}{60}{subsubsection.9.5.2}%
-\contentsline {subsubsection}{\numberline {9.5.3}Schnittpunkt mit y-Achse}{61}{subsubsection.9.5.3}%
-\contentsline {subsubsection}{\numberline {9.5.4}Grenzverhalten}{61}{subsubsection.9.5.4}%
-\contentsline {subsubsection}{\numberline {9.5.5}Extrema}{62}{subsubsection.9.5.5}%
-\contentsline {subsubsection}{\numberline {9.5.6}Wendepunkte}{63}{subsubsection.9.5.6}%
-\contentsline {subsubsection}{\numberline {9.5.7}Tangentengleichungen der Wendepunkte}{64}{subsubsection.9.5.7}%
-\contentsline {subsubsection}{\numberline {9.5.8}Flächenberechnung}{65}{subsubsection.9.5.8}%
-\contentsline {section}{\numberline {10}Integralrechnung}{67}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Die Stammfunktion}{68}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Integration durch Substitution}{69}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Partielle Integration}{70}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Die Fläche zwischen zwei Graphen}{70}{subsection.10.4}%
+\contentsline {subsection}{\numberline {7.3}Ebenen}{32}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Umwandeln von Ebenengleichungen}{33}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Lagebeziehungen}{35}{subsection.7.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}Punkt – Punkt}{35}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}Punkt – Gerade/Ebene}{35}{subsubsection.7.5.2}%
+\contentsline {subsubsection}{\numberline {7.5.3}Gerade – Gerade/Ebene}{36}{subsubsection.7.5.3}%
+\contentsline {subsubsection}{\numberline {7.5.4}Ebene – Ebene}{37}{subsubsection.7.5.4}%
+\contentsline {section}{\numberline {8}2D-Koordinatensystem}{39}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Allgemeines}{39}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Monotonie}{39}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Besondere Stellen}{39}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Symmetrie}{40}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Newtonverfahren}{40}{subsubsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.2}Potenz- und Wurzelfunktionen}{42}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Wurzelgleichungen}{42}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}{44}{subsubsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.3}Betragsfunktionen}{44}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Betragsgleichungen mit mehreren Beträgen}{45}{subsubsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.4}Ganzrationale Funktionen}{47}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Lösen durch Substitution}{47}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.2}Lösen durch Faktorisierung}{48}{subsubsection.8.4.2}%
+\contentsline {subsubsection}{\numberline {8.4.3}Lösen mit binomischen Formeln}{49}{subsubsection.8.4.3}%
+\contentsline {subsubsection}{\numberline {8.4.4}Lösen durch Polynomdivision}{50}{subsubsection.8.4.4}%
+\contentsline {subsubsection}{\numberline {8.4.5}Grenzverhalten von ganzrationalen Funktionen}{51}{subsubsection.8.4.5}%
+\contentsline {subsection}{\numberline {8.5}(Gebrochen)rationale Funktionen}{52}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Exponentialfunktionen}{53}{subsection.8.6}%
+\contentsline {subsubsection}{\numberline {8.6.1}Lösen von Exponentialgleichungen}{53}{subsubsection.8.6.1}%
+\contentsline {subsection}{\numberline {8.7}Logarithmusfunktionen}{54}{subsection.8.7}%
+\contentsline {subsubsection}{\numberline {8.7.1}Lösen von Logarithmusgleichungen}{54}{subsubsection.8.7.1}%
+\contentsline {subsection}{\numberline {8.8}Trigonometrische Funktionen}{55}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Verkettete Funktionen}{55}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}Kreisgleichungen}{56}{subsection.8.10}%
+\contentsline {section}{\numberline {9}Differenzialrechnung}{57}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Die Ableitung}{57}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Differenzenquotient}{58}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Differentialquotient}{59}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Extrem- und Wendepunkte}{59}{subsubsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.2}Limes: Der Grenzwert}{60}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Differenzierbarkeit}{62}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Stetige Erweiterung}{63}{subsubsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.4}Tangentengleichung}{64}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Kurvendiskussion}{65}{subsection.9.5}%
+\contentsline {subsubsection}{\numberline {9.5.1}Symmetrie}{65}{subsubsection.9.5.1}%
+\contentsline {subsubsection}{\numberline {9.5.2}Nullstellen}{65}{subsubsection.9.5.2}%
+\contentsline {subsubsection}{\numberline {9.5.3}Schnittpunkt mit y-Achse}{66}{subsubsection.9.5.3}%
+\contentsline {subsubsection}{\numberline {9.5.4}Grenzverhalten}{66}{subsubsection.9.5.4}%
+\contentsline {subsubsection}{\numberline {9.5.5}Extrema}{67}{subsubsection.9.5.5}%
+\contentsline {subsubsection}{\numberline {9.5.6}Wendepunkte}{68}{subsubsection.9.5.6}%
+\contentsline {subsubsection}{\numberline {9.5.7}Tangentengleichungen der Wendepunkte}{69}{subsubsection.9.5.7}%
+\contentsline {subsubsection}{\numberline {9.5.8}Flächenberechnung}{70}{subsubsection.9.5.8}%
+\contentsline {section}{\numberline {10}Integralrechnung}{72}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Die Stammfunktion}{73}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Integration durch Substitution}{74}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Partielle Integration}{75}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Die Fläche zwischen zwei Graphen}{75}{subsection.10.4}%

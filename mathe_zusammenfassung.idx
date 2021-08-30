@@ -214,23 +214,28 @@
 \indexentry{Monotonieverhalten|hyperpage}{39}
 \indexentry{Ableitung|hyperpage}{39}
 \indexentry{Funktion|hyperpage}{39}
-\indexentry{Definitionsbereich|hyperpage}{39}
-\indexentry{Funktion|hyperpage}{39}
-\indexentry{Intervall|hyperpage}{39}
+\indexentry{Abszisse|hyperpage}{39}
+\indexentry{Ordinate|hyperpage}{39}
+\indexentry{Injektivität|hyperpage}{39}
+\indexentry{Surjektiv|hyperpage}{40}
+\indexentry{Bijektiv|hyperpage}{40}
+\indexentry{Definitionsbereich|hyperpage}{40}
+\indexentry{Funktion|hyperpage}{40}
+\indexentry{Intervall|hyperpage}{40}
 \indexentry{Global|hyperpage}{40}
 \indexentry{Lokal|hyperpage}{40}
 \indexentry{Maximalstelle|hyperpage}{40}
 \indexentry{Minimalstelle|hyperpage}{40}
 \indexentry{Strickt|hyperpage}{40}
-\indexentry{Symmetrie|hyperpage}{40}
-\indexentry{Achsensymmetrisch|hyperpage}{40}
-\indexentry{Gerade|hyperpage}{40}
-\indexentry{Punktsymmetrisch|hyperpage}{40}
-\indexentry{Nullpunkt|hyperpage}{40}
-\indexentry{Ungerade|hyperpage}{40}
-\indexentry{Definitionsbereich|hyperpage}{40}
-\indexentry{Nullstelle|hyperpage}{40}
-\indexentry{Polynomdivision|hyperpage}{40}
+\indexentry{Symmetrie|hyperpage}{41}
+\indexentry{Achsensymmetrisch|hyperpage}{41}
+\indexentry{Gerade|hyperpage}{41}
+\indexentry{Punktsymmetrisch|hyperpage}{41}
+\indexentry{Nullpunkt|hyperpage}{41}
+\indexentry{Ungerade|hyperpage}{41}
+\indexentry{Definitionsbereich|hyperpage}{41}
+\indexentry{Nullstelle|hyperpage}{41}
+\indexentry{Polynomdivision|hyperpage}{41}
 \indexentry{Newtonverfahren|hyperpage}{41}
 \indexentry{Wertetabelle|hyperpage}{41}
 \indexentry{Vorzeichen|hyperpage}{41}
@@ -238,8 +243,8 @@
 \indexentry{Funktion|hyperpage}{41}
 \indexentry{Ableitung|hyperpage}{41}
 \indexentry{Nullstelle|hyperpage}{41}
-\indexentry{Formel|hyperpage}{41}
-\indexentry{Nachkommastelle|hyperpage}{41}
+\indexentry{Formel|hyperpage}{42}
+\indexentry{Nachkommastelle|hyperpage}{42}
 \indexentry{Polynomdivision|hyperpage}{42}
 \indexentry{Potenzfunktion|hyperpage}{42}
 \indexentry{Wurzelfunktion|hyperpage}{42}
@@ -249,251 +254,252 @@
 \indexentry{Gerade|hyperpage}{42}
 \indexentry{Ungerade|hyperpage}{42}
 \indexentry{Graph|hyperpage}{42}
-\indexentry{Wurzelgleichung|hyperpage}{42}
-\indexentry{Definitionsbereich|hyperpage}{42}
-\indexentry{Reelle Zahl|hyperpage}{42}
-\indexentry{Radikand|hyperpage}{42}
-\indexentry{Positiv|hyperpage}{42}
-\indexentry{Wurzel|hyperpage}{42}
-\indexentry{Wurzelexponent|hyperpage}{42}
-\indexentry{Potenzieren|hyperpage}{42}
-\indexentry{Äquivalenzumformung|hyperpage}{42}
-\indexentry{Scheinlösung|hyperpage}{42}
-\indexentry{Probe|hyperpage}{42}
+\indexentry{Wurzelgleichung|hyperpage}{43}
+\indexentry{Definitionsbereich|hyperpage}{43}
+\indexentry{Reelle Zahl|hyperpage}{43}
+\indexentry{Radikand|hyperpage}{43}
+\indexentry{Positiv|hyperpage}{43}
+\indexentry{Wurzel|hyperpage}{43}
+\indexentry{Wurzelexponent|hyperpage}{43}
+\indexentry{Potenzieren|hyperpage}{43}
+\indexentry{Äquivalenzumformung|hyperpage}{43}
+\indexentry{Scheinlösung|hyperpage}{43}
+\indexentry{Probe|hyperpage}{43}
 \indexentry{Definitionsbereich|hyperpage}{43}
 \indexentry{Ergebnis|hyperpage}{43}
 \indexentry{Überprüfen|hyperpage}{43}
 \indexentry{Einsetzen|hyperpage}{43}
-\indexentry{Aussage|hyperpage}{43}
-\indexentry{Lösungsmenge|hyperpage}{43}
-\indexentry{Definitionsbereich|hyperpage}{43}
-\indexentry{Einsetzen|hyperpage}{43}
-\indexentry{Aussage|hyperpage}{43}
-\indexentry{Wurzel|hyperpage}{43}
-\indexentry{Definitionsbereich|hyperpage}{43}
-\indexentry{Radikand|hyperpage}{43}
-\indexentry{Graph|hyperpage}{43}
-\indexentry{Ergebnis|hyperpage}{43}
-\indexentry{Schnittpunkt|hyperpage}{43}
-\indexentry{Wurzelgleichung|hyperpage}{43}
-\indexentry{p-q-Formel|hyperpage}{44}
-\indexentry{Betragsgleichung|hyperpage}{44}
-\indexentry{Betragsfunktion|hyperpage}{44}
-\indexentry{Fall|hyperpage}{44}
+\indexentry{Aussage|hyperpage}{44}
+\indexentry{Lösungsmenge|hyperpage}{44}
+\indexentry{Definitionsbereich|hyperpage}{44}
+\indexentry{Einsetzen|hyperpage}{44}
+\indexentry{Aussage|hyperpage}{44}
+\indexentry{Wurzel|hyperpage}{44}
+\indexentry{Definitionsbereich|hyperpage}{44}
+\indexentry{Radikand|hyperpage}{44}
+\indexentry{Graph|hyperpage}{44}
 \indexentry{Ergebnis|hyperpage}{44}
-\indexentry{Betrag|hyperpage}{44}
 \indexentry{Schnittpunkt|hyperpage}{44}
-\indexentry{Funktion|hyperpage}{44}
-\indexentry{Gleichsetzen|hyperpage}{44}
-\indexentry{Betragsgleichung|hyperpage}{44}
-\indexentry{Fallunterscheidung|hyperpage}{44}
-\indexentry{Betragsstrich|hyperpage}{44}
-\indexentry{Schnittpunkt|hyperpage}{45}
+\indexentry{Wurzelgleichung|hyperpage}{44}
+\indexentry{p-q-Formel|hyperpage}{44}
+\indexentry{Betragsgleichung|hyperpage}{45}
+\indexentry{Betragsfunktion|hyperpage}{45}
 \indexentry{Fall|hyperpage}{45}
+\indexentry{Ergebnis|hyperpage}{45}
 \indexentry{Betrag|hyperpage}{45}
-\indexentry{Lösungsmenge|hyperpage}{46}
-\indexentry{Graph|hyperpage}{46}
-\indexentry{Überprüfen|hyperpage}{46}
-\indexentry{Lösungsmenge|hyperpage}{46}
-\indexentry{Negativ|hyperpage}{46}
-\indexentry{Lösungsmenge|hyperpage}{46}
-\indexentry{Einsetzen|hyperpage}{46}
+\indexentry{Schnittpunkt|hyperpage}{45}
+\indexentry{Funktion|hyperpage}{45}
+\indexentry{Gleichsetzen|hyperpage}{45}
+\indexentry{Betragsgleichung|hyperpage}{45}
+\indexentry{Fallunterscheidung|hyperpage}{45}
+\indexentry{Betragsstrich|hyperpage}{45}
 \indexentry{Schnittpunkt|hyperpage}{46}
-\indexentry{Polynom|hyperpage}{47}
-\indexentry{Monom|hyperpage}{47}
-\indexentry{Ganzrationale Funktion|hyperpage}{47}
-\indexentry{Polynomfunktion|hyperpage}{47}
-\indexentry{Koeffizient|hyperpage}{47}
-\indexentry{Summand|hyperpage}{47}
-\indexentry{Potenz|hyperpage}{47}
-\indexentry{Polynom|hyperpage}{47}
-\indexentry{n-ter Grad|hyperpage}{47}
-\indexentry{Nullstelle|hyperpage}{47}
-\indexentry{Symmetrie|hyperpage}{47}
-\indexentry{Monom|hyperpage}{47}
-\indexentry{Potenz|hyperpage}{47}
-\indexentry{Gerade|hyperpage}{47}
-\indexentry{Ungerade|hyperpage}{47}
-\indexentry{Exponent|hyperpage}{47}
-\indexentry{Ausschließen|hyperpage}{47}
-\indexentry{Substitution|hyperpage}{47}
-\indexentry{p-q-Formel|hyperpage}{47}
-\indexentry{Funktion|hyperpage}{48}
-\indexentry{Faktorisieren|hyperpage}{48}
-\indexentry{Ausklammern|hyperpage}{48}
-\indexentry{Binomische Formel|hyperpage}{49}
-\indexentry{Polynomdivision|hyperpage}{50}
-\indexentry{Nullstelle|hyperpage}{50}
-\indexentry{Polynom|hyperpage}{50}
-\indexentry{Potenz|hyperpage}{50}
-\indexentry{Ergebnis|hyperpage}{50}
-\indexentry{Divisor|hyperpage}{50}
-\indexentry{Polynom|hyperpage}{50}
-\indexentry{Nullstelle|hyperpage}{50}
-\indexentry{Unendlich|hyperpage}{51}
-\indexentry{Exponent|hyperpage}{51}
-\indexentry{Ausklammern|hyperpage}{51}
-\indexentry{Annähern|hyperpage}{52}
+\indexentry{Fall|hyperpage}{46}
+\indexentry{Betrag|hyperpage}{46}
+\indexentry{Lösungsmenge|hyperpage}{47}
+\indexentry{Graph|hyperpage}{47}
+\indexentry{Überprüfen|hyperpage}{47}
+\indexentry{Lösungsmenge|hyperpage}{47}
+\indexentry{Negativ|hyperpage}{47}
+\indexentry{Lösungsmenge|hyperpage}{47}
+\indexentry{Einsetzen|hyperpage}{47}
+\indexentry{Schnittpunkt|hyperpage}{47}
+\indexentry{Polynom|hyperpage}{48}
+\indexentry{Monom|hyperpage}{48}
+\indexentry{Ganzrationale Funktion|hyperpage}{48}
+\indexentry{Polynomfunktion|hyperpage}{48}
+\indexentry{Koeffizient|hyperpage}{48}
+\indexentry{Summand|hyperpage}{48}
+\indexentry{Potenz|hyperpage}{48}
+\indexentry{Polynom|hyperpage}{48}
+\indexentry{n-ter Grad|hyperpage}{48}
+\indexentry{Nullstelle|hyperpage}{48}
+\indexentry{Symmetrie|hyperpage}{48}
+\indexentry{Monom|hyperpage}{48}
+\indexentry{Potenz|hyperpage}{48}
+\indexentry{Gerade|hyperpage}{48}
+\indexentry{Ungerade|hyperpage}{48}
+\indexentry{Exponent|hyperpage}{48}
+\indexentry{Ausschließen|hyperpage}{48}
+\indexentry{Substitution|hyperpage}{48}
+\indexentry{p-q-Formel|hyperpage}{48}
+\indexentry{Funktion|hyperpage}{49}
+\indexentry{Faktorisieren|hyperpage}{49}
+\indexentry{Ausklammern|hyperpage}{49}
+\indexentry{Binomische Formel|hyperpage}{50}
+\indexentry{Polynomdivision|hyperpage}{51}
+\indexentry{Nullstelle|hyperpage}{51}
+\indexentry{Polynom|hyperpage}{51}
+\indexentry{Potenz|hyperpage}{51}
+\indexentry{Ergebnis|hyperpage}{51}
+\indexentry{Divisor|hyperpage}{51}
+\indexentry{Polynom|hyperpage}{51}
+\indexentry{Nullstelle|hyperpage}{51}
 \indexentry{Unendlich|hyperpage}{52}
-\indexentry{Limes|hyperpage}{52}
-\indexentry{Ergebnis|hyperpage}{52}
-\indexentry{Rationale Funktion|hyperpage}{52}
-\indexentry{Gebrochenrationale Funktion|hyperpage}{52}
-\indexentry{Polynom|hyperpage}{52}
-\indexentry{Nenner|hyperpage}{52}
-\indexentry{Bruch|hyperpage}{52}
-\indexentry{Nullstelle|hyperpage}{52}
-\indexentry{Definitionslücke|hyperpage}{52}
-\indexentry{Zähler|hyperpage}{52}
-\indexentry{Nenner|hyperpage}{52}
-\indexentry{Funktion|hyperpage}{52}
-\indexentry{Exponentialgleichung|hyperpage}{53}
-\indexentry{Logarithmus|hyperpage}{53}
+\indexentry{Exponent|hyperpage}{52}
+\indexentry{Ausklammern|hyperpage}{52}
+\indexentry{Annähern|hyperpage}{53}
+\indexentry{Unendlich|hyperpage}{53}
+\indexentry{Limes|hyperpage}{53}
+\indexentry{Ergebnis|hyperpage}{53}
+\indexentry{Rationale Funktion|hyperpage}{53}
+\indexentry{Gebrochenrationale Funktion|hyperpage}{53}
+\indexentry{Polynom|hyperpage}{53}
+\indexentry{Nenner|hyperpage}{53}
+\indexentry{Bruch|hyperpage}{53}
 \indexentry{Nullstelle|hyperpage}{53}
-\indexentry{Logarithmusfunktion|hyperpage}{54}
+\indexentry{Definitionslücke|hyperpage}{53}
+\indexentry{Zähler|hyperpage}{53}
+\indexentry{Nenner|hyperpage}{53}
+\indexentry{Funktion|hyperpage}{53}
+\indexentry{Exponentialgleichung|hyperpage}{54}
 \indexentry{Logarithmus|hyperpage}{54}
-\indexentry{Exponent|hyperpage}{54}
-\indexentry{Basis|hyperpage}{54}
-\indexentry{Umformen|hyperpage}{54}
-\indexentry{Potenzgesetz|hyperpage}{54}
-\indexentry{Logarithmusgesetz|hyperpage}{54}
-\indexentry{Trigonometrische Funktion|hyperpage}{55}
-\indexentry{Winkelfunktion|hyperpage}{55}
-\indexentry{Geometrie|hyperpage}{55}
-\indexentry{Sinus|hyperpage}{55}
-\indexentry{Kosinus|hyperpage}{55}
-\indexentry{Tangens|hyperpage}{55}
-\indexentry{Variable|hyperpage}{55}
-\indexentry{Bogenmaß|hyperpage}{55}
-\indexentry{Gradmaß|hyperpage}{55}
-\indexentry{Taschenrechner|hyperpage}{55}
-\indexentry{Extremstelle|hyperpage}{55}
-\indexentry{Nullstelle|hyperpage}{55}
-\indexentry{Verkettung|hyperpage}{55}
-\indexentry{Transformieren|hyperpage}{55}
-\indexentry{Innere Funktion|hyperpage}{55}
-\indexentry{Äußere Funktion|hyperpage}{55}
-\indexentry{Abszess|hyperpage}{56}
-\indexentry{Ordinate|hyperpage}{56}
-\indexentry{Koordinatensystem|hyperpage}{56}
-\indexentry{Kreis|hyperpage}{56}
-\indexentry{Koordinatenform|hyperpage}{56}
-\indexentry{Ableitung|hyperpage}{57}
-\indexentry{Funktion|hyperpage}{57}
-\indexentry{Monotonieverhalten|hyperpage}{57}
-\indexentry{Anstieg|hyperpage}{57}
-\indexentry{Tangente|hyperpage}{57}
-\indexentry{Potenzfunktion|hyperpage}{57}
-\indexentry{Exponent|hyperpage}{57}
-\indexentry{Umformen|hyperpage}{57}
-\indexentry{Rechengesetz|hyperpage}{57}
-\indexentry{Ableitungsregel|hyperpage}{58}
-\indexentry{Differentialquotient|hyperpage}{58}
-\indexentry{Steigung|hyperpage}{58}
-\indexentry{Sekante|hyperpage}{58}
-\indexentry{Punkt|hyperpage}{58}
-\indexentry{Differenzenquotient|hyperpage}{58}
-\indexentry{Quotient|hyperpage}{58}
-\indexentry{Steigung|hyperpage}{59}
-\indexentry{Tangente|hyperpage}{59}
-\indexentry{Differenzenquotient|hyperpage}{59}
-\indexentry{Divisor|hyperpage}{59}
-\indexentry{Limes|hyperpage}{59}
-\indexentry{Divisor|hyperpage}{59}
-\indexentry{Limes|hyperpage}{59}
-\indexentry{Ableitung|hyperpage}{59}
+\indexentry{Nullstelle|hyperpage}{54}
+\indexentry{Logarithmusfunktion|hyperpage}{55}
+\indexentry{Logarithmus|hyperpage}{55}
+\indexentry{Exponent|hyperpage}{55}
+\indexentry{Basis|hyperpage}{55}
+\indexentry{Umformen|hyperpage}{55}
+\indexentry{Potenzgesetz|hyperpage}{55}
+\indexentry{Logarithmusgesetz|hyperpage}{55}
+\indexentry{Trigonometrische Funktion|hyperpage}{56}
+\indexentry{Winkelfunktion|hyperpage}{56}
+\indexentry{Geometrie|hyperpage}{56}
+\indexentry{Sinus|hyperpage}{56}
+\indexentry{Kosinus|hyperpage}{56}
+\indexentry{Tangens|hyperpage}{56}
+\indexentry{Variable|hyperpage}{56}
+\indexentry{Bogenmaß|hyperpage}{56}
+\indexentry{Gradmaß|hyperpage}{56}
+\indexentry{Taschenrechner|hyperpage}{56}
+\indexentry{Extremstelle|hyperpage}{56}
+\indexentry{Nullstelle|hyperpage}{56}
+\indexentry{Verkettung|hyperpage}{56}
+\indexentry{Transformieren|hyperpage}{56}
+\indexentry{Innere Funktion|hyperpage}{56}
+\indexentry{Äußere Funktion|hyperpage}{56}
+\indexentry{Abszess|hyperpage}{57}
+\indexentry{Ordinate|hyperpage}{57}
+\indexentry{Koordinatensystem|hyperpage}{57}
+\indexentry{Kreis|hyperpage}{57}
+\indexentry{Koordinatenform|hyperpage}{57}
+\indexentry{Ableitung|hyperpage}{58}
+\indexentry{Funktion|hyperpage}{58}
+\indexentry{Monotonieverhalten|hyperpage}{58}
+\indexentry{Anstieg|hyperpage}{58}
+\indexentry{Tangente|hyperpage}{58}
+\indexentry{Potenzfunktion|hyperpage}{58}
+\indexentry{Exponent|hyperpage}{58}
+\indexentry{Umformen|hyperpage}{58}
+\indexentry{Rechengesetz|hyperpage}{58}
 \indexentry{Ableitungsregel|hyperpage}{59}
-\indexentry{Zweite Ableitung|hyperpage}{59}
-\indexentry{Dritte Ableitung|hyperpage}{59}
-\indexentry{Funktion|hyperpage}{59}
-\indexentry{Notwendige Bedingung|hyperpage}{60}
-\indexentry{Hinreichende Bedingung|hyperpage}{60}
-\indexentry{Unendlich|hyperpage}{60}
-\indexentry{Limes|hyperpage}{61}
-\indexentry{Grenzwert|hyperpage}{61}
-\indexentry{Linksseitiger Grenzwert|hyperpage}{61}
-\indexentry{Rechtsseitiger Grenzwert|hyperpage}{61}
+\indexentry{Differentialquotient|hyperpage}{59}
+\indexentry{Steigung|hyperpage}{59}
+\indexentry{Sekante|hyperpage}{59}
+\indexentry{Punkt|hyperpage}{59}
+\indexentry{Differenzenquotient|hyperpage}{59}
+\indexentry{Quotient|hyperpage}{59}
+\indexentry{Steigung|hyperpage}{60}
+\indexentry{Tangente|hyperpage}{60}
+\indexentry{Differenzenquotient|hyperpage}{60}
+\indexentry{Divisor|hyperpage}{60}
+\indexentry{Limes|hyperpage}{60}
+\indexentry{Divisor|hyperpage}{60}
+\indexentry{Limes|hyperpage}{60}
+\indexentry{Ableitung|hyperpage}{60}
+\indexentry{Ableitungsregel|hyperpage}{60}
+\indexentry{Zweite Ableitung|hyperpage}{60}
+\indexentry{Dritte Ableitung|hyperpage}{60}
+\indexentry{Funktion|hyperpage}{60}
+\indexentry{Notwendige Bedingung|hyperpage}{61}
+\indexentry{Hinreichende Bedingung|hyperpage}{61}
 \indexentry{Unendlich|hyperpage}{61}
-\indexentry{Linksseitiger Grenzwert|hyperpage}{61}
-\indexentry{Rechtsseitger Grenzwert|hyperpage}{61}
-\indexentry{Notation|hyperpage}{61}
-\indexentry{Stetig|hyperpage}{62}
-\indexentry{Differenzierbar|hyperpage}{62}
-\indexentry{Linksseitiger Grenzwert|hyperpage}{63}
-\indexentry{Rechtsseitiger Grenzwert|hyperpage}{63}
-\indexentry{Grenzwert|hyperpage}{63}
-\indexentry{Definitionslücke|hyperpage}{63}
-\indexentry{Stetige Erweiterung|hyperpage}{63}
-\indexentry{Behebbar|hyperpage}{63}
-\indexentry{Hebbar|hyperpage}{63}
-\indexentry{Definitionsbereich|hyperpage}{63}
-\indexentry{Erweiterbar|hyperpage}{63}
+\indexentry{Limes|hyperpage}{62}
+\indexentry{Grenzwert|hyperpage}{62}
+\indexentry{Linksseitiger Grenzwert|hyperpage}{62}
+\indexentry{Rechtsseitiger Grenzwert|hyperpage}{62}
+\indexentry{Unendlich|hyperpage}{62}
+\indexentry{Linksseitiger Grenzwert|hyperpage}{62}
+\indexentry{Rechtsseitger Grenzwert|hyperpage}{62}
+\indexentry{Notation|hyperpage}{62}
+\indexentry{Stetig|hyperpage}{63}
+\indexentry{Differenzierbar|hyperpage}{63}
+\indexentry{Linksseitiger Grenzwert|hyperpage}{64}
+\indexentry{Rechtsseitiger Grenzwert|hyperpage}{64}
 \indexentry{Grenzwert|hyperpage}{64}
-\indexentry{Zusammengesetzte Funktion|hyperpage}{64}
-\indexentry{Extremalpunkt|hyperpage}{64}
-\indexentry{Wendepunkt|hyperpage}{64}
-\indexentry{Tangente|hyperpage}{64}
-\indexentry{Punkt|hyperpage}{64}
-\indexentry{Lineare Funktion|hyperpage}{64}
-\indexentry{Tangentengleichung|hyperpage}{64}
-\indexentry{Anstieg|hyperpage}{64}
-\indexentry{Ableitung|hyperpage}{64}
-\indexentry{Umstellen|hyperpage}{64}
-\indexentry{Punkt|hyperpage}{64}
-\indexentry{Funktion|hyperpage}{64}
-\indexentry{Einsetzen|hyperpage}{64}
-\indexentry{Tangentengleichung|hyperpage}{64}
-\indexentry{Ergebnis|hyperpage}{64}
-\indexentry{Kurvendiskussion|hyperpage}{65}
-\indexentry{Graph|hyperpage}{65}
-\indexentry{Gerade|hyperpage}{65}
-\indexentry{Ungerade|hyperpage}{65}
-\indexentry{Gleichung|hyperpage}{65}
-\indexentry{Nullstelle|hyperpage}{65}
-\indexentry{Achsenschnittpunkt|hyperpage}{66}
-\indexentry{Einsetzen|hyperpage}{66}
-\indexentry{Ergebnis|hyperpage}{66}
+\indexentry{Definitionslücke|hyperpage}{64}
+\indexentry{Stetige Erweiterung|hyperpage}{64}
+\indexentry{Behebbar|hyperpage}{64}
+\indexentry{Hebbar|hyperpage}{64}
+\indexentry{Definitionsbereich|hyperpage}{64}
+\indexentry{Erweiterbar|hyperpage}{64}
+\indexentry{Grenzwert|hyperpage}{65}
+\indexentry{Zusammengesetzte Funktion|hyperpage}{65}
+\indexentry{Extremalpunkt|hyperpage}{65}
+\indexentry{Wendepunkt|hyperpage}{65}
+\indexentry{Tangente|hyperpage}{65}
+\indexentry{Punkt|hyperpage}{65}
+\indexentry{Lineare Funktion|hyperpage}{65}
+\indexentry{Tangentengleichung|hyperpage}{65}
+\indexentry{Anstieg|hyperpage}{65}
+\indexentry{Ableitung|hyperpage}{65}
+\indexentry{Umstellen|hyperpage}{65}
+\indexentry{Punkt|hyperpage}{65}
+\indexentry{Funktion|hyperpage}{65}
+\indexentry{Einsetzen|hyperpage}{65}
+\indexentry{Tangentengleichung|hyperpage}{65}
+\indexentry{Ergebnis|hyperpage}{65}
+\indexentry{Kurvendiskussion|hyperpage}{66}
+\indexentry{Graph|hyperpage}{66}
+\indexentry{Gerade|hyperpage}{66}
+\indexentry{Ungerade|hyperpage}{66}
+\indexentry{Gleichung|hyperpage}{66}
 \indexentry{Nullstelle|hyperpage}{66}
-\indexentry{Limes|hyperpage}{66}
-\indexentry{Umstellen|hyperpage}{66}
-\indexentry{Grenzwert|hyperpage}{66}
-\indexentry{Term|hyperpage}{66}
-\indexentry{Extrempunkt|hyperpage}{67}
-\indexentry{Ableitung|hyperpage}{67}
-\indexentry{Notwendige Bedingung|hyperpage}{67}
-\indexentry{Einsetzen|hyperpage}{68}
-\indexentry{Punkt|hyperpage}{68}
-\indexentry{Hinreichende Bedingung|hyperpage}{68}
-\indexentry{Ungerade|hyperpage}{68}
-\indexentry{Wendepunkt|hyperpage}{68}
-\indexentry{Krümmungsverhalten|hyperpage}{68}
+\indexentry{Achsenschnittpunkt|hyperpage}{67}
+\indexentry{Einsetzen|hyperpage}{67}
+\indexentry{Ergebnis|hyperpage}{67}
+\indexentry{Nullstelle|hyperpage}{67}
+\indexentry{Limes|hyperpage}{67}
+\indexentry{Umstellen|hyperpage}{67}
+\indexentry{Grenzwert|hyperpage}{67}
+\indexentry{Term|hyperpage}{67}
+\indexentry{Extrempunkt|hyperpage}{68}
+\indexentry{Ableitung|hyperpage}{68}
 \indexentry{Notwendige Bedingung|hyperpage}{68}
+\indexentry{Einsetzen|hyperpage}{69}
+\indexentry{Punkt|hyperpage}{69}
 \indexentry{Hinreichende Bedingung|hyperpage}{69}
-\indexentry{Links-Rechts-Krümmung|hyperpage}{69}
-\indexentry{Rechts-Links-Krümmung|hyperpage}{69}
-\indexentry{Tangentengleichung|hyperpage}{69}
-\indexentry{Wendestelle|hyperpage}{69}
-\indexentry{Lineare Funktion|hyperpage}{69}
-\indexentry{Ableitung|hyperpage}{69}
-\indexentry{Wendestelle|hyperpage}{69}
-\indexentry{Koordinate|hyperpage}{70}
-\indexentry{Wendepunkt|hyperpage}{70}
-\indexentry{Einsetzen|hyperpage}{70}
-\indexentry{Umstellen|hyperpage}{70}
-\indexentry{Fläche|hyperpage}{70}
-\indexentry{Unbestimmtes Integral|hyperpage}{72}
-\indexentry{Bestimmtes Integral|hyperpage}{72}
-\indexentry{Lineare Gleichung|hyperpage}{72}
-\indexentry{Fläche|hyperpage}{72}
-\indexentry{Rechteck|hyperpage}{73}
-\indexentry{Differenzieren|hyperpage}{73}
-\indexentry{Integrieren|hyperpage}{73}
-\indexentry{Stammfunktion|hyperpage}{73}
-\indexentry{Ableitung|hyperpage}{75}
-\indexentry{Produktregel|hyperpage}{75}
-\indexentry{Differenzfunktion|hyperpage}{75}
-\indexentry{Nullstelle|hyperpage}{76}
-\indexentry{Intervall|hyperpage}{76}
-\indexentry{Wertetabelle|hyperpage}{76}
+\indexentry{Ungerade|hyperpage}{69}
+\indexentry{Wendepunkt|hyperpage}{69}
+\indexentry{Krümmungsverhalten|hyperpage}{69}
+\indexentry{Notwendige Bedingung|hyperpage}{69}
+\indexentry{Hinreichende Bedingung|hyperpage}{70}
+\indexentry{Links-Rechts-Krümmung|hyperpage}{70}
+\indexentry{Rechts-Links-Krümmung|hyperpage}{70}
+\indexentry{Tangentengleichung|hyperpage}{70}
+\indexentry{Wendestelle|hyperpage}{70}
+\indexentry{Lineare Funktion|hyperpage}{70}
+\indexentry{Ableitung|hyperpage}{70}
+\indexentry{Wendestelle|hyperpage}{70}
+\indexentry{Koordinate|hyperpage}{71}
+\indexentry{Wendepunkt|hyperpage}{71}
+\indexentry{Einsetzen|hyperpage}{71}
+\indexentry{Umstellen|hyperpage}{71}
+\indexentry{Fläche|hyperpage}{71}
+\indexentry{Unbestimmtes Integral|hyperpage}{73}
+\indexentry{Bestimmtes Integral|hyperpage}{73}
+\indexentry{Lineare Gleichung|hyperpage}{73}
+\indexentry{Fläche|hyperpage}{73}
+\indexentry{Rechteck|hyperpage}{74}
+\indexentry{Differenzieren|hyperpage}{74}
+\indexentry{Integrieren|hyperpage}{74}
+\indexentry{Stammfunktion|hyperpage}{74}
 \indexentry{Ableitung|hyperpage}{76}
+\indexentry{Produktregel|hyperpage}{76}
 \indexentry{Differenzfunktion|hyperpage}{76}
+\indexentry{Nullstelle|hyperpage}{77}
+\indexentry{Intervall|hyperpage}{77}
+\indexentry{Wertetabelle|hyperpage}{77}
+\indexentry{Ableitung|hyperpage}{77}
+\indexentry{Differenzfunktion|hyperpage}{77}
+\indexentry{Umkehrfunktion|hyperpage}{78}

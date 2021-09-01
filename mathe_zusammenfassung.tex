@@ -194,57 +194,211 @@
 	\end{multicols}
 	\subsection{Definierte Zahlenmengen}
 	\index{Mengen}
-	\begin{center}
+		\begin{center}
+			\bgroup
+			\def\arraystretch{0}
+			\def\tabcolsep{0pt}
+			\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
+				\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+					\textbf{Natürliche Zahlen}\index{Natürliche Zahl}\newline\newline
+					$\mathbb{N} = \{ 1; 2; 3; ... \}$
+				\end{tcolorbox}
+				&
+				\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+					\textbf{Menge der Natürliche Zahlen}\index{Menge der natürlichen Zahlen}\newline\newline
+					$\mathbb{N}_0 = \{ 0; 1; 2; 3; ... \}$
+				\end{tcolorbox}
+			\end{tabularx}
+			\egroup
+		\end{center}
+		\begin{center}
 		\bgroup
 		\def\arraystretch{0}
 		\def\tabcolsep{0pt}
 		\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
 			\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-				\textbf{Natürliche Zahlen}\index{Natürliche Zahl}\newline\newline
-				$\mathbb{N} = \{ 1; 2; 3; ... \}$
+				\textbf{Ganze Zahlen}\index{Ganze Zahl}\newline\newline
+				$\mathbb{Z} = \{ ... ; -2; -1; 0; 1; 2; 3; ... \}$
 			\end{tcolorbox}
 			&
 			\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-				\textbf{Menge der Natürliche Zahlen}\index{Menge der natürlichen Zahlen}\newline\newline
-				$\mathbb{N}_0 = \{ 0; 1; 2; 3; ... \}$
+				\textbf{Irrationale Zahlen}\index{Irrationale Zahl}\newline\newline
+				$\mathbb{R} \setminus \mathbb{Q}$
 			\end{tcolorbox}
 		\end{tabularx}
 		\egroup
-	\end{center}
-	\begin{center}
-	\bgroup
-	\def\arraystretch{0}
-	\def\tabcolsep{0pt}
-	\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
-		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-			\textbf{Ganze Zahlen}\index{Ganze Zahl}\newline\newline
-			$\mathbb{Z} = \{ ... ; -2; -1; 0; 1; 2; 3; ... \}$
+		\end{center}
+		\begin{center}
+			\bgroup
+			\def\arraystretch{0}
+			\def\tabcolsep{0pt}
+			\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+					\textbf{Reelle Zahlen}\index{Reelle Zahl}\newline\newline
+					Die reellen Zahlen $\mathbb{R}$ umfassen die rationalen und irrationalen Zahlen.
+				\end{tcolorbox}}
+				&
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+					\textbf{Rationale Zahlen}\index{Rationale Zahl}\newline\newline
+					$\mathbb{Q} = \left\{ \frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0 \right\}$
+				\end{tcolorbox}}
+			\end{tabularx}
+			\egroup
+		\end{center}
+	\subsection{Komplexe Zahlen}
+		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereichen $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.~B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
+		\begin{center}
+			\begin{tikzpicture}
+			\begin{axis}[
+			width=17cm,
+			height=7cm,
+			xmin=-30, xmax=30,
+			ymin=-10, ymax=10,
+			axis y line=center,
+			axis x line=middle,
+			ticklabel style={fill=white},
+			minor tick num=2,
+			grid=both,
+			grid style={line width=.1pt, draw=gridgray!10},
+			major grid style={line width=.2pt,draw=gridgray!50},
+			axis equal image,
+			xlabel={$\mathfrak{Re}(z)$},
+			ylabel={$\mathfrak{Im}(z)$}
+			]
+			\addplot [-stealth, thick, blue] coordinates { (0,0) (10,0) };
+			\addplot [-stealth, thick, red] coordinates { (10,0) (10,5) };
+			\addplot [-stealth, thick, teal] coordinates { (0,0) (10,5) };
+			\end{axis}
+			\node at (3.75,3.25) {$z=\textcolor{blue}{10}+\textcolor{red}{5}i=\begin{pmatrix}\textcolor{blue}{10}\\\textcolor{red}{5}\end{pmatrix}$};
+			\end{tikzpicture}
+		\end{center}Für die kartesische Form\index{Kartesische Form} ($z=a+b\cdot i$) gelten alle gängigen Rechengesetze. Es gibt jedoch auch etwas neues, das sich \textit{komplexe Konjugation}\index{Komplexe Konjugation} nennt. Das klingt kompliziert als es ist, denn man dreht nur das Vorzeichen der imaginären Zahl um schreibt zur Markierung einen Strich über die Zahl: $z=a+b\cdot i\Rightarrow \bar{z}=a-b\cdot i$. Was beim Rechen mit komplexen Zahl besonders interessant ist, ist wie wir damit wieder auf reelle Zahlen kommen. Da $i=\sqrt{-1}$ festgelegt ist, gilt somit auch $i^2=-1$. Das heißt z.~B., das Produkt aus $1+i$ und $-1-i$ ist $-2i$. Etwas schwieriger wird es bei der Division, da es durch das $i$ schwer werden kann zurück auf die kartesische Form zu kommen. Dafür gibt es einen kleinen Trick, denn es gilt $z\cdot \bar{z}=a^2+b^2$. Das kann man ganz einfach durch nachrechnen allgemein prüfen:
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			\begin{flalign*}
+				&&z\cdot \bar{z}=&(a+b\cdot i)\cdot (a-b\cdot i)\\
+				\Leftrightarrow&&=&a^2-abi+abi-(bi)^2\\
+				\Leftrightarrow&&=&a^2-abi+abi-b^2i^2&&\mid\text{denk daran, dass }i^2=-1\text{ gilt}\\
+				\Leftrightarrow&&=&a^2-abi+abi+b^2\\
+				\Leftrightarrow&&=&a^2+b^2&&
+			\end{flalign*}
 		\end{tcolorbox}
-		&
-		\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-			\textbf{Irrationale Zahlen}\index{Irrationale Zahl}\newline\newline
-			$\mathbb{R} \setminus \mathbb{Q}$
+		\noindent Das ist übrigens auch der Betrag der Zahl bzw. die Länge des Vektors ins Quadrat, denn wir erinnern uns, die Länge eines Vektors beträgt $\sqrt{a^2+b^2}$. Gut, aber wie hilft uns das jetzt zwei komplexe Zahlen zu dividieren? Nun, wenn wir in einer Gleichung mal Eins rechnen ist das ja eine Äquivalenzumformung\index{Äquivalenzumformung}, bzw. eigentlich verändern wir ja gar nichts wirklich, denn $1\cdot x$ ist $x$. Und was wollen erreichen? Dass im Nenner des Bruches kein $i$ mehr steht. Das bedeutet für die Rechnung $\frac{z_1}{z_2}$, wir multiplizieren mit $\frac{\bar{z_2}}{\bar{z_2}}$. Dazu ein praktisches Beispiel:
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			\begin{flalign*}
+				&&\frac{2+9i}{3-6i}=&\frac{2+9i}{3-6i}\cdot \frac{3+6i}{3+6i}\\
+				\Leftrightarrow&&=&\frac{(2+9i)\cdot(3+6i)}{(3-6i)\cdot(3+6i)}\\
+				\Leftrightarrow&&=&\frac{6+12i+27i+54i^2}{3^2+6^2}\\
+				\Leftrightarrow&&=&\frac{-48+39i}{45}\\
+				\Leftrightarrow&&=&-\frac{16}{15}+\frac{13}{15}i&&
+			\end{flalign*}
 		\end{tcolorbox}
-	\end{tabularx}
-	\egroup
-	\end{center}
-	\begin{center}
-		\bgroup
-		\def\arraystretch{0}
-		\def\tabcolsep{0pt}
-		\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
-			\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-				\textbf{Reelle Zahlen}\index{Reelle Zahl}\newline\newline
-				Die reellen Zahlen $\mathbb{R}$ umfassen die rationalen und irrationalen Zahlen.
-			\end{tcolorbox}}
-			&
-			\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-				\textbf{Rationale Zahlen}\index{Rationale Zahl}\newline\newline
-				$\mathbb{Q} = \left\{ \frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0 \right\}$
-			\end{tcolorbox}}
-		\end{tabularx}
-		\egroup
-	\end{center}
+		\subsubsection{Polarform}
+			Bis hierhin haben wir die kartesische Form\index{Kartesische Form} benutzt, die uns ganz einfach die Koordinaten in der gaußschen Zahlenebene ablesen lässt. Eine komplexe Zahl lässt sich jedoch auch auf andere Weise genau festlegen, nämlich mit der \textit{Polarform}\index{Polarform}. Dabei wir die Zahl durch die Länge des Vektors und dem Winkel zwischen Abszisse und Vektor festgelegt.
+			\begin{center}
+				\bgroup
+				\def\arraystretch{0}
+				\def\tabcolsep{0pt}
+				\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
+					\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+							\textbf{Kartesische Form}
+							\begin{center}
+								\begin{tikzpicture}
+								\begin{axis}[
+								width=7cm,
+								height=7cm,
+								xmin=-5, xmax=15,
+								ymin=-5, ymax=15,
+								axis y line=center,
+								axis x line=middle,
+								ticklabel style={fill=white},
+								minor tick num=2,
+								grid=both,
+								grid style={line width=.1pt, draw=gridgray!10},
+								major grid style={line width=.2pt,draw=gridgray!50},
+								axis equal image,
+								xlabel={$\mathfrak{Re}(z)$},
+								ylabel={$\mathfrak{Im}(z)$}
+								]
+								\addplot [dashed, blue] coordinates { (0,10) (5,10) };
+								\addplot [dashed, red] coordinates { (5,0) (5,10) };
+								\addplot [-stealth, thick, teal] coordinates { (0,0) (5,10) };
+								\end{axis}
+								\node at (4,3.25) {$\textcolor{blue}{5}+\textcolor{red}{10}i$};
+								\end{tikzpicture}
+							\end{center}
+							\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=gray]
+								\begin{flalign*}
+									z=a+b\cdot i
+								\end{flalign*}
+							\end{tcolorbox}
+					\end{tcolorbox}}
+					&
+					\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white]
+							\textbf{Polarform}
+							\begin{center}
+								\begin{tikzpicture}
+								\begin{axis}[
+								width=7cm,
+								height=7cm,
+								xmin=-5, xmax=15,
+								ymin=-5, ymax=15,
+								axis y line=center,
+								axis x line=middle,
+								ticklabel style={fill=white},
+								minor tick num=2,
+								grid=both,
+								grid style={line width=.1pt, draw=gridgray!10},
+								major grid style={line width=.2pt,draw=gridgray!50},
+								axis equal image,
+								xlabel={$\mathfrak{Re}(z)$},
+								ylabel={$\mathfrak{Im}(z)$}
+								]
+								\draw[orange] (axis cs:5,0)arc[radius=1.45cm,start angle=0,end angle=60];
+								\addplot [-stealth, thick, teal] coordinates { (0,0) (5,10) };
+								\node[orange] at (axis cs:2.6,1.75) {$\phi$};
+								\end{axis}
+								\node at (3.5,4.5) {$\textcolor{teal}{r}\cdot(\cos\textcolor{orange}{\phi}+i\cdot\sin\textcolor{orange}{\phi})$};
+								\end{tikzpicture}
+							\end{center}
+							\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=gray]
+								\begin{flalign*}
+								z=r\cdot(\cos\phi+i\cdot\sin\phi)=r\cdot e^{i\phi}
+								\end{flalign*}
+							\end{tcolorbox}
+					\end{tcolorbox}}
+				\end{tabularx}
+				\egroup
+			\end{center}
+			Hinweis: $r\cdot(\cos\phi+i\cdot\sin\phi)$ wird auch trigonometrische Darstellung und $r\cdot e^{i\phi}$ auch als Exponentialdarstellung der Polarform bezeichnet. $\phi$ wird auch als Argument der Zahl $z$ bezeichnet.\newline\newline
+			Natürlich gibt es auch Regeln, wie man zwischen kartesischer und Polarform umwandeln kann. Größtenteils sind diese sehr einfach, da sie sich aus dem Rechnen mit dem rechtwinkligen Dreieck herleiten, jedoch ein kleiner Hinweis: $sgn(b)$ (Signum\index{Signum}) meint das Vorzeichen von $b$ und $\arccos$ ist dasselbe wie $\cos^{-1}$ auf dem Taschenrechner.
+			\begin{tcolorbox}[boxsep=0pt,top=0.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+				Für die Umrechnung zwischen kartesischer Form und Polarform gelten folgende Gleichungen:
+				\begin{flalign*}
+					&r=\sqrt{a^2+b^2}\\
+					&\phi=\displaystyle \operatorname {sgn}(b)\cdot\arccos\left(\frac{a}{r}\right)\\
+					&a=r\cdot\cos(\phi)\\
+					&b=r\cdot\sin(\phi)&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Noch mal der Hinweis, wie $\displaystyle \operatorname {sgn}$ definiert ist:
+			\begin{flalign*}
+				{\displaystyle \operatorname {sgn}(x):={\begin{cases}+1&\;{\text{falls}}\quad x>0\\\;\;\,0&\;{\text{falls}}\quad x=0\\-1&\;{\text{falls}}\quad x<0\\\end{cases}}}&&
+			\end{flalign*}
+			\subsubsection{Komplexe Zahlen potenzieren}
+				Möchte man eine komplexe Zahl mit einer sehr hohen Zahl potenzieren, ist es ratsam, sie zunächst in die Exponentialdarstellung der Polarform zu bringen.
+				\begin{flalign*}
+					z^n=\left(r\cdot e^{i\phi}\right)^n=r^n\cdot e^{in\phi}\text{ wenn }n\in\mathbb{Z}&&
+				\end{flalign*}
+				Mithilfe der trigonometrischen Darstellung kann man ganz einfach den Real- und den Imaginärteil\index{Imaginärteil} bestimmen.
+				\begin{flalign*}
+				r^n\cdot e^{in\phi}=r^n\cdot(\cos(n\phi)+i\cdot\sin(n\phi))&&
+				\end{flalign*}
+				\begin{tcolorbox}[boxsep=0pt,top=0.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+					\textbf{Satz von de Moivre}
+					\begin{flalign*}
+						(\cos(\phi)+i\cdot\sin(\phi))^n=\cos(n\cdot\phi)+i\cdot\sin(n\cdot\phi)\text{ wenn }n\in\mathbb{Z}&&
+					\end{flalign*}
+				\end{tcolorbox}
+			\subsubsection{Komplexe Zahlen radizieren}
 \pagebreak
 \section{Elementare Rechengesetze, -verfahren und -notationen}
 \label{sec:rechengesetze}
@@ -294,8 +448,7 @@
 		$(a;b] = \: ]a;b] \: :=  \{ x \in \mathbb{R} \mid a < x \le b \}$
 	\subsection{Beträge}
 		\begin{flalign*}
-		\vert a \vert = \left\{ a \atop -a \right. \;\;&
-		a \ge 0 \atop a < 0 &
+		\vert a \vert = \genfrac{\{}{.}{0pt}{}{a}{-a}\;\;\genfrac{}{}{0pt}{}{a \ge 0}{a < 0}&&
 		\end{flalign*}
 		\begin{flalign*}
 		\vert -a \vert = \vert a \vert&&
@@ -890,6 +1043,7 @@
 		\end{tcolorbox}
 	\pagebreak
 	\section{Vektorgeometrie}
+	\label{sec:vektorgeometrie}
 		Vektoren kommen häufig in der Physik zum Einsatz, denn oftmals interessieren wir uns nicht nur für eine Größe an sich, sondern auch für ihre Richtung\index{Richtung}. Vektoren werden durch Pfeile gekennzeichnet $\vec v$, ihr Betrag $\vert\vec v\vert$ gibt uns ihre Länge. Wenn zwei gleichlange Vektoren in genau die entgegengesetzte Richtung zeigen ($\vec v$ und $-\vec v$), sprechen wir von \textit{Gegenvektoren}\index{Gegenvektor}. Ein Vektor mit der Länge Null, wird auch als \textit{Nullvektor}\index{Nullvektor} bezeichnet. Neben Vektoren, sind Pfeile ein wichtiger Begriff. Diese werden definiert durch ihren Anfangspunkt sowie, ihrem Endpunkt bzw. ihrer Länge und Richtung. Alle Pfeile der selben Länge und Richtung können in einer \textit{Pfeilklasse}\index{Pfeilklasse} zusammengefasst werden. Vektoren können als Pfeilklassen interpretiert werden, denn sie werden nicht durch ihren Anfangspunkt definiert, sondern nur durch Richtung und Länge. Vektoren können jedoch einen festen Anfangspunkt besitzen. In diesem Fall spricht man von \textit{gebundenen Vektoren}\index{Gebundener Vektor}, andernfalls von \textit{freien Vektoren}\index{Freier Vektor}. Außerdem existiert eine besondere Art von gebundenen Vektoren, die sogenannten \textit{Ortsvektoren}\index{Ortsvektor}, die ihren Anfangspunkt im Koordinatenursprung haben. Der Koordinatenursprung\index{Koordinatenursprung} wird mit $O=(0;0)$ bezeichnet.
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 			Vektoren werden folgendermaßen notiert:
@@ -1613,7 +1767,7 @@
 			\makeplot{{x+2},{abs(x+1)}}{{$f(x)=x+2$},{$f(x)=\vert x+1\vert$}}{{5.5,4},{9.5,3.2}}{-5,5}{-4,4}{-10:10}{100}{17cm,7cm}{sharp plot}
 			Zunächst setzen wir unsere Funktionen\index{Funktion} gleich\index{Gleichsetzen} und erhalten eine Betragsgleichung\index{Betragsgleichung}. Dann betrachten wir die verschiedenen Fälle für den Betrag.
 			\begin{flalign*}
-			\vert x+1\vert &= \left\{x+1\;\;\;\;\;\;\;\;\;Fall\;x\ge -1  \atop -(x+1)\;\;\;\;Fall\;x<-1 \right.&&
+			\vert x+1\vert = \genfrac{\{}{.}{0pt}{}{x+1}{-(x+1)}\genfrac{}{}{0pt}{}{\text{ falls }x\ge -1}{\text{ falls }x<-1}&&
 			\end{flalign*}
 			Durch die Fallunterscheidung\index{Fallunterscheidung} kann man die Betragsstriche\index{Betragsstrich} weglassen, indem man jeden Fall einzeln betrachtet. Hinterher muss man aber noch überprüfen, ob das Ergebnis der Bedingung für $x$ in dem Fall entspricht.\newline\newline
 			Fall $x\ge-1$ ($x+1$ ist positiv):
@@ -2092,7 +2246,7 @@
 	\end{flalign*}
 	Mit dem Grenzwert können wir jetzt eine zusammengesetzte Funktion\index{Zusammengesetzte Funktion} aufstellen.
 	\begin{flalign*}
-		f(x)=\left\{\frac{x^3}{x};\;\;\;\;x\neq 0\atop -5;\;\;\;\;\;x=0\right.&&
+		f(x)=\genfrac{\{}{.}{0pt}{}{\frac{x^3}{x}}{-5}\genfrac{}{}{0pt}{}{\text{ falls } x\neq 0}{\text{ falls } x=0}&&
 	\end{flalign*}
 	\subsection{Tangentengleichung}
 	\label{subsec:tangentengleichung}

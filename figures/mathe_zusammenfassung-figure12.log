@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  30 AUG 2021 13:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  1 SEP 2021 16:48
 entering extended mode
 **\def\tikzexternalrealjob{mathe_zusammenfassung}\input{mathe_zusammenfassung}
 (mathe_zusammenfassung.tex ("C:\Program Files\MiKTeX\tex/latex/base\article.cls
@@ -1393,192 +1393,228 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--245
  []
 
 
-Overfull \hbox (2.83301pt too wide) in paragraph at lines 249--249
+LaTeX Warning: Hyper reference `sec:vektorgeometrie' on page 2 undefined on inp
+ut line 249.
+
+
+LaTeX Warning: Reference `sec:vektorgeometrie' on page 2 undefined on input lin
+e 249.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (422.48886pt too wide) detected at line 282
+[]
+ []
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 286--286
+[] 
+ []
+
+
+Overfull \hbox (269.21648pt too wide) detected at line 292
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--307
+
+ []
+
+
+Overfull \hbox (2.83301pt too wide) in paragraph at lines 332--332
 []\OT1/cmr/bx/n/17.28 Elementare Re-chen-ge-set-ze, -verfahren und -notationen 
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--269
+Underfull \hbox (badness 10000) in paragraph at lines 343--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--269
+Underfull \hbox (badness 10000) in paragraph at lines 343--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--269
+Underfull \hbox (badness 10000) in paragraph at lines 343--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--269
+Underfull \hbox (badness 10000) in paragraph at lines 343--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--269
+Underfull \hbox (badness 10000) in paragraph at lines 343--352
 
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--273
+Underfull \hbox (badness 10000) in paragraph at lines 354--356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--295
+Underfull \hbox (badness 10000) in paragraph at lines 369--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--295
+Underfull \hbox (badness 10000) in paragraph at lines 369--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--295
+Underfull \hbox (badness 10000) in paragraph at lines 369--378
 
  []
 
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 299.
+(amsmath)                 on input line 382.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--308
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--308
+Underfull \hbox (badness 10000) in paragraph at lines 388--391
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 388--391
 
  []
 
 
-Overfull \hbox (15.68538pt too wide) detected at line 377
+Underfull \hbox (badness 10000) in paragraph at lines 439--440
+
+ []
+
+
+Overfull \hbox (15.68538pt too wide) detected at line 460
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
 
 
-LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 9 undefined on inpu
-t line 449.
+LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 11 undefined on inp
+ut line 532.
 
 
-LaTeX Warning: Reference `subsubsec:pqformel' on page 9 undefined on input line
- 449.
+LaTeX Warning: Reference `subsubsec:pqformel' on page 11 undefined on input lin
+e 532.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--466
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 473--476
+Underfull \hbox (badness 10000) in paragraph at lines 547--549
 
  []
 
 
-LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 10 undefined on inp
-ut line 480.
-
-
-LaTeX Warning: Reference `subsubsec:pqformel' on page 10 undefined on input lin
-e 480.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 485--488
+Underfull \hbox (badness 10000) in paragraph at lines 556--559
 
  []
 
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
 
 LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 12 undefined on inp
-ut line 502.
+ut line 563.
 
 
 LaTeX Warning: Reference `subsubsec:pqformel' on page 12 undefined on input lin
-e 502.
+e 563.
 
 
-LaTeX Warning: Hyper reference `subsec:intervalle' on page 12 undefined on inpu
-t line 508.
-
-
-LaTeX Warning: Reference `subsec:intervalle' on page 12 undefined on input line
- 508.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Hyper reference `subsec:betragsfunktionen' on page 13 undefined 
-on input line 515.
-
-
-LaTeX Warning: Reference `subsec:betragsfunktionen' on page 13 undefined on inp
-ut line 515.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Hyper reference `subsec:unglrechrgl' on page 13 undefined on inp
-ut line 548.
-
-
-LaTeX Warning: Reference `subsec:unglrechrgl' on page 13 undefined on input lin
-e 548.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 548--550
+Underfull \hbox (badness 10000) in paragraph at lines 568--571
 
  []
 
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 14 undefined on inp
+ut line 585.
+
+
+LaTeX Warning: Reference `subsubsec:pqformel' on page 14 undefined on input lin
+e 585.
+
+
+LaTeX Warning: Hyper reference `subsec:intervalle' on page 14 undefined on inpu
+t line 591.
+
+
+LaTeX Warning: Reference `subsec:intervalle' on page 14 undefined on input line
+ 591.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsec:betragsfunktionen' on page 15 undefined 
+on input line 598.
+
+
+LaTeX Warning: Reference `subsec:betragsfunktionen' on page 15 undefined on inp
+ut line 598.
+
 \openout7 = `figures/mathe_zusammenfassung-figure12.dpth'.
 
-[13
+[15
 
 \@writefile{toc}{\protect }
 \providecommand \oddpage@label [2]{}
 {C:/Users/Konstantin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 559--562
+
+LaTeX Warning: Hyper reference `subsec:unglrechrgl' on page 15 undefined on inp
+ut line 631.
+
+
+LaTeX Warning: Reference `subsec:unglrechrgl' on page 15 undefined on input lin
+e 631.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--633
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Underfull \hbox (badness 10000) in paragraph at lines 642--645
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 573--574
+Underfull \hbox (badness 10000) in paragraph at lines 656--657
 
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--604
+Underfull \hbox (badness 10000) in paragraph at lines 685--687
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--642
+Underfull \hbox (badness 10000) in paragraph at lines 723--725
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--724
+Underfull \hbox (badness 10000) in paragraph at lines 804--807
 
  []
 
@@ -1587,20 +1623,20 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 800--801
+Underfull \hbox (badness 10000) in paragraph at lines 883--884
 
  []
 
 
-LaTeX Warning: Hyper reference `subsec:trigonometrisch' on page 20 undefined on
- input line 807.
+LaTeX Warning: Hyper reference `subsec:trigonometrisch' on page 22 undefined on
+ input line 890.
 
 
-LaTeX Warning: Reference `subsec:trigonometrisch' on page 20 undefined on input
- line 807.
+LaTeX Warning: Reference `subsec:trigonometrisch' on page 22 undefined on input
+ line 890.
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 853--854
+Underfull \hbox (badness 1005) in paragraph at lines 936--937
 \OT1/cmr/m/n/12 F[]ur ein Pris-ma mit der Man-tel-fl[]ache $\OML/cmm/m/it/12 M$
 \OT1/cmr/m/n/12 , der Grund-fl[]ache $\OML/cmm/m/it/12 A$\OT1/cmr/m/n/12 , dem 
 Grund-
@@ -1615,453 +1651,453 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1041--1045
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1041--1045
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1129
 
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1105--1105
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
 
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 1105--1105
+Underfull \hbox (badness 2426) in paragraph at lines 1189--1189
 \OT1/cmr/m/n/12 Diese No-ta-ti-on ist wahr-schein-lich am ein-
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 1105--1105
+Underfull \hbox (badness 1248) in paragraph at lines 1189--1189
 \OT1/cmr/m/n/12 fachs-ten zu ver-ste-hen, denn man hat zwei
  []
 
 
-Underfull \hbox (badness 2351) in paragraph at lines 1105--1105
+Underfull \hbox (badness 2351) in paragraph at lines 1189--1189
 []\OT1/cmr/m/n/12 Punk-te[], zwi-schen de-nen man ei-ne []Ge-ra-de[]
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1148
+Underfull \hbox (badness 10000) in paragraph at lines 1232--1232
 
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 1148--1148
+Underfull \hbox (badness 6893) in paragraph at lines 1232--1232
 \OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form wird an einen
  []
 
 
-Underfull \hbox (badness 1642) in paragraph at lines 1148--1148
+Underfull \hbox (badness 1642) in paragraph at lines 1232--1232
 \OT1/cmr/m/n/12 tungs-vek-to-ren[] an-ge-legt. Die-ser []Vek-tor[] liegt
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 \OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form braucht einen
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 1182--1182
+Underfull \hbox (badness 1337) in paragraph at lines 1266--1266
 []\OT1/cmr/m/n/12 St[]utzvektor[] und einen []Nor-ma-len-vek-tor[], der
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
+Underfull \hbox (badness 10000) in paragraph at lines 1302--1302
 
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 1218--1218
+Underfull \hbox (badness 2426) in paragraph at lines 1302--1302
 \OT1/cmr/m/n/12 Diese No-ta-ti-on ist wahr-schein-lich am ein-
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 1218--1218
+Underfull \hbox (badness 1590) in paragraph at lines 1302--1302
 \OT1/cmr/m/n/12 fachs-ten zu ver-ste-hen, denn man hat drei
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1267--1267
+Underfull \hbox (badness 10000) in paragraph at lines 1351--1351
 
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 1267--1267
+Underfull \hbox (badness 2042) in paragraph at lines 1351--1351
 \OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form wer-den an einen
  []
 
 
-Underfull \hbox (badness 3780) in paragraph at lines 1267--1267
+Underfull \hbox (badness 3780) in paragraph at lines 1351--1351
 \OT1/cmr/m/n/12 Orts-vek-tor { ge-nannt []St[]utzvektor[] { zwei
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 1267--1267
+Underfull \hbox (badness 1038) in paragraph at lines 1351--1351
 []\OT1/cmr/m/n/12 Rich-tungs-vek-to-ren[] oder auch []Spann-vek-to-ren[]
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1307--1307
+Underfull \hbox (badness 10000) in paragraph at lines 1391--1391
 
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 1307--1307
+Underfull \hbox (badness 1383) in paragraph at lines 1391--1391
 \OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form braucht man nur
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 1307--1307
+Underfull \hbox (badness 2318) in paragraph at lines 1391--1391
 \OT1/cmr/m/n/12 vek-tor[] ist ein Vek-tor, der or-tho-go-nal zur
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1326--1328
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1346--1349
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1346--1349
-
- []
-
-
-LaTeX Warning: Hyper reference `sec:gleichungssysteme' on page 30 undefined on 
-input line 1355.
-
-
-LaTeX Warning: Reference `sec:gleichungssysteme' on page 30 undefined on input 
-line 1355.
-
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 1361--1361
-[] 
- []
-
-
-Overfull \hbox (262.64066pt too wide) detected at line 1364
-[]
- []
-
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 1367--1367
-[] 
- []
-
-
-Overfull \hbox (316.42342pt too wide) detected at line 1374
-[]
- []
-
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 1381--1381
-[] 
- []
-
-
-Overfull \hbox (421.63583pt too wide) detected at line 1396
-[]
- []
-
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 1402--1402
-[] 
- []
-
-
-Overfull \hbox (235.44266pt too wide) detected at line 1408
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1398--1409
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1410--1412
 
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 1415--1415
+Underfull \hbox (badness 10000) in paragraph at lines 1430--1433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1430--1433
+
+ []
+
+
+LaTeX Warning: Hyper reference `sec:gleichungssysteme' on page 32 undefined on 
+input line 1439.
+
+
+LaTeX Warning: Reference `sec:gleichungssysteme' on page 32 undefined on input 
+line 1439.
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 1445--1445
 [] 
  []
 
 
-Overfull \hbox (373.44147pt too wide) detected at line 1422
+Overfull \hbox (262.64066pt too wide) detected at line 1448
 []
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 1426--1426
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 1451--1451
 [] 
  []
 
 
-Overfull \hbox (371.35725pt too wide) detected at line 1431
+Overfull \hbox (316.42342pt too wide) detected at line 1458
 []
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 1435--1435
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 1465--1465
 [] 
  []
 
 
-Overfull \hbox (191.20634pt too wide) detected at line 1439
+Overfull \hbox (421.63583pt too wide) detected at line 1480
 []
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 1443--1443
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 1486--1486
 [] 
  []
 
 
-Overfull \hbox (399.17401pt too wide) detected at line 1448
+Overfull \hbox (235.44266pt too wide) detected at line 1492
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1456--1458
+Underfull \hbox (badness 10000) in paragraph at lines 1482--1493
 
  []
 
 
-LaTeX Warning: Hyper reference `subsec:ableitung' on page 34 undefined on input
- line 1474.
-
-
-LaTeX Warning: Reference `subsec:ableitung' on page 34 undefined on input line 
-1474.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1474--1479
+Underfull \hbox (badness 10000) in paragraph at lines 1494--1496
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1474--1479
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 1499--1499
+[] 
+ []
+
+
+Overfull \hbox (373.44147pt too wide) detected at line 1506
+[]
+ []
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 1510--1510
+[] 
+ []
+
+
+Overfull \hbox (371.35725pt too wide) detected at line 1515
+[]
+ []
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 1519--1519
+[] 
+ []
+
+
+Overfull \hbox (191.20634pt too wide) detected at line 1523
+[]
+ []
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 1527--1527
+[] 
+ []
+
+
+Overfull \hbox (399.17401pt too wide) detected at line 1532
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1540--1542
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1474--1479
+LaTeX Warning: Hyper reference `subsec:ableitung' on page 36 undefined on input
+ line 1558.
+
+
+LaTeX Warning: Reference `subsec:ableitung' on page 36 undefined on input line 
+1558.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1558--1563
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1474--1479
+Underfull \hbox (badness 10000) in paragraph at lines 1558--1563
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1474--1479
+Underfull \hbox (badness 10000) in paragraph at lines 1558--1563
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1474--1479
+Underfull \hbox (badness 10000) in paragraph at lines 1558--1563
 
  []
 
 
-LaTeX Warning: Hyper reference `subsec:ableitung' on page 34 undefined on input
- line 1481.
+Underfull \hbox (badness 10000) in paragraph at lines 1558--1563
+
+ []
 
 
-LaTeX Warning: Reference `subsec:ableitung' on page 34 undefined on input line 
-1481.
+Underfull \hbox (badness 10000) in paragraph at lines 1558--1563
+
+ []
+
+
+LaTeX Warning: Hyper reference `subsec:ableitung' on page 36 undefined on input
+ line 1565.
+
+
+LaTeX Warning: Reference `subsec:ableitung' on page 36 undefined on input line 
+1565.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1503--1506
-
- []
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1558--1559
-
- []
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1561--1563
-
- []
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 38 undefined on inp
-ut line 1609.
-
-
-LaTeX Warning: Reference `subsubsec:pqformel' on page 38 undefined on input lin
-e 1609.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1612--1613
-
- []
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1617--1620
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1623--1626
-
- []
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1642--1645
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1656--1659
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1674--1677
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1674--1677
+Underfull \hbox (badness 10000) in paragraph at lines 1587--1590
 
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1694--1696
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1706--1708
-
- []
-
-
-LaTeX Warning: Hyper reference `subsec:substitution' on page 42 undefined on in
-put line 1710.
-
-
-LaTeX Warning: Reference `subsec:substitution' on page 42 undefined on input li
-ne 1710.
-
-
-LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 42 undefined on inp
-ut line 1710.
-
-
-LaTeX Warning: Reference `subsubsec:pqformel' on page 42 undefined on input lin
-e 1710.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1710--1711
+Underfull \hbox (badness 10000) in paragraph at lines 1642--1643
 
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Hyper reference `subsubsec:ausklammern' on page 42 undefined on 
-input line 1727.
-
-
-LaTeX Warning: Reference `subsubsec:ausklammern' on page 42 undefined on input 
-line 1727.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1727--1728
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1647
 
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Hyper reference `sec:binomischeformeln' on page 43 undefined on 
-input line 1738.
+LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 40 undefined on inp
+ut line 1693.
 
 
-LaTeX Warning: Reference `sec:binomischeformeln' on page 43 undefined on input 
-line 1738.
+LaTeX Warning: Reference `subsubsec:pqformel' on page 40 undefined on input lin
+e 1693.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1738--1739
+Underfull \hbox (badness 10000) in paragraph at lines 1696--1697
 
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Overfull \hbox (0.62164pt too wide) in paragraph at lines 1749--1750
+Underfull \hbox (badness 10000) in paragraph at lines 1701--1704
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1707--1710
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1726--1729
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1740--1743
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1758--1761
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1758--1761
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1778--1780
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1790--1792
+
+ []
+
+
+LaTeX Warning: Hyper reference `subsec:substitution' on page 44 undefined on in
+put line 1794.
+
+
+LaTeX Warning: Reference `subsec:substitution' on page 44 undefined on input li
+ne 1794.
+
+
+LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 44 undefined on inp
+ut line 1794.
+
+
+LaTeX Warning: Reference `subsubsec:pqformel' on page 44 undefined on input lin
+e 1794.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1794--1795
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsubsec:ausklammern' on page 44 undefined on 
+input line 1811.
+
+
+LaTeX Warning: Reference `subsubsec:ausklammern' on page 44 undefined on input 
+line 1811.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1811--1812
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `sec:binomischeformeln' on page 45 undefined on 
+input line 1822.
+
+
+LaTeX Warning: Reference `sec:binomischeformeln' on page 45 undefined on input 
+line 1822.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1822--1823
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (0.62164pt too wide) in paragraph at lines 1833--1834
 \OT1/cmr/m/n/12 Wenn al-le an-de-ren Str[]ange rei-en, ist man lei-der ge-zwun
 -gen die Po-ly-nom-di-vi-si-on durch-zuf[]uhren.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1749--1750
+Underfull \hbox (badness 10000) in paragraph at lines 1833--1834
 
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1757--1761
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1757--1761
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1757--1761
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1845
 
  []
 
@@ -2074,49 +2110,49 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Hyper reference `subsec:logarithmusgesetze' on page 45 undefined
- on input line 1816.
+LaTeX Warning: Hyper reference `subsec:logarithmusgesetze' on page 47 undefined
+ on input line 1900.
 
 
-LaTeX Warning: Reference `subsec:logarithmusgesetze' on page 45 undefined on in
-put line 1816.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Hyper reference `subsec:potenzgesetze' on page 46 undefined on i
-nput line 1830.
-
-
-LaTeX Warning: Reference `subsec:potenzgesetze' on page 46 undefined on input l
-ine 1830.
-
-
-LaTeX Warning: Hyper reference `subsec:logarithmusgesetze' on page 46 undefined
- on input line 1830.
-
-
-LaTeX Warning: Reference `subsec:logarithmusgesetze' on page 46 undefined on in
-put line 1830.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Hyper reference `sec:geometrie' on page 46 undefined on input li
-ne 1845.
-
-
-LaTeX Warning: Reference `sec:geometrie' on page 46 undefined on input line 184
-5.
+LaTeX Warning: Reference `subsec:logarithmusgesetze' on page 47 undefined on in
+put line 1900.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Overfull \hbox (2.70984pt too wide) in paragraph at lines 1852--1858
+LaTeX Warning: Hyper reference `subsec:potenzgesetze' on page 48 undefined on i
+nput line 1914.
+
+
+LaTeX Warning: Reference `subsec:potenzgesetze' on page 48 undefined on input l
+ine 1914.
+
+
+LaTeX Warning: Hyper reference `subsec:logarithmusgesetze' on page 48 undefined
+ on input line 1914.
+
+
+LaTeX Warning: Reference `subsec:logarithmusgesetze' on page 48 undefined on in
+put line 1914.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `sec:geometrie' on page 48 undefined on input li
+ne 1929.
+
+
+LaTeX Warning: Reference `sec:geometrie' on page 48 undefined on input line 192
+9.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (2.70984pt too wide) in paragraph at lines 1936--1942
 \OT1/cmr/m/n/12 Bei Funk-tio-nen ist es so, dass je-dem Ab-szess ($\OML/cmm/m/i
 t/12 x$\OT1/cmr/m/n/12 -Achsenwert) ge-nau ei-ne Or-di-na-te ($\OML/cmm/m/it/12
  y$\OT1/cmr/m/n/12 -Achsenwert)
@@ -2125,109 +2161,109 @@ t/12 x$\OT1/cmr/m/n/12 -Achsenwert) ge-nau ei-ne Or-di-na-te ($\OML/cmm/m/it/12
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Hyper reference `subsubsec:monotonie' on page 48 undefined on in
-put line 1887.
+LaTeX Warning: Hyper reference `subsubsec:monotonie' on page 50 undefined on in
+put line 1971.
 
 
-LaTeX Warning: Reference `subsubsec:monotonie' on page 48 undefined on input li
-ne 1887.
+LaTeX Warning: Reference `subsubsec:monotonie' on page 50 undefined on input li
+ne 1971.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Hyper reference `sec:rechengesetze' on page 48 undefined on inpu
-t line 1889.
+LaTeX Warning: Hyper reference `sec:rechengesetze' on page 50 undefined on inpu
+t line 1973.
 
 
-LaTeX Warning: Reference `sec:rechengesetze' on page 48 undefined on input line
- 1889.
+LaTeX Warning: Reference `sec:rechengesetze' on page 50 undefined on input line
+ 1973.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1891--1894
+Underfull \hbox (badness 10000) in paragraph at lines 1975--1978
 
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 1891--1894
+Underfull \hbox (badness 2229) in paragraph at lines 1975--1978
 \OT1/cmr/m/n/12 Neben der oben ge-nann-ten Ab-lei-tungs-re-gel von Funk-tio-nen
 , gibt es noch
  []
 
 
-Overfull \hbox (63.66138pt too wide) detected at line 1910
+Overfull \hbox (63.66138pt too wide) detected at line 1994
 []
  []
 
 
-LaTeX Warning: Hyper reference `subsubsec:differentialquotient' on page 48 unde
-fined on input line 1913.
+LaTeX Warning: Hyper reference `subsubsec:differentialquotient' on page 50 unde
+fined on input line 1997.
 
 
-LaTeX Warning: Reference `subsubsec:differentialquotient' on page 48 undefined 
-on input line 1913.
-
-A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
-isable this.
-
-LaTeX Warning: Hyper reference `subsubsec:differenzenquotient' on page 49 undef
-ined on input line 1955.
-
-
-LaTeX Warning: Reference `subsubsec:differenzenquotient' on page 49 undefined o
-n input line 1955.
-
-
-LaTeX Warning: Hyper reference `subsec:ableitung' on page 49 undefined on input
- line 1967.
-
-
-LaTeX Warning: Reference `subsec:ableitung' on page 49 undefined on input line 
-1967.
+LaTeX Warning: Reference `subsubsec:differentialquotient' on page 50 undefined 
+on input line 1997.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1974--1977
+LaTeX Warning: Hyper reference `subsubsec:differenzenquotient' on page 51 undef
+ined on input line 2039.
+
+
+LaTeX Warning: Reference `subsubsec:differenzenquotient' on page 51 undefined o
+n input line 2039.
+
+
+LaTeX Warning: Hyper reference `subsec:ableitung' on page 51 undefined on input
+ line 2051.
+
+
+LaTeX Warning: Reference `subsec:ableitung' on page 51 undefined on input line 
+2051.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2058--2061
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1974--1977
+Underfull \hbox (badness 10000) in paragraph at lines 2058--2061
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1979--1986
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2070
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1979--1986
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2070
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1979--1986
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2070
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1979--1986
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2070
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1979--1986
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2070
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1979--1986
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2070
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1979--1986
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2070
 
  []
 
@@ -2240,240 +2276,240 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2115--2117
+Underfull \hbox (badness 10000) in paragraph at lines 2199--2201
 
  []
 
 
-LaTeX Warning: Hyper reference `subsubsec:symmetrie' on page 54 undefined on in
-put line 2118.
+LaTeX Warning: Hyper reference `subsubsec:symmetrie' on page 56 undefined on in
+put line 2202.
 
 
-LaTeX Warning: Reference `subsubsec:symmetrie' on page 54 undefined on input li
-ne 2118.
+LaTeX Warning: Reference `subsubsec:symmetrie' on page 56 undefined on input li
+ne 2202.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2121
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2118--2121
+Underfull \hbox (badness 10000) in paragraph at lines 2202--2205
 
  []
 
 
-LaTeX Warning: Hyper reference `sec:gleichungenvereinfachen' on page 54 undefin
-ed on input line 2129.
+Underfull \hbox (badness 10000) in paragraph at lines 2202--2205
+
+ []
 
 
-LaTeX Warning: Reference `sec:gleichungenvereinfachen' on page 54 undefined on 
-input line 2129.
+LaTeX Warning: Hyper reference `sec:gleichungenvereinfachen' on page 56 undefin
+ed on input line 2213.
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2133--2133
+LaTeX Warning: Reference `sec:gleichungenvereinfachen' on page 56 undefined on 
+input line 2213.
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2217--2217
 [] 
  []
 
 
-Overfull \hbox (535.62128pt too wide) detected at line 2145
+Overfull \hbox (535.62128pt too wide) detected at line 2229
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2129--2146
+Underfull \hbox (badness 10000) in paragraph at lines 2213--2230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2129--2146
+Underfull \hbox (badness 10000) in paragraph at lines 2213--2230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2151--2155
+Underfull \hbox (badness 10000) in paragraph at lines 2235--2239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2151--2155
+Underfull \hbox (badness 10000) in paragraph at lines 2235--2239
 
  []
 
 
-LaTeX Warning: Hyper reference `subsec:limes' on page 55 undefined on input lin
-e 2162.
+LaTeX Warning: Hyper reference `subsec:limes' on page 57 undefined on input lin
+e 2246.
 
 
-LaTeX Warning: Reference `subsec:limes' on page 55 undefined on input line 2162
+LaTeX Warning: Reference `subsec:limes' on page 57 undefined on input line 2246
 .
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2167--2167
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2251--2251
 [] 
  []
 
 
-Overfull \hbox (357.9013pt too wide) detected at line 2171
+Overfull \hbox (357.9013pt too wide) detected at line 2255
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2162--2172
+Underfull \hbox (badness 10000) in paragraph at lines 2246--2256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2162--2172
+Underfull \hbox (badness 10000) in paragraph at lines 2246--2256
 
  []
 
 
-LaTeX Warning: Hyper reference `subsubsec:extrema' on page 56 undefined on inpu
-t line 2179.
+LaTeX Warning: Hyper reference `subsubsec:extrema' on page 58 undefined on inpu
+t line 2263.
 
 
-LaTeX Warning: Reference `subsubsec:extrema' on page 56 undefined on input line
- 2179.
+LaTeX Warning: Reference `subsubsec:extrema' on page 58 undefined on input line
+ 2263.
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2184--2184
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2268--2268
 [] 
  []
 
 
-Overfull \hbox (233.40071pt too wide) detected at line 2189
+Overfull \hbox (233.40071pt too wide) detected at line 2273
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2179--2190
+Underfull \hbox (badness 10000) in paragraph at lines 2263--2274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2179--2190
+Underfull \hbox (badness 10000) in paragraph at lines 2263--2274
 
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2193--2193
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2277--2277
 [] 
  []
 
 
-Overfull \hbox (413.75496pt too wide) detected at line 2205
+Overfull \hbox (413.75496pt too wide) detected at line 2289
 []
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2220--2220
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2304--2304
 [] 
  []
 
 
-Overfull \hbox (296.45386pt too wide) detected at line 2225
+Overfull \hbox (296.45386pt too wide) detected at line 2309
 []
  []
 
 
-LaTeX Warning: Hyper reference `subsubsec:extrema' on page 57 undefined on inpu
-t line 2228.
+LaTeX Warning: Hyper reference `subsubsec:extrema' on page 59 undefined on inpu
+t line 2312.
 
 
-LaTeX Warning: Reference `subsubsec:extrema' on page 57 undefined on input line
- 2228.
+LaTeX Warning: Reference `subsubsec:extrema' on page 59 undefined on input line
+ 2312.
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2233--2233
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2317--2317
 [] 
  []
 
 
-Overfull \hbox (450.63031pt too wide) detected at line 2241
+Overfull \hbox (450.63031pt too wide) detected at line 2325
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2228--2242
+Underfull \hbox (badness 10000) in paragraph at lines 2312--2326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2228--2242
+Underfull \hbox (badness 10000) in paragraph at lines 2312--2326
 
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2254--2254
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2338--2338
 [] 
  []
 
 
-Overfull \hbox (309.8942pt too wide) detected at line 2258
+Overfull \hbox (309.8942pt too wide) detected at line 2342
 []
  []
 
 
-LaTeX Warning: Hyper reference `subsec:tangentengleichung' on page 58 undefined
- on input line 2261.
+LaTeX Warning: Hyper reference `subsec:tangentengleichung' on page 60 undefined
+ on input line 2345.
 
 
-LaTeX Warning: Reference `subsec:tangentengleichung' on page 58 undefined on in
-put line 2261.
+LaTeX Warning: Reference `subsec:tangentengleichung' on page 60 undefined on in
+put line 2345.
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2266--2266
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2350--2350
 [] 
  []
 
 
-Overfull \hbox (368.26749pt too wide) detected at line 2270
+Overfull \hbox (368.26749pt too wide) detected at line 2354
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2261--2271
+Underfull \hbox (badness 10000) in paragraph at lines 2345--2355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2261--2271
+Underfull \hbox (badness 10000) in paragraph at lines 2345--2355
 
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2274--2274
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2358--2358
 [] 
  []
 
 
-Overfull \hbox (408.69585pt too wide) detected at line 2278
+Overfull \hbox (408.69585pt too wide) detected at line 2362
 []
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Hyper reference `sec:integralrechnung' on page 59 undefined on i
-nput line 2284.
+LaTeX Warning: Hyper reference `sec:integralrechnung' on page 61 undefined on i
+nput line 2368.
 
 
-LaTeX Warning: Reference `sec:integralrechnung' on page 59 undefined on input l
-ine 2284.
+LaTeX Warning: Reference `sec:integralrechnung' on page 61 undefined on input l
+ine 2368.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2284--2288
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2284--2288
+Underfull \hbox (badness 10000) in paragraph at lines 2368--2372
 
  []
 
 
-Overfull \hbox (29.82614pt too wide) detected at line 2294
+Underfull \hbox (badness 10000) in paragraph at lines 2368--2372
+
+ []
+
+
+Overfull \hbox (29.82614pt too wide) detected at line 2378
 []
  []
 
@@ -2484,97 +2520,97 @@ isable this.
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Hyper reference `subsubsec:flaechenberechnung' on page 61 undefi
-ned on input line 2430.
+LaTeX Warning: Hyper reference `subsubsec:flaechenberechnung' on page 63 undefi
+ned on input line 2514.
 
 
-LaTeX Warning: Reference `subsubsec:flaechenberechnung' on page 61 undefined on
- input line 2430.
+LaTeX Warning: Reference `subsubsec:flaechenberechnung' on page 63 undefined on
+ input line 2514.
 
 
-LaTeX Warning: Hyper reference `subsec:ableitung' on page 61 undefined on input
- line 2432.
+LaTeX Warning: Hyper reference `subsec:ableitung' on page 63 undefined on input
+ line 2516.
 
 
-LaTeX Warning: Reference `subsec:ableitung' on page 61 undefined on input line 
-2432.
+LaTeX Warning: Reference `subsec:ableitung' on page 63 undefined on input line 
+2516.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2434--2437
+Underfull \hbox (badness 10000) in paragraph at lines 2518--2521
 
  []
 
 
-Overfull \hbox (14.23396pt too wide) detected at line 2450
+Overfull \hbox (14.23396pt too wide) detected at line 2534
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2454--2456
+Underfull \hbox (badness 10000) in paragraph at lines 2538--2540
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2509--2510
+Underfull \hbox (badness 10000) in paragraph at lines 2593--2594
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2509--2510
+Underfull \hbox (badness 10000) in paragraph at lines 2593--2594
 
  []
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-LaTeX Warning: Hyper reference `subsubsec:newtonverfahren' on page 64 undefined
- on input line 2558.
+LaTeX Warning: Hyper reference `subsubsec:newtonverfahren' on page 66 undefined
+ on input line 2642.
 
 
-LaTeX Warning: Reference `subsubsec:newtonverfahren' on page 64 undefined on in
-put line 2558.
+LaTeX Warning: Reference `subsubsec:newtonverfahren' on page 66 undefined on in
+put line 2642.
 
 A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
 isable this.
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2606--2606
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2690--2690
 [] 
  []
 
 
-Overfull \hbox (273.4401pt too wide) detected at line 2614
+Overfull \hbox (273.4401pt too wide) detected at line 2698
 []
  []
 
 
-LaTeX Warning: Hyper reference `subsubsec:umkehrbarkeit' on page 65 undefined o
-n input line 2616.
+LaTeX Warning: Hyper reference `subsubsec:umkehrbarkeit' on page 67 undefined o
+n input line 2700.
 
 
-LaTeX Warning: Reference `subsubsec:umkehrbarkeit' on page 65 undefined on inpu
-t line 2616.
+LaTeX Warning: Reference `subsubsec:umkehrbarkeit' on page 67 undefined on inpu
+t line 2700.
 
 No file figures/mathe_zusammenfassung-figure12.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2619.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2619.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2619.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2619.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2703.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2703.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2703.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2703.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 43878 strings out of 480790
- 1036448 string characters out of 2907040
- 1666026 words of memory out of 3000000
- 58948 multiletter control sequences out of 15000+200000
+ 43891 strings out of 480790
+ 1036725 string characters out of 2907040
+ 1622043 words of memory out of 3000000
+ 58961 multiletter control sequences out of 15000+200000
  542902 words of font info for 65 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  68i,31n,114p,1528b,2127s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on figures/mathe_zusammenfassung-figure12.pdf (1 page, 41397 byt
+Output written on figures/mathe_zusammenfassung-figure12.pdf (1 page, 40493 byt
 es).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)

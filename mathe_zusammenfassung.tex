@@ -271,7 +271,8 @@
 			\end{axis}
 			\node at (3.75,3.25) {$z=\textcolor{blue}{10}+\textcolor{red}{5}i=\begin{pmatrix}\textcolor{blue}{10}\\\textcolor{red}{5}\end{pmatrix}$};
 			\end{tikzpicture}
-		\end{center}Für die kartesische Form\index{Kartesische Form} ($z=a+b\cdot i$) gelten alle gängigen Rechengesetze. Es gibt jedoch auch etwas neues, das sich \textit{komplexe Konjugation}\index{Komplexe Konjugation} nennt. Das klingt kompliziert als es ist, denn man dreht nur das Vorzeichen der imaginären Zahl um schreibt zur Markierung einen Strich über die Zahl: $z=a+b\cdot i\Rightarrow \bar{z}=a-b\cdot i$. Was beim Rechen mit komplexen Zahl besonders interessant ist, ist wie wir damit wieder auf reelle Zahlen kommen. Da $i=\sqrt{-1}$ festgelegt ist, gilt somit auch $i^2=-1$. Das heißt z.~B., das Produkt aus $1+i$ und $-1-i$ ist $-2i$. Etwas schwieriger wird es bei der Division, da es durch das $i$ schwer werden kann zurück auf die kartesische Form zu kommen. Dafür gibt es einen kleinen Trick, denn es gilt $z\cdot \bar{z}=a^2+b^2$. Das kann man ganz einfach durch nachrechnen allgemein prüfen:
+		\end{center}
+		Für die kartesische Form\index{Kartesische Form} ($z=a+b\cdot i$) gelten alle gängigen Rechengesetze. Es gibt jedoch auch etwas neues, das sich \textit{komplexe Konjugation}\index{Komplexe Konjugation} nennt. Das klingt kompliziert als es ist, denn man dreht nur das Vorzeichen der imaginären Zahl um schreibt zur Markierung einen Strich über die Zahl: $z=a+b\cdot i\Rightarrow \bar{z}=a-b\cdot i$. Was beim Rechen mit komplexen Zahl besonders interessant ist, ist wie wir damit wieder auf reelle Zahlen kommen. Da $i=\sqrt{-1}$ festgelegt ist, gilt somit auch $i^2=-1$. Das heißt z.~B., das Produkt aus $1+i$ und $-1-i$ ist $-2i$. Etwas schwieriger wird es bei der Division, da es durch das $i$ schwer werden kann zurück auf die kartesische Form zu kommen. Dafür gibt es einen kleinen Trick, denn es gilt $z\cdot \bar{z}=a^2+b^2$. Das kann man ganz einfach durch nachrechnen allgemein prüfen:
 		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
 			\begin{flalign*}
 				&&z\cdot \bar{z}=&(a+b\cdot i)\cdot (a-b\cdot i)\\
@@ -384,21 +385,96 @@
 				{\displaystyle \operatorname {sgn}(x):={\begin{cases}+1&\;{\text{falls}}\quad x>0\\\;\;\,0&\;{\text{falls}}\quad x=0\\-1&\;{\text{falls}}\quad x<0\\\end{cases}}}&&
 			\end{flalign*}
 			\subsubsection{Komplexe Zahlen potenzieren}
-				Möchte man eine komplexe Zahl mit einer sehr hohen Zahl potenzieren, ist es ratsam, sie zunächst in die Exponentialdarstellung der Polarform zu bringen.
-				\begin{flalign*}
-					z^n=\left(r\cdot e^{i\phi}\right)^n=r^n\cdot e^{in\phi}\text{ wenn }n\in\mathbb{Z}&&
-				\end{flalign*}
-				Mithilfe der trigonometrischen Darstellung kann man ganz einfach den Real- und den Imaginärteil\index{Imaginärteil} bestimmen.
+			\label{subsubsec:komplexpotenz}
+				Möchte man eine komplexe Zahl mit einer sehr hohen Zahl potenzieren, ist es ratsam, sie zunächst in die Polarform zu bringen.
+				Das hat den Hintergrund, dass wir dann die \highlight{subsec:potenzgesetze}{Potenzgesetze} anwenden können, allerdings nur, wenn die Potenz eine ganze Zahl ist. Dieser Zusammenhang wurde erstmals von Abraham de Moivre entdeckt und entsprechend benannt. 
 				\begin{flalign*}
 				r^n\cdot e^{in\phi}=r^n\cdot(\cos(n\phi)+i\cdot\sin(n\phi))&&
 				\end{flalign*}
-				\begin{tcolorbox}[boxsep=0pt,top=0.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+				\begin{tcolorbox}[boxsep=0pt,top=0.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm, enlarge bottom by=0.25cm]
 					\textbf{Satz von de Moivre}
+					\index{Satz von de Moivre}
 					\begin{flalign*}
-						(\cos(\phi)+i\cdot\sin(\phi))^n=\cos(n\cdot\phi)+i\cdot\sin(n\cdot\phi)\text{ wenn }n\in\mathbb{Z}&&
+						(\cos(\phi)+i\cdot\sin(\phi))^n=\cos(n\cdot\phi)+i\cdot\sin(n\cdot\phi)=e^{in\phi}\text{ wenn }n\in\mathbb{Z}&&
 					\end{flalign*}
 				\end{tcolorbox}
+				\noindent Zur Anwendung dieser Formel, hier ein Beispiel:
+				\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+					\begin{flalign*}
+						&&z=&\left(\frac{\sqrt{2}}{2}-\frac{\sqrt{2}}{2}i\right)^{20}\\
+						&&r=&\sqrt{\left(\frac{\sqrt{2}}{2}\right)^2+\left(-\frac{\sqrt{2}}{2}\right)^2}\\
+						\Leftrightarrow&&=&1\\
+						&&\phi=&\displaystyle \operatorname {sgn}\left(-\frac{\sqrt{2}}{2}\right)\cdot\arccos\left(\frac{\sqrt{2}}{2}\right)&&\mid\text{Achtung: Bogenmaß verwenden!}\\
+						\Leftrightarrow&&=&-\frac{1}{4}\pi\\
+						&&z=&(1\cdot e^{-\frac{1}{4}\pi i})^{20}\\
+						\Leftrightarrow&&=&e^{-5\pi i}=e^{\pi i}=\cos(\pi)+i\cdot\sin(\pi)=-1&&
+					\end{flalign*}
+				\end{tcolorbox}
+				\noindent Das Ergebnis einer solchen Rechnung wird i.~d.~R. so gekürzt, dass der Winkel zwischen $0$ und $2\pi$ bzw. $0^{\circ}$ und $360^{\circ}$ liegt, indem man jeweils eine Umdrehung dazu rechnet oder abzieht ($\pm2\pi$ oder $\pm360^{\circ}$). Das hat den Hintergrund, dass eine Drehung des Vektors um mehr als $360^{\circ}$ nur unnötig kompliziert wäre, denn man braucht in der Ebene nur maximal $360^{\circ}$ und kann seinen Vektor in jede Richtung zeigen lassen.
 			\subsubsection{Komplexe Zahlen radizieren}
+				Wie wir wurzeln aus einer komplexen Zahl ziehen, können wir uns mit den \highlight{subsec:potenzgesetze}{Potenzgesetzen} herleiten. Der große Unterschied zum Potenzieren mit einer ganzen Zahl ist, dass wir mehrere Ergebnisse erhalten. Beim Rechnen der $n$-ten Wurzel, gibt es $n$ Ergebnisse um genau zu sein. Welchen Hintergrund das hat, schauen wir uns hier an. Anschließend folgt ein Beispiel. Hinweis: für dieses Kapitel solltest du das Kapitel zum \highlight{subsubsec:komplexpotenz}{Potenzieren} von komplexen Zahlen gelesen haben.\newline\newline
+				Zunächst ist es wieder sehr hilfreich, die komplexe Zahl in der Polarform vorliegen zu haben. Außerdem wissen wir, dass wir beliebig oft um $2\pi$ drehen können, weshalb wir zum Winkel $\phi$ Umdrehungen der Anzahl $k$ hinzufügen: $2\pi k$.
+				\begin{flalign*}
+					r\cdot e^{i\phi}=r\cdot e^{i(\phi+2\pi k)}&&
+				\end{flalign*}
+				Wenn wir jetzt die $n$-te Wurzel ziehen sollen, erhalten wir:
+				\begin{flalign*}
+					\sqrt[n]{r\cdot e^{i(\phi+2\pi k)}}&&
+				\end{flalign*}
+				Laut Potenzgesetze\index{Potenzgesetz} können wir das auch schreiben als:
+				\begin{flalign*}
+					&(r\cdot e^{i(\phi+2\pi k)})^{\frac{1}{n}}\\
+					=&r^{\frac{1}{n}}\cdot e^{i\frac{1}{n}(\phi+2\pi k)}\\
+					=&r^{\frac{1}{n}}\cdot e^{i\left(\frac{\phi}{n}+\frac{2\pi}{n}k\right)}&&
+				\end{flalign*}
+				Von Interesse ist die letzte Zeile. Das $r$ lassen wir mal außen vor, da es für alle Ergebnisse gleich ist und die folgende Erklärung dem Winkel gilt. Wir haben ja in der Polarform in der Exponentialschreibweise normalerweise zu stehen $i\phi$. Jetzt wo wir unseren Term so umgeformt haben, ist unser Winkel $\phi$ gleich $\frac{\phi}{n}+\frac{2\pi}{n}k$.
+				\begin{center}
+					\begin{tikzpicture}
+					\begin{axis}[
+					width=17cm,
+					height=10cm,
+					xmin=-16, xmax=16,
+					ymin=-10, ymax=10,
+					axis y line=center,
+					axis x line=middle,
+					minor tick num=2,
+					grid=both,
+					grid style={line width=.1pt, draw=gridgray!10},
+					major grid style={line width=.2pt,draw=gridgray!50},
+					axis equal image,
+					xlabel={$\mathfrak{Re}(z)$},
+					ylabel={$\mathfrak{Im}(z)$},
+					yticklabels={,,},
+					xticklabels={,,}
+					]
+					\draw (axis cs:0,0) circle (3cm);
+					\node[anchor=west] at (axis cs:-14,8) {$\phi=\frac{1}{4}\pi$};
+					\node[anchor=west] at (axis cs:-14,6) {$n=6$};
+					\node[anchor=east] at (axis cs:14,6) {$\textcolor{red}{\frac{\phi}{n}}+\textcolor{blue}{\frac{2\pi}{n}k}$};
+					\node[anchor=west, red] at (axis cs:4,2) {$\frac{\phi}{n}$};
+					\fill[blue] (axis cs:0,0) ++(405:3cm) circle[radius=2pt] node[above right] {$k=0$};
+					\fill[blue] (axis cs:0,0) ++(105:3cm) circle[radius=2pt] node[above left] {$k=1$};
+					\fill[blue] (axis cs:0,0) ++(165:3cm) circle[radius=2pt] node[left] {$k=2$};
+					\fill[blue] (axis cs:0,0) ++(225:3cm) circle[radius=2pt] node[below left] {$k=3$};
+					\fill[blue] (axis cs:0,0) ++(285:3cm) circle[radius=2pt] node[below right] {$k=4$};
+					\fill[blue] (axis cs:0,0) ++(345:3cm) circle[radius=2pt] node[right] {$k=5$};
+					\addplot [-stealth, red] coordinates { (0,0) (5,5) };
+					\draw[stealth-,red] (axis cs:4.5,4.5) arc (45:0:2.7cm);
+					\draw[-stealth,blue] (axis cs:4.5,4.5) arc (45:105:2.7cm);
+					\draw[-stealth,blue] (axis cs:4,4) arc (45:165:2.4cm);
+					\draw[-stealth,blue] (axis cs:3.5,3.5) arc (45:225:2.1cm);
+					\draw[-stealth,blue] (axis cs:3,3) arc (45:285:1.8cm);
+					\draw[-stealth,blue] (axis cs:2.5,2.5) arc (45:345:1.5cm);
+					\end{axis}
+					\end{tikzpicture}
+				\end{center}
+				Was die obige Abbildung bedeutet ist folgendes: Der Term $\textcolor{red}{\frac{\phi}{n}}$ bleibt konstant; er ist unser Startwinkel. In diesem Fall sind das 45 Grad. Jetzt addieren wir noch $\textcolor{blue}{\frac{2\pi}{n}k}$ dazu und das für jedes $k$ zwischen $0$ und $n-1$. In diesem Fall addieren wir jedes Mal 60 Grad drauf. Für $k=1$ hätten wir z.~B. einen Winkel von 105 Grad. So kriegen wir am Ende 6 verschiedene Lösungen, deren Beträge zwar alle gleich sind, aber deren Argumente (Winkel) sich unterscheiden.\newline\newline
+				Wie versprochen dazu noch ein Beispiel:
+				\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+					\begin{flalign*}
+					\text{Beispiel folgt}
+					\end{flalign*}
+				\end{tcolorbox}
 \pagebreak
 \section{Elementare Rechengesetze, -verfahren und -notationen}
 \label{sec:rechengesetze}

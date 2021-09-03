@@ -14,7 +14,7 @@
   \item Annähern, \hyperpage{45}, \hyperpage{57}
   \item Anstieg, \hyperpage{62}, \hyperpage{69}
   \item Ausklammern, \hyperpage{53}, \hyperpage{56}
-  \item Aussage, \hyperpage{48}
+  \item Aussage, \hyperpage{48}, \hyperpage{83}
   \item Ausschließen, \hyperpage{52}
 
   \indexspace
@@ -46,6 +46,7 @@
   \item Differenzfunktion, \hyperpage{80, 81}
   \item Differenzierbar, \hyperpage{67}
   \item Differenzieren, \hyperpage{78}
+  \item Disjunktion, \hyperpage{83}
   \item Diskriminante, \hyperpage{11}
   \item Dividend, \hyperpage{10}
   \item Divisor, \hyperpage{10}, \hyperpage{55}, \hyperpage{64}
@@ -126,6 +127,7 @@
   \item Imaginäre Einheit, \hyperpage{5}
   \item Imaginäre Zahl, \hyperpage{5}
   \item Imaginärteil, \hyperpage{5}
+  \item Implikation, \hyperpage{83}
   \item Injektivität, \hyperpage{43}
   \item Innere Funktion, \hyperpage{60}
   \item Integrieren, \hyperpage{78}
@@ -141,6 +143,8 @@
   \item Koeffizient, \hyperpage{52}
   \item Komplexe Konjugation, \hyperpage{5}
   \item Komplexe Zahlen, \hyperpage{5}
+  \item Konjunktion, \hyperpage{83}
+  \item Kontravalenz, \hyperpage{83}
   \item Koordinate, \hyperpage{75}
   \item Koordinatenform, \hyperpage{35, 36}, \hyperpage{41}, 
 		\hyperpage{61}
@@ -190,6 +194,7 @@
   \item Nachkommastelle, \hyperpage{46}
   \item Natürliche Zahl, \hyperpage{4}
   \item Natürlicher Logarithmus, \hyperpage{15}
+  \item Negation, \hyperpage{83}
   \item Negativ, \hyperpage{21}, \hyperpage{51}
   \item Nenner, \hyperpage{21}, \hyperpage{57}
   \item Newtonverfahren, \hyperpage{45}
@@ -246,6 +251,7 @@
   \item Quadratische Funktion, \hyperpage{19}
   \item Quadratische Gleichung, \hyperpage{16}
   \item Quadratische Ungleichung, \hyperpage{19}
+  \item Quantor, \hyperpage{83}
   \item Quotient, \hyperpage{63}
 
   \indexspace
@@ -305,6 +311,7 @@
   \item Tangente, \hyperpage{62}, \hyperpage{64}, \hyperpage{69}
   \item Tangentengleichung, \hyperpage{69}, \hyperpage{74}
   \item Taschenrechner, \hyperpage{60}
+  \item Tautologie, \hyperpage{83}
   \item Term, \hyperpage{15--17}, \hyperpage{71}
   \item Transformieren, \hyperpage{60}
   \item Trigonometrische Funktion, \hyperpage{29}, \hyperpage{60}
@@ -336,9 +343,12 @@
   \indexspace
 
   \item Wachsen, \hyperpage{43}
+  \item Wahrheitstafel, \hyperpage{83}
+  \item Wahrheitswert, \hyperpage{83}
   \item Wendepunkt, \hyperpage{69}, \hyperpage{73}, \hyperpage{75}
   \item Wendestelle, \hyperpage{74}
   \item Wertetabelle, \hyperpage{45}, \hyperpage{81}
+  \item Widerspruch, \hyperpage{83}
   \item Windschief, \hyperpage{39}, \hyperpage{41}
   \item Winkel, \hyperpage{30}
   \item Winkelfunktion, \hyperpage{60}
@@ -357,6 +367,7 @@
 
   \indexspace
 
+  \item Äquivalenz, \hyperpage{83}
   \item Äquivalenzumformung, \hyperpage{6}, \hyperpage{16}, 
 		\hyperpage{47}
   \item Äußere Funktion, \hyperpage{60}

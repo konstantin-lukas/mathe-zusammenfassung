@@ -2845,5 +2845,47 @@
 			\end{tcolorbox}
 			\noindent Hinweis: Wenn um die $y$-Achse rotiert werden soll, muss man diese Formel auf die \highlight{subsubsec:umkehrbarkeit}{Umkehrfunktion}\index{Umkehrfunktion} anwenden!
 	\pagebreak
+	\section{Logik}
+		Die Grundlagen der Logik ähneln stark der Logik in Programmiersprachen, jedoch mit andern Symbolen. Die wichtigsten Begriffe sind zunächst einmal Negation\index{Negation} ($\lnot$, „nicht“), Konjunktion\index{Konjunktion} ($\land$,  „und“), Disjunktion\index{Disjunktion} ($\lor$, „oder“), Kontravalenz\index{Kontravalenz} ($\nLeftrightarrow$, „entweder oder“), Äquivalenz\index{Äquivalenz} ($\Leftrightarrow$) und Implikation\index{Implikation} ($\Rightarrow$). Außerdem redet man bei $W$ (wahr) und $F$ (falsch) von Wahrheitswerten\index{Wahrheitswert}. Ob Aussagen\index{Aussage} wahr oder falsch sind, wird oft in Wahrheitstafeln\index{Wahrheitstafel} dargestellt. Dazu eine Übersicht:
+		\begin{center}
+			\bgroup
+			\def\arraystretch{1.5}
+			\begin{tabularx}{\linewidth}{|l|l|@{\hspace{0.5cm}}|X|X|X|X|X|X|}
+				\hline
+				$A$ & $B$ & $\lnot A$ & $A\land B$ & $A\lor B$ &  $A\dot\lor B$ & $A\Leftrightarrow B$ & $A\Rightarrow B$ \\ \hline
+				$W$ & $W$ & $F$ & $W$ & $W$ & $F$ & $W$ & $W$ \\ \hline
+				$W$ & $F$ & $F$ & $F$ & $W$ & $W$ & $F$ & $F$ \\ \hline
+				$F$ & $W$ & $W$ & $F$ & $W$ & $W$ & $F$ & $W$ \\ \hline
+				$F$ & $F$ & $W$ & $F$ & $F$ & $F$ & $W$ & $W$ \\ \hline
+			\end{tabularx}
+			\egroup
+		\end{center}
+		Übrigens eine Eselsbrücke, um die Zeichen für Konjunktion und Disjunktion zu unterscheiden, sind die drei O: „Oder Oben Offen“. Und noch ein Hinweis: Die Implikation hat kein genaues Äquivalent in der Programmierung. Am besten merkt man sicher, dass eine Implikation immer wahr ist, außer für den Fall $W\Rightarrow F$.\newline\newline
+		Wenn eine Formel in jedem Szenario (für alle Bewertungen) wahr ist, dann spricht man von einer Tautologie\index{Tautologie}. Beispielsweise ist $A\lor\lnot A$ eine solche Tautologie. Anders herum nennt man $A\land\lnot A$ einen Widerspruch\index{Widerspruch}.\newline\newline
+		Man kann des weiteren Aussagen auch von Elementen einer Menge abhängig machen. Dabei unterscheidet man, für wie viele Elemente die Aussage gelten soll. Dazu noch mal eine Übersicht:
+		\begin{center}
+			\bgroup
+			\def\arraystretch{1.5}
+			\begin{tabularx}{\linewidth}{|X|X|X|X|}
+				\hline
+				Alle $x$ & Mindestens ein $x$ & Genau ein $x$ & Kein $x$ \\ \hline
+				$\forall x\in M:A(x)$ & $\exists x\in M:A(x)$ & $\exists! x\in M:A(x)$ & $\nexists x\in M:A(x)$ \\ \hline
+			\end{tabularx}
+			\egroup
+		\end{center}
+		Ein Beispiel: $A(x) = x$ ist eine natürliche Zahl\newline
+		Die Aussage $\exists x\in \mathbb{Z}:A(x)$ ist wahr, da die ganzen Zahlen die natürlichen Zahlen beinhalten. Wenn die Aussage jedoch $\forall x\in \mathbb{Z}:A(x)$ wäre, wäre sie falsch, da z.~B. $A(-1)$ dem widerspricht. Wenn man mehrere Quantoren\index{Quantor} benutzt, kann man gleiche auch zusammen fassen. So kann man anstatt
+		\begin{flalign*}
+			\forall a\in \mathbb{N}:\forall b\in \mathbb{N}:a>b&&
+		\end{flalign*}
+		kann man auch Folgendes schreiben:
+		\begin{flalign*}
+			\forall a,b\in \mathbb{N}:a>b.&&
+		\end{flalign*}
+		\subsection{Beweise}
+			\subsubsection{Direkter Beweis}
+			\subsubsection{Indirekter Beweis}
+			\subsubsection{Vollständige Induktion}
+	\pagebreak
 	\printindex
 \end{document}

@@ -5,8 +5,8 @@
 \indexentry{Mengen|hyperpage}{4}
 \indexentry{Natürliche Zahl|hyperpage}{4}
 \indexentry{Menge der natürlichen Zahlen|hyperpage}{4}
-\indexentry{Ganze Zahl|hyperpage}{4}
-\indexentry{Irrationale Zahl|hyperpage}{4}
+\indexentry{Ganze Zahl|hyperpage}{5}
+\indexentry{Irrationale Zahl|hyperpage}{5}
 \indexentry{Reelle Zahl|hyperpage}{5}
 \indexentry{Rationale Zahl|hyperpage}{5}
 \indexentry{Komplexe Zahlen|hyperpage}{5}
@@ -21,8 +21,8 @@
 \indexentry{Kartesische Form|hyperpage}{6}
 \indexentry{Polarform|hyperpage}{6}
 \indexentry{Signum|hyperpage}{7}
-\indexentry{Satz von de Moivre|hyperpage}{7}
-\indexentry{Potenzgesetz|hyperpage}{8}
+\indexentry{Satz von de Moivre|hyperpage}{8}
+\indexentry{Potenzgesetz|hyperpage}{9}
 \indexentry{Kehrwert|hyperpage}{10}
 \indexentry{Divisor|hyperpage}{10}
 \indexentry{Dividend|hyperpage}{10}
@@ -529,3 +529,6 @@
 \indexentry{Tautologie|hyperpage}{83}
 \indexentry{Widerspruch|hyperpage}{83}
 \indexentry{Quantor|hyperpage}{83}
+\indexentry{Direkter Beweis|hyperpage}{84}
+\indexentry{Indirekter Beweis|hyperpage}{84}
+\indexentry{Vollständige Induktion|hyperpage}{85}

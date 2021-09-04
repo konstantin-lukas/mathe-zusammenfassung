@@ -46,6 +46,7 @@
   \item Differenzfunktion, \hyperpage{80, 81}
   \item Differenzierbar, \hyperpage{67}
   \item Differenzieren, \hyperpage{78}
+  \item Direkter Beweis, \hyperpage{84}
   \item Disjunktion, \hyperpage{83}
   \item Diskriminante, \hyperpage{11}
   \item Dividend, \hyperpage{10}
@@ -87,7 +88,7 @@
 
   \indexspace
 
-  \item Ganze Zahl, \hyperpage{4}, \hyperpage{46}
+  \item Ganze Zahl, \hyperpage{5}, \hyperpage{46}
   \item Ganzrationale Funktion, \hyperpage{52}
   \item Gauß-Verfahren, \hyperpage{26}
   \item Gaußsche Zahlenebene, \hyperpage{5}
@@ -128,11 +129,12 @@
   \item Imaginäre Zahl, \hyperpage{5}
   \item Imaginärteil, \hyperpage{5}
   \item Implikation, \hyperpage{83}
+  \item Indirekter Beweis, \hyperpage{84}
   \item Injektivität, \hyperpage{43}
   \item Innere Funktion, \hyperpage{60}
   \item Integrieren, \hyperpage{78}
   \item Intervall, \hyperpage{19}, \hyperpage{44}, \hyperpage{81}
-  \item Irrationale Zahl, \hyperpage{4}
+  \item Irrationale Zahl, \hyperpage{5}
 
   \indexspace
 
@@ -232,7 +234,7 @@
   \item Positiv, \hyperpage{21}, \hyperpage{47}
   \item Potenz, \hyperpage{46}, \hyperpage{52}, \hyperpage{55}
   \item Potenzfunktion, \hyperpage{46}, \hyperpage{62}
-  \item Potenzgesetz, \hyperpage{8}, \hyperpage{12}, \hyperpage{59}
+  \item Potenzgesetz, \hyperpage{9}, \hyperpage{12}, \hyperpage{59}
   \item Potenzieren, \hyperpage{47}
   \item Potenzrechnung, \hyperpage{15}
   \item Prisma, \hyperpage{30}
@@ -277,7 +279,7 @@
   \indexspace
 
   \item Satz des Pythagoras, \hyperpage{34}
-  \item Satz von de Moivre, \hyperpage{7}
+  \item Satz von de Moivre, \hyperpage{8}
   \item Satz von Viëta, \hyperpage{17}
   \item Scheinlösung, \hyperpage{47}
   \item Schnittgerade, \hyperpage{41}
@@ -337,6 +339,7 @@
   \item Vereinigung, \hyperpage{4}
   \item Vergleichszeichen, \hyperpage{19}
   \item Verkettung, \hyperpage{60}
+  \item Vollständige Induktion, \hyperpage{85}
   \item Volumen, \hyperpage{30, 31}
   \item Vorzeichen, \hyperpage{21}, \hyperpage{45}
 

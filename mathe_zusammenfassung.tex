@@ -192,6 +192,14 @@
 			\end{flalign*}
 		\end{flushleft}
 	\end{multicols}
+	\noindent \textbf{Noch ein paar Notationsnormen:}
+	\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+		\begin{flalign*}
+			&\text{Anzahl der Elemente in einer Menge: }&\vert M\vert = x\\
+			&\text{Echte Teilmenge N von M: }&N\subsetneq M\\
+			&\text{Teilmenge N von M, die gleich M sein kann: }&N\subseteq M&&
+		\end{flalign*}
+	\end{tcolorbox}
 	\subsection{Definierte Zahlenmengen}
 	\index{Mengen}
 		\begin{center}
@@ -2883,9 +2891,79 @@
 			\forall a,b\in \mathbb{N}:a>b.&&
 		\end{flalign*}
 		\subsection{Beweise}
+			Oft reicht es in der Mathematik nicht aus nur ein Ergebnis zu berechnen, sondern man muss auch beweisen, dass das was man da gemacht hat stimmt. Beweise zu finden ist nicht so trivial, wie Zahlen in eine Formel einzusetzen. Man muss ein bisschen kreativ sein und viel üben. Dafür gibt es verschiedene Herangehensweisen, die man kennen sollte.
 			\subsubsection{Direkter Beweis}
+				Beim direkten Beweis\index{Direkter Beweis} versucht man über Zwischenschritte zu zeigen, dass aus $A$ auch wirklich $B$ folgt. Die Idee ist simpel, aber einen Beweis zu finden ist nicht immer einfach, deshalb ein Beispiel:\newline\newline
+				$\text{Zu beweisen ist, dass für ein ungerades }n\in\mathbb{N} \text{ gilt, dass }n^2-1\text{ durch }4\text{ teilbar ist.}$
+				\begin{flalign*}
+					n\text{ ungerade}\Rightarrow\;&\text{Es gibt ein }k\in\mathbb{N}\text{, dass }n=2k+1\text{ erfüllt.}\\
+					\Leftrightarrow\;&\exists k\in\mathbb{N}: n^2-1=(2k+1)^2-1\\
+					\Leftrightarrow\;&\exists k\in\mathbb{N}: n^2-1=4k^2+4k\\
+					\Leftrightarrow\;&\exists k\in\mathbb{N}: n^2-1=4(k^2+k)\\
+					\Rightarrow\;&\exists m\in\mathbb{N}: n^2-1=4m\\
+					\Rightarrow\;&n^2-1\text{ ist durch 4 teilbar, da es das Vierfache einer natürlich Zahl }m\text{ ist.}&&
+				\end{flalign*}
 			\subsubsection{Indirekter Beweis}
+				Anders als beim direkten Beweis zeigt man beim indirekten Beweis\index{Indirekter Beweis} nicht, dass $A\Rightarrow B$ gilt, sondern $\lnot B\Rightarrow\lnot A$ oder auch $A\land\lnot B\Rightarrow F$. Dass diese Ausdrücke äquivalent sind, kann man anhand einer Wahrheitstafel überprüfen, denn sind alle Bewertungen gleich, sind die Ausdrücke äquivalent.
+				\begin{center}
+					\bgroup
+					\def\arraystretch{1.5}
+					\begin{tabularx}{\linewidth}{|l|l|@{\hspace{0.5cm}}|X|X|X|}
+						\hline
+						$A$ & $B$ & $A\Rightarrow B$ & $\lnot B\Rightarrow \lnot A$ & $A\land\lnot B\Rightarrow F$ \\ \hline
+						$W$ & $W$ & $W$ & $W$ & $W$ \\ \hline
+						$W$ & $F$ & $F$ & $F$ & $F$ \\ \hline
+						$F$ & $W$ & $W$ & $W$ & $W$ \\ \hline
+						$F$ & $F$ & $W$ & $W$ & $W$ \\ \hline
+					\end{tabularx}
+					\egroup
+				\end{center}
+				Dazu nochmal ein Beispiel: $\sqrt{2}\text{ ist irrational.}$
+				\begin{flalign*}
+					\sqrt{2}\text{ ist irrational.}\Rightarrow&\sqrt{2}\neq\frac{p}{q} \mid p, q \in \mathbb{N}, q \neq 0 \text{, p und q teilerfremd.}\\
+					\Updownarrow&\\
+					\sqrt{2}=\frac{p}{q} \mid p, q \in \mathbb{N}, q &\neq 0 \text{, p und q teilerfremd.}\Rightarrow\sqrt{2}\text{ ist rational.}\\
+					\Rightarrow&\;\sqrt{2}=\frac{p}{q}\\
+					\Leftrightarrow&\;2=\frac{p^2}{q^2}\\
+					\Leftrightarrow&\;2q^2=p^2\\
+					\Rightarrow&\;p^2\text{ ist gerade.}
+					\Rightarrow p\text{ ist gerade.}\\
+					\Rightarrow&\;p=2k\\
+					\Rightarrow&\;2q^2=4k^2\\
+					\Leftrightarrow&\;q^2=2k^2\\
+					\Rightarrow&\;q^2\text{ ist gerade.}
+					\Rightarrow q\text{ ist gerade.}\\
+					\Rightarrow&\;\sqrt{2}\text{ ist irrational, da p und q beide gerade und somit}\\
+					&\;\text{beide durch zwei teilbar, also nicht teilerfremd sind.}&&
+				\end{flalign*}
 			\subsubsection{Vollständige Induktion}
+				Die vollständige Induktion\index{Vollständige Induktion} wird genutzt um Aussagen der Form $\forall n\in\mathbb{N}:A(n)$ zu beweisen. Das wird in zwei Schritten getan. Zunächst beweist man durch Einsetzen (Induktionsanfang), dass die Aussage für das kleinstmögliche $n$ wahr ist. Wenn man dann im Indikationsschritt zeigen kann, dass die Aussage, wenn sie für $n$ gilt auch für $n+1$ gilt, hat man einen Beweis. Das kommt daher, dass man für das kleinste $n$ eindeutig durch einsetzen bewiesen hat. Dieses $n$ beweist dann, dass $n+1$ die Aussage erfüllt. Dieses wiederum beweist, dass $n+2$ die Aussage erfüllt und so weiter. Auch das erklärt sich am besten wieder mal mit einem Beispiel:\newline\newline
+				Zu beweisen ist diese Aussage:
+				\begin{flalign*}
+					A(n)=\forall n\in\mathbb{N}:\sum^n_{k=1}k=\frac{n(n+1)}{2}&&
+				\end{flalign*}
+				\textbf{1. Indikationsanfang}
+				\begin{flalign*}
+				\sum^1_{k=1}k=1\\
+				\frac{1(1+1)}{2}=1&&
+				\end{flalign*}
+				Damit haben schon einmal bewiesen, dass es ein $n$ gibt, dass diese Aussage erfüllt.\newline\newline
+				\textbf{2. Indikationsschritt}
+				\begin{flalign*}
+					&\text{Indikationsvoraussetzung: }\exists n\in\mathbb{N}:\sum^n_{k=1}k=\frac{n(n+1)}{2}\\
+					&\text{Zu zeigen: }\sum^{n+1}_{k=1}k=\frac{(n+1)(n+2)}{2}&&
+				\end{flalign*}
+				Um jetzt zu zeigen, dass die Aussage für $n+1$ ebenfalls stimmt, wenn sie für $n$ stimmt, setzen wir sie gleich mit der Aussage für $n$ plus den Teil, der den Unterschied zwischen den beiden bildet ($n+1$). Das ist logisch, da wir nur noch den fehlenden Summanden drauf rechnen.
+				\begin{flalign*}
+					\sum^{n+1}_{k=1}k=\sum^n_{k=1}k+(n+1)&&
+				\end{flalign*}
+				Ich glaube, wir können uns darauf einigen, dass die obige Gleichung allgemein-mathematisch wahr ist. Wenn wir jetzt die Summenzeichen durch unsere zu zeigenden Formeln ersetzen, müsste die Gleichung – sofern die Aussage vom Anfang wahr ist – immer noch wahr sein. Dann hätten wir gezeigt, dass die Aussage für $n+1$ dasselbe ist, wie die Aussage für $n$ plus den fehlenden Teil ($n+1$).
+				\begin{flalign*}
+					&\frac{(n+1)(n+2)}{2}=\frac{n(n+1)}{2}+n+1\\
+					\Leftrightarrow\;&(n+1)(n+2)=n(n+1)+2(n+1)\\
+					\Leftrightarrow\;&n+2=n+2&&
+				\end{flalign*}
+				Wir sehen jetzt ganz klar, dass wir eine wahre Aussage haben. Jetzt haben wir gezeigt, dass unter der Voraussetzung, dass es ein $n$ gibt, dass die Aussage erfüllt, auch $n+1$ die Aussage erfüllt. Da wir am Anfang bewiesen haben, dass $n=1$ die Gleichung erfüllt, ist sie somit auch für $n=2$ erfüllt und wenn wir wissen, dass sie für $n=2$ erfüllt ist, ist sie auch für $n=3$ erfüllt und so weiter!
 	\pagebreak
 	\printindex
 \end{document}

@@ -124,7 +124,7 @@
 			\end{tikzpicture}&&
 			\end{flalign*}
 			\begin{flalign*}
-			A \cup B := \{x \mid x \in A \: oder \: x \in B\}&&
+			A \cup B := \{x \mid x \in A \: \lor \: x \in B\}&&
 			\end{flalign*}
 		\end{flushleft}
 		\begin{flushleft}
@@ -143,7 +143,7 @@
 			\end{tikzpicture}&&
 			\end{flalign*}
 			\begin{flalign*}
-			A \cap B := \{x \mid x \in A \: und \: x \in B\}&&
+			A \cap B := \{x \mid x \in A \: \land \: x \in B\}&&
 			\end{flalign*}
 		\end{flushleft}
 	\end{multicols}
@@ -166,7 +166,7 @@
 			\end{tikzpicture}&&
 			\end{flalign*}
 			\begin{flalign*}
-			A \setminus B := \{x \mid x \in A \: und \: x \notin B\}&&
+			A \setminus B := \{x \mid x \in A \: \land \: x \notin B\}&&
 			\end{flalign*}
 		\end{flushleft}
 		\begin{flushleft}
@@ -200,6 +200,8 @@
 			&\text{Teilmenge N von M, die gleich M sein kann: }&N\subseteq M&&
 		\end{flalign*}
 	\end{tcolorbox}
+	 \noindent Die Potenzmenge\index{Potenzmenge} einer Menge $M=\{1;2\}$ beinhaltet alle möglichen Teilmengen von $M$: $\mathfrak{P}(M)=\{\emptyset;\{1\};\{2\};\{1;2\}\}$.\newline\newline
+	 Das Komplement\index{Komplement} einer Menge $M$ in einem Universum $U$ enthält alle Elemente, die nicht in $M$ sind, aber im Universum $U$ existieren. Sind das Universum z.~B. die natürlichen Zahlen, so gilt: $M^C=\bar M=\mathbb{N}\setminus M$.
 	\subsection{Definierte Zahlenmengen}
 	\index{Mengen}
 		\begin{center}
@@ -213,7 +215,7 @@
 				\end{tcolorbox}
 				&
 				\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-					\textbf{Menge der Natürliche Zahlen}\index{Menge der natürlichen Zahlen}\newline\newline
+					\textbf{Natürliche Zahlen mit Null}\index{Menge der natürlichen Zahlen}\newline\newline
 					$\mathbb{N}_0 = \{ 0; 1; 2; 3; ... \}$
 				\end{tcolorbox}
 			\end{tabularx}
@@ -249,6 +251,70 @@
 				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
 					\textbf{Rationale Zahlen}\index{Rationale Zahl}\newline\newline
 					$\mathbb{Q} = \left\{ \frac{p}{q} \mid p, q \in \mathbb{Z}, q \neq 0 \right\}$
+				\end{tcolorbox}}
+			\end{tabularx}
+			\egroup
+		\end{center}
+	\subsection{Abbildungen}
+		Abbildungen\index{Abbildung} ordnen jedem Wert einer Menge $A$ einen Wert aus der Menge $B$ mithilfe einer Vorschrift $T$ zu. In der Analysis kommen Abbildungen in Form von Funktionen zum Einsatz. Man findet sie aber auch in der Geometrie, Stochastik oder der linearen Algebra. Wenn man ein Element $y$ aus der Menge $B$ nimmt, dem ein $x$ aus der Menge $A$ zugeordnet wird, spricht man vom \textit{Bild}\index{Bild} von $x$. Die Notation ist wie folgt:
+		\begin{flalign*}
+			T:A\rightarrow B,x\mapsto T(x)&&
+		\end{flalign*}
+		Dabei ist $A$ der \textit{Definitionsbereich}\index{Definitionsbereich} und $B$ der \textit{Zielbereich}\index{Zielbereich} von $T$.\newline\newline
+		Für die Begriffe injektiv, surjektiv und bijektiv, schaue dir das Kapitel zur \highlight{subsubsec:umkehrbarkeit}{Umkehrbarkeit} an, denn diese gelten ebenfalls ganz generell für Abbildungen und nicht nur für Funktionen.
+	\subsection{Kartesisches Produkt}
+		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
+		\begin{center}
+			\bgroup
+			\def\arraystretch{0}
+			\def\tabcolsep{0pt}
+			\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+						$[4;11]\times [5;9]$
+						\begin{center}
+							\begin{tikzpicture}
+							\begin{axis}[
+							width=7cm,
+							height=7cm,
+							xmin=-5, xmax=15,
+							ymin=-5, ymax=15,
+							axis y line=center,
+							axis x line=middle,
+							ticklabel style={fill=white},
+							minor tick num=2,
+							grid=both,
+							grid style={line width=.1pt, draw=gridgray!10},
+							major grid style={line width=.2pt,draw=gridgray!50},
+							axis equal image
+							]
+							\fill[blue] (axis cs: 4,5) rectangle (axis cs: 11,9);
+							\end{axis}
+							\end{tikzpicture}
+						\end{center}
+				\end{tcolorbox}}
+				&
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white]
+						$[5;9]\times [4;11]$
+						\begin{center}
+							\begin{tikzpicture}
+							\begin{axis}[
+							width=7cm,
+							height=7cm,
+							xmin=-5, xmax=15,
+							ymin=-5, ymax=15,
+							axis y line=center,
+							axis x line=middle,
+							ticklabel style={fill=white},
+							minor tick num=2,
+							grid=both,
+							grid style={line width=.1pt, draw=gridgray!10},
+							major grid style={line width=.2pt,draw=gridgray!50},
+							axis equal image
+							]
+							\fill[red] (axis cs: 5,4) rectangle (axis cs: 9,11);
+							\end{axis}
+							\end{tikzpicture}
+						\end{center}
 				\end{tcolorbox}}
 			\end{tabularx}
 			\egroup
@@ -2087,7 +2153,7 @@
 			Verkettungen\index{Verkettung} sind eigentliche keine eigene Funktionsart, sondern eine Möglichkeit Funktionen durch Zusammensetzung zu transformieren\index{Transformieren}. Man schreibt das als $f\circ g$ ("f nach g"). Man spricht hier bei $g$ auch von der \textit{inneren Funktion}\index{Innere Funktion}, da sie als Argument in die \textit{äußere Funktion}\index{Äußere Funktion} $f$ eingesetzt wird.
 			\makeplot{{sin(deg(x))},{(x^2)/2},{sin(deg((x^2)/2))}}{{$f(x)=\sin(x)$},{$g(x)=\frac{x^2}{3}$},{$f\circ g(x)=\sin(\frac{x^2}{3})$}}{{1.5,-1},{4.5,-1},{8,-1}}{-10,10}{-2,2}{-10:10}{200}{17cm,7cm}{smooth}
 		\subsection{Kreisgleichungen}
-			Bei Funktionen ist es so, dass jedem Abszess\index{Abszess} ($x$-Achsenwert) genau eine Ordinate\index{Ordinate} ($y$-Achsenwert) zugeordnet werden kann. Das ist eine Besonderheit von Funktionen und nicht des Koordinatensystems an sich. Im Koordinatensystem\index{Koordinatensystem} können wir noch viele andere Gebilde darstellen, so z.~B. auch einen Kreis\index{Kreis}.
+			Bei Funktionen ist es so, dass jeder Abszisse\index{Abszisse} ($x$-Achsenwert) genau eine Ordinate\index{Ordinate} ($y$-Achsenwert) zugeordnet werden kann. Das ist eine Besonderheit von Funktionen und nicht des Koordinatensystems an sich. Im Koordinatensystem\index{Koordinatensystem} können wir noch viele andere Gebilde darstellen, so z.~B. auch einen Kreis\index{Kreis}.
 			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.45cm]
 				Für die Koordinatenform\index{Koordinatenform} eines Kreises mit dem Radius $r$ und dem Mittelpunkt $M(x_m\mid y_m)$ gilt folgende Notation:
 				\begin{flalign*}

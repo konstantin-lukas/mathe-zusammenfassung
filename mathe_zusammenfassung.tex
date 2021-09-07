@@ -24,6 +24,7 @@
 \usepackage{tabularx}
 \renewcommand\tabularxcolumn[1]{m{#1}}
 \usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
 \usepackage{array}
 \usepackage[most]{tcolorbox}
 \usepackage[hidelinks]{hyperref}
@@ -195,13 +196,13 @@
 	\noindent \textbf{Noch ein paar Notationsnormen:}
 	\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
 		\begin{flalign*}
-			&\text{Anzahl der Elemente in einer Menge: }&\vert M\vert = x\\
+			&\text{Anzahl der Elemente in einer Menge (Mächtigkeit): }&\vert M\vert = x\\
 			&\text{Echte Teilmenge N von M: }&N\subsetneq M\\
 			&\text{Teilmenge N von M, die gleich M sein kann: }&N\subseteq M&&
 		\end{flalign*}
 	\end{tcolorbox}
 	 \noindent Die Potenzmenge\index{Potenzmenge} einer Menge $M=\{1;2\}$ beinhaltet alle möglichen Teilmengen von $M$: $\mathfrak{P}(M)=\{\emptyset;\{1\};\{2\};\{1;2\}\}$.\newline\newline
-	 Das Komplement\index{Komplement} einer Menge $M$ in einem Universum $U$ enthält alle Elemente, die nicht in $M$ sind, aber im Universum $U$ existieren. Sind das Universum z.~B. die natürlichen Zahlen, so gilt: $M^C=\bar M=\mathbb{N}\setminus M$.
+	 Das Komplement\index{Komplement} einer Menge $M$ in einem Universum\index{Universum} $U$ enthält alle Elemente, die nicht in $M$ sind, aber im Universum $U$ existieren. Sind das Universum z.~B. die natürlichen Zahlen, so gilt: $M^C=\bar M=\mathbb{N}\setminus M$.
 	\subsection{Definierte Zahlenmengen}
 	\index{Mengen}
 		\begin{center}
@@ -3030,6 +3031,85 @@
 					\Leftrightarrow\;&n+2=n+2&&
 				\end{flalign*}
 				Wir sehen jetzt ganz klar, dass wir eine wahre Aussage haben. Jetzt haben wir gezeigt, dass unter der Voraussetzung, dass es ein $n$ gibt, dass die Aussage erfüllt, auch $n+1$ die Aussage erfüllt. Da wir am Anfang bewiesen haben, dass $n=1$ die Gleichung erfüllt, ist sie somit auch für $n=2$ erfüllt und wenn wir wissen, dass sie für $n=2$ erfüllt ist, ist sie auch für $n=3$ erfüllt und so weiter!
+	\section{Stochastik}
+		Einem stochastischen Modell liegt zunächst die Grundmenge\index{Grundmenge} oder auch das Universum\index{Universum} $\Omega$ zu Grunde. Das ist eine Menge, die alle möglichen Ausgänge für das jeweilige Zufallsexperiment\index{Zufallsexperiment} beinhaltet. Für einen Würfelwurf wäre die Grundmenge bspw. $\Omega=\{1;2;3;4;5;6\}$. Die Elemente in $\Omega$ (groß Omega) werden mit $\omega$ (klein Omega) bezeichnet und heißt Ergebnis\index{Ergebnis}. Jede Teilmenge von $\Omega$ wird als Ereignis\index{Ereignis} bezeichnet. Die Wahrscheinlichkeit eines Ereignisses wird mit einem $P$ für Probabilität angegeben: $P(\{\omega\})$. Wenn die Wahrscheinlichkeit aller Ergebnisse gleich ist und nur endliche viele mögliche Ergebnisse existieren, spricht man von einem Laplace-Experiment\index{Laplace-Experiment}.\newline\newline
+		Von großer Bedeutung, wenn es um Kombinatorik\index{Kombinatorik} geht, sind die Fakultät\index{Fakultät} $n!$ und der Binomialkoeffizient\index{Binomialkoeffizient} $\begin{pmatrix}n\\k\end{pmatrix}$. Diese sind wie folgt definiert:
+		\begin{center}
+			\bgroup
+			\def\arraystretch{0}
+			\def\tabcolsep{0pt}
+			\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+						\textbf{Fakultät}
+						\begin{flalign*}
+						n!:=\prod^n_{k=1}k,&& 0!=1&&
+						\end{flalign*}
+				\end{tcolorbox}}
+				&
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.74cm,arc=0pt,auto outer arc,colback=white]
+						\textbf{Binomialkoeffizient}
+						\begin{flalign*}
+						\genfrac{(}{)}{0pt}{}{n}{k}:=\frac{n!}{(n-k)!\cdot k!},&&\genfrac{(}{)}{0pt}{}{n}{0}=1&&
+						\end{flalign*}
+				\end{tcolorbox}}
+			\end{tabularx}
+			\egroup
+		\end{center}
+		Die Kombinatorik hilft uns herauszufinden, wie viele Möglichkeiten es für Anordnungen gibt. Dabei unterscheidet man verschiedene Arten von Modellen. Im Großen und Ganzen gibt es drei Arten. Die Erste ist die Permutation\index{Permutation}. Dabei untersucht man die komplette Grundmenge. Wenn man nur eine Teilmenge untersucht, gibt es noch mal eine Unterscheidung. Wenn die Reihenfolge in der Teilmenge wichtig ist, spricht man von Variation\index{Variation}, ansonsten von Kombination\index{Kombination}. Für diese drei Fälle gibt es jeweils zwei Möglichkeiten zur Berechnung der Anzahl der Möglichkeiten, je nachdem ob Elemente mehrfach auftreten oder nicht.
+		\begin{center}
+			\bgroup
+			\tikzstyle{decision} = [rectangle, draw=red, fill=red!20, 
+			text width=6em, text badly centered, node distance=3cm, inner sep=0pt, inner sep=6pt, rounded corners]
+			\tikzstyle{block} = [rectangle, draw=teal, fill=teal!20, 
+			text width=6em, text centered, inner sep=6pt]
+			\tikzstyle{result} = [rectangle, draw=violet, fill=violet!20, 
+			text centered, inner sep=6pt, minimum height=3em]
+			\tikzstyle{line} = [draw, -stealth]
+			\begin{tikzpicture}[align=center]
+			% Place nodes
+			\node [block] (init) {Grundmenge};
+			\node [decision, below=.5cm of init] (decide) {alle Elemente?};
+			\node [decision, below=1cm of decide] (reihenfolge) {Reihenfolge relevant?};
+			\node [block, below=1cm of reihenfolge] (kombination) {Kombination};
+			\node [block, left=2cm of kombination] (variation) {Variation};
+			\node [block, left=2cm of variation, anchor=east] (permutation) {Permutation};
+			\node [decision, below=.5cm of permutation] (permutationW) {Mehrfache Elemente?};
+			\node [decision, below=.5cm of variation] (variationW) {Mehrfache Elemente?};
+			\node [decision, below=.5cm of kombination] (kombinationW) {Mehrfache Elemente?};
+			\node [result, below left=1cm and -0.5cm of permutationW] (permutationYes) {$\frac{k!}{m_1!\cdot m_2!\cdot ...\cdot m_n!}$};
+			\node [result, below=1cm of permutationW] (permutationNo) {$n!$};
+			\node [result, below left=1cm and 0cm of variationW] (variationYes) {$n^k$};
+			\node [result, below=1cm of variationW] (variationNo) {$\frac{n!}{(n-k)!}$};
+			\node [result, below left=1cm and 0cm of kombinationW] (kombinationYes) {$\genfrac{(}{)}{0pt}{}{n+k-1}{k}$};
+			\node [result, below=1cm of kombinationW] (kombinationNo) {$\genfrac{(}{)}{0pt}{}{n}{k}$};
+			% Draw edges
+			\path [line] (init) -- (decide);
+			\path [line] (decide) -| node [near end, left] {Ja} (permutation);
+			\path [line] (decide) -- node [right] {Nein} (reihenfolge);
+			\path [line] (reihenfolge) -- node [right] {Nein} (kombination);
+			\path [line] (reihenfolge) -| node [near end, left] {Ja} (variation);
+			\path [line] (permutation) -- (permutationW);
+			\path [line] (variation) -- (variationW);
+			\path [line] (kombination) -- (kombinationW);
+			\path [line] (permutationW) -| node [near end, left] {Ja} (permutationYes);
+			\path [line] (permutationW) -- node [left] {Nein} (permutationNo);
+			\path [line] (variationW) -| node [near end, left] {Ja} (variationYes);
+			\path [line] (variationW) -- node [left] {Nein} (variationNo);
+			\path [line] (kombinationW) -| node [near end, left] {Ja} (kombinationYes);
+			\path [line] (kombinationW) -- node [left] {Nein} (kombinationNo);
+			\end{tikzpicture}
+			\egroup
+		\end{center}
+		Die Kunst in der Kombinatorik ist es jetzt einer Aufgabenstellung die richtige Formel zuordnen zu können, daher folgt jetzt zu jedem Fall ein Beispiel.
+		\subsection{Permutation}
+			\subsubsection{Permutation mit Wiederholung}
+			\subsubsection{Permutation ohne Wiederholung}
+		\subsection{Variation}
+			\subsubsection{Variation mit Wiederholung}
+			\subsubsection{Variation ohne Wiederholung}
+		\subsection{Kombination}
+			\subsubsection{Kombination mit Wiederholung}
+			\subsubsection{Kombination ohne Wiederholung}
 	\pagebreak
 	\printindex
 \end{document}

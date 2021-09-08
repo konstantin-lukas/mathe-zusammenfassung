@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  7 SEP 2021 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  8 SEP 2021 13:45
 entering extended mode
 **\def\tikzexternalrealjob{mathe_zusammenfassung}\input{mathe_zusammenfassung}
 (mathe_zusammenfassung.tex ("C:\Program Files\MiKTeX\tex/latex/base\article.cls
@@ -2776,11 +2776,116 @@ Underfull \hbox (badness 10000) in paragraph at lines 3035--3037
 \@writefile{toc}{\protect }
 \providecommand \oddpage@label [2]{}
 {C:/Users/Konstantin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 3107--3110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3107--3110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3112--3116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3112--3116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3121--3123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3125--3129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3125--3129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3136--3139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3136--3139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3141--3145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3141--3145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3150--3153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3150--3153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3155--3159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3155--3159
+
+ []
+
+
+Overfull \hbox (4.37506pt too wide) in paragraph at lines 3161--3163
+\OT1/cmr/m/n/12 Erkl[]arung: Von 6 Ka-beln sol-len 3 in der rich-ti-gen Rei-hen
+-fol-ge durch-ge-schnit-ten wer-den. Nat[]urlich
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3166--3168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3169--3172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3169--3172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3174--3178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3174--3178
+
+ []
+
 No file figures/mathe_zusammenfassung-figure87.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3106.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3106.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3106.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3106.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3184.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3184.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3184.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3184.
 
 LaTeX Warning: There were undefined references.
 
@@ -2800,7 +2905,7 @@ eX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type
 onts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.
 pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on figures/mathe_zusammenfassung-figure87.pdf (1 page, 81620 byt
+Output written on figures/mathe_zusammenfassung-figure87.pdf (1 page, 81616 byt
 es).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)

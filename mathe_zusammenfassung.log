@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  7 SEP 2021 15:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  8 SEP 2021 15:02
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -1721,12 +1721,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 546--552
  []
 
 [11 <./figures/mathe_zusammenfassung-figure21.pdf>]
-Overfull \hbox (2.83301pt too wide) in paragraph at lines 554--554
-[]\OT1/cmr/bx/n/17.28 Elementare Re-chen-ge-set-ze, -verfahren und -notationen 
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 565--574
 
  []
@@ -2679,33 +2673,148 @@ Underfull \hbox (badness 10000) in paragraph at lines 3016--3019
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3035--3037
+[87]
+===== Image 'figures/mathe_zusammenfassung-figure87' is up-to-date. ======
+[88 <./figures/mathe_zusammenfassung-figure87.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3106--3109
 
  []
 
-[87]
-===== Image 'figures/mathe_zusammenfassung-figure87' is up-to-date. ======
-[88 <./figures/mathe_zusammenfassung-figure87.pdf>] [89]
-(mathe_zusammenfassung.ind [90
 
-] [91] [92] [93
+Underfull \hbox (badness 10000) in paragraph at lines 3106--3109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3111--3115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3111--3115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3120--3122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3124--3128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3124--3128
+
+ []
+
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 3133--3136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3133--3136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3138--3142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3138--3142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3147--3150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3147--3150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3152--3156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3152--3156
+
+ []
+
+[90]
+Overfull \hbox (4.37506pt too wide) in paragraph at lines 3158--3160
+\OT1/cmr/m/n/12 Erkl[]arung: Von 6 Ka-beln sol-len 3 in der rich-ti-gen Rei-hen
+-fol-ge durch-ge-schnit-ten wer-den. Nat[]urlich
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3161--3164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3161--3164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3166--3170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3166--3170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3175--3178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3175--3178
+
+ []
+
+[91]
+Underfull \hbox (badness 10000) in paragraph at lines 3180--3184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3180--3184
+
+ []
+
+[92] (mathe_zusammenfassung.ind [93
+
+] [94] [95] [96
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3115.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3115.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3193.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3193.
  (mathe_zusammenfassung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3115.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3115.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3193.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3193.
 
 Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
-(rerunfilecheck)             Checksum: FDC03F5F699B8EA406B45BB243769C56;9416.
+(rerunfilecheck)             Checksum: B0355DBB3A6B2291E05CBD813A3A8FCB;9471.
  ) 
 Here is how much of TeX's memory you used:
- 45508 strings out of 480790
- 1078416 string characters out of 2907040
- 1653187 words of memory out of 3000000
- 60219 multiletter control sequences out of 15000+200000
+ 45513 strings out of 480790
+ 1078469 string characters out of 2907040
+ 1653277 words of memory out of 3000000
+ 60220 multiletter control sequences out of 15000+200000
  542707 words of font info for 65 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  66i,31n,103p,1479b,1317s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2724,9 +2833,9 @@ nts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12
 .pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program
  Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mathe_zusammenfassung.pdf (93 pages, 1215705 bytes).
+Output written on mathe_zusammenfassung.pdf (96 pages, 1228509 bytes).
 PDF statistics:
- 2645 PDF objects out of 2984 (max. 8388607)
- 223 named destinations out of 1000 (max. 500000)
- 1613 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2668 PDF objects out of 2984 (max. 8388607)
+ 227 named destinations out of 1000 (max. 500000)
+ 1621 words of extra memory for PDF output out of 10000 (max. 10000000)
 

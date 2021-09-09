@@ -1,10 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  9 SEP 2021 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  9 SEP 2021 12:22
 entering extended mode
-**./mathe_zusammenfassung.tex
-(mathe_zusammenfassung.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-06-18>
-("C:\Program Files\MiKTeX\tex/latex/base\article.cls"
+**\def\tikzexternalrealjob{mathe_zusammenfassung}\input{mathe_zusammenfassung}
+(mathe_zusammenfassung.tex ("C:\Program Files\MiKTeX\tex/latex/base\article.cls
+"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 ("C:\Program Files\MiKTeX\tex/latex/base\size12.clo"
 File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
@@ -20,55 +18,43 @@ File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-)
-("C:\Program Files\MiKTeX\tex/latex/xstring\xstring.sty"
-("C:\Program Files\MiKTeX\tex/generic/xstring\xstring.tex"
+) ("C:\Program Files\MiKTeX\tex/latex/xstring\xstring.sty" ("C:\Program Files\M
+iKTeX\tex/generic/xstring\xstring.tex"
 \integerpart=\count175
 \decimalpart=\count176
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
-)
-("C:\Program Files\MiKTeX\tex/generic/catchfile\catchfile.sty"
+) ("C:\Program Files\MiKTeX\tex/generic/catchfile\catchfile.sty"
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
-
 ("C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty"
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty"
+) ("C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty"
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-)
-("C:\Program Files\MiKTeX\tex/generic/etexcmds\etexcmds.sty"
+) ("C:\Program Files\MiKTeX\tex/generic/etexcmds\etexcmds.sty"
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-
 ("C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-)))
-("C:\Program Files\MiKTeX\tex/latex/base\makeidx.sty"
+))) ("C:\Program Files\MiKTeX\tex/latex/base\makeidx.sty"
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write3
-\openout3 = `mathe_zusammenfassung.idx'.
+\openout3 = `figures/mathe_zusammenfassung-figure93.idx'.
 
-
-Writing index file mathe_zusammenfassung.idx
+Writing index file figures/mathe_zusammenfassung-figure93.idx
 ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
-
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
-
 ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen135
-))
-("C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty"
+)) ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen136
-)
-("C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count177
@@ -108,19 +94,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-)
-("C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
-("C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-)
-("C:\Program Files\MiKTeX\tex/latex/amscls\amsthm.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/amscls\amsthm.sty"
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks20
 \thm@bodyfont=\toks21
@@ -131,16 +114,13 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip53
 \thm@headsep=\skip54
 \dth@everypar=\toks25
-)
-("C:\Program Files\MiKTeX\tex/latex/braket\braket.sty")
-("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/braket\braket.sty") ("C:\Program Files\Mi
+KTeX\tex/latex/geometry\geometry.sty"
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
 ("C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks26
-)
-("C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty"
+) ("C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count189
@@ -155,41 +135,34 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen150
 \Gm@layoutvoffset=\dimen151
 \Gm@dimlist=\toks27
-
-("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX\tex/latex/bbold\bbold.sty"
+("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg")) ("C:\Program Files
+\MiKTeX\tex/latex/bbold\bbold.sty"
 Package: bbold 1994/04/06 Bbold symbol package
 LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
-)
-("C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty"
-("C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty"
-("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex"
+) ("C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty" ("C:\Program Fi
+les\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty" ("C:\Program Files\MiKTeX\tex/ge
+neric/pgf/utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks28
 \pgfutil@tempdima=\dimen152
 \pgfutil@tempdimb=\dimen153
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex"))
 ("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def"
 \pgfutil@abb=\box47
-
 ("C:\Program Files\MiKTeX\tex/latex/ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex"
-("C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex")
+)) ("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex" ("C:\Pr
+ogram Files\MiKTeX\tex/generic/pgf\pgf.revision.tex")
 Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
-))
-("C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty"
-("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex"
+)) ("C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty" ("C:\Program 
+Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex"
 \pgfkeys@pathtoks=\toks29
 \pgfkeys@temptoks=\toks30
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks31
-))) ("C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty"
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex"
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex"
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex"
+))) ("C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty" ("C:\Program File
+s\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex" ("C:\Program Files\MiKTeX\tex/g
+eneric/pgf/math\pgfmathcalc.code.tex" ("C:\Program Files\MiKTeX\tex/generic/pgf
+/math\pgfmathutil.code.tex"
 \pgf@x=\dimen154
 \pgf@xa=\dimen155
 \pgf@xb=\dimen156
@@ -202,51 +175,42 @@ Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
 \c@pgf@countb=\count193
 \c@pgf@countc=\count194
 \c@pgf@countd=\count195
-)
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex"
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex"
 \pgfmath@dimen=\dimen162
 \pgfmath@count=\count196
 \pgfmath@box=\box48
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
 \pgfmath@stack@operation=\toks34
-)
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex"
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex"
-)
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex" ("C
+:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex")
 ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.c
-ode.tex")
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex
-")
+ode.tex") ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.rando
+m.code.tex")
 ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code
-.tex")
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex")
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex"
-) ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex
-")
+.tex") ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.cod
+e.tex") ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.c
+ode.tex") ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.
+code.tex")
 ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmet
-ics.code.tex")))
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex"
+ics.code.tex"))) ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.co
+de.tex"
 \c@pgfmathroundto@lastzeros=\count197
-)))
-("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex"
+))) ("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex"
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex")
 \pgffor@iter=\dimen163
 \pgffor@skip=\dimen164
 \pgffor@stack=\toks35
 \pgffor@toks=\toks36
-))
-("C:\Program Files\MiKTeX\tex/latex/listofitems\listofitems.sty"
-("C:\Program Files\MiKTeX\tex/generic/listofitems\listofitems.tex"
+)) ("C:\Program Files\MiKTeX\tex/latex/listofitems\listofitems.sty" ("C:\Progra
+m Files\MiKTeX\tex/generic/listofitems\listofitems.tex"
 \loi_cnt_foreach_nest=\count198
 \loi_nestcnt=\count199
 )
 Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
 sep char (CT)
-)
-("C:\Program Files\MiKTeX\tex/latex/tocloft\tocloft.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/tocloft\tocloft.sty"
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
 \cftparskip=\skip55
@@ -282,10 +246,8 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cftbeforetabskip=\skip83
 \cfttabindent=\skip84
 \cfttabnumwidth=\skip85
-)
-("C:\Program Files\MiKTeX\tex/latex/etoc\etoc.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/etoc\etoc.sty"
 Package: etoc 2021/07/13 v1.09d Completely customisable TOCs (JFB)
-
 ("C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty"
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \c@tracingmulticols=\count268
@@ -361,10 +323,8 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \c@etoc@tocdepth=\count279
 \etoc@framed@titlebox=\box95
 \etoc@framed@contentsbox=\box96
-)
-("C:\Program Files\MiKTeX\tex/latex/blindtext\blindtext.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/blindtext\blindtext.sty"
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
 ("C:\Program Files\MiKTeX\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
@@ -386,10 +346,8 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count295
 \c@blind@pangramcount=\count296
 \c@blind@pangrammax=\count297
-)
-("C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty"
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-
 ("C:\Program Files\MiKTeX\tex/latex/tools\array.sty"
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen174
@@ -407,36 +365,28 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \TX@delta=\dimen180
 \TX@cols=\count298
 \TX@ftn=\toks39
-)
-("C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty"
-("C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty" ("C:\Program 
+Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty"
 Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
-
-("C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty"
-("C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty"
+("C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty" ("C:\Program Fi
+les\MiKTeX\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
 ("C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
 ("C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
+) ("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
-
 ("C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen181
 \Gin@req@width=\dimen182
-)
-("C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty"
-("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex"
+) ("C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty" ("C:\Program 
+Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex"
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex")
 \pgf@x=\dimen183
 \pgf@y=\dimen184
@@ -458,15 +408,12 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 \t@pgf@tokb=\toks41
 \t@pgf@tokc=\toks42
 \pgf@sys@id@count=\count303
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg"
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
 Driver file for pgf: pgfsys-pdftex.def
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def"
 File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 ))) ("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.t
@@ -479,7 +426,6 @@ File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )) ("C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
 ("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
@@ -493,13 +439,11 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex"
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex"
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
-
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex")
-("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex")
-("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex"
+("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex") ("C:\Program 
+Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex") ("C:\Program Files\MiKTeX\t
+ex/generic/pgf/basiclayer\pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@picminx=\dimen193
 \pgf@picmaxx=\dimen194
@@ -521,8 +465,8 @@ tex"
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@path@lastx=\dimen263
 \pgf@path@lasty=\dimen264
-)
-("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex"
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.te
+x"
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@shorten@end@additional=\dimen265
 \pgf@shorten@start@additional=\dimen266
@@ -544,30 +488,24 @@ File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@pt@x=\dimen268
 \pgf@pt@y=\dimen269
 \pgf@pt@temp=\dimen270
-)
-("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex"
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code
 .tex"
 File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex"
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowsep=\dimen271
-)
-("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen272
 \pgf@sys@shading@range@num=\count307
 \pgf@shadingcount=\count308
-)
-("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex"
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfexternal@startupbox=\box102
@@ -577,20 +515,18 @@ File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.t
 ex"
 File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex"
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+"
 File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex"
 File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)))
-("C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex"
+))) ("C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfnodeparttextbox=\box103
-)
-("C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex"
+) ("C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-("C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.st
+y"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@nodesepstart=\dimen273
 \pgf@nodesepend=\dimen274
@@ -622,7 +558,6 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikznumberofchildren=\count311
 \tikznumberofcurrentchild=\count312
 \tikz@fig@count=\count313
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfmatrixcurrentrow=\count314
@@ -706,26 +641,21 @@ File: pgflibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
 aryarrows.code.tex"
 File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex"
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \arrowsize=\dimen284
 )) ("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty"
 Package: tcolorbox 2020/04/28 version 4.30 text color boxes
-
 ("C:\Program Files\MiKTeX\tex/latex/tools\verbatim.sty"
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks43
 \verbatim@line=\toks44
 \verbatim@in@stream=\read3
-)
-("C:\Program Files\MiKTeX\tex/latex/environ\environ.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/environ\environ.sty"
 Package: environ 2014/05/04 v0.3 A new way to define environments
-
 ("C:\Program Files\MiKTeX\tex/latex/trimspaces\trimspaces.sty"
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-))
-("C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty"
+)) ("C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count318
 )
@@ -742,7 +672,6 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box135
 \tcb@out=\write5
 \tcb@record@out=\write6
-
 ("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbraster.code.tex"
 Library (tcolorbox): 'tcbraster.code.tex' version '4.30'
 \c@tcbrastercolumn=\count322
@@ -770,24 +699,21 @@ Library (tcolorbox): 'tcbfitting.code.tex' version '4.30'
 \tcb@cur@hbadness=\count325
 ) ("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbxparse.code.tex"
 Library (tcolorbox): 'tcbxparse.code.tex' version '4.30'
-("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty"
-("C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty"
+("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty" ("C:\Program 
+Files\MiKTeX\tex/latex/l3kernel\expl3.sty"
 Package: expl3 2020-06-18 L3 programming layer (loader) 
-
 ("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count326
 \l__pdf_internal_box=\box140
 ))
 Package: xparse 2020-05-15 L3 Experimental document command parser
-
 ("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex"
 \l__xparse_current_arg_int=\count327
 \g__xparse_grabber_int=\count328
 \l__xparse_m_args_int=\count329
 \l__xparse_v_nesting_int=\count330
-)))
-("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcblistingsutf8.code.tex"
+))) ("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcblistingsutf8.code.tex"
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.30'
 ("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcblistings.code.tex"
 Library (tcolorbox): 'tcblistings.code.tex' version '4.30'
@@ -804,18 +730,15 @@ Library (tcolorbox): 'tcblistings.code.tex' version '4.30'
 \lst@newlines=\count335
 \lst@lineno=\count336
 \lst@maxwidth=\dimen291
-
 ("C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count337
 \lst@skipnumbers=\count338
 \lst@framebox=\box142
-)
-("C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg"
+) ("C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg"
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
 ("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcblistingscore.code.tex"
 Library (tcolorbox): 'tcblistingscore.code.tex' version '4.30'
 ("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbprocessing.code.tex"
@@ -826,24 +749,19 @@ Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-("C:\Program Files\MiKTeX\tex/latex/tools\shellesc.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/tools\shellesc.sty"
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 ))
 \c@tcblisting=\count339
-))
-("C:\Program Files\MiKTeX\tex/latex/listingsutf8\listingsutf8.sty"
+)) ("C:\Program Files\MiKTeX\tex/latex/listingsutf8\listingsutf8.sty"
 Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
-
 ("C:\Program Files\MiKTeX\tex/generic/stringenc\stringenc.sty"
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
-
 ("C:\Program Files\MiKTeX\tex/generic/pdfescape\pdfescape.sty"
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-))))
-("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbexternal.code.tex"
+)))) ("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbexternal.code.tex"
 Library (tcolorbox): 'tcbexternal.code.tex' version '4.30'
 ) ("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbmagazine.code.tex"
 Library (tcolorbox): 'tcbmagazine.code.tex' version '4.30'
@@ -853,42 +771,33 @@ Library (tcolorbox): 'tcbvignette.code.tex' version '4.30'
 ("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
 aryfadings.code.tex"
 File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryfadings.code.tex"
 File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))) ("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbposter.code.tex"
 Library (tcolorbox): 'tcbposter.code.tex' version '4.30'
 )) ("C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty"
 Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
-
 ("C:\Program Files\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)
-("C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty"
+) ("C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty"
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-("C:\Program Files\MiKTeX\tex/latex/hycolor\hycolor.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/hycolor\hycolor.sty"
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-("C:\Program Files\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty"
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-("C:\Program Files\MiKTeX\tex/latex/auxhook\auxhook.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/auxhook\auxhook.sty"
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-("C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen292
 \Hy@linkcounter=\count340
 \Hy@pagecounter=\count341
-
 ("C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def"
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-("C:\Program Files\MiKTeX\tex/generic/intcalc\intcalc.sty"
+) ("C:\Program Files\MiKTeX\tex/generic/intcalc\intcalc.sty"
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count342
@@ -900,17 +809,14 @@ Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
 \c@Hy@tempcnt=\count343
-
 ("C:\Program Files\MiKTeX\tex/latex/url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5076.
 \XeTeXLinkMargin=\dimen293
-
 ("C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty"
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
 ("C:\Program Files\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty"
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
@@ -927,7 +833,6 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6372.
 Package hyperref Info: PDF/A mode OFF on input line 6377.
 LaTeX Info: Redefining \ref on input line 6417.
 LaTeX Info: Redefining \pageref on input line 6421.
-
 ("C:\Program Files\MiKTeX\tex/generic/atbegshi\atbegshi.sty"
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
@@ -936,19 +841,15 @@ Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 \c@Hfootnote=\count347
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-
 ("C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def"
 File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
-
 ("C:\Program Files\MiKTeX\tex/latex/atveryend\atveryend.sty"
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
 \Fld@listcount=\count348
 \c@bookmark@seq@number=\count349
-
 ("C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty"
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
 ("C:\Program Files\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty"
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
@@ -956,27 +857,24 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip90
-)
-("C:\Program Files\MiKTeX\tex/latex/pgfplots\pgfplots.sty"
-("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex")
+) ("C:\Program Files\MiKTeX\tex/latex/pgfplots\pgfplots.sty" ("C:\Program Files
+\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex")
 Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
-
-("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex"
-("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex"
+("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex" ("C:\Program 
+Files\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex"
 \t@pgfplots@toka=\toks46
 \t@pgfplots@tokb=\toks47
 \t@pgfplots@tokc=\toks48
 \pgfplots@tmpa=\dimen296
 \c@pgfplots@coordindex=\count350
 \c@pgfplots@scanlineindex=\count351
-
 ("C:\Program Files\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex"
 )) ("C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex
 ")
 ("C:\Program Files\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsup
-p_loader.code.tex"
-("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex"))
-("C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex"
+p_loader.code.tex" ("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibra
+ryfpu.code.tex")) ("C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsu
+til.code.tex"
 ("C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststruct
 ure.code.tex")
 ("C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststruct
@@ -993,34 +891,32 @@ e.tex"
 \t@pgfplotstable@a=\toks49
 )
 ("C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code
-.tex")
-("C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex"
+.tex") ("C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.
+tex"
 ("C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.te
-x"))
-("C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex"
-)
+x")) ("C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code
+.tex")
 ("C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshad
 ing.code.tex"
 \c@pgfplotslibrarysurf@no=\count354
 
 ("C:\Program Files\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshadi
-ng.pgfsys-pdftex.def")))
-("C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex"
-("C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex"))
-("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex")
-("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex"
-("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex
-" ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex
-"))) ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex")
-("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex
-") ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex")
-("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex")
-("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex")
-("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex")
+ng.pgfsys-pdftex.def"))) ("C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pg
+fplotscolormap.code.tex" ("C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pg
+fplotscolor.code.tex")) ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots
+stackedplots.code.tex") ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots
+plothandlers.code.tex" ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsm
+eshplothandler.code.tex" ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplot
+smeshplotimage.code.tex"))) ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfp
+lots.scaling.code.tex") ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots
+coordprocessing.code.tex") ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfpl
+ots.errorbars.code.tex") ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplot
+s.markers.code.tex") ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotstic
+ks.code.tex") ("C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.paths.cod
+e.tex")
 ("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
-arydecorations.code.tex"
-("C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
-"
+arydecorations.code.tex" ("C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfm
+oduledecorations.code.tex"
 \pgfdecoratedcompleteddistance=\dimen297
 \pgfdecoratedremainingdistance=\dimen298
 \pgfdecoratedinputsegmentcompleteddistance=\dimen299
@@ -1062,7 +958,11 @@ l.code.tex"
 rnal.code.tex"
 ("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzexte
 rnalshared.code.tex")))
-\openout4 = `mathe_zusammenfassung.auxlock'.
+No auxiliary output files.
+
+\w@pgfexternal@auxout=\write7
+Package TikZ externalization: calling \geometry{driver=none} during externaliza
+tion.
 
 
 ("C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.fillbet
@@ -1080,12 +980,11 @@ s.softclip.code.tex"
 ("C:\Program Files\MiKTeX\tex/generic/pgfplots/pgfcontrib\pgflibraryfillbetween
 .code.tex")))
 ("C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.decorat
-ions.softclip.code.tex"))
-("C:\Program Files\MiKTeX\tex/latex/polynom\polynom.sty"
+ions.softclip.code.tex")) ("C:\Program Files\MiKTeX\tex/latex/polynom\polynom.s
+ty"
 Package: polynom 2017/07/17 0.19 (CH,HA)
 \pld@currstage=\count358
-)
-("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-euclide.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/tkz-euclide\tkz-euclide.sty"
 2020/03/18 3.06c tkz-euclide.sty
 Package: tkz-euclide 2020/03/18 3.06c for euclidan geometry 
 ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-base.sty"
@@ -1131,7 +1030,6 @@ ations.text.code.tex"
 ("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
 arypatterns.code.tex"
 File: tikzlibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-
 ("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
 "
 File: pgflibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -1170,19 +1068,16 @@ Package: numprint 2012/08/20 v1.39 Print numbers (HH)
 \c@nprt@digitsfirstblock=\count366
 \c@nprt@blockcnt=\count367
 \c@nprt@cntprint=\count368
- No configuration file `numprint.cfg' found.)
-("C:\Program Files\MiKTeX\tex/latex/l3packages/xfp\xfp.sty"
+No configuration file `numprint.cfg' found.) ("C:\Program Files\MiKTeX\tex/late
+x/l3packages/xfp\xfp.sty"
 Package: xfp 2020-05-15 L3 Floating point unit
-)
-("C:\Program Files\MiKTeX\tex/latex/fp\fp.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp.sty"
 Package: fp 1995/04/02
-
-`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-("C:\Program Files\MiKTeX\tex/latex/fp\defpattern.sty"
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich ("C:\Prog
+ram Files\MiKTeX\tex/latex/fp\defpattern.sty"
 Package: defpattern 1994/10/12
 \actioncount=\count369
-)
-("C:\Program Files\MiKTeX\tex/latex/fp\fp-basic.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-basic.sty"
 Package: fp-basic 1996/05/13
 \FP@xs=\count370
 \FP@xia=\count371
@@ -1193,33 +1088,24 @@ Package: fp-basic 1996/05/13
 \FP@regb=\count376
 \FP@regs=\count377
 \FP@times=\count378
-)
-("C:\Program Files\MiKTeX\tex/latex/fp\fp-addons.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-addons.sty"
 Package: fp-addons 1995/03/15
-)
-("C:\Program Files\MiKTeX\tex/latex/fp\fp-snap.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-snap.sty"
 Package: fp-snap 1995/04/05
-)
-("C:\Program Files\MiKTeX\tex/latex/fp\fp-exp.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-exp.sty"
 Package: fp-exp 1995/04/03
-)
-("C:\Program Files\MiKTeX\tex/latex/fp\fp-trigo.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-trigo.sty"
 Package: fp-trigo 1995/04/14
-)
-("C:\Program Files\MiKTeX\tex/latex/fp\fp-pas.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-pas.sty"
 Package: fp-pas 1994/08/29
-)
-("C:\Program Files\MiKTeX\tex/latex/fp\fp-random.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-random.sty"
 Package: fp-random 1995/02/23
 \FPseed=\count379
-)
-("C:\Program Files\MiKTeX\tex/latex/fp\fp-eqn.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-eqn.sty"
 Package: fp-eqn 1995/04/03
-)
-("C:\Program Files\MiKTeX\tex/latex/fp\fp-upn.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-upn.sty"
 Package: fp-upn 1996/10/21
-)
-("C:\Program Files\MiKTeX\tex/latex/fp\fp-eval.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/fp\fp-eval.sty"
 Package: fp-eval 1995/04/03
 ))
 \tkzRadius=\dimen314
@@ -1242,7 +1128,6 @@ Package: fp-eval 1995/04/03
 \tkz@tdx=\dimen331
 \tkz@tdy=\dimen332
 \tkz@cntmk=\count380
-
 Local configuration file tkz-base.cfg found and used
 ("C:\Program Files\MiKTeX\tex/latex/tkz-base\tkz-base.cfg"
 2020/03/18 3.06c tkz-base.cfg
@@ -1320,60 +1205,48 @@ File: tkz-tool-arith.tex tkz-tool-arith 3.02 c
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
 )) ("C:\Program Files\MiKTeX\tex/generic/babel\babel.sty"
 Package: babel 2020/06/10 3.45 The Babel package
-
 ("C:\Program Files\MiKTeX\tex/generic/babel\babel.def"
 File: babel.def 2020/06/10 3.45 Babel common definitions
 \babel@savecnt=\count381
 \U@D=\dimen335
 \l@babelnohyphens=\language79
-
 ("C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def")
 \bbl@readstream=\read4
 )
 \bbl@dirlevel=\count382
-
 *************************************
 * Local config file bblopts.cfg used
 *
 ("C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
-)
-("C:\Program Files\MiKTeX\tex/latex/babel-german\ngerman.ldf"
+) ("C:\Program Files\MiKTeX\tex/latex/babel-german\ngerman.ldf"
 Language: ngerman 2020/07/21 v2.12 German support for babel (post-1996 orthogra
 phy)
-
 ("C:\Program Files\MiKTeX\tex/latex/babel-german\ngermanb.ldf"
 Language: ngermanb 2020/07/21 v2.12 German support for babel (post-1996 orthogr
 aphy)
 Package babel Info: Making " an active character on input line 121.
-)))
-("C:\Program Files\MiKTeX\tex/latex/hyphenat\hyphenat.sty"
+))) ("C:\Program Files\MiKTeX\tex/latex/hyphenat\hyphenat.sty"
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language80
 LaTeX Info: Redefining \_ on input line 43.
-)
-("C:\Program Files\MiKTeX\tex/latex/adjustbox\adjustbox.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/adjustbox\adjustbox.sty"
 Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
-
 ("C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-("C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex"
+("C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex" ("C:\Program Files\M
+iKTeX\tex/generic/xkeyval\xkvutils.tex"
 \XKV@toks=\toks53
 \XKV@tempa@toks=\toks54
 )
 \XKV@depth=\count383
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-("C:\Program Files\MiKTeX\tex/latex/adjustbox\adjcalc.sty"
+)) ("C:\Program Files\MiKTeX\tex/latex/adjustbox\adjcalc.sty"
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
-)
-("C:\Program Files\MiKTeX\tex/latex/adjustbox\trimclip.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/adjustbox\trimclip.sty"
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
-
 ("C:\Program Files\MiKTeX\tex/latex/collectbox\collectbox.sty"
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box146
@@ -1383,7 +1256,6 @@ Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \tc@urx=\dimen338
 \tc@ury=\dimen339
 Package trimclip Info: Using driver 'tc-pdftex.def'.
-
 ("C:\Program Files\MiKTeX\tex/latex/adjustbox\tc-pdftex.def"
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
@@ -1395,21 +1267,17 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@pheight=\dimen345
 \adjbox@pdepth=\dimen346
 \adjbox@ptotalheight=\dimen347
-
 ("C:\Program Files\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 \c@checkoddpage=\count384
-)
-("C:\Program Files\MiKTeX\tex/latex/varwidth\varwidth.sty"
+) ("C:\Program Files\MiKTeX\tex/latex/varwidth\varwidth.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box147
 \sift@deathcycles=\count385
 \@vwid@loff=\dimen348
 \@vwid@roff=\dimen349
 ))
-(mathe_zusammenfassung.aux)
-\openout1 = `mathe_zusammenfassung.aux'.
-
+No file figures/mathe_zusammenfassung-figure93.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
 LaTeX Font Info:    ... okay on input line 105.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
@@ -1426,11 +1294,9 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
 LaTeX Font Info:    ... okay on input line 105.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
 LaTeX Font Info:    ... okay on input line 105.
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: <none>
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: \Gm@driver 
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -1462,8 +1328,7 @@ LaTeX Font Info:    ... okay on input line 105.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\Etoc@tf=\read5
-
+No file figures/mathe_zusammenfassung-figure93.toc.
 ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count386
@@ -1483,7 +1348,6 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
 \c@lstlisting=\count392
-
 ("C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks57
@@ -1491,14 +1355,11 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 )
 \AtBeginShipoutBox=\box149
 Package hyperref Info: Link coloring OFF on input line 105.
-
 ("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
-
 ("C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty"
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-("C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty"
+) ("C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count393
@@ -1506,12 +1367,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 105.
 LaTeX Info: Redefining \pageref on input line 105.
 LaTeX Info: Redefining \nameref on input line 105.
-
-(mathe_zusammenfassung.out) (mathe_zusammenfassung.out)
-\@outlinefile=\write7
-\openout7 = `mathe_zusammenfassung.out'.
-
-
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.17} (current compat level: 1.5.1).
 
@@ -1522,25 +1377,45 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 108
 .
-
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\tf@toc=\write8
-\openout8 = `mathe_zusammenfassung.toc'.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
- [1
+Overfull \hbox (256.00987pt too wide) detected at line 126
+[]
+ []
 
-{C:/Users/Konstantin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3] [4
-]
-===== Image 'figures/mathe_zusammenfassung-figure0' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure1' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure2' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure3' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure4' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure5' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure6' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure7' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (256.00987pt too wide) detected at line 145
+[]
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (256.00987pt too wide) detected at line 168
+[]
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+Overfull \hbox (256.00987pt too wide) detected at line 189
+[]
+ []
+
 
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 198--198
 [] 
@@ -1558,7 +1433,6 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 2
 05.
-
 ("C:\Program Files\MiKTeX\tex/latex/bbold\ubbold.fd")
 Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
@@ -1574,9 +1448,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--222
 
  []
 
-[5 <./figures/mathe_zusammenfassung-figure1.pdf> <./figures/mathe_zusammenfassu
-ng-figure3.pdf> <./figures/mathe_zusammenfassung-figure5.pdf> <./figures/mathe_
-zusammenfassung-figure7.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 239--239
 
  []
@@ -1603,38 +1475,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--256
  []
 
 
+LaTeX Warning: Hyper reference `subsubsec:umkehrbarkeit' on page 3 undefined on
+ input line 265.
+
+
+LaTeX Warning: Reference `subsubsec:umkehrbarkeit' on page 3 undefined on input
+ line 265.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 263--266
 
  []
 
-\openout4 = `figures/mathe_zusammenfassung-figure8.md5'.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
-\openout4 = `mathe_zusammenfassung.auxlock'.
+LaTeX Warning: Hyper reference `sec:vektorgeometrie' on page 3 undefined on inp
+ut line 324.
 
-\openout4 = `mathe_zusammenfassung.auxlock'.
 
-\openout4 = `figures/mathe_zusammenfassung-figure9.md5'.
+LaTeX Warning: Reference `sec:vektorgeometrie' on page 3 undefined on input lin
+e 324.
 
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `figures/mathe_zusammenfassung-figure10.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `figures/mathe_zusammenfassung-figure11.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-===== Image 'figures/mathe_zusammenfassung-figure12' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure13' is up-to-date. ======
-[6]
-===== Image 'figures/mathe_zusammenfassung-figure14' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 352--352
 [] 
@@ -1645,8 +1511,7 @@ Overfull \hbox (422.48886pt too wide) detected at line 358
 []
  []
 
-[7 <./figures/mathe_zusammenfassung-figure12.pdf> <./figures/mathe_zusammenfass
-ung-figure13.pdf> <./figures/mathe_zusammenfassung-figure14.pdf>]
+
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 362--362
 [] 
  []
@@ -1656,39 +1521,24 @@ Overfull \hbox (269.21648pt too wide) detected at line 368
 []
  []
 
-\openout4 = `figures/mathe_zusammenfassung-figure15.md5'.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `figures/mathe_zusammenfassung-figure16.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `figures/mathe_zusammenfassung-figure17.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `figures/mathe_zusammenfassung-figure18.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-===== Image 'figures/mathe_zusammenfassung-figure19' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure20' is up-to-date. ======
-[8]
 Underfull \hbox (badness 10000) in paragraph at lines 447--457
 
  []
 
-[9 <./figures/mathe_zusammenfassung-figure19.pdf> <./figures/mathe_zusammenfass
-ung-figure20.pdf>]
+
+LaTeX Warning: Hyper reference `subsec:potenzgesetze' on page 5 undefined on in
+put line 465.
+
+
+LaTeX Warning: Reference `subsec:potenzgesetze' on page 5 undefined on input li
+ne 465.
+
+
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 478--478
 [] 
  []
@@ -1699,12 +1549,28 @@ Overfull \hbox (505.88678pt too wide) detected at line 486
  []
 
 
+LaTeX Warning: Hyper reference `subsec:potenzgesetze' on page 6 undefined on in
+put line 490.
+
+
+LaTeX Warning: Reference `subsec:potenzgesetze' on page 6 undefined on input li
+ne 490.
+
+
+LaTeX Warning: Hyper reference `subsubsec:komplexpotenz' on page 6 undefined on
+ input line 490.
+
+
+LaTeX Warning: Reference `subsubsec:komplexpotenz' on page 6 undefined on input
+ line 490.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 490--492
 
  []
 
-[10]
-===== Image 'figures/mathe_zusammenfassung-figure21' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 549--549
 [] 
@@ -1720,11 +1586,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 546--559
 
  []
 
-[11 <./figures/mathe_zusammenfassung-figure21.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 572--581
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 572--581
 
@@ -1745,13 +1606,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 572--581
 
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure22' is up-to-date. ======
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--581
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 583--585
 
  []
 
-[12 <./figures/mathe_zusammenfassung-figure22.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 598--607
 
  []
@@ -1776,12 +1643,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 616--619
 
  []
 
-[13] [14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 667--668
 
  []
 
-[15]
+
 Overfull \hbox (15.68538pt too wide) detected at line 688
 []
  []
@@ -1791,7 +1658,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 690--691
 
  []
 
-[16] [17] [18]
+
+LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 14 undefined on inp
+ut line 760.
+
+
+LaTeX Warning: Reference `subsubsec:pqformel' on page 14 undefined on input lin
+e 760.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 775--777
 
  []
@@ -1802,22 +1677,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 784--787
  []
 
 
+LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 15 undefined on inp
+ut line 791.
+
+
+LaTeX Warning: Reference `subsubsec:pqformel' on page 15 undefined on input lin
+e 791.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 796--799
 
  []
 
-[19] [20]
-===== Image 'figures/mathe_zusammenfassung-figure23' is up-to-date. ======
-[21 <./figures/mathe_zusammenfassung-figure23.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure24' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure25' is up-to-date. ======
-[22 <./figures/mathe_zusammenfassung-figure24.pdf>]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 17 undefined on inp
+ut line 813.
+
+
+LaTeX Warning: Reference `subsubsec:pqformel' on page 17 undefined on input lin
+e 813.
+
+
+LaTeX Warning: Hyper reference `subsec:intervalle' on page 17 undefined on inpu
+t line 819.
+
+
+LaTeX Warning: Reference `subsec:intervalle' on page 17 undefined on input line
+ 819.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsec:betragsfunktionen' on page 18 undefined 
+on input line 826.
+
+
+LaTeX Warning: Reference `subsec:betragsfunktionen' on page 18 undefined on inp
+ut line 826.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsec:unglrechrgl' on page 18 undefined on inp
+ut line 859.
+
+
+LaTeX Warning: Reference `subsec:unglrechrgl' on page 18 undefined on input lin
+e 859.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 859--861
 
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure26' is up-to-date. ======
-[23 <./figures/mathe_zusammenfassung-figure25.pdf>]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
 Underfull \hbox (badness 10000) in paragraph at lines 870--873
 
  []
@@ -1827,47 +1744,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 884--885
 
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure27' is up-to-date. ======
-[24 <./figures/mathe_zusammenfassung-figure26.pdf> <./figures/mathe_zusammenfas
-sung-figure27.pdf>] [25]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
 Underfull \hbox (badness 10000) in paragraph at lines 913--915
 
  []
 
-[26]
+
 Underfull \hbox (badness 10000) in paragraph at lines 951--953
 
  []
 
-[27]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1032--1035
 
  []
 
-[28] [29]
-===== Image 'figures/mathe_zusammenfassung-figure28' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure29' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1111--1112
 
  []
 
-[30 <./figures/mathe_zusammenfassung-figure28.pdf> <./figures/mathe_zusammenfas
-sung-figure29.pdf>] [31]
+
+LaTeX Warning: Hyper reference `subsec:trigonometrisch' on page 25 undefined on
+ input line 1118.
+
+
+LaTeX Warning: Reference `subsec:trigonometrisch' on page 25 undefined on input
+ line 1118.
+
+
 Underfull \hbox (badness 1005) in paragraph at lines 1164--1165
-\OT1/cmr/m/n/12 F[]ur ein Pris-ma[] mit der Man-tel-fl[]ache[] $\OML/cmm/m/it/1
-2 M$\OT1/cmr/m/n/12 , der Grund-fl[]ache[] $\OML/cmm/m/it/12 A$\OT1/cmr/m/n/12 
-, dem Grund-
+\OT1/cmr/m/n/12 F[]ur ein Pris-ma mit der Man-tel-fl[]ache $\OML/cmm/m/it/12 M$
+\OT1/cmr/m/n/12 , der Grund-fl[]ache $\OML/cmm/m/it/12 A$\OT1/cmr/m/n/12 , dem 
+Grund-
  []
 
-[32] [33]
-===== Image 'figures/mathe_zusammenfassung-figure30' is up-to-date. ======
-[34 <./figures/mathe_zusammenfassung-figure30.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure31' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure32' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure33' is up-to-date. ======
-[35 <./figures/mathe_zusammenfassung-figure31.pdf> <./figures/mathe_zusammenfas
-sung-figure32.pdf> <./figures/mathe_zusammenfassung-figure33.pdf>]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
 Underfull \hbox (badness 10000) in paragraph at lines 1353--1357
 
  []
@@ -1877,20 +1803,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1353--1357
 
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure34' is up-to-date. ======
-[36]
-\openout4 = `figures/mathe_zusammenfassung-figure35.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `figures/mathe_zusammenfassung-figure36.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1417--1417
 
@@ -1898,7 +1812,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1417--1417
 
 
 Underfull \hbox (badness 2426) in paragraph at lines 1417--1417
-[]\OT1/cmr/m/n/12 Diese No-ta-ti-on ist wahr-schein-lich am ein-
+\OT1/cmr/m/n/12 Diese No-ta-ti-on ist wahr-schein-lich am ein-
  []
 
 
@@ -1911,19 +1825,8 @@ Underfull \hbox (badness 2351) in paragraph at lines 1417--1417
 []\OT1/cmr/m/n/12 Punk-te[], zwi-schen de-nen man ei-ne []Ge-ra-de[]
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure37' is up-to-date. ======
-\openout4 = `figures/mathe_zusammenfassung-figure38.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `figures/mathe_zusammenfassung-figure39.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1460--1460
 
@@ -1931,27 +1834,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1460--1460
 
 
 Underfull \hbox (badness 6893) in paragraph at lines 1460--1460
-[]\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form wird an einen
+\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form wird an einen
  []
 
 
 Underfull \hbox (badness 1642) in paragraph at lines 1460--1460
-\OT1/cmr/m/n/12 tungs-vek-to-ren[][] an-ge-legt. Die-ser []Vek-tor[] liegt
+\OT1/cmr/m/n/12 tungs-vek-to-ren[] an-ge-legt. Die-ser []Vek-tor[] liegt
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure40' is up-to-date. ======
-\openout4 = `figures/mathe_zusammenfassung-figure41.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `figures/mathe_zusammenfassung-figure42.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1494--1494
 
@@ -1959,7 +1851,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1494--1494
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1494--1494
-[]\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form braucht einen
+\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form braucht einen
  []
 
 
@@ -1967,21 +1859,8 @@ Underfull \hbox (badness 1337) in paragraph at lines 1494--1494
 []\OT1/cmr/m/n/12 St[]utzvektor[] und einen []Nor-ma-len-vek-tor[], der
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure43' is up-to-date. ======
-[37 <./figures/mathe_zusammenfassung-figure34.pdf> <./figures/mathe_zusammenfas
-sung-figure37.pdf> <./figures/mathe_zusammenfassung-figure40.pdf>]
-\openout4 = `figures/mathe_zusammenfassung-figure44.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `figures/mathe_zusammenfassung-figure45.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1530--1530
 
@@ -1989,7 +1868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1530--1530
 
 
 Underfull \hbox (badness 2426) in paragraph at lines 1530--1530
-[]\OT1/cmr/m/n/12 Diese No-ta-ti-on ist wahr-schein-lich am ein-
+\OT1/cmr/m/n/12 Diese No-ta-ti-on ist wahr-schein-lich am ein-
  []
 
 
@@ -1997,19 +1876,8 @@ Underfull \hbox (badness 1590) in paragraph at lines 1530--1530
 \OT1/cmr/m/n/12 fachs-ten zu ver-ste-hen, denn man hat drei
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure46' is up-to-date. ======
-\openout4 = `figures/mathe_zusammenfassung-figure47.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `figures/mathe_zusammenfassung-figure48.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1579--1579
 
@@ -2017,34 +1885,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 1579--1579
 
 
 Underfull \hbox (badness 2042) in paragraph at lines 1579--1579
-[]\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form wer-den an einen
+\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form wer-den an einen
  []
 
 
 Underfull \hbox (badness 3780) in paragraph at lines 1579--1579
-\OT1/cmr/m/n/12 Orts-vek-tor { ge-nannt []St[]utzvektor[][] { zwei
+\OT1/cmr/m/n/12 Orts-vek-tor { ge-nannt []St[]utzvektor[] { zwei
  []
 
 
 Underfull \hbox (badness 1038) in paragraph at lines 1579--1579
-[]\OT1/cmr/m/n/12 Rich-tungs-vek-to-ren[][] oder auch []Spann-vek-to-ren[][]
+[]\OT1/cmr/m/n/12 Rich-tungs-vek-to-ren[] oder auch []Spann-vek-to-ren[]
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure49' is up-to-date. ======
-[38 <./figures/mathe_zusammenfassung-figure43.pdf> <./figures/mathe_zusammenfas
-sung-figure46.pdf>]
-\openout4 = `figures/mathe_zusammenfassung-figure50.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `figures/mathe_zusammenfassung-figure51.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1619--1619
 
@@ -2052,30 +1907,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 1619--1619
 
 
 Underfull \hbox (badness 1383) in paragraph at lines 1619--1619
-[]\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form braucht man nur
+\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form braucht man nur
  []
 
 
 Underfull \hbox (badness 2318) in paragraph at lines 1619--1619
-\OT1/cmr/m/n/12 vek-tor[][] ist ein Vek-tor, der or-tho-go-nal[] zur
+\OT1/cmr/m/n/12 vek-tor[] ist ein Vek-tor, der or-tho-go-nal zur
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure52' is up-to-date. ======
-[39 <./figures/mathe_zusammenfassung-figure49.pdf> <./figures/mathe_zusammenfas
-sung-figure52.pdf>]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
 Underfull \hbox (badness 10000) in paragraph at lines 1638--1640
 
  []
 
-[40]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1658--1661
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 1658--1661
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1658--1661
+LaTeX Warning: Hyper reference `sec:gleichungssysteme' on page 35 undefined on 
+input line 1667.
 
- []
+
+LaTeX Warning: Reference `sec:gleichungssysteme' on page 35 undefined on input 
+line 1667.
 
 
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 1673--1673
@@ -2097,7 +1960,7 @@ Overfull \hbox (316.42342pt too wide) detected at line 1686
 []
  []
 
-[41]
+
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 1693--1693
 [] 
  []
@@ -2122,7 +1985,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1710--1721
 
  []
 
-[42]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1722--1724
 
  []
@@ -2157,7 +2020,7 @@ Overfull \hbox (191.20634pt too wide) detected at line 1751
 []
  []
 
-[43]
+
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 1755--1755
 [] 
  []
@@ -2167,20 +2030,18 @@ Overfull \hbox (399.17401pt too wide) detected at line 1760
 []
  []
 
-[44]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1768--1770
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1786--1791
+LaTeX Warning: Hyper reference `subsec:ableitung' on page 39 undefined on input
+ line 1786.
 
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1786--1791
-
- []
+LaTeX Warning: Reference `subsec:ableitung' on page 39 undefined on input line 
+1786.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1786--1791
@@ -2202,35 +2063,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 1786--1791
 
  []
 
-[45]
-===== Image 'figures/mathe_zusammenfassung-figure53' is up-to-date. ======
+
+Underfull \hbox (badness 10000) in paragraph at lines 1786--1791
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1786--1791
+
+ []
+
+
+LaTeX Warning: Hyper reference `subsec:ableitung' on page 39 undefined on input
+ line 1793.
+
+
+LaTeX Warning: Reference `subsec:ableitung' on page 39 undefined on input line 
+1793.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1815--1818
 
  []
 
-[46 <./figures/mathe_zusammenfassung-figure53.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure54' is up-to-date. ======
-[47 <./figures/mathe_zusammenfassung-figure54.pdf>]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
 Underfull \hbox (badness 10000) in paragraph at lines 1870--1871
 
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure55' is up-to-date. ======
-[48]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
 Underfull \hbox (badness 10000) in paragraph at lines 1873--1875
 
  []
 
-[49 <./figures/mathe_zusammenfassung-figure55.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure56' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 43 undefined on inp
+ut line 1921.
+
+
+LaTeX Warning: Reference `subsubsec:pqformel' on page 43 undefined on input lin
+e 1921.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 1924--1925
 
  []
 
-[50 <./figures/mathe_zusammenfassung-figure56.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure57' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1929--1932
 
@@ -2241,8 +2129,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1935--1938
 
  []
 
-[51 <./figures/mathe_zusammenfassung-figure57.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure58' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1954--1957
 
@@ -2253,18 +2141,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1968--1971
 
  []
 
-[52 <./figures/mathe_zusammenfassung-figure58.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1986--1989
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 1986--1989
 
  []
 
-[53]
-===== Image 'figures/mathe_zusammenfassung-figure59' is up-to-date. ======
+
+Underfull \hbox (badness 10000) in paragraph at lines 1986--1989
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2006--2008
 
@@ -2276,28 +2164,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 2018--2020
  []
 
 
+LaTeX Warning: Hyper reference `subsec:substitution' on page 47 undefined on in
+put line 2022.
+
+
+LaTeX Warning: Reference `subsec:substitution' on page 47 undefined on input li
+ne 2022.
+
+
+LaTeX Warning: Hyper reference `subsubsec:pqformel' on page 47 undefined on inp
+ut line 2022.
+
+
+LaTeX Warning: Reference `subsubsec:pqformel' on page 47 undefined on input lin
+e 2022.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 2022--2023
 
  []
 
-[54 <./figures/mathe_zusammenfassung-figure59.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure60' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsubsec:ausklammern' on page 47 undefined on 
+input line 2039.
+
+
+LaTeX Warning: Reference `subsubsec:ausklammern' on page 47 undefined on input 
+line 2039.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 2039--2040
 
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure61' is up-to-date. ======
-[55 <./figures/mathe_zusammenfassung-figure60.pdf>]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `sec:binomischeformeln' on page 48 undefined on 
+input line 2050.
+
+
+LaTeX Warning: Reference `sec:binomischeformeln' on page 48 undefined on input 
+line 2050.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 2050--2051
 
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure62' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Overfull \hbox (0.62164pt too wide) in paragraph at lines 2061--2062
 \OT1/cmr/m/n/12 Wenn al-le an-de-ren Str[]ange rei-en, ist man lei-der ge-zwun
--gen die Po-ly-nom-di-vi-si-on[] durch-zuf[]uhren.
+-gen die Po-ly-nom-di-vi-si-on durch-zuf[]uhren.
  []
 
 
@@ -2305,9 +2227,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2061--2062
 
  []
 
-[56 <./figures/mathe_zusammenfassung-figure61.pdf> <./figures/mathe_zusammenfas
-sung-figure62.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure63' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2069--2073
 
@@ -2323,34 +2244,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 2069--2073
 
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure64' is up-to-date. ======
-[57 <./figures/mathe_zusammenfassung-figure63.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure65' is up-to-date. ======
-[58 <./figures/mathe_zusammenfassung-figure64.pdf> <./figures/mathe_zusammenfas
-sung-figure65.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure66' is up-to-date. ======
-[59 <./figures/mathe_zusammenfassung-figure66.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure67' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure68' is up-to-date. ======
-[60 <./figures/mathe_zusammenfassung-figure67.pdf> <./figures/mathe_zusammenfas
-sung-figure68.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure69' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure70' is up-to-date. ======
-[61 <./figures/mathe_zusammenfassung-figure69.pdf> <./figures/mathe_zusammenfas
-sung-figure70.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure71' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure72' is up-to-date. ======
-[62 <./figures/mathe_zusammenfassung-figure71.pdf>]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsec:logarithmusgesetze' on page 50 undefined
+ on input line 2128.
+
+
+LaTeX Warning: Reference `subsec:logarithmusgesetze' on page 50 undefined on in
+put line 2128.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsec:potenzgesetze' on page 51 undefined on i
+nput line 2142.
+
+
+LaTeX Warning: Reference `subsec:potenzgesetze' on page 51 undefined on input l
+ine 2142.
+
+
+LaTeX Warning: Hyper reference `subsec:logarithmusgesetze' on page 51 undefined
+ on input line 2142.
+
+
+LaTeX Warning: Reference `subsec:logarithmusgesetze' on page 51 undefined on in
+put line 2142.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `sec:geometrie' on page 51 undefined on input li
+ne 2157.
+
+
+LaTeX Warning: Reference `sec:geometrie' on page 51 undefined on input line 215
+7.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
 Overfull \hbox (0.75153pt too wide) in paragraph at lines 2164--2170
-\OT1/cmr/m/n/12 Bei Funk-tio-nen ist es so, dass je-der Ab-szis-se[] ($\OML/cmm
-/m/it/12 x$\OT1/cmr/m/n/12 -Achsenwert) ge-nau ei-ne Or-di-na-te[] ($\OML/cmm/m
-/it/12 y$\OT1/cmr/m/n/12 -Achsenwert)
+\OT1/cmr/m/n/12 Bei Funk-tio-nen ist es so, dass je-der Ab-szis-se ($\OML/cmm/m
+/it/12 x$\OT1/cmr/m/n/12 -Achsenwert) ge-nau ei-ne Or-di-na-te ($\OML/cmm/m/it/
+12 y$\OT1/cmr/m/n/12 -Achsenwert)
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure73' is up-to-date. ======
-[63 <./figures/mathe_zusammenfassung-figure72.pdf> <./figures/mathe_zusammenfas
-sung-figure73.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure74' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsubsec:monotonie' on page 53 undefined on in
+put line 2199.
+
+
+LaTeX Warning: Reference `subsubsec:monotonie' on page 53 undefined on input li
+ne 2199.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `sec:rechengesetze' on page 53 undefined on inpu
+t line 2201.
+
+
+LaTeX Warning: Reference `sec:rechengesetze' on page 53 undefined on input line
+ 2201.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 2203--2206
 
@@ -2358,8 +2328,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2203--2206
 
 
 Underfull \hbox (badness 2229) in paragraph at lines 2203--2206
-\OT1/cmr/m/n/12 Neben der oben ge-nann-ten Ab-lei-tungs-re-gel[] von Funk-tio-n
-en, gibt es noch
+\OT1/cmr/m/n/12 Neben der oben ge-nann-ten Ab-lei-tungs-re-gel von Funk-tio-nen
+, gibt es noch
  []
 
 
@@ -2367,11 +2337,35 @@ Overfull \hbox (63.66138pt too wide) detected at line 2222
 []
  []
 
-[64 <./figures/mathe_zusammenfassung-figure74.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure75' is up-to-date. ======
-[65 <./figures/mathe_zusammenfassung-figure75.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure76' is up-to-date. ======
-[66]
+
+LaTeX Warning: Hyper reference `subsubsec:differentialquotient' on page 53 unde
+fined on input line 2225.
+
+
+LaTeX Warning: Reference `subsubsec:differentialquotient' on page 53 undefined 
+on input line 2225.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsubsec:differenzenquotient' on page 54 undef
+ined on input line 2267.
+
+
+LaTeX Warning: Reference `subsubsec:differenzenquotient' on page 54 undefined o
+n input line 2267.
+
+
+LaTeX Warning: Hyper reference `subsec:ableitung' on page 54 undefined on input
+ line 2279.
+
+
+LaTeX Warning: Reference `subsec:ableitung' on page 54 undefined on input line 
+2279.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
 Underfull \hbox (badness 10000) in paragraph at lines 2286--2289
 
  []
@@ -2416,19 +2410,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 2291--2298
 
  []
 
-[67 <./figures/mathe_zusammenfassung-figure76.pdf>] [68]
-===== Image 'figures/mathe_zusammenfassung-figure77' is up-to-date. ======
-[69 <./figures/mathe_zusammenfassung-figure77.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure78' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure79' is up-to-date. ======
-[70 <./figures/mathe_zusammenfassung-figure78.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure80' is up-to-date. ======
-[71 <./figures/mathe_zusammenfassung-figure79.pdf>]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
 Underfull \hbox (badness 10000) in paragraph at lines 2427--2429
 
  []
 
 
+LaTeX Warning: Hyper reference `subsubsec:symmetrie' on page 59 undefined on in
+put line 2430.
+
+
+LaTeX Warning: Reference `subsubsec:symmetrie' on page 59 undefined on input li
+ne 2430.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 2430--2433
 
  []
@@ -2437,6 +2440,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 2430--2433
 Underfull \hbox (badness 10000) in paragraph at lines 2430--2433
 
  []
+
+
+LaTeX Warning: Hyper reference `sec:gleichungenvereinfachen' on page 59 undefin
+ed on input line 2441.
+
+
+LaTeX Warning: Reference `sec:gleichungenvereinfachen' on page 59 undefined on 
+input line 2441.
 
 
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 2445--2445
@@ -2458,15 +2469,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 2441--2458
 
  []
 
-[72 <./figures/mathe_zusammenfassung-figure80.pdf>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 2463--2467
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 2463--2467
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2463--2467
+LaTeX Warning: Hyper reference `subsec:limes' on page 60 undefined on input lin
+e 2474.
 
- []
+
+LaTeX Warning: Reference `subsec:limes' on page 60 undefined on input line 2474
+.
 
 
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 2479--2479
@@ -2488,7 +2507,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 2474--2484
 
  []
 
-[73]
+
+LaTeX Warning: Hyper reference `subsubsec:extrema' on page 61 undefined on inpu
+t line 2491.
+
+
+LaTeX Warning: Reference `subsubsec:extrema' on page 61 undefined on input line
+ 2491.
+
+
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 2496--2496
 [] 
  []
@@ -2518,7 +2545,7 @@ Overfull \hbox (413.75496pt too wide) detected at line 2517
 []
  []
 
-[74]
+
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 2532--2532
 [] 
  []
@@ -2527,6 +2554,14 @@ Overfull \hbox (88.20349pt too wide) in paragraph at lines 2532--2532
 Overfull \hbox (296.45386pt too wide) detected at line 2537
 []
  []
+
+
+LaTeX Warning: Hyper reference `subsubsec:extrema' on page 62 undefined on inpu
+t line 2540.
+
+
+LaTeX Warning: Reference `subsubsec:extrema' on page 62 undefined on input line
+ 2540.
 
 
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 2545--2545
@@ -2548,7 +2583,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2540--2554
 
  []
 
-[75]
+
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 2566--2566
 [] 
  []
@@ -2557,6 +2592,14 @@ Overfull \hbox (88.20349pt too wide) in paragraph at lines 2566--2566
 Overfull \hbox (309.8942pt too wide) detected at line 2570
 []
  []
+
+
+LaTeX Warning: Hyper reference `subsec:tangentengleichung' on page 63 undefined
+ on input line 2573.
+
+
+LaTeX Warning: Reference `subsec:tangentengleichung' on page 63 undefined on in
+put line 2573.
 
 
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 2578--2578
@@ -2578,7 +2621,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2573--2583
 
  []
 
-[76]
+
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 2586--2586
 [] 
  []
@@ -2588,7 +2631,16 @@ Overfull \hbox (408.69585pt too wide) detected at line 2590
 []
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure81' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `sec:integralrechnung' on page 64 undefined on i
+nput line 2596.
+
+
+LaTeX Warning: Reference `sec:integralrechnung' on page 64 undefined on input l
+ine 2596.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 2596--2600
 
@@ -2604,11 +2656,28 @@ Overfull \hbox (29.82614pt too wide) detected at line 2606
 []
  []
 
-[77 <./figures/mathe_zusammenfassung-figure81.pdf>] [78]
-===== Image 'figures/mathe_zusammenfassung-figure82' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure83' is up-to-date. ======
-[79 <./figures/mathe_zusammenfassung-figure82.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure84' is up-to-date. ======
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsubsec:flaechenberechnung' on page 66 undefi
+ned on input line 2742.
+
+
+LaTeX Warning: Reference `subsubsec:flaechenberechnung' on page 66 undefined on
+ input line 2742.
+
+
+LaTeX Warning: Hyper reference `subsec:ableitung' on page 66 undefined on input
+ line 2744.
+
+
+LaTeX Warning: Reference `subsec:ableitung' on page 66 undefined on input line 
+2744.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 2746--2749
 
@@ -2624,20 +2693,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 2766--2768
 
  []
 
-[80 <./figures/mathe_zusammenfassung-figure83.pdf> <./figures/mathe_zusammenfas
-sung-figure84.pdf>] [81] [82]
-Underfull \hbox (badness 10000) in paragraph at lines 2821--2822
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 2821--2822
 
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure85' is up-to-date. ======
-[83 <./figures/mathe_zusammenfassung-figure85.pdf>]
-===== Image 'figures/mathe_zusammenfassung-figure86' is up-to-date. ======
+
+Underfull \hbox (badness 10000) in paragraph at lines 2821--2822
+
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Hyper reference `subsubsec:newtonverfahren' on page 69 undefined
+ on input line 2870.
+
+
+LaTeX Warning: Reference `subsubsec:newtonverfahren' on page 69 undefined on in
+put line 2870.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
 
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 2918--2918
 [] 
@@ -2648,7 +2725,15 @@ Overfull \hbox (273.4401pt too wide) detected at line 2926
 []
  []
 
-[84 <./figures/mathe_zusammenfassung-figure86.pdf>]
+
+LaTeX Warning: Hyper reference `subsubsec:umkehrbarkeit' on page 70 undefined o
+n input line 2928.
+
+
+LaTeX Warning: Reference `subsubsec:umkehrbarkeit' on page 70 undefined on inpu
+t line 2928.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 2945--2948
 
  []
@@ -2663,19 +2748,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 2970--2972
 
  []
 
-[85]
+
 Underfull \hbox (badness 10000) in paragraph at lines 3014--3016
 
  []
 
-[86]
+
 Underfull \hbox (badness 10000) in paragraph at lines 3023--3026
 
  []
 
-[87]
-===== Image 'figures/mathe_zusammenfassung-figure87' is up-to-date. ======
-[88 <./figures/mathe_zusammenfassung-figure87.pdf>]
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
 Underfull \hbox (badness 10000) in paragraph at lines 3113--3116
 
  []
@@ -2710,7 +2795,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3131--3135
 
  []
 
-[89]
+
 Underfull \hbox (badness 10000) in paragraph at lines 3140--3143
 
  []
@@ -2750,7 +2835,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3159--3163
 
  []
 
-[90]
+
 Overfull \hbox (4.37506pt too wide) in paragraph at lines 3165--3167
 \OT1/cmr/m/n/12 Erkl[]arung: Von 6 Ka-beln sol-len 3 in der rich-ti-gen Rei-hen
 -fol-ge durch-ge-schnit-ten wer-den. Nat[]urlich
@@ -2786,61 +2871,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 3182--3185
 
  []
 
-[91]
-Underfull \hbox (badness 10000) in paragraph at lines 3187--3191
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 3187--3191
 
  []
 
-===== Image 'figures/mathe_zusammenfassung-figure88' is up-to-date. ======
-===== Image 'figures/mathe_zusammenfassung-figure89' is up-to-date. ======
-[92 <./figures/mathe_zusammenfassung-figure88.pdf>] [93 <./figures/mathe_zusamm
-enfassung-figure89.pdf>] (mathe_zusammenfassung.ind [94
 
-] [95] [96] [97
+Underfull \hbox (badness 10000) in paragraph at lines 3187--3191
 
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3285.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3285.
+ []
 
-(mathe_zusammenfassung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3285.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3285.
 
-Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
-(rerunfilecheck)             Checksum: FA5DFFF2E1363B6B565C3B69472FDC9F;9643.
+Overfull \hbox (11.71591pt too wide) in paragraph at lines 3197--3200
+\OT1/cmr/m/n/12 Um die Bi-no-mi-al-ver-tei-lung zu ver-ste-hen, muss man zun[]a
+chst wis-sen, was ein Bernoulli-Experiment
+ []
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+\openout7 = `figures/mathe_zusammenfassung-figure93.dpth'.
+
+[78
+
+\@writefile{toc}{\protect }
+\providecommand \oddpage@label [2]{}
+{C:/Users/Konstantin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+No file figures/mathe_zusammenfassung-figure93.ind.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3279.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3279.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3279.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3279.
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 45524 strings out of 480790
- 1078684 string characters out of 2907040
- 1653733 words of memory out of 3000000
- 60226 multiletter control sequences out of 15000+200000
- 542707 words of font info for 65 fonts, out of 3000000 for 9000
+ 45622 strings out of 480790
+ 1087740 string characters out of 2907040
+ 1654547 words of memory out of 3000000
+ 60654 multiletter control sequences out of 15000+200000
+ 543610 words of font info for 68 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 66i,31n,103p,1479b,1317s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Konstantin\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi60
-0\bbold12.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
- Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
-Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
-msy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
-/Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program 
-Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/M
-iKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mathe_zusammenfassung.pdf (97 pages, 1250050 bytes).
+ 68i,31n,105p,1528b,2770s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/euler/eufm10.pfb>
+Output written on figures/mathe_zusammenfassung-figure93.pdf (1 page, 43187 byt
+es).
 PDF statistics:
- 2707 PDF objects out of 2984 (max. 8388607)
- 230 named destinations out of 1000 (max. 500000)
- 1647 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 62 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

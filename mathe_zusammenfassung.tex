@@ -3193,7 +3193,92 @@
 				\end{flalign*}
 				Erklärung: Es sollen 2 aus 52 Personen ausgesucht werden, wobei die Reihenfolge keine Rolle spielt, da beide dieselbe Art von Stelle antreten sollen. Es ist also egal, wer Software-Entwickler Nummer 1 und wer Software-Entwickler Nummer 2 wird.
 		\subsection{Wahrscheinlichkeitsverteilungen}
+			Mithilfe der Binomialverteilung\index{Binomialverteilung} und der hypergeometrischen Verteilung\index{Hypergeometrische Verteilung} kann man die Wahrscheinlichkeit ermitteln, bei mehrfacher Durchführung eines Experimentes das gleiche Ergebnis eine bestimmte Anzahl von Malen zu erhalten. Dabei nutzt man die Binomialverteilung für Experimente mit Zurücklegen und die hypergeometrische Verteilung für Experimente ohne.
+			\subsubsection{Binomialverteilung}
+				Mithilfe der Binomialverteilung ermittelt man die Wahrscheinlichkeit, ein Ergebnis mit der Wahrscheinlichkeit $p$ bei $n$ Durchführungen eines Zufallsexperimentes mit Zurücklegen genau $k$-mal zu erhalten. Alle Wahrscheinlichkeiten addiert ergeben am Ende wieder 1.
+				\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+					\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.45cm,arc=0pt,auto outer arc,colback=white,colframe=gray]
+						\begin{flalign*}
+							P({k})=\genfrac{(}{)}{0pt}{}{n}{k}\cdot p^k\cdot (1-p)^{n-k}
+						\end{flalign*}
+					\end{tcolorbox}
+					\begin{flushleft}
+						\begin{tikzpicture}
+						\begin{axis}[
+						width=15cm,
+						height=5cm,
+						xmin=0, xmax=11,
+						ymin=0, ymax=0.3,
+						axis y line=center,
+						axis x line=middle,
+						ticklabel style={fill=white},
+						minor tick num=0,
+						area style,
+						xticklabels={0,$P(0)$,$P(1)$,$P(2)$,$P(3)$,$P(4)$,$P(5)$,$P(6)$,$P(7)$,$P(8)$,$P(9)$,$P(10)$},
+						axis y line=middle,
+						axis x line=bottom
+						]
+						\addplot+[ybar interval] plot coordinates { 
+							(-0.5,1/1024)
+							(0.5,5/512)
+							(1.5,45/1024)
+							(2.5,15/128)
+							(3.5,105/512)
+							(4.5,63/256)
+							(5.5,105/512)
+							(6.5,15/128)
+							(7.5,45/1024)
+							(8.5,5/512)
+							(9.5,1/1024)
+							(10.5,0)
+						};
+						\node [color=blue, align=right, anchor=east] at (axis cs:10.5,0.24) {Binomialverteilung für einen\\zehnfachen Münzwurf};
+						\end{axis}
+						\end{tikzpicture}
+					\end{flushleft}
+				\end{tcolorbox}
+			\subsubsection{Hypergeometrische Verteilung}
+				Man hat eine Menge mit $A$ Elementen, von denen $B$ Elemente eine bestimmte Eigenschaft haben, die die anderen nicht haben. Man entnimmt eine Anzahl $n$ von Elementen aus der Menge ohne sie zurückzulegen. Um jetzt zu ermitteln, wie wahrscheinlich es ist, genau $k$-mal Elemente der Gruppe $B$ zu erhalten, nutzt man die hypergeometrische Verteilung\index{Hypergeometrische Verteilung}. Alle Wahrscheinlichkeiten addiert ergeben am Ende wieder 1.
+			\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+				\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.45cm,arc=0pt,auto outer arc,colback=white,colframe=gray]
+					\begin{flalign*}
+					P({k})=\frac{\genfrac{(}{)}{0pt}{}{B}{k}\genfrac{(}{)}{0pt}{}{A-B}{n-k}}{\genfrac{(}{)}{0pt}{}{A}{n}}
+					\end{flalign*}
+				\end{tcolorbox}
+				\begin{flushleft}
+					\begin{tikzpicture}
+					\begin{axis}[
+					width=15cm,
+					height=5cm,
+					xmin=0, xmax=7,
+					ymin=0, ymax=0.45,
+					axis y line=center,
+					axis x line=middle,
+					ticklabel style={fill=white},
+					minor tick num=0,
+					area style,
+					xtick = {0,1,2,3,4,5,6},
+					xticklabels={$P(0)$,$P(1)$,$P(2)$,$P(3)$,$P(4)$,$P(5)$,$P(6)$},
+					axis y line=middle,
+					axis x line=bottom
+					]
+					\addplot+[ybar interval] plot coordinates { 
+						(-0.5,0.2745)
+						(0.5,0.4235)
+						(1.5,0.2353)
+						(2.5,0.0593)
+						(3.5,585/83237)
+						(4.5,30/83237)
+						(5.5,1/166474)
+						(6.5,1/166474)
+					};
+					\node [color=blue, align=right, anchor=east] at (axis cs:6.5,0.3) {$k$-mal eine durch 5 teilbare Zahl\\beim Lotto 6 aus 49 ziehen};
+					\end{axis}
+					\end{tikzpicture}
+				\end{flushleft}
+			\end{tcolorbox}
 		\subsection{Bedingte Wahrscheinlichkeit}
+			
 		\subsection{Zufallsvariablen}
 	\pagebreak
 	\printindex

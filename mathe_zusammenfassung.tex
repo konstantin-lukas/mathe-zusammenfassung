@@ -24,7 +24,7 @@
 \usepackage{tabularx}
 \renewcommand\tabularxcolumn[1]{m{#1}}
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{shapes,arrows,trees}
 \usepackage{array}
 \usepackage[most]{tcolorbox}
 \usepackage[hidelinks]{hyperref}
@@ -33,6 +33,7 @@
 \tikzexternalize[prefix=figures/]
 %\tikzset{external/force remake}
 \usepgfplotslibrary{fillbetween}
+\usepackage{pgf-pie}
 \usepackage{tocloft}
 \usepackage{polynom}
 \usepackage{tkz-euclide}
@@ -102,6 +103,62 @@
 	}
 }
 \pgfplotsset{compat=1.5.1}
+\newcommand{\maketree}[9]{
+	\begin{center}
+		\bgroup
+		\tikzstyle{level 1}=[level distance=3cm, sibling distance=3.5cm]
+		\tikzstyle{level 2}=[level distance=3cm, sibling distance=2cm]
+		
+		\tikzstyle{bag} = [text width=4em, text centered]
+		\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
+		
+		\begin{tikzpicture}[grow=right, sloped]
+		\node[bag] {\Huge$#1$}
+		child {
+			node[bag] {\Huge$\bar{#2}$}        
+			child {
+				node[end, label=right:
+				{\Huge$\bar{#3}\;\;$\normalsize$P(\bar{#2}\cap \bar{#3})=P(\bar{#2})\cdot P(\bar{#3}\mid \bar{#2})$}] {}
+				edge from parent
+				node[above] {$P(\bar{#3}\mid\bar{#2})$}
+				node[below] {$#9$}
+			}
+			child {
+				node[end, label=right:
+				{\Huge$#3\;\;$\normalsize$P(\bar{#2}\cap #3)=P(\bar{#2})\cdot P(#3\mid \bar{#2})$}] {}
+				edge from parent
+				node[above] {$P(#3\mid\bar{#2})$}
+				node[below] {$#8$}
+			}
+			edge from parent 
+			node[above] {$P(\bar{#2})$}
+			node[below] {$#5$}
+		}
+		child {
+			node[bag] {\Huge$#2$}        
+			child {
+				node[end, label=right:
+				{\Huge$\bar{#3}\;\;$\normalsize$P(#2\cap \bar{#3})=P(#2)\cdot P(\bar{#3}\mid #2)$}] {}
+				edge from parent
+				node[above] {$P(\bar{#3}\mid #2)$}
+				node[below] {$#7$}
+			}
+			child {
+				node[end, label=right:
+				{\Huge$#3\;\;$\normalsize$P(#2\cap #3)=P(#2)\cdot P(#3\mid #2)$}] {}
+				edge from parent
+				node[above] {$P(#3\mid #2)$}
+				node[below] {$#6$}
+			}
+			edge from parent         
+			node[above] {$P(#2)$}
+			node[below] {$#4$}
+		};
+		\end{tikzpicture}
+		\egroup
+	\end{center}
+}
+\newcommand{\dunderline}[1]{\underline{\underline{#1}}}
 \begin{document}
 \renewcommand\indexname{Stichwortverzeichnis}
 \maketitle
@@ -3278,8 +3335,115 @@
 				\end{flushleft}
 			\end{tcolorbox}
 		\subsection{Bedingte Wahrscheinlichkeit}
-			
+			Wir stellen uns vor, wir haben eine Grundmenge\index{Grundmenge} \includegraphics[scale=0.05]{images/busts-in-silhouette_1f465.png} von Menschen. 20\% der Leute in dieser Gruppe haben ein Auslandsjahr in einem französischsprachigen Land absolviert. Diese Teilmenge nennen wir \includegraphics[scale=0.075]{images/luggage_1f9f3.png}. Außerdem ordnen wir alle Menschen, die Französisch sprechen in der Gruppe \includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}, sodass wir zwei Teilmengen von \includegraphics[scale=0.05]{images/busts-in-silhouette_1f465.png} haben. Wir wissen weiterhin, dass ein Mensch aus der Teilgruppe \includegraphics[scale=0.075]{images/luggage_1f9f3.png} mit einer Wahrscheinlichkeit von 70\% Französisch spricht. Die Menschen, die kein Auslandsjahr gemacht haben und damit nicht in der Gruppe \includegraphics[scale=0.075]{images/luggage_1f9f3.png} sind, sprechen mit einer Wahrscheinlichkeit von 25\% Französisch.\vspace{1em}
+			\begin{center}
+				\bgroup
+				\tikzstyle{level 1}=[level distance=3cm, sibling distance=3.5cm]
+				\tikzstyle{level 2}=[level distance=3cm, sibling distance=2cm]
+				
+				\tikzstyle{bag} = [text width=4em, text centered]
+				\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
+				
+				\begin{tikzpicture}[grow=right, sloped]
+				\node[bag] {$\includegraphics[scale=0.1]{images/busts-in-silhouette_1f465.png}$}
+				child {
+					node[bag] {$\overline{\includegraphics[scale=0.15]{images/luggage_1f9f3.png}}$}        
+					child {
+						node[end, label=right:
+						{$\overline{\includegraphics[scale=2]{images/flag-france_1f1eb-1f1f7.png}}\;\;P(\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}}\cap\overline{\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}})=P(\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})\cdot P(\overline{\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}}\mid\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})=0,6$}] {}
+						edge from parent
+						node[above] {$P(\overline{\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}}\mid\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})$}
+						node[below]  {$0,75$}
+					}
+					child {
+						node[end, label=right:
+						{$\includegraphics[scale=2]{images/flag-france_1f1eb-1f1f7.png}\;\;P(\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}}\cap\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png})=P(\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})\cdot P(\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}\mid\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})=0,2$}] {}
+						edge from parent
+						node[above] {$P(\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}\mid\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})$}
+						node[below]  {$0,25$}
+					}
+					edge from parent 
+					node[above] {$P(\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})$}
+					node[below]  {$0,8$}
+				}
+				child {
+					node[bag] {$\includegraphics[scale=0.15]{images/luggage_1f9f3.png}$}        
+					child {
+						node[end, label=right:
+						{$\overline{\includegraphics[scale=2]{images/flag-france_1f1eb-1f1f7.png}}\;\;P(\includegraphics[scale=0.075]{images/luggage_1f9f3.png}\cap\overline{\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}})=P(\includegraphics[scale=0.075]{images/luggage_1f9f3.png})\cdot P(\overline{\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}}\mid\includegraphics[scale=0.075]{images/luggage_1f9f3.png})=0,06$}] {}
+						edge from parent
+						node[above] {$P(\overline{\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}}\mid\includegraphics[scale=0.075]{images/luggage_1f9f3.png})$}
+						node[below]  {$0,3$}
+					}
+					child {
+						node[end, label=right:
+						{$\includegraphics[scale=2]{images/flag-france_1f1eb-1f1f7.png}\;\;P(\includegraphics[scale=0.075]{images/luggage_1f9f3.png}\cap\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png})=P(\includegraphics[scale=0.075]{images/luggage_1f9f3.png})\cdot P(\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}\mid\includegraphics[scale=0.075]{images/luggage_1f9f3.png})=0,14$}] {}
+						edge from parent
+						node[above] {$P(\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}\mid\includegraphics[scale=0.075]{images/luggage_1f9f3.png})$}
+						node[below]  {$0,7$}
+					}
+					edge from parent         
+					node[above] {$P(\includegraphics[scale=0.075]{images/luggage_1f9f3.png})$}
+					node[below]  {$0,2$}
+				};
+				\end{tikzpicture}
+				\egroup
+			\end{center}
+			Um jetzt nachzuvollziehen, wie viele Menschen der Grundmenge insgesamt Französisch sprechen, müssen wir die beiden Pfade $P(\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}\cap\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})$ und $P(\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}\cap\includegraphics[scale=0.075]{images/luggage_1f9f3.png})$ addieren und erhalten damit die Wahrscheinlichkeit $P(\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png})=0,34$. Um jetzt nicht jedes Mal ein Baumdiagramm zeichnen zu müssen uns solche Aufgaben schnell lösen zu können, können wir ein paar allgemeine Formeln aufstellen. Dazu verallgemeinern wir auch das Diagramm noch mal. Übrigens: $P(B\mid A)$ spricht man als »P von B unter der Bedingung A« und das kann auch mal als $P_A(B)$ geschrieben werden.
+			\maketree{\Omega}{A}{B}{}{}{}{}{}{}
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+				\textbf{Satz der totalen Wahrscheinlichkeit}\index{Satz der totalen Wahrscheinlichkeit}
+				\begin{flalign*}
+					P(B)=&P(A\cap B)+P(\bar{A}\cap B)\\
+					=&P(A)\cdot P(B\mid A)+P(\bar{A})\cdot P(B\mid\bar{A})&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Wenn wir jetzt das Baumdiagramm noch mal anders herum aufzeichnen, können wir noch eine tolle Formel herleiten.
+			\maketree{\Omega}{B}{A}{}{}{}{}{}{}
+			Die Äste $P(A\cap B)$ und $P(B\cap A)$ sind ja genau das Gleiche, weshalb wir sie gleichsetzen können.
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+				\textbf{Satz von Bayes}\index{Satz von Bayes}
+				\begin{flalign*}
+				&P(A\cap B)=P(B\cap A)\\
+				\Leftrightarrow\;&P(A)\cdot P(B\mid A)=P(B)\cdot P(A\mid B)\\
+				\Leftrightarrow\;&\frac{P(A)\cdot P(B\mid A)}{P(B)}=P(A\mid B)&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Zu den beiden obigen Sätzen jetzt ein Beispiel: Von allen Patienten haben 0,1\% eine Krankheit, die sich »Blubber« ($B$) nennt. Des Weiteren existiert ein Test, um zu überprüfen, ob jemand den Blubber hat. Dieser findet den Blubber in einer erkrankten Person mit einer Wahrscheinlichkeit von 99\% ($+$). Gleichzeitig gibt der Test aber auch bei 1\% der nicht Erkrankten ein falsch positives Ergebnis aus. Stell dir vor du wurdest positiv getestet. Wie wahrscheinlich ist es dann, dass du den Blubber hast? Man könnte zunächst denken 99\%. Das stimmt aber nicht, denn das ist die Wahrscheinlichkeit $P(+\mid B)$, wir suchen aber die Wahrscheinlichkeit $P(B\mid +)$. Wir stellen also mit dem Satz von Bayes\index{Satz von Bayes} eine Gleichung auf.
+			\begin{flalign*}
+				&P(B)\cdot P(+\mid B)=P(+)\cdot P(B\mid +)\\
+				\Leftrightarrow&P(B\mid +)=\frac{P(B)\cdot P(+\mid B)}{P(+)}\\
+				\Rightarrow&P(B\mid +)=\frac{0,001\cdot 0,99}{P(+)}&&
+			\end{flalign*}
+			Dummerweise fehlt uns die Wahrscheinlichkeit positiv getestet zu werden, unabhängig davon, ob man krank ist oder nicht. Mit dem Satz der totalen Wahrscheinlichkeit finden wir jedoch auch diese Wahrscheinlichkeit heraus und können weiter rechnen.
+			\begin{flalign*}
+			&P(+)=P(B)\cdot P(+\mid B) + P(\bar{B})\cdot P(+\mid\bar{B})\\
+			\Rightarrow&P(B\mid +)=\frac{0,001\cdot 0,99}{P(B)\cdot P(+\mid B) + P(\bar{B})\cdot P(+\mid\bar{B})}\\
+			\Rightarrow&P(B\mid +)=\frac{0,001\cdot 0,99}{0,001\cdot 0,99+0,999\cdot 0,01}=\frac{11}{122}\;\widehat{\approx}\;\dunderline{9\%}&&
+			\end{flalign*}
+			Damit wissen wir jetzt, dass aufgrund des falsch positiven Ergebnisse deine Chance tatsächlich den Blubber zu haben gerade mal 9\% ist. Um dir sicher zu sein, lässt du jetzt einen zweiten Test machen. Dieser kommt auch positiv zurück. Wenn du jetzt die 9\% Wahrscheinlichkeit nimmst, krank zu sein und sie noch einmal in die obige Formel einsetzt, kannst du jetzt auch die Wahrscheinlichkeit berechnen, dass du nach dem zweiten Test den Blubber hast.
+			\begin{flalign*}
+			&P(+)=P(B)\cdot P(+\mid B) + P(\bar{B})\cdot P(+\mid\bar{B})\\
+			\Rightarrow&P(B\mid +)=\frac{0,09\cdot 0,99}{0,09\cdot 0,99+0,91\cdot 0,01}=\frac{891}{982}\;\widehat{\approx}\;\dunderline{91\%}&&
+			\end{flalign*}
+			Hier nochmal die dazugehörigen Baumdiagramme, um dass besser nachvollziehen zu können:
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=gray, enlarge top by=.5cm, enlarge bottom by=.5cm]
+				\textbf{Erster Test}
+				\maketree{\Omega}{B}{+}{0,001}{0,999}{0,99}{0,01}{0,01}{0,99}
+			\end{tcolorbox}
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=gray, enlarge top by=.5cm, enlarge bottom by=.5cm]
+				\textbf{Zweiter Test}
+				\maketree{\Omega}{B}{+}{0,09}{0,91}{0,99}{0,01}{0,01}{0,99}
+			\end{tcolorbox}
 		\subsection{Zufallsvariablen}
+			\begin{center}
+				\begin{tikzpicture}
+				\pie[
+				color = {
+					yellow,green!80!black,teal,green!80!black,teal,green!80!black,teal,green!80!black,teal,green!80!black}
+				]{10/15 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro}
+				\end{tikzpicture}
+			\end{center}
 	\pagebreak
 	\printindex
 \end{document}

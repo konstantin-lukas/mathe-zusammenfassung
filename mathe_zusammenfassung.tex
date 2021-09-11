@@ -314,6 +314,7 @@
 			\egroup
 		\end{center}
 	\subsection{Abbildungen}
+	\label{subsec:abbildungen}
 		Abbildungen\index{Abbildung} ordnen jedem Wert einer Menge $A$ einen Wert aus der Menge $B$ mithilfe einer Vorschrift $T$ zu. In der Analysis kommen Abbildungen in Form von Funktionen zum Einsatz. Man findet sie aber auch in der Geometrie, Stochastik oder der linearen Algebra. Wenn man ein Element $y$ aus der Menge $B$ nimmt, dem ein $x$ aus der Menge $A$ zugeordnet wird, spricht man vom \textit{Bild}\index{Bild} von $x$. Die Notation ist wie folgt:
 		\begin{flalign*}
 			T:A\rightarrow B,x\mapsto T(x)&&
@@ -3249,7 +3250,7 @@
 				\genfrac{(}{)}{0pt}{}{52}{2}=\frac{52!}{(52-2)!\cdot 2!}=1326&&
 				\end{flalign*}
 				Erklärung: Es sollen 2 aus 52 Personen ausgesucht werden, wobei die Reihenfolge keine Rolle spielt, da beide dieselbe Art von Stelle antreten sollen. Es ist also egal, wer Software-Entwickler Nummer 1 und wer Software-Entwickler Nummer 2 wird.
-		\subsection{Wahrscheinlichkeitsverteilungen}
+		\subsection{Diskrete Wahrscheinlichkeitsverteilungen}
 			Mithilfe der Binomialverteilung\index{Binomialverteilung} und der hypergeometrischen Verteilung\index{Hypergeometrische Verteilung} kann man die Wahrscheinlichkeit ermitteln, bei mehrfacher Durchführung eines Experimentes das gleiche Ergebnis eine bestimmte Anzahl von Malen zu erhalten. Dabei nutzt man die Binomialverteilung für Experimente mit Zurücklegen und die hypergeometrische Verteilung für Experimente ohne.
 			\subsubsection{Binomialverteilung}
 				Mithilfe der Binomialverteilung ermittelt man die Wahrscheinlichkeit, ein Ergebnis mit der Wahrscheinlichkeit $p$ bei $n$ Durchführungen eines Zufallsexperimentes mit Zurücklegen genau $k$-mal zu erhalten. Alle Wahrscheinlichkeiten addiert ergeben am Ende wieder 1.
@@ -3270,24 +3271,22 @@
 						axis x line=middle,
 						ticklabel style={fill=white},
 						minor tick num=0,
-						area style,
 						xticklabels={0,$P(0)$,$P(1)$,$P(2)$,$P(3)$,$P(4)$,$P(5)$,$P(6)$,$P(7)$,$P(8)$,$P(9)$,$P(10)$},
 						axis y line=middle,
 						axis x line=bottom
 						]
 						\addplot+[ybar interval] plot coordinates { 
-							(-0.5,1/1024)
-							(0.5,5/512)
-							(1.5,45/1024)
-							(2.5,15/128)
-							(3.5,105/512)
-							(4.5,63/256)
-							(5.5,105/512)
-							(6.5,15/128)
-							(7.5,45/1024)
-							(8.5,5/512)
-							(9.5,1/1024)
-							(10.5,0)
+							(0,1/1024)
+							(1,5/512)
+							(2,45/1024)
+							(3,15/128)
+							(4,105/512)
+							(5,63/256)
+							(6,105/512)
+							(7,15/128)
+							(8,45/1024)
+							(9,5/512)
+							(10,1/1024)
 						};
 						\node [color=blue, align=right, anchor=east] at (axis cs:10.5,0.24) {Binomialverteilung für einen\\zehnfachen Münzwurf};
 						\end{axis}
@@ -3313,21 +3312,19 @@
 					axis x line=middle,
 					ticklabel style={fill=white},
 					minor tick num=0,
-					area style,
 					xtick = {0,1,2,3,4,5,6},
 					xticklabels={$P(0)$,$P(1)$,$P(2)$,$P(3)$,$P(4)$,$P(5)$,$P(6)$},
 					axis y line=middle,
 					axis x line=bottom
 					]
 					\addplot+[ybar interval] plot coordinates { 
-						(-0.5,0.2745)
-						(0.5,0.4235)
-						(1.5,0.2353)
-						(2.5,0.0593)
-						(3.5,585/83237)
-						(4.5,30/83237)
-						(5.5,1/166474)
-						(6.5,1/166474)
+						(0,0.2745)
+						(1,0.4235)
+						(2,0.2353)
+						(3,0.0593)
+						(4,585/83237)
+						(5,30/83237)
+						(6,1/166474)
 					};
 					\node [color=blue, align=right, anchor=east] at (axis cs:6.5,0.3) {$k$-mal eine durch 5 teilbare Zahl\\beim Lotto 6 aus 49 ziehen};
 					\end{axis}
@@ -3436,14 +3433,67 @@
 				\maketree{\Omega}{B}{+}{0,09}{0,91}{0,99}{0,01}{0,01}{0,99}
 			\end{tcolorbox}
 		\subsection{Zufallsvariablen}
-			\begin{center}
-				\begin{tikzpicture}
-				\pie[
-				color = {
-					yellow,green!80!black,teal,green!80!black,teal,green!80!black,teal,green!80!black,teal,green!80!black}
-				]{10/15 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro}
-				\end{tikzpicture}
-			\end{center}
+			Bei Zufallsexperimenten haben wir i.d.R. eine Grundmenge $\Omega$ mit den möglichen Ergebnissen. Für einen Münzwurf z.B.: $\Omega=\{\text{Kopf},\text{Zahl}\}$. Wenn wir diesen Ergebnissen jetzt Werte zuordnen sprechen wir von einer Zufallsvariable\index{Zufallsvariable}, da diese einen Wert annimmt, der auf dem zufälligen Ausgang des Experimentes basiert. Man könnte beispielsweise sagen, bei Kopf bekommt man fünf Euro und bei Zahl verliert man fünf Euro.
+			\begin{flalign*}
+				X(\omega)=\genfrac{\{}{.}{0pt}{}{5\text{, wenn }\omega=\text{Kopf}}{-5\text{, wenn }\omega=\text{Zahl}}&&
+			\end{flalign*}
+			Eine Zufallsvariable ist eine \highlight{subsec:abbildungen}{Abbildung}, die jedem Wert aus der Grundmenge genau einen Wert aus den reellen Zahlen zuordnet. Dabei unterscheidet man zwischen diskreten und stetigen Zufallsvariablen\index{Stetig}\index{Diskret}. Diskret ist ein Zufallsvariable, wenn sie eine abzählbare Menge an Werten annehmen kann, z.B. $X:=\text{»Gewürfelte Augenzahl«}$. Stetig ist sie, wenn sie eine nicht abzählbare Menge von Werten haben kann, z.B. $X:=\text{»Körpergewicht einer beliebigen Person«}$. Dabei können reelle Zahlen mit theoretisch uneingeschränkt vielen Nachkommastellen entstehen.
+			\subsubsection{Erwartungswert, Varianz und Standardabweichung}
+				Stellen wir uns vor, wir haben das unten gezeichnete Glücksrad mit den entsprechenden Wahrscheinlichkeiten und Gewinnen und gehen davon aus, dass man 5 Euro Einsatz bezahlen muss, um zu drehen. Wir wollen jetzt wissen, ob dieses Spiel fair ist oder nicht. Dazu berechnet man den Erwartungswert\index{Erwartungswert}. Diesen Wert kann man sich als das vorstellen, was man ungefähr kriegen würden, wenn man das Zufallsexperiment sehr oft wiederholt. Das bedeutet, dass wenn der Erwartungswert genau Null ist, ein für beide Seiten faires Spiel vorliegt. Ansonsten macht die eine Seite Gewinn und die andere Verlust.
+				\begin{center}
+					\begin{tikzpicture}
+					\pie[
+					color = {
+						yellow,green!80!black,teal,green!80!black,teal,green!80!black,teal,green!80!black,teal,green!80!black}
+					]{10/15 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro}
+					\end{tikzpicture}
+				\end{center}
+				Den Erwartungswert\index{Erwartungswert} berechnet man, indem man jeden Wert der Zufallsvariable mit ihrer Wahrscheinlichkeit multipliziert und anschließend alles zusammenrechnet.
+				\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=gray, enlarge top by=.5cm, enlarge bottom by=.5cm]
+					\textbf{Erwartungswert}
+					\begin{flalign*}
+						E(x)=\sum^n_{i=1}x_i\cdot P(X=x_i)&&
+					\end{flalign*}
+				\end{tcolorbox}
+				\noindent Dieser Sachverhalt lässt sich auch sehr gut in einer Wertetabelle\index{Wertetablle} darstellen.
+				\begin{center}
+					\bgroup
+					\def\arraystretch{1.5}
+					\begin{tabularx}{\linewidth}{|l|@{\hspace{0.5cm}}|X|X|X|}
+						\hline
+						$x_i$ & $-4$ & $-3$ & $+10$ \\ \hline
+						$P(X=x_i)$ & $\frac{1}{2}$ & $\frac{2}{5}$ & $\frac{1}{10}$ \\ \hline
+					\end{tabularx}
+					\egroup
+				\end{center}
+				\begin{flalign*}
+					E(X)=\sum^3_{i=1}x_i\cdot P(X=x_i)=-4\cdot\frac{1}{2}-3\cdot\frac{2}{5}+10\cdot\frac{1}{10}=\dunderline{-2,2}&&
+				\end{flalign*}
+				Damit ist das Spiel nicht fair und man muss davon ausgehen, als Spieler Geld zu verlieren. Wenn man das Spiel fair machen will, muss man die obige Formel mit Null gleichsetzen und dann einen beliebigen Wert durch eine Variable ersetzen, durch Umstellen\index{Umstellen} findet man dann eine Lösung, um das Spiel fair zu machen.
+				\begin{flalign*}
+					&-4\cdot\frac{1}{2}-3\cdot\frac{2}{5}+\frac{1}{10}x=0\\
+					\Leftrightarrow\;&\frac{1}{10}x=3,2\\
+					\Leftrightarrow\;&x=32&&
+				\end{flalign*}
+				Das Spiel wäre z.B. fair, wenn der Gewinn auf dem gelben Feld 37 Euro betragen würde. Hinweis: Als Wert haben wir zwar 32 bekommen, aber man darf nicht vergessen die 5 Euro Einsatz wieder drauf zu rechnen.\newline\newline
+				Wenn man den Erwartungswert errechnet hat, kann man auch die Varianz\index{Varianz} und die Standardabweichung\index{Standardabweichung} errechnen. Die Varianz\index{Varianz} gibt an, wie Groß die Abweichungen bzw. die Streuung\index{Streuung} vom Mittelwert\index{Mittelwert} sind. Zur Erinnerung: Der Mittelwert errechnet sich, indem man alle Werte addiert und durch die Anzahl aller Werte teilt und wird als $\bar{x}$ geschrieben.
+				\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=gray, enlarge top by=.5cm, enlarge bottom by=.5cm]
+					\textbf{Varianz}
+					\begin{flalign*}
+					V(X)=\sum^n_{i=1}(x_i-E(X))^2\cdot P(X=x_i)&&
+					\end{flalign*}
+					\textbf{Standardabweichung}
+					\begin{flalign*}
+					S(X)=\sqrt{V(X)}&&
+					\end{flalign*}
+				\end{tcolorbox}
+				\noindent Wenn wir diese Werte jetzt für unser Beispiel oben ausrechnen, erhalten wir Folgendes:
+				\begin{flalign*}
+					V(X)&=\sum^3_{i=1}(x_i-E(X))^2\cdot P(X=x_i)\\
+					&=(-4-(-2,2))^2\cdot\frac{1}{2}+(-3-(-2,2))^2\cdot\frac{2}{5}+(10-(-2,2))^2\cdot\frac{1}{10}\\
+					&=\dunderline{16,76}\\
+					S(X)&=\dunderline{\sqrt{16,76}}&&
+				\end{flalign*}
 	\pagebreak
 	\printindex
 \end{document}

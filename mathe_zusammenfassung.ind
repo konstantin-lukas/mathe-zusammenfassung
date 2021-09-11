@@ -51,6 +51,7 @@
   \item Differenzieren, \hyperpage{80}
   \item Direkter Beweis, \hyperpage{86}
   \item Disjunktion, \hyperpage{85}
+  \item Diskret, \hyperpage{97}
   \item Diskriminante, \hyperpage{13}
   \item Dividend, \hyperpage{12}
   \item Divisor, \hyperpage{12}, \hyperpage{57}, \hyperpage{66}
@@ -66,6 +67,7 @@
   \item Ereignis, \hyperpage{88}
   \item Ergebnis, \hyperpage{49--51}, \hyperpage{57}, \hyperpage{59}, 
 		\hyperpage{71}, \hyperpage{73}, \hyperpage{88}
+  \item Erwartungswert, \hyperpage{97}
   \item Erweiterbar, \hyperpage{70}
   \item Euklidischer Algorithmus, \hyperpage{13}
   \item Exponent, \hyperpage{54}, \hyperpage{58}, \hyperpage{61}, 
@@ -198,6 +200,7 @@
   \item Menge der natürlichen Zahlen, \hyperpage{6}
   \item Mengen, \hyperpage{6}
   \item Minimalstelle, \hyperpage{46}
+  \item Mittelwert, \hyperpage{98}
   \item Monom, \hyperpage{54}
   \item Monoton, \hyperpage{45}
   \item Monotonieverhalten, \hyperpage{45}, \hyperpage{64}
@@ -311,10 +314,12 @@
   \item Spannvektor, \hyperpage{39}
   \item Spurpunkt, \hyperpage{38}
   \item Stammfunktion, \hyperpage{80}
+  \item Standardabweichung, \hyperpage{98}
   \item Steigung, \hyperpage{65, 66}
-  \item Stetig, \hyperpage{69}
+  \item Stetig, \hyperpage{69}, \hyperpage{97}
   \item Stetige Erweiterung, \hyperpage{70}
   \item Streng, \hyperpage{45}
+  \item Streuung, \hyperpage{98}
   \item Strickt, \hyperpage{46}
   \item Stufenform, \hyperpage{28}
   \item Stützvektor, \hyperpage{37}, \hyperpage{39}
@@ -342,7 +347,7 @@
   \item Umformen, \hyperpage{61}, \hyperpage{64}
   \item Umkehrfunktion, \hyperpage{84}
   \item Umstellen, \hyperpage{21}, \hyperpage{26}, \hyperpage{71}, 
-		\hyperpage{73}, \hyperpage{77}
+		\hyperpage{73}, \hyperpage{77}, \hyperpage{98}
   \item Unbestimmtes Integral, \hyperpage{79}
   \item Unendlich, \hyperpage{21}, \hyperpage{58, 59}, 
 		\hyperpage{67, 68}
@@ -354,6 +359,7 @@
   \indexspace
 
   \item Variable, \hyperpage{62}
+  \item Varianz, \hyperpage{98}
   \item Variation, \hyperpage{88}
   \item Vereinfachen, \hyperpage{16}, \hyperpage{19}, \hyperpage{31}
   \item Vereinigung, \hyperpage{5}
@@ -371,6 +377,7 @@
   \item Wendepunkt, \hyperpage{71}, \hyperpage{75}, \hyperpage{77}
   \item Wendestelle, \hyperpage{76}
   \item Wertetabelle, \hyperpage{47}, \hyperpage{83}
+  \item Wertetablle, \hyperpage{97}
   \item Widerspruch, \hyperpage{85}
   \item Windschief, \hyperpage{41}, \hyperpage{43}
   \item Winkel, \hyperpage{32}
@@ -385,6 +392,7 @@
 
   \item Zielbereich, \hyperpage{6}
   \item Zufallsexperiment, \hyperpage{88}
+  \item Zufallsvariable, \hyperpage{96}
   \item Zusammengesetzte Funktion, \hyperpage{71}
   \item Zweite Ableitung, \hyperpage{66}
   \item Zylinder, \hyperpage{33}

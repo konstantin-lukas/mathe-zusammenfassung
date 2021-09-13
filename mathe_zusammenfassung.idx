@@ -27,9 +27,11 @@
 \indexentry{Äquivalenzumformung|hyperpage}{8}
 \indexentry{Kartesische Form|hyperpage}{8}
 \indexentry{Polarform|hyperpage}{8}
+\indexentry{Argument|hyperpage}{9}
 \indexentry{Signum|hyperpage}{9}
 \indexentry{Satz von de Moivre|hyperpage}{10}
 \indexentry{Potenzgesetz|hyperpage}{11}
+\indexentry{Argument|hyperpage}{11}
 \indexentry{Kehrwert|hyperpage}{12}
 \indexentry{Divisor|hyperpage}{12}
 \indexentry{Dividend|hyperpage}{12}
@@ -228,6 +230,7 @@
 \indexentry{Windschief|hyperpage}{43}
 \indexentry{Schnittgerade|hyperpage}{43}
 \indexentry{Koordinatenform|hyperpage}{43}
+\indexentry{Argument|hyperpage}{45}
 \indexentry{Monoton|hyperpage}{45}
 \indexentry{Streng|hyperpage}{45}
 \indexentry{Wachsen|hyperpage}{45}
@@ -398,6 +401,7 @@
 \indexentry{Verkettung|hyperpage}{62}
 \indexentry{Transformieren|hyperpage}{62}
 \indexentry{Innere Funktion|hyperpage}{62}
+\indexentry{Argument|hyperpage}{62}
 \indexentry{Äußere Funktion|hyperpage}{62}
 \indexentry{Abszisse|hyperpage}{63}
 \indexentry{Ordinate|hyperpage}{63}
@@ -579,5 +583,6 @@
 \indexentry{Varianz|hyperpage}{98}
 \indexentry{Standardabweichung|hyperpage}{98}
 \indexentry{Varianz|hyperpage}{98}
+\indexentry{Standardabweichung|hyperpage}{98}
 \indexentry{Streuung|hyperpage}{98}
 \indexentry{Mittelwert|hyperpage}{98}

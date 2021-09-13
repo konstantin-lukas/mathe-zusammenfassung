@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  11 SEP 2021 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  13 SEP 2021 16:38
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -2881,29 +2881,31 @@ sung-figure92.pdf>]
 enfassung-figure94.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure95' is up-to-date. ======
 [97 <./figures/mathe_zusammenfassung-figure95.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3477--3489
+Underfull \hbox (badness 10000) in paragraph at lines 3481--3497
 
  []
 
-(mathe_zusammenfassung.ind [98] [99
+[98]
+===== Image 'figures/mathe_zusammenfassung-figure96' is up-to-date. ======
+[99 <./figures/mathe_zusammenfassung-figure96.pdf>] (mathe_zusammenfassung.ind
+[100
 
-] [100] [101] [102
+] [101] [102] [103
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3499.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3499.
-
-(mathe_zusammenfassung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3499.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3499.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3541.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3541.
+ (mathe_zusammenfassung.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3541.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3541.
 
 Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
-(rerunfilecheck)             Checksum: C54FA4BB6A45653EFCAA7F1C00189E2D;9761.
+(rerunfilecheck)             Checksum: 40A4C6DB6B059DAC3FB6F3C0DB744C3C;9770.
  ) 
 Here is how much of TeX's memory you used:
- 45781 strings out of 480790
- 1084381 string characters out of 2907040
- 1660522 words of memory out of 3000000
+ 45783 strings out of 480790
+ 1084419 string characters out of 2907040
+ 1660549 words of memory out of 3000000
  60448 multiletter control sequences out of 15000+200000
  543771 words of font info for 70 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -2924,9 +2926,9 @@ msy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
 /Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program 
 Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mathe_zusammenfassung.pdf (102 pages, 1316741 bytes).
+Output written on mathe_zusammenfassung.pdf (103 pages, 1323134 bytes).
 PDF statistics:
- 2833 PDF objects out of 2984 (max. 8388607)
- 236 named destinations out of 1000 (max. 500000)
- 1700 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2853 PDF objects out of 2984 (max. 8388607)
+ 237 named destinations out of 1000 (max. 500000)
+ 1705 words of extra memory for PDF output out of 10000 (max. 10000000)
 

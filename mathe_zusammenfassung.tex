@@ -29,7 +29,7 @@
 \usepackage[most]{tcolorbox}
 \usepackage[hidelinks]{hyperref}
 \usepackage{pgfplots}
-\usepgfplotslibrary{external} 
+\usepgfplotslibrary{external}
 \tikzexternalize[prefix=figures/]
 %\tikzset{external/force remake}
 \usepgfplotslibrary{fillbetween}
@@ -81,14 +81,14 @@
 			\edef\temp{\noexpand\addplot+[mark=none, color=\getcolor{\i}, solid, #9] {\graph};}
 			\temp
 		}
-		
-		
+
+
 		\end{axis}
 		\readlist\pos{#3}
 		\foreach \label [count=\i] in {#2} {
 			\node [color=\getcolor{\i}] at (\pos[\i]) {\label};
 		}
-		
+
 		\end{tikzpicture}
 	\end{center}
 }
@@ -108,14 +108,14 @@
 		\bgroup
 		\tikzstyle{level 1}=[level distance=3cm, sibling distance=3.5cm]
 		\tikzstyle{level 2}=[level distance=3cm, sibling distance=2cm]
-		
+
 		\tikzstyle{bag} = [text width=4em, text centered]
 		\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
-		
+
 		\begin{tikzpicture}[grow=right, sloped]
 		\node[bag] {\Huge$#1$}
 		child {
-			node[bag] {\Huge$\bar{#2}$}        
+			node[bag] {\Huge$\bar{#2}$}
 			child {
 				node[end, label=right:
 				{\Huge$\bar{#3}\;\;$\normalsize$P(\bar{#2}\cap \bar{#3})=P(\bar{#2})\cdot P(\bar{#3}\mid \bar{#2})$}] {}
@@ -130,12 +130,12 @@
 				node[above] {$P(#3\mid\bar{#2})$}
 				node[below] {$#8$}
 			}
-			edge from parent 
+			edge from parent
 			node[above] {$P(\bar{#2})$}
 			node[below] {$#5$}
 		}
 		child {
-			node[bag] {\Huge$#2$}        
+			node[bag] {\Huge$#2$}
 			child {
 				node[end, label=right:
 				{\Huge$\bar{#3}\;\;$\normalsize$P(#2\cap \bar{#3})=P(#2)\cdot P(\bar{#3}\mid #2)$}] {}
@@ -150,7 +150,7 @@
 				node[above] {$P(#3\mid #2)$}
 				node[below] {$#6$}
 			}
-			edge from parent         
+			edge from parent
 			node[above] {$P(#2)$}
 			node[below] {$#4$}
 		};
@@ -259,7 +259,7 @@
 		\end{flalign*}
 	\end{tcolorbox}
 	 \noindent Die Potenzmenge\index{Potenzmenge} einer Menge $M=\{1;2\}$ beinhaltet alle möglichen Teilmengen von $M$: $\mathfrak{P}(M)=\{\emptyset;\{1\};\{2\};\{1;2\}\}$.\newline\newline
-	 Das Komplement\index{Komplement} einer Menge $M$ in einem Universum\index{Universum} $U$ enthält alle Elemente, die nicht in $M$ sind, aber im Universum $U$ existieren. Sind das Universum z.~B. die natürlichen Zahlen, so gilt: $M^C=\bar M=\mathbb{N}\setminus M$.
+	 Das Komplement\index{Komplement} einer Menge $M$ in einem Universum\index{Universum} $U$ enthält alle Elemente, die nicht in $M$ sind, aber im Universum $U$ existieren. Sind das Universum z.B. die natürlichen Zahlen, so gilt: $M^C=\bar M=\mathbb{N}\setminus M$.
 	\subsection{Definierte Zahlenmengen}
 	\index{Mengen}
 		\begin{center}
@@ -379,7 +379,7 @@
 			\egroup
 		\end{center}
 	\subsection{Komplexe Zahlen}
-		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereichen $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.~B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
+		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereichen $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}
 			\begin{tikzpicture}
 			\begin{axis}[
@@ -405,7 +405,7 @@
 			\node at (3.75,3.25) {$z=\textcolor{blue}{10}+\textcolor{red}{5}i=\begin{pmatrix}\textcolor{blue}{10}\\\textcolor{red}{5}\end{pmatrix}$};
 			\end{tikzpicture}
 		\end{center}
-		Für die kartesische Form\index{Kartesische Form} ($z=a+b\cdot i$) gelten alle gängigen Rechengesetze. Es gibt jedoch auch etwas neues, das sich \textit{komplexe Konjugation}\index{Komplexe Konjugation} nennt. Das klingt kompliziert als es ist, denn man dreht nur das Vorzeichen der imaginären Zahl um schreibt zur Markierung einen Strich über die Zahl: $z=a+b\cdot i\Rightarrow \bar{z}=a-b\cdot i$. Was beim Rechen mit komplexen Zahl besonders interessant ist, ist wie wir damit wieder auf reelle Zahlen kommen. Da $i=\sqrt{-1}$ festgelegt ist, gilt somit auch $i^2=-1$. Das heißt z.~B., das Produkt aus $1+i$ und $-1-i$ ist $-2i$. Etwas schwieriger wird es bei der Division, da es durch das $i$ schwer werden kann zurück auf die kartesische Form zu kommen. Dafür gibt es einen kleinen Trick, denn es gilt $z\cdot \bar{z}=a^2+b^2$. Das kann man ganz einfach durch nachrechnen allgemein prüfen:
+		Für die kartesische Form\index{Kartesische Form} ($z=a+b\cdot i$) gelten alle gängigen Rechengesetze. Es gibt jedoch auch etwas neues, das sich \textit{komplexe Konjugation}\index{Komplexe Konjugation} nennt. Das klingt kompliziert als es ist, denn man dreht nur das Vorzeichen der imaginären Zahl um schreibt zur Markierung einen Strich über die Zahl: $z=a+b\cdot i\Rightarrow \bar{z}=a-b\cdot i$. Was beim Rechen mit komplexen Zahl besonders interessant ist, ist wie wir damit wieder auf reelle Zahlen kommen. Da $i=\sqrt{-1}$ festgelegt ist, gilt somit auch $i^2=-1$. Das heißt z.B., das Produkt aus $1+i$ und $-1-i$ ist $-2i$. Etwas schwieriger wird es bei der Division, da es durch das $i$ schwer werden kann zurück auf die kartesische Form zu kommen. Dafür gibt es einen kleinen Trick, denn es gilt $z\cdot \bar{z}=a^2+b^2$. Das kann man ganz einfach durch nachrechnen allgemein prüfen:
 		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
 			\begin{flalign*}
 				&&z\cdot \bar{z}=&(a+b\cdot i)\cdot (a-b\cdot i)\\
@@ -502,7 +502,7 @@
 				\end{tabularx}
 				\egroup
 			\end{center}
-			Hinweis: $r\cdot(\cos\phi+i\cdot\sin\phi)$ wird auch trigonometrische Darstellung und $r\cdot e^{i\phi}$ auch als Exponentialdarstellung der Polarform bezeichnet. $\phi$ wird auch als Argument der Zahl $z$ bezeichnet.\newline\newline
+			Hinweis: $r\cdot(\cos\phi+i\cdot\sin\phi)$ wird auch trigonometrische Darstellung und $r\cdot e^{i\phi}$ auch als Exponentialdarstellung der Polarform bezeichnet. $\phi$ wird auch als Argument\index{Argument} der Zahl $z$ bezeichnet.\newline\newline
 			Natürlich gibt es auch Regeln, wie man zwischen kartesischer und Polarform umwandeln kann. Größtenteils sind diese sehr einfach, da sie sich aus dem Rechnen mit dem rechtwinkligen Dreieck herleiten, jedoch ein kleiner Hinweis: $sgn(b)$ (Signum\index{Signum}) meint das Vorzeichen von $b$ und $\arccos$ ist dasselbe wie $\cos^{-1}$ auf dem Taschenrechner.
 			\begin{tcolorbox}[boxsep=0pt,top=0.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
 				Für die Umrechnung zwischen kartesischer Form und Polarform gelten folgende Gleichungen:
@@ -520,7 +520,7 @@
 			\subsubsection{Komplexe Zahlen potenzieren}
 			\label{subsubsec:komplexpotenz}
 				Möchte man eine komplexe Zahl mit einer sehr hohen Zahl potenzieren, ist es ratsam, sie zunächst in die Polarform zu bringen.
-				Das hat den Hintergrund, dass wir dann die \highlight{subsec:potenzgesetze}{Potenzgesetze} anwenden können, allerdings nur, wenn die Potenz eine ganze Zahl ist. Dieser Zusammenhang wurde erstmals von Abraham de Moivre entdeckt und entsprechend benannt. 
+				Das hat den Hintergrund, dass wir dann die \highlight{subsec:potenzgesetze}{Potenzgesetze} anwenden können, allerdings nur, wenn die Potenz eine ganze Zahl ist. Dieser Zusammenhang wurde erstmals von Abraham de Moivre entdeckt und entsprechend benannt.
 				\begin{flalign*}
 				r^n\cdot e^{in\phi}=r^n\cdot(\cos(n\phi)+i\cdot\sin(n\phi))&&
 				\end{flalign*}
@@ -601,7 +601,7 @@
 					\end{axis}
 					\end{tikzpicture}
 				\end{center}
-				Was die obige Abbildung bedeutet ist folgendes: Der Term $\textcolor{red}{\frac{\phi}{n}}$ bleibt konstant; er ist unser Startwinkel. In diesem Fall sind das 45 Grad. Jetzt addieren wir noch $\textcolor{blue}{\frac{2\pi}{n}k}$ dazu und das für jedes $k$ zwischen $0$ und $n-1$. In diesem Fall addieren wir jedes Mal 60 Grad drauf. Für $k=1$ hätten wir z.~B. einen Winkel von 105 Grad. So kriegen wir am Ende 6 verschiedene Lösungen, deren Beträge zwar alle gleich sind, aber deren Argumente (Winkel) sich unterscheiden.\newline\newline
+				Was die obige Abbildung bedeutet ist folgendes: Der Term $\textcolor{red}{\frac{\phi}{n}}$ bleibt konstant; er ist unser Startwinkel. In diesem Fall sind das 45 Grad. Jetzt addieren wir noch $\textcolor{blue}{\frac{2\pi}{n}k}$ dazu und das für jedes $k$ zwischen $0$ und $n-1$. In diesem Fall addieren wir jedes Mal 60 Grad drauf. Für $k=1$ hätten wir z.B. einen Winkel von 105 Grad. So kriegen wir am Ende 6 verschiedene Lösungen, deren Beträge zwar alle gleich sind, aber deren Argumente\index{Argument} (Winkel) sich unterscheiden.\newline\newline
 				Wie versprochen dazu noch ein Beispiel:
 				\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
 					\begin{flalign*}
@@ -692,12 +692,12 @@
 				& \cfrac{b^k}{b^m} = b^{k-m} \\\\
 				& a^k \cdot b^k = (a \cdot b)^k \\\\
 				& \cfrac{a^k}{b^k} = \left( \frac{a}{b} \right)^k \\\\
-				& (a^k)^m = a^{k \cdot m} && 
+				& (a^k)^m = a^{k \cdot m} &&
 			\end{flalign*}
 		\end{tcolorbox}
 		\noindent Für $a>0$ und jede rationale Zahl\index{Rationale Zahl} $\frac{p}{q}$ (mit $p,q \in \mathbb{Z}$ und $q>0$) ist
 		\begin{flalign*}
-		a^{\frac{p}{q}} = \sqrt[q]{a^p} = (\sqrt[q]{a})^p && 
+		a^{\frac{p}{q}} = \sqrt[q]{a^p} = (\sqrt[q]{a})^p &&
 		\end{flalign*}
 		Beispiel: Bestimmen Sie $m$ und $n$ so, dass gilt: $(9x^7)^2 = mx^n$
 		\begin{flalign*}
@@ -711,23 +711,23 @@
 			\begin{flalign*}
 				& \sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b} \\\\
 				& \sqrt[n]{\frac{a}{c}} = \frac{\sqrt[n]{a}}{\sqrt[n]{c}} \\\\
-				& \sqrt[n]{\sqrt[m]{a}} = \sqrt[n \cdot m]{a} && 
+				& \sqrt[n]{\sqrt[m]{a}} = \sqrt[n \cdot m]{a} &&
 			\end{flalign*}
 		\end{tcolorbox}
 		\noindent Beispiel 1: Nach der dritten Binomischen Formel\index{Binomische Formel} gilt für $a,b > 0, a \neq b$:
 		\begin{flalign*}
 		& \cfrac{1}{\sqrt{a}+\sqrt{b}} & \mid \cdot (\sqrt{a}-\sqrt{b}) &&&&&&&&&&&& \\
-		= & \cfrac{\sqrt{a}-\sqrt{b}}{(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})} \\ 
-		= & \cfrac{\sqrt{a}-\sqrt{b}}{\sqrt{a}^2-\sqrt{b}^2} \\ 
+		= & \cfrac{\sqrt{a}-\sqrt{b}}{(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})} \\
+		= & \cfrac{\sqrt{a}-\sqrt{b}}{\sqrt{a}^2-\sqrt{b}^2} \\
 		= & \cfrac{\sqrt{a}-\sqrt{b}}{a-b} &&
 		\end{flalign*}
 		\hrule
 		\noindent\newline\newline Beispiel 2:
 		\begin{flalign*}
 		& \frac{\sqrt{(1+a^2) \cdot (a-b)^2}}{\sqrt[4]{16(1+a^2)^2}} \\
-		= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{\sqrt{16(1+a^2)^2}}} \\ 
-		= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{4(1+a)^2}} \\ 
-		= & \frac{1}{2}\sqrt{(a-b)^2} \\ 
+		= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{\sqrt{16(1+a^2)^2}}} \\
+		= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{4(1+a)^2}} \\
+		= & \frac{1}{2}\sqrt{(a-b)^2} \\
 		= & \frac{\mid a-b \mid}{2} &&
 		\end{flalign*}
 		\subsubsection{Wurzeltherme vereinfachen (Beispiele)}\index{Vereinfachen}
@@ -757,7 +757,7 @@
 	\subsection{Logarithmusgesetze}
 	\label{subsec:logarithmusgesetze}
 		\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=1cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-			Die Logarithmusrechnung\index{Logarithmus} dient dazu das $x$ im Term\index{Term} $b^x=a$ zu bestimmen. Es ist damit quasi das Gegenstück zur Potenzrechnung\index{Potenzrechnung}. Rechnen wir z.~B. $9^3$, kommen wir auf $729$. Umgekehrt können wir jetzt aber auch $log_{9}729$ rechnen und kommen auf $3$. Es gibt außerdem die speziellen Notationen\index{Notation} $ln$ und $lg$, die jeweils \textit{natürlicher Logarithmus}\index{Natürlicher Logarithmus} und \textit{dekadischer Logarithmus}\index{Dekadischer Logarithmus} genannt werden.
+			Die Logarithmusrechnung\index{Logarithmus} dient dazu das $x$ im Term\index{Term} $b^x=a$ zu bestimmen. Es ist damit quasi das Gegenstück zur Potenzrechnung\index{Potenzrechnung}. Rechnen wir z.B. $9^3$, kommen wir auf $729$. Umgekehrt können wir jetzt aber auch $log_{9}729$ rechnen und kommen auf $3$. Es gibt außerdem die speziellen Notationen\index{Notation} $ln$ und $lg$, die jeweils \textit{natürlicher Logarithmus}\index{Natürlicher Logarithmus} und \textit{dekadischer Logarithmus}\index{Dekadischer Logarithmus} genannt werden.
 			\begin{flalign*}
 				ln(b):=log_e(b)&&
 			\end{flalign*}
@@ -1125,10 +1125,10 @@
 					\draw[dashed, opacity=.4] (C) -- (C|-A) ;
 					\tikzset{/tkzmkangle/mark=none}
 					\tkzMarkAngle[size=0.65cm](B,C,A)
-					
+
 					\tkzMarkAngle[size=0.8cm](C,A,B)
 					\tkzLabelAngle[pos = 0.5](C,A,B){$\alpha$}
-					
+
 					\tkzMarkAngle[size=1cm](A,B,C)
 					\tkzLabelAngle[pos = 0.7](A,B,C){$\beta$}
 				\end{tikzpicture}
@@ -1141,10 +1141,10 @@
 					\tikzset{/tkzmkangle/mark=none}
 					\tkzMarkAngle[size=0.65cm](B,C,A)
 					\tkzLabelAngle[pos = 0.4](B,C,A){$\gamma$}
-					
+
 					\tkzMarkAngle[size=0.8cm](C,A,B)
 					\tkzLabelAngle[pos = 0.5](C,A,B){$\alpha$}
-					
+
 					\tkzMarkAngle[size=1cm](A,B,C)
 					\tkzLabelAngle[pos = 0.7](A,B,C){$\beta$}
 				\end{tikzpicture}
@@ -1244,7 +1244,7 @@
 			\begin{flalign*}
 				O=2\pi r\cdot (r+h)&&
 			\end{flalign*}
-		\end{tcolorbox}		
+		\end{tcolorbox}
 		\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 			\subsubsection{Kegel}
 			Für einen Kegel\index{Kegel} mit der Grundfläche\index{Grundfläche} $A$, dem Radius\index{Radius} der Grundfläche $r$, der Oberfläche\index{Oberfläche} $O$, dem Volumen\index{Volumen} $V$, dem Abstand\index{Abstand} der Spitze zu einem Punkt der Kreislinie\index{Kreislinie} $s$ und der Höhe\index{Höhe} $h$ gilt:
@@ -1416,7 +1416,7 @@
 				\left\vert\begin{pmatrix}4\\-1\end{pmatrix}\cdot\begin{pmatrix}4\\-1\end{pmatrix}\right\vert^2&=17\\
 				\Rightarrow\sqrt{17}&\approx 4,123&&
 			\end{flalign*}
-			Hinweis: All die oben genannten Rechengesetze, wie z.~B. das Skalarprodukt lassen sich im dreidimensionalen Raum genauso anwenden wie im zweidimensionalen.
+			Hinweis: All die oben genannten Rechengesetze, wie z.B. das Skalarprodukt lassen sich im dreidimensionalen Raum genauso anwenden wie im zweidimensionalen.
 			\vspace{.5cm}\hrule\vspace{.7cm}
 			\noindent Neben dem Skalarprodukt gibt es noch eine Möglichkeit das Produkt aus zwei Vektoren zu bilden, nämlich das sogenannte \textit{Kreuzprodukt}\index{Kreuzprodukt}. Mit dem Kreuzprodukt kriegen wir den Normalenvektor heraus. Das ist ein Vektor, der Orthogonal zu deinen beiden ursprünglichen Vektoren ist. Um Das Kreuzprodukt zu berechnen schreibt man nebeneinander die Werte der Vektoren jeweils zwei mal übereinander und multipliziert wie unten angeben über Kreuz: Erst die blauen Linien und dann Minus die roten.
 			\begin{center}
@@ -1455,14 +1455,14 @@
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
 							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
-							
+
 							\foreach \coo in {-7,-6,...,6}
 							{
 								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
 								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
 								\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
 							}
-							
+
 							\draw[dashed] (xyz cs:x=-3,y=3,z=2) -- (xyz cs:x=-3,y=0,z=2);
 							\draw[dashed] (xyz cs:x=-3,y=0,z=2) -- (xyz cs:x=-3,y=0,z=0);
 							\draw[dashed] (xyz cs:x=4,y=-2,z=-3) -- (xyz cs:x=4,y=0,z=-3);
@@ -1494,23 +1494,23 @@
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
 							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
-							
+
 							\foreach \coo in {-7,-6,...,6}
 							{
 								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
 								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
 								\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
 							}
-							
+
 							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=3,z=1);
 							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=0,z=0);
 							\draw[-stealth,blue] (xyz cs:x=0,y=0,z=0) -- (xyz cs:x=4,y=3,z=1);
-							
+
 							\draw[dashed] (xyz cs:x=-4,y=2,z=1) -- (xyz cs:x=-4,y=0,z=1);
 							\draw[dashed] (xyz cs:x=-4,y=0,z=1) -- (xyz cs:x=-4,y=0,z=0);
 							\draw[solid,teal] (xyz cs:x=6,y=3.25,z=1) -- (xyz cs:x=-6,y=1.75,z=1);
 							\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=-4,y=2,z=1);
-							
+
 							\node [above right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
 							\node [above] at (xyz cs:x=-4,y=2,z=1) {$Q(-4;2;1)$};
 							\end{tikzpicture}
@@ -1536,13 +1536,13 @@
 							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
-							
+
 							\foreach \coo in {-7,-6,...,6}
 							{
 								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
 								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
 							}
-							
+
 							\node [above right] at (2,1) {$P(2;1)$};
 							\draw[solid,teal] (2,6) -- (2,-6);
 							\draw[-stealth,blue] (0,0) -- (2,1);
@@ -1560,7 +1560,7 @@
 					\def\tabcolsep{0pt}
 					\begin{tabularx}{\linewidth}{XX}
 						\textbf{Koordinatenform}\newline\newline
-						\index{Koordinatenform}Diese Notation ist wahrscheinlich am einfachsten zu verstehen, denn man hat drei \textcolor{red}{Punkte}, die zusammen eine \textcolor{teal}{Ebene} aufspannen. Genauer gesagt, handelt es sich um die \textcolor{red}{Spurpunkte}\index{Spurpunkt}, d.~h. die Schnittpunkte mit den Achsen.
+						\index{Koordinatenform}Diese Notation ist wahrscheinlich am einfachsten zu verstehen, denn man hat drei \textcolor{red}{Punkte}, die zusammen eine \textcolor{teal}{Ebene} aufspannen. Genauer gesagt, handelt es sich um die \textcolor{red}{Spurpunkte}\index{Spurpunkt}, d.h. die Schnittpunkte mit den Achsen.
 						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black,enlarge top by=0.5cm]
 							\begin{flalign*}
 							E:ax+by+cz=d
@@ -1572,7 +1572,7 @@
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
 							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
-							
+
 							\foreach \coo in {-7,-6,...,6}
 							{
 								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
@@ -1607,28 +1607,28 @@
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
 							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
-							
+
 							\foreach \coo in {-7,-6,...,6}
 							{
 								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
 								\draw (-1.5pt,\coo) -- (1.5pt,\coo);
 								\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
 							}
-							
+
 							\fill[<->,teal,opacity=.2] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=3,y=-3,z=-2) -- (xyz cs:x=-4,y=2,z=1);
-							
+
 							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=3,z=1);
 							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=0,z=0);
 							\draw[-stealth,blue] (xyz cs:x=0,y=0,z=0) -- (xyz cs:x=4,y=3,z=1);
-							
+
 							\draw[dashed] (xyz cs:x=3,y=-3,z=-2) -- (xyz cs:x=3,y=0,z=-2);
 							\draw[dashed] (xyz cs:x=3,y=0,z=-2) -- (xyz cs:x=3,y=0,z=0);
 							\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=3,y=-3,z=-2);
-							
+
 							\draw[dashed] (xyz cs:x=-4,y=2,z=1) -- (xyz cs:x=-4,y=0,z=1);
 							\draw[dashed] (xyz cs:x=-4,y=0,z=1) -- (xyz cs:x=-4,y=0,z=0);
 							\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=-4,y=2,z=1);
-							
+
 							\node [above right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
 							\node [below right] at (xyz cs:x=3,y=-3,z=-2) {$Q(3;-3;-2)$};
 							\node [above] at (xyz cs:x=-4,y=2,z=1) {$R(-4;2;1)$};
@@ -1656,7 +1656,7 @@
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
 							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
-							
+
 							\foreach \coo in {-7,-6,...,6}
 							{
 								\draw (\coo,-1.5pt) -- (\coo,1.5pt);
@@ -1664,13 +1664,13 @@
 								\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
 							}
 							\fill[<->,teal,opacity=.2] (xyz cs:x=6,y=3,z=3) -- (xyz cs:x=6,y=3,z=-1) -- (xyz cs:x=2,y=3,z=-1) -- (xyz cs:x=2,y=3,z=3);
-							
+
 							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=3,z=1);
 							\draw[dashed] (xyz cs:x=4,y=0,z=1) -- (xyz cs:x=4,y=0,z=0);
 							\draw[-stealth,blue] (xyz cs:x=0,y=0,z=0) -- (xyz cs:x=4,y=3,z=1);
-							
+
 							\draw[-stealth,red] (xyz cs:x=4,y=3,z=1) -- (xyz cs:x=4,y=5,z=1);
-							
+
 							\node [below right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
 							\end{tikzpicture}
 						\end{flushright}
@@ -1722,7 +1722,7 @@
 		\end{flalign*}
 		Hinweis: Für den Stützvektor können auch komplett andere Werte benutzt werden, solange sie die Gleichung in Koordinatenform erfüllen.
 	\subsection{Lagebeziehungen}
-		In der analytischen Geometrie schaut man sich oft an, wie Punkte, Geraden und Ebenen zueinander stehen. Von Interesse ist u.~a., ob sich Geraden schneiden, ob Punkte auf einer Geraden liegen oder auch, ob Ebenen parallel sind. Für dieses Kapitel solltest du \highlight{sec:gleichungssysteme}{Gleichungssysteme} lösen können. Vorab noch eine kleine Begriffsklärung: \textit{Windschief}\index{Windschief} bedeutet, dass zwei Geraden sich weder schneiden, noch parallel sind.
+		In der analytischen Geometrie schaut man sich oft an, wie Punkte, Geraden und Ebenen zueinander stehen. Von Interesse ist u.A., ob sich Geraden schneiden, ob Punkte auf einer Geraden liegen oder auch, ob Ebenen parallel sind. Für dieses Kapitel solltest du \highlight{sec:gleichungssysteme}{Gleichungssysteme} lösen können. Vorab noch eine kleine Begriffsklärung: \textit{Windschief}\index{Windschief} bedeutet, dass zwei Geraden sich weder schneiden, noch parallel sind.
 		\subsubsection{Punkt – Punkt}
 			Für die Beziehung zwischen zwei Punkten gibt es nur ein Szenario: Entweder sie sind gleich oder nicht und das ist wirklich einfach zu überprüfen. Haben zwei Punkte dieselben Koordinaten, so sind sie gleich.
 		\subsubsection{Punkt – Gerade/Ebene}
@@ -1823,7 +1823,7 @@
 			\subsubsection{Monotonie}
 			\label{subsubsec:monotonie}
 				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-						Seien $x_1$ und $x_2$ zwei Argumente einer Funktion, so gelten folgende Definitionen:\newline\newline
+						Seien $x_1$ und $x_2$ zwei Argumente\index{Argument} einer Funktion, so gelten folgende Definitionen:\newline\newline
 						\textbf{Monoton wachsend}\index{Monoton}\index{Streng}\index{Wachsen}\index{Fallen}
 						\begin{flalign*}
 						wenn\;x_1\le x_2\; und\; f(x_1)\le f(x_2)&&
@@ -1848,7 +1848,7 @@
 				\textbf{Streng monoton fallend}: $f^{\prime}(x)< 0$\newline\newline
 			\subsubsection{Umkehrbarkeit}
 			\label{subsubsec:umkehrbarkeit}
-				Bei der Umkehrfunktion $f^{-1}$ einer Funktion $f$ werden quasi Abszissen\index{Abszisse} und Ordinaten\index{Ordinate} vertauscht. Das heißt quasi, dass die Funktion von der $y$-Achse auf die $x$-Achse gelegt wird. Da es aber für jedes $x$ nur ein $y$ geben darf, gelten besondere Regeln für die Umkehrbarkeit von Funktionen: Eine Funktion ist in einem Intervall umkehrbar, wenn sie in diesem Intervall entweder nur streng monoton fallend oder nur streng monoton wachsend ist. In anderen Worten, darf es für jeden $y$-Wert maximal einen $x$-Wert geben, der auf ersteren verweist. Diese Eigenschaft nennt man auch \textit{Injektivität}\index{Injektivität}. Um das zu überprüfen kann man mithilfe der \highlight{subsec:ableitung}{Ableitung} die Extremstellen der Funktion untersuchen. Die Funktion sollte außerdem \textit{surjektiv}\index{Surjektiv} sein, d.~h. Jeder $y$-Wert hat mindestens einen $x$-Wert zu gewiesen. Wenn beides gegeben ist, braucht jeder $y$ in anderen Worten genau einen $x$-Wert. Das wird auch als \textit{bijektiv}\index{Bijektiv} bezeichnet.\newline
+				Bei der Umkehrfunktion $f^{-1}$ einer Funktion $f$ werden quasi Abszissen\index{Abszisse} und Ordinaten\index{Ordinate} vertauscht. Das heißt quasi, dass die Funktion von der $y$-Achse auf die $x$-Achse gelegt wird. Da es aber für jedes $x$ nur ein $y$ geben darf, gelten besondere Regeln für die Umkehrbarkeit von Funktionen: Eine Funktion ist in einem Intervall umkehrbar, wenn sie in diesem Intervall entweder nur streng monoton fallend oder nur streng monoton wachsend ist. In anderen Worten, darf es für jeden $y$-Wert maximal einen $x$-Wert geben, der auf ersteren verweist. Diese Eigenschaft nennt man auch \textit{Injektivität}\index{Injektivität}. Um das zu überprüfen kann man mithilfe der \highlight{subsec:ableitung}{Ableitung} die Extremstellen der Funktion untersuchen. Die Funktion sollte außerdem \textit{surjektiv}\index{Surjektiv} sein, d.h. Jeder $y$-Wert hat mindestens einen $x$-Wert zu gewiesen. Wenn beides gegeben ist, braucht jeder $y$ in anderen Worten genau einen $x$-Wert. Das wird auch als \textit{bijektiv}\index{Bijektiv} bezeichnet.\newline
 				Wenn man sich also sicher ist, dass die Funktion in jeweiligen Intervall bijektiv ist, darf man auch eine Umkehrfunktion bilden. Das ist je nach Funktionstyp gar nicht so schwer, denn man muss die Funktion nur nach $y$ umstellen und dann $x$ und $y$ vertauschen.
 				Hier ein Beispiel für eine Funktion und ihre Umkehrfunktion:
 				\makeplot{{e^x-1},{ln(x+1)}}{{$f(x)=e^x-1$},{$f^{-1}(x)=\ln(x+1)$}}{{3,2.5},{9,3}}{-10,16}{-3,10}{-25:30}{200}{17cm,7cm}{smooth}
@@ -1891,7 +1891,7 @@
 				\noindent Achtung: Eine Funktion kann nur gerade oder ungerade sein, wenn ihr Definitionsbereich\index{Definitionsbereich} symmetrisch zur Nullpunkt auf der $x$-Achse ist.
 			\subsubsection{Newtonverfahren}
 			\label{subsubsec:newtonverfahren}
-			Bei komplizierten Funktion kann es passieren, dass – obwohl welche existieren – man keine Nullstellen\index{Nullstelle} findet. Manchmal nicht einmal durch Raten. Eine ganzrationale Funktion zu vereinfachen durch Polynomdivision\index{Polynomdivision} ist z.~B. ebenfalls erst möglich, wenn man eine Nullstelle gefunden hat. Dennoch findet man online viele Rechner, die einem die Nullstellen geben, aber wie machen die das? In diesem Fall hilft das Newtonverfahren\index{Newtonverfahren} sich einem Wert zu nähern. Hier ist ein Beispiel für so einen Fall.
+			Bei komplizierten Funktion kann es passieren, dass – obwohl welche existieren – man keine Nullstellen\index{Nullstelle} findet. Manchmal nicht einmal durch Raten. Eine ganzrationale Funktion zu vereinfachen durch Polynomdivision\index{Polynomdivision} ist z.B. ebenfalls erst möglich, wenn man eine Nullstelle gefunden hat. Dennoch findet man online viele Rechner, die einem die Nullstellen geben, aber wie machen die das? In diesem Fall hilft das Newtonverfahren\index{Newtonverfahren} sich einem Wert zu nähern. Hier ist ein Beispiel für so einen Fall.
 			\makeplot{{x^3+2*x^2-x-1}}{{$f(x)=x^{3}+2x^{2}-x-1$}}{{3.9,3.5}}{-6,6}{-10,10}{-20:20}{300}{17cm,7cm}{smooth}
 			Als erstes legt man eine Wertetabelle\index{Wertetabelle} an, um die grobe Positionen der Nullstellen zu finden. Dabei will man wissen, zwischen welchen Stellen das Vorzeichen\index{Vorzeichen} wechselt.
 			\begin{center}
@@ -2139,7 +2139,7 @@
 				\mathbb{L}&=\{-1;1;2,5\}&&
 			\end{flalign*}
 			\subsubsection{Grenzverhalten von ganzrationalen Funktionen}
-				Hat man eine Funktion wie z.~B. $f(x)=-x^5+2x^3+3x^2+x+2$ und untersucht, wie sie sich gegen (minus) Unendlich\index{Unendlich} verhält, würde man intuitiv sagen, sie nähert sich (minus) Unendlich an. Hier soll es darum gehen, wie man das auch rechnerisch herausfinden kann und sicher unterscheidet, ob nun plus oder minus Unendlich richtig ist. Der Trick bei Funktionen dieser Form ist es, das $x$ mit dem höchsten Exponenten\index{Exponent} auszuklammern\index{Ausklammern}.
+				Hat man eine Funktion wie z.B. $f(x)=-x^5+2x^3+3x^2+x+2$ und untersucht, wie sie sich gegen (minus) Unendlich\index{Unendlich} verhält, würde man intuitiv sagen, sie nähert sich (minus) Unendlich an. Hier soll es darum gehen, wie man das auch rechnerisch herausfinden kann und sicher unterscheidet, ob nun plus oder minus Unendlich richtig ist. Der Trick bei Funktionen dieser Form ist es, das $x$ mit dem höchsten Exponenten\index{Exponent} auszuklammern\index{Ausklammern}.
 				\makeplot{{-x^5+2*x^3+3*x^2+x+2}}{{$f(x)=-x^5+2x^3+3x^2+x+2$}}{{12.2,4.6}}{-10,10}{-5,15}{-10:20}{200}{17cm,7cm}{smooth}
 				\begin{flalign*}
 				&\lim_{x\to\infty}-x^5+2x^3+3x^2+x+2\\
@@ -2160,7 +2160,7 @@
 				\end{flalign*}
 				Hinweis: Wenn man mit $x\to(-)\infty$ arbeitet, setzt man $\infty$ normalerweise nicht in die Funktion ein. Hier habe ich es einmal gemacht, damit man das Ergebnis besser nachvollziehen kann. Wenn man ausführlicher zu arbeiten will/muss, kann man den Limes\index{Limes} von jedem Term einzeln aufstellen, um das Endergebnis\index{Ergebnis} zu begründen.
 		\subsection{(Gebrochen)rationale Funktionen}
-			Wenn wir von (gebrochen)rationalen Funktionen\index{Rationale Funktion}\index{Gebrochenrationale Funktion} reden, meinem wir eine Funktion mit einem Polynom\index{Polynom} im Nenner\index{Nenner} eines Bruches\index{Bruch}. $f(x)=\frac{2}{x^3}$ ist z.~B. eine rationale Funktion, $f(x)=\frac{x^3}{2}$ jedoch nicht.
+			Wenn wir von (gebrochen)rationalen Funktionen\index{Rationale Funktion}\index{Gebrochenrationale Funktion} reden, meinem wir eine Funktion mit einem Polynom\index{Polynom} im Nenner\index{Nenner} eines Bruches\index{Bruch}. $f(x)=\frac{2}{x^3}$ ist z.B. eine rationale Funktion, $f(x)=\frac{x^3}{2}$ jedoch nicht.
 			\makeplot{{((2*x^4-10)/(x^3-3))}}{{$f(x)=\dfrac{2x^4-10}{x^3-3}$}}{{4.5,2.8}}{-6,6}{-5,10}{-22:20}{600}{17cm,7cm}{smooth}
 			Das Besondere an rationalen Funktionen der Form $f(x)=\frac{g(x)}{h(x)}$ ist, dass wir zum Bestimmen von Nullstellen\index{Nullstelle} und Definitionslücken\index{Definitionslücke} den Zähler\index{Zähler} und Nenner\index{Nenner} einzeln betrachten können. Mithilfe des Zählers bestimmen wir ganz einfach Nullstellen der Funktion\index{Funktion}.
 			\begin{flalign*}
@@ -2216,10 +2216,10 @@
 			\makeplot{{sin(deg(x))},{cos(deg(x))},{tan(deg(x))}}{{$f(x)=\sin(x)$},{$f(x)=\cos(x)$},{$f(x)=\tan(x)$}}{{1.5,-1},{4.5,-1},{7.5,-1}}{-10,10}{-2,2}{-10:10}{200}{17cm,7cm}{smooth}
 			Anmerkung: Die Nullstellen des Sinus sind die Extremstellen\index{Extremstelle} des Kosinus und umgekehrt. Ebenso haben Sinus und Tanges dieselben Nullstellen\index{Nullstelle}.
 		\subsection{Verkettete Funktionen}
-			Verkettungen\index{Verkettung} sind eigentliche keine eigene Funktionsart, sondern eine Möglichkeit Funktionen durch Zusammensetzung zu transformieren\index{Transformieren}. Man schreibt das als $f\circ g$ ("f nach g"). Man spricht hier bei $g$ auch von der \textit{inneren Funktion}\index{Innere Funktion}, da sie als Argument in die \textit{äußere Funktion}\index{Äußere Funktion} $f$ eingesetzt wird.
+			Verkettungen\index{Verkettung} sind eigentliche keine eigene Funktionsart, sondern eine Möglichkeit Funktionen durch Zusammensetzung zu transformieren\index{Transformieren}. Man schreibt das als $f\circ g$ ("f nach g"). Man spricht hier bei $g$ auch von der \textit{inneren Funktion}\index{Innere Funktion}, da sie als Argument\index{Argument} in die \textit{äußere Funktion}\index{Äußere Funktion} $f$ eingesetzt wird.
 			\makeplot{{sin(deg(x))},{(x^2)/2},{sin(deg((x^2)/2))}}{{$f(x)=\sin(x)$},{$g(x)=\frac{x^2}{3}$},{$f\circ g(x)=\sin(\frac{x^2}{3})$}}{{1.5,-1},{4.5,-1},{8,-1}}{-10,10}{-2,2}{-10:10}{200}{17cm,7cm}{smooth}
 		\subsection{Kreisgleichungen}
-			Bei Funktionen ist es so, dass jeder Abszisse\index{Abszisse} ($x$-Achsenwert) genau eine Ordinate\index{Ordinate} ($y$-Achsenwert) zugeordnet werden kann. Das ist eine Besonderheit von Funktionen und nicht des Koordinatensystems an sich. Im Koordinatensystem\index{Koordinatensystem} können wir noch viele andere Gebilde darstellen, so z.~B. auch einen Kreis\index{Kreis}.
+			Bei Funktionen ist es so, dass jeder Abszisse\index{Abszisse} ($x$-Achsenwert) genau eine Ordinate\index{Ordinate} ($y$-Achsenwert) zugeordnet werden kann. Das ist eine Besonderheit von Funktionen und nicht des Koordinatensystems an sich. Im Koordinatensystem\index{Koordinatensystem} können wir noch viele andere Gebilde darstellen, so z.B. auch einen Kreis\index{Kreis}.
 			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.45cm]
 				Für die Koordinatenform\index{Koordinatenform} eines Kreises mit dem Radius $r$ und dem Mittelpunkt $M(x_m\mid y_m)$ gilt folgende Notation:
 				\begin{flalign*}
@@ -2357,7 +2357,7 @@
 				\noindent Hinweis: Das Zeichen $\land$ bedeutet »und«, während $\lor$ »oder« bedeutet.
 	\subsection{Limes: Der Grenzwert}
 	\label{subsec:limes}
-	Für manche Funktionen ist es nicht möglich den Werte einer bestimmten Stelle zu errechnen. Manchmal will man auch das Verhalten einer Funktion wissen, wenn $x$ gegen Unendlich\index{Unendlich} geht. In u.a. diesen Fällen braucht man dem Limes\index{Limes}. Um den Grenzwert\index{Grenzwert} einer Funktion für $x\to a$ zu ermitteln muss man den links- und den rechtsseitigen Grenzwert\index{Linksseitiger Grenzwert}\index{Rechtsseitiger Grenzwert} betrachten. Es gilt Folgendes: 
+	Für manche Funktionen ist es nicht möglich den Werte einer bestimmten Stelle zu errechnen. Manchmal will man auch das Verhalten einer Funktion wissen, wenn $x$ gegen Unendlich\index{Unendlich} geht. In u.a. diesen Fällen braucht man dem Limes\index{Limes}. Um den Grenzwert\index{Grenzwert} einer Funktion für $x\to a$ zu ermitteln muss man den links- und den rechtsseitigen Grenzwert\index{Linksseitiger Grenzwert}\index{Rechtsseitiger Grenzwert} betrachten. Es gilt Folgendes:
 	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
 		Um zu überprüfen, ob für eine Funktion mit $x$ gegen $a$ ein Grenzwert existiert, schaut man sich jeweils den linksseitigen und rechtsseitigen Grenzwert an. Sind diese gleich, so existiert ein Grenzwert. Sind sie unterschiedlich, existiert kein Grenzwert.
 	\end{tcolorbox}
@@ -2415,11 +2415,11 @@
 		]
 		\addplot+[mark=none, color=blue, solid, smooth, domain=-10:2] {x^2};
 		\addplot+[mark=none, color=blue, solid, smooth, domain=2:10] {0.5*x^2};
-		
-		
+
+
 		\end{axis}
 		\node [color=blue] at (12.1,2.1) {$f(x)=\left\{x^2;\;\;\;\;\;\;\;x<2\atop\frac{1}{2}x^2;\;\;\;\;x\ge2\right.$};
-		
+
 		\end{tikzpicture}
 	\end{center}
 	Was uns an dem obigen Beispiel jetzt speziell interessiert, ist die Stelle $x=2$. Wir wollen wissen, ob $f$ in dieser Stelle stetig\index{Stetig} bzw. differenzierbar\index{Differenzierbar} ist. Das heißt quasi, dass wir wissen wollen, ob man die Funktion zeichnen kann, ohne den Stift abzusetzen. Aber Achtung: Das ist keine sehr akkurate Definition, denn es gibt auch Funktionen, die stetig sind, obwohl man sie nicht durchzeichnen kann. Deshalb hier die mathematischen Bedingungen, die erfüllt sein müssen.
@@ -2443,7 +2443,7 @@
 	\end{multicols}
 	\noindent Unsere zweite Bedingung ist somit nicht erfüllt. Der linksseitige\index{Linksseitiger Grenzwert} und der rechtsseitige Grenzwert\index{Rechtsseitiger Grenzwert} sind unterschiedlich und somit existiert an dieser Stelle auch kein Grenzwert. Daher brauchen wir die letzte Bedingung gar nicht erst überprüfen und können es sogar nicht, da uns der Grenzwert\index{Grenzwert} fehlt.
 	\subsubsection{Stetige Erweiterung}
-	Eine Funktion wie z.~B. $f(x)=\frac{1}{x}$ hat zwar keinen Grenzwert für $x\to 0$, allerdings ist sie trotzdem stetig, da ihr Definitionsbereich $\mathbb{D}=\mathbb{R}\setminus\{0\}$ die $0$ ausschließt. Das ist wichtig zu wissen bei der Bestimmung der Differenzierbarkeit.
+	Eine Funktion wie z.B. $f(x)=\frac{1}{x}$ hat zwar keinen Grenzwert für $x\to 0$, allerdings ist sie trotzdem stetig, da ihr Definitionsbereich $\mathbb{D}=\mathbb{R}\setminus\{0\}$ die $0$ ausschließt. Das ist wichtig zu wissen bei der Bestimmung der Differenzierbarkeit.
 	\makeplot{{1/x}}{{$f(x)=\frac{1}{x}$}}{{5,1.4}}{-10,10}{-10,10}{-25:25}{300}{17cm,7cm}{smooth}
 	Jetzt kann es aber sein, dass wir gerne die Definitionslücken\index{Definitionslücke} unserer Funktion definieren wollen. Das geht sogar mithilfe der stetigen Erweiterung\index{Stetige Erweiterung}, allerdings nicht für jede Lücke. Eine Lücke, die man bestimmen kann, nennt man (be)hebbar\index{Behebbar}\index{Hebbar}. Damit eine Lücke behebbar ist, müssen die Bedingungen für die Differenzierbarkeit gegeben sein, außer der, dass $x_0$ nicht im Definitionsbereich\index{Definitionsbereich} liegt. Würde $x$ im Definitionsbereich liegen hätten wir natürlich auch keine Lücke. Logisch. Das Kriterium, dass der Grenzwert dem Funktionswert an der Stelle $x_0$ entspricht entfällt dementsprechend auch.
 	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
@@ -2677,7 +2677,7 @@
 	\label{sec:integralrechnung}
 		Ein Integral gibt den Flächeninhalt zwischen einer Funktion und der $x$-Achse in einem bestimmten Intervall wieder. Dabei ist zu beachten, dass die Flächen unterhalb der $x$-Achse negativ sind, weshalb man jeden Abschnitt einzeln berechnen und anschließend addieren sollte.
 		\begin{center}
-			\begin{tikzpicture} 
+			\begin{tikzpicture}
 			\begin{axis}[
 			domain=-10:10,
 			width=17cm,
@@ -2698,11 +2698,11 @@
 			samples = 200,
 			domain=-2.2:2.2,
 			color=blue] {(x^4)-(4*x^2)+2};
-			
+
 			% Plot 2
 			\addplot [name path = B,
 			-latex] {0};
-			
+
 			% Fill area between paths
 			\addplot [fill=blue, fill opacity=0.2] fill between [of = A and B, soft clip={domain=-1.848:1.848}, opacity=.2];
 			\end{axis}
@@ -2725,7 +2725,7 @@
 		\end{tcolorbox}
 		\noindent Um das zu verstehen, müssen wir uns erst einmal angucken, was das überhaupt bedeutet. Wenn wir die Fläche unter einer linearen Gleichung\index{Lineare Gleichung} berechnen wollten, wäre das ziemlich einfach, da wir schnell ein Drei- oder Viereck konstruieren können, dessen Fläche\index{Fläche} wir berechnen. Mit anderen Funktionstypen ist das aber nicht so einfach. Wir können die Fläche annähernd berechnen, wenn wir sie mit Formen füllen, deren Flächen wir einfach berechnen können. Dafür nehmen wir Rechtecke. Die breite der Rechtecke nennen wir $\Delta x$. Das bedeutet quasi nur $x_2-x_1$.
 		\begin{center}
-			\begin{tikzpicture} 
+			\begin{tikzpicture}
 			\begin{axis}[
 			domain=-10:10,
 			width=17cm,
@@ -2746,11 +2746,11 @@
 			samples = 200,
 			domain=-2.2:2.2,
 			color=blue] {(x^4)-(4*x^2)+2};
-			
+
 			% Plot 2
 			\addplot [name path = B,
 			-latex] {0};
-			
+
 			% Fill area between paths
 			\addplot [
 			red,
@@ -2762,7 +2762,7 @@
 		\end{center}
 		Wenn wir unsere Rechtecke schmaler und schmaler machen, dann wird unser Ergebnis immer akkurater. Wenn wir unsere Rechtecke minimal klein machen schreiben wir anstatt $\Delta x$ jedoch $dx$.
 		\begin{center}
-			\begin{tikzpicture} 
+			\begin{tikzpicture}
 			\begin{axis}[
 			domain=-10:10,
 			width=17cm,
@@ -2783,11 +2783,11 @@
 			samples = 200,
 			domain=-2.2:2.2,
 			color=blue] {(x^4)-(4*x^2)+2};
-			
+
 			% Plot 2
 			\addplot [name path = B,
 			-latex] {0};
-			
+
 			% Fill area between paths
 			\addplot [
 			red,
@@ -2799,7 +2799,7 @@
 		\end{center}
 		Genau diese immer kleiner werdenden Rechteck\index{Rechteck} werden durch das Integral dargestellt. Man rechnet die Stammfunktion an der obereren Grenze minus die Stammfunktion an der unteren Grenze. In der Kurvendiskussion gibt es ein rechnerisches \highlight{subsubsec:flaechenberechnung}{Beispiel} für die Anwendung des Integrals.
 		\subsection{Die Stammfunktion}
-			Das Gegenteil vom Differenzieren\index{Differenzieren} ist das Integrieren\index{Integrieren}. Damit kann man von einer Ableitung auf die nächst niedrigere Ableitung schließen, z.~B. von $f^{\prime\prime}(x)$ auf $f^{\prime}(x)$. Die Funktion, die man daraus erhält, nennt man Stammfunktion\index{Stammfunktion}. Auch eine nicht abgeleitete Funktion besitzt eine Stammfunktion. Diese wird mit einem großen $F(x)$ bezeichnet. Da das Integrieren das Gegenteil des Differenzieren ist, gelten dieselben \highlight{subsec:ableitung}{Regeln}, jedoch umgekehrt. Anstatt z.~B. den Exponenten um $1$ zu reduzieren und mit ihm zu multiplizieren, wird er um $1$ erhöht und durch ihn geteilt. Beim Integrieren fügt man jedoch noch $k$ für eine beliebige Zahl hinzu, denn beim Ableiten geht diese verloren. Daher sind Stammfunktionen nicht eindeutig, wie es die Ableitungen sind. Die Stammfunktion von $f(x)=2x$ ist beispielsweise $F(x)=x^2+k$.
+			Das Gegenteil vom Differenzieren\index{Differenzieren} ist das Integrieren\index{Integrieren}. Damit kann man von einer Ableitung auf die nächst niedrigere Ableitung schließen, z.B. von $f^{\prime\prime}(x)$ auf $f^{\prime}(x)$. Die Funktion, die man daraus erhält, nennt man Stammfunktion\index{Stammfunktion}. Auch eine nicht abgeleitete Funktion besitzt eine Stammfunktion. Diese wird mit einem großen $F(x)$ bezeichnet. Da das Integrieren das Gegenteil des Differenzieren ist, gelten dieselben \highlight{subsec:ableitung}{Regeln}, jedoch umgekehrt. Anstatt z.B. den Exponenten um $1$ zu reduzieren und mit ihm zu multiplizieren, wird er um $1$ erhöht und durch ihn geteilt. Beim Integrieren fügt man jedoch noch $k$ für eine beliebige Zahl hinzu, denn beim Ableiten geht diese verloren. Daher sind Stammfunktionen nicht eindeutig, wie es die Ableitungen sind. Die Stammfunktion von $f(x)=2x$ ist beispielsweise $F(x)=x^2+k$.
 			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
 				\textbf{Integrationsregeln}\newline\newline
 				Da es manchmal schwierig sein kann, umgekehrt zu denken, hier noch mal die wichtigsten Regeln zur Bildung der Stammfunktion:
@@ -2878,7 +2878,7 @@
 			\end{tcolorbox}
 			\noindent Achtung: Wenn die Differenzfunktion Nullstellen hat, bzw. die Funktionen sich schneiden, muss die Fläche schrittweise ermittelt werden. Dazu ein Beispiel:\newline\newline
 			\begin{center}
-				\begin{tikzpicture} 
+				\begin{tikzpicture}
 				\begin{axis}[
 				domain=-3:3,
 				width=17cm,
@@ -2896,16 +2896,16 @@
 				-latex,
 				samples = 200,
 				color=blue] {-x^3+2*x^2};
-				
+
 
 				\addplot [name path = B,
 				-latex,
 				color=red] {-0.5*x+1};
-				
+
 				\addplot [color=teal,
 				-latex,
 				samples = 200] {-x^3+2*x^2+0.5*x-1};
-				
+
 				\addplot [fill=blue, fill opacity=0.2] fill between [of = A and B, soft clip={domain=0:2}, opacity=.2];
 				\end{axis}
 				\node [color=blue] at (2,0.75) {$f(x)=-x^{3}+2x^{2}$};
@@ -2913,7 +2913,7 @@
 				\node [color=teal] at (10.5,0.75) {$d(x)=-x^{3}+2x^{2}+\frac{1}{2}x-1$};
 				\end{tikzpicture}
 			\end{center}
-			Gesucht ist die blau markierte Fläche im Intervall $[0,2]$. Wenn wir den gezeichneten Graphen nicht vorliegen hätten, dann müssten wir erst testen, ob eine Nullstelle\index{Nullstelle} in diesem Intervall\index{Intervall} vorliegt. Dazu können wir z.~B. eine Wertetabelle\index{Wertetabelle} anlegen.
+			Gesucht ist die blau markierte Fläche im Intervall $[0,2]$. Wenn wir den gezeichneten Graphen nicht vorliegen hätten, dann müssten wir erst testen, ob eine Nullstelle\index{Nullstelle} in diesem Intervall\index{Intervall} vorliegt. Dazu können wir z.B. eine Wertetabelle\index{Wertetabelle} anlegen.
 			\begin{center}
 				\bgroup
 				\def\arraystretch{1.5}
@@ -2950,7 +2950,7 @@
 			\end{tcolorbox}
 			\noindent Dazu ein Beispiel: Gesucht ist das Volumen der abgebildeten Vase, im Bereich $-1$ bis $3$.
 			\begin{center}
-				\begin{tikzpicture} 
+				\begin{tikzpicture}
 				\begin{axis}[
 				domain=-2:5,
 				width=17cm,
@@ -3014,7 +3014,7 @@
 			\egroup
 		\end{center}
 		Ein Beispiel: $A(x) = x$ ist eine natürliche Zahl\newline
-		Die Aussage $\exists x\in \mathbb{Z}:A(x)$ ist wahr, da die ganzen Zahlen die natürlichen Zahlen beinhalten. Wenn die Aussage jedoch $\forall x\in \mathbb{Z}:A(x)$ wäre, wäre sie falsch, da z.~B. $A(-1)$ dem widerspricht. Wenn man mehrere Quantoren\index{Quantor} benutzt, kann man gleiche auch zusammen fassen. So kann man anstatt
+		Die Aussage $\exists x\in \mathbb{Z}:A(x)$ ist wahr, da die ganzen Zahlen die natürlichen Zahlen beinhalten. Wenn die Aussage jedoch $\forall x\in \mathbb{Z}:A(x)$ wäre, wäre sie falsch, da z.B. $A(-1)$ dem widerspricht. Wenn man mehrere Quantoren\index{Quantor} benutzt, kann man gleiche auch zusammen fassen. So kann man anstatt
 		\begin{flalign*}
 			\forall a\in \mathbb{N}:\forall b\in \mathbb{N}:a>b&&
 		\end{flalign*}
@@ -3124,11 +3124,11 @@
 		Die Kombinatorik hilft uns herauszufinden, wie viele Möglichkeiten es für Anordnungen gibt. Dabei unterscheidet man verschiedene Arten von Modellen. Im Großen und Ganzen gibt es drei Arten. Die Erste ist die Permutation\index{Permutation}. Dabei untersucht man die komplette Grundmenge. Wenn man nur eine Teilmenge untersucht, gibt es noch mal eine Unterscheidung. Wenn die Reihenfolge in der Teilmenge wichtig ist, spricht man von Variation\index{Variation}, ansonsten von Kombination\index{Kombination}. Für diese drei Fälle gibt es jeweils zwei Möglichkeiten zur Berechnung der Anzahl der Möglichkeiten, je nachdem ob Elemente mehrfach auftreten oder nicht.
 		\begin{center}
 			\bgroup
-			\tikzstyle{decision} = [rectangle, draw=red, fill=red!20, 
+			\tikzstyle{decision} = [rectangle, draw=red, fill=red!20,
 			text width=6em, text badly centered, node distance=3cm, inner sep=0pt, inner sep=6pt, rounded corners]
-			\tikzstyle{block} = [rectangle, draw=teal, fill=teal!20, 
+			\tikzstyle{block} = [rectangle, draw=teal, fill=teal!20,
 			text width=6em, text centered, inner sep=6pt]
-			\tikzstyle{result} = [rectangle, draw=violet, fill=violet!20, 
+			\tikzstyle{result} = [rectangle, draw=violet, fill=violet!20,
 			text centered, inner sep=6pt, minimum height=3em]
 			\tikzstyle{line} = [draw, -stealth]
 			\begin{tikzpicture}[align=center]
@@ -3275,7 +3275,7 @@
 						axis y line=middle,
 						axis x line=bottom
 						]
-						\addplot+[ybar interval] plot coordinates { 
+						\addplot+[ybar interval] plot coordinates {
 							(0,1/1024)
 							(1,5/512)
 							(2,45/1024)
@@ -3317,7 +3317,7 @@
 					axis y line=middle,
 					axis x line=bottom
 					]
-					\addplot+[ybar interval] plot coordinates { 
+					\addplot+[ybar interval] plot coordinates {
 						(0,0.2745)
 						(1,0.4235)
 						(2,0.2353)
@@ -3337,14 +3337,14 @@
 				\bgroup
 				\tikzstyle{level 1}=[level distance=3cm, sibling distance=3.5cm]
 				\tikzstyle{level 2}=[level distance=3cm, sibling distance=2cm]
-				
+
 				\tikzstyle{bag} = [text width=4em, text centered]
 				\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
-				
+
 				\begin{tikzpicture}[grow=right, sloped]
 				\node[bag] {$\includegraphics[scale=0.1]{images/busts-in-silhouette_1f465.png}$}
 				child {
-					node[bag] {$\overline{\includegraphics[scale=0.15]{images/luggage_1f9f3.png}}$}        
+					node[bag] {$\overline{\includegraphics[scale=0.15]{images/luggage_1f9f3.png}}$}
 					child {
 						node[end, label=right:
 						{$\overline{\includegraphics[scale=2]{images/flag-france_1f1eb-1f1f7.png}}\;\;P(\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}}\cap\overline{\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}})=P(\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})\cdot P(\overline{\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}}\mid\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})=0,6$}] {}
@@ -3359,12 +3359,12 @@
 						node[above] {$P(\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}\mid\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})$}
 						node[below]  {$0,25$}
 					}
-					edge from parent 
+					edge from parent
 					node[above] {$P(\overline{\includegraphics[scale=0.075]{images/luggage_1f9f3.png}})$}
 					node[below]  {$0,8$}
 				}
 				child {
-					node[bag] {$\includegraphics[scale=0.15]{images/luggage_1f9f3.png}$}        
+					node[bag] {$\includegraphics[scale=0.15]{images/luggage_1f9f3.png}$}
 					child {
 						node[end, label=right:
 						{$\overline{\includegraphics[scale=2]{images/flag-france_1f1eb-1f1f7.png}}\;\;P(\includegraphics[scale=0.075]{images/luggage_1f9f3.png}\cap\overline{\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}})=P(\includegraphics[scale=0.075]{images/luggage_1f9f3.png})\cdot P(\overline{\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}}\mid\includegraphics[scale=0.075]{images/luggage_1f9f3.png})=0,06$}] {}
@@ -3379,7 +3379,7 @@
 						node[above] {$P(\includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}\mid\includegraphics[scale=0.075]{images/luggage_1f9f3.png})$}
 						node[below]  {$0,7$}
 					}
-					edge from parent         
+					edge from parent
 					node[above] {$P(\includegraphics[scale=0.075]{images/luggage_1f9f3.png})$}
 					node[below]  {$0,2$}
 				};
@@ -3432,14 +3432,14 @@
 				\textbf{Zweiter Test}
 				\maketree{\Omega}{B}{+}{0,09}{0,91}{0,99}{0,01}{0,01}{0,99}
 			\end{tcolorbox}
-		\subsection{Zufallsvariablen}
+		\subsection{Diskrete Zufallsvariablen}
 			Bei Zufallsexperimenten haben wir i.d.R. eine Grundmenge $\Omega$ mit den möglichen Ergebnissen. Für einen Münzwurf z.B.: $\Omega=\{\text{Kopf},\text{Zahl}\}$. Wenn wir diesen Ergebnissen jetzt Werte zuordnen sprechen wir von einer Zufallsvariable\index{Zufallsvariable}, da diese einen Wert annimmt, der auf dem zufälligen Ausgang des Experimentes basiert. Man könnte beispielsweise sagen, bei Kopf bekommt man fünf Euro und bei Zahl verliert man fünf Euro.
 			\begin{flalign*}
 				X(\omega)=\genfrac{\{}{.}{0pt}{}{5\text{, wenn }\omega=\text{Kopf}}{-5\text{, wenn }\omega=\text{Zahl}}&&
 			\end{flalign*}
 			Eine Zufallsvariable ist eine \highlight{subsec:abbildungen}{Abbildung}, die jedem Wert aus der Grundmenge genau einen Wert aus den reellen Zahlen zuordnet. Dabei unterscheidet man zwischen diskreten und stetigen Zufallsvariablen\index{Stetig}\index{Diskret}. Diskret ist ein Zufallsvariable, wenn sie eine abzählbare Menge an Werten annehmen kann, z.B. $X:=\text{»Gewürfelte Augenzahl«}$. Stetig ist sie, wenn sie eine nicht abzählbare Menge von Werten haben kann, z.B. $X:=\text{»Körpergewicht einer beliebigen Person«}$. Dabei können reelle Zahlen mit theoretisch uneingeschränkt vielen Nachkommastellen entstehen.
 			\subsubsection{Erwartungswert, Varianz und Standardabweichung}
-				Stellen wir uns vor, wir haben das unten gezeichnete Glücksrad mit den entsprechenden Wahrscheinlichkeiten und Gewinnen und gehen davon aus, dass man 5 Euro Einsatz bezahlen muss, um zu drehen. Wir wollen jetzt wissen, ob dieses Spiel fair ist oder nicht. Dazu berechnet man den Erwartungswert\index{Erwartungswert}. Diesen Wert kann man sich als das vorstellen, was man ungefähr kriegen würden, wenn man das Zufallsexperiment sehr oft wiederholt. Das bedeutet, dass wenn der Erwartungswert genau Null ist, ein für beide Seiten faires Spiel vorliegt. Ansonsten macht die eine Seite Gewinn und die andere Verlust.
+				Stellen wir uns vor, wir haben das unten gezeichnete Glücksrad mit den entsprechenden Wahrscheinlichkeiten und Gewinnen und gehen davon aus, dass man 5 Euro Einsatz bezahlen muss, um zu drehen. Wir wollen jetzt wissen, ob dieses Spiel fair ist oder nicht. Dazu berechnet man den Erwartungswert\index{Erwartungswert}. Er beschreibt die Zahl, die die Zufallsvariable im Mittel annimmt. Man kann ihn sich auch als Mittelwert einer Zufallsvariable vorstellen. Das bedeutet, dass wenn der Erwartungswert genau Null ist, ein für beide Seiten faires Spiel vorliegt. Ansonsten macht die eine Seite Gewinn und die andere Verlust.
 				\begin{center}
 					\begin{tikzpicture}
 					\pie[
@@ -3452,7 +3452,11 @@
 				\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=gray, enlarge top by=.5cm, enlarge bottom by=.5cm]
 					\textbf{Erwartungswert}
 					\begin{flalign*}
-						E(x)=\sum^n_{i=1}x_i\cdot P(X=x_i)&&
+						E(x)=\sum^n_{i=1}x_i\cdot P(X=x_i)\text{ auch mit }\mu\text{ bezeichnet}&&
+					\end{flalign*}
+					\textbf{Erwartungswert einer Binomialverteilung}
+					\begin{flalign*}
+					E(x)=np&&
 					\end{flalign*}
 				\end{tcolorbox}
 				\noindent Dieser Sachverhalt lässt sich auch sehr gut in einer Wertetabelle\index{Wertetablle} darstellen.
@@ -3476,15 +3480,19 @@
 					\Leftrightarrow\;&x=32&&
 				\end{flalign*}
 				Das Spiel wäre z.B. fair, wenn der Gewinn auf dem gelben Feld 37 Euro betragen würde. Hinweis: Als Wert haben wir zwar 32 bekommen, aber man darf nicht vergessen die 5 Euro Einsatz wieder drauf zu rechnen.\newline\newline
-				Wenn man den Erwartungswert errechnet hat, kann man auch die Varianz\index{Varianz} und die Standardabweichung\index{Standardabweichung} errechnen. Die Varianz\index{Varianz} gibt an, wie Groß die Abweichungen bzw. die Streuung\index{Streuung} vom Mittelwert\index{Mittelwert} sind. Zur Erinnerung: Der Mittelwert errechnet sich, indem man alle Werte addiert und durch die Anzahl aller Werte teilt und wird als $\bar{x}$ geschrieben.
+				Wenn man den Erwartungswert errechnet hat, kann man auch die Varianz\index{Varianz} und die Standardabweichung\index{Standardabweichung} errechnen. Varianz\index{Varianz} und Standardabweichung\index{Standardabweichung} geben an, wie Groß die durchschnittliche Entfernung bzw. die Streuung\index{Streuung} vom Mittelwert\index{Mittelwert} ist. Zur Erinnerung: Der Mittelwert errechnet sich, indem man alle Werte addiert und durch die Anzahl aller Werte teilt und wird als $\bar{x}$ geschrieben. Für diskrete Zufallsvariablen unterscheidet sich die Rechnung ein wenig: Man rechnet hier mit dem Erwartungswert und der Wahrscheinlichkeit, da man keine Daten aus einer eigentlichen Ausführung des Experimentes hat.
 				\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=gray, enlarge top by=.5cm, enlarge bottom by=.5cm]
-					\textbf{Varianz}
+					\textbf{Varianz einer Zufallsvariable}
 					\begin{flalign*}
-					V(X)=\sum^n_{i=1}(x_i-E(X))^2\cdot P(X=x_i)&&
+					V(X)=\sum^n_{i=1}(x_i-E(X))^2\cdot P(X=x_i)\text{ auch mit }\sigma^2\text{ bezeichnet}&&
 					\end{flalign*}
-					\textbf{Standardabweichung}
+					\textbf{Varianz einer Binomialverteilung}
 					\begin{flalign*}
-					S(X)=\sqrt{V(X)}&&
+					V(X)=np(1-p)&&
+					\end{flalign*}
+					\textbf{Standardabweichung einer Zufallsvariable}
+					\begin{flalign*}
+					S(X)=\sqrt{V(X)}\text{ auch mit }\sigma\text{ bezeichnet}&&
 					\end{flalign*}
 				\end{tcolorbox}
 				\noindent Wenn wir diese Werte jetzt für unser Beispiel oben ausrechnen, erhalten wir Folgendes:
@@ -3494,6 +3502,40 @@
 					&=\dunderline{16,76}\\
 					S(X)&=\dunderline{\sqrt{16,76}}&&
 				\end{flalign*}
+				Das bedeutet, dass Ergebnisse der Zufallsvariable im Schnitt ungefähr 4 vom Erwartungswert entfernt wären, wenn man das Experiment ausführen würde. Was ist der Unterschied zwischen Varianz und Standardabweichung? Meistens errechnet man die Varianz nur, um die Standardabweichung zu kriegen. Da die Varianz immer eine quadratische Einheit beschreibt, ist es oft nicht möglich, sie mit dem Erwartungswert zu vergleichen. Wichtig zu verstehen ist nur, dass je kleiner Varianz und Standardabweichung sind, desto besser beschreibt der Erwartungswert das Experiment.
+				\begin{center}
+					\begin{tikzpicture}
+					\begin{axis}[
+					width=17cm,
+					height=5cm,
+					xmin=0, xmax=7,
+					ymin=0, ymax=0.3,
+					axis y line=center,
+					axis x line=middle,
+					ticklabel style={fill=white},
+					minor tick num=0,
+					area style,
+					xtick = {0,1,2,3,4,5,6,7},
+					xticklabels={0,1,2,3,4,5,6},
+					axis y line=middle,
+					axis x line=bottom
+					]
+					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(0.7,1/6) (1.3,1/6)};
+					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(1.7,1/6) (2.3,1/6)};
+					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(2.7,1/6) (3.3,1/6)};
+					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(3.7,1/6) (4.3,1/6)};
+					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(4.7,1/6) (5.3,1/6)};
+					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(5.7,1/6) (6.3,1/6)};
+					\addplot [dashed, thick, red] coordinates { (3.5,0) (3.5,0.3) };
+					\addplot [-stealth, thick, red] coordinates { (3.5,0.25) (1.792,0.25) };
+					\addplot [dashed, thick, red] coordinates { (1.792,0) (1.792,0.3) };
+					\addplot [-stealth, thick, red] coordinates { (3.5,0.25) (5.208,0.25) };
+					\addplot [dashed, thick, red] coordinates { (5.208,0) (5.208,0.3) };
+					\node [color=red, anchor=west] at (axis cs:3.5,0.2) {$E(X)=3,5$};
+					\node [color=red, anchor=east] at (axis cs:3.5,0.27) {$S(X)\approx1,71$};
+					\end{axis}
+					\end{tikzpicture}
+				\end{center}
 	\pagebreak
 	\printindex
 \end{document}

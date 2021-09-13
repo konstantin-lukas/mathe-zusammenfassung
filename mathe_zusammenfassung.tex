@@ -422,11 +422,10 @@
 				\Leftrightarrow&&=&\frac{(2+9i)\cdot(3+6i)}{(3-6i)\cdot(3+6i)}\\
 				\Leftrightarrow&&=&\frac{6+12i+27i+54i^2}{3^2+6^2}\\
 				\Leftrightarrow&&=&\frac{-48+39i}{45}\\
-				\Leftrightarrow&&=&-\frac{16}{15}+\frac{13}{15}i&&
+				\Leftrightarrow&&=&\dunderline{-\frac{16}{15}+\frac{13}{15}i}&&
 			\end{flalign*}
 		\end{tcolorbox}
-		\subsubsection{Polarform}
-			Bis hierhin haben wir die kartesische Form\index{Kartesische Form} benutzt, die uns ganz einfach die Koordinaten in der gaußschen Zahlenebene ablesen lässt. Eine komplexe Zahl lässt sich jedoch auch auf andere Weise genau festlegen, nämlich mit der \textit{Polarform}\index{Polarform}. Dabei wir die Zahl durch die Länge des Vektors und dem Winkel zwischen Abszisse und Vektor festgelegt.
+		\subsubsection{Darstellungsformen}
 			\begin{center}
 				\bgroup
 				\def\arraystretch{0}
@@ -502,8 +501,9 @@
 				\end{tabularx}
 				\egroup
 			\end{center}
+			Bis hierhin haben wir die kartesische Form\index{Kartesische Form} benutzt, die uns ganz einfach die Koordinaten in der gaußschen Zahlenebene ablesen lässt. Eine komplexe Zahl lässt sich jedoch auch auf andere Weise genau festlegen, nämlich mit der \textit{Polarform}\index{Polarform}. Dabei wird die Zahl durch die Länge des Vektors und dem Winkel zwischen Abszisse und Vektor festgelegt.\newline\newline
 			Hinweis: $r\cdot(\cos\phi+i\cdot\sin\phi)$ wird auch trigonometrische Darstellung und $r\cdot e^{i\phi}$ auch als Exponentialdarstellung der Polarform bezeichnet. $\phi$ wird auch als Argument\index{Argument} der Zahl $z$ bezeichnet.\newline\newline
-			Natürlich gibt es auch Regeln, wie man zwischen kartesischer und Polarform umwandeln kann. Größtenteils sind diese sehr einfach, da sie sich aus dem Rechnen mit dem rechtwinkligen Dreieck herleiten, jedoch ein kleiner Hinweis: $sgn(b)$ (Signum\index{Signum}) meint das Vorzeichen von $b$ und $\arccos$ ist dasselbe wie $\cos^{-1}$ auf dem Taschenrechner.
+			Natürlich gibt es auch Regeln, wie man zwischen kartesischer und Polarform umwandeln kann. Größtenteils sind diese sehr einfach, da sie sich aus dem Rechnen mit dem \highlight{subsec:rechtwinkel}{rechtwinkligen Dreieck} herleiten, jedoch ein kleiner Hinweis: $sgn(b)$ (Signum\index{Signum}) meint das Vorzeichen von $b$ und $\arccos$ ist dasselbe wie $\cos^{-1}$ auf dem Taschenrechner.
 			\begin{tcolorbox}[boxsep=0pt,top=0.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
 				Für die Umrechnung zwischen kartesischer Form und Polarform gelten folgende Gleichungen:
 				\begin{flalign*}
@@ -517,6 +517,7 @@
 			\begin{flalign*}
 				{\displaystyle \operatorname {sgn}(x):={\begin{cases}+1&\;{\text{falls}}\quad x>0\\\;\;\,0&\;{\text{falls}}\quad x=0\\-1&\;{\text{falls}}\quad x<0\\\end{cases}}}&&
 			\end{flalign*}
+			Der Grund dafür, dass wir hier das Vorzeichen benötigen, ist dass für den Kosinus in einem Intervall zwei Lösungen existieren. Die Kosinusfunktion hat z.B. bei $\frac{\pi}{2}$ und bei $\frac{3\pi}{2}$ eine Nullstelle. Das Vorzeichen hilft uns die richtige Lösung zu finden. Wenn wir nämlich $-\frac{\pi}{2}$ rauskriegen, rechnen wir $2\pi$ (eine Periode) drauf und erhalten $\frac{3\pi}{2}$.
 			\subsubsection{Komplexe Zahlen potenzieren}
 			\label{subsubsec:komplexpotenz}
 				Möchte man eine komplexe Zahl mit einer sehr hohen Zahl potenzieren, ist es ratsam, sie zunächst in die Polarform zu bringen.
@@ -540,7 +541,7 @@
 						&&\phi=&\displaystyle \operatorname {sgn}\left(-\frac{\sqrt{2}}{2}\right)\cdot\arccos\left(\frac{\sqrt{2}}{2}\right)&&\mid\text{Achtung: Bogenmaß verwenden!}\\
 						\Leftrightarrow&&=&-\frac{1}{4}\pi\\
 						&&z=&(1\cdot e^{-\frac{1}{4}\pi i})^{20}\\
-						\Leftrightarrow&&=&e^{-5\pi i}=e^{\pi i}=\cos(\pi)+i\cdot\sin(\pi)=-1&&
+						\Leftrightarrow&&=&e^{-5\pi i}=e^{\pi i}=\cos(\pi)+i\cdot\sin(\pi)=\dunderline{-1}&&
 					\end{flalign*}
 				\end{tcolorbox}
 				\noindent Das Ergebnis einer solchen Rechnung wird i.~d.~R. so gekürzt, dass der Winkel zwischen $0$ und $2\pi$ bzw. $0^{\circ}$ und $360^{\circ}$ liegt, indem man jeweils eine Umdrehung dazu rechnet oder abzieht ($\pm2\pi$ oder $\pm360^{\circ}$). Das hat den Hintergrund, dass eine Drehung des Vektors um mehr als $360^{\circ}$ nur unnötig kompliziert wäre, denn man braucht in der Ebene nur maximal $360^{\circ}$ und kann seinen Vektor in jede Richtung zeigen lassen.
@@ -612,7 +613,7 @@
 						&&z^3=&2\sqrt{2}\cdot e^{\frac{1}{4}\pi i}\\
 						\Rightarrow&&z=&\sqrt[3]{2\sqrt{2}\cdot e^{\frac{1}{4}\pi i}}=\left(2\sqrt{2}\cdot e^{\frac{1}{4}\pi i}\right)^{\frac{1}{3}}=\sqrt{2}\cdot e^{i\left(\frac{\frac{1}{4}\pi}{3}+\frac{2\pi}{3}\right)}\\
 						\Rightarrow&&z_k=&e^{i\left(\frac{\frac{1}{4}\pi}{3}+\frac{2\pi}{3}k\right)}\\
-						\Rightarrow&&z_0=&\sqrt{2}\cdot e^{\frac{1}{12}\pi i},z_1=\sqrt{2}\cdot e^{\frac{3}{4}\pi i},z_2=\sqrt{2}\cdot e^{\frac{17}{12}\pi i}&&
+						\Rightarrow&&z_0=&\dunderline{\sqrt{2}\cdot e^{\frac{1}{12}\pi i}},z_1=\dunderline{\sqrt{2}\cdot e^{\frac{3}{4}\pi i}},z_2=\dunderline{\sqrt{2}\cdot e^{\frac{17}{12}\pi i}}&&
 					\end{flalign*}
 				\end{tcolorbox}
 \pagebreak
@@ -719,7 +720,7 @@
 		& \cfrac{1}{\sqrt{a}+\sqrt{b}} & \mid \cdot (\sqrt{a}-\sqrt{b}) &&&&&&&&&&&& \\
 		= & \cfrac{\sqrt{a}-\sqrt{b}}{(\sqrt{a}+\sqrt{b})(\sqrt{a}-\sqrt{b})} \\
 		= & \cfrac{\sqrt{a}-\sqrt{b}}{\sqrt{a}^2-\sqrt{b}^2} \\
-		= & \cfrac{\sqrt{a}-\sqrt{b}}{a-b} &&
+		= & \dunderline{\cfrac{\sqrt{a}-\sqrt{b}}{a-b}} &&
 		\end{flalign*}
 		\hrule
 		\noindent\newline\newline Beispiel 2:
@@ -728,7 +729,7 @@
 		= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{\sqrt{16(1+a^2)^2}}} \\
 		= & \sqrt{\frac{(1+a)^2 \cdot (a-b)^2}{4(1+a)^2}} \\
 		= & \frac{1}{2}\sqrt{(a-b)^2} \\
-		= & \frac{\mid a-b \mid}{2} &&
+		= & \dunderline{\frac{\mid a-b \mid}{2}} &&
 		\end{flalign*}
 		\subsubsection{Wurzeltherme vereinfachen (Beispiele)}\index{Vereinfachen}
 			\begin{flalign*}
@@ -736,13 +737,13 @@
 				& = \sqrt{2}+\dfrac{4\sqrt{2}-6}{\left( 2\sqrt{2}\right) ^{2}-3^{2}} \\
 				& = \sqrt{2}+\dfrac{4\sqrt{2}-6}{-1} \\
 				& = \sqrt{2}-4\sqrt{2}+6 \\
-				& = 6-3\sqrt{2} &&
+				& = \dunderline{6-3\sqrt{2}} &&
 			\end{flalign*}
 			\hrule
 			\begin{flalign*}
 			\dfrac{1}{\sqrt{1+x^{2}}-1}-\dfrac{1}{\sqrt{1+x^{2}}+1} & = \dfrac{\sqrt{1+x^{2}}+1}{\left( \sqrt{1+x^{2}}-1\right) \cdot \left( \sqrt{1+x^{2}}+1\right) } - \dfrac{\sqrt{1+x^{2}}-1}{\left( \sqrt{1+x^{2}}+1\right) \cdot \left( \sqrt{1+x^{2}}-1\right) } \\
 			& = \dfrac{\left( \sqrt{1+x^{2}}+1\right) -\left( \sqrt{1+x^{2}}-1\right) }{1+x^{2}-1} \\
-			& = \frac{2}{x^2} &&
+			& = \dunderline{\frac{2}{x^2}} &&
 			\end{flalign*}
 			\hrule
 			\noindent\newline\newline Beispiel 3: Bestimmen Sie $x$ und $y$, sodass $\frac{x}{y}$ vollständig gekürzt\index{Gekürzt} ist.
@@ -751,41 +752,37 @@
 				2 \cdot \dfrac{2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
 				2 \cdot 2^{\frac{5}{2}-\frac{1}{4}} = 2^{\frac{x}{y}} \\
 				2 \cdot 2^{\frac{9}{4}} = 2^{\frac{x}{y}} \\
-				2^{\frac{13}{4}} = 2^{\frac{x}{y}} &&
+				\dunderline{2^{\frac{13}{4}} = 2^{\frac{x}{y}}} &&
 			\end{flalign*}
 			Damit gilt $x = 13$ und $y = 4$.
 	\subsection{Logarithmusgesetze}
 	\label{subsec:logarithmusgesetze}
-		\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=1cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-			Die Logarithmusrechnung\index{Logarithmus} dient dazu das $x$ im Term\index{Term} $b^x=a$ zu bestimmen. Es ist damit quasi das Gegenstück zur Potenzrechnung\index{Potenzrechnung}. Rechnen wir z.B. $9^3$, kommen wir auf $729$. Umgekehrt können wir jetzt aber auch $log_{9}729$ rechnen und kommen auf $3$. Es gibt außerdem die speziellen Notationen\index{Notation} $ln$ und $lg$, die jeweils \textit{natürlicher Logarithmus}\index{Natürlicher Logarithmus} und \textit{dekadischer Logarithmus}\index{Dekadischer Logarithmus} genannt werden.
-			\begin{flalign*}
-				ln(b):=log_e(b)&&
-			\end{flalign*}
-			\begin{flalign*}
-				lg(b):=log_{10}(b)&&
-			\end{flalign*}
-			\begin{flalign*}
-				log_b(b)=1&&
-			\end{flalign*}
-			\begin{flalign*}
-				log_b(1)=0&&
-			\end{flalign*}
-			\begin{flalign*}
-				log_b(u\cdot v)=log_b(u)+log_b(v)&&
-			\end{flalign*}
-			\begin{flalign*}
-				log_b\left(\frac{u}{v}\right)=log_b(u)-log_b(v)&&
-			\end{flalign*}
-			\begin{flalign*}
-				log_b(u^v)=v\cdot log_b(u)&&
-			\end{flalign*}
-			\begin{flalign*}
-				log_b(\sqrt[u]{v})=\frac{log_b(v)}{u}&&
-			\end{flalign*}
-			\begin{flalign*}
-				log_a(v)=\frac{log_b(v)}{log_b(a)}&&
-			\end{flalign*}
-		\end{tcolorbox}
+			Die Logarithmusrechnung\index{Logarithmus} dient dazu das $x$ im Term\index{Term} $b^x=a$ zu bestimmen. Es ist damit quasi das Gegenstück zur Potenzrechnung\index{Potenzrechnung}. Rechnen wir z.B. $9^3$, kommen wir auf $729$. Umgekehrt können wir jetzt aber auch $log_{9}729$ rechnen und kommen auf $3$. Es gibt außerdem die speziellen Notationen\index{Notation} $ln$ und $lg$, die jeweils \textit{natürlicher Logarithmus}\index{Natürlicher Logarithmus} und \textit{dekadischer Logarithmus}\index{Dekadischer Logarithmus} genannt werden.\newline
+			\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.4cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				\bgroup
+				\def\arraystretch{0}
+				\def\tabcolsep{0pt}
+				\begin{tabularx}{\linewidth}{X@{\hspace{1em}}X@{\hspace{1em}}X}
+					$ln(b):=log_e(b)$
+					&
+					$lg(b):=log_{10}(b)$
+					&
+					$log_b(b)=1$
+					\\\vspace{1.5em}
+					$log_b(1)=0$
+					&\vspace{1.5em}
+					$log_b(u\cdot v)=log_b(u)+log_b(v)$
+					&\vspace{1.5em}
+					$log_b\left(\frac{u}{v}\right)=log_b(u)-log_b(v)$
+					\\\vspace{1.5em}
+					$log_b(u^v)=v\cdot log_b(u)$
+					&\vspace{1.5em}
+					$log_b(\sqrt[u]{v})=\frac{log_b(v)}{u}$
+					&\vspace{1.5em}
+					$log_a(v)=\frac{log_b(v)}{log_b(a)}$
+				\end{tabularx}	
+				\egroup
+			\end{tcolorbox}
 \pagebreak
 \section{Gleichungen vereinfachen}
 	\label{sec:gleichungenvereinfachen}
@@ -840,8 +837,7 @@
 	\subsection{Substitution}
 	\label{subsec:substitution}
 		Substitution\index{Substitution} erlaubt es uns manchmal Gleichungen\index{Gleichung} zu vereinfachen\index{Vereinfachen}, um leichter mit ihnen rechnen zu können.\newline\newline
-		Beispiel: $x^8-15x^4-16=0$\newline
-		Hier bietet es sich an $x^4$ durch $u$ zu ersetzen.
+		Beispiel: $x^8-15x^4-16=0$ (Hier bietet es sich an $x^4$ durch $u$ zu ersetzen.)\newline
 		\begin{flalign*}
 		u^2-15u-16&=0\\
 		u_{\pm}&=\frac{15}{2}\pm\sqrt{\left(\frac{-15}{2}\right)^2+6}&&
@@ -852,7 +848,7 @@
 		x_1&=2\\
 		x_2&=-2&&
 		\end{flalign*}
-		Da es kein $x$ gibt, das $x^4=-1$ erfüllt, haben wir bereits unsere komplette Lösungsmenge\index{Lösungsmenge}:\newline\newline$\mathbb{L}=\{-2;2\}$.
+		Da es kein $x$ gibt, das $x^4=-1$ erfüllt, haben wir bereits unsere Lösungsmenge\index{Lösungsmenge}: $\mathbb{L}=\{-2;2\}$.
 \pagebreak
 \section{Ungleichungen}
 	\subsection{Rechenregeln}
@@ -1115,6 +1111,7 @@
 	\section{Geometrie}
 	\label{sec:geometrie}
 		\subsection{Rechtwinklige Dreiecke}
+		\label{subsec:rechtwinkel}
 			\begin{center}
 				\begin{tikzpicture}[scale=1.25]%,cap=round,>=latex]
 					\coordinate [label=left:$B$] (B) at (-2cm,-1.cm);
@@ -1166,7 +1163,6 @@
 			\end{tcolorbox}
 				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 				\subsubsection{Sinus, Kosinus und Tangens}
-				Sinus\index{Sinus}, Kosinus\index{Kosinus} und Tangens\index{Tangens} ordnen einem Winkel im rechtwinkligen Dreieck\index{Rechtwinkliges Dreieck} die Längenverhältnisse der Katheten\index{Kathete} und Hypotenuse\index{Hypotenuse} zu.\newline
 				\begin{flalign*}
 				&\sin(\alpha)=\frac{a}{c}=\frac{Gegenkathete\;von\;\alpha}{Hypotenuse}\\\\
 				&\cos(\alpha)=\frac{b}{c}=\frac{Ankathete\;von\;\alpha}{Hypothenuse}\\\\
@@ -1407,14 +1403,14 @@
 				&=\frac{-27,5}{\sqrt{73}\cdot\frac{\sqrt{73}}{2}}\\
 				&=\dfrac{-27,5}{\frac{73}{2}}\\
 				&=-\frac{55}{73}\\
-				\Rightarrow\alpha&\approx 138,9^{\circ}&&
+				\Rightarrow\alpha&\approx \dunderline{138,9^{\circ}}&&
 			\end{flalign*}
 			Achtung: Achte darauf, dass du im Taschenrechner das Gradmaß und nicht das Bogenmaß eingestellt hast!\newline\newline
 			Mit dem Skalarprodukt finden wir alternativ zum Satz des Pythagoras\index{Satz des Pythagoras} auch die Länge eines Vektors, denn es gilt $\vec v \cdot \vec v=\vert \vec v\vert^2$. Wenn wir also das Skalarprodukt eines Vektors mit sich selber bilden und anschließend die Wurzel vom Betrag des Skalarproduktes ziehen, erhalten wir die Länge des Vektors.\newline\newline
 			Beispiel:
 			\begin{flalign*}
 				\left\vert\begin{pmatrix}4\\-1\end{pmatrix}\cdot\begin{pmatrix}4\\-1\end{pmatrix}\right\vert^2&=17\\
-				\Rightarrow\sqrt{17}&\approx 4,123&&
+				\Rightarrow\sqrt{17}&\approx \dunderline{4,123}&&
 			\end{flalign*}
 			Hinweis: All die oben genannten Rechengesetze, wie z.B. das Skalarprodukt lassen sich im dreidimensionalen Raum genauso anwenden wie im zweidimensionalen.
 			\vspace{.5cm}\hrule\vspace{.7cm}
@@ -1450,8 +1446,8 @@
 							\end{flalign*}
 						\end{tcolorbox}
 						&
-						\begin{flushright}
-							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+						\begin{flushleft}\hspace{1cm}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth,scale=0.90]
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
 							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
@@ -1471,7 +1467,7 @@
 							\node[fill,circle,inner sep=1.5pt,label={left:$P(-3;3;2)$}, red] at (xyz cs:x=-3,y=3,z=2) {};
 							\node[fill,circle,inner sep=1.5pt,label={right:$Q(4;-2;-3)$}, red] at (xyz cs:x=4,y=-2,z=-3) {};
 							\end{tikzpicture}
-						\end{flushright}
+						\end{flushleft}
 					\end{tabularx}
 					\egroup
 				\end{center}
@@ -1489,8 +1485,8 @@
 							\end{flalign*}
 						\end{tcolorbox}
 						&
-						\begin{flushright}
-							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+						\begin{flushleft}\hspace{1cm}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth,scale=0.90]
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
 							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
@@ -1514,7 +1510,7 @@
 							\node [above right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
 							\node [above] at (xyz cs:x=-4,y=2,z=1) {$Q(-4;2;1)$};
 							\end{tikzpicture}
-						\end{flushright}
+						\end{flushleft}
 					\end{tabularx}
 					\egroup
 				\end{center}
@@ -1532,8 +1528,8 @@
 							\end{flalign*}
 						\end{tcolorbox}
 						&
-						\begin{flushright}
-							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+						\begin{flushleft}\hspace{1cm}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth,scale=0.90]
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
 
@@ -1548,7 +1544,7 @@
 							\draw[-stealth,blue] (0,0) -- (2,1);
 							\draw[-stealth,red] (2,1) -- (5,1);
 							\end{tikzpicture}
-						\end{flushright}
+						\end{flushleft}
 					\end{tabularx}
 					\egroup
 				\end{center}
@@ -1567,8 +1563,8 @@
 							\end{flalign*}
 						\end{tcolorbox}
 						&
-						\begin{flushright}
-							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+						\begin{flushleft}\hspace{1cm}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth,scale=0.90]
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
 							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
@@ -1584,7 +1580,7 @@
 							\node[fill,circle,inner sep=1.5pt,label={below:$Q(4;0;0)$}, red] at (xyz cs:x=4,y=0,z=0) {};
 							\node[fill,circle,inner sep=1.5pt,label={left:$R(0;0;-3)$}, red] at (xyz cs:x=0,y=0,z=-3) {};
 							\end{tikzpicture}
-						\end{flushright}
+						\end{flushleft}
 					\end{tabularx}
 					\egroup
 				\end{center}
@@ -1602,8 +1598,8 @@
 							\end{flalign*}
 						\end{tcolorbox}
 						&
-						\begin{flushright}
-							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+						\begin{flushleft}\hspace{1cm}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth,scale=0.90]
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
 							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
@@ -1633,7 +1629,7 @@
 							\node [below right] at (xyz cs:x=3,y=-3,z=-2) {$Q(3;-3;-2)$};
 							\node [above] at (xyz cs:x=-4,y=2,z=1) {$R(-4;2;1)$};
 							\end{tikzpicture}
-						\end{flushright}
+						\end{flushleft}
 					\end{tabularx}
 					\egroup
 				\end{center}
@@ -1651,8 +1647,8 @@
 							\end{flalign*}
 						\end{tcolorbox}
 						&
-						\begin{flushright}
-							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth]
+						\begin{flushleft}\hspace{1cm}
+							\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm,>=stealth,scale=0.90]
 							\draw[->] (xyz cs:x=-7) -- (xyz cs:x=7) node[above] {$x$};
 							\draw[->] (xyz cs:y=-7) -- (xyz cs:y=7) node[right] {$y$};
 							\draw[->] (xyz cs:z=-7) -- (xyz cs:z=7) node[above] {$z$};
@@ -1673,7 +1669,7 @@
 
 							\node [below right] at (xyz cs:x=4,y=3,z=1) {$P(4;3;1)$};
 							\end{tikzpicture}
-						\end{flushright}
+						\end{flushleft}
 					\end{tabularx}
 					\egroup
 				\end{center}
@@ -1920,10 +1916,9 @@
 			x_2&=(-\frac{1}{2})-\frac{(-\frac{1}{2})^{3}+2(-\frac{1}{2})^{2}-(-\frac{1}{2})-1}{3(-\frac{1}{2})^2+4(-\frac{1}{2})-1}=-\frac{5}{9}\\
 			x_3&=(-\frac{5}{9})-\frac{(-\frac{5}{9})^{3}+2(-\frac{5}{9})^{2}-(-\frac{5}{9})-1}{3(-\frac{5}{9})^2+4(-\frac{5}{9})-1}=-\frac{929}{1674}\\
 			x_4&=(-\frac{929}{1674})-\frac{(-\frac{929}{1674})^{3}+2(-\frac{929}{1674})^{2}-(-\frac{929}{1674})-1}{3(-\frac{929}{1674})^2+4(-\frac{929}{1674})-1}=-0,5549581321\\
-			x_5&=(-0,5549581321)-\frac{(-0,5549581321)^{3}+2(-0,5549581321)^{2}-(-0,5549581321)-1}{3(-0,5549581321)^2+4(-0,5549581321)-1}\\
-			&=-0,5549581321&&
+			x_5&=...=-0,5549581321&&
 			\end{flalign*}
-			Wenn man zwei Mal den gleich Wert bekommt, weiß man, dass man den endgültigen Wert erreicht hat. Damit haben wir jetzt eine Nullstelle bestimmt, mit der wir z.B. die Polynomdivision\index{Polynomdivision} anwenden können.
+			Wenn man zwei Mal den gleich Wert bekommt, weiß man, dass man den endgültigen Wert erreicht hat.
 		\subsection{Potenz- und Wurzelfunktionen}
 			Potenzfunktionen\index{Potenzfunktion} in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}\index{Wurzelfunktion}, wenn $n\ge 2$ gilt und der Bruch\index{Bruch} keine ganze Zahl\index{Ganze Zahl} ist. An der Potenz\index{Potenz} kann man erkennen, ob eine Funktion gerade\index{Gerade} ($x^{2n}$) oder ungerade\index{Ungerade} ($x^{2n-1}$) ist. Hier sind einige Beispiele für Graphen\index{Graph} von Potenz- und Wurzelfunktionen:\newline
 			\makeplot{{x^3},{x^2},{x^(3/2)},{x^(2/3)},{x^(-1/2)},{x^(-2)},{x^(-3)}}{{$f(x)=x^3$},{$f(x)=x^2$},{$f(x)=x^{\frac{3}{2}}$},{$f(x)=x^{\frac{2}{3}}$},{$f(x)=x^{-\frac{1}{2}}$},{$f(x)=x^{-2}$},{$f(x)=x^{-3}$}}{{1,-1},{1,-2},{4,-1},{4,-2},{7,-1},{7,-2},{10,-1}}{-6,6}{-6,6}{-10:10}{300}{17cm,7cm}{smooth}
@@ -1973,13 +1968,12 @@
 			\sqrt{(8x-14)(5x-2)}&=7x-10\\
 			40x^2-86x+28&=(7x-10)^2\\
 			40x^2-86x+28&=49x^2-140x+100\\
-			0&=9x^2-54x+72\\
-			0&=x^2-6x+8&&
+			0&=9x^2-54x+72=x^2-6x+8&&
 			\end{flalign*}
 			Jetzt kann man die \highlight{subsubsec:pqformel}{p-q-Formel}\index{p-q-Formel} anwenden und erhält die Lösungsmenge $\mathbb{L}=\{2;4\}$.
 		\subsection{Betragsfunktionen}
 			\label{subsec:betragsfunktionen}
-			Um mit Betragsgleichungen\index{Betragsgleichung} oder auch Betragsfunktionen\index{Betragsfunktion} rechnen zu können muss man mehrere Fälle betrachten. Nämlich einmal den Fall\index{Fall}, dass im Betrag ein Wert größer oder gleich $0$ entsteht und einmal den Fall, dass das Ergebnis\index{Ergebnis} im Betrag\index{Betrag} kleiner als Null ist. Betrachten wir einmal ein Beispiel, wo man den Schnittpunkt\index{Schnittpunkt} zwischen $f(x)=\vert x+1\vert$ und $f(x)=x+2$ finden soll.\newline
+			Um mit Betragsgleichungen\index{Betragsgleichung} oder auch Betragsfunktionen\index{Betragsfunktion} rechnen zu können muss man mehrere Fälle betrachten. Nämlich einmal den Fall\index{Fall}, dass im Betrag ein Wert größer oder gleich $0$ entsteht und einmal den Fall, dass das Ergebnis\index{Ergebnis} im Betrag\index{Betrag} kleiner als Null ist. Betrachten wir ein Beispiel, bei dem man den Schnittpunkt\index{Schnittpunkt} zwischen $f(x)=\vert x+1\vert$ und $f(x)=x+2$ finden soll.\newline
 			\makeplot{{x+2},{abs(x+1)}}{{$f(x)=x+2$},{$f(x)=\vert x+1\vert$}}{{5.5,4},{9.5,3.2}}{-5,5}{-4,4}{-10:10}{100}{17cm,7cm}{sharp plot}
 			Zunächst setzen wir unsere Funktionen\index{Funktion} gleich\index{Gleichsetzen} und erhalten eine Betragsgleichung\index{Betragsgleichung}. Dann betrachten wir die verschiedenen Fälle für den Betrag.
 			\begin{flalign*}
@@ -2262,25 +2256,25 @@
 				Neben der oben genannten Ableitungsregel\index{Ableitungsregel} von Funktionen, gibt es noch einige andere, die einem das Leben erleichtern:
 				\begin{multicols}{2}
 					\noindent\begin{flalign*}
-					&c&\rightarrow&\;\;0\\\\
-					&x^n&\rightarrow&\;\;nx^{n-1}\\\\
-					&\sqrt{x}&\rightarrow&\;\;\frac{1}{2\sqrt{x}}\\\\
-					&e^x&\rightarrow&\;\;e^x\\\\
-					&ln(x)&\rightarrow&\;\;\frac{1}{x}\\\\
-					&a^x(a>0)&\rightarrow&\;\;ln(a\cdot a^x)\\\\
+					&c&\rightarrow&\;\;0\\
+					&x^n&\rightarrow&\;\;nx^{n-1}\\
+					&\sqrt{x}&\rightarrow&\;\;\frac{1}{2\sqrt{x}}\\
+					&e^x&\rightarrow&\;\;e^x\\
+					&ln(x)&\rightarrow&\;\;\frac{1}{x}\\
+					&a^x(a>0)&\rightarrow&\;\;ln(a\cdot a^x)\\
 					&\frac{1}{x^n}&\rightarrow&\;\;-\frac{n}{x^{n+1}}&&&&&&&&&&&
 					\end{flalign*}
 					\begin{flalign*}
-					&\sin(x)&\rightarrow&\;\; \cos(x)\\\\
-					&\cos(x)&\rightarrow&\;\;-\sin(x)\\\\
-					&\tan(x)&\rightarrow&\;\;\frac{1}{\cos^2x}\\\\
-					&u(x)\cdot v(x)&\rightarrow&\;\;u^{\prime}(x)\cdot v(x)+u(x)\cdot v^{\prime}(x)\\\\
-					&\frac{u(x)}{v(x)}&\rightarrow&\;\;\frac{u^{\prime}(x)\cdot v(x)-u(x)\cdot v^{\prime}(x)}{(v(x))^2}\\\\
+					&\sin(x)&\rightarrow&\;\; \cos(x)\\
+					&\cos(x)&\rightarrow&\;\;-\sin(x)\\
+					&\tan(x)&\rightarrow&\;\;\frac{1}{\cos^2x}\\
+					&u(x)\cdot v(x)&\rightarrow&\;\;u^{\prime}(x)\cdot v(x)+u(x)\cdot v^{\prime}(x)\\
+					&\frac{u(x)}{v(x)}&\rightarrow&\;\;\frac{u^{\prime}(x)\cdot v(x)-u(x)\cdot v^{\prime}(x)}{(v(x))^2}\\
 					&(u\circ v)(x)&\rightarrow&\;\;u^{\prime}(v(x))\cdot v^{\prime}(x)&&&&&&&&&&&
 					\end{flalign*}
 				\end{multicols}
 			\end{tcolorbox}
-			Tipp: Solltest du es einmal nicht schaffen, eine Funktion mit den Ableitungsregeln abzuleiten oder diese vergessen haben, kannst du die Ableitung immer noch mithilfe des \highlight{subsubsec:differentialquotient}{Differentialquotienten!}\index{Differentialquotient} bestimmen.
+			\noindent Tipp: Solltest du es einmal nicht schaffen, eine Funktion mit den Ableitungsregeln abzuleiten oder diese vergessen haben, kannst du die Ableitung immer noch mithilfe des \highlight{subsubsec:differentialquotient}{Differentialquotienten}\index{Differentialquotient} bestimmen.
 			\subsubsection{Differenzenquotient}
 			\label{subsubsec:differenzenquotient}
 				Um die Steigung\index{Steigung} einer Sekante\index{Sekante} zwischen zwei Punkten\index{Punkt} zu berechnen, benutzen wir den Differenzenquotient\index{Differenzenquotient}.
@@ -2340,12 +2334,12 @@
 				Leitet man die Ableitung einer Funktion noch mal ab, erhält man die zweite Ableitung\index{Zweite Ableitung} $f^{\prime\prime}(x)$. Ebenso verhält es sich mit der dritten Ableitung\index{Dritte Ableitung} und allen weiteren. In der folgenden Abbildung sieht man eine Funktion\index{Funktion} und ihre erste, zweite sowie dritte Ableitung.
 				\makeplot{{x^4+2*x^3-2*x^2+x-3},{4*x^3+6*x^2-4*x+1},{12*x^2+12*x-4},{24*x+12}}{{$f(x)=x^4+2x^3-2x^2+x-3$},{$f^{\prime}(x)=4x^3+6x^2-4x+1$},{$f^{\prime\prime}(x)=12x^2+12x-4$},{$f^{\prime\prime\prime}(x)=24x+12$}}{{12,2.4},{11.7,1.75},{11.4,1.1},{10.9,0.45}}{-6,6}{-20,10}{-30:20}{200}{17cm,7cm}{smooth}
 				Man spricht bei den Bedingungen zur Bestimmung besonderer Punkte von notwendigen Bedingungen\index{Notwendige Bedingung}. Es existieren zudem weitere Bedingungen, mit deren Hilfe man diese Punkt genauer untersuchen kann, die sogenannten hinreichenden Bedingungen\index{Hinreichende Bedingung}. Die obige Abbildung soll helfen, diese Bedingungen nachzuvollziehen.
-				\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+				\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=1cm,right=1cm, bottom=.4cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
 					\textbf{Notwendige Bedingungen}\newline\newline
 					Wenn \colorbox{blue!30}{$f^{\prime}(x)=0$} gilt, dann ist bei $x$ ein \colorbox{blue!30}{Extremal- o. Sattelpunkt} von $f$.\newline\newline
 					Wenn \colorbox{red!30}{$f^{\prime\prime}(x)=0$} gilt, dann ist bei $x$ ein \colorbox{red!30}{Wendepunkt} von $f(x)$.
 				\end{tcolorbox}
-				\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+				\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=1cm,right=1cm, bottom=.4cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
 					\textbf{Hinreichende Bedingungen}\newline\newline
 					Wenn \colorbox{teal!30}{$f^{\prime}(x)=0\land f^{\prime\prime}(x)\neq 0$} gilt, besitzt $f$ eine \colorbox{teal!30}{Extremalpunkt} bei $x$.\newline\newline
 					Wenn \colorbox{yellow!30}{$f^{\prime}(x)=0\land f^{\prime\prime}(x)>0$} gilt, dann ist bei $x$ ein \colorbox{yellow!30}{Minimum} von $f$.\newline\newline
@@ -2567,11 +2561,9 @@
 				\Leftrightarrow &&0=&u^{2}-1,8u+0,4&&\mid \text{p-q-Formel}\\
 				\Rightarrow &&u_{1,2}=&\frac{1,8}{2}\pm\sqrt{\left(-\frac{1,8}{2}\right)^2-0,4}\\
 				\Rightarrow &&u_1=&\frac{9+\sqrt{41}}{10}&&\mid \text{Resubstitution: }u=x^2\\
-				\Rightarrow &&x^2=&\frac{9+\sqrt{41}}{10}\\
-				\Rightarrow &&x_{1,2}=&\pm 1,241093237\\
+				\Rightarrow &&x^2=&\frac{9+\sqrt{41}}{10}\Rightarrow x_{1,2}=\pm 1,241093237\\
 				\Rightarrow &&u_2=&\frac{9-\sqrt{41}}{10}&&\mid \text{Resubstitution: }u=x^2\\
-				\Rightarrow &&x^2=&\frac{9-\sqrt{41}}{10}\\
-				\Rightarrow &&x_{3,4}=&\pm 0,5095955026&&
+				\Rightarrow &&x^2=&\frac{9-\sqrt{41}}{10}\Rightarrow x_{3,4}=\pm 0,5095955026&&
 				\end{flalign*}
 			\end{tcolorbox}
 			\noindent Durch Einsetzen\index{Einsetzen} der ermittelten $x$-Werte, bekommen wir auch die $y$-Werte für die Punkte\index{Punkt}.
@@ -2659,18 +2651,16 @@
 				\int^{-1}_{-\sqrt{2}}(x^5-3x^3+2x)dx&=\left[\frac{1}{6}x^6-\frac{3}{4}x^4+x^2+k\right]^{-1}_{-\sqrt{2}}\\
 				&=\frac{1}{6}(-1)^6-\frac{3}{4}(-1)^4+(-1)^2+k-\left(\frac{1}{6}(-\sqrt{2})^6-\frac{3}{4}(-\sqrt{2})^4+(-\sqrt{2})^2+k\right)\\
 				&=\frac{5}{12}+k-(0,\overline{3}+k)\\
-				&=\frac{5}{12}+k-0,\overline{3}-k)\\
-				&=\frac{1}{12}&&
+				&=\frac{5}{12}+k-0,\overline{3}-k)=\dunderline{\frac{1}{12}}&&
 			\end{flalign*}
 			\begin{flalign*}
 				\int^{1}_{0}(x^5-3x^3+2x)dx&=\left[\frac{1}{6}x^6-\frac{3}{4}x^4+x^2+k\right]^{1}_{0}\\
 				&=\frac{1}{6}(1)^6-\frac{3}{4}(1)^4+(1)^2+k-\left(\frac{1}{6}(0)^6-\frac{3}{4}(0)^4+(0)^2+k\right)\\
 				&=\frac{5}{12}+k-(0+k)\\
-				&=\frac{5}{12}+k-0-k)\\
-				&=\frac{5}{12}&&
+				&=\frac{5}{12}+k-0-k)=\dunderline{\frac{5}{12}}&&
 			\end{flalign*}
 			\begin{flalign*}
-				F=2\cdot \left(\frac{1}{12}+\frac{5}{12}\right)=1\text{ Flächeneinheiten}&&
+				F=2\cdot \left(\frac{1}{12}+\frac{5}{12}\right)=1\text{ Flächeneinheit}&&
 			\end{flalign*}
 	\pagebreak
 	\section{Integralrechnung}
@@ -2800,22 +2790,22 @@
 		Genau diese immer kleiner werdenden Rechteck\index{Rechteck} werden durch das Integral dargestellt. Man rechnet die Stammfunktion an der obereren Grenze minus die Stammfunktion an der unteren Grenze. In der Kurvendiskussion gibt es ein rechnerisches \highlight{subsubsec:flaechenberechnung}{Beispiel} für die Anwendung des Integrals.
 		\subsection{Die Stammfunktion}
 			Das Gegenteil vom Differenzieren\index{Differenzieren} ist das Integrieren\index{Integrieren}. Damit kann man von einer Ableitung auf die nächst niedrigere Ableitung schließen, z.B. von $f^{\prime\prime}(x)$ auf $f^{\prime}(x)$. Die Funktion, die man daraus erhält, nennt man Stammfunktion\index{Stammfunktion}. Auch eine nicht abgeleitete Funktion besitzt eine Stammfunktion. Diese wird mit einem großen $F(x)$ bezeichnet. Da das Integrieren das Gegenteil des Differenzieren ist, gelten dieselben \highlight{subsec:ableitung}{Regeln}, jedoch umgekehrt. Anstatt z.B. den Exponenten um $1$ zu reduzieren und mit ihm zu multiplizieren, wird er um $1$ erhöht und durch ihn geteilt. Beim Integrieren fügt man jedoch noch $k$ für eine beliebige Zahl hinzu, denn beim Ableiten geht diese verloren. Daher sind Stammfunktionen nicht eindeutig, wie es die Ableitungen sind. Die Stammfunktion von $f(x)=2x$ ist beispielsweise $F(x)=x^2+k$.
-			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
 				\textbf{Integrationsregeln}\newline\newline
 				Da es manchmal schwierig sein kann, umgekehrt zu denken, hier noch mal die wichtigsten Regeln zur Bildung der Stammfunktion:
 				\begin{multicols}{2}
 					\noindent\begin{flalign*}
-					&c&\rightarrow&\;\;c\cdot x+k\\\\
-					&x^n&\rightarrow&\;\;\frac{1}{n+1}x^{n+1}+k\\\\
-					&\frac{1}{x}&\rightarrow&\;\;\ln{\vert x\vert}+k\\\\
-					&\sqrt[n]{x}&\rightarrow&\;\;\frac{1}{\frac{1}{n}+1}x^{\frac{1}{n}+1}+k\\\\
-					&e^x&\rightarrow&\;\;e^x\\\\&&&&&&&&&&&
+					&c&\rightarrow&\;\;c\cdot x+k\\
+					&x^n&\rightarrow&\;\;\frac{1}{n+1}x^{n+1}+k\\
+					&\frac{1}{x}&\rightarrow&\;\;\ln{\vert x\vert}+k\\
+					&\sqrt[n]{x}&\rightarrow&\;\;\frac{1}{\frac{1}{n}+1}x^{\frac{1}{n}+1}+k\\
+					&e^x&\rightarrow&\;\;e^x&&&&&&&&&&&
 					\end{flalign*}
 					\begin{flalign*}
-					&ln(x)&\rightarrow&\;\;-x+x\cdot \ln(x)+k\\\\
-					&\sin(x)&\rightarrow&\;\; -\cos(x)+k\\\\
-					&\cos(x)&\rightarrow&\;\;\sin(x)+k\\\\
-					&\tan(x)&\rightarrow&\;\;-\ln\vert\cos(x)\vert + k\\\\
+					&ln(x)&\rightarrow&\;\;-x+x\cdot \ln(x)+k\\
+					&\sin(x)&\rightarrow&\;\; -\cos(x)+k\\
+					&\cos(x)&\rightarrow&\;\;\sin(x)+k\\
+					&\tan(x)&\rightarrow&\;\;-\ln\vert\cos(x)\vert + k\\
 					&\frac{f^{\prime}(x)}{f(x)}&\rightarrow&\;\;\ln f(x)+k&&&&&&&&&&&
 					\end{flalign*}
 				\end{multicols}

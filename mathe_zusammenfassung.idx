@@ -2,6 +2,8 @@
 \indexentry{Durchschnitt|hyperpage}{5}
 \indexentry{Differenz|hyperpage}{5}
 \indexentry{Symmetrische Differenz|hyperpage}{5}
+\indexentry{Mächtigkeit|hyperpage}{5}
+\indexentry{Teilmenge|hyperpage}{5}
 \indexentry{Potenzmenge|hyperpage}{5}
 \indexentry{Komplement|hyperpage}{5}
 \indexentry{Universum|hyperpage}{5}
@@ -95,7 +97,7 @@
 \indexentry{Intervall|hyperpage}{19}
 \indexentry{Unendlich|hyperpage}{19}
 \indexentry{Reelle Zahl|hyperpage}{19}
-\indexentry{p-q-Formel|hyperpage}{20}
+\indexentry{p-q-Formel|hyperpage}{19}
 \indexentry{Nullstelle|hyperpage}{20}
 \indexentry{Lösungsmenge|hyperpage}{20}
 \indexentry{Abgeschlossenes Intervall|hyperpage}{20}
@@ -376,7 +378,7 @@
 \indexentry{Logarithmus|hyperpage}{57}
 \indexentry{Exponent|hyperpage}{57}
 \indexentry{Basis|hyperpage}{57}
-\indexentry{Umformen|hyperpage}{58}
+\indexentry{Umformen|hyperpage}{57}
 \indexentry{Potenzgesetz|hyperpage}{58}
 \indexentry{Logarithmusgesetz|hyperpage}{58}
 \indexentry{Trigonometrische Funktion|hyperpage}{58}
@@ -438,7 +440,7 @@
 \indexentry{Rechtsseitiger Grenzwert|hyperpage}{64}
 \indexentry{Unendlich|hyperpage}{64}
 \indexentry{Linksseitiger Grenzwert|hyperpage}{64}
-\indexentry{Rechtsseitger Grenzwert|hyperpage}{64}
+\indexentry{Rechtsseitiger Grenzwert|hyperpage}{64}
 \indexentry{Notation|hyperpage}{64}
 \indexentry{Stetig|hyperpage}{65}
 \indexentry{Differenzierbar|hyperpage}{65}
@@ -512,6 +514,7 @@
 \indexentry{Differenzieren|hyperpage}{75}
 \indexentry{Integrieren|hyperpage}{75}
 \indexentry{Stammfunktion|hyperpage}{75}
+\indexentry{Differential|hyperpage}{76}
 \indexentry{Ableitung|hyperpage}{76}
 \indexentry{Produktregel|hyperpage}{77}
 \indexentry{Differenzfunktion|hyperpage}{77}
@@ -532,6 +535,7 @@
 \indexentry{Wahrheitstafel|hyperpage}{80}
 \indexentry{Tautologie|hyperpage}{80}
 \indexentry{Widerspruch|hyperpage}{80}
+\indexentry{Quantor|hyperpage}{80}
 \indexentry{Quantor|hyperpage}{80}
 \indexentry{Direkter Beweis|hyperpage}{81}
 \indexentry{Indirekter Beweis|hyperpage}{81}
@@ -571,7 +575,7 @@
 \indexentry{Diskret|hyperpage}{92}
 \indexentry{Erwartungswert|hyperpage}{92}
 \indexentry{Erwartungswert|hyperpage}{92}
-\indexentry{Wertetablle|hyperpage}{92}
+\indexentry{Wertetabelle|hyperpage}{92}
 \indexentry{Umstellen|hyperpage}{93}
 \indexentry{Varianz|hyperpage}{93}
 \indexentry{Standardabweichung|hyperpage}{93}
@@ -579,3 +583,6 @@
 \indexentry{Standardabweichung|hyperpage}{93}
 \indexentry{Streuung|hyperpage}{93}
 \indexentry{Mittelwert|hyperpage}{93}
+\indexentry{Varianz|hyperpage}{94}
+\indexentry{Varianz|hyperpage}{94}
+\indexentry{Standardabweichung|hyperpage}{94}

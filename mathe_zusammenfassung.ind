@@ -45,6 +45,7 @@
 		\hyperpage{46}, \hyperpage{66}
   \item Definitionslücke, \hyperpage{56}, \hyperpage{66}
   \item Dekadischer Logarithmus, \hyperpage{16}
+  \item Differential, \hyperpage{76}
   \item Differentialquotient, \hyperpage{61}
   \item Differenz, \hyperpage{5}
   \item Differenzenquotient, \hyperpage{62}
@@ -207,7 +208,7 @@
   \item Monom, \hyperpage{50, 51}
   \item Monoton, \hyperpage{42}
   \item Monotonieverhalten, \hyperpage{42}, \hyperpage{61}
-  \item Mächtigkeit, \hyperpage{84}
+  \item Mächtigkeit, \hyperpage{5}, \hyperpage{84}
 
   \indexspace
 
@@ -240,8 +241,8 @@
 
   \indexspace
 
-  \item p-q-Formel, \hyperpage{13}, \hyperpage{18}, \hyperpage{20}, 
-		\hyperpage{47}, \hyperpage{51}
+  \item p-q-Formel, \hyperpage{13}, \hyperpage{18, 19}, \hyperpage{47}, 
+		\hyperpage{51}
   \item Parameter, \hyperpage{26}
   \item Parameterform, \hyperpage{35, 36}
   \item Permutation, \hyperpage{83}
@@ -288,7 +289,6 @@
   \item Rechteck, \hyperpage{28}, \hyperpage{75}
   \item Rechts-Links-Krümmung, \hyperpage{72}
   \item Rechtsoffen, \hyperpage{13}
-  \item Rechtsseitger Grenzwert, \hyperpage{64}
   \item Rechtsseitiger Grenzwert, \hyperpage{64}, \hyperpage{66}
   \item Rechtwinkliges Dreieck, \hyperpage{28}
   \item Reelle Zahl, \hyperpage{6}, \hyperpage{19}, \hyperpage{46}
@@ -316,7 +316,7 @@
   \item Spannvektor, \hyperpage{36}
   \item Spurpunkt, \hyperpage{36}
   \item Stammfunktion, \hyperpage{75}
-  \item Standardabweichung, \hyperpage{93}
+  \item Standardabweichung, \hyperpage{93, 94}
   \item Steigung, \hyperpage{62}
   \item Stetig, \hyperpage{65}, \hyperpage{92}
   \item Stetige Erweiterung, \hyperpage{66}
@@ -338,7 +338,7 @@
   \item Tangentengleichung, \hyperpage{67}, \hyperpage{72}
   \item Taschenrechner, \hyperpage{58}
   \item Tautologie, \hyperpage{80}
-  \item Teilmenge, \hyperpage{85}
+  \item Teilmenge, \hyperpage{5}, \hyperpage{85}
   \item Term, \hyperpage{16--18}, \hyperpage{69}
   \item Transformieren, \hyperpage{59}
   \item Trigonometrische Funktion, \hyperpage{29}, \hyperpage{58}
@@ -346,7 +346,7 @@
   \indexspace
 
   \item Umfang, \hyperpage{29}
-  \item Umformen, \hyperpage{58}, \hyperpage{61}
+  \item Umformen, \hyperpage{57}, \hyperpage{61}
   \item Umkehrfunktion, \hyperpage{79}
   \item Umstellen, \hyperpage{19}, \hyperpage{24}, \hyperpage{67}, 
 		\hyperpage{69}, \hyperpage{72}, \hyperpage{93}
@@ -360,7 +360,7 @@
   \indexspace
 
   \item Variable, \hyperpage{58}
-  \item Varianz, \hyperpage{93}
+  \item Varianz, \hyperpage{93, 94}
   \item Variation, \hyperpage{83}
   \item Vereinfachen, \hyperpage{16}, \hyperpage{18}, \hyperpage{29}
   \item Vereinigung, \hyperpage{5}
@@ -377,8 +377,7 @@
   \item Wahrheitswert, \hyperpage{80}
   \item Wendepunkt, \hyperpage{67}, \hyperpage{71, 72}
   \item Wendestelle, \hyperpage{72}
-  \item Wertetabelle, \hyperpage{44}, \hyperpage{78}
-  \item Wertetablle, \hyperpage{92}
+  \item Wertetabelle, \hyperpage{44}, \hyperpage{78}, \hyperpage{92}
   \item Widerspruch, \hyperpage{80}
   \item Windschief, \hyperpage{39, 40}
   \item Winkel, \hyperpage{29}

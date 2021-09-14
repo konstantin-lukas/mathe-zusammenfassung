@@ -252,6 +252,7 @@
 	\end{multicols}
 	\noindent \textbf{Noch ein paar Notationsnormen:}
 	\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+		\index{Mächtigkeit}\index{Teilmenge}
 		\begin{flalign*}
 			&\text{Anzahl der Elemente in einer Menge (Mächtigkeit): }&\vert M\vert = x\\
 			&\text{Echte Teilmenge N von M: }&N\subsetneq M\\
@@ -379,7 +380,7 @@
 			\egroup
 		\end{center}
 	\subsection{Komplexe Zahlen}
-		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereichen $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
+		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}
 			\begin{tikzpicture}
 			\begin{axis}[
@@ -405,7 +406,7 @@
 			\node at (3.75,3.25) {$z=\textcolor{blue}{10}+\textcolor{red}{5}i=\begin{pmatrix}\textcolor{blue}{10}\\\textcolor{red}{5}\end{pmatrix}$};
 			\end{tikzpicture}
 		\end{center}
-		Für die kartesische Form\index{Kartesische Form} ($z=a+b\cdot i$) gelten alle gängigen Rechengesetze. Es gibt jedoch auch etwas neues, das sich \textit{komplexe Konjugation}\index{Komplexe Konjugation} nennt. Das klingt kompliziert als es ist, denn man dreht nur das Vorzeichen der imaginären Zahl um schreibt zur Markierung einen Strich über die Zahl: $z=a+b\cdot i\Rightarrow \bar{z}=a-b\cdot i$. Was beim Rechen mit komplexen Zahl besonders interessant ist, ist wie wir damit wieder auf reelle Zahlen kommen. Da $i=\sqrt{-1}$ festgelegt ist, gilt somit auch $i^2=-1$. Das heißt z.B., das Produkt aus $1+i$ und $-1-i$ ist $-2i$. Etwas schwieriger wird es bei der Division, da es durch das $i$ schwer werden kann zurück auf die kartesische Form zu kommen. Dafür gibt es einen kleinen Trick, denn es gilt $z\cdot \bar{z}=a^2+b^2$. Das kann man ganz einfach durch nachrechnen allgemein prüfen:
+		Für die kartesische Form\index{Kartesische Form} ($z=a+b\cdot i$) gelten alle gängigen Rechengesetze. Es gibt jedoch auch etwas neues, das sich \textit{komplexe Konjugation}\index{Komplexe Konjugation} nennt. Das klingt komplizierter als es ist, denn man dreht nur das Vorzeichen der imaginären Zahl um schreibt zur Markierung einen Strich über die Zahl: $z=a+b\cdot i\Rightarrow \bar{z}=a-b\cdot i$. Was beim Rechen mit komplexen Zahl besonders interessant ist, ist wie wir damit wieder auf reelle Zahlen kommen. Da $i=\sqrt{-1}$ festgelegt ist, gilt somit auch $i^2=-1$. Das heißt z.B., das Produkt aus $1+i$ und $-1-i$ ist $-1-i-i-i^2=-2i$. Etwas schwieriger wird es bei der Division, da es durch das $i$ schwer werden kann zurück auf die kartesische Form zu kommen. Dafür gibt es einen kleinen Trick, denn es gilt $z\cdot \bar{z}=a^2+b^2$. Das kann man ganz einfach durch Nachrechnen allgemein prüfen:
 		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
 			\begin{flalign*}
 				&&z\cdot \bar{z}=&(a+b\cdot i)\cdot (a-b\cdot i)\\
@@ -503,7 +504,7 @@
 			\end{center}
 			Bis hierhin haben wir die kartesische Form\index{Kartesische Form} benutzt, die uns ganz einfach die Koordinaten in der gaußschen Zahlenebene ablesen lässt. Eine komplexe Zahl lässt sich jedoch auch auf andere Weise genau festlegen, nämlich mit der \textit{Polarform}\index{Polarform}. Dabei wird die Zahl durch die Länge des Vektors und dem Winkel zwischen Abszisse und Vektor festgelegt.\newline\newline
 			Hinweis: $r\cdot(\cos\phi+i\cdot\sin\phi)$ wird auch trigonometrische Darstellung und $r\cdot e^{i\phi}$ auch als Exponentialdarstellung der Polarform bezeichnet. $\phi$ wird auch als Argument\index{Argument} der Zahl $z$ bezeichnet.\newline\newline
-			Natürlich gibt es auch Regeln, wie man zwischen kartesischer und Polarform umwandeln kann. Größtenteils sind diese sehr einfach, da sie sich aus dem Rechnen mit dem \highlight{subsec:rechtwinkel}{rechtwinkligen Dreieck} herleiten, jedoch ein kleiner Hinweis: $sgn(b)$ (Signum\index{Signum}) meint das Vorzeichen von $b$ und $\arccos$ ist dasselbe wie $\cos^{-1}$ auf dem Taschenrechner.
+			Natürlich gibt es auch Regeln, wie man zwischen kartesischer und Polarform umwandeln kann. Größtenteils sind diese sehr einfach, da sie sich aus dem Rechnen mit dem \highlight{subsec:rechtwinkel}{rechtwinkligen Dreieck} herleiten, jedoch ein kleiner Hinweis: $\displaystyle \operatorname {sgn}(b)$ (Signum\index{Signum}) meint das Vorzeichen von $b$ und $\arccos$ ist dasselbe wie $\cos^{-1}$ auf dem Taschenrechner.
 			\begin{tcolorbox}[boxsep=0pt,top=0.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
 				Für die Umrechnung zwischen kartesischer Form und Polarform gelten folgende Gleichungen:
 				\begin{flalign*}
@@ -544,7 +545,7 @@
 						\Leftrightarrow&&=&e^{-5\pi i}=e^{\pi i}=\cos(\pi)+i\cdot\sin(\pi)=\dunderline{-1}&&
 					\end{flalign*}
 				\end{tcolorbox}
-				\noindent Das Ergebnis einer solchen Rechnung wird i.~d.~R. so gekürzt, dass der Winkel zwischen $0$ und $2\pi$ bzw. $0^{\circ}$ und $360^{\circ}$ liegt, indem man jeweils eine Umdrehung dazu rechnet oder abzieht ($\pm2\pi$ oder $\pm360^{\circ}$). Das hat den Hintergrund, dass eine Drehung des Vektors um mehr als $360^{\circ}$ nur unnötig kompliziert wäre, denn man braucht in der Ebene nur maximal $360^{\circ}$ und kann seinen Vektor in jede Richtung zeigen lassen.
+				\noindent Das Ergebnis einer solchen Rechnung wird i.d.R. so gekürzt, dass der Winkel zwischen $0$ und $2\pi$ bzw. $0^{\circ}$ und $360^{\circ}$ liegt, indem man jeweils eine Umdrehung dazu rechnet oder abzieht ($\pm2\pi$ oder $\pm360^{\circ}$). Das hat den Hintergrund, dass eine Drehung des Vektors um mehr als $360^{\circ}$ nur unnötig kompliziert wäre, denn man braucht in der Ebene nur maximal $360^{\circ}$ und kann seinen Vektor in jede Richtung zeigen lassen.
 			\subsubsection{Komplexe Zahlen radizieren}
 				Wie wir wurzeln aus einer komplexen Zahl ziehen, können wir uns mit den \highlight{subsec:potenzgesetze}{Potenzgesetzen} herleiten. Der große Unterschied zum Potenzieren mit einer ganzen Zahl ist, dass wir mehrere Ergebnisse erhalten. Beim Rechnen der $n$-ten Wurzel, gibt es $n$ Ergebnisse um genau zu sein. Welchen Hintergrund das hat, schauen wir uns hier an. Anschließend folgt ein Beispiel. Hinweis: für dieses Kapitel solltest du das Kapitel zum \highlight{subsubsec:komplexpotenz}{Potenzieren} von komplexen Zahlen gelesen haben.\newline\newline
 				Zunächst ist es wieder sehr hilfreich, die komplexe Zahl in der Polarform vorliegen zu haben. Außerdem wissen wir, dass wir beliebig oft um $2\pi$ drehen können, weshalb wir zum Winkel $\phi$ Umdrehungen der Anzahl $k$ hinzufügen: $2\pi k$.
@@ -561,7 +562,7 @@
 					=&r^{\frac{1}{n}}\cdot e^{i\frac{1}{n}(\phi+2\pi k)}\\
 					=&r^{\frac{1}{n}}\cdot e^{i\left(\frac{\phi}{n}+\frac{2\pi}{n}k\right)}&&
 				\end{flalign*}
-				Von Interesse ist die letzte Zeile. Das $r$ lassen wir mal außen vor, da es für alle Ergebnisse gleich ist und die folgende Erklärung dem Winkel gilt. Wir haben ja in der Polarform in der Exponentialschreibweise normalerweise zu stehen $i\phi$. Jetzt wo wir unseren Term so umgeformt haben, ist unser Winkel $\phi$ gleich $\frac{\phi}{n}+\frac{2\pi}{n}k$.
+				Von Interesse ist die letzte Zeile. Das $r$ lassen wir mal außen vor, da es für alle Ergebnisse gleich ist und die folgende Erklärung nur dem Winkel gelten soll. Wir haben ja in der Polarform in der Exponentialschreibweise normalerweise zu stehen $i\phi$. Jetzt wo wir unseren Term so umgeformt haben, ist unser Winkel $\phi$ gleich $\frac{\phi}{n}+\frac{2\pi}{n}k$.
 				\begin{center}
 					\begin{tikzpicture}
 					\begin{axis}[
@@ -613,14 +614,17 @@
 						&&z^3=&2\sqrt{2}\cdot e^{\frac{1}{4}\pi i}\\
 						\Rightarrow&&z=&\sqrt[3]{2\sqrt{2}\cdot e^{\frac{1}{4}\pi i}}=\left(2\sqrt{2}\cdot e^{\frac{1}{4}\pi i}\right)^{\frac{1}{3}}=\sqrt{2}\cdot e^{i\left(\frac{\frac{1}{4}\pi}{3}+\frac{2\pi}{3}\right)}\\
 						\Rightarrow&&z_k=&e^{i\left(\frac{\frac{1}{4}\pi}{3}+\frac{2\pi}{3}k\right)}\\
-						\Rightarrow&&z_0=&\dunderline{\sqrt{2}\cdot e^{\frac{1}{12}\pi i}},z_1=\dunderline{\sqrt{2}\cdot e^{\frac{3}{4}\pi i}},z_2=\dunderline{\sqrt{2}\cdot e^{\frac{17}{12}\pi i}}&&
+						&&\Downarrow&\\
+						&&z_0=&\dunderline{\sqrt{2}\cdot e^{\frac{1}{12}\pi i}}\\
+						&&z_1=&\dunderline{\sqrt{2}\cdot e^{\frac{3}{4}\pi i}}\\
+						&&z_2=&\dunderline{\sqrt{2}\cdot e^{\frac{17}{12}\pi i}}&&
 					\end{flalign*}
 				\end{tcolorbox}
 \pagebreak
 \section{Elementarmathematik}
 \label{sec:rechengesetze}
 	\subsection{Brüche dividieren}
-		Um zwei Brüche zu dividieren bildet man den Kehrwert \index{Kehrwert}vom Divisor\index{Divisor} und multipliziert diesen mit dem Dividend.\index{Dividend}
+		Um zwei Brüche zu dividieren bildet man den Kehrwert \index{Kehrwert}vom Divisor\index{Divisor} und multipliziert diesen mit dem Dividenden.\index{Dividend}
 		\begin{flalign*}
 		\frac{p_1}{q_1} : \frac{p_2}{q_2} = \frac{p_1}{q_1} \cdot \frac{q_2}{p_2}&&
 		\end{flalign*}
@@ -639,7 +643,7 @@
 		In diesem Fall ist die Lösungsmenge die Funktion $y=5-x^2$.\newline
 		\makeplot{{5-x^2}}{{$f(x)=5-x^2$}}{{11,3.3}}{-10,10}{-10,10}{-30:30}{330}{17cm,7cm}{smooth}
 	\subsection{Normalform}
-		Eine Gleichung in der Form $ax^2+bx+c=0$ mit $a\neq0$ und $b,c\in \mathbb{R}$, heißt quadratisch\index{Quadratisch}. Spezial bezeichnet man $x^2+px+q=0$ mir $p,q\in \mathbb{R}$, als quadratische Gleichung in Normalform. \index{Normalform}\newline\newline
+		Eine Gleichung in der Form $ax^2+bx+c=0$ mit $a\neq0$ und $b,c\in \mathbb{R}$, heißt quadratisch\index{Quadratisch}. Speziell bezeichnet man $x^2+px+q=0$ mir $p,q\in \mathbb{R}$ als quadratische Gleichung in Normalform. \index{Normalform}\newline\newline
 		Man kann eine quadratische Gleichung in die Normalform überführen, indem man durch $a$ teilt: $x^2+\frac{b}{a}x+\frac{c}{a}=0$.
 		\subsubsection{p-q-Formel}
 		\label{subsubsec:pqformel}
@@ -676,14 +680,14 @@
 	$(a-b)^2 = a^2 - 2ab + b^2$ \newline\newline
 	$(a+b)(a-b) = a^2 - b^2$
 	\subsection{Euklidischer Algorithmus}
-		Der euklidische Algorithmus\index{Euklidischer Algorithmus} findet den größten gemeinsamen Teiler\index{Größter gemeinsamer Teiler} zweier Zahlen. Das eignet sich aunezeichnet dazu, Brüche zu kürzen\index{Kürzen}. Der vorletzte Rest bevor $R = 0$ eintritt, ist das Ergebnis.
+		Der euklidische Algorithmus\index{Euklidischer Algorithmus} findet den größten gemeinsamen Teiler\index{Größter gemeinsamer Teiler} zweier Zahlen. Das eignet sich ausgezeichnet dazu, Brüche zu kürzen\index{Kürzen}. Der vorletzte Rest, also bevor $R = 0$ eintritt, ist das Ergebnis.
 		\begin{flalign*}
 		& 2160 : 2592 = 0 \;\;\; R = 2160 \\
-		& 2592 : 2160 = 1 \;\;\; R = 432 \\
+		& 2592 : 2160 = 1 \;\;\; R = \textcolor{red}{432} \\
 		& 2160 : 432 = 5 \;\;\; R = 0 &&
 		\end{flalign*}
 		\begin{flalign*}
-		\frac{2592}{2160} = \frac{6 \cdot 432}{5 \cdot 432} = \frac{6}{5}&&
+		\frac{2592}{2160} = \frac{6 \cdot \textcolor{red}{432}}{5 \cdot \textcolor{red}{432}} = \frac{6}{5}&&
 		\end{flalign*}
 	\subsection{Potenzgesetze}
 	\label{subsec:potenzgesetze}\index{Potenzgesetz}
@@ -700,7 +704,7 @@
 		\begin{flalign*}
 		a^{\frac{p}{q}} = \sqrt[q]{a^p} = (\sqrt[q]{a})^p &&
 		\end{flalign*}
-		Beispiel: Bestimmen Sie $m$ und $n$ so, dass gilt: $(9x^7)^2 = mx^n$
+		Beispiel: Bestimme $m$ und $n$, sodass gilt: $(9x^7)^2 = mx^n$
 		\begin{flalign*}
 			(9x^7)^2 = mx^n \\
 			81x^{14} = mx^n &&
@@ -746,7 +750,7 @@
 			& = \dunderline{\frac{2}{x^2}} &&
 			\end{flalign*}
 			\hrule
-			\noindent\newline\newline Beispiel 3: Bestimmen Sie $x$ und $y$, sodass $\frac{x}{y}$ vollständig gekürzt\index{Gekürzt} ist.
+			\noindent\newline\newline Beispiel 3: Bestimme $x$ und $y$, sodass $\frac{x}{y}$ vollständig gekürzt\index{Gekürzt} ist.
 			\begin{flalign*}
 				\dfrac{2\cdot 2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
 				2 \cdot \dfrac{2^{\frac{5}{2}}}{2^{\frac{1}{4}}}=2^{\frac{x}{y}} \\
@@ -757,7 +761,7 @@
 			Damit gilt $x = 13$ und $y = 4$.
 	\subsection{Logarithmusgesetze}
 	\label{subsec:logarithmusgesetze}
-			Die Logarithmusrechnung\index{Logarithmus} dient dazu das $x$ im Term\index{Term} $b^x=a$ zu bestimmen. Es ist damit quasi das Gegenstück zur Potenzrechnung\index{Potenzrechnung}. Rechnen wir z.B. $9^3$, kommen wir auf $729$. Umgekehrt können wir jetzt aber auch $log_{9}729$ rechnen und kommen auf $3$. Es gibt außerdem die speziellen Notationen\index{Notation} $ln$ und $lg$, die jeweils \textit{natürlicher Logarithmus}\index{Natürlicher Logarithmus} und \textit{dekadischer Logarithmus}\index{Dekadischer Logarithmus} genannt werden.\newline
+			Die Logarithmusrechnung\index{Logarithmus} dient dazu, das $x$ im Term\index{Term} $b^x=a$ zu bestimmen. Es ist damit quasi das Gegenstück zur Potenzrechnung\index{Potenzrechnung}. Rechnen wir z.B. $9^3$, kommen wir auf $729$. Umgekehrt können wir jetzt aber auch $log_{9}729$ rechnen und kommen auf $3$. Es gibt außerdem die speziellen Notationen\index{Notation} $ln$ und $lg$, die jeweils \textit{natürlicher Logarithmus}\index{Natürlicher Logarithmus} und \textit{dekadischer Logarithmus}\index{Dekadischer Logarithmus} genannt werden.\newline
 			\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.4cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 				\bgroup
 				\def\arraystretch{0}
@@ -780,7 +784,7 @@
 					$log_b(\sqrt[u]{v})=\frac{log_b(v)}{u}$
 					&\vspace{1.5em}
 					$log_a(v)=\frac{log_b(v)}{log_b(a)}$
-				\end{tabularx}	
+				\end{tabularx}
 				\egroup
 			\end{tcolorbox}
 \pagebreak
@@ -809,7 +813,7 @@
 			\begin{flalign*}
 				x^4+2x^3+3x^2 &= 0\\
 				x^2(x^2+2x+3) &= 0\\
-				x^2 &= 0\;oder\;(x^2+2x+3) = 0\\
+				x^2 &= 0\text{ oder }(x^2+2x+3) = 0\\
 				\mathbb{L} &= \{0\}&&
 			\end{flalign*}
 			Für $x^2+2x+3 = 0$ existiert keine reelle Lösung $\Rightarrow$ \highlight{subsubsec:pqformel}{p-q-Formel}.
@@ -864,15 +868,15 @@
 	\subsection{Quadratische Ungleichungen}
 		Um die Lösungsmenge\index{Lösungsmenge} einer quadratischen Ungleichung\index{Quadratische Ungleichung} zu finden, formt man die Ungleichung\index{Ungleichung} zunächst so um, dass auf einer Seite $0$ steht. Auf der anderen Seite hat man dann optimalerweise eine quadratische Funktion\index{Quadratische Funktion}. Schauen wir uns mal das Beispiel $x^2>2x+7$ an.
 		\makeplot{{x^2-2*x-7}}{{$f(x)=x^2-2x-7$}}{{5,1}}{-10,10}{-10,10}{-30:30}{330}{17cm,7cm}{smooth}
-		Wir stellen also zunächst um\index{Umstellen} und erhalten $x^2-2x-7>0$. Daraus ergibt sich auch die Funktion oben. An der Grafik erkennt man sehr gut, was wir eigentlich suchen. Denn unsere Lösungsmenge\index{Lösungsmenge} sind alle $x$, für die $f(x)$ größer als $0$ ist. Und wie kriegen wir das raus? Indem wir die Nullstellen\index{Nullstelle} berechnen. Das Intervall\index{Intervall} von Unendlich\index{Unendlich} bis zur linken Nullstelle ist ein Teil unserer Lösung und der andere ist das Intervall von der rechten Nullstelle bis unendlich. Dabei muss man stets verschiedene Fälle beachten. Für eine nach unten geöffnete Funktion ($-x^2$) suchen wir den Bereich zwischen den Nullstellen. Für eine Funktion oberhalb der $x$-Achse, die keine Nullstellen hat, sind alle reellen Zahlen unsere Lösungsmenge, wohingegen eine Funktion ohne Nullstellen unterhalb der $x$-Achse eine leere Lösungsmenge liefern würde. Eine Funktion mit genau einer Nullstelle liefert hingegen eine Lösungsmenge aller reellen Zahlen\index{Reelle Zahl} außer der Nullstelle. Es gibt je nach Art der Funktion und Vergleichszeichen in unserer Ungleichung viele unterschiedliche Szenarien, weshalb es immer ratsam ist eine Skizze anzufertigen. Für das Beispiel oben können wir die \highlight{subsubsec:pqformel}{p-q-Formel}\index{p-q-Formel} verwenden, um die Nullstellen zu berechnen.
+		Wir stellen also zunächst um\index{Umstellen} und erhalten $x^2-2x-7>0$. Daraus ergibt sich auch die Funktion oben. An der Grafik erkennt man sehr gut, was wir eigentlich suchen. Denn unsere Lösungsmenge\index{Lösungsmenge} sind alle $x$, für die $f(x)$ größer als $0$ ist. Und wie kriegen wir das raus? Indem wir die Nullstellen\index{Nullstelle} berechnen. Das Intervall\index{Intervall} von Unendlich\index{Unendlich} bis zur linken Nullstelle ist ein Teil unserer Lösung und der andere ist das Intervall von der rechten Nullstelle bis unendlich. Dabei muss man stets verschiedene Fälle beachten. Für eine nach unten geöffnete Funktion ($-x^2$) suchen wir den Bereich zwischen den Nullstellen. Für eine Funktion oberhalb der $x$-Achse, die keine Nullstellen hat, sind alle reellen Zahlen unsere Lösungsmenge, wohingegen eine Funktion ohne Nullstellen unterhalb der $x$-Achse eine leere Lösungsmenge liefern würde. Eine quadratische Funktion mit genau einer Nullstelle liefert hingegen eine Lösungsmenge aller reellen Zahlen\index{Reelle Zahl} außer der Nullstelle. Es gibt je nach Art der Funktion und Vergleichszeichen in unserer Ungleichung viele unterschiedliche Szenarien, weshalb es immer ratsam ist eine Skizze anzufertigen. Für das Beispiel oben können wir die \highlight{subsubsec:pqformel}{p-q-Formel}\index{p-q-Formel} verwenden, um die Nullstellen zu berechnen.
 		\begin{flalign*}
 		x_{\pm}&=-\frac{-2}{2}\pm \sqrt{\left(\frac{-2}{2}\right)^2+7}\\
-		x_1&=1-2\sqrt{2}\\
-		x_2&=1+2\sqrt{2}&&
+		x_1&=\dunderline{1-2\sqrt{2}}\\
+		x_2&=\dunderline{1+2\sqrt{2}}&&
 		\end{flalign*}
 		Jetzt, wo wir die Nullstellen\index{Nullstelle} haben, ist es nicht schwer die Lösungsmenge\index{Lösungsmenge} anzugeben. Dabei sollte man darauf achten, dass man abgeschlossene\index{Abgeschlossenes Intervall} und offene \highlight{subsec:intervalle}{Intervalle}\index{Offenes Intervall} nicht verwechselt.
 		\begin{flalign*}
-			\mathbb{L}=\mathbb{R}\setminus \left[1-2\sqrt{2};1+2\sqrt{2}\right]=\left(-\infty;1-2\sqrt{2}\right)\cup\left(1+2\sqrt{2}\right)&&
+			\mathbb{L}=\mathbb{R}\setminus \left[1-2\sqrt{2};1+2\sqrt{2}\right]=\left(-\infty;1-2\sqrt{2}\right)\cup\left(1+2\sqrt{2};\infty\right)&&
 		\end{flalign*}
 	\subsection{Ungleichungen mit Beträgen}
 		Das Vorgehen bei Betragsungleichungen\index{Betragsungleichung} ist im Grunde genommen dasselbe Prinzip, wie bei den quadratischen. Schauen wir uns das Beispiel $\vert x \vert -3 < 0$ an.
@@ -1082,7 +1086,7 @@
 			\end{flalign*}
 			Wenn $a=3$, dann kommt bei der letzten Gleichung\index{Gleichung} $0=1$ raus. Dadurch können wir schon mal sagen, was die Lösungsmenge\index{Lösungsmenge} für den Fall $a=3$ ist.
 			\begin{flalign*}
-				\mathbb{L}=\emptyset, falls\;a=3&&
+				\mathbb{L}=\emptyset\text{, falls }a=3&&
 			\end{flalign*}
 			Als nächstes schauen wir uns den Fall\index{Fall} $a\neq0$ an.\newline\newline
 			$(III)$
@@ -1265,7 +1269,7 @@
 			\end{flalign*}
 			Diese Notation dient dazu sie von Punkten zu unterscheiden. Man spricht hierbei von \textit{Spaltenvektoren}\index{Spaltenvektor}.
 		\end{tcolorbox}
-		\noindent Die Länge eines Vektors können wir mithilfe des Satz des Pythagoras berechnen, denn wir können einer Vektor auch als Hypotenuse\index{Hypotenuse} eines rechtwinkligen Dreiecks sehen, bei dem die Katheten die $x$- und $y$-Werte sind.
+		\noindent Die Länge eines Vektors können wir mithilfe des Satz des Pythagoras berechnen, denn wir können einen Vektor auch als Hypotenuse\index{Hypotenuse} eines rechtwinkligen Dreiecks sehen, bei dem die Katheten die $x$- und $y$-Werte sind.
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 			\begin{multicols}{2}
 				Für die Berechnung der Länge eines Vektors gelten folgende Formeln:
@@ -1414,7 +1418,7 @@
 			\end{flalign*}
 			Hinweis: All die oben genannten Rechengesetze, wie z.B. das Skalarprodukt lassen sich im dreidimensionalen Raum genauso anwenden wie im zweidimensionalen.
 			\vspace{.5cm}\hrule\vspace{.7cm}
-			\noindent Neben dem Skalarprodukt gibt es noch eine Möglichkeit das Produkt aus zwei Vektoren zu bilden, nämlich das sogenannte \textit{Kreuzprodukt}\index{Kreuzprodukt}. Mit dem Kreuzprodukt kriegen wir den Normalenvektor heraus. Das ist ein Vektor, der Orthogonal zu deinen beiden ursprünglichen Vektoren ist. Um Das Kreuzprodukt zu berechnen schreibt man nebeneinander die Werte der Vektoren jeweils zwei mal übereinander und multipliziert wie unten angeben über Kreuz: Erst die blauen Linien und dann Minus die roten.
+			\noindent Neben dem Skalarprodukt gibt es noch eine Möglichkeit das Produkt aus zwei Vektoren zu bilden, nämlich das sogenannte \textit{Kreuzprodukt}\index{Kreuzprodukt}. Mit dem Kreuzprodukt kriegen wir den Normalenvektor heraus. Das ist ein Vektor, der Orthogonal zu den beiden ursprünglichen Vektoren ist. Um Das Kreuzprodukt zu berechnen, schreibt man nebeneinander die Werte der Vektoren jeweils zwei mal übereinander und multipliziert wie unten angeben über Kreuz: Erst die blauen Linien und dann Minus die roten.
 			\begin{center}
 				\begin{tikzpicture}
 				\draw [blue] (1.15,-1) rectangle (2.35,1);
@@ -1478,7 +1482,7 @@
 					\def\tabcolsep{0pt}
 					\begin{tabularx}{\linewidth}{XX}
 						\textbf{Parameterform}\newline\newline
-						\index{Parameterform}Bei dieser Notationsform wird an einen Ortsvektor – genannt \textcolor{blue}{Stützvektor}\index{Stützvektor} – ein \textcolor{red}{Richtungsvektoren}\index{Richtungsvektor} angelegt. Dieser \textcolor{red}{Vektor} liegt jetzt auf einer \textcolor{teal}{Geraden}. Da die Länge des \textcolor{red}{Richtungsvektors} egal ist, nimmt man noch den Skalar\index{Skalar} $r$ hinzu.
+						\index{Parameterform}Bei dieser Notationsform wird an einen Ortsvektor – genannt \textcolor{blue}{Stützvektor}\index{Stützvektor} – ein \textcolor{red}{Richtungsvektor}\index{Richtungsvektor} angelegt. Dieser \textcolor{red}{Vektor} liegt jetzt auf einer \textcolor{teal}{Geraden}. Da die Länge des \textcolor{red}{Richtungsvektors} egal ist, nimmt man noch den Skalar\index{Skalar} $r$ hinzu.
 						\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.5cm]
 							\begin{flalign*}
 							g:\vec{x}=\overrightarrow{OP}+r\cdot\overrightarrow{PQ}
@@ -1674,7 +1678,7 @@
 					\egroup
 				\end{center}
 		\subsection{Umwandeln von Ebenengleichungen}
-		\noindent Manchmal muss man zwischen den verschiedenen Formeln umwandeln. Dazu folgt hier eine Übersicht. Dazu sei gesagt, dass diese Tabelle für Ebenen- und Geradengleichung gleichermaßen gilt.
+		\noindent Manchmal muss man zwischen den verschiedenen Formeln umwandeln, daher hier eine Übersicht. Dazu sei gesagt, dass diese Tabelle für Ebenen- und Geradengleichung gleichermaßen gilt.
 		\begin{center}
 			\bgroup
 			\def\arraystretch{1.75}
@@ -1718,7 +1722,7 @@
 		\end{flalign*}
 		Hinweis: Für den Stützvektor können auch komplett andere Werte benutzt werden, solange sie die Gleichung in Koordinatenform erfüllen.
 	\subsection{Lagebeziehungen}
-		In der analytischen Geometrie schaut man sich oft an, wie Punkte, Geraden und Ebenen zueinander stehen. Von Interesse ist u.A., ob sich Geraden schneiden, ob Punkte auf einer Geraden liegen oder auch, ob Ebenen parallel sind. Für dieses Kapitel solltest du \highlight{sec:gleichungssysteme}{Gleichungssysteme} lösen können. Vorab noch eine kleine Begriffsklärung: \textit{Windschief}\index{Windschief} bedeutet, dass zwei Geraden sich weder schneiden, noch parallel sind.
+		In der analytischen Geometrie schaut man sich oft an, wie Punkte, Geraden und Ebenen zueinander stehen. Von Interesse ist u.a., ob sich Geraden schneiden, ob Punkte auf einer Geraden liegen oder auch, ob Ebenen parallel sind. Für dieses Kapitel solltest du \highlight{sec:gleichungssysteme}{Gleichungssysteme} lösen können. Vorab noch eine kleine Begriffsklärung: \textit{Windschief}\index{Windschief} bedeutet, dass zwei Geraden sich weder schneiden, noch parallel sind.
 		\subsubsection{Punkt – Punkt}
 			Für die Beziehung zwischen zwei Punkten gibt es nur ein Szenario: Entweder sie sind gleich oder nicht und das ist wirklich einfach zu überprüfen. Haben zwei Punkte dieselben Koordinaten, so sind sie gleich.
 		\subsubsection{Punkt – Gerade/Ebene}
@@ -1739,10 +1743,10 @@
 				&&5=&9&&
 				\end{flalign*}
 			\end{tcolorbox}
-			\noindent Wir erhalten eine unwahre Aussage. Damit ist das Gleichungssystem nicht lösbar und der Punkte liegt nicht auf der Geraden.
+			\noindent Wir erhalten eine unwahre Aussage. Damit ist das Gleichungssystem nicht lösbar und der Punkt liegt nicht auf der Geraden.
 		\subsubsection{Gerade – Gerade/Ebene}
 			\textbf{Schnittpunkt}\newline
-			Um zu überprüfen, ob sich zwei Geraden schneiden oder eine Gerade mit einer Ebene schneidet, so setzt man diese gleich und stellt daraus ein Gleichungssystem auf. Es gilt ganz einfach, dass wenn das Gleichungssystem lösbar ist, dann existiert auch Schnittpunkt. Vorsicht, man darf für den Skalar $s$ im Gleichungssystem nicht den gleichen Buchstaben verwenden, denn unsere Richtungsvektoren dürfen unterschiedlich skaliert werden. Wenn es kein Ergebnis gibt, dann heißt das für den Fall Gerade/Ebene, dass diese parallel zueinander liegen.
+			Um zu überprüfen, ob sich zwei Geraden schneiden oder sich eine Gerade mit einer Ebene schneidet, so setzt man diese gleich und stellt daraus ein Gleichungssystem auf. Es gilt ganz einfach, dass wenn das Gleichungssystem lösbar ist, dann existiert auch ein Schnittpunkt. Vorsicht, denn man darf für den Skalar $s$ im Gleichungssystem nicht den gleichen Buchstaben verwenden, denn unsere Richtungsvektoren dürfen unterschiedlich skaliert werden. Wenn es kein Ergebnis gibt, dann heißt das für den Fall Gerade/Ebene, dass diese parallel zueinander liegen.
 			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
 				\begin{flalign*}
 				&&\begin{pmatrix}4\\1\\3\end{pmatrix}+s\cdot\begin{pmatrix}2\\1\\-2\end{pmatrix}=&\begin{pmatrix}1\\2\\4\end{pmatrix}+r\cdot\begin{pmatrix}-2\\-1\\3\end{pmatrix}\\
@@ -1761,7 +1765,7 @@
 				\Leftrightarrow&&12=&7&&
 				\end{flalign*}
 			\end{tcolorbox}
-			Das Gleichungssystem ist nicht lösbar. Damit schneiden sich die beiden Geraden nicht.\newline\newline
+			\noindent Das Gleichungssystem ist nicht lösbar. Damit schneiden sich die beiden Geraden nicht.\newline\newline
 			\textbf{Parallelität (nur Geraden)}\newline
 			Sind die Richtungsvektoren\index{Richtungsvektor} von zwei Geraden Vielfache voneinander, so verlaufen sie parallel. Das kann man wieder mit einem Gleichungssystem ganz einfach beweisen.
 			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
@@ -1773,7 +1777,7 @@
 				(III)&&-2=&3a&&
 				\end{flalign*}
 			\end{tcolorbox}
-			\noindent Für dieses Beispiel sind die Geraden nicht parallel, denn für $(I)$ und $(II)$ erhält man die Lösung $1$, diese erfüllt jedoch nicht die dritte Gleichung. Folglich sind diese beiden Vektoren und damit auch mögliche in Verbindung stehende Gerade nicht parallel zueinander.\newline\newline
+			\noindent Für dieses Beispiel sind die Geraden nicht parallel, denn für $(I)$ und $(II)$ erhält man die Lösung $1$, diese erfüllt jedoch nicht die dritte Gleichung. Folglich sind diese beiden Vektoren und damit auch mögliche in Verbindung stehende Geraden nicht parallel zueinander.\newline\newline
 			Achtung: Windschief\index{Windschief} sind sie erst, wenn man auch bewiesen hat, dass sie keinen Schnittpunkt haben.
 		\subsubsection{Ebene – Ebene}
 			Der größte Unterschied bei der Betrachtung des Lageverhältnisses zwischen zwei Ebenen, besteht bei der Interpretation des Ergebnisses. Kriegt man am Ende ein unwahre Aussage, liegen die Ebenen logischerweise parallel zu einander aber nicht aufeinander. Bekommen wir eine wahre Aussage als Ergebnis, sind die Ebenen identisch. Sollten am Ende ein oder zwei Parameter übrig bleiben, existiert eine Schnittgerade\index{Schnittgerade} der beiden Ebenen. In diesem Fall rechnet es sich am einfachsten, wenn man eine Gleichung in der Koordinatenform\index{Koordinatenform} und die andere in der Parameterform hat. Dazu ein Beispiel:
@@ -1845,7 +1849,7 @@
 			\subsubsection{Umkehrbarkeit}
 			\label{subsubsec:umkehrbarkeit}
 				Bei der Umkehrfunktion $f^{-1}$ einer Funktion $f$ werden quasi Abszissen\index{Abszisse} und Ordinaten\index{Ordinate} vertauscht. Das heißt quasi, dass die Funktion von der $y$-Achse auf die $x$-Achse gelegt wird. Da es aber für jedes $x$ nur ein $y$ geben darf, gelten besondere Regeln für die Umkehrbarkeit von Funktionen: Eine Funktion ist in einem Intervall umkehrbar, wenn sie in diesem Intervall entweder nur streng monoton fallend oder nur streng monoton wachsend ist. In anderen Worten, darf es für jeden $y$-Wert maximal einen $x$-Wert geben, der auf ersteren verweist. Diese Eigenschaft nennt man auch \textit{Injektivität}\index{Injektivität}. Um das zu überprüfen kann man mithilfe der \highlight{subsec:ableitung}{Ableitung} die Extremstellen der Funktion untersuchen. Die Funktion sollte außerdem \textit{surjektiv}\index{Surjektiv} sein, d.h. Jeder $y$-Wert hat mindestens einen $x$-Wert zu gewiesen. Wenn beides gegeben ist, braucht jeder $y$ in anderen Worten genau einen $x$-Wert. Das wird auch als \textit{bijektiv}\index{Bijektiv} bezeichnet.\newline
-				Wenn man sich also sicher ist, dass die Funktion in jeweiligen Intervall bijektiv ist, darf man auch eine Umkehrfunktion bilden. Das ist je nach Funktionstyp gar nicht so schwer, denn man muss die Funktion nur nach $y$ umstellen und dann $x$ und $y$ vertauschen.
+				Wenn man sich also sicher ist, dass die Funktion im jeweiligen Intervall bijektiv ist, darf man auch eine Umkehrfunktion bilden. Das ist je nach Funktionstyp gar nicht so schwer, denn man muss die Funktion nur nach $y$ umstellen und dann $x$ und $y$ vertauschen.
 				Hier ein Beispiel für eine Funktion und ihre Umkehrfunktion:
 				\makeplot{{e^x-1},{ln(x+1)}}{{$f(x)=e^x-1$},{$f^{-1}(x)=\ln(x+1)$}}{{3,2.5},{9,3}}{-10,16}{-3,10}{-25:30}{200}{17cm,7cm}{smooth}
 			\subsubsection{Besondere Stellen}
@@ -1877,17 +1881,17 @@
 				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 					\textbf{Gerade}
 					\begin{flalign*}
-					wenn\;f(-x)=f(x)&&
+					\text{wenn }f(-x)=f(x)&&
 					\end{flalign*}
 					\textbf{Ungerade}
 					\begin{flalign*}
-					wenn\;f(-x)=-f(x)&&
+					\text{wenn }f(-x)=-f(x)&&
 					\end{flalign*}
 				\end{tcolorbox}
-				\noindent Achtung: Eine Funktion kann nur gerade oder ungerade sein, wenn ihr Definitionsbereich\index{Definitionsbereich} symmetrisch zur Nullpunkt auf der $x$-Achse ist.
+				\noindent Achtung: Eine Funktion kann nur gerade oder ungerade sein, wenn ihr Definitionsbereich\index{Definitionsbereich} symmetrisch zur Nullstelle auf der $x$-Achse ist.
 			\subsubsection{Newtonverfahren}
 			\label{subsubsec:newtonverfahren}
-			Bei komplizierten Funktion kann es passieren, dass – obwohl welche existieren – man keine Nullstellen\index{Nullstelle} findet. Manchmal nicht einmal durch Raten. Eine ganzrationale Funktion zu vereinfachen durch Polynomdivision\index{Polynomdivision} ist z.B. ebenfalls erst möglich, wenn man eine Nullstelle gefunden hat. Dennoch findet man online viele Rechner, die einem die Nullstellen geben, aber wie machen die das? In diesem Fall hilft das Newtonverfahren\index{Newtonverfahren} sich einem Wert zu nähern. Hier ist ein Beispiel für so einen Fall.
+			Bei komplizierten Funktion kann es passieren, dass – obwohl welche existieren – man keine Nullstellen\index{Nullstelle} findet. Manchmal nicht einmal durch Raten. Eine ganzrationale Funktion zu vereinfachen durch Polynomdivision\index{Polynomdivision} ist z.B. ebenfalls erst möglich, wenn man eine Nullstelle gefunden hat. Dennoch findet man online viele Rechner, die einem die Nullstellen geben, aber wie machen die das? In diesem Fall hilft das Newtonverfahren\index{Newtonverfahren}, sich einem Wert zu nähern. Hier ist ein Beispiel für so einen Fall:
 			\makeplot{{x^3+2*x^2-x-1}}{{$f(x)=x^{3}+2x^{2}-x-1$}}{{3.9,3.5}}{-6,6}{-10,10}{-20:20}{300}{17cm,7cm}{smooth}
 			Als erstes legt man eine Wertetabelle\index{Wertetabelle} an, um die grobe Positionen der Nullstellen zu finden. Dabei will man wissen, zwischen welchen Stellen das Vorzeichen\index{Vorzeichen} wechselt.
 			\begin{center}
@@ -1901,7 +1905,7 @@
 				\end{tabular}
 				\egroup
 			\end{center}
-			Wir untersuchen jetzt einmal die Nullstelle zwischen $-1$ und $0$. Um uns der Nullstelle anzunähern\index{Annähern} teilen wir die Funktion\index{Funktion} durch ihre Ableitung\index{Ableitung} an einer der beiden Stellen, zwischen denen unsere gesuchte Nullstelle\index{Nullstelle} liegt. Es gilt folgende Formel:
+			Wir untersuchen jetzt einmal die Nullstelle zwischen $-1$ und $0$. Um uns der Nullstelle anzunähern\index{Annähern}, teilen wir die Funktion\index{Funktion} durch ihre Ableitung\index{Ableitung} an einer der beiden Stellen, zwischen denen unsere gesuchte Nullstelle\index{Nullstelle} liegt. Es gilt folgende Formel:
 			\begin{tcolorbox}[boxsep=0pt,top=.3cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.45cm]
 				\begin{flalign*}
 				x_{n+1}=x_{n}-\frac{f(x_{n})}{f^{\prime}(x_{n})}
@@ -1918,7 +1922,7 @@
 			x_4&=(-\frac{929}{1674})-\frac{(-\frac{929}{1674})^{3}+2(-\frac{929}{1674})^{2}-(-\frac{929}{1674})-1}{3(-\frac{929}{1674})^2+4(-\frac{929}{1674})-1}=-0,5549581321\\
 			x_5&=...=-0,5549581321&&
 			\end{flalign*}
-			Wenn man zwei Mal den gleich Wert bekommt, weiß man, dass man den endgültigen Wert erreicht hat.
+			Wenn man zwei Mal den gleichen Wert bekommt, weiß man, dass man den endgültigen Wert erreicht hat.
 		\subsection{Potenz- und Wurzelfunktionen}
 			Potenzfunktionen\index{Potenzfunktion} in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}\index{Wurzelfunktion}, wenn $n\ge 2$ gilt und der Bruch\index{Bruch} keine ganze Zahl\index{Ganze Zahl} ist. An der Potenz\index{Potenz} kann man erkennen, ob eine Funktion gerade\index{Gerade} ($x^{2n}$) oder ungerade\index{Ungerade} ($x^{2n-1}$) ist. Hier sind einige Beispiele für Graphen\index{Graph} von Potenz- und Wurzelfunktionen:\newline
 			\makeplot{{x^3},{x^2},{x^(3/2)},{x^(2/3)},{x^(-1/2)},{x^(-2)},{x^(-3)}}{{$f(x)=x^3$},{$f(x)=x^2$},{$f(x)=x^{\frac{3}{2}}$},{$f(x)=x^{\frac{2}{3}}$},{$f(x)=x^{-\frac{1}{2}}$},{$f(x)=x^{-2}$},{$f(x)=x^{-3}$}}{{1,-1},{1,-2},{4,-1},{4,-2},{7,-1},{7,-2},{10,-1}}{-6,6}{-6,6}{-10:10}{300}{17cm,7cm}{smooth}
@@ -2052,19 +2056,19 @@
 			\begin{flalign*}
 			p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x^1+1_0&&
 			\end{flalign*}
-			Das Verhalten einer Polynomfunktion hängt für $x\to \infty$ vom Summanden\index{Summand} mit der höchsten Potenz\index{Potenz} und für $x\to 0$ vom Summanden mit der niedrigsten Potenz ab.
+			Das Verhalten einer Polynomfunktion hängt für $x\to\pm\infty$ vom Summanden\index{Summand} mit der höchsten Potenz\index{Potenz} und für $x\to 0$ vom Summanden mit der niedrigsten Potenz ab.
 			\makeplot{{x^4-x^3-2*x^2},{x^4},{-2*x^2}}{{$f(x)=x^4-x^3-2x^2$},{$f(x)=x^4$},{$f(x)=-2x^2$}}{{6.5,3.2},{7.2,5},{7.4,1}}{-7,3}{-4,4}{-10:10}{400}{17cm,7cm}{smooth}
 			\begin{tcolorbox}[boxsep=0pt,top=.85cm,left=1cm,right=1cm, bottom=.85cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 				\textbf{Nullstellen}\newline\newline
 				Polynome\index{Polynom} n-ten Grades\index{n-ter Grad} haben maximal n Nullstellen\index{Nullstelle}.
 				\begin{flalign*}
-				p(x)=a_{2k-1}x^{2k-1}+...+a_1x+a_0,\;wenn\;a_{2k-1}\neq 0&&
+				p(x)=a_{2k-1}x^{2k-1}+...+a_1x+a_0\text{, wenn }a_{2k-1}\neq 0&&
 				\end{flalign*}
 				Polynome ungeraden Grades haben mindestens eine Nullstelle.
 				\begin{flalign*}
-				p(x)=a_{2k}x^{2k}+...+a_2x^2+a_0,\;wenn\;a_{2k}\ge 0\;und\;a_0>0&&
+				p(x)=a_{2k}x^{2k}+...+a_2x^2+a_0\text{, wenn }a_{2k}\ge 0\;und\;a_0>0&&
 				\end{flalign*}
-				Polynome geraden Grades besitzen keine Nullstellen.
+				Polynome geraden Grades besitzen manchmal keine Nullstellen.
 			\end{tcolorbox}
 			\begin{tcolorbox}[boxsep=0pt,top=.85cm,left=1cm,right=1cm, bottom=.85cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 				\textbf{Symmetrie}\newline\newline
@@ -2152,7 +2156,7 @@
 				=&-\infty^5(-1-0-0-0-0)\\
 				=&\infty&&
 				\end{flalign*}
-				Hinweis: Wenn man mit $x\to(-)\infty$ arbeitet, setzt man $\infty$ normalerweise nicht in die Funktion ein. Hier habe ich es einmal gemacht, damit man das Ergebnis besser nachvollziehen kann. Wenn man ausführlicher zu arbeiten will/muss, kann man den Limes\index{Limes} von jedem Term einzeln aufstellen, um das Endergebnis\index{Ergebnis} zu begründen.
+				Hinweis: Wenn man mit $x\to(-)\infty$ arbeitet, setzt man $\infty$ normalerweise nicht in die Funktion ein. Hier habe ich es einmal gemacht, damit man das Ergebnis besser nachvollziehen kann. Wenn man ausführlicher arbeiten will/muss, kann man den Limes\index{Limes} von jedem Term einzeln aufstellen, um das Endergebnis\index{Ergebnis} zu begründen.
 		\subsection{(Gebrochen)rationale Funktionen}
 			Wenn wir von (gebrochen)rationalen Funktionen\index{Rationale Funktion}\index{Gebrochenrationale Funktion} reden, meinem wir eine Funktion mit einem Polynom\index{Polynom} im Nenner\index{Nenner} eines Bruches\index{Bruch}. $f(x)=\frac{2}{x^3}$ ist z.B. eine rationale Funktion, $f(x)=\frac{x^3}{2}$ jedoch nicht.
 			\makeplot{{((2*x^4-10)/(x^3-3))}}{{$f(x)=\dfrac{2x^4-10}{x^3-3}$}}{{4.5,2.8}}{-6,6}{-5,10}{-22:20}{600}{17cm,7cm}{smooth}
@@ -2191,7 +2195,7 @@
 			Funktionen wie $f(x)=log_3(x^2)$ werden als Logarithmusfunktionen bezeichnet, da sie einen oder mehrere Logarithmen beinhalten. Speziell bezeichnet man $f(x)=ln(x)$ als \textit{natürliche Logarithmusfunktion} und $f(x)=lg(x)$ als \textit{dekadische Logarithmusfunktion}.
 			\makeplot{{ln(x)},{log10(x)},{-ln(abs(x))}, {log2(x)}}{{$f(x)=ln(x)$},{$f(x)=lg(x)$},{$f(x)=-ln(\vert x\vert)$},{$f(x)=log_2(x)$}}{{9.5,4.3},{12.5,4.8},{3.5,1},{9.5,1}}{-6,6}{-4,4}{-200:200}{500}{17cm,7cm}{smooth}
 			\subsubsection{Lösen von Logarithmusgleichungen}
-				Gesucht wird hier die Nullstelle einer Logarithmusfunktion\index{Logarithmusfunktion} gesucht. Hinweis: Um einen Logarithmus\index{Logarithmus} aufzulösen musst du beide Seiten der Gleichung als Exponent\index{Exponent} zur Basis\index{Basis} des jeweiligen Logarithmus setzen. Um dort hinzu kommen hilft es enorm, die Gleichung zunächst umzuformen\index{Umformen}. Wenn du Schwierigkeiten mit den Umformungen in diesem Beispiel hast, schaue dir noch einmal die \highlight{subsec:potenzgesetze}{Potenzgesetze}\index{Potenzgesetz} und \highlight{subsec:logarithmusgesetze}{Logarithmusgesetze}\index{Logarithmusgesetz} an.
+				Gesucht wird hier die Nullstelle einer Logarithmusfunktion\index{Logarithmusfunktion}. Hinweis: Um einen Logarithmus\index{Logarithmus} aufzulösen, musst du beide Seiten der Gleichung als Exponent\index{Exponent} zur Basis\index{Basis} des jeweiligen Logarithmus setzen. Um dorthin zu kommen, hilft es enorm, die Gleichung zunächst umzuformen\index{Umformen}. Wenn du Schwierigkeiten mit den Umformungen in diesem Beispiel hast, schaue dir noch einmal die \highlight{subsec:potenzgesetze}{Potenzgesetze}\index{Potenzgesetz} und \highlight{subsec:logarithmusgesetze}{Logarithmusgesetze}\index{Logarithmusgesetz} an.
 				\makeplot{{3*log10(x^3)-2*log10(x^2)-4}}{{$f(x)=3\cdot lg(x^3)-2\cdot lg(x^2)-4$}}{{11,3.3}}{-10,10}{-10,10}{-20:20}{300}{17cm,7cm}{smooth}
 				\begin{flalign*}
 					f(x)&=3\cdot lg(x^3)-2\cdot lg(x^2)-4\\
@@ -2213,7 +2217,7 @@
 			Verkettungen\index{Verkettung} sind eigentliche keine eigene Funktionsart, sondern eine Möglichkeit Funktionen durch Zusammensetzung zu transformieren\index{Transformieren}. Man schreibt das als $f\circ g$ ("f nach g"). Man spricht hier bei $g$ auch von der \textit{inneren Funktion}\index{Innere Funktion}, da sie als Argument\index{Argument} in die \textit{äußere Funktion}\index{Äußere Funktion} $f$ eingesetzt wird.
 			\makeplot{{sin(deg(x))},{(x^2)/2},{sin(deg((x^2)/2))}}{{$f(x)=\sin(x)$},{$g(x)=\frac{x^2}{3}$},{$f\circ g(x)=\sin(\frac{x^2}{3})$}}{{1.5,-1},{4.5,-1},{8,-1}}{-10,10}{-2,2}{-10:10}{200}{17cm,7cm}{smooth}
 		\subsection{Kreisgleichungen}
-			Bei Funktionen ist es so, dass jeder Abszisse\index{Abszisse} ($x$-Achsenwert) genau eine Ordinate\index{Ordinate} ($y$-Achsenwert) zugeordnet werden kann. Das ist eine Besonderheit von Funktionen und nicht des Koordinatensystems an sich. Im Koordinatensystem\index{Koordinatensystem} können wir noch viele andere Gebilde darstellen, so z.B. auch einen Kreis\index{Kreis}.
+			Bei Funktionen ist es so, dass jeder Abszisse\index{Abszisse} ($x$-Achsenwert) genau eine Ordinate\index{Ordinate} ($y$-Achsenwert) zugeordnet werden kann. Das ist eine Besonderheit von Funktionen und nicht des Koordinatensystems an sich, da Funktionen \highlight{subsec:abbildungen}{Abbildungen} sind. Im Koordinatensystem\index{Koordinatensystem} können wir noch viele andere Gebilde darstellen, so z.B. auch einen Kreis\index{Kreis}.
 			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.45cm]
 				Für die Koordinatenform\index{Koordinatenform} eines Kreises mit dem Radius $r$ und dem Mittelpunkt $M(x_m\mid y_m)$ gilt folgende Notation:
 				\begin{flalign*}
@@ -2316,7 +2320,7 @@
 				Dabei ist $h$ eine beliebige Zahl, mit deren Hilfe wir uns jetzt an die genaue Steigung\index{Steigung} in einem Punkt annähern können. Je kleiner wir den Abstand $h$ wählen, desto genauer kommen wir an die Tangente\index{Tangente} oder auch Steigung der Stelle $x$.
 			\subsubsection{Differentialquotient}
 			\label{subsubsec:differentialquotient}
-				Der Differenzenquotient\index{Differenzenquotient} erlaubt es uns die Steigung einer Funktion an einer bestimmten Stelle zu bestimmen. Im Abschnitt über den \highlight{subsubsec:differenzenquotient}{Differenzenquotient} haben wir schon geklärt, das wir näher an den Anstieg an der Stelle $x$ kommen, wenn wir den Abstand $h$ verringern. Der kleinstmögliche Abstand wäre theoretisch $0$. Das geht allerdings nicht, da wir nicht $h=0$ in die Formel für den Differenzenquotient einsetzen und den Divisor\index{Divisor} somit gleich $0$ setzen dürfen. Um ums zu überlegen, was also für ein minimal kleines $h$ passieren würde, brauchen wir den Limes\index{Limes}.
+				Der Differenzenquotient\index{Differenzenquotient} erlaubt es uns die Steigung einer Funktion an einer bestimmten Stelle zu bestimmen. Im Abschnitt über den \highlight{subsubsec:differenzenquotient}{Differenzenquotient} haben wir schon geklärt, dass wir näher an den Anstieg an der Stelle $x$ kommen, wenn wir den Abstand $h$ verringern. Der kleinstmögliche Abstand wäre theoretisch $0$. Das geht allerdings nicht, da wir nicht $h=0$ in die Formel für den Differenzenquotient einsetzen und den Divisor\index{Divisor} somit gleich $0$ setzen dürfen. Um ums zu überlegen, was also für ein minimal kleines $h$ passieren würde, brauchen wir den Limes\index{Limes}.
 				\begin{flalign*}
 				\lim_{h \to 0}	m=\lim_{h \to 0}\frac{f(x+h)-f(x)}{h}=f^{\prime}(x)&&
 				\end{flalign*}
@@ -2328,7 +2332,7 @@
 				=&\lim_{h \to 0}(3x^2+2xh+h^2)\\
 				=&3x^2&&
 				\end{flalign*}
-				Das, was wir jetzt haben ist die erste Ableitung\index{Ableitung} $f^{\prime}(x)$. Sofern nicht anders gewünscht, kann man diese oft auch wesentlich leichter bestimmen, indem man die \highlight{subsec:ableitung}{Ableitungsregeln}\index{Ableitungsregel} kennt.
+				Das, was wir jetzt haben, ist die erste Ableitung\index{Ableitung} $f^{\prime}(x)$. Sofern nicht anders gewünscht, kann man diese oft auch wesentlich leichter bestimmen, indem man die \highlight{subsec:ableitung}{Ableitungsregeln}\index{Ableitungsregel} kennt.
 			\subsubsection{Extrem- und Wendepunkte}
 				\label{subsubsec:extrema}
 				Leitet man die Ableitung einer Funktion noch mal ab, erhält man die zweite Ableitung\index{Zweite Ableitung} $f^{\prime\prime}(x)$. Ebenso verhält es sich mit der dritten Ableitung\index{Dritte Ableitung} und allen weiteren. In der folgenden Abbildung sieht man eine Funktion\index{Funktion} und ihre erste, zweite sowie dritte Ableitung.
@@ -2355,7 +2359,7 @@
 	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
 		Um zu überprüfen, ob für eine Funktion mit $x$ gegen $a$ ein Grenzwert existiert, schaut man sich jeweils den linksseitigen und rechtsseitigen Grenzwert an. Sind diese gleich, so existiert ein Grenzwert. Sind sie unterschiedlich, existiert kein Grenzwert.
 	\end{tcolorbox}
-	\noindent Beim Grenzwert setzt man Zahlen ein, die sich in die Richtung von $a$ bewegen. Nehmen wir beispielsweise $f(x)=\frac{1}{x}$. $0$ können wir ja nicht für $x$ einsetzen, da wir nicht durch Null teilen dürfen. Was wir aber machen können ist sehr kleine Zahlen einsetzen, um zu schauen, ob wir eine Tendenz feststellen können.
+	\noindent Beim Grenzwert setzt man Zahlen ein, die sich in die Richtung von $a$ bewegen. Nehmen wir beispielsweise $f(x)=\frac{1}{x}$. $0$ können wir ja nicht für $x$ einsetzen, da wir nicht durch Null teilen dürfen. Was wir aber machen können, ist, sehr kleine Zahlen einzusetzen, um zu schauen, ob wir eine Tendenz feststellen können.
 	\begin{flalign*}
 		f(1)&=\frac{1}{1}=1\\
 		f(0,1)&=\frac{1}{0,1}=10\\
@@ -2371,7 +2375,7 @@
 		f(-000,1)&=\frac{1}{-000,1}=-1000\\
 		\lim_{x\nearrow 0}\frac{1}{x}&=-\infty&&
 	\end{flalign*}
-	Wir sehen, dass $\infty \neq -\infty$ gilt. Somit haben wir keinen Grenzwert für $x\to 0$. Übrigens gibt es für den links- und rechtsseitigen Grenzwert\index{Linksseitiger Grenzwert}\index{Rechtsseitger Grenzwert} unterschiedliche Notationen\index{Notation}. Ich benutze hier, die Variante mit den diagonalen Pfeilen, da ich finde, dass sie gut darstellt, was man bei der Annäherung mit dem $x$ anstellt.
+	Wir sehen, dass $\infty \neq -\infty$ gilt. Somit haben wir keinen Grenzwert für $x\to 0$. Übrigens gibt es für den links- und rechtsseitigen Grenzwert\index{Linksseitiger Grenzwert}\index{Rechtsseitiger Grenzwert} unterschiedliche Notationen\index{Notation}. Ich benutze hier, die Variante mit den diagonalen Pfeilen, da ich finde, dass sie gut darstellt, was man bei der Annäherung mit dem $x$ anstellt.
 	\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
 		\begin{multicols}{2}
 			\begin{flushleft}
@@ -2460,7 +2464,7 @@
 	\end{flalign*}
 	\subsection{Tangentengleichung}
 	\label{subsec:tangentengleichung}
-		Wenn man Extremal- und Wendepunkte\index{Extremalpunkt}\index{Wendepunkt} untersucht, kann es vorkommen, dass man eine Tangenten\index{Tangente} für diese Punkte\index{Punkt} aufstellen soll. Das ist nicht schwer, denn man muss nur zwei Konstanten bestimmen. Da eine Tangente eine lineare Funktion\index{Lineare Funktion} ist, hat sie die grundlegende Form $T(x)=mx+n$. Sagen wir, wir wollen die Tangentengleichung\index{Tangentengleichung} an der Stelle $x=2$ der Funktion $f(x)=x^2+4$ aufstellen. Um $m$ zu bestimmen brauchen wir den Anstieg\index{Anstieg} an der Stelle $x$. Diesen können wir mit der ersten Ableitung\index{Ableitung} an der Stelle $x$ ermitteln.
+		Wenn man Extremal- und Wendepunkte\index{Extremalpunkt}\index{Wendepunkt} untersucht, kann es vorkommen, dass man eine Tangente\index{Tangente} für diese Punkte\index{Punkt} bestimmen soll. Das ist nicht schwer, denn man muss nur zwei Konstanten bestimmen. Da eine Tangente eine lineare Funktion\index{Lineare Funktion} ist, hat sie die grundlegende Form $T(x)=mx+n$. Sagen wir, wir wollen die Tangentengleichung\index{Tangentengleichung} an der Stelle $x=2$ der Funktion $f(x)=x^2+4$ aufstellen. Um $m$ zu bestimmen brauchen wir den Anstieg\index{Anstieg} an der Stelle $x$. Diesen können wir mit der ersten Ableitung\index{Ableitung} an der Stelle $x$ ermitteln.
 		\begin{flalign*}
 			f(x)&=x^2+4\\
 			f^{\prime}(x)&=2x\\
@@ -2588,7 +2592,7 @@
 			\end{tcolorbox}
 		\subsubsection{Wendepunkte}
 			Für diesen Teil der Kurvendiskussion solltest du wissen, wie man \highlight{subsubsec:extrema}{Wendepunkte} bestimmt.\newline\newline
-			\textbf{Aufgabe:}\newline Bestimme alle Wendepunkte\index{Wendepunkt} der Funktion und gib an, ob gib ihr Krümmungsverhalten\index{Krümmungsverhalten} an.\newline\newline
+			\textbf{Aufgabe:}\newline Bestimme alle Wendepunkte\index{Wendepunkt} der Funktion und gib ihr Krümmungsverhalten\index{Krümmungsverhalten} an.\newline\newline
 			\textbf{Lösung:}\newline
 			Notwendige Bedingung\index{Notwendige Bedingung} für Wendepunkte: $f^{\prime\prime}(x)=0$
 			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
@@ -2631,7 +2635,7 @@
 					\Leftrightarrow &&=&-\frac{41}{20}&&
 				\end{flalign*}
 			\end{tcolorbox}
-			Jetzt, wo wir $m$ bestimmt haben, können wir die Koordinaten\index{Koordinate} von unserem Wendepunkt\index{Wendepunkt} einsetzen\index{Einsetzen} und nach $n$ umstellen\index{Umstellen}.
+			\noindent Jetzt, wo wir $m$ bestimmt haben, können wir die Koordinaten\index{Koordinate} von unserem Wendepunkt\index{Wendepunkt} einsetzen\index{Einsetzen} und nach $n$ umstellen\index{Umstellen}.
 			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=.3cm,arc=0pt,auto outer arc,colback=white,colframe=white]
 				\begin{flalign*}
 				&&-0,1043551628=&-\frac{41}{20}\cdot \left(-\sqrt{\frac{9}{10}}\right)+n\\
@@ -2826,7 +2830,7 @@
 			\begin{flalign*}
 				\int\sqrt{u}&&
 			\end{flalign*}
-			Das war jedoch nicht alles, denn jetzt, wo wir $u$ in unserer Funktion haben, müssen wir unsere Grenzen und das Differenzial anpassen. Das funktioniert, in dem wir die Ableitung\index{Ableitung} von $u$ bilden.
+			Das war jedoch nicht alles, denn jetzt, wo wir $u$ in unserer Funktion haben, müssen wir unsere Grenzen und das Differential\index{Differential} anpassen. Das funktioniert, in dem wir die Ableitung\index{Ableitung} von $u$ bilden.
 			\begin{flalign*}
 				u^{\prime}=-2=\frac{du}{dx}&&
 			\end{flalign*}
@@ -2860,7 +2864,7 @@
 				=&e^x\cdot (x-1)+k&&
 			\end{flalign*}
 		\subsection{Die Fläche zwischen zwei Graphen}
-			Wollen wir die Fläche zwischen zwei Funktionen berechnen, bilden wir einfach das Integral der Differenzfunktion\index{Differenzfunktion} dieser zwei Funktionen ermitteln.
+			Wollen wir die Fläche zwischen zwei Funktionen berechnen, bilden wir einfach das Integral der Differenzfunktion\index{Differenzfunktion} dieser zwei Funktionen.
 			\begin{tcolorbox}[boxsep=0pt,top=.25cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
 				\begin{flalign*}
 				\int^b_a \vert f(x)-g(x) \vert dx
@@ -2992,7 +2996,7 @@
 		\end{center}
 		Übrigens eine Eselsbrücke, um die Zeichen für Konjunktion und Disjunktion zu unterscheiden, sind die drei O: »Oder Oben Offen«. Und noch ein Hinweis: Die Implikation hat kein genaues Äquivalent in der Programmierung. Am besten merkt man sicher, dass eine Implikation immer wahr ist, außer für den Fall $W\Rightarrow F$.\newline\newline
 		Wenn eine Formel in jedem Szenario (für alle Bewertungen) wahr ist, dann spricht man von einer Tautologie\index{Tautologie}. Beispielsweise ist $A\lor\lnot A$ eine solche Tautologie. Anders herum nennt man $A\land\lnot A$ einen Widerspruch\index{Widerspruch}.\newline\newline
-		Man kann des weiteren Aussagen auch von Elementen einer Menge abhängig machen. Dabei unterscheidet man, für wie viele Elemente die Aussage gelten soll. Dazu noch mal eine Übersicht:
+		Man kann des weiteren Aussagen auch von Elementen einer Menge abhängig machen. Dabei unterscheidet man, für wie viele Elemente die Aussage gelten soll. Dazu noch mal eine Übersicht über die sogenannten Quantoren\index{Quantor}:
 		\begin{center}
 			\bgroup
 			\def\arraystretch{1.5}
@@ -3008,12 +3012,12 @@
 		\begin{flalign*}
 			\forall a\in \mathbb{N}:\forall b\in \mathbb{N}:a>b&&
 		\end{flalign*}
-		kann man auch Folgendes schreiben:
+		auch Folgendes schreiben:
 		\begin{flalign*}
 			\forall a,b\in \mathbb{N}:a>b.&&
 		\end{flalign*}
 		\subsection{Beweise}
-			Oft reicht es in der Mathematik nicht aus nur ein Ergebnis zu berechnen, sondern man muss auch beweisen, dass das was man da gemacht hat stimmt. Beweise zu finden ist nicht so trivial, wie Zahlen in eine Formel einzusetzen. Man muss ein bisschen kreativ sein und viel üben. Dafür gibt es verschiedene Herangehensweisen, die man kennen sollte.
+			Oft reicht es in der Mathematik nicht aus nur ein Ergebnis zu berechnen, sondern man muss auch beweisen, dass das was man da gemacht hat, stimmt. Beweise zu finden ist nicht so trivial, wie Zahlen in eine Formel einzusetzen. Man muss ein bisschen kreativ sein und viel üben. Dafür gibt es verschiedene Herangehensweisen, die man kennen sollte.
 			\subsubsection{Direkter Beweis}
 				Beim direkten Beweis\index{Direkter Beweis} versucht man über Zwischenschritte zu zeigen, dass aus $A$ auch wirklich $B$ folgt. Die Idee ist simpel, aber einen Beweis zu finden ist nicht immer einfach, deshalb ein Beispiel:\newline\newline
 				$\text{Zu beweisen ist, dass für ein ungerades }n\in\mathbb{N} \text{ gilt, dass }n^2-1\text{ durch }4\text{ teilbar ist.}$
@@ -3087,7 +3091,7 @@
 				\end{flalign*}
 				Wir sehen jetzt ganz klar, dass wir eine wahre Aussage haben. Jetzt haben wir gezeigt, dass unter der Voraussetzung, dass es ein $n$ gibt, dass die Aussage erfüllt, auch $n+1$ die Aussage erfüllt. Da wir am Anfang bewiesen haben, dass $n=1$ die Gleichung erfüllt, ist sie somit auch für $n=2$ erfüllt und wenn wir wissen, dass sie für $n=2$ erfüllt ist, ist sie auch für $n=3$ erfüllt und so weiter!
 	\section{Stochastik}
-		Einem stochastischen Modell liegt zunächst die Grundmenge\index{Grundmenge} oder auch das Universum\index{Universum} $\Omega$ zu Grunde. Das ist eine Menge, die alle möglichen Ausgänge für das jeweilige Zufallsexperiment\index{Zufallsexperiment} beinhaltet. Für einen Würfelwurf wäre die Grundmenge bspw. $\Omega=\{1;2;3;4;5;6\}$. Die Elemente in $\Omega$ (groß Omega) werden mit $\omega$ (klein Omega) bezeichnet und heißt Ergebnis\index{Ergebnis}. Jede Teilmenge von $\Omega$ wird als Ereignis\index{Ereignis} bezeichnet. Die Wahrscheinlichkeit eines Ereignisses wird mit einem $P$ für Probabilität angegeben: $P(\{\omega\})$. Wenn die Wahrscheinlichkeit aller Ergebnisse gleich ist und nur endliche viele mögliche Ergebnisse existieren, spricht man von einem Laplace-Experiment\index{Laplace-Experiment}.
+		Einem stochastischen Modell liegt zunächst die Grundmenge\index{Grundmenge} oder auch das Universum\index{Universum} $\Omega$ zu Grunde. Das ist eine Menge, die alle möglichen Ausgänge für das jeweilige Zufallsexperiment\index{Zufallsexperiment} beinhaltet. Für einen Würfelwurf wäre die Grundmenge bspw. $\Omega=\{1;2;3;4;5;6\}$. Die Elemente in $\Omega$ (groß Omega) werden mit $\omega$ (klein Omega) bezeichnet und heißen Ergebnisse\index{Ergebnis}. Jede Teilmenge von $\Omega$ wird als Ereignis\index{Ereignis} bezeichnet. Die Wahrscheinlichkeit eines Ereignisses wird mit einem $P$ für Probabilität angegeben: $P(\{\omega\})$. Wenn die Wahrscheinlichkeit aller Ergebnisse gleich ist und nur endliche viele mögliche Ergebnisse existieren, spricht man von einem Laplace-Experiment\index{Laplace-Experiment}.
 		\subsection{Kombinatorik}
 		Von großer Bedeutung, wenn es um Kombinatorik\index{Kombinatorik} geht, sind die Fakultät\index{Fakultät} $n!$ und der Binomialkoeffizient\index{Binomialkoeffizient} $\begin{pmatrix}n\\k\end{pmatrix}$. Diese sind wie folgt definiert:
 		\begin{center}
@@ -3156,7 +3160,7 @@
 			\end{tikzpicture}
 			\egroup
 		\end{center}
-		Die Kunst in der Kombinatorik ist es jetzt einer Aufgabenstellung die richtige Formel zuordnen zu können, daher folgt jetzt zu jedem Fall ein Beispiel.
+		Die Kunst in der Kombinatorik ist es jetzt einer Aufgabenstellung die richtige Formel zuordnen zu können, daher folgen jetzt Beispiele für jeden Fall.
 			\subsubsection{Permutation mit Wiederholung}
 				Wenn es in der Grundmenge Elemente gibt, die nicht unterscheidbar sind, braucht man bei der Permutation diese Formel: $\frac{n!}{m_1!\cdot m_2!\cdot ...\cdot m_n!}$. Im Zähler steht die Fakultät\index{Fakultät} der Mächtigkeit\index{Mächtigkeit} der Grundmenge. Im Nenner werden die Mächtigkeiten aller Teilmengen mit einander multipliziert, die durch das Zusammenfassen ununterscheidbarer Elemente entstehen.\newline\newline
 				\textbf{Aufgabe 1:} Gegeben ist das Wort »EINSTEIN«. Wenn man diese Buchstaben beliebig vertauschen kann, wie viele Kombinationsmöglichkeiten gibt es?\newline\newline
@@ -3172,7 +3176,7 @@
 				\end{flalign*}
 				Erklärung: Der Zug hat 1 Bordrestaurant, 2 erste Klasse-Wagons und 5 zweite Klasse-Wagons. Insgesamt hat der Zug also 8 Wagons. Und was ist mit der Lok? Die Lokomotive muss logischerweise immer ganz vorne sein, deshalb macht sie keinen Unterschied für die Reihenfolge des Zuges insgesamt. Dein Arbeitgeber wäre sicherlich nicht begeistert, wenn du den Zug so rangierst, dass die Lok in der Mitte ist.
 			\subsubsection{Permutation ohne Wiederholung}
-				Wenn die Elemente bei der Permutation alle unterschiedlich ist, hat man eine angenehme Zeit, denn man muss nur die Fakultät von der Mächtigkeit der Grundmenge\index{Grundmenge} bestimmen.\newline\newline
+				Wenn die Elemente bei der Permutation alle unterschiedlich sind, hat man eine angenehme Zeit, denn man muss nur die Fakultät von der Mächtigkeit der Grundmenge\index{Grundmenge} bestimmen.\newline\newline
 				\textbf{Aufgabe 1:} Gegeben ist das Wort »SCHLAFEN«. Wenn man diese Buchstaben beliebig vertauschen kann, wie viele Kombinationsmöglichkeiten gibt es?
 				\begin{flalign*}
 				8!=40320&&
@@ -3228,7 +3232,7 @@
 				Erklärung: Hier ist die Anzahl der Ziehungen mit 5 größer als die Anzahl der Blumen mit 3, was allerdings in Ordnung ist, da es von jeder Blumenart beliebig viele gibt, was sich genauso verhält, als würden wir die Blumen nach dem Pflücken wieder zurück legen.
 			\subsubsection{Kombination ohne Wiederholung}
 				Wenn man eine Teilmenge der Grundmenge\index{Grundmenge} ohne Beachtung der Reihenfolge betrachtet, die keine gleichen Elemente hat bzw. nichts zurückgelegt wird, benutzt man den einfachen Binomialkoeffizienten $\genfrac{(}{)}{0pt}{}{n}{k}$ zur Berechnung der Möglichkeiten.\newline\newline
-				\textbf{Aufgabe 1:} Im klassischen deutschen Lotto\index{Lotto} werden 6 Zahlen aus 49 und eine Superzahl aus 10 gezogen. Wie hoch ist die Wahrscheinlichkeit mit einmal spielen, bei diesem Lotto alles richtig zu raten?\newline\newline
+				\textbf{Aufgabe 1:} Im klassischen deutschen Lotto\index{Lotto} werden 6 Zahlen aus 49 und eine Superzahl von 0 bis 9 gezogen. Wie hoch ist die Wahrscheinlichkeit, mit einmal spielen, bei diesem Lotto alles richtig zu raten?\newline\newline
 				Lösung:
 				\begin{flalign*}
 					&\genfrac{(}{)}{0pt}{}{49}{6}=\frac{49!}{(49-6)!\cdot 6!}=13983816\text{ Möglichkeiten}\Rightarrow P=\frac{1}{13983816}\cdot\frac{1}{10}=1:139.838.160&&
@@ -3243,7 +3247,7 @@
 		\subsection{Diskrete Wahrscheinlichkeitsverteilungen}
 			Mithilfe der Binomialverteilung\index{Binomialverteilung} und der hypergeometrischen Verteilung\index{Hypergeometrische Verteilung} kann man die Wahrscheinlichkeit ermitteln, bei mehrfacher Durchführung eines Experimentes das gleiche Ergebnis eine bestimmte Anzahl von Malen zu erhalten. Dabei nutzt man die Binomialverteilung für Experimente mit Zurücklegen und die hypergeometrische Verteilung für Experimente ohne.
 			\subsubsection{Binomialverteilung}
-				Mithilfe der Binomialverteilung ermittelt man die Wahrscheinlichkeit, ein Ergebnis mit der Wahrscheinlichkeit $p$ bei $n$ Durchführungen eines Zufallsexperimentes mit Zurücklegen genau $k$-mal zu erhalten. Alle Wahrscheinlichkeiten addiert ergeben am Ende wieder 1.
+				Mithilfe der Binomialverteilung ermittelt man die Wahrscheinlichkeit, ein Ergebnis mit der Wahrscheinlichkeit $p$ bei $n$ Durchführungen eines Zufallsexperimentes mit Zurücklegen genau $k$-mal zu erhalten. Alle Wahrscheinlichkeiten addiert, ergeben am Ende wieder 1.
 				\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
 					\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.45cm,arc=0pt,auto outer arc,colback=white,colframe=gray]
 						\begin{flalign*}
@@ -3284,7 +3288,7 @@
 					\end{flushleft}
 				\end{tcolorbox}
 			\subsubsection{Hypergeometrische Verteilung}
-				Man hat eine Menge mit $A$ Elementen, von denen $B$ Elemente eine bestimmte Eigenschaft haben, die die anderen nicht haben. Man entnimmt eine Anzahl $n$ von Elementen aus der Menge ohne sie zurückzulegen. Um jetzt zu ermitteln, wie wahrscheinlich es ist, genau $k$-mal Elemente der Gruppe $B$ zu erhalten, nutzt man die hypergeometrische Verteilung\index{Hypergeometrische Verteilung}. Alle Wahrscheinlichkeiten addiert ergeben am Ende wieder 1.
+				Man hat eine Menge mit $A$ Elementen, von denen $B$ Elemente eine bestimmte Eigenschaft haben, die die anderen nicht haben. Man entnimmt eine Anzahl $n$ von Elementen aus der Menge ohne sie zurückzulegen. Um jetzt zu ermitteln, wie wahrscheinlich es ist, genau $k$-mal Elemente der Gruppe $B$ zu erhalten, nutzt man die hypergeometrische Verteilung\index{Hypergeometrische Verteilung}. Alle Wahrscheinlichkeiten addiert, ergeben am Ende wieder 1.
 			\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
 				\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.45cm,arc=0pt,auto outer arc,colback=white,colframe=gray]
 					\begin{flalign*}
@@ -3402,13 +3406,13 @@
 				\Leftrightarrow&P(B\mid +)=\frac{P(B)\cdot P(+\mid B)}{P(+)}\\
 				\Rightarrow&P(B\mid +)=\frac{0,001\cdot 0,99}{P(+)}&&
 			\end{flalign*}
-			Dummerweise fehlt uns die Wahrscheinlichkeit positiv getestet zu werden, unabhängig davon, ob man krank ist oder nicht. Mit dem Satz der totalen Wahrscheinlichkeit finden wir jedoch auch diese Wahrscheinlichkeit heraus und können weiter rechnen.
+			Dummerweise fehlt uns die Wahrscheinlichkeit, positiv getestet zu werden, unabhängig davon, ob man krank ist oder nicht. Mit dem Satz der totalen Wahrscheinlichkeit finden wir jedoch auch diese Wahrscheinlichkeit heraus und können weiter rechnen.
 			\begin{flalign*}
 			&P(+)=P(B)\cdot P(+\mid B) + P(\bar{B})\cdot P(+\mid\bar{B})\\
 			\Rightarrow&P(B\mid +)=\frac{0,001\cdot 0,99}{P(B)\cdot P(+\mid B) + P(\bar{B})\cdot P(+\mid\bar{B})}\\
 			\Rightarrow&P(B\mid +)=\frac{0,001\cdot 0,99}{0,001\cdot 0,99+0,999\cdot 0,01}=\frac{11}{122}\;\widehat{\approx}\;\dunderline{9\%}&&
 			\end{flalign*}
-			Damit wissen wir jetzt, dass aufgrund des falsch positiven Ergebnisse deine Chance tatsächlich den Blubber zu haben gerade mal 9\% ist. Um dir sicher zu sein, lässt du jetzt einen zweiten Test machen. Dieser kommt auch positiv zurück. Wenn du jetzt die 9\% Wahrscheinlichkeit nimmst, krank zu sein und sie noch einmal in die obige Formel einsetzt, kannst du jetzt auch die Wahrscheinlichkeit berechnen, dass du nach dem zweiten Test den Blubber hast.
+			Damit wissen wir jetzt, dass aufgrund des falsch positiven Ergebnisse deine Chance, tatsächlich den Blubber zu haben gerade mal 9\% ist. Um dir sicher zu sein, lässt du jetzt einen zweiten Test machen. Dieser kommt auch positiv zurück. Wenn du jetzt die 9\% Wahrscheinlichkeit nimmst, krank zu sein und sie noch einmal in die obige Formel einsetzt, kannst du jetzt auch die Wahrscheinlichkeit berechnen, dass du nach dem zweiten Test den Blubber hast.
 			\begin{flalign*}
 			&P(+)=P(B)\cdot P(+\mid B) + P(\bar{B})\cdot P(+\mid\bar{B})\\
 			\Rightarrow&P(B\mid +)=\frac{0,09\cdot 0,99}{0,09\cdot 0,99+0,91\cdot 0,01}=\frac{891}{982}\;\widehat{\approx}\;\dunderline{91\%}&&
@@ -3449,7 +3453,7 @@
 					E(x)=np&&
 					\end{flalign*}
 				\end{tcolorbox}
-				\noindent Dieser Sachverhalt lässt sich auch sehr gut in einer Wertetabelle\index{Wertetablle} darstellen.
+				\noindent Dieser Sachverhalt lässt sich auch sehr gut in einer Wertetabelle\index{Wertetabelle} darstellen.
 				\begin{center}
 					\bgroup
 					\def\arraystretch{1.5}
@@ -3463,7 +3467,7 @@
 				\begin{flalign*}
 					E(X)=\sum^3_{i=1}x_i\cdot P(X=x_i)=-4\cdot\frac{1}{2}-3\cdot\frac{2}{5}+10\cdot\frac{1}{10}=\dunderline{-2,2}&&
 				\end{flalign*}
-				Damit ist das Spiel nicht fair und man muss davon ausgehen, als Spieler Geld zu verlieren. Wenn man das Spiel fair machen will, muss man die obige Formel mit Null gleichsetzen und dann einen beliebigen Wert durch eine Variable ersetzen, durch Umstellen\index{Umstellen} findet man dann eine Lösung, um das Spiel fair zu machen.
+				Damit ist das Spiel nicht fair und man muss davon ausgehen, als Spieler Geld zu verlieren. Wenn man das Spiel fair machen will, muss man die obige Formel mit Null gleichsetzen und dann einen beliebigen Wert durch eine Variable ersetzen. Durch Umstellen\index{Umstellen} findet man dann eine Lösung, um das Spiel fair zu machen.
 				\begin{flalign*}
 					&-4\cdot\frac{1}{2}-3\cdot\frac{2}{5}+\frac{1}{10}x=0\\
 					\Leftrightarrow\;&\frac{1}{10}x=3,2\\
@@ -3492,7 +3496,7 @@
 					&=\dunderline{16,76}\\
 					S(X)&=\dunderline{\sqrt{16,76}}&&
 				\end{flalign*}
-				Das bedeutet, dass Ergebnisse der Zufallsvariable im Schnitt ungefähr 4 vom Erwartungswert entfernt wären, wenn man das Experiment ausführen würde. Was ist der Unterschied zwischen Varianz und Standardabweichung? Meistens errechnet man die Varianz nur, um die Standardabweichung zu kriegen. Da die Varianz immer eine quadratische Einheit beschreibt, ist es oft nicht möglich, sie mit dem Erwartungswert zu vergleichen. Wichtig zu verstehen ist nur, dass je kleiner Varianz und Standardabweichung sind, desto besser beschreibt der Erwartungswert das Experiment.
+				Das bedeutet, dass Ergebnisse der Zufallsvariable im Schnitt ungefähr 4 vom Erwartungswert entfernt wären, wenn man das Experiment ausführen würde. Was ist der Unterschied zwischen Varianz und Standardabweichung? Meistens errechnet man die Varianz nur, um die Standardabweichung zu kriegen. Da die Varianz\index{Varianz} immer eine quadratische Einheit beschreibt, ist es oft nicht möglich, sie mit dem Erwartungswert zu vergleichen. Wichtig zu verstehen ist nur, dass je kleiner Varianz\index{Varianz} und Standardabweichung\index{Standardabweichung} sind, desto besser beschreibt der Erwartungswert das Experiment. Hier einmal Varianz und Standardabweichung für einen sechsseitigen Würfel:
 				\begin{center}
 					\begin{tikzpicture}
 					\begin{axis}[

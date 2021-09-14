@@ -1,2 +1,9 @@
-# mathe-zusammenfassung
-Das sind meine Notizen fürs Unimathe. Wer's lesen will, kann die PDF downloaden. Wer was hinzufügen möchte, der kann die LaTeX-Datei bearbeiten. Ich benutze TeXstudio zum bearbeiten.
+# Mathematik fürs Informatikstudium und Abitur
+Das ist eine Übersicht über die wichtigsten Themen, die man im Abitur und Informatikstudium in Sachen Mathe brauchen kann. Jeder ist herzlich dazu eingeladen, die PDF zu benutzen und weiter zu verbreiten. Im Ordner "figures" finden sich alle mathematischen Abbildungen separat als PDF-Dateien. Ich habe das Dokument so strukturiert, dass man jederzeit vergessene Themen einfach nachschlagen kann. Außerdem habe ich alle Erklärungen von unnötig komplizierten oder trivialen mathematischen Ausdrücken befreit, um einfach verständliche Erklärungen bereitszustellen. Ich hoffe, dass man damit auch neue Themen erarbeiten kann und nicht nur alte Themen nachschlagen.
+
+## Wie man das Dokument für sich selber bearbeiten kann
+Möchtest du nur bestimmte Ausschnitte aus dem Dokument haben, kannst du die Datei "mathe_zusammenfassung.tex" bearbeiten, wie es dir gefällt. Um dann eine PDF daraus zu erhalten, musst du folgendes Command im selben Ordner, wie die Datei ausführen:
+```bash
+$ pdflatex -synctex=1 -interaction=nonstopmode -shell-escape %.tex
+```
+XeLaTeX und LuaTeX kann man nicht zum Kompilieren benutzen. Das hat den Hintergrund, dass das Dokument so groß ist, dass alle TikZ-Abbildungen extern abgespeichert werden müssen, ansonsten kompiliert das Dokument nicht richtig. Die Library, die dafür zuständig ist, funktioniert jedoch nur mit dem normalen LaTeX. Diese Library ist auch der Grund, dass man `-shell-escape` beim Kompilieren braucht. Diese Flag erlaubt es LaTeX, sich selbst aufzurufen und in neuen Prozessen die Bilder einzeln abzuspeichern. Als IDE benutze ich TeXstudio. Ich empfehle im Zweifelsfall ebenfalls dieses Programm zu nutzen. Da kann man unter Options->Configre TeXstudio->Commands das obige Command bei PdfLaTeX eintragen und muss es nicht jedes mal in die Konsole schreiben.

@@ -1826,19 +1826,19 @@
 						Seien $x_1$ und $x_2$ zwei Argumente\index{Argument} einer Funktion, so gelten folgende Definitionen:\newline\newline
 						\textbf{Monoton wachsend}\index{Monoton}\index{Streng}\index{Wachsen}\index{Fallen}
 						\begin{flalign*}
-						wenn\;x_1\le x_2\; und\; f(x_1)\le f(x_2)&&
+						\text{wenn }x_1\le x_2\text{ und }f(x_1)\le f(x_2)&&
 						\end{flalign*}
 						\textbf{Streng monoton wachsend}
 						\begin{flalign*}
-						wenn\;x_1< x_2\; und\; f(x_1)< f(x_2)&&
+						\text{wenn }x_1< x_2\text{ und }f(x_1)< f(x_2)&&
 						\end{flalign*}
 						\textbf{Monoton fallend}
 						\begin{flalign*}
-						wenn\;x_1\le x_2\; und\; f(x_1)\ge f(x_2)&&
+						\text{wenn }x_1\le x_2\text{ und }f(x_1)\ge f(x_2)&&
 						\end{flalign*}
 						\textbf{Streng monoton fallend}
 						\begin{flalign*}
-						wenn\;x_1< x_2\; und\; f(x_1)> f(x_2)&&
+						\text{wenn }x_1< x_2\text{ und }f(x_1)> f(x_2)&&
 						\end{flalign*}
 				\end{tcolorbox}
 				\noindent Des Weiteren kann man, das Monotonieverhalten\index{Monotonieverhalten} einer Funktion mithilfe ihrer \highlight{subsec:ableitung}{Ableitung}\index{Ableitung} bestimmen. Ist die Ableitung $f^{\prime}$ einer Funktion\index{Funktion} größer oder gleich Null, so ist sie monoton wachsend. Ist sie größer als und ungleich Null, ist sie sogar streng monoton wachsend. Dasselbe gilt umgekehrt für monoton fallende Funktion, wenn ihre Ableitung an der untersuchten Stelle negativ ist.\newline\newline
@@ -1857,19 +1857,19 @@
 				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
 					\textbf{Globale Maximalstelle}\index{Global}\index{Lokal}\index{Maximalstelle}\index{Minimalstelle}\index{Strickt}
 					\begin{flalign*}
-						wenn\;f(x_{max})\ge f(x)\; aller\;x\in D_f&&
+						\text{wenn }f(x_{max})\ge f(x)\text{ aller }x\in D_f&&
 					\end{flalign*}
 					\textbf{Lokale Maximalstelle}
 					\begin{flalign*}
-						wenn\;f(x_{max})\ge f(x)\; aller\;x\in D_f\cap I&&
+						\text{wenn }f(x_{max})\ge f(x)\text{ aller }x\in D_f\cap I&&
 					\end{flalign*}
 					\textbf{Globale Minimalstelle}
 					\begin{flalign*}
-						wenn\;f(x_{max})\le f(x)\; aller\;x\in D_f&&
+						\text{wenn }f(x_{max})\le f(x)\text{ aller }x\in D_f&&
 					\end{flalign*}
 					\textbf{Lokale Minimalstelle}
 					\begin{flalign*}
-						wenn\;f(x_{max})\le f(x)\; aller\;x\in D_f\cap I&&
+						\text{wenn }f(x_{max})\le f(x)\text{ aller }x\in D_f\cap I&&
 					\end{flalign*}
 					\textbf{Strikte Extrema}\newline\newline
 					Ersetzt man bei den obigen Definitionen das $\ge$ bzw. $\le$ durch $>$ bzw. $<$, spricht man von einem strickten Maximum oder Minimum.
@@ -1927,7 +1927,7 @@
 			Potenzfunktionen\index{Potenzfunktion} in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}\index{Wurzelfunktion}, wenn $n\ge 2$ gilt und der Bruch\index{Bruch} keine ganze Zahl\index{Ganze Zahl} ist. An der Potenz\index{Potenz} kann man erkennen, ob eine Funktion gerade\index{Gerade} ($x^{2n}$) oder ungerade\index{Ungerade} ($x^{2n-1}$) ist. Hier sind einige Beispiele für Graphen\index{Graph} von Potenz- und Wurzelfunktionen:\newline
 			\makeplot{{x^3},{x^2},{x^(3/2)},{x^(2/3)},{x^(-1/2)},{x^(-2)},{x^(-3)}}{{$f(x)=x^3$},{$f(x)=x^2$},{$f(x)=x^{\frac{3}{2}}$},{$f(x)=x^{\frac{2}{3}}$},{$f(x)=x^{-\frac{1}{2}}$},{$f(x)=x^{-2}$},{$f(x)=x^{-3}$}}{{1,-1},{1,-2},{4,-1},{4,-2},{7,-1},{7,-2},{10,-1}}{-6,6}{-6,6}{-10:10}{300}{17cm,7cm}{smooth}
 			\subsubsection{Wurzelgleichungen}
-			Bei Wurzelgleichungen\index{Wurzelgleichung} wird zuerst der Definitionsbereich\index{Definitionsbereich} bestimmt werden, also die Menge an reellen Zahlen\index{Reelle Zahl}, für die der Radikand\index{Radikand} positiv\index{Positiv} oder gleich Null ist. Zur Lösung von Wurzelgleichungen wird die Wurzel\index{Wurzel} auf einer Seite der Gleichung isoliert. Dann werden beide Seiten der Gleichung mit dem Wurzelexponenten\index{Wurzelexponent} (im Falle der Quadratwurzel also mit 2) so lange potenziert\index{Potenzieren}, bis alle Wurzeln eliminiert sind. Man bekommt also unter Umständen durch das Quadrieren (das Potenzieren mit einer geraden Zahl ist keine Äquivalenzumformung\index{Äquivalenzumformung}) neue Lösungen (Scheinlösungen\index{Scheinlösung}) hinzu, die die ursprüngliche Gleichung nicht hatte. Die Probe\index{Probe} ist folglich für Wurzelgleichungen unverzichtbar!\newline\newline
+			Bei Wurzelgleichungen\index{Wurzelgleichung} wird zuerst der Definitionsbereich\index{Definitionsbereich} bestimmt, also die Menge an reellen Zahlen\index{Reelle Zahl}, für die der Radikand\index{Radikand} positiv\index{Positiv} oder gleich Null ist. Zur Lösung von Wurzelgleichungen wird die Wurzel\index{Wurzel} auf einer Seite der Gleichung isoliert. Dann werden beide Seiten der Gleichung mit dem Wurzelexponenten\index{Wurzelexponent} (im Falle der Quadratwurzel also mit 2) so lange potenziert\index{Potenzieren}, bis alle Wurzeln eliminiert sind. Man bekommt also unter Umständen durch das Quadrieren (das Potenzieren mit einer geraden Zahl ist keine Äquivalenzumformung\index{Äquivalenzumformung}) neue Lösungen (Scheinlösungen\index{Scheinlösung}) hinzu, die die ursprüngliche Gleichung nicht hatte. Die Probe\index{Probe} ist folglich für Wurzelgleichungen unverzichtbar!\newline\newline
 			Beispiel ($\sqrt{2x+1}=x-17$):
 			\begin{flalign*}
 			2x+1&\ge 0\\

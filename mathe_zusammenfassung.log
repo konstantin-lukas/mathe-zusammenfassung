@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  22 SEP 2021 10:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  23 SEP 2021 15:44
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -1895,20 +1895,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1411--1415
 
  []
 
-\openout4 = `figures/mathe_zusammenfassung-figure34.md5'.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
-===== 'mode=convert with system call': Invoking 'pdflatex -shell-escape -halt-o
-n-error -interaction=batchmode -jobname "figures/mathe_zusammenfassung-figure34
-" "\def\tikzexternalrealjob{mathe_zusammenfassung}\input{mathe_zusammenfassung}
-"' ========
-runsystem(pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname
- "figures/mathe_zusammenfassung-figure34" "\def\tikzexternalrealjob{mathe_zusam
-menfassung}\input{mathe_zusammenfassung}")...executed.
-
-\openout4 = `mathe_zusammenfassung.auxlock'.
-
+===== Image 'figures/mathe_zusammenfassung-figure34' is up-to-date. ======
 [34]
 \openout4 = `figures/mathe_zusammenfassung-figure35.md5'.
 
@@ -2942,7 +2929,7 @@ msy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
 /Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program 
 Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mathe_zusammenfassung.pdf (98 pages, 1319199 bytes).
+Output written on mathe_zusammenfassung.pdf (98 pages, 1319202 bytes).
 PDF statistics:
  2831 PDF objects out of 2984 (max. 8388607)
  232 named destinations out of 1000 (max. 500000)

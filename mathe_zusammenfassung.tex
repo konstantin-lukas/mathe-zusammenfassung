@@ -1077,7 +1077,7 @@
 			2+6+z&=4\\
 			z&=-4&
 			\end{flalign*}
-		\subsection{LGS mit Parameter}
+		\subsection{Lineare Gleichungssysteme mit Parameter}
 			Kommt in einem LGS\index{Lineares Gleichungssystem} ein Parameter\index{Parameter} vor, dann muss man eine Fallunterscheidung\index{Fallunterscheidung} vornehmen und den Parameter in die Lösungsmenge\index{Lösungsmenge} mit einbeziehen.
 			\begin{flalign*}
 			(I)&&x-2y&=0\\
@@ -1111,6 +1111,128 @@
 			\begin{flalign*}
 			\mathbb{L}=\left\{\left(\frac{2}{a-3};\frac{1}{a-3};\frac{6-3a}{a-3}\right)\right\},\;falls\;a\neq 3&&
 			\end{flalign*}
+		\subsection{Erweiterte Koeffizientenmatrix}
+			Da die normale Notation von Gleichungssystemen wird of schnell unübersichtlich. Man kann die Koeffizienten\index{Koeffizient} auch in eine Matrix schreiben. Das hat den Vorteil, dass man die Variablen nicht ständig schreiben muss und eine geordnete Anordnung der Elemente hat.
+			\begin{flalign*}
+			(I)&&x+2y+z&=4\\
+			(II)&&x-y+ \frac{3}{2}z=-7\\
+			(III)&&-4x+2y&=-2&&&&&&&&&&&&&&&&&
+			\end{flalign*}
+			Dieses Gleichungssystem kann man jetzt auch so schreiben:
+			\begin{flalign*}
+			\begin{array}{l}
+			\text{(I)} \\
+			\text{(II)} \\
+			\text{(III)}
+			\end{array}
+			\left(\begin{array}{@{}ccc|c@{}}
+			1 & 2 & 1 & 4 \\
+			1 & -1 & \frac{3}{2} & -7 \\
+			-4 & 2 & 0 & -2
+			\end{array}\right)&&
+			\end{flalign*}
+			Man kann Zeilen und Spalten vertauschen, wenn es praktisch ist, muss aber beim Vertauschen von Spalten darauf achten, die richtigen Variablen am Ende hinzuschreiben, sollte man das Gleichungssystem noch mal in der Form mit Variablen angeben, die man an der letzten Zeile der Stufenform erkennen kann.
+		\subsection{Lösbarkeit von linearen Gleichungssystemen}
+			Man kann die Anzahl der Lösungen für ein LGS sehr einfach feststellen in dem man es in die Stufenform bringt. Dabei gibt es drei Szenarios.\newline\newline
+			\textbf{1. Szenario: Eine Lösung}
+			\begin{flalign*}
+			\begin{array}{l}
+			\text{(I)} \\
+			\text{(II)} \\
+			\text{(III)}
+			\end{array}
+			\left(\begin{array}{@{}ccc|c@{}}
+			4 & 2 & 3 & 4 \\
+			0 & 4 & 9 & 2 \\
+			0 & 0 & \textcolor{red}{1} & \textcolor{red}{2}
+			\end{array}\right)&&
+			\end{flalign*}
+			\textbf{2. Szenario: Keine Lösung}
+			\begin{flalign*}
+			\begin{array}{l}
+			\text{(I)} \\
+			\text{(II)} \\
+			\text{(III)}
+			\end{array}
+			\left(\begin{array}{@{}ccc|c@{}}
+			4 & 2 & 3 & 4 \\
+			0 & 4 & 9 & 2 \\
+			0 & 0 & \textcolor{red}{0} & \textcolor{red}{2}
+			\end{array}\right)&&
+			\end{flalign*}
+			\textbf{3. Szenario: Unendlich viele Lösung}
+			\begin{flalign*}
+			\begin{array}{l}
+			\text{(I)} \\
+			\text{(II)} \\
+			\text{(III)}
+			\end{array}
+			\left(\begin{array}{@{}ccc|c@{}}
+			4 & 2 & 3 & 4 \\
+			0 & 4 & 9 & 2 \\
+			0 & 0 & \textcolor{red}{0} & \textcolor{red}{0}
+			\end{array}\right)&&
+			\end{flalign*}
+			Hat ein Gleichungssystem unendliche viele Lösungen, ersetzt man eine der Variablen durch einen Parameter und macht die Lösung davon abhängig.
+			\begin{flalign*}
+				\begin{array}{l}
+				\text{(I)} \\
+				\text{(II)} \\
+				\text{(III)}
+				\end{array}
+				\left(\begin{array}{@{}ccc|c@{}}
+				4 & 2 & 3 & 4 \\
+				0 & 4 & 9 & 2 \\
+				0 & 0 & 0 & 0
+				\end{array}\right)
+				\begin{array}{l}
+				\mid -\frac{1}{2}\cdot\text{(II)} \\
+				\text{ }\\
+				\text{ }
+				\end{array}&&
+			\end{flalign*}
+			\begin{flalign*}
+				\begin{array}{l}
+				\text{(I)} \\
+				\text{(II)} \\
+				\text{(III)}
+				\end{array}
+				\left(\begin{array}{@{}ccc|c@{}}
+				4 & 0 & -\frac{3}{2} & 3 \\
+				0 & 4 & 9 & 2 \\
+				0 & 0 & 0 & 0
+				\end{array}\right)&&
+			\end{flalign*}
+			Jetzt legt man fest, dass $z$ bzw. $x_3$ je nachdem, wie man es nennen will, gleich $\lambda$ ist und gibt die Lösungsmenge an, indem man nach $x$ und $y$ umstellt.
+			\begin{flalign*}
+				\mathbb{L}=\left\{\left(\frac{3}{8}\lambda+\frac{3}{4};\frac{1}{2}-\frac{9}{4}\lambda;\lambda\right)\mid\lambda\in\mathbb{R}\right\}&&
+			\end{flalign*}
+			Alternativ kann man das auch als Geradengleichung angeben.
+			\begin{flalign*}
+			\mathbb{L}=\left\{
+			\left(\begin{array}{@{}c@{}}
+			x_1 \\
+			x_2 \\
+			x_3
+			\end{array}\right)\bigg|
+			\left(\begin{array}{@{}c@{}}
+			x_1 \\
+			x_2 \\
+			x_3
+			\end{array}\right)=
+			\left(\begin{array}{@{}c@{}}
+			\frac{3}{4} \\
+			\frac{1}{2} \\
+			0
+			\end{array}\right)+
+			\lambda\cdot
+			\left(\begin{array}{@{}c@{}}
+			\frac{3}{8} \\
+			-\frac{9}{4} \\
+			1
+			\end{array}\right),\lambda\in\mathbb{R}
+			\right\}&&
+\			\end{flalign*}
 \pagebreak
 	\section{Geometrie}
 	\label{sec:geometrie}

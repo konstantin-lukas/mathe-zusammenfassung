@@ -516,75 +516,74 @@
 \indexentry{Differenzieren|hyperpage}{76}
 \indexentry{Integrieren|hyperpage}{76}
 \indexentry{Stammfunktion|hyperpage}{76}
-\indexentry{Differential|hyperpage}{77}
-\indexentry{Ableitung|hyperpage}{77}
-\indexentry{Produktregel|hyperpage}{78}
-\indexentry{Differenzfunktion|hyperpage}{78}
+\indexentry{Produktregel|hyperpage}{77}
+\indexentry{Differential|hyperpage}{78}
+\indexentry{Differenzfunktion|hyperpage}{79}
 \indexentry{Nullstelle|hyperpage}{79}
 \indexentry{Intervall|hyperpage}{79}
 \indexentry{Wertetabelle|hyperpage}{79}
-\indexentry{Ableitung|hyperpage}{79}
-\indexentry{Differenzfunktion|hyperpage}{79}
-\indexentry{Umkehrfunktion|hyperpage}{80}
-\indexentry{Negation|hyperpage}{81}
-\indexentry{Konjunktion|hyperpage}{81}
-\indexentry{Disjunktion|hyperpage}{81}
-\indexentry{Kontravalenz|hyperpage}{81}
-\indexentry{Äquivalenz|hyperpage}{81}
-\indexentry{Implikation|hyperpage}{81}
-\indexentry{Wahrheitswert|hyperpage}{81}
-\indexentry{Aussage|hyperpage}{81}
-\indexentry{Wahrheitstafel|hyperpage}{81}
-\indexentry{Tautologie|hyperpage}{81}
-\indexentry{Widerspruch|hyperpage}{81}
-\indexentry{Quantor|hyperpage}{81}
-\indexentry{Quantor|hyperpage}{81}
-\indexentry{Direkter Beweis|hyperpage}{82}
-\indexentry{Indirekter Beweis|hyperpage}{82}
-\indexentry{Vollständige Induktion|hyperpage}{83}
-\indexentry{Grundmenge|hyperpage}{84}
-\indexentry{Universum|hyperpage}{84}
-\indexentry{Zufallsexperiment|hyperpage}{84}
-\indexentry{Ergebnis|hyperpage}{84}
-\indexentry{Ereignis|hyperpage}{84}
-\indexentry{Laplace-Experiment|hyperpage}{84}
-\indexentry{Kombinatorik|hyperpage}{84}
-\indexentry{Fakultät|hyperpage}{84}
-\indexentry{Binomialkoeffizient|hyperpage}{84}
-\indexentry{Permutation|hyperpage}{84}
-\indexentry{Variation|hyperpage}{84}
-\indexentry{Kombination|hyperpage}{84}
-\indexentry{Fakultät|hyperpage}{85}
-\indexentry{Mächtigkeit|hyperpage}{85}
+\indexentry{Ableitung|hyperpage}{80}
+\indexentry{Differenzfunktion|hyperpage}{80}
+\indexentry{Umkehrfunktion|hyperpage}{81}
+\indexentry{Negation|hyperpage}{82}
+\indexentry{Konjunktion|hyperpage}{82}
+\indexentry{Disjunktion|hyperpage}{82}
+\indexentry{Kontravalenz|hyperpage}{82}
+\indexentry{Äquivalenz|hyperpage}{82}
+\indexentry{Implikation|hyperpage}{82}
+\indexentry{Wahrheitswert|hyperpage}{82}
+\indexentry{Aussage|hyperpage}{82}
+\indexentry{Wahrheitstafel|hyperpage}{82}
+\indexentry{Tautologie|hyperpage}{82}
+\indexentry{Widerspruch|hyperpage}{82}
+\indexentry{Quantor|hyperpage}{82}
+\indexentry{Quantor|hyperpage}{82}
+\indexentry{Direkter Beweis|hyperpage}{83}
+\indexentry{Indirekter Beweis|hyperpage}{83}
+\indexentry{Vollständige Induktion|hyperpage}{84}
 \indexentry{Grundmenge|hyperpage}{85}
+\indexentry{Universum|hyperpage}{85}
+\indexentry{Zufallsexperiment|hyperpage}{85}
+\indexentry{Ergebnis|hyperpage}{85}
+\indexentry{Ereignis|hyperpage}{85}
+\indexentry{Laplace-Experiment|hyperpage}{85}
+\indexentry{Kombinatorik|hyperpage}{85}
+\indexentry{Fakultät|hyperpage}{85}
+\indexentry{Binomialkoeffizient|hyperpage}{85}
+\indexentry{Permutation|hyperpage}{85}
+\indexentry{Variation|hyperpage}{85}
+\indexentry{Kombination|hyperpage}{85}
+\indexentry{Fakultät|hyperpage}{86}
+\indexentry{Mächtigkeit|hyperpage}{86}
 \indexentry{Grundmenge|hyperpage}{86}
-\indexentry{Grundmenge|hyperpage}{86}
-\indexentry{Grundmenge|hyperpage}{86}
-\indexentry{Teilmenge|hyperpage}{86}
-\indexentry{Grundmenge|hyperpage}{86}
-\indexentry{Binomialkoeffizient|hyperpage}{87}
 \indexentry{Grundmenge|hyperpage}{87}
-\indexentry{Lotto|hyperpage}{87}
-\indexentry{Binomialverteilung|hyperpage}{88}
-\indexentry{Hypergeometrische Verteilung|hyperpage}{88}
+\indexentry{Grundmenge|hyperpage}{87}
+\indexentry{Grundmenge|hyperpage}{87}
+\indexentry{Teilmenge|hyperpage}{87}
+\indexentry{Grundmenge|hyperpage}{87}
+\indexentry{Binomialkoeffizient|hyperpage}{88}
+\indexentry{Grundmenge|hyperpage}{88}
+\indexentry{Lotto|hyperpage}{88}
+\indexentry{Binomialverteilung|hyperpage}{89}
 \indexentry{Hypergeometrische Verteilung|hyperpage}{89}
-\indexentry{Grundmenge|hyperpage}{89}
-\indexentry{Satz der totalen Wahrscheinlichkeit|hyperpage}{90}
-\indexentry{Satz von Bayes|hyperpage}{91}
-\indexentry{Satz von Bayes|hyperpage}{91}
-\indexentry{Zufallsvariable|hyperpage}{92}
-\indexentry{Stetig|hyperpage}{93}
-\indexentry{Diskret|hyperpage}{93}
-\indexentry{Erwartungswert|hyperpage}{93}
-\indexentry{Erwartungswert|hyperpage}{93}
-\indexentry{Wertetabelle|hyperpage}{93}
-\indexentry{Umstellen|hyperpage}{94}
-\indexentry{Varianz|hyperpage}{94}
-\indexentry{Standardabweichung|hyperpage}{94}
-\indexentry{Varianz|hyperpage}{94}
-\indexentry{Standardabweichung|hyperpage}{94}
-\indexentry{Streuung|hyperpage}{94}
-\indexentry{Mittelwert|hyperpage}{94}
-\indexentry{Varianz|hyperpage}{95}
+\indexentry{Hypergeometrische Verteilung|hyperpage}{90}
+\indexentry{Grundmenge|hyperpage}{90}
+\indexentry{Satz der totalen Wahrscheinlichkeit|hyperpage}{91}
+\indexentry{Satz von Bayes|hyperpage}{92}
+\indexentry{Satz von Bayes|hyperpage}{92}
+\indexentry{Zufallsvariable|hyperpage}{93}
+\indexentry{Stetig|hyperpage}{94}
+\indexentry{Diskret|hyperpage}{94}
+\indexentry{Erwartungswert|hyperpage}{94}
+\indexentry{Erwartungswert|hyperpage}{94}
+\indexentry{Wertetabelle|hyperpage}{94}
+\indexentry{Umstellen|hyperpage}{95}
 \indexentry{Varianz|hyperpage}{95}
 \indexentry{Standardabweichung|hyperpage}{95}
+\indexentry{Varianz|hyperpage}{95}
+\indexentry{Standardabweichung|hyperpage}{95}
+\indexentry{Streuung|hyperpage}{95}
+\indexentry{Mittelwert|hyperpage}{95}
+\indexentry{Varianz|hyperpage}{96}
+\indexentry{Varianz|hyperpage}{96}
+\indexentry{Standardabweichung|hyperpage}{96}

@@ -2943,47 +2943,63 @@
 					\int f(mx+b)dx=\frac{1}{m}F(mx+b)+k&&
 				\end{flalign*}
 			\end{tcolorbox}
-		\subsection{Integration durch Substitution}
-			Möchte man eine verkettete Funktion integrieren, wird es mit den bisherigen Regeln schwierig. Wir müssen hier substituieren, um eine Stammfunktion zu erzeugen. Schauen wir uns das mal an einem Beispiel an.
-			\begin{flalign*}
-				\int^0_{-1}\left(\sqrt{1-2x}\right)dx&&
-			\end{flalign*}
-			Diesen Term können wir so erst einmal nicht integrieren. Wenn wir jetzt jedoch die innere Funktion mit $u$ substituieren, geht das schon. Wir sagen also, dass $u=1-2x$ gilt.
-			\begin{flalign*}
-				\int\sqrt{u}&&
-			\end{flalign*}
-			Das war jedoch nicht alles, denn jetzt, wo wir $u$ in unserer Funktion haben, müssen wir unsere Grenzen und das Differential\index{Differential} anpassen. Das funktioniert, in dem wir die Ableitung\index{Ableitung} von $u$ bilden.
-			\begin{flalign*}
-				u^{\prime}=-2=\frac{du}{dx}&&
-			\end{flalign*}
-			Wichtig ist sich zu merken, dass wir sagen können, dass $\frac{du}{dx}$ das Gleiche ist, wie die Ableitung. Jetzt stellen wir nach $dx$ um, damit wir auch das Differenzial ersetzen können.
-			\begin{flalign*}
-				\int\sqrt{u}\cdot\left(-\frac{1}{2}\right)du&&
-			\end{flalign*}
-			Letztlich müssen wir nur noch unsere Grenzen anpassen, indem wir $x$ in $u$ einsetzen.
-			\begin{flalign*}
-			&\int^{u(0)}_{u(-1)}\sqrt{u}\cdot\left(-\frac{1}{2}\right)du\\
-			=&\int^1_3\sqrt{u}\cdot\left(-\frac{1}{2}\right)du\\
-			=&\left[-\frac{1}{3}u^{\frac{3}{2}}\right]^1_3\\
-			\approx&1,399&&
-			\end{flalign*}
-			Hinweis: Hat man ein unbestimmtes Integral, muss man resubstituieren. Also in dem Fall:
-			\begin{flalign*}
-			\int\left(\sqrt{1-2x}\right)dx=\left[-\frac{1}{3}(1-2x)^{\frac{3}{2}}+k\right]&&
-			\end{flalign*}
 		\subsection{Partielle Integration}
 			Wenn man ein Produkt integrieren möchte, braucht man die partielle Integration. Abgeleitet aus der Produktregel\index{Produktregel} der Differentialrechnung, ergibt sich folgende Formel:
 			\begin{tcolorbox}[boxsep=0pt,top=.25cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
 				\begin{flalign*}
-					\int f^{\prime}(x)\cdot g(x) dx=f(x)\cdot g(x)-\int f(x)\cdot g^{\prime}(x) dx
+				\int f^{\prime}(x)\cdot g(x) dx=f(x)\cdot g(x)-\int f(x)\cdot g^{\prime}(x) dx
 				\end{flalign*}
 			\end{tcolorbox}
 			\noindent Zum besseren Verständnis noch mal ein Beispiel: $\int x\cdot e^xdx$.
 			\begin{flalign*}
-				&\int (x\cdot e^x)dx\\
-				=&e^x\cdot x - \int(e^x\cdot 1)dx\\
-				=&e^x\cdot x - e^x+k\\
-				=&e^x\cdot (x-1)+k&&
+			&\int (x\cdot e^x)dx\\
+			=&e^x\cdot x - \int(e^x\cdot 1)dx\\
+			=&e^x\cdot x - e^x+k\\
+			=&e^x\cdot (x-1)+k&&
+			\end{flalign*}
+		\subsection{Integration durch Substitution}
+			\begin{tcolorbox}[boxsep=0pt,top=.25cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+				\begin{flalign*}
+					\int_{g(a)}^{g(b)}f(x)\;dx=\int_a^b f(g(u))\cdot g^{\prime}(u)\;du&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Möchte man eine verkettete Funktion oder besonders schwierige Funktion integrieren, wird es mit den bisherigen Regeln schwierig. Wir müssen hier substituieren, um eine Stammfunktion zu erzeugen. Die obenstehende Regel, gibt uns einige wichtige Unterregeln. Dabei ist vor allem Folgendes wichtig:
+			\begin{tcolorbox}[boxsep=0pt,top=0.1cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.45cm, enlarge bottom by=.25cm]
+				\begin{flalign*}
+					&x=g(u)\\
+					&dx=g^{\prime}(x)\;du&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Damit können wir jetzt unsere Substitution durchführen. Als erstes ersetzen wir den Term, der uns das Integrieren so schwer macht durch eine Variable.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&\int^0_{-1}\sqrt{1-2x}\;dx&&\mid u=1-2x\\
+				\Rightarrow&\int^0_{-1}\sqrt{u}\;dx&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Da wir gerade noch nach $x$ integrieren, müssen wir jetzt noch das $du$ und die Grenzen ersetzen. Laut den obigen Formeln ist $dx=g^{\prime}(u)\;du$. Das heißt, um auf $dx$ zu kommen, brauchen wir nur die Ableitung $g^{\prime}(u)$. Wir wissen, dass $x$ gleich $g(u)$ ist. In diesem Fall ist $u=1-2x$. Wenn wir diese Gleichung nach $x$ umstellen kommen wir auch auf $g(x)$, welches wir anschließend ableiten, um das Differential\index{Differential} zu ersetzen.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&u=&1-2x\\
+				\Leftrightarrow&&-2x=&u-1\\
+				\Leftrightarrow&&x=&\frac{-u+1}{2}=g(u)\\
+				\Rightarrow&&g^{\prime}(u)=&-\frac{1}{2}\\
+				\Rightarrow&&&\int^0_{-1}\sqrt{u}\cdot\left(-\frac{1}{2}\right)\;du&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Jetzt muss man bei einem bestimmten Integral noch die Grenzen ersetzen. Das tut man, indem man die Grenzen für $x$ in die Gleichung von $u$ einsetzt.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				&&u=&1-2x\\
+				\Rightarrow&&u=&1-2\cdot 0=1\\
+				\Rightarrow&&u=&1-2\cdot (-1)=3\\
+				\Rightarrow&&&\int^1_3\sqrt{u}\cdot\left(-\frac{1}{2}\right)\;du\\
+				\Leftrightarrow&&\left[-\frac{1}{3}u^{\frac{3}{2}}\right]^1_3\approx&1,399&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Hinweis: Hat man ein bestimmtes Integral, muss man nicht resubstituieren. Hat man ein unbestimmtes Integral, muss man für $u$ wieder den ursprünglichen Wert einsetzen:
+			\begin{flalign*}
+			\int\left(\sqrt{1-2x}\right)dx=\left[-\frac{1}{3}(1-2x)^{\frac{3}{2}}+k\right]&&
 			\end{flalign*}
 		\subsection{Die Fläche zwischen zwei Graphen}
 			Wollen wir die Fläche zwischen zwei Funktionen berechnen, bilden wir einfach das Integral der Differenzfunktion\index{Differenzfunktion} dieser zwei Funktionen.

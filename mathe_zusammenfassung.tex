@@ -330,7 +330,7 @@
 			\def\tabcolsep{0pt}
 			\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
 				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-						$[4;11]\times [5;9]$
+						$(4;11]\times [5;9]$
 						\begin{center}
 							\begin{tikzpicture}
 							\begin{axis}[
@@ -347,14 +347,18 @@
 							major grid style={line width=.2pt,draw=gridgray!50},
 							axis equal image
 							]
-							\fill[blue] (axis cs: 4,5) rectangle (axis cs: 11,9);
+							\fill[blue!20] (axis cs: 4,5) rectangle (axis cs: 11,9);
+							\draw[blue,dashed] (axis cs: 4,5) -- (axis cs: 4,9);
+							\draw[blue] (axis cs: 11,5) -- (axis cs: 11,9);
+							\draw[blue] (axis cs: 11,9) -- (axis cs: 4,9);
+							\draw[blue] (axis cs: 11,5) -- (axis cs: 4,5);
 							\end{axis}
 							\end{tikzpicture}
 						\end{center}
 				\end{tcolorbox}}
 				&
 				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white]
-						$[5;9]\times [4;11]$
+						$[5;9]\times (4;11)$
 						\begin{center}
 							\begin{tikzpicture}
 							\begin{axis}[
@@ -371,7 +375,11 @@
 							major grid style={line width=.2pt,draw=gridgray!50},
 							axis equal image
 							]
-							\fill[red] (axis cs: 5,4) rectangle (axis cs: 9,11);
+							\fill[red!20] (axis cs: 5,4) rectangle (axis cs: 9,11);
+							\draw[red] (axis cs: 5,4) -- (axis cs: 5,11);
+							\draw[red] (axis cs: 9,4) -- (axis cs: 9,11);
+							\draw[red,dashed] (axis cs: 5,11) -- (axis cs: 9,11);
+							\draw[red,dashed] (axis cs: 5,4) -- (axis cs: 9,4);
 							\end{axis}
 							\end{tikzpicture}
 						\end{center}
@@ -379,6 +387,7 @@
 			\end{tabularx}
 			\egroup
 		\end{center}
+		Hinweis: Wenn man das kartesische Produkt in ein Koordinatensystem einzeichnet, verwendet man gestrichelte Linien, um zu zeigen, dass der jeweilige Wert genau nicht mehr Teil des kartesischen Produktes ist.
 	\subsection{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}

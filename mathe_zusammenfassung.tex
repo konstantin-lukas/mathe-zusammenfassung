@@ -75,7 +75,9 @@
 		minor tick num=2,
 		grid=both,
 		grid style={line width=.1pt, draw=gridgray!10},
-		major grid style={line width=.2pt,draw=gridgray!50}
+		major grid style={line width=.2pt,draw=gridgray!50},
+		xlabel={$x$},
+		ylabel={$y$}
 		]
 		\foreach \graph [count=\i] in {#1} {
 			\edef\temp{\noexpand\addplot+[mark=none, color=\getcolor{\i}, solid, #9] {\graph};}
@@ -89,6 +91,50 @@
 			\node [color=\getcolor{\i}] at (\pos[\i]) {\label};
 		}
 
+		\end{tikzpicture}
+	\end{center}
+}
+\newcommand{\plotfunc}[9]{
+	\readlist\xlimits{#4}
+	\def\xlower{\xlimits[1]}
+	\def\xupper{\xlimits[2]}
+	\readlist\ylimits{#5}
+	\def\ylower{\ylimits[1]}
+	\def\yupper{\ylimits[2]}
+	\readlist\dimensions{#8}
+	\def\width{\dimensions[1]}
+	\def\height{\dimensions[2]}
+	\begin{center}
+		\begin{tikzpicture}
+		\begin{axis}[
+		domain=\xlower:\xupper,
+		width=\width,
+		height=\height,
+		restrict y to domain=#6,
+		xmin=\xlower, xmax=\xupper,
+		ymin=\ylower, ymax=\yupper,
+		samples=#7,
+		axis y line=center,
+		axis x line=middle,
+		ticklabel style={fill=white},
+		minor tick num=2,
+		grid=both,
+		grid style={line width=.1pt, draw=gridgray!10},
+		major grid style={line width=.2pt,draw=gridgray!50},
+		xlabel={$x$},
+		ylabel={$y$}
+		]
+		\foreach \graph [count=\i] in {#1} {
+			\edef\temp{\noexpand\addplot+[mark=none, color=\getcolor{\i}, solid, #9] {\graph};}
+			\temp
+		}
+		\readlist\pos{#3}
+		\foreach \label [count=\i] in {#2} {
+			\edef\temp{\noexpand\node[color=\getcolor{\i}, anchor=south west] at (axis cs:\pos[\i]) {\label};}
+			\temp
+		}
+		\end{axis}
+		
 		\end{tikzpicture}
 	\end{center}
 }
@@ -345,7 +391,9 @@
 							grid=both,
 							grid style={line width=.1pt, draw=gridgray!10},
 							major grid style={line width=.2pt,draw=gridgray!50},
-							axis equal image
+							axis equal image,
+							xlabel={$x$},
+							ylabel={$y$}
 							]
 							\fill[blue!20] (axis cs: 4,5) rectangle (axis cs: 11,9);
 							\draw[blue,dashed] (axis cs: 4,5) -- (axis cs: 4,9);
@@ -373,7 +421,9 @@
 							grid=both,
 							grid style={line width=.1pt, draw=gridgray!10},
 							major grid style={line width=.2pt,draw=gridgray!50},
-							axis equal image
+							axis equal image,
+							xlabel={$x$},
+							ylabel={$y$}
 							]
 							\fill[red!20] (axis cs: 5,4) rectangle (axis cs: 9,11);
 							\draw[red] (axis cs: 5,4) -- (axis cs: 5,11);
@@ -1948,6 +1998,74 @@
 				\Leftrightarrow&&g_s:\begin{pmatrix}x\\y\\z\end{pmatrix}=&\begin{pmatrix}4,5\\1\\-2,25\end{pmatrix}+r\cdot\begin{pmatrix}-2,5\\2\\2,75\end{pmatrix}&&
 				\end{flalign*}
 			\end{tcolorbox}
+		\subsection{Linearkombination}
+			Wenn ein Vektor mithilfe von Vektoraddition\index{Vektoraddition} und Skalarmultiplikation\index{Skalarmultiplikation} erzeugt wird, nennt man das Linearkombination\index{Linearkombination}. So ist ein Vektor $\vec{v}$ gleich der Summe aller Vektoren $a_i$ multipliziert mit den Skalaren $\lambda_i$.
+			\begin{tcolorbox}[boxsep=0pt,top=0.25cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+				\begin{flalign*}
+					\vec{v}=\sum^n_{i=1}\lambda_i \vec{a}_i
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Man nimmt sich also eine Anzahl $n$ an Vektoren und addiert diese ggf. unter Benutzung von Skalaren\index{Skalar}. Diese Summe nennt man Linearkombination.
+			\begin{flalign*}
+				&\vec{a}=\begin{pmatrix}5\\-1\\7\end{pmatrix}\\
+				&\vec{b}=\begin{pmatrix}2\\0\\1\end{pmatrix}\\
+				&\vec{c}=5\cdot\vec{a}+2\cdot\vec{b}=\begin{pmatrix}25\\-5\\35\end{pmatrix}+\begin{pmatrix}4\\0\\2\end{pmatrix}=\begin{pmatrix}29\\-5\\37\end{pmatrix}&&
+			\end{flalign*}
+		\subsection{Lineare Abhängigkeit}
+			Hat man Vektoren, deren Linearkombination den Nullvektor\index{Nullvektor} erzeugen kann, spricht man von linearer Abhängigkeit\index{Lineare Abhängigkeit} unter der Voraussetzung, dass mindestens einer der genutzten Skalare\index{Skalar} nicht Null ist. Hat man mehr als zwei Vektoren des $\mathbb{R}^2$ oder mehr als drei Vektoren des $\mathbb{R}^3$, sind diese Vektoren immer linear abhängig. Des Weiteren sind zwei Vektoren immer dann linear voneinander abhängig, wenn sie parallel sind. Für drei Vektoren des $\mathbb{R}^3$ gilt außerdem, dass sie sich auf einer Ebene befinden, wenn sie linear voneinander abhängig sind.\newline\newline
+			Beispiel: Sind die drei $\vec{a},\vec{b},\vec{c}$ Vektoren linear voneinander abhängig?
+			\begin{flalign*}
+				&\vec{a}=\begin{pmatrix}2\\2\\4\end{pmatrix}\\
+				&\vec{b}=\begin{pmatrix}-6\\2\\-2\end{pmatrix}\\
+				&\vec{c}=\begin{pmatrix}2\\-6\\-6\end{pmatrix}&&
+			\end{flalign*}
+			\begin{flalign*}
+			\begin{array}{l}
+			\text{(I)} \\
+			\text{(II)} \\
+			\text{(III)}
+			\end{array}
+			\left(\begin{array}{@{}ccc|c@{}}
+			2 & -6 & 2 & 0 \\
+			2 & 2 & -6 & 0 \\
+			4 & -2 & -6 & 0
+			\end{array}\right)
+			\begin{array}{l}
+			\text{ } \\
+			\mid -\text{(I)} \\
+			\mid -2\cdot\text{(I)}
+			\end{array}&&
+			\end{flalign*}
+			\begin{flalign*}
+			\begin{array}{l}
+			\text{(I)} \\
+			\text{(II)} \\
+			\text{(III)}
+			\end{array}
+			\left(\begin{array}{@{}ccc|c@{}}
+			2 & -6 & 2 & 0 \\
+			0 & 8 & -8 & 0 \\
+			0 & 10 & -10 & 0
+			\end{array}\right)
+			\begin{array}{l}
+			\text{ } \\
+			\text{} \\
+			\mid\cdot 8\mid -10\cdot\text{(II)}
+			\end{array}&&
+			\end{flalign*}
+			\begin{flalign*}
+			\begin{array}{l}
+			\text{(I)} \\
+			\text{(II)} \\
+			\text{(III)}
+			\end{array}
+			\left(\begin{array}{@{}ccc|c@{}}
+			2 & -6 & 2 & 0 \\
+			0 & 8 & -8 & 0 \\
+			0 & 0 & 0 & 0
+			\end{array}\right)&&
+			\end{flalign*}
+			Das Gleichungssystem bietet unendlich viele Lösungen, d.h., diese drei Vektoren sind linear abhängig.
 	\pagebreak
 	\section{2D-Koordinatensystem}
 		\subsection{Allgemeines}
@@ -2372,7 +2490,9 @@
 				minor tick num=2,
 				grid=both,
 				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}
+				major grid style={line width=.2pt,draw=gridgray!50},
+				xlabel={$x$},
+				ylabel={$y$}
 				]
 				\draw[color=blue] (axis cs:14,5) circle [radius=3];
 				\end{axis}
@@ -2433,7 +2553,9 @@
 					minor tick num=2,
 					grid=both,
 					grid style={line width=.1pt, draw=gridgray!10},
-					major grid style={line width=.2pt,draw=gridgray!50}
+					major grid style={line width=.2pt,draw=gridgray!50},
+					xlabel={$x$},
+					ylabel={$y$}
 					]
 					\addplot+[mark=none, color=blue, solid, name path=A, smooth] {x^3+2};
 					\draw [color=red, name path=B] (axis cs: .2,0.75) -- (axis cs: 2.2,9);
@@ -2540,7 +2662,9 @@
 		minor tick num=2,
 		grid=both,
 		grid style={line width=.1pt, draw=gridgray!10},
-		major grid style={line width=.2pt,draw=gridgray!50}
+		major grid style={line width=.2pt,draw=gridgray!50},
+		xlabel={$x$},
+		ylabel={$y$}
 		]
 		\addplot+[mark=none, color=blue, solid, smooth, domain=-10:2] {x^2};
 		\addplot+[mark=none, color=blue, solid, smooth, domain=2:10] {0.5*x^2};
@@ -3040,7 +3164,9 @@
 				minor tick num=0,
 				grid=both,
 				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}]
+				major grid style={line width=.2pt,draw=gridgray!50},
+				xlabel={$x$},
+				ylabel={$y$}]
 				\addplot [name path = A,
 				-latex,
 				samples = 200,
@@ -3112,7 +3238,9 @@
 				minor tick num=0,
 				grid=both,
 				grid style={line width=.1pt, draw=gridgray!10},
-				major grid style={line width=.2pt,draw=gridgray!50}]
+				major grid style={line width=.2pt,draw=gridgray!50},
+				xlabel={$x$},
+				ylabel={$y$}]
 				\addplot [red] coordinates { (3,4) (3,-4)};
 				\draw[red] (axis cs:-1,0) ellipse [ x radius=0.15, y radius=2.71];
 				\addplot+[mark=none, color=blue, solid, smooth] {1/(e^x)};
@@ -3218,7 +3346,7 @@
 					&\;\text{beide durch zwei teilbar, also nicht teilerfremd sind.}&&
 				\end{flalign*}
 			\subsubsection{Vollständige Induktion}
-				Die vollständige Induktion\index{Vollständige Induktion} wird genutzt um Aussagen der Form $\forall n\in\mathbb{N}:A(n)$ zu beweisen. Das wird in zwei Schritten getan. Zunächst beweist man durch Einsetzen (Induktionsanfang), dass die Aussage für das kleinstmögliche $n$ wahr ist. Wenn man dann im Indikationsschritt zeigen kann, dass die Aussage, wenn sie für $n$ gilt auch für $n+1$ gilt, hat man einen Beweis. Das kommt daher, dass man für das kleinste $n$ eindeutig durch einsetzen bewiesen hat. Dieses $n$ beweist dann, dass $n+1$ die Aussage erfüllt. Dieses wiederum beweist, dass $n+2$ die Aussage erfüllt und so weiter. Auch das erklärt sich am besten wieder mal mit einem Beispiel:\newline\newline
+				Die vollständige Induktion\index{Vollständige Induktion} wird oft genutzt um Aussagen der Form $\forall n\in\mathbb{N}:A(n)$ zu beweisen. Das wird in zwei Schritten getan. Zunächst beweist man durch Einsetzen (Induktionsanfang), dass die Aussage für das kleinstmögliche $n$ wahr ist. Wenn man dann im Indikationsschritt zeigen kann, dass die Aussage, wenn sie für $n$ gilt auch für $n+1$ gilt, hat man einen Beweis. Das kommt daher, dass man für das kleinste $n$ eindeutig durch einsetzen bewiesen hat. Dieses $n$ beweist dann, dass $n+1$ die Aussage erfüllt. Dieses wiederum beweist, dass $n+2$ die Aussage erfüllt und so weiter. Auch das erklärt sich am besten wieder mal mit einem Beispiel:\newline\newline
 				Zu beweisen ist diese Aussage:
 				\begin{flalign*}
 					A(n)=\forall n\in\mathbb{N}:\sum^n_{k=1}k=\frac{n(n+1)}{2}&&
@@ -3686,5 +3814,17 @@
 					\end{tikzpicture}
 				\end{center}
 	\pagebreak
+\section{Modul: Lineare Algebra}
+	Kommt irgendwann
+\pagebreak
+\section{Modul: Analysis I}
+	Kommt irgendwann
+\pagebreak
+\section{Modul: Angewandte Mathematik für die Informatik}
+	Kommt irgendwann
+\pagebreak
+\section{Übungsaufgaben}
+	\subsection{Beweise}
+	
 	\printindex
 \end{document}

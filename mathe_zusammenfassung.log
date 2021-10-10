@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  9 OCT 2021 18:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  10 OCT 2021 20:23
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -2856,18 +2856,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 3522--3526
 ===== Image 'figures/mathe_zusammenfassung-figure88' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure89' is up-to-date. ======
 [92 <./figures/mathe_zusammenfassung-figure88.pdf>]
-<images/busts-in-silhouette_1f465.png, id=2123, 240.9pt x 240.9pt>
+<images/busts-in-silhouette_1f465.png, id=2128, 240.9pt x 240.9pt>
 File: images/busts-in-silhouette_1f465.png Graphic file (type png)
 <use images/busts-in-silhouette_1f465.png>
 Package pdftex.def Info: images/busts-in-silhouette_1f465.png  used on input li
 ne 3612.
 (pdftex.def)             Requested size: 12.0457pt x 12.0457pt.
-<images/luggage_1f9f3.png, id=2124, 160.6pt x 160.6pt>
+<images/luggage_1f9f3.png, id=2129, 160.6pt x 160.6pt>
 File: images/luggage_1f9f3.png Graphic file (type png)
 <use images/luggage_1f9f3.png>
 Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 3612.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
-<images/flag-france_1f1eb-1f1f7.png, id=2126, 10.589pt x 10.589pt>
+<images/flag-france_1f1eb-1f1f7.png, id=2131, 10.589pt x 10.589pt>
 File: images/flag-france_1f1eb-1f1f7.png Graphic file (type png)
 <use images/flag-france_1f1eb-1f1f7.png>
 Package pdftex.def Info: images/flag-france_1f1eb-1f1f7.png  used on input line
@@ -2931,26 +2931,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 3758--3774
 [98]
 ===== Image 'figures/mathe_zusammenfassung-figure96' is up-to-date. ======
 [99 <./figures/mathe_zusammenfassung-figure96.pdf>] [100] [101] [102]
-(mathe_zusammenfassung.ind [103] [104
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3832--3832
+[] 
+ []
+
+
+Overfull \hbox (278.67091pt too wide) detected at line 3837
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3829--3838
+
+ []
+
+(mathe_zusammenfassung.ind
+Underfull \hbox (badness 10000) in paragraph at lines 3839--1
+
+ []
+
+[103] [104
 
 ] [105] [106] [107
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3830.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3830.
-
-(mathe_zusammenfassung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3830.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3830.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3842.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3842.
+ (mathe_zusammenfassung.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3842.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3842.
 
 Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
-(rerunfilecheck)             Checksum: 7F17D9B062103375885660388A6904E7;10438.
+(rerunfilecheck)             Checksum: AD5654F2AA889411321433DD95556DC6;10510.
  ) 
 Here is how much of TeX's memory you used:
- 45810 strings out of 480790
- 1084785 string characters out of 2907040
- 1622059 words of memory out of 3000000
- 60462 multiletter control sequences out of 15000+200000
+ 45813 strings out of 480790
+ 1084844 string characters out of 2907040
+ 1622248 words of memory out of 3000000
+ 60464 multiletter control sequences out of 15000+200000
  543771 words of font info for 70 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  66i,31n,103p,1479b,1319s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2970,9 +2988,9 @@ msy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
 /Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program 
 Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mathe_zusammenfassung.pdf (107 pages, 1345240 bytes).
+Output written on mathe_zusammenfassung.pdf (107 pages, 1346768 bytes).
 PDF statistics:
- 2928 PDF objects out of 2984 (max. 8388607)
- 250 named destinations out of 1000 (max. 500000)
- 1777 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2933 PDF objects out of 2984 (max. 8388607)
+ 251 named destinations out of 1000 (max. 500000)
+ 1785 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -444,6 +444,9 @@
 		Es gibt drei sehr wichtige Begriffe für Abbildungen: Injektivität\index{Injektiv}, Surjektivität\index{Surjektiv} und Bijektivität\index{Bijektiv}. Diese sind wie folgt definiert:
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
 			\textbf{Surjektiv}\index{Surjektiv} bedeutet, dass jedes Element der Zielmenge ein nichtleeres Urbild hat.
+			\begin{flalign*}
+				\forall y\in Y\exists x\in X:f(x)=y&&
+			\end{flalign*}
 			\begin{flushleft}
 				\resizebox{!}{4cm}{
 					\begin{tikzpicture}[line width=1pt,>=latex]
@@ -474,6 +477,9 @@
 		\end{tcolorbox}
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
 			\textbf{Injektiv}\index{Injektiv} bedeutet, dass jedes Element der Zielmenge höchstens ein Urbild hat.
+			\begin{flalign*}
+			\forall x_1,x_2\in X:f(x_1)=f(x_2)\Rightarrow x_1=x_2&&
+			\end{flalign*}
 			\begin{flushleft}
 				\resizebox{!}{4cm}{
 					\begin{tikzpicture}[line width=1pt,>=latex]
@@ -502,7 +508,7 @@
 			\end{flushleft}
 		\end{tcolorbox}
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
-			\textbf{Bijektiv}\index{Bijektiv} bedeutet, die Funktion sowohl surjektiv als auch injektiv ist.
+			\textbf{Bijektiv}\index{Bijektiv} bedeutet, die ist Funktion sowohl surjektiv als auch injektiv.
 			\begin{flushleft}
 				\resizebox{!}{4cm}{
 					\begin{tikzpicture}[line width=1pt,>=latex]

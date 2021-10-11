@@ -24,7 +24,7 @@
 \usepackage{tabularx}
 \renewcommand\tabularxcolumn[1]{m{#1}}
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows,trees}
+\usetikzlibrary{shapes,arrows,trees,positioning,fit}
 \usepackage{array}
 \usepackage[most]{tcolorbox}
 \usepackage[hidelinks]{hyperref}
@@ -362,12 +362,176 @@
 		\end{center}
 	\subsection{Abbildungen}
 	\label{subsec:abbildungen}
-		Abbildungen\index{Abbildung} ordnen jedem Wert einer Menge $A$ einen Wert aus der Menge $B$ mithilfe einer Vorschrift $T$ zu. In der Analysis kommen Abbildungen in Form von Funktionen zum Einsatz. Man findet sie aber auch in der Geometrie, Stochastik oder der linearen Algebra. Wenn man ein Element $y$ aus der Menge $B$ nimmt, dem ein $x$ aus der Menge $A$ zugeordnet wird, spricht man vom \textit{Bild}\index{Bild} von $x$. Die Notation ist wie folgt:
+		Abbildungen\index{Abbildung} ordnen jedem Wert einer Menge $X$ genau einen Wert aus der Menge $Y$ mithilfe einer Vorschrift $f$ zu. In der Analysis kommen Abbildungen in Form von Funktionen zum Einsatz. Man findet sie aber auch in der Geometrie, Stochastik oder der linearen Algebra. Die Notation ist wie folgt:
 		\begin{flalign*}
-			T:A\rightarrow B,x\mapsto T(x)&&
+			f:X\rightarrow Y,x\mapsto f(x)&&
 		\end{flalign*}
-		Dabei ist $A$ der \textit{Definitionsbereich}\index{Definitionsbereich} und $B$ der \textit{Zielbereich}\index{Zielbereich} von $T$.\newline\newline
-		Für die Begriffe injektiv, surjektiv und bijektiv, schaue dir das Kapitel zur \highlight{subsubsec:umkehrbarkeit}{Umkehrbarkeit} an, denn diese gelten ebenfalls ganz generell für Abbildungen und nicht nur für Funktionen.
+		Dabei ist $X$ der \textit{Definitionsbereich}\index{Definitionsbereich} und $Y$ der \textit{Zielbereich}\index{Zielbereich} von $f$.\newline\newline
+		Wenn die Definition einer Abbildung erfüllt ist, spricht man auch von \textit{wohldefiniert}\index{Wohldefiniert}. Die Abbildungsvorschrift $f:\mathbb{Q}\rightarrow\mathbb{Z},\frac{m}{n}\mapsto m$ wäre z.B. nicht wohldefiniert und damit auch keine Abbildung. Der Grund dafür ist, dass man für dasselbe Argument unterschiedliche Werte kriegen kann. $\frac{1}{2}$ ist beispielsweise das gleiche wie $\frac{2}{4}$. Laut der Vorschrift, würden wir jedoch $1$ und $2$ als Werte kriegen. Damit ist jedem Wert der Definitionsmenge mehr als ein Wert der Zielmenge zugewiesen. Wenn man das Argument wie hier auf verschiedene Weisen darstellen kann, spricht man dabei von Repräsentanten\index{Repräsentant}. Ist jedem Repräsentanten dasselbe Element des Zielbereiches zugewiesen, sagt man, die Zuordnung ist \textit{repräsentantenunabhängig}\index{Repräsentantenunabhängig}. Diese Unabhängigkeit ist Voraussetzung für Wohldefiniertheit, jedoch muss man auch noch überprüfen, ob die Abbildungsvorschrift für alle Elemente des Definitions- und Zielbereichs funktioniert.\newline\newline
+		Die Teilmenge des Zielbereichs, die durch die gegeben Werte aus dem Definitionsbereich erzeugt wird, nennt man Bild von $X$ unter $f$.
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
+			\begin{flalign*}
+			\text{Im}(f)=\text{Bild}(f)=f(X):=\{f(x)\mid x\in X\}&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\begin{flushleft}
+			\resizebox{!}{6cm}{
+				\begin{tikzpicture}[line width=1pt,>=latex]
+				\sffamily
+				\node (a1) {\Huge$a$};
+				\node[below=of a1] (a2) {\Huge$b$};
+				\node[below=of a2] (a3) {\Huge$c$};
+				\node[below=of a3] (a4) {\Huge$d$};
+				
+				\node[right=4cm of a1] (b1) {\Huge$1$};
+				\node[below=of b1] (b2) {\Huge$2$};
+				\node[below=of b2] (b3) {\Huge$3$};
+				\node[below=of b3] (b4) {\Huge$4$};
+				
+				\node[shape=ellipse,draw=black,minimum size=3cm,fit={(a1) (a4)}] {};
+				\node[shape=ellipse,draw=black,minimum size=3cm,fit={(b1) (b4)}] {};
+				
+				\node[below=2cm of a4,font=\color{black}\Large\bfseries] {\Huge$X$};
+				\node[below=2cm of b4,font=\color{black}\Large\bfseries] {\Huge$Y$};
+				
+				\draw[->,black] (a1) -- (b1);
+				\draw[->,black] (a2) -- (b2);
+				\draw[->,black] (a3) -- (b1);
+				\draw[->,black] (a4) -- (b4);
+				
+				
+				\node[right=3cm of b1] {\Huge$\text{Bild}(f)=\{1,2,4\}$};
+				\end{tikzpicture}
+			}
+		\end{flushleft}
+		Im Gegensatz dazu existiert auch noch das Urbild. Das ist die Menge der Werte des Definitionsbereiches, die die Werte einer Teilmenge $M$ des Zielbereichs erzeugen.
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
+			\begin{flalign*}
+			f^{-1}(M):=\{x\in X\mid f(x)\in M\}&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\begin{flushleft}
+			\resizebox{!}{6cm}{
+				\begin{tikzpicture}[line width=1pt,>=latex]
+				\sffamily
+				\node (a1) {\Huge$a$};
+				\node[below=of a1] (a2) {\Huge$b$};
+				\node[below=of a2] (a3) {\Huge$c$};
+				\node[below=of a3] (a4) {\Huge$d$};
+				
+				\node[right=4cm of a1] (b1) {\Huge$1$};
+				\node[below=of b1] (b2) {\Huge$2$};
+				\node[below=of b2] (b3) {\Huge$3$};
+				\node[below=of b3] (b4) {\Huge$4$};
+				
+				\node[shape=ellipse,draw=black,minimum size=3cm,fit={(a1) (a4)}] {};
+				\node[shape=ellipse,draw=black,minimum size=3cm,fit={(b1) (b4)}] {};
+				
+				\node[below=2cm of a4,font=\color{black}\Large\bfseries] {\Huge$X$};
+				\node[below=2cm of b4,font=\color{black}\Large\bfseries] {\Huge$M\subseteq Y$};
+				
+				\draw[->,black] (a1) -- (b1);
+				\draw[->,black] (a2) -- (b2);
+				\draw[->,black] (a3) -- (b1);
+				\draw[->,black] (a4) -- (b4);
+				
+				
+				\node[right=3cm of b1] {\Huge$f^{-1}(M)=\{a,b,c,d\}$};
+				\end{tikzpicture}
+			}
+		\end{flushleft}
+		Eine besondere Art von Abbildung ist die identische Abbildung oder auch einfach Identität\index{Identität}. Dabei handelt es sich um eine Funktion, die genau ihr Argument zurückgibt. $id_{\mathbb{R}}:\mathbb{R}\rightarrow\mathbb{R},x\mapsto x$ ist z.B. die identische Abbildung auf den reellen Zahlen.\newline\newline
+		Es gibt drei sehr wichtige Begriffe für Abbildungen: Injektivität\index{Injektiv}, Surjektivität\index{Surjektiv} und Bijektivität\index{Bijektiv}. Diese sind wie folgt definiert:
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
+			\textbf{Surjektiv}\index{Surjektiv} bedeutet, dass jedes Element der Zielmenge ein nichtleeres Urbild hat.
+			\begin{flushleft}
+				\resizebox{!}{4cm}{
+					\begin{tikzpicture}[line width=1pt,>=latex]
+					\sffamily
+					\node (a1) {\Huge$a$};
+					\node[below=of a1] (a2) {\Huge$b$};
+					\node[below=of a2] (a3) {\Huge$c$};
+					\node[below=of a3] (a4) {\Huge$d$};
+					
+					\node[right=4cm of a1] (b1) {\Huge$1$};
+					\node[below=of b1] (b2) {\Huge$2$};
+					\node[below=of b2] (b3) {\Huge$3$};
+					\node[below=of b3] (b4) { };
+					
+					\node[shape=ellipse,draw=black,minimum size=3cm,fit={(a1) (a4)}] {};
+					\node[shape=ellipse,draw=black,minimum size=3cm,fit={(b1) (b4)}] {};
+					
+					\node[below=2cm of a4,font=\color{black}\Large\bfseries] {\Huge$X$};
+					\node[below=2cm of b4,font=\color{black}\Large\bfseries] {\Huge$Y$};
+					
+					\draw[->,black] (a1) -- (b1);
+					\draw[->,black] (a2) -- (b2);
+					\draw[->,black] (a3) -- (b1);
+					\draw[->,black] (a4) -- (b3);
+					\end{tikzpicture}
+				}
+			\end{flushleft}
+		\end{tcolorbox}
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
+			\textbf{Injektiv}\index{Injektiv} bedeutet, dass jedes Element der Zielmenge höchstens ein Urbild hat.
+			\begin{flushleft}
+				\resizebox{!}{4cm}{
+					\begin{tikzpicture}[line width=1pt,>=latex]
+					\sffamily
+					\node (a1) {\Huge$a$};
+					\node[below=of a1] (a2) {\Huge$b$};
+					\node[below=of a2] (a3) {\Huge$c$};
+					\node[below=of a3] (a4) { };
+					
+					\node[right=4cm of a1] (b1) {\Huge$1$};
+					\node[below=of b1] (b2) {\Huge$2$};
+					\node[below=of b2] (b3) {\Huge$3$};
+					\node[below=of b3] (b4) {\Huge$4$};
+					
+					\node[shape=ellipse,draw=black,minimum size=3cm,fit={(a1) (a4)}] {};
+					\node[shape=ellipse,draw=black,minimum size=3cm,fit={(b1) (b4)}] {};
+					
+					\node[below=2cm of a4,font=\color{black}\Large\bfseries] {\Huge$X$};
+					\node[below=2cm of b4,font=\color{black}\Large\bfseries] {\Huge$Y$};
+					
+					\draw[->,black] (a1) -- (b1);
+					\draw[->,black] (a2) -- (b2);
+					\draw[->,black] (a3) -- (b4);
+					\end{tikzpicture}
+				}
+			\end{flushleft}
+		\end{tcolorbox}
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
+			\textbf{Bijektiv}\index{Bijektiv} bedeutet, die Funktion sowohl surjektiv als auch injektiv ist.
+			\begin{flushleft}
+				\resizebox{!}{4cm}{
+					\begin{tikzpicture}[line width=1pt,>=latex]
+					\sffamily
+					\node (a1) {\Huge$a$};
+					\node[below=of a1] (a2) {\Huge$b$};
+					\node[below=of a2] (a3) {\Huge$c$};
+					\node[below=of a3] (a4) {\Huge$d$};
+					
+					\node[right=4cm of a1] (b1) {\Huge$1$};
+					\node[below=of b1] (b2) {\Huge$2$};
+					\node[below=of b2] (b3) {\Huge$3$};
+					\node[below=of b3] (b4) {\Huge$4$};
+					
+					\node[shape=ellipse,draw=black,minimum size=3cm,fit={(a1) (a4)}] {};
+					\node[shape=ellipse,draw=black,minimum size=3cm,fit={(b1) (b4)}] {};
+					
+					\node[below=2cm of a4,font=\color{black}\Large\bfseries] {\Huge$X$};
+					\node[below=2cm of b4,font=\color{black}\Large\bfseries] {\Huge$Y$};
+					
+					\draw[->,black] (a1) -- (b3);
+					\draw[->,black] (a2) -- (b2);
+					\draw[->,black] (a3) -- (b1);
+					\draw[->,black] (a4) -- (b4);
+					\end{tikzpicture}
+				}
+			\end{flushleft}
+		\end{tcolorbox}
+		\noindent Hinweis: Für die Begriffe injektiv\index{Injektiv}, surjektiv\index{Surjektiv} und bijektiv\index{Bijektiv}, gibt es noch eine Erklärung im Kapitel zur \highlight{subsubsec:umkehrbarkeit}{Umkehrbarkeit}.
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}
@@ -3825,6 +3989,7 @@
 \pagebreak
 \section{Übungsaufgaben}
 	\subsection{Beweise}
+		Beweise sind besonders kniffelig, denn zu verstehen, was Beweise sind und wie sie funktionieren ist sehr einfach. Einen eigenen Beweis zu führen ist jedoch extrem schwierig und erfordert viel Übung. Deshalb lohnt es sich so viele Beweise wie möglich auszuprobieren und auch, wenn man scheitert, die Lösung nachzuvollziehen.
 		\subsubsection{Aufgabe A}
 			Z.z.: Wenn $n\in\mathbb{N}$ eine ungerade Zahl ist, dann ist auch $n^2$ eine ungerade Zahl.\newline\newline
 			Wenn $n$ eine ungerade Zahl sein soll, hat sie die Form $n=2k\pm 1$. Diese Zahl quadrieren und untersuchen wir jetzt.
@@ -3837,6 +4002,20 @@
 				\end{flalign*}
 			\end{tcolorbox}
 			Man sieht dank den Umformungsschritten, dass auch $n^2$ eine ungerade Zahl ist.\newline\newline
+			$q.e.d.$
+		\subsubsection{Aufgabe B}
+			Z.z.: $\forall a,b,c\in\mathbb{R}\text{ mit }a,b,c>0:ab=c\Rightarrow a\le\sqrt{c}\lor b\le\sqrt{c}$
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				\Rightarrow\;&a>\sqrt{c}\land b>\sqrt{c}\\
+				\Rightarrow\;& ab>\sqrt{c}\cdot\sqrt{c}\\
+				\Leftrightarrow\;& ab>c	\text{\qquad Widerspruch zu }ab=c \\
+				&q.e.d.&&
+				\end{flalign*}
+			\end{tcolorbox}
+		\subsubsection{Aufgabe C}
+			Z.z.: $\nexists a,b\in\mathbb{Z}:6a+3b=1$\newline\newline
+			Die beiden Zahlen $6$ und $3$ auf der linken Seite sind beide durch $3$ teilbar, was auch bedeutet ihre Summe, also der komplette Linke Teil, ist durch $3$ teilbar. Die $1$ ist allerdings nicht durch $3$ teilbar, was einen Widerspruch darstellt. Somit gilt die Gleichung nicht und die Aussage, dass keine ganzen Zahlen $a$ und $b$ für diese existieren, ist korrekt.\newline\newline
 			$q.e.d.$
 	\printindex
 \end{document}

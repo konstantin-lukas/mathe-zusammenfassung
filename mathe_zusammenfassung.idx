@@ -20,22 +20,25 @@
 \indexentry{Wohldefiniert|hyperpage}{6}
 \indexentry{Repräsentant|hyperpage}{6}
 \indexentry{Repräsentantenunabhängig|hyperpage}{6}
-\indexentry{Identität|hyperpage}{7}
+\indexentry{Identität|hyperpage}{6}
 \indexentry{Injektiv|hyperpage}{7}
 \indexentry{Surjektiv|hyperpage}{7}
 \indexentry{Bijektiv|hyperpage}{7}
 \indexentry{Surjektiv|hyperpage}{8}
 \indexentry{Injektiv|hyperpage}{8}
 \indexentry{Bijektiv|hyperpage}{8}
-\indexentry{Injektiv|hyperpage}{8}
-\indexentry{Surjektiv|hyperpage}{8}
-\indexentry{Bijektiv|hyperpage}{8}
-\indexentry{Komplexe Zahlen|hyperpage}{9}
-\indexentry{Realteil|hyperpage}{9}
-\indexentry{Imaginärteil|hyperpage}{9}
-\indexentry{Imaginäre Einheit|hyperpage}{9}
-\indexentry{Imaginäre Zahl|hyperpage}{9}
-\indexentry{Gaußsche Zahlenebene|hyperpage}{9}
+\indexentry{Umkehrbar|hyperpage}{8}
+\indexentry{Restriktion|hyperpage}{9}
+\indexentry{Inklusion|hyperpage}{9}
+\indexentry{Einschränkung|hyperpage}{9}
+\indexentry{Inklusion|hyperpage}{9}
+\indexentry{Restriktion|hyperpage}{9}
+\indexentry{Komplexe Zahlen|hyperpage}{10}
+\indexentry{Realteil|hyperpage}{10}
+\indexentry{Imaginärteil|hyperpage}{10}
+\indexentry{Imaginäre Einheit|hyperpage}{10}
+\indexentry{Imaginäre Zahl|hyperpage}{10}
+\indexentry{Gaußsche Zahlenebene|hyperpage}{10}
 \indexentry{Kartesische Form|hyperpage}{10}
 \indexentry{Komplexe Konjugation|hyperpage}{10}
 \indexentry{Äquivalenzumformung|hyperpage}{10}
@@ -45,7 +48,7 @@
 \indexentry{Signum|hyperpage}{11}
 \indexentry{Satz von de Moivre|hyperpage}{12}
 \indexentry{Potenzgesetz|hyperpage}{13}
-\indexentry{Argument|hyperpage}{13}
+\indexentry{Argument|hyperpage}{14}
 \indexentry{Kehrwert|hyperpage}{15}
 \indexentry{Divisor|hyperpage}{15}
 \indexentry{Dividend|hyperpage}{15}
@@ -256,7 +259,7 @@
 \indexentry{Funktion|hyperpage}{48}
 \indexentry{Abszisse|hyperpage}{48}
 \indexentry{Ordinate|hyperpage}{48}
-\indexentry{Injektivität|hyperpage}{48}
+\indexentry{Injektivität|hyperpage}{49}
 \indexentry{Surjektiv|hyperpage}{49}
 \indexentry{Bijektiv|hyperpage}{49}
 \indexentry{Definitionsbereich|hyperpage}{49}
@@ -418,6 +421,7 @@
 \indexentry{Innere Funktion|hyperpage}{65}
 \indexentry{Argument|hyperpage}{65}
 \indexentry{Äußere Funktion|hyperpage}{65}
+\indexentry{Komposition|hyperpage}{65}
 \indexentry{Abszisse|hyperpage}{65}
 \indexentry{Ordinate|hyperpage}{65}
 \indexentry{Koordinatensystem|hyperpage}{65}

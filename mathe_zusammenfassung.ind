@@ -13,7 +13,7 @@
   \item Additionsverfahren, \hyperpage{29}
   \item Annähern, \hyperpage{50}, \hyperpage{61}
   \item Anstieg, \hyperpage{67}, \hyperpage{73}
-  \item Argument, \hyperpage{11}, \hyperpage{13}, \hyperpage{48}, 
+  \item Argument, \hyperpage{11}, \hyperpage{14}, \hyperpage{48}, 
 		\hyperpage{65}
   \item Ausklammern, \hyperpage{58}, \hyperpage{60}
   \item Aussage, \hyperpage{52}, \hyperpage{87}
@@ -64,6 +64,7 @@
   \indexspace
 
   \item Ebenengleichung, \hyperpage{42}
+  \item Einschränkung, \hyperpage{9}
   \item Einsetzen, \hyperpage{52}, \hyperpage{56}, \hyperpage{73}, 
 		\hyperpage{75}, \hyperpage{77, 78}
   \item Ereignis, \hyperpage{90}
@@ -101,7 +102,7 @@
   \item Ganze Zahl, \hyperpage{6}, \hyperpage{51}
   \item Ganzrationale Funktion, \hyperpage{56}
   \item Gauß-Verfahren, \hyperpage{29}
-  \item Gaußsche Zahlenebene, \hyperpage{9}
+  \item Gaußsche Zahlenebene, \hyperpage{10}
   \item Gebrochenrationale Funktion, \hyperpage{61}
   \item Gebundener Vektor, \hyperpage{36}
   \item Gegenvektor, \hyperpage{36}
@@ -137,14 +138,15 @@
 
   \indexspace
 
-  \item Identität, \hyperpage{7}
-  \item Imaginäre Einheit, \hyperpage{9}
-  \item Imaginäre Zahl, \hyperpage{9}
-  \item Imaginärteil, \hyperpage{9}
+  \item Identität, \hyperpage{6}
+  \item Imaginäre Einheit, \hyperpage{10}
+  \item Imaginäre Zahl, \hyperpage{10}
+  \item Imaginärteil, \hyperpage{10}
   \item Implikation, \hyperpage{87}
   \item Indirekter Beweis, \hyperpage{88}
   \item Injektiv, \hyperpage{7, 8}
-  \item Injektivität, \hyperpage{48}
+  \item Injektivität, \hyperpage{49}
+  \item Inklusion, \hyperpage{9}
   \item Innere Funktion, \hyperpage{65}
   \item Integrieren, \hyperpage{81}
   \item Intervall, \hyperpage{22}, \hyperpage{49}, \hyperpage{85}
@@ -152,7 +154,7 @@
 
   \indexspace
 
-  \item Kartesische Form, \hyperpage{9}, \hyperpage{11}
+  \item Kartesische Form, \hyperpage{10, 11}
   \item Kathete, \hyperpage{32}
   \item Kegel, \hyperpage{35}
   \item Kehrwert, \hyperpage{15}
@@ -160,8 +162,9 @@
   \item Kombination, \hyperpage{90}
   \item Kombinatorik, \hyperpage{90}
   \item Komplement, \hyperpage{5}
-  \item Komplexe Konjugation, \hyperpage{9}
-  \item Komplexe Zahlen, \hyperpage{9}
+  \item Komplexe Konjugation, \hyperpage{10}
+  \item Komplexe Zahlen, \hyperpage{10}
+  \item Komposition, \hyperpage{65}
   \item Konjunktion, \hyperpage{87}
   \item Kontravalenz, \hyperpage{87}
   \item Koordinate, \hyperpage{78}
@@ -286,7 +289,7 @@
   \item Radius, \hyperpage{33--35}
   \item Rationale Funktion, \hyperpage{61}
   \item Rationale Zahl, \hyperpage{6}, \hyperpage{17}
-  \item Realteil, \hyperpage{9}
+  \item Realteil, \hyperpage{10}
   \item Rechengesetz, \hyperpage{67}
   \item Rechenregel, \hyperpage{24}
   \item Rechteck, \hyperpage{32}, \hyperpage{81}
@@ -298,6 +301,7 @@
   \item Reelle Zahl, \hyperpage{6}, \hyperpage{22}, \hyperpage{52}
   \item Repräsentant, \hyperpage{6}
   \item Repräsentantenunabhängig, \hyperpage{6}
+  \item Restriktion, \hyperpage{9}
   \item Resubstitution, \hyperpage{21}
   \item Richtung, \hyperpage{36}
   \item Richtungsvektor, \hyperpage{39, 40}, \hyperpage{44}
@@ -354,6 +358,7 @@
 
   \item Umfang, \hyperpage{33}
   \item Umformen, \hyperpage{63}, \hyperpage{67}
+  \item Umkehrbar, \hyperpage{8}
   \item Umkehrfunktion, \hyperpage{86}
   \item Umstellen, \hyperpage{22}, \hyperpage{27}, \hyperpage{73}, 
 		\hyperpage{75}, \hyperpage{78}, \hyperpage{100}

@@ -367,11 +367,18 @@
 			f:X\rightarrow Y,x\mapsto f(x)&&
 		\end{flalign*}
 		Dabei ist $X$ der \textit{Definitionsbereich}\index{Definitionsbereich} und $Y$ der \textit{Zielbereich}\index{Zielbereich} von $f$.\newline\newline
-		Wenn die Definition einer Abbildung erfüllt ist, spricht man auch von \textit{wohldefiniert}\index{Wohldefiniert}. Die Abbildungsvorschrift $f:\mathbb{Q}\rightarrow\mathbb{Z},\frac{m}{n}\mapsto m$ wäre z.B. nicht wohldefiniert und damit auch keine Abbildung. Der Grund dafür ist, dass man für dasselbe Argument unterschiedliche Werte kriegen kann. $\frac{1}{2}$ ist beispielsweise das gleiche wie $\frac{2}{4}$. Laut der Vorschrift, würden wir jedoch $1$ und $2$ als Werte kriegen. Damit ist jedem Wert der Definitionsmenge mehr als ein Wert der Zielmenge zugewiesen. Wenn man das Argument wie hier auf verschiedene Weisen darstellen kann, spricht man dabei von Repräsentanten\index{Repräsentant}. Ist jedem Repräsentanten dasselbe Element des Zielbereiches zugewiesen, sagt man, die Zuordnung ist \textit{repräsentantenunabhängig}\index{Repräsentantenunabhängig}. Diese Unabhängigkeit ist Voraussetzung für Wohldefiniertheit, jedoch muss man auch noch überprüfen, ob die Abbildungsvorschrift für alle Elemente des Definitions- und Zielbereichs funktioniert.\newline\newline
-		Die Teilmenge des Zielbereichs, die durch die gegeben Werte aus dem Definitionsbereich erzeugt wird, nennt man Bild von $X$ unter $f$.
+		Die formale Definition für eine Abbildung lautet wie folgt:
+		\begin{flalign*}
+			\forall x\in X \exists!y\in Y:f(x)=y&&
+		\end{flalign*}
+		Wenn die Definition einer Abbildung erfüllt ist, spricht man auch von \textit{wohldefiniert}\index{Wohldefiniert}. Die Abbildungsvorschrift $f:\mathbb{Q}\rightarrow\mathbb{Z},\frac{m}{n}\mapsto m$ wäre z.B. nicht wohldefiniert und damit auch keine Abbildung. Der Grund dafür ist, dass man für dasselbe Argument unterschiedliche Werte kriegen kann. $\frac{1}{2}$ ist beispielsweise das gleiche wie $\frac{2}{4}$. Laut der Vorschrift, würden wir jedoch $1$ und $2$ als Werte kriegen. Damit ist jedem Wert der Definitionsmenge mehr als ein Wert der Zielmenge zugewiesen. Wenn man das Argument wie hier auf verschiedene Weisen darstellen kann, spricht man dabei von Repräsentanten\index{Repräsentant}. Ist jedem Repräsentanten dasselbe Element des Zielbereiches zugewiesen, sagt man, die Zuordnung ist \textit{repräsentantenunabhängig}\index{Repräsentantenunabhängig}. Diese Unabhängigkeit ist Voraussetzung für Wohldefiniertheit, jedoch muss man auch noch überprüfen, ob die Abbildungsvorschrift für alle Elemente des Definitions- und Zielbereichs funktioniert. Das bedeutet konkret, dass z.B. eine Abbildung, die von $x$ nach $\frac{1}{x}$ projiziert, nur dann wohldefiniert ist, wenn ihre Definitionsmenge die Null ausschließt. Außerdem muss man darauf achten, dass die abgebildeten Werte alle im Zielbereich liegen.\newline\newline
+		Eine besondere Art von Abbildung ist die identische Abbildung oder auch einfach Identität\index{Identität}. Dabei handelt es sich um eine Funktion, die genau ihr Argument zurückgibt. $id_{\mathbb{R}}:\mathbb{R}\rightarrow\mathbb{R},x\mapsto x$ ist z.B. die identische Abbildung auf den reellen Zahlen.
+	\subsubsection{Bild und Urbild}
+		Die Menge der Werte aus dem Zielbereich $Y$, die $f$ auf einer Teilmenge $M$ des Definitionsbereiches tatsächlich abbildet, nennt man Bild von $M$ unter $f$.
 		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
 			\begin{flalign*}
-			\text{Im}(f)=\text{Bild}(f)=f(X):=\{f(x)\mid x\in X\}&&
+			&f(M):=\{f(x)\mid x\in M\}\\
+			&\text{Im}(f)=\text{Bild}(f):=f(X)&&
 			\end{flalign*}
 		\end{tcolorbox}
 		\begin{flushleft}
@@ -401,6 +408,7 @@
 				
 				
 				\node[right=3cm of b1] {\Huge$\text{Bild}(f)=\{1,2,4\}$};
+				\node[right=3cm of b2] {\Huge$f(\{a,b,c\})=\{1,2\}$};
 				\end{tikzpicture}
 			}
 		\end{flushleft}
@@ -428,7 +436,7 @@
 				\node[shape=ellipse,draw=black,minimum size=3cm,fit={(b1) (b4)}] {};
 				
 				\node[below=2cm of a4,font=\color{black}\Large\bfseries] {\Huge$X$};
-				\node[below=2cm of b4,font=\color{black}\Large\bfseries] {\Huge$M\subseteq Y$};
+				\node[below=2cm of b4,font=\color{black}\Large\bfseries] {\Huge$Y$};
 				
 				\draw[->,black] (a1) -- (b1);
 				\draw[->,black] (a2) -- (b2);
@@ -436,11 +444,12 @@
 				\draw[->,black] (a4) -- (b4);
 				
 				
-				\node[right=3cm of b1] {\Huge$f^{-1}(M)=\{a,b,c,d\}$};
+				\node[right=3cm of b1] {\Huge$f^{-1}(\{1,2\})=\{a,b,c\}$};
 				\end{tikzpicture}
 			}
 		\end{flushleft}
-		Eine besondere Art von Abbildung ist die identische Abbildung oder auch einfach Identität\index{Identität}. Dabei handelt es sich um eine Funktion, die genau ihr Argument zurückgibt. $id_{\mathbb{R}}:\mathbb{R}\rightarrow\mathbb{R},x\mapsto x$ ist z.B. die identische Abbildung auf den reellen Zahlen.\newline\newline
+		Achtung: Obwohl die Notation ähnlich ist, ist das Urbild von der \highlight{subsubsec:umkehrbarkeit}{Umkehrfunktion} zu unterscheiden.
+	\subsubsection{Abbildungseigenschaften}
 		Es gibt drei sehr wichtige Begriffe für Abbildungen: Injektivität\index{Injektiv}, Surjektivität\index{Surjektiv} und Bijektivität\index{Bijektiv}. Diese sind wie folgt definiert:
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
 			\textbf{Surjektiv}\index{Surjektiv} bedeutet, dass jedes Element der Zielmenge ein nichtleeres Urbild hat.
@@ -471,12 +480,14 @@
 					\draw[->,black] (a2) -- (b2);
 					\draw[->,black] (a3) -- (b1);
 					\draw[->,black] (a4) -- (b3);
+					
+					\node[right=3cm of b1] {\Huge Beispiel: $f:\mathbb{R}\to\mathbb{R}_0^+,x\mapsto x^4$};
 					\end{tikzpicture}
 				}
 			\end{flushleft}
 		\end{tcolorbox}
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
-			\textbf{Injektiv}\index{Injektiv} bedeutet, dass jedes Element der Zielmenge höchstens ein Urbild hat.
+			\textbf{Injektiv}\index{Injektiv} bedeutet, dass jedes Element der Zielmenge höchstens ein Element in seinem Urbild hat.
 			\begin{flalign*}
 			\forall x_1,x_2\in X:f(x_1)=f(x_2)\Rightarrow x_1=x_2&&
 			\end{flalign*}
@@ -503,12 +514,14 @@
 					\draw[->,black] (a1) -- (b1);
 					\draw[->,black] (a2) -- (b2);
 					\draw[->,black] (a3) -- (b4);
+					
+					\node[right=3cm of b1] {\Huge Beispiel: $f:\mathbb{R}_0^+\to\mathbb{R},x\mapsto x^4$};
 					\end{tikzpicture}
 				}
 			\end{flushleft}
 		\end{tcolorbox}
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
-			\textbf{Bijektiv}\index{Bijektiv} bedeutet, die ist Funktion sowohl surjektiv als auch injektiv.
+			\textbf{Bijektiv}\index{Bijektiv} bedeutet, die ist Funktion sowohl surjektiv als auch injektiv. Das heißt demnach auch, dass jedes Element der Zielmenge genau ein Element in seinem Urbild hat.
 			\begin{flushleft}
 				\resizebox{!}{4cm}{
 					\begin{tikzpicture}[line width=1pt,>=latex]
@@ -533,11 +546,24 @@
 					\draw[->,black] (a2) -- (b2);
 					\draw[->,black] (a3) -- (b1);
 					\draw[->,black] (a4) -- (b4);
+					
+					\node[right=3cm of b1] {\Huge Beispiel: $f:\mathbb{R}_0^+\to\mathbb{R}_0^+,x\mapsto x^4$};
 					\end{tikzpicture}
-				}
+				}\newline
+				Wenn eine Abbildung bijektiv ist, ist sie auch \highlight{subsubsec:umkehrbarkeit}{umkehrbar}\index{Umkehrbar} und anders herum.
 			\end{flushleft}
 		\end{tcolorbox}
-		\noindent Hinweis: Für die Begriffe injektiv\index{Injektiv}, surjektiv\index{Surjektiv} und bijektiv\index{Bijektiv}, gibt es noch eine Erklärung im Kapitel zur \highlight{subsubsec:umkehrbarkeit}{Umkehrbarkeit}.
+		\subsubsection{Restriktion und Inklusion}\index{Restriktion}\index{Inklusion}
+			Wenn man nicht den ganzen Definitionsbereich einer Abbildung betrachten will, kann man mithilfe einer Einschränkung\index{Einschränkung} (Restriktion) die Funktionen auf eine Teilmenge des ursprünglichen Definitionsbereichs begrenzen. Sei $f:X\to Y$ eine Funktion und $A\subseteq X$ eine Teilmenge $\neq\emptyset$ des Definitionsbereiches, so gilt für die \textbf{Restriktion} von $f$ auf $A$:
+			\begin{flalign*}
+				f\mid_A:A\to Y\text{ mit }f\mid_A(x):=f(x)\text{ für }x\in A&&
+			\end{flalign*}
+			Es gibt außerdem noch die \textbf{Inklusion}\index{Inklusion}. Dabei bildet man von einer Teilmenge auf den Definitionsbereich ab, wobei natürlich in diesem Fall der Definitionsbereich der Ursprungsfunktion gemeint ist.
+			\begin{flalign*}
+				\text{Ursprungsfunktion: }f:\textcolor{red}{X}\to \textcolor{teal}{Y},x\mapsto y\\
+				\text{Inklusion: }g:\textcolor{blue}{A}\to \textcolor{red}{X},x\mapsto x&&
+			\end{flalign*}
+			Die Inklusion scheint auf den ersten Blick wenig nützlich, aber man kann mit ihr auch die Restriktion\index{Restriktion} beschreiben. Geht man von $\textcolor{blue}{A}$ über $\textcolor{red}{X}$ nach $\textcolor{teal}{Y}$ kommt man auf dasselbe hinaus, wie bei der Restriktion von $f$ auf $A$. Es gilt nach den obigen Definitionen: $f\mid_A=f\circ g$.
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}
@@ -2242,22 +2268,22 @@
 			\subsubsection{Monotonie}
 			\label{subsubsec:monotonie}
 				\begin{tcolorbox}[boxsep=0pt,top=1cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
-						Seien $x_1$ und $x_2$ zwei Argumente\index{Argument} einer Funktion, so gelten folgende Definitionen:\newline\newline
+						Seien $x_1$ und $x_2$ zwei Argumente\index{Argument} einer Funktion und $M$ eine Teilmenge des Definitionsbereiches, so gelten folgende Definitionen für das Monotonieverhalten über $M$:\newline\newline
 						\textbf{Monoton wachsend}\index{Monoton}\index{Streng}\index{Wachsen}\index{Fallen}
 						\begin{flalign*}
-						\text{wenn }x_1\le x_2\text{ und }f(x_1)\le f(x_2)&&
+						\forall x_1,x_2\in M:x_1<x_2\Rightarrow f(x_1)\le f(x_2)&&
 						\end{flalign*}
 						\textbf{Streng monoton wachsend}
 						\begin{flalign*}
-						\text{wenn }x_1< x_2\text{ und }f(x_1)< f(x_2)&&
+						\forall x_1,x_2\in M:x_1<x_2\Rightarrow f(x_1)<f(x_2)&&
 						\end{flalign*}
 						\textbf{Monoton fallend}
 						\begin{flalign*}
-						\text{wenn }x_1\le x_2\text{ und }f(x_1)\ge f(x_2)&&
+						\forall x_1,x_2\in M:x_1<x_2\Rightarrow f(x_1)\ge f(x_2)&&
 						\end{flalign*}
 						\textbf{Streng monoton fallend}
 						\begin{flalign*}
-						\text{wenn }x_1< x_2\text{ und }f(x_1)> f(x_2)&&
+						\forall x_1,x_2\in M:x_1<x_2\Rightarrow f(x_1)>f(x_2)&&
 						\end{flalign*}
 				\end{tcolorbox}
 				\noindent Des Weiteren kann man, das Monotonieverhalten\index{Monotonieverhalten} einer Funktion mithilfe ihrer \highlight{subsec:ableitung}{Ableitung}\index{Ableitung} bestimmen. Ist die Ableitung $f^{\prime}$ einer Funktion\index{Funktion} größer oder gleich Null, so ist sie monoton wachsend. Ist sie größer als und ungleich Null, ist sie sogar streng monoton wachsend. Dasselbe gilt umgekehrt für monoton fallende Funktion, wenn ihre Ableitung an der untersuchten Stelle negativ ist.\newline\newline
@@ -2633,8 +2659,8 @@
 			\makeplot{{sin(deg(x))},{cos(deg(x))},{tan(deg(x))}}{{$f(x)=\sin(x)$},{$f(x)=\cos(x)$},{$f(x)=\tan(x)$}}{{1.5,-1},{4.5,-1},{7.5,-1}}{-10,10}{-2,2}{-10:10}{200}{17cm,7cm}{smooth}
 			Anmerkung: Die Nullstellen des Sinus sind die Extremstellen\index{Extremstelle} des Kosinus und umgekehrt. Ebenso haben Sinus und Tanges dieselben Nullstellen\index{Nullstelle}.
 		\subsection{Verkettete Funktionen}
-			Verkettungen\index{Verkettung} sind eigentliche keine eigene Funktionsart, sondern eine Möglichkeit Funktionen durch Zusammensetzung zu transformieren\index{Transformieren}. Man schreibt das als $f\circ g$ ("f nach g"). Man spricht hier bei $g$ auch von der \textit{inneren Funktion}\index{Innere Funktion}, da sie als Argument\index{Argument} in die \textit{äußere Funktion}\index{Äußere Funktion} $f$ eingesetzt wird.
-			\makeplot{{sin(deg(x))},{(x^2)/2},{sin(deg((x^2)/2))}}{{$f(x)=\sin(x)$},{$g(x)=\frac{x^2}{3}$},{$f\circ g(x)=\sin(\frac{x^2}{3})$}}{{1.5,-1},{4.5,-1},{8,-1}}{-10,10}{-2,2}{-10:10}{200}{17cm,7cm}{smooth}
+			Verkettungen\index{Verkettung} sind eigentliche keine eigene Funktionsart, sondern eine Möglichkeit Funktionen durch Zusammensetzung zu transformieren\index{Transformieren}. Man schreibt das als $f\circ g$ ("f nach g"). Man spricht hier bei $g$ auch von der \textit{inneren Funktion}\index{Innere Funktion}, da sie als Argument\index{Argument} in die \textit{äußere Funktion}\index{Äußere Funktion} $f$ eingesetzt wird. $f\circ g$ wäre also dasselbe, wie $f(g(x))$. Für \highlight{subsec:abbildungen}{Abbildungen} ganz allgemein, nennt man Verkettungen auch \textit{Kompositionen}\index{Komposition}.
+			\makeplot{{sin(deg(x))},{(x^2)/2},{sin(deg((x^2)/2))}}{{$f(x)=\sin(x)$},{$g(x)=\frac{x^2}{3}$},{$(f\circ g)(x)=\sin(\frac{x^2}{3})$}}{{1.5,-1},{4.5,-1},{8,-1}}{-10,10}{-2,2}{-10:10}{200}{17cm,7cm}{smooth}
 		\subsection{Kreisgleichungen}
 			Bei Funktionen ist es so, dass jeder Abszisse\index{Abszisse} ($x$-Achsenwert) genau eine Ordinate\index{Ordinate} ($y$-Achsenwert) zugeordnet werden kann. Das ist eine Besonderheit von Funktionen und nicht des Koordinatensystems an sich, da Funktionen \highlight{subsec:abbildungen}{Abbildungen} sind. Im Koordinatensystem\index{Koordinatensystem} können wir noch viele andere Gebilde darstellen, so z.B. auch einen Kreis\index{Kreis}.
 			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.45cm]
@@ -3448,6 +3474,7 @@
 			\egroup
 		\end{center}
 		Übrigens eine Eselsbrücke, um die Zeichen für Konjunktion und Disjunktion zu unterscheiden, sind die drei O: »Oder Oben Offen«. Und noch ein Hinweis: Die Implikation hat kein genaues Äquivalent in der Programmierung. Am besten merkt man sicher, dass eine Implikation immer wahr ist, außer für den Fall $W\Rightarrow F$.\newline\newline
+		Außerdem noch ein Hinweis zur Implikation: $A\Rightarrow B$ ist äquivalent zu $\lnot A\lor B$. Daraus kann man schließen, dass die Negation der Implikation $\lnot (A\Rightarrow B)$ äquivalent ist zu $A\land\lnot B$.\newline\newline
 		Wenn eine Formel in jedem Szenario (für alle Bewertungen) wahr ist, dann spricht man von einer Tautologie\index{Tautologie}. Beispielsweise ist $A\lor\lnot A$ eine solche Tautologie. Anders herum nennt man $A\land\lnot A$ einen Widerspruch\index{Widerspruch}.\newline\newline
 		Man kann des weiteren Aussagen auch von Elementen einer Menge abhängig machen. Dabei unterscheidet man, für wie viele Elemente die Aussage gelten soll. Dazu noch mal eine Übersicht über die sogenannten Quantoren\index{Quantor}:
 		\begin{center}
@@ -3984,19 +4011,10 @@
 					\end{tikzpicture}
 				\end{center}
 	\pagebreak
-\section{Modul: Lineare Algebra}
-	Kommt irgendwann
-\pagebreak
-\section{Modul: Analysis I}
-	Kommt irgendwann
-\pagebreak
-\section{Modul: Angewandte Mathematik für die Informatik}
-	Kommt irgendwann
-\pagebreak
 \section{Übungsaufgaben}
 	\subsection{Beweise}
 		Beweise sind besonders kniffelig, denn zu verstehen, was Beweise sind und wie sie funktionieren ist sehr einfach. Einen eigenen Beweis zu führen ist jedoch extrem schwierig und erfordert viel Übung. Deshalb lohnt es sich so viele Beweise wie möglich auszuprobieren und auch, wenn man scheitert, die Lösung nachzuvollziehen.
-		\subsubsection{Aufgabe A}
+		\subsubsection*{Aufgabe 1}
 			Z.z.: Wenn $n\in\mathbb{N}$ eine ungerade Zahl ist, dann ist auch $n^2$ eine ungerade Zahl.\newline\newline
 			Wenn $n$ eine ungerade Zahl sein soll, hat sie die Form $n=2k\pm 1$. Diese Zahl quadrieren und untersuchen wir jetzt.
 			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
@@ -4009,7 +4027,8 @@
 			\end{tcolorbox}
 			Man sieht dank den Umformungsschritten, dass auch $n^2$ eine ungerade Zahl ist.\newline\newline
 			$q.e.d.$
-		\subsubsection{Aufgabe B}
+		\vspace{1em}\hrule
+		\subsubsection*{Aufgabe 2}
 			Z.z.: $\forall a,b,c\in\mathbb{R}\text{ mit }a,b,c>0:ab=c\Rightarrow a\le\sqrt{c}\lor b\le\sqrt{c}$
 			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
 				\begin{flalign*}
@@ -4019,7 +4038,8 @@
 				&q.e.d.&&
 				\end{flalign*}
 			\end{tcolorbox}
-		\subsubsection{Aufgabe C}
+		\vspace{.5em}\hrule
+		\subsubsection*{Aufgabe 3}
 			Z.z.: $\nexists a,b\in\mathbb{Z}:6a+3b=1$\newline\newline
 			Die beiden Zahlen $6$ und $3$ auf der linken Seite sind beide durch $3$ teilbar, was auch bedeutet ihre Summe, also der komplette Linke Teil, ist durch $3$ teilbar. Die $1$ ist allerdings nicht durch $3$ teilbar, was einen Widerspruch darstellt. Somit gilt die Gleichung nicht und die Aussage, dass keine ganzen Zahlen $a$ und $b$ für diese existieren, ist korrekt.\newline\newline
 			$q.e.d.$

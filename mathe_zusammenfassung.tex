@@ -3509,14 +3509,15 @@
 					\Rightarrow\;&\exists m\in\mathbb{N}: n^2-1=4m\\
 					\Rightarrow\;&n^2-1\text{ ist durch 4 teilbar, da es das Vierfache einer natürlich Zahl }m\text{ ist.}&&
 				\end{flalign*}
-			\subsubsection{Indirekter Beweis}
-				Anders als beim direkten Beweis zeigt man beim indirekten Beweis\index{Indirekter Beweis} nicht, dass $A\Rightarrow B$ gilt, sondern $\lnot B\Rightarrow\lnot A$ oder auch $A\land\lnot B\Rightarrow F$. Dass diese Ausdrücke äquivalent sind, kann man anhand einer Wahrheitstafel überprüfen, denn sind alle Bewertungen gleich, sind die Ausdrücke äquivalent.
+				$q.e.d$
+			\subsubsection{Indirekter Beweis und Beweis durch Kontraposition}
+				Anders als beim direkten Beweis zeigt man beim indirekten Beweis\index{Indirekter Beweis} oder Beweis durch Kontraposition\index{Beweis durch Kontraposition} nicht, dass $A\Rightarrow B$ gilt, sondern $\lnot B\Rightarrow\lnot A$ oder auch $A\land\lnot B\Rightarrow F$. Dass diese Ausdrücke äquivalent sind, kann man anhand einer Wahrheitstafel überprüfen, denn sind alle Bewertungen gleich, sind die Ausdrücke äquivalent.
 				\begin{center}
 					\bgroup
 					\def\arraystretch{1.5}
 					\begin{tabularx}{\linewidth}{|l|l|@{\hspace{0.5cm}}|X|X|X|}
 						\hline
-						$A$ & $B$ & $A\Rightarrow B$ & $\lnot B\Rightarrow \lnot A$ & $A\land\lnot B\Rightarrow F$ \\ \hline
+						$A$ & $B$ & $A\Rightarrow B$ & $\lnot B\Rightarrow \lnot A$ (Kontrapos.) & $A\land\lnot B\Rightarrow F$ (indirekt) \\ \hline
 						$W$ & $W$ & $W$ & $W$ & $W$ \\ \hline
 						$W$ & $F$ & $F$ & $F$ & $F$ \\ \hline
 						$F$ & $W$ & $W$ & $W$ & $W$ \\ \hline
@@ -3539,9 +3540,9 @@
 					\Leftrightarrow&\;q^2=2k^2\\
 					\Rightarrow&\;q^2\text{ ist gerade.}
 					\Rightarrow q\text{ ist gerade.}\\
-					\Rightarrow&\;\sqrt{2}\text{ ist irrational, da p und q beide gerade und somit}\\
-					&\;\text{beide durch zwei teilbar, also nicht teilerfremd sind.}&&
+					\Rightarrow&\;\sqrt{2}\text{ ist irrational, da p und q beide gerade und ergo nicht teilerfremd sind}&&
 				\end{flalign*}
+				$q.e.d$
 			\subsubsection{Vollständige Induktion}
 				Die vollständige Induktion\index{Vollständige Induktion} wird oft genutzt um Aussagen der Form $\forall n\in\mathbb{N}:A(n)$ zu beweisen. Das wird in zwei Schritten getan. Zunächst beweist man durch Einsetzen (Induktionsanfang), dass die Aussage für das kleinstmögliche $n$ wahr ist. Wenn man dann im Indikationsschritt zeigen kann, dass die Aussage, wenn sie für $n$ gilt auch für $n+1$ gilt, hat man einen Beweis. Das kommt daher, dass man für das kleinste $n$ eindeutig durch einsetzen bewiesen hat. Dieses $n$ beweist dann, dass $n+1$ die Aussage erfüllt. Dieses wiederum beweist, dass $n+2$ die Aussage erfüllt und so weiter. Auch das erklärt sich am besten wieder mal mit einem Beispiel:\newline\newline
 				Zu beweisen ist diese Aussage:
@@ -3554,12 +3555,16 @@
 				\frac{1(1+1)}{2}=1&&
 				\end{flalign*}
 				Damit haben schon einmal bewiesen, dass es ein $n$ gibt, dass diese Aussage erfüllt.\newline\newline
-				\textbf{2. Indikationsschritt}
+				\textbf{2. Indikationsvoraussetzung (1. Teil des Indikationsschritts)}
 				\begin{flalign*}
-					&\text{Indikationsvoraussetzung: }\exists n\in\mathbb{N}:\sum^n_{k=1}k=\frac{n(n+1)}{2}\\
-					&\text{Zu zeigen: }\sum^{n+1}_{k=1}k=\frac{(n+1)(n+2)}{2}&&
+					\exists n\in\mathbb{N}:\sum^n_{k=1}k=\frac{n(n+1)}{2}&&
 				\end{flalign*}
-				Um jetzt zu zeigen, dass die Aussage für $n+1$ ebenfalls stimmt, wenn sie für $n$ stimmt, setzen wir sie gleich mit der Aussage für $n$ plus den Teil, der den Unterschied zwischen den beiden bildet ($n+1$). Das ist logisch, da wir nur noch den fehlenden Summanden drauf rechnen.
+				\textbf{3. Induktionsbehauptung  (2. Teil des Indikationsschritts)}
+				\begin{flalign*}
+				\sum^{n+1}_{k=1}k=\frac{(n+1)(n+2)}{2}&&
+				\end{flalign*}
+				Um jetzt zu zeigen, dass die Aussage für $n+1$ ebenfalls stimmt, wenn sie für $n$ stimmt, setzen wir sie gleich mit der Aussage für $n$ plus den Teil, der den Unterschied zwischen den beiden bildet ($n+1$). Das ist logisch, da wir nur noch den fehlenden Summanden drauf rechnen.\newline\newline
+				\textbf{4. Beweis der Induktionsbehauptung}
 				\begin{flalign*}
 					\sum^{n+1}_{k=1}k=\sum^n_{k=1}k+(n+1)&&
 				\end{flalign*}
@@ -3569,7 +3574,8 @@
 					\Leftrightarrow\;&(n+1)(n+2)=n(n+1)+2(n+1)\\
 					\Leftrightarrow\;&n+2=n+2&&
 				\end{flalign*}
-				Wir sehen jetzt ganz klar, dass wir eine wahre Aussage haben. Jetzt haben wir gezeigt, dass unter der Voraussetzung, dass es ein $n$ gibt, dass die Aussage erfüllt, auch $n+1$ die Aussage erfüllt. Da wir am Anfang bewiesen haben, dass $n=1$ die Gleichung erfüllt, ist sie somit auch für $n=2$ erfüllt und wenn wir wissen, dass sie für $n=2$ erfüllt ist, ist sie auch für $n=3$ erfüllt und so weiter!
+				Wir sehen jetzt ganz klar, dass wir eine wahre Aussage haben. Jetzt haben wir gezeigt, dass unter der Voraussetzung, dass es ein $n$ gibt, dass die Aussage erfüllt, auch $n+1$ die Aussage erfüllt. Da wir am Anfang bewiesen haben, dass $n=1$ die Gleichung erfüllt, ist sie somit auch für $n=2$ erfüllt und wenn wir wissen, dass sie für $n=2$ erfüllt ist, ist sie auch für $n=3$ erfüllt und so weiter!\newline\newline
+				$q.e.d.$
 	\section{Stochastik}
 		Einem stochastischen Modell liegt zunächst die Grundmenge\index{Grundmenge} oder auch das Universum\index{Universum} $\Omega$ zu Grunde. Das ist eine Menge, die alle möglichen Ausgänge für das jeweilige Zufallsexperiment\index{Zufallsexperiment} beinhaltet. Für einen Würfelwurf wäre die Grundmenge bspw. $\Omega=\{1;2;3;4;5;6\}$. Die Elemente in $\Omega$ (groß Omega) werden mit $\omega$ (klein Omega) bezeichnet und heißen Ergebnisse\index{Ergebnis}. Jede Teilmenge von $\Omega$ wird als Ereignis\index{Ereignis} bezeichnet. Die Wahrscheinlichkeit eines Ereignisses wird mit einem $P$ für Probabilität angegeben: $P(\{\omega\})$. Wenn die Wahrscheinlichkeit aller Ergebnisse gleich ist und nur endliche viele mögliche Ergebnisse existieren, spricht man von einem Laplace-Experiment\index{Laplace-Experiment}.
 		\subsection{Kombinatorik}

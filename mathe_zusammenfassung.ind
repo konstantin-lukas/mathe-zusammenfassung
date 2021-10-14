@@ -29,6 +29,7 @@
   \item Betragsgleichung, \hyperpage{53, 54}
   \item Betragsstrich, \hyperpage{54}
   \item Betragsungleichung, \hyperpage{23}
+  \item Beweis durch Kontraposition, \hyperpage{88}
   \item Bijektiv, \hyperpage{7, 8}, \hyperpage{49}
   \item Binomialkoeffizient, \hyperpage{90}, \hyperpage{93}
   \item Binomialverteilung, \hyperpage{94}
@@ -70,7 +71,7 @@
   \item Ereignis, \hyperpage{90}
   \item Ergebnis, \hyperpage{52, 53}, \hyperpage{60, 61}, 
 		\hyperpage{73}, \hyperpage{75}, \hyperpage{90}
-  \item Erwartungswert, \hyperpage{99}
+  \item Erwartungswert, \hyperpage{99, 100}
   \item Erweiterbar, \hyperpage{72}
   \item Euklidischer Algorithmus, \hyperpage{16}
   \item Exponent, \hyperpage{57}, \hyperpage{60}, \hyperpage{63}, 
@@ -122,7 +123,7 @@
   \item Grenzwert, \hyperpage{70}, \hyperpage{72, 73}, \hyperpage{75}
   \item Grundfläche, \hyperpage{34, 35}
   \item Grundflächenumfang, \hyperpage{34}
-  \item Grundmenge, \hyperpage{90--93}, \hyperpage{95}
+  \item Grundmenge, \hyperpage{90}, \hyperpage{92--95}
   \item Grundseite, \hyperpage{33}
   \item Größter gemeinsamer Teiler, \hyperpage{16}
 
@@ -199,7 +200,7 @@
   \item Logarithmusfunktion, \hyperpage{63}
   \item Logarithmusgesetz, \hyperpage{64}
   \item Lokal, \hyperpage{49}
-  \item Lotto, \hyperpage{93}
+  \item Lotto, \hyperpage{94}
   \item Lösungsmenge, \hyperpage{15}, \hyperpage{21--23}, 
 		\hyperpage{29, 30}, \hyperpage{52}, \hyperpage{55, 56}
 
@@ -210,7 +211,7 @@
   \item Menge der natürlichen Zahlen, \hyperpage{6}
   \item Mengen, \hyperpage{6}
   \item Minimalstelle, \hyperpage{49}
-  \item Mittelwert, \hyperpage{100}
+  \item Mittelwert, \hyperpage{101}
   \item Monom, \hyperpage{56, 57}
   \item Monoton, \hyperpage{48}
   \item Monotonieverhalten, \hyperpage{48}, \hyperpage{67}
@@ -327,12 +328,12 @@
   \item Spannvektor, \hyperpage{40}
   \item Spurpunkt, \hyperpage{40}
   \item Stammfunktion, \hyperpage{81}
-  \item Standardabweichung, \hyperpage{100, 101}
+  \item Standardabweichung, \hyperpage{101}
   \item Steigung, \hyperpage{68}
   \item Stetig, \hyperpage{71}, \hyperpage{99}
   \item Stetige Erweiterung, \hyperpage{72}
   \item Streng, \hyperpage{48}
-  \item Streuung, \hyperpage{100}
+  \item Streuung, \hyperpage{101}
   \item Strickt, \hyperpage{49}
   \item Stufenform, \hyperpage{29}
   \item Stützvektor, \hyperpage{39, 40}
@@ -349,7 +350,7 @@
   \item Tangentengleichung, \hyperpage{73}, \hyperpage{78}
   \item Taschenrechner, \hyperpage{64}
   \item Tautologie, \hyperpage{87}
-  \item Teilmenge, \hyperpage{5}, \hyperpage{92}
+  \item Teilmenge, \hyperpage{5}, \hyperpage{93}
   \item Term, \hyperpage{19--21}, \hyperpage{75}
   \item Transformieren, \hyperpage{65}
   \item Trigonometrische Funktion, \hyperpage{33}, \hyperpage{64}
@@ -372,7 +373,7 @@
   \indexspace
 
   \item Variable, \hyperpage{64}
-  \item Varianz, \hyperpage{100, 101}
+  \item Varianz, \hyperpage{101}
   \item Variation, \hyperpage{90}
   \item Vektoraddition, \hyperpage{45}
   \item Vereinfachen, \hyperpage{19}, \hyperpage{21}, \hyperpage{33}
@@ -390,7 +391,7 @@
   \item Wahrheitswert, \hyperpage{87}
   \item Wendepunkt, \hyperpage{73}, \hyperpage{77, 78}
   \item Wendestelle, \hyperpage{78}
-  \item Wertetabelle, \hyperpage{50}, \hyperpage{85}, \hyperpage{99}
+  \item Wertetabelle, \hyperpage{50}, \hyperpage{85}, \hyperpage{100}
   \item Widerspruch, \hyperpage{87}
   \item Windschief, \hyperpage{43, 44}
   \item Winkel, \hyperpage{33}
@@ -406,7 +407,7 @@
 
   \item Zielbereich, \hyperpage{6}
   \item Zufallsexperiment, \hyperpage{90}
-  \item Zufallsvariable, \hyperpage{98}
+  \item Zufallsvariable, \hyperpage{99}
   \item Zusammengesetzte Funktion, \hyperpage{73}
   \item Zweite Ableitung, \hyperpage{69}
   \item Zylinder, \hyperpage{34}

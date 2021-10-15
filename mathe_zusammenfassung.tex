@@ -307,7 +307,7 @@
 	\end{tcolorbox}
 	 \noindent Die Potenzmenge\index{Potenzmenge} einer Menge $M=\{1;2\}$ beinhaltet alle möglichen Teilmengen von $M$: $\mathfrak{P}(M)=\{\emptyset;\{1\};\{2\};\{1;2\}\}$.\newline\newline
 	 Das Komplement\index{Komplement} einer Menge $M$ in einem Universum\index{Universum} $U$ enthält alle Elemente, die nicht in $M$ sind, aber im Universum $U$ existieren. Sind das Universum z.B. die natürlichen Zahlen, so gilt: $M^C=\bar M=\mathbb{N}\setminus M$.
-	\subsection{Definierte Zahlenmengen}
+	\subsection{Zahlenbereiche}
 	\index{Mengen}
 		\begin{center}
 			\bgroup
@@ -316,12 +316,12 @@
 			\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
 				\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
 					\textbf{Natürliche Zahlen}\index{Natürliche Zahl}\newline\newline
-					$\mathbb{N} = \{ 1; 2; 3; ... \}$
+					$\mathbb{N} = \{ 1, 2, 3, ... \}$
 				\end{tcolorbox}
 				&
 				\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
 					\textbf{Natürliche Zahlen mit Null}\index{Menge der natürlichen Zahlen}\newline\newline
-					$\mathbb{N}_0 = \{ 0; 1; 2; 3; ... \}$
+					$\mathbb{N}_0 = \{ 0, 1, 2, 3, ... \}$
 				\end{tcolorbox}
 			\end{tabularx}
 			\egroup
@@ -333,7 +333,7 @@
 		\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
 			\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
 				\textbf{Ganze Zahlen}\index{Ganze Zahl}\newline\newline
-				$\mathbb{Z} = \{ ... ; -2; -1; 0; 1; 2; 3; ... \}$
+				$\mathbb{Z} = \{ ... , -2, -1, 0, 1, 2, 3, ... \}$
 			\end{tcolorbox}
 			&
 			\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
@@ -2496,8 +2496,8 @@
 				Wir haben jetzt $x=0$ als Lösung, jedoch erfüllt dieses Ergebnis nicht die Bedingung $x<-1$ und ist daher auch nicht in der Lösungsmenge\index{Lösungsmenge} enthalten.
 			\end{tcolorbox}
 			\noindent Abschließend können wir feststellen, dass unsere Lösungsmenge $\mathbb{L}=\left\{10;-\frac{2}{3}\right\}$ ist. Durch Einsetzen\index{Einsetzen} in eine der beiden Funktionen erhalten wir dann unsere Schnittpunkte\index{Schnittpunkt} $P_1(10\mid 16)$ und $P_2\left(-\frac{2}{3}\mid\frac{16}{3}\right)$.
-		\subsection{Ganzrationale Funktionen}
-			Polynome\index{Polynom} sind die Summe aus den Vielfachen von Monomen\index{Monom}. Eine ganzrationale Funktion\index{Ganzrationale Funktion} oder auch Polynomfunktion\index{Polynomfunktion} genannt mit dem Koeffizienten\index{Koeffizient} $a_n$ hat folgende Form:
+		\subsection{Polynomfunktionen (Ganzrationale Funktionen)}
+			Polynome\index{Polynom} sind die Summe aus den Vielfachen von Monomen\index{Monom}. Eine Polynomfunktion\index{Polynomfunktion} oder auch ganzrationale Funktion\index{Ganzrationale Funktion} genannt mit dem Koeffizienten\index{Koeffizient} $a_n$ hat folgende Form:
 			\begin{flalign*}
 			p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x^1+1_0&&
 			\end{flalign*}
@@ -4020,34 +4020,151 @@
 \section{Übungsaufgaben}
 	\subsection{Beweise}
 		Beweise sind besonders kniffelig, denn zu verstehen, was Beweise sind und wie sie funktionieren ist sehr einfach. Einen eigenen Beweis zu führen ist jedoch extrem schwierig und erfordert viel Übung. Deshalb lohnt es sich so viele Beweise wie möglich auszuprobieren und auch, wenn man scheitert, die Lösung nachzuvollziehen.
+		\subsubsection{Direkte Beweise}
 		\subsubsection*{Aufgabe 1}
-			Z.z.: Wenn $n\in\mathbb{N}$ eine ungerade Zahl ist, dann ist auch $n^2$ eine ungerade Zahl.\newline\newline
-			Wenn $n$ eine ungerade Zahl sein soll, hat sie die Form $n=2k\pm 1$. Diese Zahl quadrieren und untersuchen wir jetzt.
-			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
-				\begin{flalign*}
-				n^2=&(2k-1)^2\\
-				=&4k^2-4k+1\\
-				=&2(2k^2-2k)+1&&\mid x=2k^2-2k\\
-				=&2x+1&&
-				\end{flalign*}
-			\end{tcolorbox}
-			Man sieht dank den Umformungsschritten, dass auch $n^2$ eine ungerade Zahl ist.\newline\newline
-			$q.e.d.$
+		Z.z.: $\nexists a,b\in\mathbb{Z}:6a+3b=1$\newline\newline
+		Die beiden Zahlen $6$ und $3$ auf der linken Seite sind beide durch $3$ teilbar, was auch bedeutet ihre Summe, also der komplette Linke Teil, ist durch $3$ teilbar. Die $1$ ist allerdings nicht durch $3$ teilbar, was einen Widerspruch darstellt. Somit gilt die Gleichung nicht und die Aussage, dass keine ganzen Zahlen $a$ und $b$ für diese existieren, ist korrekt.\newline\newline
+		$q.e.d.$
+		\subsubsection{Indirekte Beweise}
+		\subsubsection*{Aufgabe 1}
+		Z.z.: Wenn $n\in\mathbb{N}$ eine ungerade Zahl ist, dann ist auch $n^2$ eine ungerade Zahl.\newline\newline
+		Wenn $n$ eine ungerade Zahl sein soll, hat sie die Form $n=2k\pm 1$. Diese Zahl quadrieren und untersuchen wir jetzt.
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			\begin{flalign*}
+			n^2=&(2k-1)^2\\
+			=&4k^2-4k+1\\
+			=&2(2k^2-2k)+1&&\mid x=2k^2-2k\\
+			=&2x+1&&
+			\end{flalign*}
+		\end{tcolorbox}
+		Man sieht dank den Umformungsschritten, dass auch $n^2$ eine ungerade Zahl ist.\newline\newline
+		$q.e.d.$
 		\vspace{1em}\hrule
+		
 		\subsubsection*{Aufgabe 2}
-			Z.z.: $\forall a,b,c\in\mathbb{R}\text{ mit }a,b,c>0:ab=c\Rightarrow a\le\sqrt{c}\lor b\le\sqrt{c}$
-			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
-				\begin{flalign*}
-				\Rightarrow\;&a>\sqrt{c}\land b>\sqrt{c}\\
-				\Rightarrow\;& ab>\sqrt{c}\cdot\sqrt{c}\\
-				\Leftrightarrow\;& ab>c	\text{\qquad Widerspruch zu }ab=c \\
-				&q.e.d.&&
-				\end{flalign*}
-			\end{tcolorbox}
-		\vspace{.5em}\hrule
+		Z.z.: $\forall a,b,c\in\mathbb{R}\text{ mit }a,b,c>0:ab=c\Rightarrow a\le\sqrt{c}\lor b\le\sqrt{c}$
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			\begin{flalign*}
+			\Rightarrow\;&a>\sqrt{c}\land b>\sqrt{c}\\
+			\Rightarrow\;& ab>\sqrt{c}\cdot\sqrt{c}\\
+			\Leftrightarrow\;& ab>c	\text{\qquad Widerspruch zu }ab=c \\
+			&q.e.d.&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\subsubsection{Vollständige Induktion}
+		\subsubsection*{Aufgabe 1}
+		\begin{flalign*}
+		\sum^n_{i=1}(4+i)\stackrel{!}{=}\frac{n\cdot(n+9)}{2}&&
+		\end{flalign*}
+		\textbf{1. Induktionsanfang}
+		\begin{flalign*}
+		\sum^1_{i=1}(4+i)=5=\frac{1\cdot(1+9)}{2}&&
+		\end{flalign*}
+		\textbf{2. Induktionsvoraussetzung}
+		\begin{flalign*}
+		\exists n\in\mathbb{N}:\sum^n_{i=1}(4+i)=\frac{n\cdot(n+9)}{2}&&
+		\end{flalign*}
+		\textbf{3. Induktionsbehauptung}
+		\begin{flalign*}
+		\sum^{n+1}_{i=1}(4+i)=\frac{(n+1)\cdot(n+10)}{2}&&
+		\end{flalign*}
+		\textbf{4. Beweis der Induktionsbehauptung}
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			\begin{flalign*}
+			\sum^{n+1}_{i=1}(4+i)=&\left(\sum^n_{i=1}(4+i)\right)+4+n+1\\
+			\stackrel{I.V.}{=}&\frac{n\cdot(n+9)}{2}+4+n+1&&\mid\text{ mit $\frac{2}{2}$ erweitern}\\
+			=&\frac{n\cdot(n+9)}{2}+\frac{8}{2}+\frac{2n}{2}+\frac{2}{2}\\
+			=&\frac{n\cdot(n+9)+2n+10}{2}\\
+			=&\frac{n^2+11n+10}{2}\\
+			=&\frac{(n+1)\cdot(n+10)}{2}\\
+			&q.e.d.&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\vspace{1em}\hrule
+		
+		\subsubsection*{Aufgabe 2}
+		\begin{flalign*}
+		\sum^n_{i=1}i^3\stackrel{!}{=}\left(\frac{(n+1)n}{2}\right)^2&&
+		\end{flalign*}
+		\textbf{1. Induktionsanfang}
+		\begin{flalign*}
+		\sum^1_{i=1}i^3=1=\left(\frac{(1+1)\cdot 1}{2}\right)^2&&
+		\end{flalign*}
+		\textbf{2. Induktionsvoraussetzung}
+		\begin{flalign*}
+		\exists n\in\mathbb{N}:\sum^n_{i=1}i^3=\left(\frac{(n+1)n}{2}\right)^2&&
+		\end{flalign*}
+		\textbf{3. Induktionsbehauptung}
+		\begin{flalign*}
+		\sum^{n+1}_{i=1}i^3=\left(\frac{(n+2)(n+1)}{2}\right)^2&&
+		\end{flalign*}
+		\textbf{4. Beweis der Induktionsbehauptung}
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			\begin{flalign*}
+			\sum^{n+1}_{i=1}i^3=&\left(\sum^n_{i=1}i^3\right)+(n+1)^3\\
+			\stackrel{I.V.}{=}&\left(\frac{(n+1)n}{2}\right)^2+(n+1)^3&&\mid\text{ Potenzgesetz}\\
+			=&\frac{((n+1)n)^2}{4}+(n+1)^3&&\mid\text{ mit $\frac{4}{4}$ erweitern}\\
+			=&\frac{(n+1)^2n^2+4(n+1)^3}{4}\\
+			=&\frac{(n+1)^2\cdot (n^2+4(n+1))}{4}\\
+			=&\frac{(n+1)^2\cdot (n^2+4n+4)}{4}&&\mid\text{ binomische Formel}\\
+			=&\frac{(n+1)^2\cdot (n+2)^2}{4}&&\mid\text{ Potenzgesetz}\\
+			=&\left(\frac{(n+2)(n+1)}{2}\right)^2\\
+			&q.e.d.&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\vspace{1em}\hrule
+		
 		\subsubsection*{Aufgabe 3}
-			Z.z.: $\nexists a,b\in\mathbb{Z}:6a+3b=1$\newline\newline
-			Die beiden Zahlen $6$ und $3$ auf der linken Seite sind beide durch $3$ teilbar, was auch bedeutet ihre Summe, also der komplette Linke Teil, ist durch $3$ teilbar. Die $1$ ist allerdings nicht durch $3$ teilbar, was einen Widerspruch darstellt. Somit gilt die Gleichung nicht und die Aussage, dass keine ganzen Zahlen $a$ und $b$ für diese existieren, ist korrekt.\newline\newline
-			$q.e.d.$
+		\begin{flalign*}
+		\sum^n_{i=1}(2i-1)\stackrel{!}{=}n^2&&
+		\end{flalign*}
+		\textbf{1. Induktionsanfang}
+		\begin{flalign*}
+		\sum^n_{i=1}(2i-1)=1=1^2&&
+		\end{flalign*}
+		\textbf{2. Induktionsvoraussetzung}
+		\begin{flalign*}
+		\exists n\in\mathbb{N}:\sum^n_{i=1}(2i-1)=n^2&&
+		\end{flalign*}
+		\textbf{3. Induktionsbehauptung}
+		\begin{flalign*}
+		\sum^{n+1}_{i=1}(2i-1)=(n+1)^2&&
+		\end{flalign*}
+		\textbf{4. Beweis der Induktionsbehauptung}
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			\begin{flalign*}
+			\sum^{n+1}_{i=1}(2i-1)=&\sum^n_{i=1}(2i-1)+2n+1\\
+			\stackrel{I.V.}{=}&n^2+2n+1&&\mid\text{ binomische Formel}\\
+			=&(n+1)^2\\
+			&q.e.d.&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\vspace{1em}\hrule
+		
+		\subsubsection*{Aufgabe 4}
+		\begin{flalign*}
+		\sum^{n-1}_{i=0}2^i\stackrel{!}{=}2^n-1&&
+		\end{flalign*}
+		\textbf{1. Induktionsanfang}
+		\begin{flalign*}
+		\sum^{1-1}_{i=0}2^i=1=2^1-1&&
+		\end{flalign*}
+		\textbf{2. Induktionsvoraussetzung}
+		\begin{flalign*}
+		\exists n\in\mathbb{N}:\sum^{n-1}_{i=0}2^i=2^n-1&&
+		\end{flalign*}
+		\textbf{3. Induktionsbehauptung}
+		\begin{flalign*}
+		\sum^{n}_{i=0}2^i=2^{n+1}-1&&
+		\end{flalign*}
+		\textbf{4. Beweis der Induktionsbehauptung}
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			\begin{flalign*}
+			\sum^{n}_{i=0}2^i=&\sum^{n-1}_{i=0}2^i+2^{n}\\
+			\stackrel{I.V.}{=}&2^n-1+2^{n}\\
+			=&2^{n+1}-1\\
+			&q.e.d.&&
+			\end{flalign*}
+		\end{tcolorbox}
 	\printindex
 \end{document}

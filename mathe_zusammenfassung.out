@@ -1,5 +1,5 @@
 \BOOKMARK [1][-]{section.1}{Mengen}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Definierte Zahlenmengen}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.1}{Zahlenbereiche}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{Abbildungen}{section.1}% 3
 \BOOKMARK [3][-]{subsubsection.1.2.1}{Bild und Urbild}{subsection.1.2}% 4
 \BOOKMARK [3][-]{subsubsection.1.2.2}{Abbildungseigenschaften}{subsection.1.2}% 5
@@ -79,7 +79,7 @@
 \BOOKMARK [3][-]{subsubsection.8.2.2}{Wurzelgleichungen mit mehreren Wurzeln \(Beispiel\)}{subsection.8.2}% 79
 \BOOKMARK [2][-]{subsection.8.3}{Betragsfunktionen}{section.8}% 80
 \BOOKMARK [3][-]{subsubsection.8.3.1}{Betragsgleichungen mit mehreren Betr\344gen}{subsection.8.3}% 81
-\BOOKMARK [2][-]{subsection.8.4}{Ganzrationale Funktionen}{section.8}% 82
+\BOOKMARK [2][-]{subsection.8.4}{Polynomfunktionen \(Ganzrationale Funktionen\)}{section.8}% 82
 \BOOKMARK [3][-]{subsubsection.8.4.1}{L\366sen durch Substitution}{subsection.8.4}% 83
 \BOOKMARK [3][-]{subsubsection.8.4.2}{L\366sen durch Faktorisierung}{subsection.8.4}% 84
 \BOOKMARK [3][-]{subsubsection.8.4.3}{L\366sen mit binomischen Formeln}{subsection.8.4}% 85
@@ -138,3 +138,6 @@
 \BOOKMARK [3][-]{subsubsection.12.4.1}{Erwartungswert, Varianz und Standardabweichung}{subsection.12.4}% 138
 \BOOKMARK [1][-]{section.13}{\334bungsaufgaben}{}% 139
 \BOOKMARK [2][-]{subsection.13.1}{Beweise}{section.13}% 140
+\BOOKMARK [3][-]{subsubsection.13.1.1}{Direkte Beweise}{subsection.13.1}% 141
+\BOOKMARK [3][-]{subsubsection.13.1.2}{Indirekte Beweise}{subsection.13.1}% 142
+\BOOKMARK [3][-]{subsubsection.13.1.3}{Vollst\344ndige Induktion}{subsection.13.1}% 143

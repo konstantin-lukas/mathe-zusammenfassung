@@ -138,6 +138,9 @@
 		\end{tikzpicture}
 	\end{center}
 }
+\newcommand{\abs}[1]{
+	\left\vert #1 \right\vert
+}
 \pgfplotsset{
 	integral segments/.code={\pgfmathsetmacro\integralsegments{#1}},
 	integral segments=3,
@@ -773,7 +776,17 @@
 			\begin{flalign*}
 				{\displaystyle \operatorname {sgn}(x):={\begin{cases}+1&\;{\text{falls}}\quad x>0\\\;\;\,0&\;{\text{falls}}\quad x=0\\-1&\;{\text{falls}}\quad x<0\\\end{cases}}}&&
 			\end{flalign*}
-			Der Grund dafür, dass wir hier das Vorzeichen benötigen, ist dass für den Kosinus in einem Intervall zwei Lösungen existieren. Die Kosinusfunktion hat z.B. bei $\frac{\pi}{2}$ und bei $\frac{3\pi}{2}$ eine Nullstelle. Das Vorzeichen hilft uns die richtige Lösung zu finden. Wenn wir nämlich $-\frac{\pi}{2}$ rauskriegen, rechnen wir $2\pi$ (eine Periode) drauf und erhalten $\frac{3\pi}{2}$.
+			Der Grund dafür, dass wir hier das Vorzeichen benötigen, ist dass für den Kosinus in einem Intervall zwei Lösungen existieren. Die Kosinusfunktion hat z.B. bei $\frac{\pi}{2}$ und bei $\frac{3\pi}{2}$ eine Nullstelle. Das Vorzeichen hilft uns die richtige Lösung zu finden. Wenn wir nämlich $-\frac{\pi}{2}$ rauskriegen, rechnen wir $2\pi$ (eine Periode) drauf und erhalten $\frac{3\pi}{2}$.\newline\newline
+			Mithilfe der Exponentialdarstellung, können wir einige einfache Rechenregeln aufstellen, mit denen wir komplexe Zahlen sehr viel schneller berechnen können:
+			\begin{tcolorbox}[boxsep=0pt,top=.1cm,left=.5cm,right=.4cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+				\begin{flalign*}
+					&z_1\cdot z_2= r_1\cdot r_2\cdot e^{i(\phi_1+\phi_2)}\\
+					&\frac{z_1}{z_2}=\frac{\abs{z_1}}{\abs{z_2}}\cdot e^{i(\phi_1-\phi_2)}\\
+					&\sin(\phi)=\frac{1}{2i}(e^{i\phi}-e^{-i\phi})\\
+					&\cos(\phi)=\frac{1}{2}(e^{i\phi}+e^{-i\phi})\\
+					&\overline{e^{i\phi}}=e^{-i\phi}&&
+				\end{flalign*}
+			\end{tcolorbox}
 			\subsubsection{Komplexe Zahlen potenzieren}
 			\label{subsubsec:komplexpotenz}
 				Möchte man eine komplexe Zahl mit einer sehr hohen Zahl potenzieren, ist es ratsam, sie zunächst in die Polarform zu bringen.
@@ -2262,6 +2275,42 @@
 			\end{array}\right)&&
 			\end{flalign*}
 			Das Gleichungssystem bietet unendlich viele Lösungen, d.h., diese drei Vektoren sind linear abhängig.
+		\subsection{Dreiecksungleichung}
+		 Wenn man einen Vektor\index{Vektor} $\overrightarrow{AC}$ betrachtet, dann ist dessen Betrag\index{Betrag} immer kleiner oder gleich den Beträgen aus $\overrightarrow{AB}$ und $\overrightarrow{AC}$. Das liegt einfach daran, dass die Strecke zwischen $A$ und $C$ nicht größer sein kann als die zwischen $A$, $B$ und $C$. Sie kann auch nur dann genauso groß sein, wenn der Punkt $B$ auf der Strecke zwischen $A$ und $C$ liegt.
+		 \begin{center}
+		 	\begin{tikzpicture}
+		 	\begin{axis}[
+		 	width=17cm,
+		 	height=7cm,
+		 	xmin=0, xmax=28,
+		 	ymin=0, ymax=10,
+		 	axis y line=center,
+		 	axis x line=middle,
+		 	ticklabel style={fill=white},
+		 	minor tick num=2,
+		 	grid=both,
+		 	grid style={line width=.1pt, draw=gridgray!10},
+		 	major grid style={line width=.2pt,draw=gridgray!50},
+		 	axis equal image,
+		 	yticklabels={,,},
+		 	xticklabels={,,}
+		 	]
+		 	\addplot [-stealth, thick, blue] coordinates { (6,3) (22,3) };
+		 	\addplot [-stealth, thick, red] coordinates { (6,3) (14,7) };
+		 	\addplot [-stealth, thick, red] coordinates { (14,7) (22,3) };
+		 	\node at (axis cs: 5,3) {\large$A$};
+		 	\node at (axis cs: 14,8) {\large$B$};
+		 	\node at (axis cs: 23,3) {\large$C$};
+		 	\end{axis}
+		 	\end{tikzpicture}
+		\end{center}
+	 	Daraus kann man zwei Ungleichungen\index{Ungleichung} aufstellen, die man sehr häufig braucht, z.B. um \highlight{subsec:beweise}{Beweise}\index{Beweis} zu führen.
+	 	\begin{tcolorbox}[boxsep=0pt,top=0.25cm,left=1cm,right=1cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]
+	 		\begin{flalign*}
+	 			&\abs{\overrightarrow{AC}}\le\abs{\overrightarrow{AB}}+\abs{\overrightarrow{BC}}\\
+	 			&\abs{\overrightarrow{AB}+\overrightarrow{BC}}\le\abs{\overrightarrow{AB}}+\abs{\overrightarrow{BC}}&&
+	 		\end{flalign*}
+	 	\end{tcolorbox}
 	\pagebreak
 	\section{2D-Koordinatensystem}
 		\subsection{Allgemeines}
@@ -2368,6 +2417,14 @@
 			x_5&=...=-0,5549581321&&
 			\end{flalign*}
 			Wenn man zwei Mal den gleichen Wert bekommt, weiß man, dass man den endgültigen Wert erreicht hat.
+		\subsection{Lineare Funktionen}
+			Lineare Funktionen haben die allgemeine Form $f(x)=mx+n$ und ihre Graphen ziehen eine gerade Linie durch das Koordinatensystem.
+			\subsubsection{Schnittwinkel berechnen}
+				Um den Winkel\index{Winkel} zwischen einer linearen Funktion und der Abszisse zu berechnen, verwendet man die Formel $\tan(\alpha)=m$. Man muss also nur den Arkustangens\index{Arkustangens} aus dem Anstieg der Funktionen nehmen. Sollte der Anstieg negativ sein, muss man ggf. das Ergebnis von $180$ abziehen, um so den richtigen Winkel zu erhalten.
+				\plotfunc{{x-1}}{{$f(x)=x-1$}}{{1,2}}{-6,6}{-6,6}{-10:10}{300}{17cm,7cm}{smooth}
+				In dem obigen Beispiel beträgt der Winkel $45^{\circ}$, da $\arctan (1)=45$.\newline\newline
+				Man kann auch den Schnittwinkel\index{Schnittwinkel} zwischen zwei linearen Funktionen berechnen. Dafür gibt es die Formel $\tan(\alpha)=\abs{\frac{m_1-m_2}{1+m_1m_2}}$. Für das folgende Beispiel beträgt der Schnittwinkel gerundet $18^{\circ}$.
+				\plotfunc{{x-1},{2*x-3}}{{$f(x)=x-1$},{$f(x)=2x-3$}}{{0.5,3},{0.5,2}}{-6,6}{-6,6}{-10:10}{300}{17cm,7cm}{smooth}
 		\subsection{Potenz- und Wurzelfunktionen}
 			Potenzfunktionen\index{Potenzfunktion} in der Form $f(x)=x^m$ mit $m\in\mathbb{N}_0$ und $D_f=\mathbb{R}$ heißen \textbf{Monome} (im Gegensatz zu Polynomen). Potenzfunktionen mit der Form $x^{\frac{m}{n}}$ sind \textbf{Wurzelfunktionen}\index{Wurzelfunktion}, wenn $n\ge 2$ gilt und der Bruch\index{Bruch} keine ganze Zahl\index{Ganze Zahl} ist. An der Potenz\index{Potenz} kann man erkennen, ob eine Funktion gerade\index{Gerade} ($x^{2n}$) oder ungerade\index{Ungerade} ($x^{2n-1}$) ist. Hier sind einige Beispiele für Graphen\index{Graph} von Potenz- und Wurzelfunktionen:\newline
 			\makeplot{{x^3},{x^2},{x^(3/2)},{x^(2/3)},{x^(-1/2)},{x^(-2)},{x^(-3)}}{{$f(x)=x^3$},{$f(x)=x^2$},{$f(x)=x^{\frac{3}{2}}$},{$f(x)=x^{\frac{2}{3}}$},{$f(x)=x^{-\frac{1}{2}}$},{$f(x)=x^{-2}$},{$f(x)=x^{-3}$}}{{1,-1},{1,-2},{4,-1},{4,-2},{7,-1},{7,-2},{10,-1}}{-6,6}{-6,6}{-10:10}{300}{17cm,7cm}{smooth}
@@ -3117,6 +3174,35 @@
 			\begin{flalign*}
 				F=2\cdot \left(\frac{1}{12}+\frac{5}{12}\right)=1\text{ Flächeneinheit}&&
 			\end{flalign*}
+		\subsection{Optimierungsaufgaben}
+			Manchmal muss man anhand einer gegebenen Situation ein Optimum\index{Optimum} berechnen. Wir schauen uns folgendes Beispiel an: Gesucht ist das Rechteck mit einem Umfang\index{Umfang} von $100m$, das die größtmögliche Fläche\index{Fläche} hat. Wie lang sind die Seiten dieses Dreiecks und wie groß ist sein Flächeninhalt? Dabei handelt sich eigentlich um eine ganz simple Aufgabe der Differenzialrechnung\index{Differenzialrechnung}. Die Kunst besteht darin aus dem Text die richtige Funktion aufzustellen. Anhand der Aufgabenstellung können wir 2 Aussagen über unsere Zielfunktion treffen:
+			\begin{flalign*}
+				&A(a,b)=ab\\
+				&100=2a+2b&&
+			\end{flalign*}
+			Durch einfaches Umstellen und Einsetzen verbinden wir jetzt diese zwei Bedingungen zu einer Funktion:
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+					&&100=&2a+2b\\
+					\Leftrightarrow&&b=&50-a\\
+					\Rightarrow&&A(a)&=a(50-a)=-a^2+50a&&
+				\end{flalign*}
+			\end{tcolorbox}
+			Jetzt berechnen wird das Maximum dieser Funktion mithilfe der Ableitung.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				\text{Notwendige Bedingung: }A^{\prime}(a)=&0\\
+				0=&-2a+50\\
+				\Leftrightarrow a=&25&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+				\begin{flalign*}
+				\text{Hinreichende Bedingung: }A^{\prime}(a)=&0\land A^{\prime\prime}(a)<0\\
+				A^{\prime\prime}(25)=&-2&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Jetzt haben wir das Maximum für eine Seite berechnet und können dieses einfach in unsere Gleichung vom Anfang einsetzen: $b=50-a\Rightarrow b=50-25=25$. Das größtmögliche Rechteck ist also ein Quadrat mit der Seitenlänge $25cm$ und einer Fläche von $625cm^2$.
 	\pagebreak
 	\section{Integralrechnung}
 	\label{sec:integralrechnung}
@@ -3450,13 +3536,31 @@
 					&&f(x)=&\frac{1}{e^x}\\
 					&&\Downarrow&&\\
 					&&V=&\pi\cdot\int_{-1}^3\left(\frac{1}{e^x}\right)^2dx\\
-					\Leftrightarrow&&=&\pi\cdot\left[-e^{-x}+k\right]_{-1}^3\\
-					\Leftrightarrow&&=&\pi\cdot(-e^{-3}+k+e^{1}-k)\\
-					\Leftrightarrow&&\approx&2,67\cdot\pi\\
-					\Leftrightarrow&&\approx&8,38&&
+					&&=&\pi\cdot\left[-e^{-x}+k\right]_{-1}^3\\
+					&&=&\pi\cdot(-e^{-3}+k+e^{1}-k)\\
+					&&\approx&2,67\cdot\pi\\
+					&&\approx&8,38&&
 				\end{flalign*}
 			\end{tcolorbox}
 			\noindent Hinweis: Wenn um die $y$-Achse rotiert werden soll, muss man diese Formel auf die \highlight{subsubsec:umkehrbarkeit}{Umkehrfunktion}\index{Umkehrfunktion} anwenden!
+		\subsection{Uneigentliche Integrale}
+			Möchte man das Integral einer Funktion über einem unbeschränkten Intervall\index{Unbeschränkt} oder einer unbeschränkten Funktion berechnen, muss dann den Limes verwenden um herauszufinden, welchem Wert sich das Integral\index{Integral} annähert. Das nennt man uneigentliches Integral\index{Uneigentliches Integral}.
+			\subsubsection{Unbeschränktes Intervall}
+				\plotfunc{{1/x^3}}{{$f(x)=\frac{1}{x^3}$}}{{2,2}}{-6,6}{-5,5}{-30:30}{330}{17cm,7cm}{smooth}
+				\begin{flalign*}
+					\int^{\infty}_1\frac{1}{x^3}dx=&\lim_{k\to\infty}\int^k_1\frac{1}{x^3}dx\\
+					=&\lim_{k\to\infty}\left[-\frac{1}{2x^2}\right]^k_1\\
+					=&\lim_{k\to\infty}\left(-\frac{1}{2k^2}+\frac{1}{2}\right)\\
+					=&\dunderline{\frac{1}{2}}&&
+				\end{flalign*}
+			\subsubsection{Unbeschränkte Funktion}	
+				\plotfunc{{1/x^(1/2)}}{{$f(x)=\frac{1}{x^{0,5}}$}}{{1,2}}{0,10}{0,6}{-30:30}{350}{17cm,7cm}{smooth}
+				\begin{flalign*}
+				\int^3_0\frac{1}{\sqrt{x}}dx=&\lim_{k\to 0}\int^3_k\frac{1}{\sqrt{x}}dx\\
+				=&\lim_{k\to 0}\left[2\sqrt{x}\right]^3_k\\
+				=&\lim_{k\to 0}\left(2\sqrt{3}-2\sqrt{k}\right)\\
+				=&\dunderline{2\sqrt{3}}&&
+				\end{flalign*}
 	\pagebreak
 	\section{Logik}
 		Die Grundlagen der Logik ähneln stark der Logik in Programmiersprachen, jedoch mit andern Symbolen. Die wichtigsten Begriffe sind zunächst einmal Negation\index{Negation} ($\lnot$, »nicht«), Konjunktion\index{Konjunktion} ($\land$,  »und«), Disjunktion\index{Disjunktion} ($\lor$, »oder«), Kontravalenz\index{Kontravalenz} ($\nLeftrightarrow$, »entweder oder«), Äquivalenz\index{Äquivalenz} ($\Leftrightarrow$) und Implikation\index{Implikation} ($\Rightarrow$). Außerdem redet man bei $W$ (wahr) und $F$ (falsch) von Wahrheitswerten\index{Wahrheitswert}. Ob Aussagen\index{Aussage} wahr oder falsch sind, wird oft in Wahrheitstafeln\index{Wahrheitstafel} dargestellt. Dazu eine Übersicht:
@@ -3497,6 +3601,7 @@
 			\forall a,b\in \mathbb{N}:a>b.&&
 		\end{flalign*}
 		\subsection{Beweise}
+		\label{subsec:beweise}
 			Oft reicht es in der Mathematik nicht aus nur ein Ergebnis zu berechnen, sondern man muss auch beweisen, dass das was man da gemacht hat, stimmt. Beweise zu finden ist nicht so trivial, wie Zahlen in eine Formel einzusetzen. Man muss ein bisschen kreativ sein und viel üben. Dafür gibt es verschiedene Herangehensweisen, die man kennen sollte.
 			\subsubsection{Direkter Beweis}
 				Beim direkten Beweis\index{Direkter Beweis} versucht man über Zwischenschritte zu zeigen, dass aus $A$ auch wirklich $B$ folgt. Die Idee ist simpel, aber einen Beweis zu finden ist nicht immer einfach, deshalb ein Beispiel:\newline\newline

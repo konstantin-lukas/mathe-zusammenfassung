@@ -637,7 +637,16 @@
 			\egroup
 		\end{center}
 		Hinweis: Wenn man das kartesische Produkt in ein Koordinatensystem einzeichnet, verwendet man gestrichelte Linien, um zu zeigen, dass der jeweilige Wert genau nicht mehr Teil des kartesischen Produktes ist.
-	\subsection{Komplexe Zahlen}
+	\subsection{Mengensysteme}
+		Ein Mengensystem ist eine Menge, deren Elemente ebenfalls Mengen sind. Eines der besten Beispiele für ein Mengensystem\index{Mengensystem} ist die Potenzmenge\index{Potenzmenge}, deren Elemente alle Teilmengen sind, die sich mit den Elemente einer Grundmenge\index{Grundmenge} erzeugen lassen. Haben wir beispielsweise die Grundmenge $\Omega=\{1,2,3\}$, dann ist ihre Potenzmenge $\mathfrak{P}(\Omega)=\{\emptyset,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\{1,2,3\}\}$. Wenn man jetzt den Durchschnitt oder die Vereinigung aller dieser Teilmenge bilden möchte, wäre es sehr mühsam alle Mengen einzeln aufzuschreiben. Deshalb benutzt man den großen Durchschnitt\index{Großer Durchschnitt} und die große Vereinigung\index{Große Vereinigung}. Diese haben eine sehr einfach Notation, die es uns erlaubt, einfach ein Zeichen vor das Mengensystem zu setzen und so eine Operation auf alle Elemente durchzuführen. Für ein Mengensystem $M$ gilt allgemein:
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=0cm,right=20cm, bottom=0cm,arc=0pt,auto outer arc,colback=white,colframe=white]
+			\begin{flalign*}
+				&\text{Großer Durchschnitt: }&\bigcap M=\{x\mid\forall m\in M:x\in m\}\\
+				&\text{Große Vereinigung: }&\bigcup M=\{x\mid\exists m\in M:x\in m\}&&
+			\end{flalign*}
+		\end{tcolorbox}\vspace{.4cm}
+		\noindent Nehmen wir als Beispiel noch mal unsere Potenzmenge von oben. Wenden wir den großen Durchschnitt an erhalten wir die leeren Menge, denn es gibt keine Elemente in den Mengenelemente der Potenzmenge, die in jedem Mengenelement enthalten sind: $\bigcap\mathfrak{P}(\Omega)=\emptyset$. Wenn wir die Potenzmenge groß vereinigen, erhalten wir wieder Omega: $\bigcup\mathfrak{P}(\Omega)=\{1,2,3\}=\Omega$.
+	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}
 			\begin{tikzpicture}

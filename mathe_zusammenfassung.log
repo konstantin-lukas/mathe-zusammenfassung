@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  17 OCT 2021 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  19 OCT 2021 19:44
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -1668,30 +1668,61 @@ ung-figure11.pdf> <./figures/mathe_zusammenfassung-figure12.pdf>]
 
 ===== Image 'figures/mathe_zusammenfassung-figure17' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure18' is up-to-date. ======
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 643--643
+[] 
+ []
+
+
+Overfull \hbox (379.33327pt too wide) detected at line 646
+[]
+ []
+
+
+Overfull \hbox (4.5894pt too wide) in paragraph at lines 641--647
+\OT1/cmr/m/n/12 
+ = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/
+cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 , dann ist ih
+-re Po-tenz-men-ge $\U/euf/m/n/12 P\OT1/cmr/m/n/12 (
+) = \OMS/cmsy/m/n/12 f;\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\O
+MS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 2\OMS/cmsy
+/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OMS/cmsy/m/n/12
+ g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1
+/cmr/m/n/12 2\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/
+n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; 
+\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OMS/cms
+y/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/1
+2 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OMS/cmsy/m/n/12 gg$\O
+T1/cmr/m/n/12 .
+ []
+
 [9 <./figures/mathe_zusammenfassung-figure17.pdf> <./figures/mathe_zusammenfass
 ung-figure18.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure19' is up-to-date. ======
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 669--669
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 678--678
 [] 
  []
 
 
-Overfull \hbox (422.48886pt too wide) detected at line 675
-[]
- []
-
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 679--679
-[] 
- []
-
-
-Overfull \hbox (269.21648pt too wide) detected at line 685
+Overfull \hbox (422.48886pt too wide) detected at line 684
 []
  []
 
 [10 <./figures/mathe_zusammenfassung-figure19.pdf>]
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 688--688
+[] 
+ []
+
+
+Overfull \hbox (269.21648pt too wide) detected at line 694
+[]
+ []
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 696.
+
 \openout4 = `figures/mathe_zusammenfassung-figure20.md5'.
 
 \openout4 = `mathe_zusammenfassung.auxlock'.
@@ -1716,1336 +1747,1335 @@ Overfull \hbox (269.21648pt too wide) detected at line 685
 
 \openout4 = `mathe_zusammenfassung.auxlock'.
 
-
 ===== Image 'figures/mathe_zusammenfassung-figure24' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure25' is up-to-date. ======
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 772--783
 
-Underfull \hbox (badness 10000) in paragraph at lines 763--774
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--783
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 763--774
+Underfull \hbox (badness 10000) in paragraph at lines 787--798
 
  []
 
-[11 <./figures/mathe_zusammenfassung-figure24.pdf> <./figures/mathe_zusammenfas
+[12 <./figures/mathe_zusammenfassung-figure24.pdf> <./figures/mathe_zusammenfas
 sung-figure25.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 778--789
-
- []
-
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 806--806
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 815--815
 [] 
  []
 
 
-Overfull \hbox (505.88678pt too wide) detected at line 814
+Overfull \hbox (505.88678pt too wide) detected at line 823
 []
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 818--820
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 827--829
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure26' is up-to-date. ======
-[13]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 877--877
+[14]
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 886--886
 [] 
  []
 
 
-Overfull \hbox (385.43576pt too wide) detected at line 889
+Overfull \hbox (385.43576pt too wide) detected at line 898
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 874--890
+Underfull \hbox (badness 10000) in paragraph at lines 883--899
 
  []
 
-[14 <./figures/mathe_zusammenfassung-figure26.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 903--912
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 903--912
+[15 <./figures/mathe_zusammenfassung-figure26.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 912--921
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 903--912
+Underfull \hbox (badness 10000) in paragraph at lines 912--921
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 903--912
+Underfull \hbox (badness 10000) in paragraph at lines 912--921
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 903--912
+Underfull \hbox (badness 10000) in paragraph at lines 912--921
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 912--921
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure27' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 914--916
+Underfull \hbox (badness 10000) in paragraph at lines 923--925
 
  []
 
-[15 <./figures/mathe_zusammenfassung-figure27.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 929--938
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 929--938
+[16 <./figures/mathe_zusammenfassung-figure27.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 938--947
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 929--938
+Underfull \hbox (badness 10000) in paragraph at lines 938--947
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 947--950
+Underfull \hbox (badness 10000) in paragraph at lines 938--947
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 947--950
+Underfull \hbox (badness 10000) in paragraph at lines 956--959
 
  []
 
-[16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 998--999
+
+Underfull \hbox (badness 10000) in paragraph at lines 956--959
 
  []
 
-[18]
-Overfull \hbox (15.68538pt too wide) detected at line 1019
+[17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1008
+
+ []
+
+[19]
+Overfull \hbox (15.68538pt too wide) detected at line 1028
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1021--1022
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1031
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1032--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1066
 
  []
 
-[19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1102--1104
-
- []
-
-
+[20] [21]
 Underfull \hbox (badness 10000) in paragraph at lines 1111--1113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1111--1113
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1122
 
  []
 
-[21]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1122
+
+ []
+
+[22]
 ===== Image 'figures/mathe_zusammenfassung-figure28' is up-to-date. ======
-[22 <./figures/mathe_zusammenfassung-figure28.pdf>]
+[23 <./figures/mathe_zusammenfassung-figure28.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure29' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure30' is up-to-date. ======
-[23 <./figures/mathe_zusammenfassung-figure29.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1187
+[24 <./figures/mathe_zusammenfassung-figure29.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1196
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure31' is up-to-date. ======
-[24 <./figures/mathe_zusammenfassung-figure30.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1196--1199
+[25 <./figures/mathe_zusammenfassung-figure30.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1210--1211
+Underfull \hbox (badness 10000) in paragraph at lines 1219--1220
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure32' is up-to-date. ======
-[25 <./figures/mathe_zusammenfassung-figure31.pdf> <./figures/mathe_zusammenfas
-sung-figure32.pdf>] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 1239--1241
-
- []
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 1277--1279
+[26 <./figures/mathe_zusammenfassung-figure31.pdf> <./figures/mathe_zusammenfas
+sung-figure32.pdf>] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 1248--1250
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1358--1361
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1288
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1404--1406
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1370
 
  []
 
-[30] [31]
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1413--1415
+
+ []
+
+[31] [32]
 ===== Image 'figures/mathe_zusammenfassung-figure33' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure34' is up-to-date. ======
-[32 <./figures/mathe_zusammenfassung-figure33.pdf> <./figures/mathe_zusammenfas
-sung-figure34.pdf>] [33]
-Underfull \hbox (badness 1005) in paragraph at lines 1612--1613
+[33 <./figures/mathe_zusammenfassung-figure33.pdf> <./figures/mathe_zusammenfas
+sung-figure34.pdf>] [34]
+Underfull \hbox (badness 1005) in paragraph at lines 1621--1622
 \OT1/cmr/m/n/12 F[]ur ein Pris-ma[] mit der Man-tel-fl[]ache[] $\OML/cmm/m/it/1
 2 M$\OT1/cmr/m/n/12 , der Grund-fl[]ache[] $\OML/cmm/m/it/12 A$\OT1/cmr/m/n/12 
 , dem Grund-
  []
 
-[34] [35]
+[35] [36]
 ===== Image 'figures/mathe_zusammenfassung-figure35' is up-to-date. ======
-[36 <./figures/mathe_zusammenfassung-figure35.pdf>]
+[37 <./figures/mathe_zusammenfassung-figure35.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure36' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure37' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure38' is up-to-date. ======
-[37 <./figures/mathe_zusammenfassung-figure36.pdf> <./figures/mathe_zusammenfas
+[38 <./figures/mathe_zusammenfassung-figure36.pdf> <./figures/mathe_zusammenfas
 sung-figure37.pdf> <./figures/mathe_zusammenfassung-figure38.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1801--1805
+Underfull \hbox (badness 10000) in paragraph at lines 1810--1814
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1801--1805
+Underfull \hbox (badness 10000) in paragraph at lines 1810--1814
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure39' is up-to-date. ======
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 1865--1865
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 1874--1874
 
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 1865--1865
+Underfull \hbox (badness 2426) in paragraph at lines 1874--1874
 []\OT1/cmr/m/n/12 Diese No-ta-ti-on ist wahr-schein-lich am ein-
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 1865--1865
+Underfull \hbox (badness 1248) in paragraph at lines 1874--1874
 \OT1/cmr/m/n/12 fachs-ten zu ver-ste-hen, denn man hat zwei
  []
 
 
-Underfull \hbox (badness 2351) in paragraph at lines 1865--1865
+Underfull \hbox (badness 2351) in paragraph at lines 1874--1874
 []\OT1/cmr/m/n/12 Punk-te[], zwi-schen de-nen man ei-ne []Ge-ra-de[]
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure42' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 1908--1908
+Underfull \hbox (badness 10000) in paragraph at lines 1917--1917
 
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 1908--1908
+Underfull \hbox (badness 6893) in paragraph at lines 1917--1917
 []\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form wird an einen
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure45' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 1942--1942
+Underfull \hbox (badness 10000) in paragraph at lines 1951--1951
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1942--1942
+Underfull \hbox (badness 10000) in paragraph at lines 1951--1951
 []\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form braucht einen
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 1942--1942
+Underfull \hbox (badness 1337) in paragraph at lines 1951--1951
 []\OT1/cmr/m/n/12 St[]utzvektor[] und einen []Nor-ma-len-vek-tor[], der
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure48' is up-to-date. ======
-[39 <./figures/mathe_zusammenfassung-figure39.pdf> <./figures/mathe_zusammenfas
+[40 <./figures/mathe_zusammenfassung-figure39.pdf> <./figures/mathe_zusammenfas
 sung-figure42.pdf> <./figures/mathe_zusammenfassung-figure45.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1978--1978
+Underfull \hbox (badness 10000) in paragraph at lines 1987--1987
 
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 1978--1978
+Underfull \hbox (badness 2426) in paragraph at lines 1987--1987
 []\OT1/cmr/m/n/12 Diese No-ta-ti-on ist wahr-schein-lich am ein-
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 1978--1978
+Underfull \hbox (badness 1590) in paragraph at lines 1987--1987
 \OT1/cmr/m/n/12 fachs-ten zu ver-ste-hen, denn man hat drei
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure51' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2027--2027
+Underfull \hbox (badness 10000) in paragraph at lines 2036--2036
 
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 2027--2027
+Underfull \hbox (badness 2042) in paragraph at lines 2036--2036
 []\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form wer-den an einen
  []
 
 
-Underfull \hbox (badness 3780) in paragraph at lines 2027--2027
+Underfull \hbox (badness 3780) in paragraph at lines 2036--2036
 \OT1/cmr/m/n/12 Orts-vek-tor { ge-nannt []St[]utzvektor[][] { zwei
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 2027--2027
+Underfull \hbox (badness 1038) in paragraph at lines 2036--2036
 []\OT1/cmr/m/n/12 Rich-tungs-vek-to-ren[][] oder auch []Spann-vek-to-ren[][]
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure54' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2067--2067
+Underfull \hbox (badness 10000) in paragraph at lines 2076--2076
 
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 2067--2067
+Underfull \hbox (badness 1383) in paragraph at lines 2076--2076
 []\OT1/cmr/m/n/12 Bei die-ser No-ta-ti-ons-form braucht man nur
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 2067--2067
+Underfull \hbox (badness 2318) in paragraph at lines 2076--2076
 \OT1/cmr/m/n/12 vek-tor[][] ist ein Vek-tor, der or-tho-go-nal[] zur
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure57' is up-to-date. ======
-[40 <./figures/mathe_zusammenfassung-figure48.pdf> <./figures/mathe_zusammenfas
+[41 <./figures/mathe_zusammenfassung-figure48.pdf> <./figures/mathe_zusammenfas
 sung-figure51.pdf> <./figures/mathe_zusammenfassung-figure54.pdf>]
-Overfull \hbox (3.4244pt too wide) in paragraph at lines 2071--2072
+Overfull \hbox (3.4244pt too wide) in paragraph at lines 2080--2081
 \OT1/cmr/m/n/12 Manchmal muss man zwi-schen den ver-schie-de-nen For-meln um-wa
 n-deln, da-her hier ei-ne []Ubersicht.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2086--2088
+Underfull \hbox (badness 10000) in paragraph at lines 2095--2097
 
  []
 
-[41 <./figures/mathe_zusammenfassung-figure57.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2106--2109
+[42 <./figures/mathe_zusammenfassung-figure57.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2115--2118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2106--2109
+Underfull \hbox (badness 10000) in paragraph at lines 2115--2118
 
- []
-
-[42]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2121--2121
-[] 
- []
-
-
-Overfull \hbox (262.64066pt too wide) detected at line 2124
-[]
- []
-
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2127--2127
-[] 
- []
-
-
-Overfull \hbox (316.42342pt too wide) detected at line 2134
-[]
- []
-
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2141--2141
-[] 
- []
-
-
-Overfull \hbox (421.63583pt too wide) detected at line 2156
-[]
  []
 
 [43]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2162--2162
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2130--2130
 [] 
  []
 
 
-Overfull \hbox (235.44266pt too wide) detected at line 2168
+Overfull \hbox (262.64066pt too wide) detected at line 2133
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2169
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2170--2172
-
- []
-
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2175--2175
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2136--2136
 [] 
  []
 
 
-Overfull \hbox (373.44147pt too wide) detected at line 2182
+Overfull \hbox (316.42342pt too wide) detected at line 2143
+[]
+ []
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2150--2150
+[] 
+ []
+
+
+Overfull \hbox (421.63583pt too wide) detected at line 2165
 []
  []
 
 [44]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2186--2186
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2171--2171
 [] 
  []
 
 
-Overfull \hbox (371.35725pt too wide) detected at line 2191
+Overfull \hbox (235.44266pt too wide) detected at line 2177
 []
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 2167--2178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2179--2181
+
+ []
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2184--2184
+[] 
+ []
+
+
+Overfull \hbox (373.44147pt too wide) detected at line 2191
+[]
+ []
+
+[45]
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 2195--2195
 [] 
  []
 
 
-Overfull \hbox (191.20634pt too wide) detected at line 2199
+Overfull \hbox (371.35725pt too wide) detected at line 2200
 []
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 2203--2203
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2204--2204
 [] 
  []
 
 
-Overfull \hbox (399.17401pt too wide) detected at line 2208
+Overfull \hbox (191.20634pt too wide) detected at line 2208
 []
  []
 
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 2224--2226
 
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 2212--2212
+[] 
+ []
+
+
+Overfull \hbox (399.17401pt too wide) detected at line 2217
+[]
  []
 
 [46]
+Underfull \hbox (badness 10000) in paragraph at lines 2233--2235
+
+ []
+
+[47]
 ===== Image 'figures/mathe_zusammenfassung-figure58' is up-to-date. ======
-[47 <./figures/mathe_zusammenfassung-figure58.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2320--2322
+[48 <./figures/mathe_zusammenfassung-figure58.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2329--2331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2338--2343
+Underfull \hbox (badness 10000) in paragraph at lines 2347--2352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2338--2343
+Underfull \hbox (badness 10000) in paragraph at lines 2347--2352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2338--2343
+Underfull \hbox (badness 10000) in paragraph at lines 2347--2352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2338--2343
+Underfull \hbox (badness 10000) in paragraph at lines 2347--2352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2338--2343
+Underfull \hbox (badness 10000) in paragraph at lines 2347--2352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2338--2343
+Underfull \hbox (badness 10000) in paragraph at lines 2347--2352
 
  []
 
-[48]
+[49]
 ===== Image 'figures/mathe_zusammenfassung-figure59' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2367--2370
+Underfull \hbox (badness 10000) in paragraph at lines 2376--2379
 
  []
 
-[49 <./figures/mathe_zusammenfassung-figure59.pdf>]
+[50 <./figures/mathe_zusammenfassung-figure59.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure60' is up-to-date. ======
-[50 <./figures/mathe_zusammenfassung-figure60.pdf>]
+[51 <./figures/mathe_zusammenfassung-figure60.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure61' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2425--2427
+Underfull \hbox (badness 10000) in paragraph at lines 2434--2436
 
  []
 
-[51 <./figures/mathe_zusammenfassung-figure61.pdf>]
+[52 <./figures/mathe_zusammenfassung-figure61.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure62' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2429--2430
+Underfull \hbox (badness 10000) in paragraph at lines 2438--2439
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure63' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2432--2434
+Underfull \hbox (badness 10000) in paragraph at lines 2441--2443
 
  []
 
-[52 <./figures/mathe_zusammenfassung-figure62.pdf> <./figures/mathe_zusammenfas
+[53 <./figures/mathe_zusammenfassung-figure62.pdf> <./figures/mathe_zusammenfas
 sung-figure63.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure64' is up-to-date. ======
-[53]
-Underfull \hbox (badness 10000) in paragraph at lines 2482--2483
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 2491--2492
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure65' is up-to-date. ======
-[54 <./figures/mathe_zusammenfassung-figure64.pdf> <./figures/mathe_zusammenfas
+[55 <./figures/mathe_zusammenfassung-figure64.pdf> <./figures/mathe_zusammenfas
 sung-figure65.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2487--2490
+Underfull \hbox (badness 10000) in paragraph at lines 2496--2499
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2493--2496
+Underfull \hbox (badness 10000) in paragraph at lines 2502--2505
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure66' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2512--2515
+Underfull \hbox (badness 10000) in paragraph at lines 2521--2524
 
  []
 
-[55 <./figures/mathe_zusammenfassung-figure66.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2526--2529
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2544--2547
+[56 <./figures/mathe_zusammenfassung-figure66.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2535--2538
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2544--2547
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2556
 
  []
 
-[56]
+
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2556
+
+ []
+
+[57]
 ===== Image 'figures/mathe_zusammenfassung-figure67' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2564--2566
+Underfull \hbox (badness 10000) in paragraph at lines 2573--2575
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2576--2578
+Underfull \hbox (badness 10000) in paragraph at lines 2585--2587
 
  []
 
-[57 <./figures/mathe_zusammenfassung-figure67.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2580--2581
+[58 <./figures/mathe_zusammenfassung-figure67.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2589--2590
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure68' is up-to-date. ======
-[58 <./figures/mathe_zusammenfassung-figure68.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2597--2598
+[59 <./figures/mathe_zusammenfassung-figure68.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2606--2607
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure69' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2608--2609
+Underfull \hbox (badness 10000) in paragraph at lines 2617--2618
 
  []
 
-[59 <./figures/mathe_zusammenfassung-figure69.pdf>]
+[60 <./figures/mathe_zusammenfassung-figure69.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure70' is up-to-date. ======
 
-Overfull \hbox (0.62164pt too wide) in paragraph at lines 2619--2620
+Overfull \hbox (0.62164pt too wide) in paragraph at lines 2628--2629
 \OT1/cmr/m/n/12 Wenn al-le an-de-ren Str[]ange rei-en, ist man lei-der ge-zwun
 -gen die Po-ly-nom-di-vi-si-on[] durch-zuf[]uhren.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2619--2620
+Underfull \hbox (badness 10000) in paragraph at lines 2628--2629
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure71' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2627--2631
+Underfull \hbox (badness 10000) in paragraph at lines 2636--2640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2627--2631
+Underfull \hbox (badness 10000) in paragraph at lines 2636--2640
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2627--2631
+Underfull \hbox (badness 10000) in paragraph at lines 2636--2640
 
  []
 
-[60 <./figures/mathe_zusammenfassung-figure70.pdf> <./figures/mathe_zusammenfas
+[61 <./figures/mathe_zusammenfassung-figure70.pdf> <./figures/mathe_zusammenfas
 sung-figure71.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure72' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure73' is up-to-date. ======
-[61 <./figures/mathe_zusammenfassung-figure72.pdf>]
+[62 <./figures/mathe_zusammenfassung-figure72.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure74' is up-to-date. ======
-[62 <./figures/mathe_zusammenfassung-figure73.pdf>]
+[63 <./figures/mathe_zusammenfassung-figure73.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure75' is up-to-date. ======
-[63 <./figures/mathe_zusammenfassung-figure74.pdf> <./figures/mathe_zusammenfas
+[64 <./figures/mathe_zusammenfassung-figure74.pdf> <./figures/mathe_zusammenfas
 sung-figure75.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure76' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure77' is up-to-date. ======
-[64 <./figures/mathe_zusammenfassung-figure76.pdf> <./figures/mathe_zusammenfas
+[65 <./figures/mathe_zusammenfassung-figure76.pdf> <./figures/mathe_zusammenfas
 sung-figure77.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure78' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure79' is up-to-date. ======
-[65 <./figures/mathe_zusammenfassung-figure78.pdf>]
+[66 <./figures/mathe_zusammenfassung-figure78.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure80' is up-to-date. ======
 
-Overfull \hbox (0.75153pt too wide) in paragraph at lines 2722--2728
+Overfull \hbox (0.75153pt too wide) in paragraph at lines 2731--2737
 \OT1/cmr/m/n/12 Bei Funk-tio-nen ist es so, dass je-der Ab-szis-se[] ($\OML/cmm
 /m/it/12 x$\OT1/cmr/m/n/12 -Achsenwert) ge-nau ei-ne Or-di-na-te[] ($\OML/cmm/m
 /it/12 y$\OT1/cmr/m/n/12 -Achsenwert)
  []
 
-[66 <./figures/mathe_zusammenfassung-figure79.pdf> <./figures/mathe_zusammenfas
+[67 <./figures/mathe_zusammenfassung-figure79.pdf> <./figures/mathe_zusammenfas
 sung-figure80.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure81' is up-to-date. ======
-[67 <./figures/mathe_zusammenfassung-figure81.pdf>]
+[68 <./figures/mathe_zusammenfassung-figure81.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure82' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2763--2766
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2775
 
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 2763--2766
+Underfull \hbox (badness 2229) in paragraph at lines 2772--2775
 \OT1/cmr/m/n/12 Neben der oben ge-nann-ten Ab-lei-tungs-re-gel[] von Funk-tio-n
 en, gibt es noch
  []
 
 
-Overfull \hbox (63.66138pt too wide) detected at line 2782
+Overfull \hbox (63.66138pt too wide) detected at line 2791
 []
  []
 
-[68 <./figures/mathe_zusammenfassung-figure82.pdf>]
+[69 <./figures/mathe_zusammenfassung-figure82.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure83' is up-to-date. ======
-[69 <./figures/mathe_zusammenfassung-figure83.pdf>]
+[70 <./figures/mathe_zusammenfassung-figure83.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure84' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 2848--2851
+Underfull \hbox (badness 10000) in paragraph at lines 2857--2860
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2848--2851
+Underfull \hbox (badness 10000) in paragraph at lines 2857--2860
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2853--2860
+Underfull \hbox (badness 10000) in paragraph at lines 2862--2869
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2853--2860
+Underfull \hbox (badness 10000) in paragraph at lines 2862--2869
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2853--2860
+Underfull \hbox (badness 10000) in paragraph at lines 2862--2869
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2853--2860
+Underfull \hbox (badness 10000) in paragraph at lines 2862--2869
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2853--2860
+Underfull \hbox (badness 10000) in paragraph at lines 2862--2869
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2853--2860
+Underfull \hbox (badness 10000) in paragraph at lines 2862--2869
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2853--2860
+Underfull \hbox (badness 10000) in paragraph at lines 2862--2869
 
  []
 
-[70 <./figures/mathe_zusammenfassung-figure84.pdf>] [71]
+[71 <./figures/mathe_zusammenfassung-figure84.pdf>] [72]
 ===== Image 'figures/mathe_zusammenfassung-figure85' is up-to-date. ======
-[72 <./figures/mathe_zusammenfassung-figure85.pdf>]
+[73 <./figures/mathe_zusammenfassung-figure85.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure86' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure87' is up-to-date. ======
-[73 <./figures/mathe_zusammenfassung-figure86.pdf>]
+[74 <./figures/mathe_zusammenfassung-figure86.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure88' is up-to-date. ======
-[74 <./figures/mathe_zusammenfassung-figure87.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2991--2993
+[75 <./figures/mathe_zusammenfassung-figure87.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3000--3002
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2994--2997
+Underfull \hbox (badness 10000) in paragraph at lines 3003--3006
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2994--2997
+Underfull \hbox (badness 10000) in paragraph at lines 3003--3006
 
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3009--3009
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3018--3018
 [] 
  []
 
 
-Overfull \hbox (535.62128pt too wide) detected at line 3021
+Overfull \hbox (535.62128pt too wide) detected at line 3030
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3005--3022
+Underfull \hbox (badness 10000) in paragraph at lines 3014--3031
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3005--3022
+Underfull \hbox (badness 10000) in paragraph at lines 3014--3031
 
  []
 
-[75 <./figures/mathe_zusammenfassung-figure88.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3027--3031
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3027--3031
+[76 <./figures/mathe_zusammenfassung-figure88.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3036--3040
 
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3043--3043
+Underfull \hbox (badness 10000) in paragraph at lines 3036--3040
+
+ []
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3052--3052
 [] 
  []
 
 
-Overfull \hbox (357.9013pt too wide) detected at line 3047
+Overfull \hbox (357.9013pt too wide) detected at line 3056
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3038--3048
+Underfull \hbox (badness 10000) in paragraph at lines 3047--3057
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3038--3048
+Underfull \hbox (badness 10000) in paragraph at lines 3047--3057
 
  []
 
-[76]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3060--3060
-[] 
- []
-
-
-Overfull \hbox (233.40071pt too wide) detected at line 3065
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3055--3066
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3055--3066
-
- []
-
-
+[77]
 Overfull \hbox (88.20349pt too wide) in paragraph at lines 3069--3069
 [] 
  []
 
 
-Overfull \hbox (461.25366pt too wide) detected at line 3079
+Overfull \hbox (233.40071pt too wide) detected at line 3074
 []
  []
 
-[77]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3094--3094
+
+Underfull \hbox (badness 10000) in paragraph at lines 3064--3075
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3064--3075
+
+ []
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3078--3078
 [] 
  []
 
 
-Overfull \hbox (296.45386pt too wide) detected at line 3099
+Overfull \hbox (461.25366pt too wide) detected at line 3088
 []
- []
-
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3107--3107
-[] 
- []
-
-
-Overfull \hbox (450.63031pt too wide) detected at line 3115
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3102--3116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3102--3116
-
  []
 
 [78]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3128--3128
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3103--3103
 [] 
  []
 
 
-Overfull \hbox (309.8942pt too wide) detected at line 3132
+Overfull \hbox (296.45386pt too wide) detected at line 3108
 []
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3140--3140
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3116--3116
 [] 
  []
 
 
-Overfull \hbox (368.26749pt too wide) detected at line 3144
+Overfull \hbox (450.63031pt too wide) detected at line 3124
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3135--3145
+Underfull \hbox (badness 10000) in paragraph at lines 3111--3125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3135--3145
+Underfull \hbox (badness 10000) in paragraph at lines 3111--3125
 
  []
 
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3148--3148
+[79]
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3137--3137
 [] 
  []
 
 
-Overfull \hbox (408.69585pt too wide) detected at line 3152
+Overfull \hbox (309.8942pt too wide) detected at line 3141
+[]
+ []
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3149--3149
+[] 
+ []
+
+
+Overfull \hbox (368.26749pt too wide) detected at line 3153
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3144--3154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3144--3154
+
+ []
+
+
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3157--3157
+[] 
+ []
+
+
+Overfull \hbox (408.69585pt too wide) detected at line 3161
 []
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure89' is up-to-date. ======
-[79]
-Underfull \hbox (badness 10000) in paragraph at lines 3158--3162
+[80]
+Underfull \hbox (badness 10000) in paragraph at lines 3167--3171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3158--3162
+Underfull \hbox (badness 10000) in paragraph at lines 3167--3171
 
  []
 
 
-Overfull \hbox (29.82614pt too wide) detected at line 3167
+Overfull \hbox (29.82614pt too wide) detected at line 3176
 []
  []
 
-[80 <./figures/mathe_zusammenfassung-figure89.pdf>]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3185--3185
+[81 <./figures/mathe_zusammenfassung-figure89.pdf>]
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3194--3194
 [] 
  []
 
 
-Overfull \hbox (282.4437pt too wide) detected at line 3189
+Overfull \hbox (282.4437pt too wide) detected at line 3198
 []
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3193--3193
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3202--3202
 [] 
  []
 
 
-Overfull \hbox (316.01659pt too wide) detected at line 3197
+Overfull \hbox (316.01659pt too wide) detected at line 3206
 []
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3200--3200
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3209--3209
 [] 
  []
 
 
-Overfull \hbox (340.05386pt too wide) detected at line 3203
+Overfull \hbox (340.05386pt too wide) detected at line 3212
 []
  []
 
-[81]
+[82]
 ===== Image 'figures/mathe_zusammenfassung-figure90' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure91' is up-to-date. ======
-[82 <./figures/mathe_zusammenfassung-figure90.pdf>]
+[83 <./figures/mathe_zusammenfassung-figure90.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure92' is up-to-date. ======
 
-Underfull \hbox (badness 10000) in paragraph at lines 3335--3338
+Underfull \hbox (badness 10000) in paragraph at lines 3344--3347
 
  []
 
 
-Overfull \hbox (14.23396pt too wide) detected at line 3351
+Overfull \hbox (14.23396pt too wide) detected at line 3360
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3355--3357
+Underfull \hbox (badness 10000) in paragraph at lines 3364--3366
 
  []
 
-[83 <./figures/mathe_zusammenfassung-figure91.pdf> <./figures/mathe_zusammenfas
-sung-figure92.pdf>] [84]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3390--3390
+[84 <./figures/mathe_zusammenfassung-figure91.pdf> <./figures/mathe_zusammenfas
+sung-figure92.pdf>] [85]
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3399--3399
 [] 
  []
 
 
-Overfull \hbox (257.027pt too wide) detected at line 3393
+Overfull \hbox (257.027pt too wide) detected at line 3402
 []
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3397--3397
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3406--3406
 [] 
  []
 
 
-Overfull \hbox (258.14742pt too wide) detected at line 3403
+Overfull \hbox (258.14742pt too wide) detected at line 3412
 []
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3407--3407
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3416--3416
 [] 
  []
 
 
-Overfull \hbox (280.65456pt too wide) detected at line 3413
+Overfull \hbox (280.65456pt too wide) detected at line 3422
 []
  []
 
-[85]
-Underfull \hbox (badness 10000) in paragraph at lines 3434--3435
+[86]
+Underfull \hbox (badness 10000) in paragraph at lines 3443--3444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3434--3435
+Underfull \hbox (badness 10000) in paragraph at lines 3443--3444
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure93' is up-to-date. ======
-[86] [87 <./figures/mathe_zusammenfassung-figure93.pdf>]
+[87] [88 <./figures/mathe_zusammenfassung-figure93.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure94' is up-to-date. ======
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 3535--3535
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 3544--3544
 [] 
  []
 
 
-Overfull \hbox (261.44006pt too wide) detected at line 3543
+Overfull \hbox (261.44006pt too wide) detected at line 3552
 []
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure95' is up-to-date. ======
-[88 <./figures/mathe_zusammenfassung-figure94.pdf>]
+[89 <./figures/mathe_zusammenfassung-figure94.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure96' is up-to-date. ======
-[89 <./figures/mathe_zusammenfassung-figure95.pdf> <./figures/mathe_zusammenfas
+[90 <./figures/mathe_zusammenfassung-figure95.pdf> <./figures/mathe_zusammenfas
 sung-figure96.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3580--3584
+Underfull \hbox (badness 10000) in paragraph at lines 3589--3593
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3580--3584
+Underfull \hbox (badness 10000) in paragraph at lines 3589--3593
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3580--3584
+Underfull \hbox (badness 10000) in paragraph at lines 3589--3593
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3607--3609
-
- []
-
-[90]
-Overfull \hbox (10.68182pt too wide) detected at line 3649
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3652--3654
+Underfull \hbox (badness 10000) in paragraph at lines 3616--3618
 
  []
 
 [91]
-Underfull \hbox (badness 10000) in paragraph at lines 3661--3664
-
+Overfull \hbox (10.68182pt too wide) detected at line 3658
+[]
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 3661--3663
+
+ []
+
+[92]
 Underfull \hbox (badness 10000) in paragraph at lines 3670--3673
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3681--3684
+Underfull \hbox (badness 10000) in paragraph at lines 3679--3682
 
  []
 
-[92]
-===== Image 'figures/mathe_zusammenfassung-figure97' is up-to-date. ======
+
+Underfull \hbox (badness 10000) in paragraph at lines 3690--3693
+
+ []
+
 [93]
-Underfull \hbox (badness 10000) in paragraph at lines 3756--3759
+===== Image 'figures/mathe_zusammenfassung-figure97' is up-to-date. ======
+[94]
+Underfull \hbox (badness 10000) in paragraph at lines 3765--3768
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3756--3759
+Underfull \hbox (badness 10000) in paragraph at lines 3765--3768
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3761--3765
+Underfull \hbox (badness 10000) in paragraph at lines 3770--3774
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3761--3765
+Underfull \hbox (badness 10000) in paragraph at lines 3770--3774
 
  []
 
-[94 <./figures/mathe_zusammenfassung-figure97.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 3770--3772
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3774--3778
+[95 <./figures/mathe_zusammenfassung-figure97.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 3779--3781
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3774--3778
+Underfull \hbox (badness 10000) in paragraph at lines 3783--3787
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3783--3786
+Underfull \hbox (badness 10000) in paragraph at lines 3783--3787
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3783--3786
+Underfull \hbox (badness 10000) in paragraph at lines 3792--3795
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3788--3792
+Underfull \hbox (badness 10000) in paragraph at lines 3792--3795
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3788--3792
+Underfull \hbox (badness 10000) in paragraph at lines 3797--3801
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3797--3800
+Underfull \hbox (badness 10000) in paragraph at lines 3797--3801
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3797--3800
-
- []
-
-[95]
-Underfull \hbox (badness 10000) in paragraph at lines 3802--3806
+Underfull \hbox (badness 10000) in paragraph at lines 3806--3809
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3802--3806
+Underfull \hbox (badness 10000) in paragraph at lines 3806--3809
+
+ []
+
+[96]
+Underfull \hbox (badness 10000) in paragraph at lines 3811--3815
 
  []
 
 
-Overfull \hbox (4.37506pt too wide) in paragraph at lines 3808--3810
+Underfull \hbox (badness 10000) in paragraph at lines 3811--3815
+
+ []
+
+
+Overfull \hbox (4.37506pt too wide) in paragraph at lines 3817--3819
 \OT1/cmr/m/n/12 Erkl[]arung: Von 6 Ka-beln sol-len 3 in der rich-ti-gen Rei-hen
 -fol-ge durch-ge-schnit-ten wer-den. Nat[]urlich
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3811--3814
+Underfull \hbox (badness 10000) in paragraph at lines 3820--3823
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3811--3814
+Underfull \hbox (badness 10000) in paragraph at lines 3820--3823
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3816--3820
+Underfull \hbox (badness 10000) in paragraph at lines 3825--3829
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3816--3820
+Underfull \hbox (badness 10000) in paragraph at lines 3825--3829
 
  []
 
-[96]
-Underfull \hbox (badness 10000) in paragraph at lines 3825--3828
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3825--3828
+[97]
+Underfull \hbox (badness 10000) in paragraph at lines 3834--3837
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3830--3834
+Underfull \hbox (badness 10000) in paragraph at lines 3834--3837
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3830--3834
+Underfull \hbox (badness 10000) in paragraph at lines 3839--3843
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3839--3843
 
  []
 
 ===== Image 'figures/mathe_zusammenfassung-figure98' is up-to-date. ======
-[97]
+[98]
 ===== Image 'figures/mathe_zusammenfassung-figure99' is up-to-date. ======
-<images/busts-in-silhouette_1f465.png, id=2345, 240.9pt x 240.9pt>
+<images/busts-in-silhouette_1f465.png, id=2354, 240.9pt x 240.9pt>
 File: images/busts-in-silhouette_1f465.png Graphic file (type png)
 <use images/busts-in-silhouette_1f465.png>
 Package pdftex.def Info: images/busts-in-silhouette_1f465.png  used on input li
-ne 3920.
+ne 3929.
 (pdftex.def)             Requested size: 12.0457pt x 12.0457pt.
-<images/luggage_1f9f3.png, id=2346, 160.6pt x 160.6pt>
+<images/luggage_1f9f3.png, id=2355, 160.6pt x 160.6pt>
 File: images/luggage_1f9f3.png Graphic file (type png)
 <use images/luggage_1f9f3.png>
-Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 3920.
+Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 3929.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
-<images/flag-france_1f1eb-1f1f7.png, id=2348, 10.589pt x 10.589pt>
+<images/flag-france_1f1eb-1f1f7.png, id=2357, 10.589pt x 10.589pt>
 File: images/flag-france_1f1eb-1f1f7.png Graphic file (type png)
 <use images/flag-france_1f1eb-1f1f7.png>
 Package pdftex.def Info: images/flag-france_1f1eb-1f1f7.png  used on input line
- 3920.
+ 3929.
 (pdftex.def)             Requested size: 10.58896pt x 10.58896pt.
 File: images/busts-in-silhouette_1f465.png Graphic file (type png)
 <use images/busts-in-silhouette_1f465.png>
 Package pdftex.def Info: images/busts-in-silhouette_1f465.png  used on input li
-ne 3920.
+ne 3929.
 (pdftex.def)             Requested size: 12.0457pt x 12.0457pt.
 File: images/luggage_1f9f3.png Graphic file (type png)
 <use images/luggage_1f9f3.png>
-Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 3920.
+Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 3929.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
 File: images/luggage_1f9f3.png Graphic file (type png)
 <use images/luggage_1f9f3.png>
-Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 3920.
+Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 3929.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
-[98 <./figures/mathe_zusammenfassung-figure98.pdf> <./figures/mathe_zusammenfas
+[99 <./figures/mathe_zusammenfassung-figure98.pdf> <./figures/mathe_zusammenfas
 sung-figure99.pdf> <./images/busts-in-silhouette_1f465.png> <./images/luggage_1
 f9f3.png>]
 ===== Image 'figures/mathe_zusammenfassung-figure100' is up-to-date. ======
 File: images/flag-france_1f1eb-1f1f7.png Graphic file (type png)
 <use images/flag-france_1f1eb-1f1f7.png>
 Package pdftex.def Info: images/flag-france_1f1eb-1f1f7.png  used on input line
- 3974.
+ 3983.
 (pdftex.def)             Requested size: 10.58896pt x 10.58896pt.
 File: images/luggage_1f9f3.png Graphic file (type png)
 <use images/luggage_1f9f3.png>
-Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 3974.
+Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 3983.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
 File: images/flag-france_1f1eb-1f1f7.png Graphic file (type png)
 <use images/flag-france_1f1eb-1f1f7.png>
 Package pdftex.def Info: images/flag-france_1f1eb-1f1f7.png  used on input line
- 3974.
+ 3983.
 (pdftex.def)             Requested size: 10.58896pt x 10.58896pt.
 File: images/luggage_1f9f3.png Graphic file (type png)
 <use images/luggage_1f9f3.png>
-Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 3974.
+Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 3983.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
 File: images/flag-france_1f1eb-1f1f7.png Graphic file (type png)
 <use images/flag-france_1f1eb-1f1f7.png>
 Package pdftex.def Info: images/flag-france_1f1eb-1f1f7.png  used on input line
- 3974.
+ 3983.
 (pdftex.def)             Requested size: 10.58896pt x 10.58896pt.
 ===== Image 'figures/mathe_zusammenfassung-figure101' is up-to-date. ======
-[99 <./images/flag-france_1f1eb-1f1f7.png> <./figures/mathe_zusammenfassung-fig
-ure100.pdf> <./figures/mathe_zusammenfassung-figure101.pdf>]
+[100 <./images/flag-france_1f1eb-1f1f7.png> <./figures/mathe_zusammenfassung-fi
+gure100.pdf> <./figures/mathe_zusammenfassung-figure101.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure102' is up-to-date. ======
-[100 <./figures/mathe_zusammenfassung-figure102.pdf>]
+[101 <./figures/mathe_zusammenfassung-figure102.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure103' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure104' is up-to-date. ======
-[101 <./figures/mathe_zusammenfassung-figure103.pdf>]
+[102 <./figures/mathe_zusammenfassung-figure103.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure105' is up-to-date. ======
-[102 <./figures/mathe_zusammenfassung-figure104.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4066--4082
+[103 <./figures/mathe_zusammenfassung-figure104.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4075--4091
 
  []
 
-[103 <./figures/mathe_zusammenfassung-figure105.pdf>]
+[104 <./figures/mathe_zusammenfassung-figure105.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure106' is up-to-date. ======
-[104] [105 <./figures/mathe_zusammenfassung-figure106.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4130--4133
+[105] [106 <./figures/mathe_zusammenfassung-figure106.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4139--4142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4130--4133
+Underfull \hbox (badness 10000) in paragraph at lines 4139--4142
 
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 4138--4138
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 4147--4147
 [] 
  []
 
 
-Overfull \hbox (278.67091pt too wide) detected at line 4143
+Overfull \hbox (278.67091pt too wide) detected at line 4152
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4135--4144
+Underfull \hbox (badness 10000) in paragraph at lines 4144--4153
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4145--4147
+Underfull \hbox (badness 10000) in paragraph at lines 4154--4156
 
  []
 
 
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 4152--4152
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 4161--4161
 [] 
  []
 
 
-Overfull \hbox (286.00984pt too wide) detected at line 4157
-[]
- []
-
-[106]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 4178--4178
-[] 
- []
-
-
-Overfull \hbox (390.48598pt too wide) detected at line 4186
+Overfull \hbox (286.00984pt too wide) detected at line 4166
 []
  []
 
 [107]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 4208--4208
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 4187--4187
 [] 
  []
 
 
-Overfull \hbox (378.60674pt too wide) detected at line 4218
-[]
- []
-
-
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 4240--4240
-[] 
- []
-
-
-Overfull \hbox (383.95132pt too wide) detected at line 4245
+Overfull \hbox (390.48598pt too wide) detected at line 4195
 []
  []
 
 [108]
-Overfull \hbox (88.20349pt too wide) in paragraph at lines 4267--4267
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 4217--4217
 [] 
  []
 
 
-Overfull \hbox (197.35622pt too wide) detected at line 4272
+Overfull \hbox (378.60674pt too wide) detected at line 4227
 []
  []
 
-(mathe_zusammenfassung.ind [109] [110
 
-] [111] [112] [113])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4275.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4275.
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 4249--4249
+[] 
+ []
+
+
+Overfull \hbox (383.95132pt too wide) detected at line 4254
+[]
+ []
+
+[109]
+Overfull \hbox (88.20349pt too wide) in paragraph at lines 4276--4276
+[] 
+ []
+
+
+Overfull \hbox (197.35622pt too wide) detected at line 4281
+[]
+ []
+
+(mathe_zusammenfassung.ind [110] [111
+
+] [112] [113] [114])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4284.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4284.
 
 (mathe_zusammenfassung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4275.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4275.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4284.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4284.
 
 Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
-(rerunfilecheck)             Checksum: 1580E140F83B93EA8FF4DF31190E846D;11321.
+(rerunfilecheck)             Checksum: 601A6BF5AAB79376EFC0BF825CB20A01;11413.
  ) 
 Here is how much of TeX's memory you used:
- 45886 strings out of 480790
- 1086439 string characters out of 2907040
- 1625078 words of memory out of 3000000
- 60502 multiletter control sequences out of 15000+200000
+ 45890 strings out of 480790
+ 1086522 string characters out of 2907040
+ 1625338 words of memory out of 3000000
+ 60504 multiletter control sequences out of 15000+200000
  543771 words of font info for 70 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  66i,31n,103p,1479b,1319s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3067,9 +3097,9 @@ y8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/P
 rogram Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Fi
 les/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiK
 TeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mathe_zusammenfassung.pdf (113 pages, 1480946 bytes).
+Output written on mathe_zusammenfassung.pdf (114 pages, 1485583 bytes).
 PDF statistics:
- 3209 PDF objects out of 3580 (max. 8388607)
- 273 named destinations out of 1000 (max. 500000)
- 1907 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3223 PDF objects out of 3580 (max. 8388607)
+ 275 named destinations out of 1000 (max. 500000)
+ 1915 words of extra memory for PDF output out of 10000 (max. 10000000)
 

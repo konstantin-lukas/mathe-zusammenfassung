@@ -693,7 +693,7 @@
 				\Leftrightarrow&&=&\dunderline{-\frac{16}{15}+\frac{13}{15}i}&&
 			\end{flalign*}
 		\end{tcolorbox}
-		\subsubsection{Darstellungsformen}
+		\subsection{Darstellungsformen}
 			\begin{center}
 				\bgroup
 				\def\arraystretch{0}
@@ -796,8 +796,8 @@
 					&\overline{e^{i\phi}}=e^{-i\phi}&&
 				\end{flalign*}
 			\end{tcolorbox}
-			\subsubsection{Komplexe Zahlen potenzieren}
-			\label{subsubsec:komplexpotenz}
+			\subsection{Komplexe Zahlen potenzieren}
+			\label{subsec:komplexpotenz}
 				Möchte man eine komplexe Zahl mit einer sehr hohen Zahl potenzieren, ist es ratsam, sie zunächst in die Polarform zu bringen.
 				Das hat den Hintergrund, dass wir dann die \highlight{subsec:potenzgesetze}{Potenzgesetze} anwenden können, allerdings nur, wenn die Potenz eine ganze Zahl ist. Dieser Zusammenhang wurde erstmals von Abraham de Moivre entdeckt und entsprechend benannt.
 				\begin{flalign*}
@@ -823,8 +823,8 @@
 					\end{flalign*}
 				\end{tcolorbox}
 				\noindent Das Ergebnis einer solchen Rechnung wird i.d.R. so gekürzt, dass der Winkel zwischen $0$ und $2\pi$ bzw. $0^{\circ}$ und $360^{\circ}$ liegt, indem man jeweils eine Umdrehung dazu rechnet oder abzieht ($\pm2\pi$ oder $\pm360^{\circ}$). Das hat den Hintergrund, dass eine Drehung des Vektors um mehr als $360^{\circ}$ nur unnötig kompliziert wäre, denn man braucht in der Ebene nur maximal $360^{\circ}$ und kann seinen Vektor in jede Richtung zeigen lassen.
-			\subsubsection{Komplexe Zahlen radizieren}
-				Wie wir wurzeln aus einer komplexen Zahl ziehen, können wir uns mit den \highlight{subsec:potenzgesetze}{Potenzgesetzen} herleiten. Der große Unterschied zum Potenzieren mit einer ganzen Zahl ist, dass wir mehrere Ergebnisse erhalten. Beim Rechnen der $n$-ten Wurzel, gibt es $n$ Ergebnisse um genau zu sein. Welchen Hintergrund das hat, schauen wir uns hier an. Anschließend folgt ein Beispiel. Hinweis: für dieses Kapitel solltest du das Kapitel zum \highlight{subsubsec:komplexpotenz}{Potenzieren} von komplexen Zahlen gelesen haben.\newline\newline
+			\subsection{Komplexe Zahlen radizieren}
+				Wie wir wurzeln aus einer komplexen Zahl ziehen, können wir uns mit den \highlight{subsec:potenzgesetze}{Potenzgesetzen} herleiten. Der große Unterschied zum Potenzieren mit einer ganzen Zahl ist, dass wir mehrere Ergebnisse erhalten. Beim Rechnen der $n$-ten Wurzel, gibt es $n$ Ergebnisse um genau zu sein. Welchen Hintergrund das hat, schauen wir uns hier an. Anschließend folgt ein Beispiel. Hinweis: für dieses Kapitel solltest du das Kapitel zum \highlight{subsec:komplexpotenz}{Potenzieren} von komplexen Zahlen gelesen haben.\newline\newline
 				Zunächst ist es wieder sehr hilfreich, die komplexe Zahl in der Polarform vorliegen zu haben. Außerdem wissen wir, dass wir beliebig oft um $2\pi$ drehen können, weshalb wir zum Winkel $\phi$ Umdrehungen der Anzahl $k$ hinzufügen: $2\pi k$.
 				\begin{flalign*}
 					r\cdot e^{i\phi}=r\cdot e^{i(\phi+2\pi k)}&&
@@ -1064,6 +1064,14 @@
 				\end{tabularx}
 				\egroup
 			\end{tcolorbox}
+		\subsection{Kongruenz (Zahlentheorie)}
+		\index{Kongruenz}Die Kongruenz der Zahlentheorie (nicht zu verwechseln mit der Kongruenz der Geometrie) sagt aus, dass zwei Zahlen $a$ und $b$ beim Teilen durch eine weitere Zahl $m$ den gleichen Rest\index{Rest} haben. Dafür gibt es mehrere Schreibweisen, die aber alle das gleiche bedeuten:
+		\begin{flalign*}
+			&a\equiv_m b\\
+			&a\equiv b (m)\\
+			&a\equiv b \mod m&&
+		\end{flalign*}
+		Beispielsweise wäre $4\equiv_3 7$ eine wahre Aussagen, denn sowohl 4, wie auch 7 haben bei der Division\index{Division} durch 3 den Rest 1.
 \pagebreak
 \section{Gleichungen vereinfachen}
 	\label{sec:gleichungenvereinfachen}

@@ -1064,6 +1064,27 @@
 				\end{tabularx}
 				\egroup
 			\end{tcolorbox}
+		\subsection{Modulo (von ganzen Zahlen)}
+			Mit dem Modulo bestimmen wir den Rest der bei der Division von ganzen Zahlen übrig bleibt. Für natürliche Zahlen ist das ganz einfach. Dazu ein paar Beispiele:
+			\begin{flalign*}
+				&11\mod 7 =4\\
+				&9\;\;\mod 5=4\\
+				&0\;\;\mod 4=0\\
+				&4\;\;\mod 8=4\\
+				&42\mod 7= 0&&
+			\end{flalign*}
+			Man nimmt so viele Vielfache von der rechten Zahl, wie man kann ohne, dass dieses Vielfache größer wird als die linke Zahl. Die Differenz, die dann übrig bleibt ist der Rest. Etwas verrückter wir das ganze, wenn negative Zahlen involviert sind.
+			\begin{flalign*}
+				-&11\mod 7 =3\\
+				&11\mod -7 =-3\\
+				-&11\mod -7 =-4\\
+				-&9\;\;\mod 5=1\\
+				&9\;\;\mod 5=-1\\
+				-&9\;\;\mod -5=-4\\
+				-&4\;\;\mod -8=-4&&
+			\end{flalign*}
+			Wenn die linke Zahl negativ ist, rechnet man solange die rechte Zahl drauf, bis man eine nicht negative Zahl (also auch Null) hat und das ist dann das Ergebnis. Ist nur die rechte Zahl negativ, ist der Prozess genau umgekehrt, denn dort zieht man ab, bis man eine negative Zahl oder Null hat. Sind beide Zahlen negativ ist das Ergebnis das gleiche als wären beiden Zahlen positiv mal minus eins.\newline\newline
+			Anmerkung: $x\mod 0$ ist nicht definiert und $0\mod x$ ist immer Null.
 		\subsection{Kongruenz (Zahlentheorie)}
 		\index{Kongruenz}Die Kongruenz der Zahlentheorie (nicht zu verwechseln mit der Kongruenz der Geometrie) sagt aus, dass zwei Zahlen $a$ und $b$ beim Teilen durch eine weitere Zahl $m$ den gleichen Rest\index{Rest} haben. Dafür gibt es mehrere Schreibweisen, die aber alle das gleiche bedeuten:
 		\begin{flalign*}
@@ -1071,7 +1092,7 @@
 			&a\equiv b (m)\\
 			&a\equiv b \mod m&&
 		\end{flalign*}
-		Beispielsweise wäre $4\equiv_3 7$ eine wahre Aussagen, denn sowohl 4, wie auch 7 haben bei der Division\index{Division} durch 3 den Rest 1.
+		Beispielsweise wäre $4\equiv_3 7$ eine wahre Aussagen, denn sowohl 4, wie auch 7 haben bei der Division\index{Division} durch 3 den Rest 1. Das wäre übrigens das Gleiche wie $4\mod 3=7\mod 3$.
 \pagebreak
 \section{Gleichungen vereinfachen}
 	\label{sec:gleichungenvereinfachen}

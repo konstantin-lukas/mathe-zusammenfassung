@@ -24,7 +24,7 @@
 \usepackage{tabularx}
 \renewcommand\tabularxcolumn[1]{m{#1}}
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows,trees,positioning,fit}
+\usetikzlibrary{shapes,arrows,trees,positioning,fit,automata}
 \usepackage{array}
 \usepackage[most]{tcolorbox}
 \usepackage[hidelinks]{hyperref}
@@ -207,6 +207,8 @@
 		\egroup
 	\end{center}
 }
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
 \newcommand{\dunderline}[1]{\underline{\underline{#1}}}
 \begin{document}
 \renewcommand\indexname{Stichwortverzeichnis}
@@ -567,6 +569,96 @@
 				\text{Inklusion: }g:\textcolor{blue}{A}\to \textcolor{red}{X},x\mapsto x&&
 			\end{flalign*}
 			Die Inklusion scheint auf den ersten Blick wenig nützlich, aber man kann mit ihr auch die Restriktion\index{Restriktion} beschreiben. Geht man von $\textcolor{blue}{A}$ über $\textcolor{red}{X}$ nach $\textcolor{teal}{Y}$ kommt man auf dasselbe hinaus, wie bei der Restriktion von $f$ auf $A$. Es gilt nach den obigen Definitionen: $f\mid_A=f\circ g$.
+		\subsubsection{Relationen}
+			Wenn man zwei nichtleere Mengen hat $A$ und $B$ hat, dann nennt man das Tripel $(A,B,R)$ Relation, wobei $R\subseteq A\times B$ ist. Ist ein Tupel $(a,b)\in R$, so sagt man, dass $a$ in Relation\index{Relation} zu $b$ steht. Dafür schreibt man auch $aRb$. In diesem Fall handelt es sich um eine binäre Relation\index{Binäre Relation}. Allgemein spricht man von $n$-stelligen Relationen für die Relation auf $n$ Mengen: $R\subseteq A_1\times ... \times A_n$. Wenn $A=B$ ist, dann kann man den Tripel auch gekürzt als Tupel schreiben: $(A,R)$.\newline\newline
+			Hat man die Relation $(A,R)$ mit $A=\{1,2,3,4\}$ und $R=\{(2,1),(2,4),(3,1),(3,4),(4,4)\}$, kann man diese auch graphisch darstellen:
+			\begin{center}
+				\begin{tikzpicture}[shorten >=1pt,node distance=3cm,on grid,auto,bend angle=15,initial text=,semithick,every initial by arrow/.style={-latex,semithick}] 
+				\node[state] (z_1)  {$1$};
+				\node[state] (z_2) [right=of z_1] {$2$};
+				\node[state] (z_3) [below=of z_1] {$3$};
+				\node[state] (z_4) [right=of z_3] {$4$};
+				\path[-latex] 
+				(z_3) edge (z_1)
+				(z_3) edge (z_4)
+				(z_2) edge (z_1)
+				(z_2) edge (z_4)
+				(z_4) edge [loop below] (z_4)
+				;
+				\end{tikzpicture}
+			\end{center}
+			Das ist aber nicht die einzige Möglichkeit Relationen darzustellen. Man kann z.B. auch eine Adjazenzmatrix\index{Adjazenzmatrix} oder eine Tabelle anlegen, in der die Zeilen für die linke Seite der Tupel und die Spalten für die rechte Seite der Tupel stehen. Die selbe Relation könnte man also auch so darstellen:
+			\begin{multicols}{2}
+				\begin{flalign*}
+				\begin{pmatrix}
+				0&0&0&0\\
+				1&0&0&1\\
+				1&0&0&1\\
+				0&0&0&1
+				\end{pmatrix}
+				\end{flalign*}
+				\vspace{1em}
+				\begin{center}
+					\bgroup
+					\def\arraystretch{1.5}
+					\begin{tabularx}{4em}{|l|l|}
+						1 & - \\
+						2 & 1,4 \\
+						3 & 1,4 \\
+						4 & 4 \\
+					\end{tabularx}
+					\egroup
+				\end{center}
+			\end{multicols}
+			\noindent Relationen können bestimmte Eigenschaften haben. Die obige Relation ist beispielsweise antisymmetrisch und transitiv. Hier ist eine Übersicht über die wichtigsten Eigenschaften von Relationen gezeigt anhand der Grundmenge $A=\{0,1,2\}$.
+			\begin{center}
+				\bgroup
+				\def\arraystretch{1.5}
+				\begin{tabularx}{\linewidth}{|c|Y|Y|}
+					\hline
+					\textbf{Eigenschaft} & \textbf{Bedingung} & \textbf{Beispiel}  \\\hline
+					reflexiv & $\forall x\in A:xRx$ & $\{(0,1),(0,0),(1,1),(2,2),(0,2)\}$  \\\hline
+					irreflexiv & $\forall x\in A:\lnot xRx$ & $\{(0,1),(1,2),(2,0),(1,0)\}$  \\\hline
+					symmetrisch & $\forall x,y\in A:xRy\Rightarrow yRx$ & $\{(0,0),(0,1),(1,0),(2,0),(0,2)\}$  \\\hline
+					antisymmetrisch & $\forall x,y\in A:xRy\land yRx\Rightarrow x=y$ & $\{(0,1),(2,0),(2,2),(1,1),(0,0)\}$  \\\hline
+					transitiv & $\forall x,y,z\in A:xRy\land yRz\Rightarrow xRz$ & $\{(0,1),(1,2),(0,2),(2,2)\}$  \\\hline
+				\end{tabularx}
+				\egroup
+			\end{center}
+			Wenn Relationen bestimmte Kombinationen von Eigenschaften haben, gibt man ihnen besondere Namen. Die wichtigsten sind die Äquivalenzrelation und die Ordnungsrelation.
+			\begin{center}
+				\bgroup
+				\def\arraystretch{1.5}
+				\begin{tabularx}{\linewidth}{|c|Y|Y|Y|Y|}
+					\hline
+					\textbf{Relationstyp} & \textbf{reflexiv} & \textbf{symmetrisch} & \textbf{transitiv} & \textbf{antisym.} \\\hline
+					Äquivalenzrelation & $\times$ & $\times$ & $\times$ &    \\\hline
+					Ordnungsrelation & $\times$ &  & $\times$ & $\times$   \\\hline
+				\end{tabularx}
+				\egroup
+			\end{center}\index{Ordnungsrelation}\index{Äquivalenzrelation}
+			Für diese beiden Relationstypen gelten noch einige Besonderheiten:\newline\newline
+			\textbf{Ordnungsrelation}\newline
+			Wenn $aRb$ oder $bRa$ gilt, nennt man die Elemente $a$ und $b$ vergleichbar. Wenn alle Elemente miteinander vergleichbar\index{Vergleichbar} sind, dann spricht man von einer totalen Ordnung\index{Totale Ordnung}, andernfalls von einer partiellen Ordnung\index{Partielle Ordnung}. Als Tupel mit der Grundmenge $(A,R)$ sagt man auch geordnete Menge, wenn $R$ eine Ordnungsrelation ist.\newline\newline
+			\textbf{Äquivalenzrelationen}\newline
+			Bei Äquivalenzrelationen kann man anstatt $aRb$ auch schreiben $a\sim b$. Außerdem lassen sich Äquivalenzrelationen in sogenannte Äquivalenzklassen\index{Äquivalenzklasse} einteilen. Eine Äquivalenzklasse ist eine Menge von Elementen, auf die ein beliebiger Wert abbildet. Richtig formal definiert heißt das:
+			\begin{flalign*}
+				[x]_{\sim}=[x]:=\{y\mid x\sim y\}&&
+			\end{flalign*}
+			Alle $x$, die die selbe Äquivalenzklasse definieren, heißen Repräsentanten für die Klasse. Wenn man auf eine bestimmte Klasse zeigen will, kann man einen beliebigen Repräsentanten\index{Repräsentant} dafür nehmen.\newline\newline
+			Ein weiterer wichtiger Begriff ist die Faktor- bzw. Quotientenmenge\index{Faktormenge}\index{Quotientenmenge}. Das ist die Menge aller Äquivalenzklassen.
+			\begin{flalign*}
+				A/_{\sim}:=\{[a]_{\sim}\mid a\in A\}&&
+			\end{flalign*}
+				Haben wir eine Familie an nichtleeren Teilmengen $\{B_i\in A\mid i\in I\}$, die $A$ überdecken
+			\begin{flalign*}
+				A=\bigcup_{i\in I}B_i&&
+			\end{flalign*}
+			und die paarweise disjunkt sind,
+			\begin{flalign*}
+				B_i\cap B_j=\emptyset&&
+			\end{flalign*}
+			dann nennen wir diese Familie Partition. Da auch Äquivalenzklassen diese Eigenschaften erfüllen, sind auch sie Partitionen.\index{Partition}
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}
@@ -1067,24 +1159,24 @@
 		\subsection{Modulo (ganzer Zahlen)}
 			Mit dem Modulo bestimmen wir den Rest der bei der Division von ganzen Zahlen übrig bleibt. Für natürliche Zahlen ist das ganz einfach. Dazu ein paar Beispiele:
 			\begin{flalign*}
-				&11\mod 7 =4\\
-				&9\;\;\mod 5=4\\
-				&0\;\;\mod 4=0\\
-				&4\;\;\mod 8=4\\
-				&42\mod 7= 0&&
+				&11\bmod 7 =4\\
+				&9\;\;\bmod 5=4\\
+				&0\;\;\bmod 4=0\\
+				&4\;\;\bmod 8=4\\
+				&42\bmod 7= 0&&
 			\end{flalign*}
 			Man nimmt so viele Vielfache von der rechten Zahl, wie man kann ohne, dass dieses Vielfache größer wird als die linke Zahl. Die Differenz, die dann übrig bleibt ist der Rest. Etwas verrückter wir das ganze, wenn negative Zahlen involviert sind.
 			\begin{flalign*}
-				-&11\mod 7 =3\\
-				&11\mod -7 =-3\\
-				-&11\mod -7 =-4\\
-				-&9\;\;\mod 5=1\\
-				&9\;\;\mod -5=-1\\
-				-&9\;\;\mod -5=-4\\
-				-&4\;\;\mod -8=-4&&
+				-&11\bmod 7 =3\\
+				&11\bmod -7 =-3\\
+				-&11\bmod -7 =-4\\
+				-&9\;\;\bmod 5=1\\
+				&9\;\;\bmod -5=-1\\
+				-&9\;\;\bmod -5=-4\\
+				-&4\;\;\bmod -8=-4&&
 			\end{flalign*}
 			Wenn die linke Zahl negativ ist, rechnet man solange die rechte Zahl drauf, bis man eine nicht negative Zahl (also auch Null) hat und das ist dann das Ergebnis. Ist nur die rechte Zahl negativ, ist der Prozess genau umgekehrt, denn dort zieht man ab, bis man eine negative Zahl oder Null hat. Sind beide Zahlen negativ ist das Ergebnis das gleiche als wären beiden Zahlen positiv mal minus eins.\newline\newline
-			Anmerkung: $x\mod 0$ ist nicht definiert und $0\mod x$ ist immer Null.
+			Anmerkung: $x\bmod 0$ ist nicht definiert und $0\bmod x$ ist immer Null.
 		\subsection{Kongruenz (Zahlentheorie)}
 		\index{Kongruenz}Die Kongruenz der Zahlentheorie (nicht zu verwechseln mit der Kongruenz der Geometrie) sagt aus, dass zwei Zahlen $a$ und $b$ beim Teilen durch eine weitere Zahl $m$ den gleichen Rest\index{Rest} haben. Dafür gibt es mehrere Schreibweisen, die aber alle das gleiche bedeuten:
 		\begin{flalign*}
@@ -1092,7 +1184,8 @@
 			&a\equiv b (m)\\
 			&a\equiv b \mod m&&
 		\end{flalign*}
-		Beispielsweise wäre $4\equiv_3 7$ eine wahre Aussagen, denn sowohl 4, wie auch 7 haben bei der Division\index{Division} durch 3 den Rest 1. Das wäre übrigens das Gleiche wie $4\mod 3=7\mod 3$.
+		Beispielsweise wäre $4\equiv_3 7$ eine wahre Aussagen, denn sowohl 4, wie auch 7 haben bei der Division\index{Division} durch 3 den Rest 1. Das wäre übrigens das Gleiche wie $4\mod 3=7\mod 3$.\newline\newline
+		Da es sich hierbei um eine Äquivalenzrelation\index{Äquivalenzrelation} handelt, kann man diese in Äquivalenzklassen\index{Äquivalenzklasse} aufteilen. Für die Division modulo $m$, nennt man diese Äquivalenzklassen auch Restklassen\index{Restklasse}. Als Repräsentanten\index{Repräsentant} reicht es aus die Werte zwischen $0$ und $m$ zu wählen. Die Faktormenge\index{Faktormenge} wäre also: $\mathbb{Z}/m\mathbb{Z}=\{[0],[1],...,[m-1]\}$.
 \pagebreak
 \section{Gleichungen vereinfachen}
 	\label{sec:gleichungenvereinfachen}

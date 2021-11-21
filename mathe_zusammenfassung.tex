@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 
 %opening
-\title{Mathematik fürs Informatikstudium und Abitur:\\Eine Zusammenfassung}
+\title{Mathematik fürs Informatikstudium und Abitur:\\Zusammenfassung}
 \author{Konstantin Lukas}
 \renewcommand{\contentsname}{Inhaltsverzeichnis}
 \usepackage{xstring}
@@ -311,7 +311,8 @@
 		\end{flalign*}
 	\end{tcolorbox}
 	 \noindent Die Potenzmenge\index{Potenzmenge} einer Menge $M=\{1;2\}$ beinhaltet alle möglichen Teilmengen von $M$: $\mathfrak{P}(M)=\{\emptyset;\{1\};\{2\};\{1;2\}\}$.\newline\newline
-	 Das Komplement\index{Komplement} einer Menge $M$ in einem Universum\index{Universum} $U$ enthält alle Elemente, die nicht in $M$ sind, aber im Universum $U$ existieren. Sind das Universum z.B. die natürlichen Zahlen, so gilt: $M^C=\bar M=\mathbb{N}\setminus M$.
+	 Das Komplement\index{Komplement} einer Menge $M$ in einem Universum\index{Universum} $U$ enthält alle Elemente, die nicht in $M$ sind, aber im Universum $U$ existieren. Sind das Universum z.B. die natürlichen Zahlen, so gilt: $M^C=\bar M=\mathbb{N}\setminus M$.\newline\newline
+	 Eine Menge heißt abzählbar\index{Abzählbar}, wenn sie entweder endlich ist oder man eine bijektive Abbildung zu den natürlichen Zahlen erzeugen kann. Die Menge $\{1,2,3,4\}$ wäre z.B. abzählbar\index{Abzählbar}, weil sie endlich ist, aber auch folgende Menge ist abzählbar: $\{x\in\mathbb{N}\mid\exists y\in\mathbb{N}: x=2y\}$. Das ist die Menge der geraden Zahlen. Intuitiv würde man sagen, diese Menge müsste halb so mächtig sein, wie die natürlichen Zahlen. Das ist jedoch nicht der Fall, da ich von jeder natürlichen Zahl durch Verdopplung auf die nächste gerade Zahl abbilden kann. So eine Menge heißt speziell abzählbar unendlich\index{Abzählbar unendlich}. Ist eine Menge hingegen nicht abzählbar, wie z.B. die reellen Zahlen, dann heißt sie überabzählbar unendlich\index{Überabzählbar unendlich}. Die Mächtigkeit der natürlichen Zahlen wir übrigens mit Aleph Null angegeben: $\vert\mathbb{N}\vert=\aleph_0$.
 	\subsection{Zahlenbereiche}
 	\index{Mengen}
 		\begin{center}
@@ -492,6 +493,12 @@
 			\end{flushleft}
 		\end{tcolorbox}
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
+			\textbf{Definition von Surjektivität über die Identität}
+			\begin{flalign*}
+				f\text{ ist surjektiv}\Leftrightarrow\exists (h:W\Rightarrow X):f\circ h=id_W&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
 			\textbf{Injektiv}\index{Injektiv} bedeutet, dass jedes Element der Zielmenge höchstens ein Element in seinem Urbild hat.
 			\begin{flalign*}
 			\forall x_1,x_2\in X:f(x_1)=f(x_2)\Rightarrow x_1=x_2&&
@@ -526,6 +533,12 @@
 			\end{flushleft}
 		\end{tcolorbox}
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
+			\textbf{Definition von Injektivität über die Identität}
+			\begin{flalign*}
+			f\text{ ist injektiv}\Leftrightarrow\exists (h:W\Rightarrow X):h\circ f=id_X&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.45cm]
 			\textbf{Bijektiv}\index{Bijektiv} bedeutet, die ist Funktion sowohl surjektiv als auch injektiv. Das heißt demnach auch, dass jedes Element der Zielmenge genau ein Element in seinem Urbild hat.
 			\begin{flushleft}
 				\resizebox{!}{4cm}{
@@ -558,6 +571,13 @@
 				Wenn eine Abbildung bijektiv ist, ist sie auch \highlight{subsubsec:umkehrbarkeit}{umkehrbar}\index{Umkehrbar} und anders herum.
 			\end{flushleft}
 		\end{tcolorbox}
+		\noindent Des weiteren gelten folgende Regeln:
+		\begin{flalign*}
+			&f\text{ und }g\text{ sind injektiv}\Rightarrow g\circ f\text{ ist injektiv}\\
+			&g\circ f\text{ ist injektiv}\Rightarrow f\text{ ist injektiv}\\
+			&f\text{ und }g\text{ sind surjektiv}\Rightarrow g\circ f\text{ ist surjektiv}\\
+			&g\circ f\text{ ist surjektiv}\Rightarrow g\text{ ist surjektiv}&&
+		\end{flalign*}
 		\subsubsection{Restriktion und Inklusion}\index{Restriktion}\index{Inklusion}
 			Wenn man nicht den ganzen Definitionsbereich einer Abbildung betrachten will, kann man mithilfe einer Einschränkung\index{Einschränkung} (Restriktion) die Funktionen auf eine Teilmenge des ursprünglichen Definitionsbereichs begrenzen. Sei $f:X\to Y$ eine Funktion und $A\subseteq X$ eine Teilmenge $\neq\emptyset$ des Definitionsbereiches, so gilt für die \textbf{Restriktion} von $f$ auf $A$:
 			\begin{flalign*}
@@ -738,6 +758,80 @@
 			\end{flalign*}
 		\end{tcolorbox}\vspace{.4cm}
 		\noindent Nehmen wir als Beispiel noch mal unsere Potenzmenge von oben. Wenden wir den großen Durchschnitt an erhalten wir die leeren Menge, denn es gibt keine Elemente in den Mengenelemente der Potenzmenge, die in jedem Mengenelement enthalten sind: $\bigcap\mathfrak{P}(\Omega)=\emptyset$. Wenn wir die Potenzmenge groß vereinigen, erhalten wir wieder Omega: $\bigcup\mathfrak{P}(\Omega)=\{1,2,3\}=\Omega$.
+	\section{Algebraische Strukturen}
+		Algebraische Strukturen ermöglichen es uns bestimmte Operationen auf Mengen zu definieren, sodass wir Grundrechenarten festlegen können, mit denen wir rechnen.\newline\newline
+		Haben wir zwei Mengen $A$ und $B$, dann nennt man $(A,\circ)$ und $(A,\square)$ algebraische Strukturen. $\circ$ und $\square$ sind dabei Abbildungen, die wie folgt definiert sind:
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Innere Algebraische Verknüpfung}
+			\begin{flalign*}
+				\circ:A\times A\to A&&
+			\end{flalign*}
+			\textbf{Äußere Algebraische Verknüpfung}
+			\begin{flalign*}
+			\square:B\times A\to A&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Ein Beispiel für eine innere algebraische Verknüpfung ist z.B. $+:\mathbb{N}\times\mathbb{N}\to\mathbb{N},(n,m)\mapsto n+m$.\newline\newline
+		Ein Beispiel für eine äußere algebraische Verknüpfung ist $\cdot:\mathbb{R}\times\mathbb{R}^2\to\mathbb{R}^2),(\lambda,v)\mapsto \lambda\cdot v$.\newline\newline
+		Weitere wichtige Begriffe, um Verknüpfungen zu beschreiben sind:
+		\begin{tcolorbox}[boxsep=0pt,top=0.65cm,left=.75cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\begin{multicols}{2}
+				\textbf{Kommutativ}\index{Kommutativ}
+				\begin{flalign*}
+				\forall x,y\in A: x\circ y=y\circ x&&
+				\end{flalign*}
+				\textbf{Assoziativ}\index{Assoziativ}
+				\begin{flalign*}
+				\forall x,y,z\in A: (x\circ y)\circ z=x\circ(y\circ z)&&
+				\end{flalign*}
+				\textbf{Neutrales Element (e aus A)}\index{Neutrales Element}
+				\begin{flalign*}
+				\forall x\in A: x\circ e=e\circ x= x&&
+				\end{flalign*}
+				\textbf{Inverses Element}\index{Inverses Element}
+				\begin{flalign*}
+				x^{-1}\in A\land x^{-1}\circ x=x\circ x^{-1}=e&&
+				\end{flalign*}
+				\textbf{Invertierbar}\index{Invertierbar}
+				\begin{flalign*}
+				\text{Alle }x\text{, die ein inverses Element besitzen.}&&
+				\end{flalign*}\newline\newline
+			\end{multicols}
+		\end{tcolorbox}
+		\noindent Außerdem nennt man eine Menge abgeschlossen bezüglich einer Verknüpfung, wenn das Ergebnis auch wieder Teil dieser Menge ist.
+		\begin{tcolorbox}[boxsep=0pt,top=0.65cm,left=.75cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Abgeschlossenheit}\index{Abgeschlossenheit}
+			\begin{flalign*}
+				\forall x,y\in A:x\circ y \in A&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Beispielsweise sind die ganzen Zahlen bzgl. + abgeschlossen, die ungeraden Zahlen jedoch nicht.
+		\subsection{Gruppen}
+			\begin{tcolorbox}[boxsep=0pt,top=0.65cm,left=.75cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]\index{Gruppe}
+				$(G,\circ)$ heißt Gruppe, wenn folgende Bedingungen erfüllt sind:
+				\begin{flalign*}
+					&\text{1. }\forall x,y\in G:x\circ y\in G\text{ (innere Verknüpfung, abgeschlossen)}\\\\
+					&\text{2. }\forall x,y,z\in G: (x\circ y)\circ z=x\circ(y\circ z)\text{ (assoziativ)}\\\\
+					&\text{3. }\exists e\in G:\forall x\in G: x\circ e=e\circ x= x\text{ (neutrales Element existiert)}\\\\
+					&\text{4. }\forall x\in G\;\exists y\in G: x\circ y=y\circ x = e\text{ (inverses Element existiert für alle Elemente)}&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Ist eine Gruppe außerdem kommutativ, nennt man sie auch abelsche Gruppe\index{Abelsche Gruppe}. Beispielsweise wäre $(\mathbb{R},+)$ so eine abelsche Gruppe.\newline\newline
+			Nimmt man eine Teilmenge der Menge einer Gruppe $(G,\circ)$ und dieselbe Verknüpfung spricht man von einer Untergruppe von $(G,\circ)$, wenn diese auch die Anforderungen an eine Gruppe erfüllt.
+		\subsection{Ringe}
+			Man spricht bei einem\index{Tripel}\index{Ring} Tripel $(R,+,\cdot)$ von einem Ring, wenn folgende Bedingungen erfüllt sind:
+			\begin{tcolorbox}[boxsep=0pt,top=0.25cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+				\begin{flalign*}
+				&\text{1. }+\text{ und }\cdot\text{ sind innere Verknüpfungen}\\\\
+				&\text{2. }(R,+)\text{ ist eine abelsche Gruppe}\\\\
+				&\text{3. }(R,\cdot)\text{ ist assoziativ}\\\\
+				&\text{4. Es gelten die Distributivgesetze } ((a+b)\cdot c=a\cdot c+b\cdot c)&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Ist $(R,\cdot)$ zusätzlich kommutativ, spricht man auch von einem kommutativen Ring.\index{Kommutativ}\newline\newline
+			Im Kontext eines Ringes nennt man außerdem das neutrale Element von $\cdot$ \textbf{Einselement}\index{Einselement} (in diesem Fall die 1) und das neutrale Element von $+$ \textbf{Nullelement}\index{Nullelement} (in diesem Fall die 0).\newline\newline
+			Ein Beispiel für einen kommutativen Ring ist $(\mathbb{R},+,\cdot)$ mit dem Einselement 1 und dem Nullelement 0.\newline\newline
+			Wenn es ein Element $b$ in dem Ring gibt, sodass $a\cdot b=0$ ist, spricht man dabei von einem Nullteiler. $(R,+,\cdot)$ ist nullteilerfrei.
 	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}

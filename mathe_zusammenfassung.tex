@@ -817,7 +817,25 @@
 				\end{flalign*}
 			\end{tcolorbox}
 			\noindent Ist eine Gruppe außerdem kommutativ, nennt man sie auch abelsche Gruppe\index{Abelsche Gruppe}. Beispielsweise wäre $(\mathbb{R},+)$ so eine abelsche Gruppe.\newline\newline
-			Nimmt man eine Teilmenge der Menge einer Gruppe $(G,\circ)$ und dieselbe Verknüpfung spricht man von einer Untergruppe von $(G,\circ)$, wenn diese auch die Anforderungen an eine Gruppe erfüllt.
+			Sobald die Abbildung einer Struktur assoziativ ist, ist sie eine Halbgruppe\index{Halbgruppe}, ungeachtet, ob die anderen Bedingungen erfüllt sind. Besitzt die Halbgruppe außerdem noch ein neutrales Element, spricht man von Monoid\index{Monoid}.\newline\newline
+			Nimmt man eine Teilmenge $H\subseteq G$ der Menge einer Gruppe $(G,\circ)$ und dieselbe Verknüpfung spricht man von einer Untergruppe von $(G,\circ)$, wenn diese auch die Anforderungen an eine Gruppe erfüllt.\newline\newline
+			Um zu zeigen, dass eine Untergruppe wirklich ein Gruppe ist, muss man jedoch nicht die vier Bedingungen von oben beweisen. Es reicht, wenn man eine dieser beiden Sachen zeigt:
+			\begin{tcolorbox}[boxsep=0pt,top=0.05cm,left=.75cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]\index{Gruppe}
+				\begin{flalign*}
+					&\forall x,y\in H:x\circ y^{-1}\in N\\
+					&\text{oder}\\
+					&\forall x,y\in H: x\circ y\in H \land \forall x\in H: x^{-1}\in H&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Beispiel:
+			\begin{flalign*}
+				&\text{Seien }x,y\in\mathbb{Q}\\
+				&\exists p,\tilde{p}\in\mathbb{Z},q,\tilde{q}\in\mathbb{N}:x=\frac{p}{q}\land y=\frac{\tilde{p}}{\tilde{q}}\\
+				\Rightarrow&-y=\frac{-\tilde{p}}{\tilde{q}}\in\mathbb{Q}\\
+				\Rightarrow&y+(-y)=\frac{\tilde{p}}{\tilde{q}}+\frac{-\tilde{p}}{\tilde{q}}=\frac{\tilde{p}+(-\tilde{p})}{\tilde{q}}=0\\
+				\Rightarrow&x+(-y)=\frac{p}{q}+\frac{-\tilde{p}}{\tilde{q}}=\frac{p\cdot\tilde{q}+q(-\tilde{p})}{q\cdot\tilde{q}}\\
+				\Rightarrow&q\cdot\tilde{q}\in\mathbb{N}\land p\cdot\tilde{q}+q(-\tilde{p})\in\mathbb{Z}&&
+			\end{flalign*}
 		\subsection{Ringe}
 			Man spricht bei einem\index{Tripel}\index{Ring} Tripel $(R,+,\cdot)$ von einem Ring, wenn folgende Bedingungen erfüllt sind:
 			\begin{tcolorbox}[boxsep=0pt,top=0.25cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
@@ -832,6 +850,34 @@
 			Im Kontext eines Ringes nennt man außerdem das neutrale Element von $\cdot$ \textbf{Einselement}\index{Einselement} (in diesem Fall die 1) und das neutrale Element von $+$ \textbf{Nullelement}\index{Nullelement} (in diesem Fall die 0).\newline\newline
 			Ein Beispiel für einen kommutativen Ring ist $(\mathbb{R},+,\cdot)$ mit dem Einselement 1 und dem Nullelement 0.\newline\newline
 			Wenn es ein Element $b$ in dem Ring gibt, sodass $a\cdot b=0$ ist, spricht man dabei von einem Nullteiler. $(R,+,\cdot)$ ist nullteilerfrei.
+		\subsection{Körper}
+			Wenn man einen kommutativen Ring $(K,+,\cdot)$ hat, dann nennt man diesen Körper, falls $(K\setminus\{0\},\cdot)$ eine abelsche Gruppe ist.\newline\newline
+			Körper sind immer nullteilerfrei, d.h. $a\cdot b=0\Rightarrow a=0\lor b=0$.\newline\newline
+			Beispiele für Körper sind $(\mathbb{Q},+,\cdot)$ oder $(\mathbb{R},+,\cdot)$.
+			\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.25cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+				\textbf{Unterkörper}\vspace{.5em}\newline
+				Sei $(K,+,\cdot)$ ein Körper. Dann heißt $G$ Unterkörper von $K$, falls $G\subseteq K$ und folgende Eigenschaften erfüllt sind:
+				\begin{multicols}{2}
+					1. $a,b\in G:a+b\in G$\newline\newline
+					2. $a,b\in G:a\cdot b\in G$\newline\newline
+					3. $0\in G\land 1\in G$\newline\newline
+					4. $\forall a\in G:-a\in G$\newline\newline
+					5. $\forall a\in G:a^{-1}\in G$\newline\newline
+				\end{multicols}
+			\end{tcolorbox}
+			\noindent Das heißt übersetzt, dass $G$ bzgl. Addition und Multiplikation abgeschlossen ist, das Einselement und das Nullelement von $K$ enthält und die inversen Elemente bzgl. Addition und Multiplikation enthält. Zum Beispiel ist $(\mathbb{Q},+,\cdot)$ ein Unterkörper von $(\mathbb{R},+,\cdot)$.
+		\subsection{Vektorräume}
+			Haben wir eine nichtleere Menge $V$ und einen Körper $(K,+_K,\cdot_K)$, sowie eine innere Verknüpfung $+_V:V\times V\to V$ auf $V$ und eine äußere Verknüpfung $\cdot:K\times V\to V$, dann nennen wir $(V,+_V,\cdot)$ einen linearen Raum bzw. Vektorraum über $K$ oder auch $K$-Vektorraum, wenn folgende Eigenschaften gegeben sind:
+			\begin{tcolorbox}[boxsep=0pt,top=0.25cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+				\begin{flalign*}
+					&\text{1. }V,+_V\text{ ist eine abelsche Gruppe}\\\\
+					&\text{2. }\textcolor{gray}{\forall v\in V:}1\cdot v=v\\\\
+					&\text{3. }\textcolor{gray}{\forall\alpha,\beta\in K\;\forall v\in V:}(\alpha+_K\beta)\cdot v=\alpha\cdot v+_V \beta\cdot v\\\\
+					&\text{4. }\textcolor{gray}{\forall\alpha\in K\;\forall v,w\in V:}\alpha\cdot(v+_V w)=\alpha\cdot v+_V\alpha\cdot w\\\\
+					&\text{5. }\textcolor{gray}{\forall\alpha,\beta\in K\;\forall v\in V:}(\alpha\cdot_K\beta)\cdot v=\alpha\cdot(\beta\cdot v)&&
+				\end{flalign*}
+			\end{tcolorbox}
+		\noindent Das heißt also, wir brauchen das Nullelement von K, außerdem müssen die Distributiv- und Assoziativgesetze gelten.
 	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}

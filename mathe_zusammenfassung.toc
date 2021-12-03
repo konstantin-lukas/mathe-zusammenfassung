@@ -15,143 +15,144 @@
 \contentsline {subsection}{\numberline {2.2}Ringe}{15}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Körper}{15}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Vektorräume}{16}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Komplexe Zahlen}{16}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Darstellungsformen}{18}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Komplexe Zahlen potenzieren}{19}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Komplexe Zahlen radizieren}{20}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Elementarmathematik}{22}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Brüche dividieren}{22}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Lösungsmenge}{22}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Normalform}{22}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}p-q-Formel}{23}{subsubsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.4}Intervalle}{23}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Beträge}{23}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Binomische Formeln}{23}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Euklidischer Algorithmus}{23}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Potenzgesetze}{24}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Wurzelgesetze}{25}{subsection.4.9}%
-\contentsline {subsubsection}{\numberline {4.9.1}Wurzeltherme vereinfachen (Beispiele)}{26}{subsubsection.4.9.1}%
-\contentsline {subsection}{\numberline {4.10}Logarithmusgesetze}{26}{subsection.4.10}%
-\contentsline {subsection}{\numberline {4.11}Modulo (ganzer Zahlen)}{27}{subsection.4.11}%
-\contentsline {subsection}{\numberline {4.12}Kongruenz (Zahlentheorie)}{27}{subsection.4.12}%
-\contentsline {section}{\numberline {5}Gleichungen vereinfachen}{28}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Quadratische Ergänzung}{28}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Faktorisieren}{28}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Faktorisierung durch Ausklammern}{28}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Faktorisierung mit binomischen Formeln}{29}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Faktorisierung mit dem Satz von Viëta}{29}{subsubsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.3}Substitution}{29}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Ungleichungen}{30}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Rechenregeln}{30}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Quadratische Ungleichungen}{30}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Ungleichungen mit Beträgen}{31}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Ungleichungen mit Variable im Nenner – Teil I}{31}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Ungleichungen mit Variable im Nenner – Teil II}{32}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Lineare Gleichungssysteme}{35}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Einsetzungsverfahren}{35}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Additionsverfahren}{36}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Gauß-Verfahren}{37}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Lineare Gleichungssysteme mit Parameter}{37}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Erweiterte Koeffizientenmatrix}{38}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Lösbarkeit von linearen Gleichungssystemen}{39}{subsection.7.6}%
-\contentsline {section}{\numberline {8}Geometrie}{40}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Rechtwinklige Dreiecke}{40}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Kathetensatz}{40}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Höhensatz}{40}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Sinus, Kosinus und Tangens}{40}{subsubsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.2}Rechnen mit Flächen (Formeln)}{41}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Dreieck}{41}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Kreis}{41}{subsubsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.3}Rechnen mit Körpern (Formeln)}{42}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}Prisma}{42}{subsubsection.8.3.1}%
-\contentsline {subsubsection}{\numberline {8.3.2}Pyramide}{42}{subsubsection.8.3.2}%
-\contentsline {subsubsection}{\numberline {8.3.3}Zylinder}{42}{subsubsection.8.3.3}%
-\contentsline {subsubsection}{\numberline {8.3.4}Kegel}{43}{subsubsection.8.3.4}%
-\contentsline {section}{\numberline {9}Vektorgeometrie}{44}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Rechnen mit Vektoren}{45}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Geraden}{47}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Ebenen}{48}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Umwandeln von Ebenengleichungen}{49}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Lagebeziehungen}{51}{subsection.9.5}%
-\contentsline {subsubsection}{\numberline {9.5.1}Punkt – Punkt}{51}{subsubsection.9.5.1}%
-\contentsline {subsubsection}{\numberline {9.5.2}Punkt – Gerade/Ebene}{51}{subsubsection.9.5.2}%
-\contentsline {subsubsection}{\numberline {9.5.3}Gerade – Gerade/Ebene}{51}{subsubsection.9.5.3}%
-\contentsline {subsubsection}{\numberline {9.5.4}Ebene – Ebene}{52}{subsubsection.9.5.4}%
-\contentsline {subsection}{\numberline {9.6}Linearkombination}{53}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}Lineare Abhängigkeit}{54}{subsection.9.7}%
-\contentsline {subsection}{\numberline {9.8}Dreiecksungleichung}{55}{subsection.9.8}%
-\contentsline {section}{\numberline {10}2D-Koordinatensystem}{56}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Allgemeines}{56}{subsection.10.1}%
-\contentsline {subsubsection}{\numberline {10.1.1}Monotonie}{56}{subsubsection.10.1.1}%
-\contentsline {subsubsection}{\numberline {10.1.2}Umkehrbarkeit}{56}{subsubsection.10.1.2}%
-\contentsline {subsubsection}{\numberline {10.1.3}Besondere Stellen}{57}{subsubsection.10.1.3}%
-\contentsline {subsubsection}{\numberline {10.1.4}Symmetrie}{58}{subsubsection.10.1.4}%
-\contentsline {subsubsection}{\numberline {10.1.5}Newtonverfahren}{58}{subsubsection.10.1.5}%
-\contentsline {subsection}{\numberline {10.2}Lineare Funktionen}{59}{subsection.10.2}%
-\contentsline {subsubsection}{\numberline {10.2.1}Schnittwinkel berechnen}{59}{subsubsection.10.2.1}%
-\contentsline {subsection}{\numberline {10.3}Potenz- und Wurzelfunktionen}{60}{subsection.10.3}%
-\contentsline {subsubsection}{\numberline {10.3.1}Wurzelgleichungen}{60}{subsubsection.10.3.1}%
-\contentsline {subsubsection}{\numberline {10.3.2}Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}{62}{subsubsection.10.3.2}%
-\contentsline {subsection}{\numberline {10.4}Betragsfunktionen}{62}{subsection.10.4}%
-\contentsline {subsubsection}{\numberline {10.4.1}Betragsgleichungen mit mehreren Beträgen}{63}{subsubsection.10.4.1}%
-\contentsline {subsection}{\numberline {10.5}Polynomfunktionen (Ganzrationale Funktionen)}{65}{subsection.10.5}%
-\contentsline {subsubsection}{\numberline {10.5.1}Lösen durch Substitution}{66}{subsubsection.10.5.1}%
-\contentsline {subsubsection}{\numberline {10.5.2}Lösen durch Faktorisierung}{67}{subsubsection.10.5.2}%
-\contentsline {subsubsection}{\numberline {10.5.3}Lösen mit binomischen Formeln}{68}{subsubsection.10.5.3}%
-\contentsline {subsubsection}{\numberline {10.5.4}Lösen durch Polynomdivision}{68}{subsubsection.10.5.4}%
-\contentsline {subsubsection}{\numberline {10.5.5}Grenzverhalten von ganzrationalen Funktionen}{69}{subsubsection.10.5.5}%
-\contentsline {subsection}{\numberline {10.6}(Gebrochen)rationale Funktionen}{70}{subsection.10.6}%
-\contentsline {subsection}{\numberline {10.7}Exponentialfunktionen}{71}{subsection.10.7}%
-\contentsline {subsubsection}{\numberline {10.7.1}Lösen von Exponentialgleichungen}{72}{subsubsection.10.7.1}%
-\contentsline {subsection}{\numberline {10.8}Logarithmusfunktionen}{72}{subsection.10.8}%
-\contentsline {subsubsection}{\numberline {10.8.1}Lösen von Logarithmusgleichungen}{72}{subsubsection.10.8.1}%
-\contentsline {subsection}{\numberline {10.9}Trigonometrische Funktionen}{73}{subsection.10.9}%
-\contentsline {subsection}{\numberline {10.10}Verkettete Funktionen}{74}{subsection.10.10}%
-\contentsline {subsection}{\numberline {10.11}Kreisgleichungen}{74}{subsection.10.11}%
-\contentsline {section}{\numberline {11}Differenzialrechnung}{76}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Die Ableitung}{76}{subsection.11.1}%
-\contentsline {subsubsection}{\numberline {11.1.1}Differenzenquotient}{77}{subsubsection.11.1.1}%
-\contentsline {subsubsection}{\numberline {11.1.2}Differentialquotient}{77}{subsubsection.11.1.2}%
-\contentsline {subsubsection}{\numberline {11.1.3}Extrem- und Wendepunkte}{78}{subsubsection.11.1.3}%
-\contentsline {subsection}{\numberline {11.2}Limes: Der Grenzwert}{79}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}Differenzierbarkeit}{80}{subsection.11.3}%
-\contentsline {subsubsection}{\numberline {11.3.1}Stetige Erweiterung}{81}{subsubsection.11.3.1}%
-\contentsline {subsection}{\numberline {11.4}Tangentengleichung}{82}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}Kurvendiskussion}{83}{subsection.11.5}%
-\contentsline {subsubsection}{\numberline {11.5.1}Symmetrie}{83}{subsubsection.11.5.1}%
-\contentsline {subsubsection}{\numberline {11.5.2}Nullstellen}{83}{subsubsection.11.5.2}%
-\contentsline {subsubsection}{\numberline {11.5.3}Schnittpunkt mit y-Achse}{84}{subsubsection.11.5.3}%
-\contentsline {subsubsection}{\numberline {11.5.4}Grenzverhalten}{84}{subsubsection.11.5.4}%
-\contentsline {subsubsection}{\numberline {11.5.5}Extrema}{85}{subsubsection.11.5.5}%
-\contentsline {subsubsection}{\numberline {11.5.6}Wendepunkte}{86}{subsubsection.11.5.6}%
-\contentsline {subsubsection}{\numberline {11.5.7}Tangentengleichungen der Wendepunkte}{87}{subsubsection.11.5.7}%
-\contentsline {subsubsection}{\numberline {11.5.8}Flächenberechnung}{88}{subsubsection.11.5.8}%
-\contentsline {subsection}{\numberline {11.6}Optimierungsaufgaben}{89}{subsection.11.6}%
-\contentsline {section}{\numberline {12}Integralrechnung}{90}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Die Stammfunktion}{91}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Partielle Integration}{92}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Integration durch Substitution}{93}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}Die Fläche zwischen zwei Graphen}{94}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}Rotationsvolumen}{95}{subsection.12.5}%
-\contentsline {subsection}{\numberline {12.6}Uneigentliche Integrale}{96}{subsection.12.6}%
-\contentsline {subsubsection}{\numberline {12.6.1}Unbeschränktes Intervall}{97}{subsubsection.12.6.1}%
-\contentsline {subsubsection}{\numberline {12.6.2}Unbeschränkte Funktion}{97}{subsubsection.12.6.2}%
-\contentsline {section}{\numberline {13}Logik}{98}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Beweise}{98}{subsection.13.1}%
-\contentsline {subsubsection}{\numberline {13.1.1}Direkter Beweis}{99}{subsubsection.13.1.1}%
-\contentsline {subsubsection}{\numberline {13.1.2}Indirekter Beweis und Beweis durch Kontraposition}{99}{subsubsection.13.1.2}%
-\contentsline {subsubsection}{\numberline {13.1.3}Vollständige Induktion}{100}{subsubsection.13.1.3}%
-\contentsline {section}{\numberline {14}Stochastik}{101}{section.14}%
-\contentsline {subsection}{\numberline {14.1}Kombinatorik}{101}{subsection.14.1}%
-\contentsline {subsubsection}{\numberline {14.1.1}Permutation mit Wiederholung}{102}{subsubsection.14.1.1}%
-\contentsline {subsubsection}{\numberline {14.1.2}Permutation ohne Wiederholung}{103}{subsubsection.14.1.2}%
-\contentsline {subsubsection}{\numberline {14.1.3}Variation mit Wiederholung}{103}{subsubsection.14.1.3}%
-\contentsline {subsubsection}{\numberline {14.1.4}Variation ohne Wiederholung}{104}{subsubsection.14.1.4}%
-\contentsline {subsubsection}{\numberline {14.1.5}Kombination mit Wiederholung}{104}{subsubsection.14.1.5}%
-\contentsline {subsubsection}{\numberline {14.1.6}Kombination ohne Wiederholung}{105}{subsubsection.14.1.6}%
-\contentsline {subsection}{\numberline {14.2}Diskrete Wahrscheinlichkeitsverteilungen}{105}{subsection.14.2}%
-\contentsline {subsubsection}{\numberline {14.2.1}Binomialverteilung}{105}{subsubsection.14.2.1}%
-\contentsline {subsubsection}{\numberline {14.2.2}Hypergeometrische Verteilung}{106}{subsubsection.14.2.2}%
-\contentsline {subsection}{\numberline {14.3}Bedingte Wahrscheinlichkeit}{106}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4}Diskrete Zufallsvariablen}{110}{subsection.14.4}%
-\contentsline {subsubsection}{\numberline {14.4.1}Erwartungswert, Varianz und Standardabweichung}{110}{subsubsection.14.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.1}Linearkombination}{17}{subsubsection.2.4.1}%
+\contentsline {section}{\numberline {3}Komplexe Zahlen}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Darstellungsformen}{19}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Komplexe Zahlen potenzieren}{20}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Komplexe Zahlen radizieren}{21}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Elementarmathematik}{23}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Brüche dividieren}{23}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Lösungsmenge}{23}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Normalform}{23}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}p-q-Formel}{24}{subsubsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.4}Intervalle}{24}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Beträge}{24}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Binomische Formeln}{24}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Euklidischer Algorithmus}{24}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Potenzgesetze}{25}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Wurzelgesetze}{26}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}Wurzeltherme vereinfachen (Beispiele)}{27}{subsubsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.10}Logarithmusgesetze}{27}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}Modulo (ganzer Zahlen)}{28}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}Kongruenz (Zahlentheorie)}{28}{subsection.4.12}%
+\contentsline {section}{\numberline {5}Gleichungen vereinfachen}{29}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Quadratische Ergänzung}{29}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Faktorisieren}{29}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Faktorisierung durch Ausklammern}{29}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Faktorisierung mit binomischen Formeln}{30}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Faktorisierung mit dem Satz von Viëta}{30}{subsubsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.3}Substitution}{30}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Ungleichungen}{31}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Rechenregeln}{31}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Quadratische Ungleichungen}{31}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Ungleichungen mit Beträgen}{32}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Ungleichungen mit Variable im Nenner – Teil I}{32}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Ungleichungen mit Variable im Nenner – Teil II}{33}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Lineare Gleichungssysteme}{36}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Einsetzungsverfahren}{36}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Additionsverfahren}{37}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Gauß-Verfahren}{38}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Lineare Gleichungssysteme mit Parameter}{38}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Erweiterte Koeffizientenmatrix}{39}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Lösbarkeit von linearen Gleichungssystemen}{40}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Geometrie}{41}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Rechtwinklige Dreiecke}{41}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Kathetensatz}{41}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Höhensatz}{41}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Sinus, Kosinus und Tangens}{41}{subsubsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.2}Rechnen mit Flächen (Formeln)}{42}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Dreieck}{42}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Kreis}{42}{subsubsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.3}Rechnen mit Körpern (Formeln)}{43}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Prisma}{43}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Pyramide}{43}{subsubsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3}Zylinder}{43}{subsubsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.4}Kegel}{44}{subsubsection.8.3.4}%
+\contentsline {section}{\numberline {9}Vektorgeometrie}{45}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Rechnen mit Vektoren}{46}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Geraden}{48}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Ebenen}{49}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Umwandeln von Ebenengleichungen}{50}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Lagebeziehungen}{52}{subsection.9.5}%
+\contentsline {subsubsection}{\numberline {9.5.1}Punkt – Punkt}{52}{subsubsection.9.5.1}%
+\contentsline {subsubsection}{\numberline {9.5.2}Punkt – Gerade/Ebene}{52}{subsubsection.9.5.2}%
+\contentsline {subsubsection}{\numberline {9.5.3}Gerade – Gerade/Ebene}{52}{subsubsection.9.5.3}%
+\contentsline {subsubsection}{\numberline {9.5.4}Ebene – Ebene}{53}{subsubsection.9.5.4}%
+\contentsline {subsection}{\numberline {9.6}Linearkombination}{54}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Lineare Abhängigkeit}{55}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Dreiecksungleichung}{56}{subsection.9.8}%
+\contentsline {section}{\numberline {10}2D-Koordinatensystem}{57}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Allgemeines}{57}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Monotonie}{57}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.2}Umkehrbarkeit}{57}{subsubsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.3}Besondere Stellen}{58}{subsubsection.10.1.3}%
+\contentsline {subsubsection}{\numberline {10.1.4}Symmetrie}{59}{subsubsection.10.1.4}%
+\contentsline {subsubsection}{\numberline {10.1.5}Newtonverfahren}{59}{subsubsection.10.1.5}%
+\contentsline {subsection}{\numberline {10.2}Lineare Funktionen}{60}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Schnittwinkel berechnen}{60}{subsubsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.3}Potenz- und Wurzelfunktionen}{61}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Wurzelgleichungen}{61}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}Wurzelgleichungen mit mehreren Wurzeln (Beispiel)}{63}{subsubsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.4}Betragsfunktionen}{63}{subsection.10.4}%
+\contentsline {subsubsection}{\numberline {10.4.1}Betragsgleichungen mit mehreren Beträgen}{64}{subsubsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.5}Polynomfunktionen (Ganzrationale Funktionen)}{66}{subsection.10.5}%
+\contentsline {subsubsection}{\numberline {10.5.1}Lösen durch Substitution}{67}{subsubsection.10.5.1}%
+\contentsline {subsubsection}{\numberline {10.5.2}Lösen durch Faktorisierung}{68}{subsubsection.10.5.2}%
+\contentsline {subsubsection}{\numberline {10.5.3}Lösen mit binomischen Formeln}{69}{subsubsection.10.5.3}%
+\contentsline {subsubsection}{\numberline {10.5.4}Lösen durch Polynomdivision}{69}{subsubsection.10.5.4}%
+\contentsline {subsubsection}{\numberline {10.5.5}Grenzverhalten von ganzrationalen Funktionen}{70}{subsubsection.10.5.5}%
+\contentsline {subsection}{\numberline {10.6}(Gebrochen)rationale Funktionen}{71}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}Exponentialfunktionen}{72}{subsection.10.7}%
+\contentsline {subsubsection}{\numberline {10.7.1}Lösen von Exponentialgleichungen}{73}{subsubsection.10.7.1}%
+\contentsline {subsection}{\numberline {10.8}Logarithmusfunktionen}{73}{subsection.10.8}%
+\contentsline {subsubsection}{\numberline {10.8.1}Lösen von Logarithmusgleichungen}{73}{subsubsection.10.8.1}%
+\contentsline {subsection}{\numberline {10.9}Trigonometrische Funktionen}{74}{subsection.10.9}%
+\contentsline {subsection}{\numberline {10.10}Verkettete Funktionen}{75}{subsection.10.10}%
+\contentsline {subsection}{\numberline {10.11}Kreisgleichungen}{75}{subsection.10.11}%
+\contentsline {section}{\numberline {11}Differenzialrechnung}{77}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Die Ableitung}{77}{subsection.11.1}%
+\contentsline {subsubsection}{\numberline {11.1.1}Differenzenquotient}{78}{subsubsection.11.1.1}%
+\contentsline {subsubsection}{\numberline {11.1.2}Differentialquotient}{78}{subsubsection.11.1.2}%
+\contentsline {subsubsection}{\numberline {11.1.3}Extrem- und Wendepunkte}{79}{subsubsection.11.1.3}%
+\contentsline {subsection}{\numberline {11.2}Limes: Der Grenzwert}{80}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Differenzierbarkeit}{81}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}Stetige Erweiterung}{82}{subsubsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.4}Tangentengleichung}{83}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Kurvendiskussion}{84}{subsection.11.5}%
+\contentsline {subsubsection}{\numberline {11.5.1}Symmetrie}{84}{subsubsection.11.5.1}%
+\contentsline {subsubsection}{\numberline {11.5.2}Nullstellen}{84}{subsubsection.11.5.2}%
+\contentsline {subsubsection}{\numberline {11.5.3}Schnittpunkt mit y-Achse}{85}{subsubsection.11.5.3}%
+\contentsline {subsubsection}{\numberline {11.5.4}Grenzverhalten}{85}{subsubsection.11.5.4}%
+\contentsline {subsubsection}{\numberline {11.5.5}Extrema}{86}{subsubsection.11.5.5}%
+\contentsline {subsubsection}{\numberline {11.5.6}Wendepunkte}{87}{subsubsection.11.5.6}%
+\contentsline {subsubsection}{\numberline {11.5.7}Tangentengleichungen der Wendepunkte}{88}{subsubsection.11.5.7}%
+\contentsline {subsubsection}{\numberline {11.5.8}Flächenberechnung}{89}{subsubsection.11.5.8}%
+\contentsline {subsection}{\numberline {11.6}Optimierungsaufgaben}{90}{subsection.11.6}%
+\contentsline {section}{\numberline {12}Integralrechnung}{91}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Die Stammfunktion}{92}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Partielle Integration}{93}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Integration durch Substitution}{94}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Die Fläche zwischen zwei Graphen}{95}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Rotationsvolumen}{96}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Uneigentliche Integrale}{97}{subsection.12.6}%
+\contentsline {subsubsection}{\numberline {12.6.1}Unbeschränktes Intervall}{98}{subsubsection.12.6.1}%
+\contentsline {subsubsection}{\numberline {12.6.2}Unbeschränkte Funktion}{98}{subsubsection.12.6.2}%
+\contentsline {section}{\numberline {13}Logik}{99}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Beweise}{99}{subsection.13.1}%
+\contentsline {subsubsection}{\numberline {13.1.1}Direkter Beweis}{100}{subsubsection.13.1.1}%
+\contentsline {subsubsection}{\numberline {13.1.2}Indirekter Beweis und Beweis durch Kontraposition}{100}{subsubsection.13.1.2}%
+\contentsline {subsubsection}{\numberline {13.1.3}Vollständige Induktion}{101}{subsubsection.13.1.3}%
+\contentsline {section}{\numberline {14}Stochastik}{102}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Kombinatorik}{102}{subsection.14.1}%
+\contentsline {subsubsection}{\numberline {14.1.1}Permutation mit Wiederholung}{103}{subsubsection.14.1.1}%
+\contentsline {subsubsection}{\numberline {14.1.2}Permutation ohne Wiederholung}{104}{subsubsection.14.1.2}%
+\contentsline {subsubsection}{\numberline {14.1.3}Variation mit Wiederholung}{104}{subsubsection.14.1.3}%
+\contentsline {subsubsection}{\numberline {14.1.4}Variation ohne Wiederholung}{105}{subsubsection.14.1.4}%
+\contentsline {subsubsection}{\numberline {14.1.5}Kombination mit Wiederholung}{105}{subsubsection.14.1.5}%
+\contentsline {subsubsection}{\numberline {14.1.6}Kombination ohne Wiederholung}{106}{subsubsection.14.1.6}%
+\contentsline {subsection}{\numberline {14.2}Diskrete Wahrscheinlichkeitsverteilungen}{106}{subsection.14.2}%
+\contentsline {subsubsection}{\numberline {14.2.1}Binomialverteilung}{106}{subsubsection.14.2.1}%
+\contentsline {subsubsection}{\numberline {14.2.2}Hypergeometrische Verteilung}{107}{subsubsection.14.2.2}%
+\contentsline {subsection}{\numberline {14.3}Bedingte Wahrscheinlichkeit}{107}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Diskrete Zufallsvariablen}{111}{subsection.14.4}%
+\contentsline {subsubsection}{\numberline {14.4.1}Erwartungswert, Varianz und Standardabweichung}{111}{subsubsection.14.4.1}%

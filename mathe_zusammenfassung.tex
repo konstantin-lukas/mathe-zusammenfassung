@@ -867,7 +867,7 @@
 			\end{tcolorbox}
 			\noindent Das heißt übersetzt, dass $G$ bzgl. Addition und Multiplikation abgeschlossen ist, das Einselement und das Nullelement von $K$ enthält und die inversen Elemente bzgl. Addition und Multiplikation enthält. Zum Beispiel ist $(\mathbb{Q},+,\cdot)$ ein Unterkörper von $(\mathbb{R},+,\cdot)$.
 		\subsection{Vektorräume}
-			Haben wir eine nichtleere Menge $V$ und einen Körper $(K,+_K,\cdot_K)$, sowie eine innere Verknüpfung $+_V:V\times V\to V$ auf $V$ und eine äußere Verknüpfung $\cdot:K\times V\to V$, dann nennen wir $(V,+_V,\cdot)$ einen linearen Raum bzw. Vektorraum über $K$ oder auch $K$-Vektorraum, wenn folgende Eigenschaften gegeben sind:
+			Haben wir eine nichtleere\index{Vektorraum} Menge $V$ und einen Körper\index{Körper} $(K,+_K,\cdot_K)$, sowie eine innere Verknüpfung\index{Innere Verknüpfung} $+_V:V\times V\to V$ auf $V$ und eine äußere Verknüpfung\index{Äußere Verknüpfung} $\cdot:K\times V\to V$, dann nennen wir $(V,+_V,\cdot)$ einen linearen Raum bzw. Vektorraum über $K$ oder auch $K$-Vektorraum, wenn folgende Eigenschaften gegeben sind:
 			\begin{tcolorbox}[boxsep=0pt,top=0.25cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
 				\begin{flalign*}
 					&\text{1. }V,+_V\text{ ist eine abelsche Gruppe}\\\\
@@ -878,6 +878,55 @@
 				\end{flalign*}
 			\end{tcolorbox}
 		\noindent Das heißt also, wir brauchen das Nullelement von K, außerdem müssen die Distributiv- und Assoziativgesetze gelten.
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]\index{Unterraum}
+			\textbf{Unterraum}\vspace{.5em}\newline
+			Sei $(V,+,\cdot)$ ein K-Vektorraum und $W\subseteq V$ mit $W\neq\emptyset$. Dann heißt $(W,+,\cdot)$ K-Untervektorraum oder (linearer) Unterraum von $(V,+,\cdot)$, wenn folgende Eigenschaften vorliegen:
+			\begin{flalign*}
+			&\text{1. }\forall v,w\in W: v+w\in W\\
+			&\text{2. }\forall\alpha\in K\;\forall v\in W:av\in W&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Man muss also nur auf Abgeschlossenheit\index{Abgeschlossenheit} prüfen. Wenn man mehrere Vektorräume schneidet, dann ist das Ergebnis auch wieder ein Vektorraum\index{Vektorraum} und es gilt: Sei $F$ ein System\index{System} von Unterräumen, dann ist
+		\begin{flalign*}
+			U:=\bigcap_{W\in F}W&&
+		\end{flalign*}
+		ebenfalls ein Unterraum. Man kann übrigens auch die Summe aus zwei Unterräumen $W_1$ und $W_2$ eines gemeinsamen Vektorraums bilden:
+		\begin{flalign*}
+			W_1+W_2:=\{w_1+w_2\mid w_1\in W_1\land w_2\in W_2\}&&
+		\end{flalign*}
+		Diese Summe ist auch wieder ein Unterraum von $V$ Wenn der Schnitt aus $W_1$ und $W_2$ nur den Nullvektor enthält, dann spricht man von der direkten Summe\index{Direkte Summe} $W_1\oplus W_2$. Dann bezeichnet man $W_2$ auch als Komplement zu $W_1$.\index{Komplement} Hat man beispielsweise die horizontale und die vertikale Gerade aus $\mathbb{R}^2$, dann sind das die Unterräume $\{(x,0)\mid\in\mathbb{R}\}$ und $\{(0,x)\mid\in\mathbb{R}\}$, deren direkt Summe zusammen wieder $\mathbb{R}^2$ ergibt.
+		\subsubsection{Linearkombination}
+		Betrachtet man einen Vektorraum, dann kann man Vektoren aus der Summe mehrere anderer Vektoren darstellen. Möchte man beispielsweise von $A$ nach $C$ kann man anstatt $\overrightarrow{AC}$ abzugehen auch erst den Punkt $B$ besuchen. In diesem Fall wäre es sehr einfach zu sehen, dass $1\cdot\overrightarrow{AB}+1\cdot\overrightarrow{BC}=\overrightarrow{AC}$. Es kann aber auch sein, dass man noch mehr als zwei Vektoren hat oder andere Skalare\index{Skalar}\index{Linearkombination} als $1$ benutzen muss.
+			\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+				\textbf{Linearkombination}
+			\begin{flalign*}
+			v:=\sum^n_{i=1}\lambda_iv_i&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Die Menge aller Linearkombinationen wird lineare Hülle\index{Lineare Hülle} oder auch Spann\index{Spann} oder Erzeugnis genannt. Das nennt man so, da z.B. die lineare Hülle einer Menge mit zwei Vektoren eine Ebene aufspannt bzw. erzeugt.
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Lineare Hülle}\index{Lineare Hülle}
+			\begin{flalign*}
+			&\text{span}(W)=L(W)=\langle W\rangle:=\left\{\sum^n_{i=1}\lambda_iv_i\middle|\lambda_i\in K,v_i\in W\right\}\\
+			&\text{span}(\{\emptyset\}):=\{0\}\text{ (Nullvektor)}&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Um herauszufinden, ob ein Vektor eine Linearkombination von mehreren Vektoren ist, kann man einfach ein Gleichungssystem aufstellen.
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Erzeugendensystem}\index{Erzeugendensystem}\newline\newline
+			Ist $W$ aus span($W$) eine Untermenge von $V$, dann heißt $W$ Erzeugendensystem von $V$.
+		\end{tcolorbox}
+		\noindent Die leere Menge ist beispielsweise Erzeugendensystem des Nullraumes $\{0\}$. Ein Erzeugendensystem für $\mathbb{R}^3$ wäre zum Beispiel:
+		\begin{flalign*}
+			\mathbb{R}^3=\text{span}\left(\left\{\begin{pmatrix}
+			1\\0\\0
+			\end{pmatrix},\begin{pmatrix}
+			0\\1\\0
+			\end{pmatrix},\begin{pmatrix}
+			0\\0\\1
+			\end{pmatrix}\right\}\right)&&
+		\end{flalign*}
+		Die Anzahl der Elemente im Erzeugendensystem wird auch Dimension genannt.\index{Dimension} Ein Vektorraum $V$ heißt (un)endlich erzeugt\index{Endlich erzeugt}\index{Unendlich erzeugt}, falls er (un)endliches Erzeugendensystem besitzt.
 	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}

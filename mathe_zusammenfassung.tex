@@ -913,10 +913,10 @@
 		\end{tcolorbox}
 		\noindent Um herauszufinden, ob ein Vektor eine Linearkombination von mehreren Vektoren ist, kann man einfach ein Gleichungssystem aufstellen.
 		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
-			\textbf{Erzeugendensystem}\index{Erzeugendensystem}\newline\newline
-			Ist $W$ aus span($W$) eine Untermenge von $V$, dann heißt $W$ Erzeugendensystem von $V$.
+			\textbf{Erzeugendensystem und Basis}\index{Erzeugendensystem}\index{Basis}\newline\newline
+			Ist $W$ aus span($W$) eine Untermenge von $V$, dann heißt $W$ Erzeugendensystem von $V$. Ist das Erzeugendensystem linear unabhängig, spricht man auch von einer Basis.
 		\end{tcolorbox}
-		\noindent Die leere Menge ist beispielsweise Erzeugendensystem des Nullraumes $\{0\}$. Ein Erzeugendensystem für $\mathbb{R}^3$ wäre zum Beispiel:
+		\noindent Die leere Menge ist beispielsweise Erzeugendensystem und die Basis des Nullraumes $\{0\}$. Ein Erzeugendensystem und Basis für $\mathbb{R}^3$ wäre zum Beispiel:
 		\begin{flalign*}
 			\mathbb{R}^3=\text{span}\left(\left\{\begin{pmatrix}
 			1\\0\\0
@@ -926,7 +926,16 @@
 			0\\0\\1
 			\end{pmatrix}\right\}\right)&&
 		\end{flalign*}
-		Die Anzahl der Elemente im Erzeugendensystem wird auch Dimension genannt.\index{Dimension} Ein Vektorraum $V$ heißt (un)endlich erzeugt\index{Endlich erzeugt}\index{Unendlich erzeugt}, falls er (un)endliches Erzeugendensystem besitzt.
+		Sind in einer Basis nur die Einheitsvektoren, nennt man das auch Standardbasis\index{Standardbasis} oder kanonische Basis\index{Kanonische Basis}.
+		Die Anzahl der Elemente in der Basis wird auch Dimension (dim$_KV=n$) genannt, wobei $V$ ein $K$-Vektorraum ist.\index{Dimension} Ein Vektorraum $V$ heißt (un)endlich erzeugt\index{Endlich erzeugt}\index{Unendlich erzeugt}, falls er (un)endliches Erzeugendensystem besitzt. Damit man ein sinnvolles Erzeugendensystem kriegt, sollten die Vektoren linear unabhängig sein.\index{Lineare Abhängigkeit}
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Lineare Abhängigkeit}\index{Lineare Abhängigkeit}\newline\newline
+			Lässt sich der Nullvektor als Linearkombination der Vektoren aus einer Menge nur erzeugen, indem man alle Skalare als $0$ wählt, sagt man die Menge ist linear unabhängig. Es würde in diesem Fall Folgendes gelten:
+			\begin{flalign*}
+				\sum^n_{i=1}\alpha_iv_i=0\Rightarrow\forall i\in\{1,...,n\}:\alpha_i=0&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Hinweis: Um herauszufinden, ob eine unendliche Menge linear abhängig ist, muss man betrachten, ob jede Teilmenge linear unabhängig ist.
 	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}

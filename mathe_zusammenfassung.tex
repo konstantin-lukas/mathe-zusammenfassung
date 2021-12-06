@@ -679,6 +679,39 @@
 				B_i\cap B_j=\emptyset&&
 			\end{flalign*}
 			dann nennen wir diese Familie Partition. Da auch Äquivalenzklassen diese Eigenschaften erfüllen, sind auch sie Partitionen.\index{Partition}
+			\subsubsection{Lineare Abbildungen}
+				Sind für eine Abbildung $T:V\to W$ mit $V$ und $W$ $K$-Vektorräume die Eigenschaften Additivität\index{Additivität} und Homogenität\index{Homogenität} gegeben, sagt man die Abbildung ist $K$-linear. Formal heißt das:
+				\begin{tcolorbox}[boxsep=0pt,top=0.1cm,left=.75cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+					\begin{flalign*}
+						&\forall u,v\in V:T(u+v)=T(u)+t(v)\\
+						&\forall v\in V\;\forall\lambda\in K:T(\lambda\cdot v)=\lambda\cdot T(v)&&
+					\end{flalign*}
+				\end{tcolorbox}
+				\noindent Abgekürzt können wir auch sagen, eine Abbildung ist genau dann linear, wenn
+				\begin{flalign*}
+					\forall u,v\in V\;\forall\lambda,\mu\in K: T(\lambda u+\mu v)=\lambda T(u)+\mu T(v)&&
+				\end{flalign*}
+				\noindent Lineare Abbildungen nennen wir auch Homomorphismen\index{Homomorphismus} und schreiben dafür:
+				\begin{flalign*}
+					&\text{Hom}_K(V,W):=\{T:V\to W\mid T\text{ ist eine lineare Abbildung}\}\\
+					&\text{Hom}_K(V):=\text{Hom}_K(V,V)&&
+				\end{flalign*}
+				Außerdem sagen wir anstatt Homomorphismus auch Isomorphismus\index{Isomorphismus}, wenn $T$ eine Bijektion\index{Bijektion}, also eine bijektive Abbildung ist.\newline\newline
+				Wichtig für lineare Abbildungen, sind außerdem folgende Begriffe:
+				\begin{tcolorbox}[boxsep=0pt,top=0.65cm,left=.75cm,right=.5cm, bottom=.3cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+					\begin{multicols}{2}
+					\textbf{Bild}\index{Bild}\newline
+					im $T:=T(V)$\newline\newline
+					\textbf{Rang}\index{Rang}\newline
+					rank $T:=$ dim(im $T$)\newline\newline
+					\textbf{Kern/Nullraum}\index{Kern}\index{Nullraum}\newline
+					ker $T:=T^{-1}(0)$\newline\newline
+					\textbf{Defekt}\index{Defekt}\newline
+					def $T:=$ dim(ker $T$)
+					\end{multicols}
+				\end{tcolorbox}
+				\noindent Wenn wir einen Homomorphismus auf einer Menge haben, der mit sich selbst verkettet wieder sich selbst ergibt, sprechen wir von einem Projektor\index{Projektor}: $p\in$ Hom$_K(V)$ und $p\circ p =p$. Ein Beispiel für einen Projektor ist die Identität\index{Identität} oder auch eine Abbildung wie $h:\mathbb{R}^2\to\mathbb{R}^2,(x,y)\mapsto (0,5x+0,5y,0,5x+0,5y)$\newline\newline
+				Ganz ähnlich dazu definieren wir den Begriff Symmetrie\index{Symmetrie} als eine lineare Abbildung $s\in$ Hom$_K(V)$ mit $s\circ s=$ id.
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}

@@ -94,6 +94,8 @@
 		\end{tikzpicture}
 	\end{center}
 }
+\newcommand{\lb}[0]{\vspace{.5em}\newline}
+\newcommand{\lbb}[0]{\newline\newline}
 \newcommand{\plotfunc}[9]{
 	\readlist\xlimits{#4}
 	\def\xlower{\xlimits[1]}
@@ -696,18 +698,27 @@
 					&\text{Hom}_K(V,W):=\{T:V\to W\mid T\text{ ist eine lineare Abbildung}\}\\
 					&\text{Hom}_K(V):=\text{Hom}_K(V,V)&&
 				\end{flalign*}
-				Außerdem sagen wir anstatt Homomorphismus auch Isomorphismus\index{Isomorphismus}, wenn $T$ eine Bijektion\index{Bijektion}, also eine bijektive Abbildung ist.\newline\newline
-				Wichtig für lineare Abbildungen, sind außerdem folgende Begriffe:
+				Je nach Eigenschaften des Homomorphismus $T$ gibt es folgende Bezeichnungen:
+				\begin{tcolorbox}[boxsep=0pt,top=0.65cm,left=.75cm,right=.5cm, bottom=.6cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+					\begin{itemize}
+						\item \textbf{Monomorphismus:} $T$ ist injektiv
+						\item \textbf{Epimorphismus:} $T$ ist surjektiv
+						\item \textbf{Isomorphismus:} $T$ ist bijektiv
+						\item \textbf{Endomorphismus:} $V=W$
+						\item \textbf{Automorphismus:} $V=W$ und $T$ ist bijektiv
+					\end{itemize}
+				\end{tcolorbox}
+				\noindent Wichtig für lineare Abbildungen, sind außerdem folgende Begriffe:
 				\begin{tcolorbox}[boxsep=0pt,top=0.65cm,left=.75cm,right=.5cm, bottom=.3cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
 					\begin{multicols}{2}
 					\textbf{Bild}\index{Bild}\newline
 					im $T:=T(V)$\newline\newline
 					\textbf{Rang}\index{Rang}\newline
-					rank $T:=$ dim(im $T$)\newline\newline
+					rank $T:=$ dim$_K$(im $T$)\newline\newline
 					\textbf{Kern/Nullraum}\index{Kern}\index{Nullraum}\newline
-					ker $T:=T^{-1}(0)$\newline\newline
+					ker $T:=T^{-1}\left(\left\{\vec{0}\right\}\right)$\newline\newline
 					\textbf{Defekt}\index{Defekt}\newline
-					def $T:=$ dim(ker $T$)
+					def $T:=$ dim$_K$(ker $T$)
 					\end{multicols}
 				\end{tcolorbox}
 				\noindent Wenn wir einen Homomorphismus auf einer Menge haben, der mit sich selbst verkettet wieder sich selbst ergibt, sprechen wir von einem Projektor\index{Projektor}: $p\in$ Hom$_K(V)$ und $p\circ p =p$. Ein Beispiel für einen Projektor ist die Identität\index{Identität} oder auch eine Abbildung wie $h:\mathbb{R}^2\to\mathbb{R}^2,(x,y)\mapsto (0,5x+0,5y,0,5x+0,5y)$\newline\newline
@@ -969,6 +980,96 @@
 			\end{flalign*}
 		\end{tcolorbox}
 		\noindent Hinweis: Um herauszufinden, ob eine unendliche Menge linear abhängig ist, muss man betrachten, ob jede Teilmenge linear unabhängig ist.
+	\subsection{Matrizen}
+		Matrizen sind eine Anordnung von Skalaren\index{Skalar} $a_{ij}\in K$ mit $i=1,...,m$ und $j=1,...,n$, wobei $n,m\in \mathbb{N}$. Matrizen werden in Zeilen und Spalten aufgeteilt und entsprechen sagen wir zur Konkretisierung oft $m\times n$ Matrix\index{Matrix}.
+		\begin{flalign*}
+			(a_{ij})_{\substack{i=1,...,m\\j=1,...,n}}:=(a_{ij})_{i,j}:=A=\begin{pmatrix}
+			a_{11} & \cdots & a_{1n} \\
+			\vdots & \ddots & \vdots \\
+			a_{m1} & \cdots & a_{mn}
+			\end{pmatrix}&&
+		\end{flalign*}
+		Wie Menge aller $m\times n$ Matrizen wird geschrieben als:
+		\begin{flalign*}
+			K^{m\times n}:=\{A\mid A\text{ ist eine }m\times n\text{ Matrix mit Einträgen in }K\}&&
+		\end{flalign*}
+		Wichtig zu unterscheiden ist, dass das $i$, also die linke Zahl des Indexes\index{Index} die Anzahl der Zeilen angibt und $j$ die Anzahl der Spalten.\lb
+		Wenn wir eine quadratische Matrix haben, können wir die Diagonale\index{Diagonale} angeben mit:
+		\begin{flalign*}
+			\text{diag}(A):=(a_{11},...,a_{nn})&&
+		\end{flalign*}
+		Haben wir eine quadratische Matrix, auf deren Diagonale nur Einsen und ansonsten nur Nullen liegen, nennen wir diese Einheitsmatrix\index{Einheitsmatrix} oder Identitätsmatrix\index{Identitätsmatrix}.
+		\begin{flalign*}
+			I_n:=(\delta_{ij})_{ij}=\begin{pmatrix}
+			1 & \cdots & 0 \\
+			\vdots & \ddots & \vdots \\
+			0 & \cdots & 1
+			\end{pmatrix}\in K^{n\times n}&&
+		\end{flalign*}
+		Mithilfe von Matrizen können wir lineare Abbildungen definieren. Betrachten wir als Beispiel den $\mathbb{R}$-Vektorraum $\mathbb{R}^2$. Möchte man beispielsweise Vektoren $90^{\circ}$  um den Nullpunkt rotieren, kann man das mit dieser Abbildung tun:
+		\begin{flalign*}
+			T(v)=\begin{pmatrix}
+			\cos(90)v_1 - \sin(90)v_2 \\
+			\sin(90)v_1 + \cos(90)v_2
+			\end{pmatrix}&&
+		\end{flalign*}
+		Man kann das allerdings auch als Matrix $A$ darstellen:
+		\begin{flalign*}
+			Av=\begin{pmatrix}
+			\cos(90) - \sin(90) \\
+			\sin(90) + \cos(90)
+			\end{pmatrix}&&
+		\end{flalign*}
+		Da wir jetzt Abbildungen mit Matrizen darstellen können, können wir das Nutzen, um mit diesen Abbildungen zu rechnen.
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Addition}\index{Addition}
+			\begin{flalign*}
+				A+B=(a_{ij}+b_{ij})_{i,j}&&
+			\end{flalign*}
+			\textbf{Skalare Multiplikation}\index{Skalare Multiplikation}
+			\begin{flalign*}
+				\lambda A=(\lambda a_{ij})_{i,j}&&
+			\end{flalign*}
+			\textbf{Multiplikation}\index{Multiplikation}
+			\begin{flalign*}
+			AC:=\left(\sum^m_{k=1}a_{ik}c_{kj}\right)_{i,j}=(c_{ij})_{i,j}&&
+			\end{flalign*}
+			Anmerkung: Die Multiplikation zweier Matrizen funktioniert nur, wenn $A$ genauso viele Zeilen hat, wie $B$ Spalten.
+		\end{tcolorbox}
+		\noindent Ein Beispiel für die Multiplikation zweier Matrizen:
+		\begin{flalign*}
+			A=&\begin{pmatrix}
+			1 & 5 & 2 \\
+			5 & 0 & 2
+			\end{pmatrix}\\
+			B=&\begin{pmatrix}
+			7 & 1 \\
+			9 & 5 \\
+			2 & 0 
+			\end{pmatrix}\\
+			AB=&\begin{pmatrix}
+				56 & 26 \\
+				39 & 5
+			\end{pmatrix}\\
+			BA=&\begin{pmatrix}
+				12 & 35 & 16 \\
+				34 & 45 & 28 \\
+				2 & 10 & 4
+			\end{pmatrix}&&
+		\end{flalign*}
+		Unter der Voraussetzung, dass wie oben erwähnt die Anzahl der Zeilen und Spalten der Matrizen übereinstimmen, gelten folgenden Regeln:
+		\begin{tcolorbox}[boxsep=0pt,top=0.15cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\begin{multicols}{2}
+				\begin{flalign*}
+				&(\lambda A)(\mu B)=(\lambda\mu)(AB)\\\\
+				&(AB)C=A(BC)&&
+				\end{flalign*}
+				\begin{flalign*}\\
+				&A(B+C)=AB+AC\\\\
+				&(A+B)C=AC+BC&&
+				\end{flalign*}
+			\end{multicols}
+		\end{tcolorbox}
 	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}

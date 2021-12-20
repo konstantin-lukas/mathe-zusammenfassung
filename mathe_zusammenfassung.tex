@@ -723,6 +723,330 @@
 				\end{tcolorbox}
 				\noindent Wenn wir einen Homomorphismus auf einer Menge haben, der mit sich selbst verkettet wieder sich selbst ergibt, sprechen wir von einem Projektor\index{Projektor}: $p\in$ Hom$_K(V)$ und $p\circ p =p$. Ein Beispiel für einen Projektor ist die Identität\index{Identität} oder auch eine Abbildung wie $h:\mathbb{R}^2\to\mathbb{R}^2,(x,y)\mapsto (0,5x+0,5y,0,5x+0,5y)$\newline\newline
 				Ganz ähnlich dazu definieren wir den Begriff Symmetrie\index{Symmetrie} als eine lineare Abbildung $s\in$ Hom$_K(V)$ mit $s\circ s=$ id.
+			\subsubsection{Matrizen}
+			Matrizen sind eine Anordnung von Skalaren\index{Skalar} $a_{ij}\in K$ mit $i=1,...,m$ und $j=1,...,n$, wobei $n,m\in \mathbb{N}$. Matrizen werden in Zeilen und Spalten aufgeteilt und entsprechen sagen wir zur Konkretisierung oft $m\times n$ Matrix\index{Matrix}.
+			\begin{flalign*}
+			(a_{ij})_{\substack{i=1,...,m\\j=1,...,n}}:=(a_{ij})_{i,j}:=A=\begin{pmatrix}
+			a_{11} & \cdots & a_{1n} \\
+			\vdots & \ddots & \vdots \\
+			a_{m1} & \cdots & a_{mn}
+			\end{pmatrix}&&
+			\end{flalign*}
+			Wie Menge aller $m\times n$ Matrizen wird geschrieben als:
+			\begin{flalign*}
+			K^{m\times n}:=\{A\mid A\text{ ist eine }m\times n\text{ Matrix mit Einträgen in }K\}&&
+			\end{flalign*}
+			Wichtig zu unterscheiden ist, dass das $i$, also die linke Zahl des Indexes\index{Index} die Anzahl der Zeilen angibt und $j$ die Anzahl der Spalten.\lb
+			Wenn wir eine quadratische Matrix haben, können wir die Diagonale\index{Diagonale} angeben mit:
+			\begin{flalign*}
+			\text{diag}(A):=(a_{11},...,a_{nn})&&
+			\end{flalign*}
+			Haben wir eine quadratische Matrix, auf deren Diagonale nur Einsen und ansonsten nur Nullen liegen, nennen wir diese Einheitsmatrix\index{Einheitsmatrix} oder Identitätsmatrix\index{Identitätsmatrix}.
+			\begin{flalign*}
+			I_n:=(\delta_{ij})_{ij}=\begin{pmatrix}
+			1 & \cdots & 0 \\
+			\vdots & \ddots & \vdots \\
+			0 & \cdots & 1
+			\end{pmatrix}\in K^{n\times n}&&
+			\end{flalign*}
+			Mithilfe von Matrizen können wir lineare Abbildungen definieren. Betrachten wir als Beispiel den $\mathbb{R}$-Vektorraum $\mathbb{R}^2$. Möchte man beispielsweise Vektoren $90^{\circ}$  um den Nullpunkt rotieren, kann man das mit dieser Abbildung tun:
+			\begin{flalign*}
+			T(v)=\begin{pmatrix}
+			\cos(90)v_1 - \sin(90)v_2 \\
+			\sin(90)v_1 + \cos(90)v_2
+			\end{pmatrix}&&
+			\end{flalign*}
+			Man kann das allerdings auch als Matrix $A$ darstellen:
+			\begin{flalign*}
+			Av=\begin{pmatrix}
+			\cos(90) - \sin(90) \\
+			\sin(90) + \cos(90)
+			\end{pmatrix}&&
+			\end{flalign*}
+			Da wir jetzt Abbildungen mit Matrizen darstellen können, können wir das Nutzen, um mit diesen Abbildungen zu rechnen.
+			\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+				\textbf{Addition}\index{Addition}
+				\begin{flalign*}
+				A+B=(a_{ij}+b_{ij})_{i,j}&&
+				\end{flalign*}
+				\textbf{Skalare Multiplikation}\index{Skalare Multiplikation}
+				\begin{flalign*}
+				\lambda A=(\lambda a_{ij})_{i,j}&&
+				\end{flalign*}
+				\textbf{Multiplikation}\index{Multiplikation}
+				\begin{flalign*}
+				AC:=\left(\sum^m_{k=1}a_{ik}c_{kj}\right)_{i,j}=(c_{ij})_{i,j}&&
+				\end{flalign*}
+				Anmerkung: Die Multiplikation zweier Matrizen funktioniert nur, wenn $A$ genauso viele Zeilen hat, wie $B$ Spalten.
+			\end{tcolorbox}
+			\noindent Ein Beispiel für die Multiplikation zweier Matrizen:
+			\begin{flalign*}
+			A=&\begin{pmatrix}
+			1 & 5 & 2 \\
+			5 & 0 & 2
+			\end{pmatrix}\\
+			B=&\begin{pmatrix}
+			7 & 1 \\
+			9 & 5 \\
+			2 & 0 
+			\end{pmatrix}\\
+			AB=&\begin{pmatrix}
+			56 & 26 \\
+			39 & 5
+			\end{pmatrix}\\
+			BA=&\begin{pmatrix}
+			12 & 35 & 16 \\
+			34 & 45 & 28 \\
+			2 & 10 & 4
+			\end{pmatrix}&&
+			\end{flalign*}
+			Unter der Voraussetzung, dass wie oben erwähnt die Anzahl der Zeilen und Spalten der Matrizen übereinstimmen, gelten folgenden Regeln:
+			\begin{tcolorbox}[boxsep=0pt,top=0.15cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+				\begin{multicols}{2}
+					\begin{flalign*}
+					&(\lambda A)(\mu B)=(\lambda\mu)(AB)\\\\
+					&(AB)C=A(BC)&&
+					\end{flalign*}
+					\begin{flalign*}\\
+					&A(B+C)=AB+AC\\\\
+					&(A+B)C=AC+BC&&
+					\end{flalign*}
+				\end{multicols}
+			\end{tcolorbox}
+			\noindent Nehmen wir jede Spalte einer Matrix als eigenen Vektor und nehmen davon den Spann, dann erhalten wir das Bild von A.
+			\begin{flalign*}
+				\text{im} A=\span(\{v_1,v_2,...,v_n\})&&
+			\end{flalign*}
+			Den Rang einer Matrix, nennen wir entsprechend Spaltenrang\index{Spaltenrang}. Nehmen wir den Spann der Zeilenvektoren, dann nennen wir dessen Dimension analog Zeilenrang\index{Zeilenrang}.\lb
+			Eine wichtige Operation auf Matrizen ist das Transponieren.
+			\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+				\textbf{Transponierte Matrix}\index{Transponierte Matrix}
+				\begin{flalign*}
+					A=(a_{ij})_{i,j}\Rightarrow A^T=(a_{ji})_{j,i}&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Das heißt effektiv nur, dass man die Zeilen und Spalten vertauscht.\lb
+			Beispiel:
+			\begin{flalign*}
+				&A=\begin{pmatrix}
+				1&2&3\\
+				4&5&6
+				\end{pmatrix}\\
+				&A^T=\begin{pmatrix}
+				1&4\\
+				2&5\\
+				3&6
+				\end{pmatrix}&&
+			\end{flalign*}
+			\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+				\textbf{Darstellungsmatrix}/\textbf{Abbildungsmatrix}\index{Darstellungsmatrix}\index{Abbildungsmatrix}\lb
+				Seien $V$ und $W$ $K$-Vektorräume sowie $A=\{v_1,...,v_n\}$ und $B=\{w_1,...,w_m\}$ deren Basen. Dann existiert für jeden Homomorphismus $T$ von $V$ nach $W$ genau eine Matrix
+				\begin{flalign*}
+					M_T=(a_{ij})_{i,j}\in K^{m\times n}&&
+				\end{flalign*}
+				sodass
+				\begin{flalign*}
+					T(v_j)=\sum^m_{i=1}a_{ij}w_i\;\;\;\forall j=1,...,n&&
+				\end{flalign*}
+				Die Darstellungs- oder auch Abbildungsmatrix wird definiert als
+				\begin{flalign*}
+					M^A_B:\text{Hom}_K(V,W)\to K^{m\times n}, T\mapsto M_T&&
+				\end{flalign*}
+				von $T$ bezüglich der Basen $A$ und $B$.
+			\end{tcolorbox}
+		\noindent Haben wir beispielsweise die Abbildung $T:\mathbb{R}^3\to\mathbb{R}^2$ mit
+		\begin{flalign*}
+			T=\begin{pmatrix}
+			x\\y\\z
+			\end{pmatrix}=\begin{pmatrix}
+			x+2y\\3x+y+4z
+			\end{pmatrix}&&
+		\end{flalign*}
+		und die Basen
+		\begin{flalign*}
+			A:=\left\{\begin{pmatrix}
+			1\\1\\2
+			\end{pmatrix},\begin{pmatrix}
+			1\\0\\3
+			\end{pmatrix},\begin{pmatrix}
+			0\\2\\0
+			\end{pmatrix}\right\}\hspace{3cm}
+			B:=\left\{\begin{pmatrix}
+			2\\1
+			\end{pmatrix},\begin{pmatrix}
+			1\\1
+			\end{pmatrix}\right\}&&
+		\end{flalign*}
+		Dann kommen wir auf
+		\begin{flalign*}
+			M^A_B(T)=\begin{pmatrix}
+			-9&-14&2\\21&29&0
+			\end{pmatrix}&&
+		\end{flalign*}
+		denn
+		\begin{flalign*}
+			&T\begin{pmatrix}
+			1\\1\\2
+			\end{pmatrix}=\begin{pmatrix}
+			3\\12
+			\end{pmatrix}=-9\begin{pmatrix}
+			2\\1
+			\end{pmatrix}+21\begin{pmatrix}
+			1\\1
+			\end{pmatrix}\\
+			&T\begin{pmatrix}
+			1\\0\\3
+			\end{pmatrix}=\begin{pmatrix}
+			1\\15
+			\end{pmatrix}=-14\begin{pmatrix}
+			2\\1
+			\end{pmatrix}+29\begin{pmatrix}
+			1\\1
+			\end{pmatrix}\\
+			&T\begin{pmatrix}
+			0\\2\\0
+			\end{pmatrix}=\begin{pmatrix}
+			4\\2
+			\end{pmatrix}=2\begin{pmatrix}
+			2\\1
+			\end{pmatrix}+0\begin{pmatrix}
+			1\\1
+			\end{pmatrix}&&
+		\end{flalign*}
+		Ähnlich wie bei Abbildung, wo es auch Umkehrabbildungen gibt, gibt es für Matrizen invertierte Matrizen.
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Invertierbarkeit von Matrizen}\lb
+			Gibt es zu einer Matrix $A\in K^{n\times n}$ eine Matrix $B\in K^{n\times n}$ mit $AB=I_n$, so nennen wir $A$ invertierbar\index{Invertierbar} oder regulär\index{Regulär}, andernfalls singulär\index{Singulär}. Diese Inverse\index{Inverse} Bezeichnen wir mit $A^{-1}$.
+		\end{tcolorbox}
+		\noindent Für quadratische Matrizen gibt es außerdem noch weitere relevante Begriffe.
+			\begin{center}
+				\bgroup
+				\def\arraystretch{0}
+				\def\tabcolsep{0pt}
+				\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
+					\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+							\textbf{Symmetrische Matrix}\index{Symmetrisch}\lb
+							$A=A^T$\lbb
+							Beispiel:
+							\begin{flalign*}
+							A=\begin{pmatrix}
+							1&2&3\\[6pt]2&4&5\\[6pt]3&5&6
+							\end{pmatrix}&&
+							\end{flalign*}
+				\end{tcolorbox}}
+					&
+					\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+							\textbf{Diagonalmatrix}\index{Diagonalmatrix}\lb
+							$\forall i\neq j:a_{ij}=0$\lbb
+							Beispiel:
+							\begin{flalign*}
+							A=\begin{pmatrix}
+							8&0&0\\[6pt]0&4&0\\[6pt]0&0&6
+							\end{pmatrix}&&
+							\end{flalign*}
+					\end{tcolorbox}}
+				\end{tabularx}
+				\egroup
+			\end{center}
+		\begin{center}
+			\bgroup
+			\def\arraystretch{0}
+			\def\tabcolsep{0pt}
+			\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+						\textbf{Obere Dreiecksmatrix}\index{Obere Dreiecksmatrix}\lb
+						$\forall i>j:a_{ij}=0$\lbb
+						Beispiel:
+						\begin{flalign*}
+						A=\begin{pmatrix}
+						1&2&3\\[6pt]0&4&5\\[6pt]0&0&5
+						\end{pmatrix}&&
+						\end{flalign*}
+				\end{tcolorbox}}
+				&
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+						\textbf{Untere Dreiecksmatrix}\index{Untere Dreiecksmatrix}\lb
+						$\forall i<j:a_{ij}=0$\lbb
+						Beispiel:
+						\begin{flalign*}
+						A=\begin{pmatrix}
+						1&0&0\\[6pt]7&4&0\\[6pt]3&5&2
+						\end{pmatrix}&&
+						\end{flalign*}
+				\end{tcolorbox}}
+			\end{tabularx}
+			\egroup
+		\end{center}
+		\begin{center}
+			\bgroup
+			\def\arraystretch{0}
+			\def\tabcolsep{0pt}
+			\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+						\textbf{Permutationsmatrix}\index{Permutationsmatrix}\lb
+						In jeder Zeile/Spalte eine $1$, sonst $0$\lbb
+						Beispiel:
+						\begin{flalign*}
+						A=\begin{pmatrix}
+						1&0&0\\[6pt]0&0&1\\[6pt]0&1&0
+						\end{pmatrix}&&
+						\end{flalign*}
+				\end{tcolorbox}}
+				&
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+						\textbf{Projektor}\index{Projektor}\lb
+						$A=A^2$\lbb
+						Beispiel:
+						\begin{flalign*}
+						A=\begin{pmatrix}
+						1&0&0\\[6pt]0&0,5&0,5\\[6pt]0&0,5&0,5
+						\end{pmatrix}&&
+						\end{flalign*}
+				\end{tcolorbox}}
+			\end{tabularx}
+			\egroup
+		\end{center}
+		\begin{center}
+			\bgroup
+			\def\arraystretch{0}
+			\def\tabcolsep{0pt}
+			\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+						\textbf{Nilpotente Matrix}\index{Nilpotent}\lb
+						$\exists k\in\mathbb{N}:A^k=0$\lbb
+						Beispiel:
+						\begin{flalign*}
+						A=\begin{pmatrix}
+						0&1&0\\[6pt]0&0&1\\[6pt]0&0&0
+						\end{pmatrix}&&
+						\end{flalign*}
+				\end{tcolorbox}}
+				&
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+						\textbf{Hermetische Matrix}\index{Projektor}\lb
+						$K=\mathbb{C}\land A=\bar{A}^T (\bar{A}=\text{konj. komplex})$\lbb
+						Beispiel:
+						\begin{flalign*}
+						A=\begin{pmatrix}
+						1&1+i&2-3i\\[6pt]1-i&4&5+2i\\[6pt]2+3i&5-2i&6
+						\end{pmatrix}&&
+						\end{flalign*}
+				\end{tcolorbox}}
+			\end{tabularx}
+			\egroup
+		\end{center}
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+			\begin{multicols}{2}
+				\textbf{Positiv definite Matrix}\index{Positiv Definit}\lb
+				$\forall x\in K^n\setminus\{0\}:x^TAx>0$\lbb
+				\textbf{Positiv semidefinite Matrix}\index{Positiv Semidefinit}\lb
+				$\forall x\in K^n:x^TAx\ge0$\newline
+				\textbf{Negativ definite Matrix}\index{Negativ Definit}\lb
+				$\forall x\in K^n\setminus\{0\}:x^TAx<0$\lbb
+				\textbf{Negativ semidefinite Matrix}\index{Negativ Semidefinit}\lb
+				$\forall x\in K^n:x^TAx\le0$
+			\end{multicols}
+		\end{tcolorbox}
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}
@@ -980,96 +1304,7 @@
 			\end{flalign*}
 		\end{tcolorbox}
 		\noindent Hinweis: Um herauszufinden, ob eine unendliche Menge linear abhängig ist, muss man betrachten, ob jede Teilmenge linear unabhängig ist.
-	\subsection{Matrizen}
-		Matrizen sind eine Anordnung von Skalaren\index{Skalar} $a_{ij}\in K$ mit $i=1,...,m$ und $j=1,...,n$, wobei $n,m\in \mathbb{N}$. Matrizen werden in Zeilen und Spalten aufgeteilt und entsprechen sagen wir zur Konkretisierung oft $m\times n$ Matrix\index{Matrix}.
-		\begin{flalign*}
-			(a_{ij})_{\substack{i=1,...,m\\j=1,...,n}}:=(a_{ij})_{i,j}:=A=\begin{pmatrix}
-			a_{11} & \cdots & a_{1n} \\
-			\vdots & \ddots & \vdots \\
-			a_{m1} & \cdots & a_{mn}
-			\end{pmatrix}&&
-		\end{flalign*}
-		Wie Menge aller $m\times n$ Matrizen wird geschrieben als:
-		\begin{flalign*}
-			K^{m\times n}:=\{A\mid A\text{ ist eine }m\times n\text{ Matrix mit Einträgen in }K\}&&
-		\end{flalign*}
-		Wichtig zu unterscheiden ist, dass das $i$, also die linke Zahl des Indexes\index{Index} die Anzahl der Zeilen angibt und $j$ die Anzahl der Spalten.\lb
-		Wenn wir eine quadratische Matrix haben, können wir die Diagonale\index{Diagonale} angeben mit:
-		\begin{flalign*}
-			\text{diag}(A):=(a_{11},...,a_{nn})&&
-		\end{flalign*}
-		Haben wir eine quadratische Matrix, auf deren Diagonale nur Einsen und ansonsten nur Nullen liegen, nennen wir diese Einheitsmatrix\index{Einheitsmatrix} oder Identitätsmatrix\index{Identitätsmatrix}.
-		\begin{flalign*}
-			I_n:=(\delta_{ij})_{ij}=\begin{pmatrix}
-			1 & \cdots & 0 \\
-			\vdots & \ddots & \vdots \\
-			0 & \cdots & 1
-			\end{pmatrix}\in K^{n\times n}&&
-		\end{flalign*}
-		Mithilfe von Matrizen können wir lineare Abbildungen definieren. Betrachten wir als Beispiel den $\mathbb{R}$-Vektorraum $\mathbb{R}^2$. Möchte man beispielsweise Vektoren $90^{\circ}$  um den Nullpunkt rotieren, kann man das mit dieser Abbildung tun:
-		\begin{flalign*}
-			T(v)=\begin{pmatrix}
-			\cos(90)v_1 - \sin(90)v_2 \\
-			\sin(90)v_1 + \cos(90)v_2
-			\end{pmatrix}&&
-		\end{flalign*}
-		Man kann das allerdings auch als Matrix $A$ darstellen:
-		\begin{flalign*}
-			Av=\begin{pmatrix}
-			\cos(90) - \sin(90) \\
-			\sin(90) + \cos(90)
-			\end{pmatrix}&&
-		\end{flalign*}
-		Da wir jetzt Abbildungen mit Matrizen darstellen können, können wir das Nutzen, um mit diesen Abbildungen zu rechnen.
-		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
-			\textbf{Addition}\index{Addition}
-			\begin{flalign*}
-				A+B=(a_{ij}+b_{ij})_{i,j}&&
-			\end{flalign*}
-			\textbf{Skalare Multiplikation}\index{Skalare Multiplikation}
-			\begin{flalign*}
-				\lambda A=(\lambda a_{ij})_{i,j}&&
-			\end{flalign*}
-			\textbf{Multiplikation}\index{Multiplikation}
-			\begin{flalign*}
-			AC:=\left(\sum^m_{k=1}a_{ik}c_{kj}\right)_{i,j}=(c_{ij})_{i,j}&&
-			\end{flalign*}
-			Anmerkung: Die Multiplikation zweier Matrizen funktioniert nur, wenn $A$ genauso viele Zeilen hat, wie $B$ Spalten.
-		\end{tcolorbox}
-		\noindent Ein Beispiel für die Multiplikation zweier Matrizen:
-		\begin{flalign*}
-			A=&\begin{pmatrix}
-			1 & 5 & 2 \\
-			5 & 0 & 2
-			\end{pmatrix}\\
-			B=&\begin{pmatrix}
-			7 & 1 \\
-			9 & 5 \\
-			2 & 0 
-			\end{pmatrix}\\
-			AB=&\begin{pmatrix}
-				56 & 26 \\
-				39 & 5
-			\end{pmatrix}\\
-			BA=&\begin{pmatrix}
-				12 & 35 & 16 \\
-				34 & 45 & 28 \\
-				2 & 10 & 4
-			\end{pmatrix}&&
-		\end{flalign*}
-		Unter der Voraussetzung, dass wie oben erwähnt die Anzahl der Zeilen und Spalten der Matrizen übereinstimmen, gelten folgenden Regeln:
-		\begin{tcolorbox}[boxsep=0pt,top=0.15cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
-			\begin{multicols}{2}
-				\begin{flalign*}
-				&(\lambda A)(\mu B)=(\lambda\mu)(AB)\\\\
-				&(AB)C=A(BC)&&
-				\end{flalign*}
-				\begin{flalign*}\\
-				&A(B+C)=AB+AC\\\\
-				&(A+B)C=AC+BC&&
-				\end{flalign*}
-			\end{multicols}
-		\end{tcolorbox}
+	
 	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}

@@ -856,9 +856,9 @@
 			\end{tcolorbox}
 		\noindent Haben wir beispielsweise die Abbildung $T:\mathbb{R}^3\to\mathbb{R}^2$ mit
 		\begin{flalign*}
-			T=\begin{pmatrix}
+			T\left(\begin{pmatrix}
 			x\\y\\z
-			\end{pmatrix}=\begin{pmatrix}
+			\end{pmatrix}\right)=\begin{pmatrix}
 			x+2y\\3x+y+4z
 			\end{pmatrix}&&
 		\end{flalign*}
@@ -885,27 +885,27 @@
 		\end{flalign*}
 		denn
 		\begin{flalign*}
-			&T\begin{pmatrix}
+			&T\left(\begin{pmatrix}
 			1\\1\\2
-			\end{pmatrix}=\begin{pmatrix}
+			\end{pmatrix}\right)=\begin{pmatrix}
 			3\\12
 			\end{pmatrix}=-9\begin{pmatrix}
 			2\\1
 			\end{pmatrix}+21\begin{pmatrix}
 			1\\1
 			\end{pmatrix}\\
-			&T\begin{pmatrix}
+			&T\left(\begin{pmatrix}
 			1\\0\\3
-			\end{pmatrix}=\begin{pmatrix}
+			\end{pmatrix}\right)=\begin{pmatrix}
 			1\\15
 			\end{pmatrix}=-14\begin{pmatrix}
 			2\\1
 			\end{pmatrix}+29\begin{pmatrix}
 			1\\1
 			\end{pmatrix}\\
-			&T\begin{pmatrix}
+			&T\left(\begin{pmatrix}
 			0\\2\\0
-			\end{pmatrix}=\begin{pmatrix}
+			\end{pmatrix}\right)=\begin{pmatrix}
 			4\\2
 			\end{pmatrix}=2\begin{pmatrix}
 			2\\1
@@ -954,23 +954,30 @@
 			\def\tabcolsep{0pt}
 			\begin{tabularx}{\linewidth}{X@{\hspace{0.4cm}}X}
 				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-						\textbf{Obere Dreiecksmatrix}\index{Obere Dreiecksmatrix}\lb
-						$\forall i>j:a_{ij}=0$\lbb
+						\textbf{Obere/Untere Dreiecksmatrix}\index{Obere Dreiecksmatrix}\lb
+						$\forall i>j:a_{ij}=0, \forall i<j:b_{ij}=0$\lbb
 						Beispiel:
-						\begin{flalign*}
-						A=\begin{pmatrix}
-						1&2&3\\[6pt]0&4&5\\[6pt]0&0&5
-						\end{pmatrix}&&
-						\end{flalign*}
+						\begin{multicols}{2}
+							\noindent\begin{flalign*}
+							A=\begin{pmatrix}
+							1&2&3\\[6pt]0&4&5\\[6pt]0&0&5
+							\end{pmatrix}&&
+							\end{flalign*}
+							\begin{flalign*}
+							B=\begin{pmatrix}
+							1&0&0\\[6pt]7&4&0\\[6pt]3&5&2
+							\end{pmatrix}&&
+							\end{flalign*}
+						\end{multicols}
 				\end{tcolorbox}}
 				&
 				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-						\textbf{Untere Dreiecksmatrix}\index{Untere Dreiecksmatrix}\lb
-						$\forall i<j:a_{ij}=0$\lbb
+						\textbf{Orthogonale Matrix}\index{Orthogonal}\lb
+						$A^{-1}=A^T$\lbb
 						Beispiel:
 						\begin{flalign*}
 						A=\begin{pmatrix}
-						1&0&0\\[6pt]7&4&0\\[6pt]3&5&2
+						1&0&0\\[6pt]0&0&1\\[6pt]0&1&0
 						\end{pmatrix}&&
 						\end{flalign*}
 				\end{tcolorbox}}
@@ -1023,7 +1030,7 @@
 				\end{tcolorbox}}
 				&
 				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
-						\textbf{Hermetische Matrix}\index{Projektor}\lb
+						\textbf{Hermitische Matrix}\index{Hermitisch}\lb
 						$K=\mathbb{C}\land A=\bar{A}^T (\bar{A}=\text{konj. komplex})$\lbb
 						Beispiel:
 						\begin{flalign*}
@@ -1933,6 +1940,7 @@
 			(II)&&x-y+ \frac{3}{2}z&=-7\\
 			(III)&&-4x+2y&=-2&&&&&&&&
 		\end{flalign*}
+		Wir nennen ein lineares Gleichungssystem homogen\index{Homogen}, wenn auf der rechten Seite einer jeden Gleichung nur die Null steht. Das Gegenteil von homogen ist inhomogen\index{Inhomogen}.
 		\subsection{Einsetzungsverfahren}
 			Eine Möglichkeit hat man, wenn man eine Funktion nach einer beliebigen Variable umstellt\index{Umstellen} und diese dann in einer anderen Funktion einsetzt.\newline\newline
 			$(III)$
@@ -2077,7 +2085,7 @@
 			\begin{flalign*}
 			\mathbb{L}=\left\{\left(\frac{2}{a-3};\frac{1}{a-3};\frac{6-3a}{a-3}\right)\right\},\;falls\;a\neq 3&&
 			\end{flalign*}
-		\subsection{Erweiterte Koeffizientenmatrix}
+		\subsection{Matrixschreibweise}
 			Da die normale Notation von Gleichungssystemen wird of schnell unübersichtlich. Man kann die Koeffizienten\index{Koeffizient} auch in eine Matrix schreiben. Das hat den Vorteil, dass man die Variablen nicht ständig schreiben muss und eine geordnete Anordnung der Elemente hat.
 			\begin{flalign*}
 			(I)&&x+2y+z&=4\\
@@ -2097,10 +2105,41 @@
 			-4 & 2 & 0 & -2
 			\end{array}\right)&&
 			\end{flalign*}
-			Man kann Zeilen und Spalten vertauschen, wenn es praktisch ist, muss aber beim Vertauschen von Spalten darauf achten, die richtigen Variablen am Ende hinzuschreiben, sollte man das Gleichungssystem noch mal in der Form mit Variablen angeben, die man an der letzten Zeile der Stufenform erkennen kann.
+			Die Hintergrund dieser Darstellung ist, dass ein Gleichungssystem mit Matrizen so dargestellt werden kann:
+			\begin{flalign*}
+				\underbrace{\begin{pmatrix}
+					a_{11}&\cdots&a_{1n}\\
+					\vdots&&\vdots\\
+					a_{m1}&\cdots&a_{mn}
+					\end{pmatrix}}_A\underbrace{\begin{pmatrix}
+					x_{1}\\
+					\vdots\\
+					x_{n}
+					\end{pmatrix}}_x=\underbrace{\begin{pmatrix}
+					b_{1}\\
+					\vdots\\
+					b_{m}
+					\end{pmatrix}}_b&&
+			\end{flalign*}
+			Die Matrix $A$ nennen wir Koeffizientenmatrix\index{Koeffizientenmatrix}. Dann ist es logisch, dass wir die Matrix $(A|b)\in K^{m\times(n+1)}$ erweiterte Koeffizientenmatrix\index{Erweiterte Koeffizientenmatrix} nennen.
 		\subsection{Lösbarkeit von linearen Gleichungssystemen}
-			Man kann die Anzahl der Lösungen für ein LGS sehr einfach feststellen in dem man es in die Stufenform bringt. Dabei gibt es drei Szenarios.\newline\newline
-			\textbf{1. Szenario: Eine Lösung}
+			Ein Gleichungssystem $Ax=b$ ist genau dann lösbar, wenn
+			\begin{flalign*}
+				b\in\text{ span}(\{Ae_1,...,Ae_k\})&&
+			\end{flalign*}
+			wobei $e_n$ der Einheitsvektor mit $1$ in der Zeile $n$ ist. Da heißt also $Ae_n$ ist immer die $n$-te Spalte von $A$.\lb
+			Außerdem ist eine Matrix immer genau dann lösbar, wenn
+			\begin{flalign*}
+				\text{rank}(A)=\text{ rank}(A|b)&&
+			\end{flalign*}
+			gilt.\lb
+			Für lineare Gleichungssysteme $Ax=b$ können wir die Lösungsmenge auch so schreiben:
+			\begin{flalign*}
+				\mathcal{L}(A,b):=\{x\in K^n\mid Ax=b\}&&
+			\end{flalign*}
+			\noindent Man kann die Anzahl der Lösungen für ein LGS sehr einfach feststellen in dem man es in die Stufenform bringt. Dabei gibt es drei Szenarios.\newline\newline
+			\textbf{1. Szenario: Eine Lösung}\lb
+			Wenn rank$A=n=m$, dann ist $Ax=b$ eindeutig lösbar. Die Lösung ist dann $x=A^{-1}b$.
 			\begin{flalign*}
 			\begin{array}{l}
 			\text{(I)} \\
@@ -2113,7 +2152,8 @@
 			0 & 0 & \textcolor{red}{1} & \textcolor{red}{2}
 			\end{array}\right)&&
 			\end{flalign*}
-			\textbf{2. Szenario: Keine Lösung}
+			\textbf{2. Szenario: Keine Lösung}\lb
+			Wenn rank$A=m$ ist, dann ist $Ax=b$ lösbar.
 			\begin{flalign*}
 			\begin{array}{l}
 			\text{(I)} \\
@@ -2126,7 +2166,8 @@
 			0 & 0 & \textcolor{red}{0} & \textcolor{red}{2}
 			\end{array}\right)&&
 			\end{flalign*}
-			\textbf{3. Szenario: Unendlich viele Lösung}
+			\textbf{3. Szenario: Unendlich viele Lösung}\lb
+			Wenn rank$A=n$ ist, dann hat $Ax=b$ höchstens eine Lösung.
 			\begin{flalign*}
 			\begin{array}{l}
 			\text{(I)} \\

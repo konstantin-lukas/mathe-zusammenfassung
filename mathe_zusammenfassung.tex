@@ -96,6 +96,9 @@
 }
 \newcommand{\lb}[0]{\vspace{.5em}\newline}
 \newcommand{\lbb}[0]{\newline\newline}
+\newcommand{\p}[1]{
+	#1^{\prime}
+}
 \newcommand{\plotfunc}[9]{
 	\readlist\xlimits{#4}
 	\def\xlower{\xlimits[1]}
@@ -817,7 +820,7 @@
 			\begin{flalign*}
 				\text{im} A=\span(\{v_1,v_2,...,v_n\})&&
 			\end{flalign*}
-			Den Rang einer Matrix, nennen wir entsprechend Spaltenrang\index{Spaltenrang}. Nehmen wir den Spann der Zeilenvektoren, dann nennen wir dessen Dimension analog Zeilenrang\index{Zeilenrang}.\lb
+			Den Rang einer Matrix, nennen wir entsprechend Spaltenrang\index{Spaltenrang}. Nehmen wir den Spann der Zeilenvektoren, dann nennen wir dessen Dimension analog Zeilenrang\index{Zeilenrang}. Generell gilt, dass Zeilenrang gleich Spaltenrang ist.\lb
 			Eine wichtige Operation auf Matrizen ist das Transponieren.
 			\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
 				\textbf{Transponierte Matrix}\index{Transponierte Matrix}
@@ -1054,6 +1057,114 @@
 				$\forall x\in K^n:x^TAx\le0$
 			\end{multicols}
 		\end{tcolorbox}
+		\subsubsection{Die Determinante}
+			Wenn wir mit Transformationsmatrizen\index{Transformationsmatrix} arbeiten, kann man sich das so vorstellen, als würde sich der verbiegen. Wobei verbiegen vielleicht nicht das richtige Wort ist, denn wenn wir von linearen Abbildungen reden, dann gibt es nur bestimmte Arten von Transformationen, die wir vornehmen können. Wir können z.B. den Raum strecken, rotieren oder scheren (d.h. quasi anhand eines Rechteckes eine Kante zu bewegen, s.d. man ein Parallelogramm erhält).\lb
+			Die Determinante sagt uns, um welchen Faktor sich jede beliebige Fläche (für $\mathbb{R}^2$) oder einen Volumen (für $\mathbb{R}^3$) in unserem Raum durch die Transformation verändert.\lb
+			Betrachten wir ein paar Beispiele in $\mathbb{R}^2$ angewandt auf unsere Einheitsvektoren $\textcolor{blue}{e_1}$ und $\textcolor{red}{e_2}$ mit einer Transformation $T$:\lb
+			\textbf{Skalierung}
+			\begin{flalign*}
+			T=\begin{pmatrix}
+			2&0\\0&2
+			\end{pmatrix}\Rightarrow \text{det}(T)=4&&
+			\end{flalign*}
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				width=17cm,
+				height=7cm,
+				xmin=-9, xmax=9,
+				ymin=-3, ymax=3,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=1,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50},
+				axis equal image
+				]
+				\addplot [-stealth, line width= 2pt, teal] coordinates { (0,0) (2,0)};
+				\addplot [-stealth, line width= 2pt, blue] coordinates { (0,0) (1,0)};
+				\addplot [-stealth, line width= 2pt, orange] coordinates { (0,0) (0,2)};
+				\addplot [-stealth, line width= 2pt, red] coordinates { (0,0) (0,1)};
+				\node[anchor=east] at (axis cs: -1,1) {$\begin{pmatrix}2&0\\0&2\end{pmatrix}\textcolor{red}{\begin{pmatrix}0\\1\end{pmatrix}}=\textcolor{orange}{\begin{pmatrix}0\\2\end{pmatrix}}$};
+				\node[anchor=west] at (axis cs: 1,1) {$\begin{pmatrix}2&0\\0&2\end{pmatrix}\textcolor{blue}{\begin{pmatrix}1\\0\end{pmatrix}}=\textcolor{teal}{\begin{pmatrix}0\\2\end{pmatrix}}$};
+				\end{axis}
+				\end{tikzpicture}
+			\end{center}
+			\textbf{Rotation}
+			\begin{flalign*}
+			T=\begin{pmatrix}
+			\cos(45)&-\sin(45)\\\sin(45)&\cos(45)
+			\end{pmatrix}\Rightarrow \text{det}(T)=1&&
+			\end{flalign*}
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				width=17cm,
+				height=7cm,
+				xmin=-9, xmax=9,
+				ymin=-3, ymax=3,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=1,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50},
+				axis equal image
+				]
+				\addplot [-stealth, line width= 2pt, teal] coordinates { (0,0) (0.7071,0.7071)};
+				\addplot [-stealth, line width= 2pt, blue] coordinates { (0,0) (1,0)};
+				\addplot [-stealth, line width= 2pt, orange] coordinates { (0,0) (-0.7071,0.7071)};
+				\addplot [-stealth, line width= 2pt, red] coordinates { (0,0) (0,1)};
+				\node[anchor=east] at (axis cs: -0.5,1.2) {$\begin{pmatrix}
+					\cos(45)&-\sin(45)\\\sin(45)&\cos(45)
+					\end{pmatrix}\textcolor{red}{\begin{pmatrix}0\\1\end{pmatrix}}\approx\textcolor{orange}{\begin{pmatrix}-0.7\\0.7\end{pmatrix}}$};
+				\node[anchor=west] at (axis cs: 0.5,1.2) {$\begin{pmatrix}
+					\cos(45)&-\sin(45)\\\sin(45)&\cos(45)
+					\end{pmatrix}\textcolor{blue}{\begin{pmatrix}1\\0\end{pmatrix}}\approx\textcolor{teal}{\begin{pmatrix}0.7\\0.7\end{pmatrix}}$};
+				\end{axis}
+				\end{tikzpicture}
+			\end{center}
+			\textbf{Spiegelung}
+			\begin{flalign*}
+			T=\begin{pmatrix}
+			-1&0\\0&1
+			\end{pmatrix}\Rightarrow \text{det}(T)=-1&&
+			\end{flalign*}
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				width=17cm,
+				height=7cm,
+				xmin=-9, xmax=9,
+				ymin=-3, ymax=3,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=1,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50},
+				axis equal image
+				]
+				\addplot [-stealth, line width= 2pt, teal] coordinates { (0,0) (-1,0)};
+				\addplot [-stealth, line width= 2pt, blue] coordinates { (0,0) (1,0)};
+				\addplot [-stealth, line width= 2pt, red] coordinates { (0,0) (0,1)};
+				\node[anchor=east] at (axis cs: -1,1) {$\begin{pmatrix}
+					-1&0\\0&1
+					\end{pmatrix}\textcolor{red}{\begin{pmatrix}0\\1\end{pmatrix}}=\textcolor{red}{\begin{pmatrix}0\\1\end{pmatrix}}$};
+				\node[anchor=west] at (axis cs: 1,1) {$\begin{pmatrix}
+					-1&0\\0&1
+					\end{pmatrix}\textcolor{blue}{\begin{pmatrix}1\\0\end{pmatrix}}=\textcolor{teal}{\begin{pmatrix}-1\\0\end{pmatrix}}$};
+				\end{axis}
+				\end{tikzpicture}
+			\end{center}
+			Soweit so gut, aber wie ist die Determinante definiert und wie berechnet man sie? Zunächst ist die Determinante eine sogenannte multilineare Abbildung\index{Multilineare Abbildung}:
+			\begin{flalign*}
+				\text{det}:\underbrace{K^m\times...\times K^m}_\text{$m$-mal}\to K&&
+			\end{flalign*}
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}
@@ -2138,8 +2249,7 @@
 				\mathcal{L}(A,b):=\{x\in K^n\mid Ax=b\}&&
 			\end{flalign*}
 			\noindent Man kann die Anzahl der Lösungen für ein LGS sehr einfach feststellen in dem man es in die Stufenform bringt. Dabei gibt es drei Szenarios.\newline\newline
-			\textbf{1. Szenario: Eine Lösung}\lb
-			Wenn rank$A=n=m$, dann ist $Ax=b$ eindeutig lösbar. Die Lösung ist dann $x=A^{-1}b$.
+			\textbf{1. Szenario: Eine Lösung}
 			\begin{flalign*}
 			\begin{array}{l}
 			\text{(I)} \\
@@ -2152,8 +2262,7 @@
 			0 & 0 & \textcolor{red}{1} & \textcolor{red}{2}
 			\end{array}\right)&&
 			\end{flalign*}
-			\textbf{2. Szenario: Keine Lösung}\lb
-			Wenn rank$A=m$ ist, dann ist $Ax=b$ lösbar.
+			\textbf{2. Szenario: Keine Lösung}
 			\begin{flalign*}
 			\begin{array}{l}
 			\text{(I)} \\
@@ -2166,8 +2275,7 @@
 			0 & 0 & \textcolor{red}{0} & \textcolor{red}{2}
 			\end{array}\right)&&
 			\end{flalign*}
-			\textbf{3. Szenario: Unendlich viele Lösung}\lb
-			Wenn rank$A=n$ ist, dann hat $Ax=b$ höchstens eine Lösung.
+			\textbf{3. Szenario: Unendlich viele Lösung}
 			\begin{flalign*}
 			\begin{array}{l}
 			\text{(I)} \\
@@ -2240,6 +2348,50 @@
 			\end{array}\right),\lambda\in\mathbb{R}
 			\right\}&&
 \			\end{flalign*}
+			Wir können auch anhand des Matrixranges\index{Rang} von $A$ feststellen, wie es um die Lösbarkeit eines LGS $Ax=b$ steht.
+			\begin{itemize}
+				\item Wenn rank$A=m$ ist, dann ist $Ax=b$ lösbar.
+				\item Wenn rank$A=n$ ist, dann hat $Ax=b$ höchstens eine Lösung.
+				\item Wenn rank$A=n=m$, dann ist $Ax=b$ eindeutig lösbar. Die Lösung ist dann $x=A^{-1}b$.
+			\end{itemize}
+			Betrachten wir ein Beispiel:
+			\begin{flalign*}
+				\left(\begin{array}{@{}ccc|c@{}}
+				-1 & 2 & 3 & 4 \\
+				2 & 3 & 8 & 2 \\
+				0 & 2 & 4 & 2
+				\end{array}\right)
+				\begin{array}{l}
+				\text{(I)} \\
+				\text{(II)} \\
+				\text{(III)}
+				\end{array}&&
+			\end{flalign*}
+			Hier hat $A$ den Rang $2$. Da $A$ aber eine $3\times 3$ ($m=3,n=3$) Matrix ist, ist dieses LGS nicht lösbar. Das sehen wir auch, wenn wir den gaußschen Algorithmus anwenden.
+			\begin{flalign*}
+			\left(\begin{array}{@{}ccc|c@{}}
+			-1 & 2 & 3 & 4 \\
+			0 & 7 & 14 & 10 \\
+			0 & 2 & 4 & 2
+			\end{array}\right)
+			\begin{array}{l}
+			\text{(I)} \\
+			\text{(II)}^{\prime} =\text{(II)}+2\cdot\text{(I)} \\
+			\text{(III)}
+			\end{array}&&
+			\end{flalign*}
+			\begin{flalign*}
+			\left(\begin{array}{@{}ccc|c@{}}
+			-1 & 2 & 3 & 4 \\
+			0 & 7 & 14 & 10 \\
+			0 & 0 & 0 & -\frac{6}{7}
+			\end{array}\right)
+			\begin{array}{l}
+			\text{(I)} \\
+			\text{(II)}^{\prime} \\
+			\text{(III)}^{\prime}=\text{(III)}-\frac{2}{7}\cdot\text{(II)}^{\prime}
+			\end{array}&&
+			\end{flalign*}
 \pagebreak
 	\section{Geometrie}
 	\label{sec:geometrie}
@@ -2387,7 +2539,7 @@
 			\end{flalign*}
 		\end{tcolorbox}
 	\pagebreak
-	\section{Vektorgeometrie}
+	\section{Einfache Vektorgeometrie}
 	\label{sec:vektorgeometrie}
 		Vektoren kommen häufig in der Physik zum Einsatz, denn oftmals interessieren wir uns nicht nur für eine Größe an sich, sondern auch für ihre Richtung\index{Richtung}. Vektoren werden durch Pfeile gekennzeichnet $\vec v$, ihr Betrag $\vert\vec v\vert$ gibt uns ihre Länge. Wenn zwei gleichlange Vektoren in genau die entgegengesetzte Richtung zeigen ($\vec v$ und $-\vec v$), sprechen wir von \textit{Gegenvektoren}\index{Gegenvektor}. Ein Vektor mit der Länge Null, wird auch als \textit{Nullvektor}\index{Nullvektor} bezeichnet. Neben Vektoren, sind Pfeile ein wichtiger Begriff. Diese werden definiert durch ihren Anfangspunkt sowie, ihrem Endpunkt bzw. ihrer Länge und Richtung. Alle Pfeile der selben Länge und Richtung können in einer \textit{Pfeilklasse}\index{Pfeilklasse} zusammengefasst werden. Vektoren können als Pfeilklassen interpretiert werden, denn sie werden nicht durch ihren Anfangspunkt definiert, sondern nur durch Richtung und Länge. Vektoren können jedoch einen festen Anfangspunkt besitzen. In diesem Fall spricht man von \textit{gebundenen Vektoren}\index{Gebundener Vektor}, andernfalls von \textit{freien Vektoren}\index{Freier Vektor}. Außerdem existiert eine besondere Art von gebundenen Vektoren, die sogenannten \textit{Ortsvektoren}\index{Ortsvektor}, die ihren Anfangspunkt im Koordinatenursprung haben. Der Koordinatenursprung\index{Koordinatenursprung} wird mit $O=(0;0)$ bezeichnet.
 		\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=1cm,right=1cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.25cm, enlarge bottom by=.25cm]

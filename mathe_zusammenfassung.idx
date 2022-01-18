@@ -92,23 +92,25 @@
 \indexentry{Negativ Definit|hyperpage}{17}
 \indexentry{Negativ Semidefinit|hyperpage}{17}
 \indexentry{Transformationsmatrix|hyperpage}{17}
+\indexentry{Determinante|hyperpage}{18}
 \indexentry{Multilineare Abbildung|hyperpage}{18}
-\indexentry{Mengensystem|hyperpage}{19}
-\indexentry{Potenzmenge|hyperpage}{19}
-\indexentry{Grundmenge|hyperpage}{19}
-\indexentry{Großer Durchschnitt|hyperpage}{19}
-\indexentry{Große Vereinigung|hyperpage}{19}
-\indexentry{Kommutativ|hyperpage}{20}
-\indexentry{Assoziativ|hyperpage}{20}
-\indexentry{Neutrales Element|hyperpage}{20}
-\indexentry{Inverses Element|hyperpage}{20}
-\indexentry{Invertierbar|hyperpage}{20}
-\indexentry{Abgeschlossenheit|hyperpage}{20}
+\indexentry{Sarrussche Regel|hyperpage}{19}
+\indexentry{Mengensystem|hyperpage}{20}
+\indexentry{Potenzmenge|hyperpage}{20}
+\indexentry{Grundmenge|hyperpage}{20}
+\indexentry{Großer Durchschnitt|hyperpage}{20}
+\indexentry{Große Vereinigung|hyperpage}{20}
+\indexentry{Kommutativ|hyperpage}{21}
+\indexentry{Assoziativ|hyperpage}{21}
+\indexentry{Neutrales Element|hyperpage}{21}
+\indexentry{Inverses Element|hyperpage}{21}
+\indexentry{Invertierbar|hyperpage}{21}
+\indexentry{Abgeschlossenheit|hyperpage}{21}
 \indexentry{Gruppe|hyperpage}{21}
 \indexentry{Abelsche Gruppe|hyperpage}{21}
 \indexentry{Halbgruppe|hyperpage}{21}
 \indexentry{Monoid|hyperpage}{21}
-\indexentry{Gruppe|hyperpage}{21}
+\indexentry{Gruppe|hyperpage}{22}
 \indexentry{Tripel|hyperpage}{22}
 \indexentry{Ring|hyperpage}{22}
 \indexentry{Kommutativ|hyperpage}{22}
@@ -118,34 +120,34 @@
 \indexentry{Körper|hyperpage}{23}
 \indexentry{Innere Verknüpfung|hyperpage}{23}
 \indexentry{Äußere Verknüpfung|hyperpage}{23}
-\indexentry{Unterraum|hyperpage}{23}
-\indexentry{Abgeschlossenheit|hyperpage}{23}
-\indexentry{Vektorraum|hyperpage}{23}
-\indexentry{System|hyperpage}{23}
-\indexentry{Direkte Summe|hyperpage}{23}
-\indexentry{Komplement|hyperpage}{23}
+\indexentry{Unterraum|hyperpage}{24}
+\indexentry{Abgeschlossenheit|hyperpage}{24}
+\indexentry{Vektorraum|hyperpage}{24}
+\indexentry{System|hyperpage}{24}
+\indexentry{Direkte Summe|hyperpage}{24}
+\indexentry{Komplement|hyperpage}{24}
 \indexentry{Skalar|hyperpage}{24}
 \indexentry{Linearkombination|hyperpage}{24}
 \indexentry{Lineare Hülle|hyperpage}{24}
 \indexentry{Spann|hyperpage}{24}
-\indexentry{Lineare Hülle|hyperpage}{24}
-\indexentry{Erzeugendensystem|hyperpage}{24}
-\indexentry{Basis|hyperpage}{24}
-\indexentry{Standardbasis|hyperpage}{24}
-\indexentry{Kanonische Basis|hyperpage}{24}
-\indexentry{Dimension|hyperpage}{24}
-\indexentry{Endlich erzeugt|hyperpage}{24}
-\indexentry{Unendlich erzeugt|hyperpage}{24}
-\indexentry{Lineare Abhängigkeit|hyperpage}{24}
+\indexentry{Lineare Hülle|hyperpage}{25}
+\indexentry{Erzeugendensystem|hyperpage}{25}
+\indexentry{Basis|hyperpage}{25}
+\indexentry{Standardbasis|hyperpage}{25}
+\indexentry{Kanonische Basis|hyperpage}{25}
+\indexentry{Dimension|hyperpage}{25}
+\indexentry{Endlich erzeugt|hyperpage}{25}
+\indexentry{Unendlich erzeugt|hyperpage}{25}
 \indexentry{Lineare Abhängigkeit|hyperpage}{25}
-\indexentry{Komplexe Zahlen|hyperpage}{25}
-\indexentry{Realteil|hyperpage}{25}
-\indexentry{Imaginärteil|hyperpage}{25}
-\indexentry{Imaginäre Einheit|hyperpage}{25}
-\indexentry{Imaginäre Zahl|hyperpage}{25}
-\indexentry{Gaußsche Zahlenebene|hyperpage}{25}
-\indexentry{Kartesische Form|hyperpage}{25}
-\indexentry{Komplexe Konjugation|hyperpage}{25}
+\indexentry{Lineare Abhängigkeit|hyperpage}{25}
+\indexentry{Komplexe Zahlen|hyperpage}{26}
+\indexentry{Realteil|hyperpage}{26}
+\indexentry{Imaginärteil|hyperpage}{26}
+\indexentry{Imaginäre Einheit|hyperpage}{26}
+\indexentry{Imaginäre Zahl|hyperpage}{26}
+\indexentry{Gaußsche Zahlenebene|hyperpage}{26}
+\indexentry{Kartesische Form|hyperpage}{26}
+\indexentry{Komplexe Konjugation|hyperpage}{26}
 \indexentry{Äquivalenzumformung|hyperpage}{26}
 \indexentry{Kartesische Form|hyperpage}{27}
 \indexentry{Polarform|hyperpage}{27}
@@ -153,7 +155,7 @@
 \indexentry{Signum|hyperpage}{27}
 \indexentry{Satz von de Moivre|hyperpage}{28}
 \indexentry{Potenzgesetz|hyperpage}{29}
-\indexentry{Argument|hyperpage}{29}
+\indexentry{Argument|hyperpage}{30}
 \indexentry{Kehrwert|hyperpage}{31}
 \indexentry{Divisor|hyperpage}{31}
 \indexentry{Dividend|hyperpage}{31}

@@ -1225,6 +1225,22 @@
 			=\;&\textcolor{red}{225}-\textcolor{blue}{225}\\
 			=\;&0&&
 			\end{flalign*}
+			Vorsicht: Die Regel von Sarrus gilt nur für $3\times3$- und $2\times2$-Matrizen!\lbb
+			Für die Determinante gelten einige besondere Eigenschaften. Betrachten wir die Matrizen $A,B\in K^{m\times m}$ mit den Spaltenvektoren $\mathfrak{a}_1$ bis $\mathfrak{a}_m$ für $A$ und den Skalar $\lambda\in K$ sowie die Vektoren $\mathfrak{b}_k,\mathfrak{c}_k\in K^m$:
+			\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+				\textbf{Besondere Eigenschaften der Determinante}
+				\begin{itemize}
+					\item $\det(\lambda A)=\lambda^m\det(A)$
+					\item $\det(\mathfrak{a}_1 ... \mathfrak{a}_{k-1}\lambda\mathfrak{a}_{k}\mathfrak{a}_{k+1}...\mathfrak{a}_{m})=\lambda\det(A)$
+					\item Vertauscht man zwei Spalten, ändert sich das Vorzeichen von $\det(A)$.
+					\item $\mathfrak{a}_{k}=\mathfrak{b}_{k}+\mathfrak{c}_{k}\Rightarrow\det(A)=\det(\mathfrak{a}_1 ... \mathfrak{a}_{k-1}\mathfrak{b}_{k}\mathfrak{a}_{k+1}...\mathfrak{a}_{m})+\det(\mathfrak{a}_1 ... \mathfrak{a}_{k-1}\mathfrak{c}_{k}\mathfrak{a}_{k+1}...\mathfrak{a}_{m})$
+					\item $\mathfrak{a}_k=\mathfrak{a}_l\land1\le k\neq l\le m\Rightarrow\det(A)=0$
+					\item Addiert man zu einer Spalte ein Vielfaches einer anderen, bleibt $\det(A)$ gleich.
+					\item $\det(A^T)=\det(A)$
+					\item $\det(A\cdot B)=\det(A)\det(B)$
+					\item $A$ ist regulär (invertierbar) $\Rightarrow\det(A^{-1})=\frac{1}{\det(A)}$
+				\end{itemize}
+			\end{tcolorbox}
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}

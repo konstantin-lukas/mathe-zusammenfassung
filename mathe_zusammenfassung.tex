@@ -222,7 +222,7 @@
 \pagebreak
 \etocsettocstyle{\noindent\rule{\linewidth}{.4pt}}
 
-\section{Mengen}
+\section{Mengen und Matrizen}
 	\begin{multicols}{2}
 		\begin{flushleft}
 			\textbf{Vereinigung}
@@ -1176,7 +1176,18 @@
 					\end{flalign*}
 				\end{itemize}
 			\end{tcolorbox}
-			\noindent Die Determinante einer Matrix wird auch manchmal mit vertikalen Strichen gekennzeichnet. Da auch die Formel schwer zu visualisieren ist, betrachten wir ein Beispiel:
+			\noindent Bei der obigen Definition wird immer die erste Spalte gestrichen, allerdings ist es egal, welche Spalte man streicht, solange man immer die gleiche Spalte nimmt. Genauso gut kann man auch immer eine feste Zeile streichen und unterschiedliche Spalten nehmen. Diese Art die Determinante zu berechnen, nennt man Laplacescher Entwicklungssatz\index{Laplacescher Entwicklungssatz}.\lb
+			Dabei redet man je nachdem wie man es macht von der Entwicklung nach Spalte oder Zeile.\lbb
+			\textbf{Entwicklung nach der $j$-ten Spalte}
+			\begin{flalign*}
+			\text{det}(A):=\sum^m_{i=1}a_{ij}(-1)^{i+j}\text{det}(A_{ij})&&
+			\end{flalign*}
+			\textbf{Entwicklung nach der $i$-ten Zeile}
+			\begin{flalign*}
+			\text{det}(A):=\sum^m_{j=1}a_{ij}(-1)^{i+j}\text{det}(A_{ij})&&
+			\end{flalign*}
+			Die Summanden, die wir dabei addieren (also $a_{ij}(-1)^{i+j}\text{det}(A_{ij})$) nennen wir übrigens Adjunkte.\lbb
+			 Die Determinante einer Matrix wird auch manchmal mit vertikalen Strichen gekennzeichnet. Da auch die Formel schwer zu visualisieren ist, betrachten wir ein Beispiel:
 			\begin{flalign*}
 				\text{det}\left(\begin{pmatrix}
 					1&2&3\\4&5&6\\7&8&9
@@ -1225,7 +1236,18 @@
 			=\;&\textcolor{red}{225}-\textcolor{blue}{225}\\
 			=\;&0&&
 			\end{flalign*}
-			Vorsicht: Die Regel von Sarrus gilt nur für $3\times3$- und $2\times2$-Matrizen!\lbb
+			Vorsicht: Die Regel von Sarrus gilt nur für $3\times3$- und $2\times2$-Matrizen! Für $2\times2$-Matrizen ist sie jedoch etwas einfacher:
+			\begin{center}
+				\begin{tikzpicture}
+				\node (a) {$a$};
+				\node[right=of a] (b) {$b$};
+				\node[below=of a] (c) {$c$};
+				\node[below=of b] (d) {$d$};
+				
+				\draw[color=red,-latex] (a) -- (d);
+				\draw[color=blue,-latex] (c) -- (b);
+				\end{tikzpicture}
+			\end{center}
 			Für die Determinante gelten einige besondere Eigenschaften. Betrachten wir die Matrizen $A,B\in K^{m\times m}$ mit den Spaltenvektoren $\mathfrak{a}_1$ bis $\mathfrak{a}_m$ für $A$ und den Skalar $\lambda\in K$ sowie die Vektoren $\mathfrak{b}_k,\mathfrak{c}_k\in K^m$:
 			\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
 				\textbf{Besondere Eigenschaften der Determinante}
@@ -1241,6 +1263,30 @@
 					\item $A$ ist regulär (invertierbar) $\Rightarrow\det(A^{-1})=\frac{1}{\det(A)}$
 				\end{itemize}
 			\end{tcolorbox}
+		\subsubsection{Cramersche Regeln}\index{Cramersche Regeln}
+			\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+				\textbf{Regel zur Matrixinversion}\lb
+				Zunächst gilt laut Cramer:
+				\begin{flalign*}
+					\det(A)\neq 0\Leftrightarrow A\text{ ist regulär}&&
+				\end{flalign*}
+				Und für eine Inverse einer regulären Matrix $A$ gilt:
+				\begin{flalign*}
+					A^{-1}=\frac{1}{\det(A)}\begin{pmatrix}
+					(-1)^{1+1}\det(A_{11})&\dots&(-1)^{m+1}\det(A_{m1})\\
+					\vdots&\ddots&\vdots\\
+					(-1)^{1+m}\det(A_{1m})&\dots&(-1)^{m+m}\det(A_{mm})\\
+					\end{pmatrix}&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+				\textbf{Regel für lineare Gleichungssysteme}\lb
+				Hat man ein LGS $Ax=b$ mit gleich vielen Unbekannten wie Gleichungen, wobei $A$ regulär ist, gilt für alle Komponenten des Lösungsvektors:
+				\begin{flalign*}
+					x_i=\frac{\det(A_i)}{\det(A)}&&
+				\end{flalign*}
+				Dabei bezeichnet $A_i$, die Matrix, in der man die $i$-te Spalte durch $b$ ersetzt hat.
+		\end{tcolorbox}
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}
@@ -1498,7 +1544,8 @@
 			\end{flalign*}
 		\end{tcolorbox}
 		\noindent Hinweis: Um herauszufinden, ob eine unendliche Menge linear abhängig ist, muss man betrachten, ob jede Teilmenge linear unabhängig ist.
-	
+		\subsubsection{Euklidische Vektorräume}\index{Euklidischer Vektorraum}
+		
 	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}

@@ -1545,7 +1545,40 @@
 		\end{tcolorbox}
 		\noindent Hinweis: Um herauszufinden, ob eine unendliche Menge linear abhängig ist, muss man betrachten, ob jede Teilmenge linear unabhängig ist.
 		\subsubsection{Euklidische Vektorräume}\index{Euklidischer Vektorraum}
-		
+			Reele Vektorräume mit einem Skalarprodukt heißen euklidische Vektorräume. Komplexe Vektorräume mit Skalarprodukt hingegen nennt man unitär.\index{Unitärer Vektorraum} Für diese Räume definieren wir den Begriff des Skalarproduktes.\index{Skalarprodukt}
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			Das Skalarprodukt ist eine Abbildung
+			\begin{flalign*}
+				\langle\cdot,\cdot\rangle:V\times V\to\mathbb{R},(x,y)\mapsto\langle x,y\rangle&&
+			\end{flalign*}
+			wenn die folgenden Eigenschaften gegeben sind:
+			\begin{multicols}{2}
+				\textbf{Linearität}\index{Linearität}
+				\begin{itemize}
+					\item $\langle x+z,y\rangle=\langle x,y\rangle+\langle z,y\rangle$
+					\item $\langle\lambda x,y\rangle=\lambda\langle x,y\rangle$
+					\item $\langle x,y+z\rangle=\langle x,y\rangle+\langle x,z\rangle$
+					\item $\langle x,\lambda y\rangle=\lambda\langle x,y\rangle$
+				\end{itemize}
+				\textbf{Symmetrie}\index{Symmetrie}
+				\begin{itemize}
+					\item $\langle x,y\rangle=\langle y,x\rangle$
+				\end{itemize}
+				\textbf{Positive Definitheit}\index{Positive Definitheit}
+				\begin{itemize}
+					\item $\forall x\in V\langle x,x\rangle\ge0$
+					\item $\langle x,x\rangle =0\Leftrightarrow x=\vec{0}$
+				\end{itemize}
+			\end{multicols}
+			
+		\end{tcolorbox}
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Kanonisches Skalarprodukt}\index{Kanonisches Skalarprodukt}\lb
+			Das kanonische Skalarprodukt in $V=\mathbb{R}^n$ ist:
+			\begin{flalign*}
+				\langle x,y\rangle:=x^Ty=\sum^n_{i=1}x_iy_i&&
+			\end{flalign*}
+		\end{tcolorbox}
 	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}

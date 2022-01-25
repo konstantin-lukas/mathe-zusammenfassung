@@ -21,7 +21,7 @@
   \item Adjazenzmatrix, \hyperpage{10}
   \item Annähern, \hyperpage{70}, \hyperpage{82}
   \item Anstieg, \hyperpage{88}, \hyperpage{94}
-  \item Argument, \hyperpage{29}, \hyperpage{31}, \hyperpage{68}, 
+  \item Argument, \hyperpage{29}, \hyperpage{32}, \hyperpage{68}, 
 		\hyperpage{86}
   \item Arkustangens, \hyperpage{71}
   \item Assoziativ, \hyperpage{22}
@@ -104,8 +104,8 @@
   \item Erweiterbar, \hyperpage{93}
   \item Erweiterte Koeffizientenmatrix, \hyperpage{50}
   \item Erzeugendensystem, \hyperpage{26}
-  \item Euklidische Vektorräume, \hyperpage{27}
   \item Euklidischer Algorithmus, \hyperpage{34}
+  \item Euklidischer Vektorraum, \hyperpage{27}
   \item Exponent, \hyperpage{78}, \hyperpage{81}, \hyperpage{84}, 
 		\hyperpage{88}
   \item Exponentialgleichung, \hyperpage{84}
@@ -136,7 +136,7 @@
   \item Ganze Zahl, \hyperpage{6}, \hyperpage{72}
   \item Ganzrationale Funktion, \hyperpage{77}
   \item Gauß-Verfahren, \hyperpage{48}
-  \item Gaußsche Zahlenebene, \hyperpage{27}
+  \item Gaußsche Zahlenebene, \hyperpage{28}
   \item Gebrochenrationale Funktion, \hyperpage{82}
   \item Gebundener Vektor, \hyperpage{56}
   \item Gegenvektor, \hyperpage{56}
@@ -184,9 +184,9 @@
 
   \item Identität, \hyperpage{7}, \hyperpage{12}
   \item Identitätsmatrix, \hyperpage{13}
-  \item Imaginäre Einheit, \hyperpage{27}
-  \item Imaginäre Zahl, \hyperpage{27}
-  \item Imaginärteil, \hyperpage{27}
+  \item Imaginäre Einheit, \hyperpage{28}
+  \item Imaginäre Zahl, \hyperpage{28}
+  \item Imaginärteil, \hyperpage{28}
   \item Implikation, \hyperpage{110}
   \item Index, \hyperpage{13}
   \item Indirekter Beweis, \hyperpage{111}
@@ -207,7 +207,8 @@
   \indexspace
 
   \item Kanonische Basis, \hyperpage{26}
-  \item Kartesische Form, \hyperpage{27}, \hyperpage{29}
+  \item Kanonisches Skalarprodukt, \hyperpage{27}
+  \item Kartesische Form, \hyperpage{28, 29}
   \item Kathete, \hyperpage{52}
   \item Kegel, \hyperpage{55}
   \item Kehrwert, \hyperpage{33}
@@ -218,8 +219,8 @@
   \item Kombinatorik, \hyperpage{113}
   \item Kommutativ, \hyperpage{22}, \hyperpage{24}
   \item Komplement, \hyperpage{5}, \hyperpage{25}
-  \item Komplexe Konjugation, \hyperpage{27}
-  \item Komplexe Zahlen, \hyperpage{27}
+  \item Komplexe Konjugation, \hyperpage{28}
+  \item Komplexe Zahlen, \hyperpage{28}
   \item Komposition, \hyperpage{86}
   \item Kongruenz, \hyperpage{38}
   \item Konjunktion, \hyperpage{110}
@@ -251,6 +252,7 @@
   \item Lineare Gleichung, \hyperpage{102}
   \item Lineare Hülle, \hyperpage{26}
   \item Lineares Gleichungssystem, \hyperpage{48}
+  \item Linearität, \hyperpage{27}
   \item Linearkombination, \hyperpage{26}, \hyperpage{65}
   \item Links-Rechts-Krümmung, \hyperpage{99}
   \item Linksoffen, \hyperpage{34}
@@ -337,6 +339,7 @@
   \item Positiv, \hyperpage{43}, \hyperpage{72}
   \item Positiv Definit, \hyperpage{17}
   \item Positiv Semidefinit, \hyperpage{17}
+  \item Positive Definitheit, \hyperpage{27}
   \item Potenz, \hyperpage{72}, \hyperpage{77, 78}, \hyperpage{81}
   \item Potenzfunktion, \hyperpage{72}, \hyperpage{88}
   \item Potenzgesetz, \hyperpage{31}, \hyperpage{35}, \hyperpage{85}
@@ -371,7 +374,7 @@
   \item Rang, \hyperpage{12}, \hyperpage{51}
   \item Rationale Funktion, \hyperpage{82}
   \item Rationale Zahl, \hyperpage{6}, \hyperpage{35}
-  \item Realteil, \hyperpage{27}
+  \item Realteil, \hyperpage{28}
   \item Rechengesetz, \hyperpage{88}
   \item Rechenregel, \hyperpage{43}
   \item Rechteck, \hyperpage{52}, \hyperpage{103}
@@ -414,7 +417,7 @@
   \item Skalare Multiplikation, \hyperpage{13}
   \item skalare Multiplikation, \hyperpage{57}
   \item Skalarmultiplikation, \hyperpage{65}
-  \item Skalarprodukt, \hyperpage{57}
+  \item Skalarprodukt, \hyperpage{27}, \hyperpage{57}
   \item Spaltenrang, \hyperpage{14}
   \item Spaltenvektor, \hyperpage{56}
   \item Spann, \hyperpage{26}
@@ -434,7 +437,8 @@
   \item Substitution, \hyperpage{40}, \hyperpage{78}
   \item Summand, \hyperpage{77}
   \item Surjektiv, \hyperpage{8}, \hyperpage{69}
-  \item Symmetrie, \hyperpage{12}, \hyperpage{70}, \hyperpage{78}
+  \item Symmetrie, \hyperpage{12}, \hyperpage{27}, \hyperpage{70}, 
+		\hyperpage{78}
   \item Symmetrisch, \hyperpage{16}
   \item Symmetrische Differenz, \hyperpage{5}
   \item System, \hyperpage{25}
@@ -471,6 +475,7 @@
   \item Ungerade, \hyperpage{70}, \hyperpage{72}, \hyperpage{78}, 
 		\hyperpage{95}, \hyperpage{98}
   \item Ungleichung, \hyperpage{41}, \hyperpage{43}, \hyperpage{67}
+  \item Unitärer Vektorraum, \hyperpage{27}
   \item Universum, \hyperpage{5}, \hyperpage{113}
   \item Unterraum, \hyperpage{25}
 

@@ -143,14 +143,20 @@
 \indexentry{Lineare Abhängigkeit|hyperpage}{26}
 \indexentry{Lineare Abhängigkeit|hyperpage}{27}
 \indexentry{Euklidischer Vektorraum|hyperpage}{27}
-\indexentry{Komplexe Zahlen|hyperpage}{27}
-\indexentry{Realteil|hyperpage}{27}
-\indexentry{Imaginärteil|hyperpage}{27}
-\indexentry{Imaginäre Einheit|hyperpage}{27}
-\indexentry{Imaginäre Zahl|hyperpage}{27}
-\indexentry{Gaußsche Zahlenebene|hyperpage}{27}
-\indexentry{Kartesische Form|hyperpage}{27}
-\indexentry{Komplexe Konjugation|hyperpage}{27}
+\indexentry{Unitärer Vektorraum|hyperpage}{27}
+\indexentry{Skalarprodukt|hyperpage}{27}
+\indexentry{Linearität|hyperpage}{27}
+\indexentry{Symmetrie|hyperpage}{27}
+\indexentry{Positive Definitheit|hyperpage}{27}
+\indexentry{Kanonisches Skalarprodukt|hyperpage}{27}
+\indexentry{Komplexe Zahlen|hyperpage}{28}
+\indexentry{Realteil|hyperpage}{28}
+\indexentry{Imaginärteil|hyperpage}{28}
+\indexentry{Imaginäre Einheit|hyperpage}{28}
+\indexentry{Imaginäre Zahl|hyperpage}{28}
+\indexentry{Gaußsche Zahlenebene|hyperpage}{28}
+\indexentry{Kartesische Form|hyperpage}{28}
+\indexentry{Komplexe Konjugation|hyperpage}{28}
 \indexentry{Äquivalenzumformung|hyperpage}{28}
 \indexentry{Kartesische Form|hyperpage}{29}
 \indexentry{Polarform|hyperpage}{29}
@@ -158,7 +164,7 @@
 \indexentry{Signum|hyperpage}{29}
 \indexentry{Satz von de Moivre|hyperpage}{30}
 \indexentry{Potenzgesetz|hyperpage}{31}
-\indexentry{Argument|hyperpage}{31}
+\indexentry{Argument|hyperpage}{32}
 \indexentry{Kehrwert|hyperpage}{33}
 \indexentry{Divisor|hyperpage}{33}
 \indexentry{Dividend|hyperpage}{33}

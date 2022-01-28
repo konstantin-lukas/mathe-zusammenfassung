@@ -20,6 +20,7 @@
 \usepackage{pgffor,listofitems}
 \usepackage{tocloft}
 \usepackage{etoc}
+\usepackage{enumitem}
 \usepackage{blindtext}
 \usepackage{tabularx}
 \renewcommand\tabularxcolumn[1]{m{#1}}
@@ -1689,6 +1690,7 @@
 		\subsubsection{Euklidische Vektorräume}\index{Euklidischer Vektorraum}
 			Reele Vektorräume mit einem Skalarprodukt heißen euklidische Vektorräume. Komplexe Vektorräume mit Skalarprodukt hingegen nennt man unitär.\index{Unitärer Vektorraum} Für diese Räume definieren wir den Begriff des Skalarproduktes.\index{Skalarprodukt}
 		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Skalarprodukt reeller Vektorräume}\lb
 			Das Skalarprodukt ist eine Abbildung
 			\begin{flalign*}
 				\langle\cdot,\cdot\rangle:V\times V\to\mathbb{R},(x,y)\mapsto\langle x,y\rangle&&
@@ -1696,23 +1698,22 @@
 			wenn die folgenden Eigenschaften gegeben sind:
 			\begin{multicols}{2}
 				\textbf{Linearität}\index{Linearität}
-				\begin{itemize}
+				\begin{itemize}[leftmargin=*]
 					\item $\langle x+z,y\rangle=\langle x,y\rangle+\langle z,y\rangle$
 					\item $\langle\lambda x,y\rangle=\lambda\langle x,y\rangle$
 					\item $\langle x,y+z\rangle=\langle x,y\rangle+\langle x,z\rangle$
 					\item $\langle x,\lambda y\rangle=\lambda\langle x,y\rangle$
 				\end{itemize}
 				\textbf{Symmetrie}\index{Symmetrie}
-				\begin{itemize}
+				\begin{itemize}[leftmargin=*]
 					\item $\langle x,y\rangle=\langle y,x\rangle$
 				\end{itemize}
 				\textbf{Positive Definitheit}\index{Positive Definitheit}
-				\begin{itemize}
+				\begin{itemize}[leftmargin=*]
 					\item $\forall x\in V\langle x,x\rangle\ge0$
 					\item $\langle x,x\rangle =0\Leftrightarrow x=\vec{0}$
 				\end{itemize}
 			\end{multicols}
-			
 		\end{tcolorbox}
 		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
 			\textbf{Kanonisches Skalarprodukt}\index{Kanonisches Skalarprodukt}\lb
@@ -1720,6 +1721,44 @@
 			\begin{flalign*}
 				\langle x,y\rangle:=x^Ty=\sum^n_{i=1}x_iy_i&&
 			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Ein weiterer wichtiger Begriff, den wir kennen sollte, ist der Begriff der Norm. Dieser ist für reelle und komplexe Räume gleich definiert.
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Norm}\index{Norm}\lb
+			Für ein $K$-Vektorraum mit $K=\mathbb{C}$ oder $K=\mathbb{R}$ wird eine Abbildung $\|\cdot\|:V\to K$ Norm genannt, wenn für $x,y\in V$ und $\alpha\in K$ folgende Eigenschaften erfüllt sind:
+			\begin{multicols}{3}
+				\textbf{Definitheit}\index{Definitheit}
+				\begin{itemize}[leftmargin=*]
+					\item $\| x\|\ge 0$
+					\item $\| x\|=0\Rightarrow x=0$
+				\end{itemize}
+				\textbf{Absolute Homogenität}\index{Absolute Homogenität}
+				\begin{itemize}[leftmargin=*]
+					\item $\|\alpha x\|=|a|\|x\|$\item[]
+				\end{itemize}
+				\textbf{Subadditivität}\index{Subadditivität}
+				\begin{itemize}[leftmargin=*]
+					\item $\|x+y\|\le\|x\|+\|y\|$\item[]
+				\end{itemize}
+			\end{multicols}
+		\end{tcolorbox}
+		\noindent Interessanterweise, können wir, wenn wir ein Skalarprodukt gegeben haben, daraus immer eine Norm ableiten:
+		\begin{flalign*}
+			\|x\|:=\sqrt{\langle x,x\rangle}&&
+		\end{flalign*}
+		Dazu sagen wir, dass diese Norm durch das Skalarprodukt eingeführt wurde.\lb
+		Eine besondere Norm ist die sogenannte euklidische Norm\index{Euklidische Norm} $\| x\|_2$, die durch das kanonische Skalarprodukt eingeführt wird. Die Definition dafür sollte man mit dem bereits Bekannten im Falle $V=\mathbb{R}^n$ nachvollziehen können:
+		\begin{flalign*}
+			\| x\|_2:=\sqrt{\langle x,x\rangle}=\sqrt{\sum^n_{i=1}x^2_i}&&
+		\end{flalign*}
+		Vorsicht: Der Index $2$ wird manchmal auch weggelassen, wenn klar ist, worum es geht.
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Cauchy-Schwarz'sche Ungleichung}\index{Cauchy-Schwarz'sche Ungleichung}\lb
+			Bzgl. dem kanonischen Skalarprodukt und der euklidischen Norm gilt:
+			\begin{flalign*}
+				|\langle x,y\rangle|\le\|x\|\cdot\|y\|&&
+			\end{flalign*}
+			Immer dann, wenn $x$ und $y$ linear abhängig sind, gilt die Gleichheit.
 		\end{tcolorbox}
 	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.

@@ -1722,7 +1722,8 @@
 				\langle x,y\rangle:=x^Ty=\sum^n_{i=1}x_iy_i&&
 			\end{flalign*}
 		\end{tcolorbox}
-		\noindent Ein weiterer wichtiger Begriff, den wir kennen sollte, ist der Begriff der Norm. Dieser ist für reelle und komplexe Räume gleich definiert.
+		\noindent Das Skalarprodukt gibt uns Information über den Winkel zwischen zwei Vektoren. Wenn es $0$ ist, wissen wir, dass die Vektoren orthogonal\index{orthogonal} sind, also im rechten Winkel zueinander stehen. Dafür schreiben wir kurz $x\perp y$ genau dann, wenn $\langle x,y\rangle=0$ gilt.\lb
+		Ein weiterer wichtiger Begriff, den man kennen sollte, ist der Begriff der Norm. Dieser ist für reelle und komplexe Räume gleich definiert.
 		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
 			\textbf{Norm}\index{Norm}\lb
 			Für ein $K$-Vektorraum mit $K=\mathbb{C}$ oder $K=\mathbb{R}$ wird eine Abbildung $\|\cdot\|:V\to K$ Norm genannt, wenn für $x,y\in V$ und $\alpha\in K$ folgende Eigenschaften erfüllt sind:
@@ -1747,11 +1748,34 @@
 			\|x\|:=\sqrt{\langle x,x\rangle}&&
 		\end{flalign*}
 		Dazu sagen wir, dass diese Norm durch das Skalarprodukt eingeführt wurde.\lb
-		Eine besondere Norm ist die sogenannte euklidische Norm\index{Euklidische Norm} $\| x\|_2$, die durch das kanonische Skalarprodukt eingeführt wird. Die Definition dafür sollte man mit dem bereits Bekannten im Falle $V=\mathbb{R}^n$ nachvollziehen können:
-		\begin{flalign*}
+		Eine besondere Norm ist die sogenannte euklidische Norm\index{Euklidische Norm} $\| x\|_2$, die durch das kanonische Skalarprodukt eingeführt wird. Die Definition dafür sollte man mit dem bereits Bekannten im Falle $V=\mathbb{R}^n$ nachvollziehen können. Außerdem gibt es noch ein Hand voll anderer häufig benutzter Normen.
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Euklidische Norm}
+			\begin{flalign*}
 			\| x\|_2:=\sqrt{\langle x,x\rangle}=\sqrt{\sum^n_{i=1}x^2_i}&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Vorsicht: Der Index $2$ wird manchmal auch weggelassen, wenn klar ist, worum es geht.\lb
+		Allgemein gilt für Normen:
+		\begin{flalign*}
+			\|x\|_p=\left(\sum^n_{i=1}|x_i|^p\right)^{\frac{1}{p}}&&
 		\end{flalign*}
-		Vorsicht: Der Index $2$ wird manchmal auch weggelassen, wenn klar ist, worum es geht.
+		Für die $\infty$-Norm gilt:
+		\begin{flalign*}
+			\|x\|_\infty=\max_{1\le i\le n}|x_i|&&
+		\end{flalign*}
+		Wir können uns die Norm als den Abstand zwischen zwei Vektoren vorstellen. Dafür müssen wir die Differenz bilden:
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Abstand von Vektoren}
+			\begin{flalign*}
+			d(x,y):=\|x-y\|=\sqrt{\sum^n_{i=1}(x_i-y_i)^2}&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Etwas abstrakter können wir damit auch den Unterschied zwischen der echten Lösung und der geschätzten Lösung von LGSen bestimmen, da die Lösung $x$ von $Ax=b$ immer ein Vektor ist.\lb
+		Wir können einen Vektor normieren, d.h. ihn so skalieren, dass seine Norm $1$ ist, indem wir ihn durch seine Norm teilen:
+		\begin{flalign*}
+			\p{x}:=\frac{1}{\|x\|}x&&
+		\end{flalign*}
 		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
 			\textbf{Cauchy-Schwarz'sche Ungleichung}\index{Cauchy-Schwarz'sche Ungleichung}\lb
 			Bzgl. dem kanonischen Skalarprodukt und der euklidischen Norm gilt:
@@ -1760,6 +1784,22 @@
 			\end{flalign*}
 			Immer dann, wenn $x$ und $y$ linear abhängig sind, gilt die Gleichheit.
 		\end{tcolorbox}
+		\noindent Aus dieser Ungleichung lässt sich eine Formel zur Berechnung des Winkels zwischen zwei Vektoren ableiten:
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Winkel zwischen Vektoren}
+			\begin{flalign*}
+			\phi=\arccos\frac{\langle x,y\rangle}{\|x\|\|y\|}&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Beispiel:
+		\begin{flalign*}
+			&x=\begin{pmatrix}
+			3\\-2\\1
+			\end{pmatrix}\hspace{3em}y=\begin{pmatrix}
+			-1\\6\\2
+			\end{pmatrix}\\\\
+			\Rightarrow&\arccos\frac{\langle x,y\rangle}{\|x\|\|y\|}=\arccos\frac{-13}{\sqrt{14}\sqrt{41}}\approx\dunderline{122,86^\circ}&&
+		\end{flalign*}
 	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
 		\begin{center}

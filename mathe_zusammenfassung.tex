@@ -25,7 +25,7 @@
 \usepackage{tabularx}
 \renewcommand\tabularxcolumn[1]{m{#1}}
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows,trees,positioning,fit,automata}
+\usetikzlibrary{calc,shapes,arrows,trees,positioning,fit,automata}
 \usepackage{array}
 \usepackage[most]{tcolorbox}
 \usepackage[hidelinks]{hyperref}
@@ -921,7 +921,8 @@
 		\end{flalign*}
 		Eine Darstellungsmatrix ist für uns ein Shortcut, um weniger zu rechnen. Wir könnten die Abbildung $T$ bzgl. der Basen $A$ und $B$ auch in drei Schritt ausführen. Dafür führen wir die Koordinatenabbildung ein:
 		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
-			\textbf{Koordinatenabbildung}\index{Koordinatenabbildung}\lb
+			\textbf{Koordinatenabbildung}\index{Koordinatenabbildung}
+			\label{koordinatenabbildung}\lb
 			Sei $A=\{a_1,\dots,a_n\}$ Basis von $V$. Dann ist die Koordinatenabbildung bei Eingabe eines Vektors $v=\gamma_1a_1+\dots+\gamma_na_n\in V$ definiert als:
 			\begin{flalign*}
 			\phi_A:V\to K^n, v\mapsto (\gamma_1,...,\gamma_n)&&
@@ -1200,7 +1201,7 @@
 				$\forall x\in K^n:x^TAx\le0$
 			\end{multicols}
 		\end{tcolorbox}
-		\subsubsection{Die Determinante}
+		\subsubsection{Determinanten}
 			Wenn wir mit Transformationsmatrizen\index{Transformationsmatrix} arbeiten, kann man sich das so vorstellen, als würde sich der verbiegen. Wobei verbiegen vielleicht nicht das richtige Wort ist, denn wenn wir von linearen Abbildungen reden, dann gibt es nur bestimmte Arten von Transformationen, die wir vornehmen können. Wir können z.B. den Raum strecken, rotieren oder scheren (d.h. quasi anhand eines Rechteckes eine Kante zu bewegen, s.d. man ein Parallelogramm erhält).\lb
 			Die Determinante sagt uns, um welchen Faktor sich jede beliebige Fläche (für $\mathbb{R}^2$) oder einen Volumen (für $\mathbb{R}^3$) in unserem Raum durch die Transformation verändert.\lb
 			Betrachten wir ein paar Beispiele in $\mathbb{R}^2$ angewandt auf unsere Einheitsvektoren $\textcolor{blue}{e_1}$ und $\textcolor{red}{e_2}$ mit einer Transformation $T$:\lb
@@ -1722,7 +1723,7 @@
 				\langle x,y\rangle:=x^Ty=\sum^n_{i=1}x_iy_i&&
 			\end{flalign*}
 		\end{tcolorbox}
-		\noindent Das Skalarprodukt gibt uns Information über den Winkel zwischen zwei Vektoren. Wenn es $0$ ist, wissen wir, dass die Vektoren orthogonal\index{orthogonal} sind, also im rechten Winkel zueinander stehen. Dafür schreiben wir kurz $x\perp y$ genau dann, wenn $\langle x,y\rangle=0$ gilt.\lb
+		\noindent Das Skalarprodukt gibt uns Information über den Winkel zwischen zwei Vektoren. Wenn es $0$ ist, wissen wir, dass die Vektoren orthogonal\index{Orthogonal} sind, also im rechten Winkel zueinander stehen. Dafür schreiben wir kurz $x\perp y$ genau dann, wenn $\langle x,y\rangle=0$ gilt.\lb
 		Ein weiterer wichtiger Begriff, den man kennen sollte, ist der Begriff der Norm. Dieser ist für reelle und komplexe Räume gleich definiert.
 		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
 			\textbf{Norm}\index{Norm}\lb
@@ -1774,7 +1775,7 @@
 		\noindent Etwas abstrakter können wir damit auch den Unterschied zwischen der echten Lösung und der geschätzten Lösung von LGSen bestimmen, da die Lösung $x$ von $Ax=b$ immer ein Vektor ist.\lb
 		Wir können einen Vektor normieren, d.h. ihn so skalieren, dass seine Norm $1$ ist, indem wir ihn durch seine Norm teilen:
 		\begin{flalign*}
-			\p{x}:=\frac{1}{\|x\|}x&&
+			\p{x}:=\frac{x}{\|x\|}&&
 		\end{flalign*}
 		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
 			\textbf{Cauchy-Schwarz'sche Ungleichung}\index{Cauchy-Schwarz'sche Ungleichung}\lb
@@ -1799,6 +1800,137 @@
 			-1\\6\\2
 			\end{pmatrix}\\\\
 			\Rightarrow&\arccos\frac{\langle x,y\rangle}{\|x\|\|y\|}=\arccos\frac{-13}{\sqrt{14}\sqrt{41}}\approx\dunderline{122,86^\circ}&&
+		\end{flalign*}
+		\subsubsection{Orthogonalität}
+		Stehen zwei Vektoren im rechten Winkel zueinander, sind sie orthogonal\index{Orthogonal}. Das ist für Vektorräume mit mehr als 3 Dimensionen etwas abstrakt, deswegen hier die richtige Definition:
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Orthogonalität von Vektoren}\lb
+			Seien $u,v\in V$ Vektoren eines gemeinsamen Vektorraumes. Dann sind sie orthogonal ($u\perp v$) gdw. ihr Skalarprodukt gleich Null ist.
+			\begin{flalign*}
+				\langle u,v\rangle\Leftrightarrow u\perp v&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Orthogonalität von Unterräumen}\lb
+			Seien $U,W\subseteq V$ Untervektorräume eines gemeinsamen Vektorraumes. Dann sind sie orthogonal, wenn $\forall u\in U,w\in W:\langle u,w\rangle=0$ gilt.
+		\end{tcolorbox}
+		\noindent Für eine Teilmenge $U\subseteq V$, bezeichnen wir $U^\perp$ als das orthogonale Komplement\index{Orthogonales Komplement} von $U$:
+		\begin{flalign*}
+			U^\perp:=\{v\in V\mid\forall u\in U:\langle u,v\rangle=0\}&&
+		\end{flalign*}
+		Für das orthogonale Komplement können wir uns merken, dass dieses auch wieder ein Unterraum von $V$ ist.\lb
+		$U$ und $U^\perp$ ergeben zusammen wieder $V$ ($V=U\oplus U^\perp$).\lb
+		Haben wir eine kanonische Basis, deren Vektoren paarweise orthogonal sind, sprechen wir von einer sogenannten Orthonormalbasis\index{Orthonormalbasis}.
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Orthonormalbasis}\lb
+			Sei $B$ Basis eines euklidischen oder unitären Vektorraums. Dann bezeichnen wir diese also Orthonormalbasis, wenn:
+			\begin{flalign*}
+				\forall u,v\in B: u\neq v\Rightarrow u\perp v\land u=v\Rightarrow\|u\|=1&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Erfüllt eine Teilmenge $B$ eines euklidischen oder unitären Vektorraums $V$ die Anforderungen an eine Orthonormalbasis, aber nicht die an eine Basis (span$(B)=V$), dann ist sie natürlich keine Orthonormalbasis. Wir nennen sie dann aber trotzdem immer noch ein Orthonormalsystem.\lb
+		Daraus können wir auch folgern, dass jedem Menge deren Elemente paarweise orthogonal sind, linear unabhängig sind. Ansonsten wäre die Orthonormalbasis gar keine Basis.\lb
+		Haben wir eine Orthonormalbasis $B=\{u_1,...,u_n\}$ eines endlich dimensionalen Raumes gegeben und wollen für einen Vektor $v$ den \highlight{koordinatenabbildung}{Koordinatenvektor} $\gamma=(\gamma_1,...,\gamma_n)$ finden, können wir jede Komponente wie folgt ausrechnen:
+		\begin{flalign*}
+			\gamma_i=\langle u_i,v\rangle\hspace{3em}\text{für }v=\sum^n_{i=1}\gamma_iu_i&&
+		\end{flalign*}
+		Haben wir beispielsweise die Basis $B=\{(1,0)^T, (0,1)^T\}$ und betrachten den Vektor $(1,3)^T$, rechnen wir:
+		\begin{flalign*}
+			&\gamma_1=\left\langle\begin{pmatrix}
+			0\\1
+			\end{pmatrix},\begin{pmatrix}
+			1\\3
+			\end{pmatrix}\right\rangle=1\\
+			&\gamma_2=\left\langle\begin{pmatrix}
+			1\\0
+			\end{pmatrix},\begin{pmatrix}
+			1\\3
+			\end{pmatrix}\right\rangle=3\\
+			\Rightarrow&\gamma=\begin{pmatrix}
+			1\\3
+			\end{pmatrix}&&
+		\end{flalign*}
+		Man kann mithilfe eines Algorithmus nach Gram-Schmidt aus jedem linear unabhängigen System eines euklidischen oder unitären Vektorraums ein Orthogonalsystem erzeugen, dessen linearer Hülle gleich der des ursprünglichen Systems ist.
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Gram-Schmidtsches Orthogonalisierungsverfahren}\index{Gram-Schmidtsches Orthogonalisierungsverf.}\lb
+			Gegeben sei eine linear unabhängige Menge an Vektoren $\{u_1,...,u_n\}$. Dann bilden die Vektoren $\{v_1,...,v_n\}$ eine Orthonormalbasis für span$(\{u_1,...,u_n\})$. Für die Berechnung gilt:
+			\begin{flalign*}
+				v_i:=\frac{w_i}{\|w_i\|}&&
+			\end{flalign*}
+			Dabei gilt:
+			\begin{flalign*}
+				w_1:=u_1,\hspace{3em}w_i:=u_i-\sum^{i-1}_{j=1}\langle v_j,u_i\rangle v_j&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Nehmen wir als einfaches Beispiel:
+		\begin{flalign*}
+			&\text{Basis: }\left\{\begin{pmatrix}
+			3\\2
+			\end{pmatrix},\begin{pmatrix}
+			4\\0
+			\end{pmatrix}\right\}\\
+			&\Rightarrow\;w_1=\begin{pmatrix}
+			3\\2
+			\end{pmatrix}\Rightarrow v_1=\frac{1}{\sqrt{13}}\begin{pmatrix}
+			3\\2
+			\end{pmatrix}=\begin{pmatrix}
+			\frac{3}{\sqrt{13}}\vspace{.5em}\\\frac{2}{\sqrt{13}}
+			\end{pmatrix}\\
+			&\Rightarrow\;w_2=\begin{pmatrix}
+			4\\0
+			\end{pmatrix}-\sum^{2-1}_{j=1}\langle v_j,u_i\rangle v_j=\begin{pmatrix}
+			4\\0
+			\end{pmatrix}-\langle v_1,u_2\rangle v_1=\begin{pmatrix}
+			4\\0
+			\end{pmatrix}-3,328201177\cdot\begin{pmatrix}
+			\frac{3}{\sqrt{13}}\vspace{.5em}\\\frac{2}{\sqrt{13}}
+			\end{pmatrix}\approx\begin{pmatrix}
+			1,23\\-1,85
+			\end{pmatrix}\\
+			&\Rightarrow\;v_2\approx\frac{1}{2,22}\begin{pmatrix}
+			1,23\\-1,85
+			\end{pmatrix}\approx\begin{pmatrix}
+			\frac{41}{74}\vspace{.5em}\\-\frac{5}{6}
+			\end{pmatrix}\\
+			&\Rightarrow\;\text{Orthonormalbasis: }\left\{\begin{pmatrix}
+			\frac{3}{\sqrt{13}}\vspace{.5em}\\\frac{2}{\sqrt{13}}
+			\end{pmatrix},\begin{pmatrix}
+			\frac{41}{74}\vspace{.5em}\\-\frac{5}{6}
+			\end{pmatrix}\right\}&&
+		\end{flalign*}
+		Hinweis: Die Norm von $v_2$ ist nicht ganz $1$ aufgrund des Rundens.
+		\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.65cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+			\textbf{Orthogonalprojektion}\index{Orthogonalprojektion}\lb
+			Sei $B=\{u_1,...,u_n\}$ ein ONS in einem endlich dimensionalen Vektorraum $V$, der euklidisch oder unitär ist. Außerdem spannt $B$ eine Teilmenge von $V$ auf. Es gilt:
+			\begin{flalign*}
+				\forall v\in V\exists!u\in U,w\in U^\perp:v=u+w&&
+			\end{flalign*}
+			Diese Elemente sind eindeutig bestimmt und benannt:\lb
+			\textbf{Orthogonale Projektion}
+			\begin{flalign*}
+			P_U(v):=u=\sum^n_{i=1}\langle u_i,v\rangle u_i\in U&&
+			\end{flalign*}
+			\textbf{Lot}
+			\begin{flalign*}
+			w=v-\sum^n_{i=1}\langle u_i, v\rangle u_i\in U^\perp&&
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Grundlegend ist die orthogonale Projektion eine Abbildung, die das Ergebnis ist, wenn man einen Vektor orthogonal auf einen Unterraum projiziert.
+		\begin{center}
+			\begin{tikzpicture}[dot/.style={circle,inner sep=1pt,fill,label={#1},name=#1}, line width= 2pt]
+			\draw[thick,-stealth] (-6,0) -- (1,0);
+			\draw[thick,-stealth] (0,-1) -- (0,4.5);
+			\coordinate (A) at (0,0);
+			\coordinate (B) at (-5,3);
+			\draw [color=red] (1,-0.6) -- (B) node[above]{$U^\perp$};     
+			\draw [ -stealth, color=blue] (0,0) -- (-2.6, 4.3) coordinate (yn) node[right]{$v$}; 
+			\draw[dashed] (yn) --  node[midway,above left]{$w$} ($(A)!(yn)!(B)$) node[below left]{$\textcolor{teal}{u}$};
+			\draw [-stealth, color=teal] (A) -- ($(A)!(yn)!(B)$);     
+			\end{tikzpicture}
+		\end{center}
+		Für die Norm vom Lot gilt interessanterweise folgendes:
+		\begin{flalign*}
+			\|w\|=\|v-u\|=\min\{\|v-x\|\mid x\in U\}&&
 		\end{flalign*}
 	\section{Komplexe Zahlen}
 		Mit den reellen Zahlen war es uns bisher nicht möglich die Gleichung $x^2=-1$ zu lösen. Deshalb gibt es den Zahlenbereich $\mathbb{C}$ der komplexen Zahlen. Darin wird $i:=\sqrt{-1}$ definiert. $i$ alleine ist aber noch nicht unbedingt eine komplexe Zahl, denn $i:=\sqrt{-1}$ alleine hilft uns immer noch nicht z.B. $x^2=-9$ zu lösen. Um also verschiedene Gleichungen zu lösen, gibt es eine andere Notationsform: Eine komplexe Zahl\index{Komplexe Zahlen} hat die Form $z=a+b\cdot i$, wobei $a$ und $b$ reelle Zahlen sind. Dabei wird $a$ als \textit{Realteil}\index{Realteil}, $b$ als \textit{Imaginärteil}\index{Imaginärteil}, $i$ als \textit{imaginäre Einheit}\index{Imaginäre Einheit} und $b\cdot i$ als \textit{imaginäre Zahl}\index{Imaginäre Zahl} bezeichnet. Anders als die reellen Zahl werden die komplexen Zahlen nicht auf einem Zahlenstrahl dargestellt, sondern der Zahlenstrahl der reellen Zahlen wird noch um die Achse des Imaginärteils erweitert. Dieses System nennt man auch \textit{gaußsche Zahlenebene}\index{Gaußsche Zahlenebene}. Da $i$ eine definierte Einheit (also immer gleich) ist, können wir mit den reellen Zahlen $a$ und $b$ die komplexen Zahlen als \highlight{sec:vektorgeometrie}{Vektoren} darstellen. Das Praktische daran ist, dass wir die komplexen Zahl aus dieser Ebene ganz einfach ablesen können.
@@ -3076,7 +3208,7 @@
 			\end{flalign*}
 			Hinweis: All die oben genannten Rechengesetze, wie z.B. das Skalarprodukt lassen sich im dreidimensionalen Raum genauso anwenden wie im zweidimensionalen.
 			\vspace{.5cm}\hrule\vspace{.7cm}
-			\noindent Neben dem Skalarprodukt gibt es noch eine Möglichkeit das Produkt aus zwei Vektoren zu bilden, nämlich das sogenannte \textit{Kreuzprodukt}\index{Kreuzprodukt}. Mit dem Kreuzprodukt kriegen wir den Normalenvektor heraus. Das ist ein Vektor, der Orthogonal zu den beiden ursprünglichen Vektoren ist. Um Das Kreuzprodukt zu berechnen, schreibt man nebeneinander die Werte der Vektoren jeweils zwei mal übereinander und multipliziert wie unten angeben über Kreuz: Erst die blauen Linien und dann Minus die roten.
+			\noindent Neben dem Skalarprodukt gibt es im $\mathbb{R}^3$ noch eine Möglichkeit das Produkt aus zwei Vektoren zu bilden, nämlich das sogenannte \textit{Kreuzprodukt}\index{Kreuzprodukt}. Mit dem Kreuzprodukt, oder auch Vektorprodukt\index{Vektorprodukt} genannt, kriegen wir den Normalenvektor heraus, dessen Länge genau dem Parallelogramm, der beiden Ursprungsvektoren entspricht. Das ist ein Vektor, der Orthogonal zu den beiden ursprünglichen Vektoren ist. Um Das Kreuzprodukt zu berechnen, schreibt man nebeneinander die Werte der Vektoren jeweils zwei mal übereinander und multipliziert wie unten angeben über Kreuz: Erst die blauen Linien und dann Minus die roten.
 			\begin{center}
 				\begin{tikzpicture}
 				\draw [blue] (1.15,-1) rectangle (2.35,1);

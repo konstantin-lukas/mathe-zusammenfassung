@@ -1433,7 +1433,7 @@
 				\end{flalign*}
 				Dabei bezeichnet $A_i$, die Matrix, in der man die $i$-te Spalte durch $b$ ersetzt hat.
 			\end{tcolorbox}
-		\subsubsection{Eigenwerte}
+		\subsubsection{Eigenwerte und Eigenvektoren}
 			Wie immer betrachten wir zunächst einen $K$-Vektorraum $V$. Außerdem sei $\phi$ ein \highlight{endomorphismus}{Endomorphismus} bzw. $A\in K^{n\times n}$ eine Matrix für $\phi$. Dann heißt ein Skalar\index{Skalar} $\lambda\in K$ Eigenwert von $\phi$ und der Vektor $v\in V$ Eigenvektor zu $\lambda$, wenn gilt:
 			\begin{flalign*}
 				\exists v\in V\setminus\{\vec{0}\}:\phi(v)=\lambda v&&
@@ -1442,7 +1442,7 @@
 			\begin{flalign*}
 			\exists v\in V\setminus\{\vec{0}\}:Av=\lambda v&&
 			\end{flalign*}
-			Graphisch gesehen ist ein Eigenvektor ein Vektor, der nach einer linearen Transformation immer noch auf seinem ursprünglichen Spann liegt. Eigenvektoren werden also nur skaliert. Der Faktor um den ein Eigenvektor\index{Eigenvektor} skaliert wird, nennen wir Eigenwert.\index{Eigenwert}\lb
+			Graphisch gesehen ist ein Eigenvektor ein Vektor, der nach einer linearen Transformation immer noch auf seinem ursprünglichen Spann liegt. Eigenvektoren werden also nur skaliert. Der Faktor um den ein Eigenvektor\index{Eigenvektor} skaliert wird, nennen wir Eigenwert.\index{Eigenwert} Für eine Rotation im $\mathbb{R}^3$ beispielsweise bestimmen wir mit einem Eigenvektor die Rotationsachse.\lb
 			Betrachten wir dazu einmal ein Beispiel:
 			\begin{flalign*}
 				A=\begin{pmatrix}
@@ -1501,7 +1501,7 @@
 				\end{axis}
 				\end{tikzpicture}
 			\end{center}
-			In diesem Fall sehen, wir dass $v$ aus seinem Spann bleibt. Damit ist $v$ unser Eigenvektor und wir sehen auch schnell, dass $v$ um einen Faktor von $-0,5$ skaliert wird, was unser Eigenvektor für $A$ ist.\lb
+			In diesem Fall sehen, wir dass $v$ auf seinem Spann bleibt. Damit ist $v$ unser Eigenvektor und wir sehen auch schnell, dass $v$ um einen Faktor von $-0,5$ skaliert wird, was unser Eigenvektor für $A$ ist.\lb
 			Es ist natürlich nicht immer so einfach diese Werte zu errechnen, deswegen nochmal etwas allgemeiner. Prinzipiell müssen wir die Gleichung
 			\begin{flalign*}
 				Av=\lambda v&&
@@ -1540,7 +1540,15 @@
 				\end{vmatrix}=&(0,5-\lambda)(0,5-\lambda)-(-1)\cdot(-1)\cdot\\
 				=&(0,5-\lambda)^2-1&&
 			\end{flalign*}
-			Wir sehen also, dass wir auch rechnerisch auf den Eigenwert $\lambda=-0,5$ kommen. Die Lösungen, die wir anhand der Eigenwerte berechnen, fassen in sogenannten \textbf{Eigenräumen}\index{Eigenräumen} zusammen.
+			Wir sehen also, dass wir auch rechnerisch auf den Eigenwert $\lambda=-0,5$ kommen. Andere Matrizen haben aber mehrere Eigenwerte. Wenn wir die Eigenwerte von $A$ zusammenfassen, nennen wir das \textbf{Spektrum}\index{Spektrum} ($\sigma$) von $A$.
+			\begin{flalign*}
+				\sigma(A):=\{\lambda\in K\mid\exists v\in K^n\setminus\{\vec{0}\}:Av=\lambda v\}&&
+			\end{flalign*}
+			Der der Betrag des Eigenwertes mit dem größten Betrag wird als Spektralradius ($\rho$) bezeichnet:
+			\begin{flalign*}
+				\rho(A):=\max_{\lambda\in\sigma(A)}|\lambda|&&
+			\end{flalign*}
+			Die Lösungen, die wir anhand der Eigenwerte berechnen, fassen in sogenannten \textbf{Eigenräumen}\index{Eigenräumen} zusammen.
 			\begin{flalign*}
 				\text{Eig}(A,\lambda):=\{v\in K^n\mid Av=\lambda v\}=\text{ker}(A-\lambda I_n)&&
 			\end{flalign*}
@@ -1564,6 +1572,15 @@
 			\begin{flalign*}
 				\lambda_1\neq\lambda_2\Rightarrow\text{ Eig}(A,\lambda_1)\cap\text{Eig}(A,\lambda_2)=\{\vec{0}\}&&
 			\end{flalign*}
+			\begin{tcolorbox}[boxsep=0pt,top=0.75cm,left=.75cm,right=.5cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+				\textbf{Diagonalisierbarkeit}\index{Diagonalisierbarkeit}\lb
+				Wenn eine Matrix $A\in K^{n\times n}$ genau $n$ viele paarweise verschiedene Eigenwerte $\lambda\in K$ hat, sagen wir, dass $A$ diagonalisierbar ist.\lb
+				Für eine diagonalisierbare Matrix $A\in K^{n\times n}$ existiert eine reguläre Matrix $U\in K^{n\times n}$, sodass
+				\begin{flalign*}
+					U^{-1}AU=\text{diag}(\lambda_1,\dots,\lambda_n)&&
+				\end{flalign*}
+			\end{tcolorbox}
+			Eine Basis ist außerdem immer diagonalisierbar, wenn es für $K^n$ eine Basis nur aus den Eigenvektoren von $A$ gibt.
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}

@@ -704,12 +704,13 @@
 				\end{flalign*}
 				Je nach Eigenschaften des Homomorphismus $T$ gibt es folgende Bezeichnungen:
 				\begin{tcolorbox}[boxsep=0pt,top=0.65cm,left=.75cm,right=.5cm, bottom=.6cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm]
+					\label{endomorphismus}
 					\begin{itemize}
-						\item \textbf{Monomorphismus:} $T$ ist injektiv
-						\item \textbf{Epimorphismus:} $T$ ist surjektiv
-						\item \textbf{Isomorphismus:} $T$ ist bijektiv
-						\item \textbf{Endomorphismus:} $V=W$
-						\item \textbf{Automorphismus:} $V=W$ und $T$ ist bijektiv
+						\item \textbf{Monomorphismus:}\index{Monomorphismus} $T$ ist injektiv
+						\item \textbf{Epimorphismus:}\index{Epimorphismus} $T$ ist surjektiv
+						\item \textbf{Isomorphismus:}\index{Isomorphismus} $T$ ist bijektiv
+						\item \textbf{Endomorphismus:}\index{Endomorphismusorphismus} $V=W$
+						\item \textbf{Automorphismus:}\index{Automorphismus} $V=W$ und $T$ ist bijektiv
 					\end{itemize}
 				\end{tcolorbox}
 				\noindent Wichtig für lineare Abbildungen, sind außerdem folgende Begriffe:
@@ -1202,6 +1203,7 @@
 			\end{multicols}
 		\end{tcolorbox}
 		\subsubsection{Determinanten}
+		\label{subsubsec:determinanten}
 			Wenn wir mit Transformationsmatrizen\index{Transformationsmatrix} arbeiten, kann man sich das so vorstellen, als würde sich der verbiegen. Wobei verbiegen vielleicht nicht das richtige Wort ist, denn wenn wir von linearen Abbildungen reden, dann gibt es nur bestimmte Arten von Transformationen, die wir vornehmen können. Wir können z.B. den Raum strecken, rotieren oder scheren (d.h. quasi anhand eines Rechteckes eine Kante zu bewegen, s.d. man ein Parallelogramm erhält).\lb
 			Die Determinante sagt uns, um welchen Faktor sich jede beliebige Fläche (für $\mathbb{R}^2$) oder einen Volumen (für $\mathbb{R}^3$) in unserem Raum durch die Transformation verändert.\lb
 			Betrachten wir ein paar Beispiele in $\mathbb{R}^2$ angewandt auf unsere Einheitsvektoren $\textcolor{blue}{e_1}$ und $\textcolor{red}{e_2}$ mit einer Transformation $T$:\lb
@@ -1430,7 +1432,138 @@
 					x_i=\frac{\det(A_i)}{\det(A)}&&
 				\end{flalign*}
 				Dabei bezeichnet $A_i$, die Matrix, in der man die $i$-te Spalte durch $b$ ersetzt hat.
-		\end{tcolorbox}
+			\end{tcolorbox}
+		\subsubsection{Eigenwerte}
+			Wie immer betrachten wir zunächst einen $K$-Vektorraum $V$. Außerdem sei $\phi$ ein \highlight{endomorphismus}{Endomorphismus} bzw. $A\in K^{n\times n}$ eine Matrix für $\phi$. Dann heißt ein Skalar\index{Skalar} $\lambda\in K$ Eigenwert von $\phi$ und der Vektor $v\in V$ Eigenvektor zu $\lambda$, wenn gilt:
+			\begin{flalign*}
+				\exists v\in V\setminus\{\vec{0}\}:\phi(v)=\lambda v&&
+			\end{flalign*}
+			bzw.
+			\begin{flalign*}
+			\exists v\in V\setminus\{\vec{0}\}:Av=\lambda v&&
+			\end{flalign*}
+			Graphisch gesehen ist ein Eigenvektor ein Vektor, der nach einer linearen Transformation immer noch auf seinem ursprünglichen Spann liegt. Eigenvektoren werden also nur skaliert. Der Faktor um den ein Eigenvektor\index{Eigenvektor} skaliert wird, nennen wir Eigenwert.\index{Eigenwert}\lb
+			Betrachten wir dazu einmal ein Beispiel:
+			\begin{flalign*}
+				A=\begin{pmatrix}
+				0,5&-1\\-1&0,5
+				\end{pmatrix}&&
+			\end{flalign*}
+			\textbf{Vor der Transformation}
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				width=17cm,
+				height=7cm,
+				xmin=-9, xmax=9,
+				ymin=-3, ymax=3,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=1,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50},
+				axis equal image
+				]
+				\addplot [-stealth, line width= 2pt, teal] coordinates { (0,0) (2,2)};
+				\addplot [-stealth, line width= 2pt, blue] coordinates { (0,0) (2,0)};
+				\addplot [-stealth, line width= 2pt, red] coordinates { (0,0) (0,2)};
+				\node[anchor=west] at (axis cs: -8.5,1) {$\textcolor{red}{u=\begin{pmatrix}0\\2\end{pmatrix}}$};
+				\node[anchor=west] at (axis cs: -6,1) {$\textcolor{blue}{w=\begin{pmatrix}2\\0\end{pmatrix}}$};
+				\node[anchor=west] at (axis cs: -3.5,1) {$\textcolor{teal}{v=\begin{pmatrix}2\\2\end{pmatrix}}$};
+				\end{axis}
+				\end{tikzpicture}
+			\end{center}
+			\textbf{Nach der Transformation}
+			\begin{center}
+				\begin{tikzpicture}
+				\begin{axis}[
+				width=17cm,
+				height=7cm,
+				xmin=-9, xmax=9,
+				ymin=-3, ymax=3,
+				axis y line=center,
+				axis x line=middle,
+				ticklabel style={fill=white},
+				minor tick num=1,
+				grid=both,
+				grid style={line width=.1pt, draw=gridgray!10},
+				major grid style={line width=.2pt,draw=gridgray!50},
+				axis equal image
+				]
+				\addplot [-stealth, line width= 2pt, teal] coordinates { (0,0) (-1,-1)};
+				\addplot [-stealth, line width= 2pt, blue] coordinates { (0,0) (1,-2)};
+				\addplot [-stealth, line width= 2pt, red] coordinates { (0,0) (-2,1)};
+				\node[anchor=west] at (axis cs: 0.2,1) {$\textcolor{red}{u=\begin{pmatrix}-2\\1\end{pmatrix}}$};
+				\node[anchor=west] at (axis cs: 3,1) {$\textcolor{blue}{w=\begin{pmatrix}1\\-2\end{pmatrix}}$};
+				\node[anchor=west] at (axis cs: 5.8,1) {$\textcolor{teal}{v=\begin{pmatrix}-1\\-1\end{pmatrix}}$};
+				\end{axis}
+				\end{tikzpicture}
+			\end{center}
+			In diesem Fall sehen, wir dass $v$ aus seinem Spann bleibt. Damit ist $v$ unser Eigenvektor und wir sehen auch schnell, dass $v$ um einen Faktor von $-0,5$ skaliert wird, was unser Eigenvektor für $A$ ist.\lb
+			Es ist natürlich nicht immer so einfach diese Werte zu errechnen, deswegen nochmal etwas allgemeiner. Prinzipiell müssen wir die Gleichung
+			\begin{flalign*}
+				Av=\lambda v&&
+			\end{flalign*}
+			lösen. Wir können uns das durch geschickte Umformungen etwas einfacher machen:
+			\begin{flalign*}
+			&Av=\lambda v\\
+			\Leftrightarrow&Av=(\lambda I_n)v\\
+			\Leftrightarrow&Av-(\lambda I_n)v=\vec{0}\\
+			\Leftrightarrow&(A-\lambda I_n)v=\vec{0}&&
+			\end{flalign*}
+			Das sieht vielleicht erst mal kompliziert aus, es hilft uns jedoch unsere Eigenwerte zu errechnen.\lb
+			Machen wir das einmal für unsere Matrix aus dem Beispiel:
+			\begin{flalign*}
+			&\begin{pmatrix}
+			0,5&-1\\-1&0,5
+			\end{pmatrix}v=\lambda v\\
+			\Leftrightarrow&\begin{pmatrix}
+			0,5&-1\\-1&0,5
+			\end{pmatrix}v=(\lambda I_n) v\\
+			\Leftrightarrow&\begin{pmatrix}
+			0,5&-1\\-1&0,5
+			\end{pmatrix}v-(\lambda I_n) v=\vec{0}\\
+			\Leftrightarrow&\begin{pmatrix}
+			0,5&-1\\-1&0,5
+			\end{pmatrix}v-\lambda I_n v=\vec{0}\\
+			\Leftrightarrow&\begin{pmatrix}
+			0,5-\lambda&-1\\-1&0,5-\lambda
+			\end{pmatrix}v =\vec{0}&&
+			\end{flalign*}
+			Nun ist ein $\lambda$ genau dann Eigenwert von $A$, wenn die \highlight{subsubsec:determinanten}{Determinante} von $A-\lambda I_n$ gleich Null ist. Das liegt daran, dass wir ja gerade ein Lösung für die Gleichung $(A-\lambda I_n)v=\vec{0}$ finden wollen und nicht den Nullvektor betrachten. Das heißt ein Vektor kann durch die Transformation mit der Matrix $A-\lambda I_n$ nur zum Nullvektor werden, wenn diese Transformation die Dimension reduziert, z.B. für den $\mathbb{R}^2$, indem alles auf eine Gerade gequetscht wird.\lb
+			Gehen wir also weiter in dem Beispiel:
+			\begin{flalign*}
+				\begin{vmatrix}
+					0,5-\lambda&-1\\-1&0,5-\lambda
+				\end{vmatrix}=&(0,5-\lambda)(0,5-\lambda)-(-1)\cdot(-1)\cdot\\
+				=&(0,5-\lambda)^2-1&&
+			\end{flalign*}
+			Wir sehen also, dass wir auch rechnerisch auf den Eigenwert $\lambda=-0,5$ kommen. Die Lösungen, die wir anhand der Eigenwerte berechnen, fassen in sogenannten \textbf{Eigenräumen}\index{Eigenräumen} zusammen.
+			\begin{flalign*}
+				\text{Eig}(A,\lambda):=\{v\in K^n\mid Av=\lambda v\}=\text{ker}(A-\lambda I_n)&&
+			\end{flalign*}
+			Wenn wir jetzt eine Lösung für $(A-0,5 I_n)v=\vec{0}$ berechnen wir damit den Kern von $A-0,5 I_n$, also all die Elemente, die auf den Nullvektor abbilden.
+			\begin{flalign*}
+				\left(\begin{array}{@{}cc|c@{}}
+				0,5-(-0,5)&-1&0\\-1&0,5-(-0,5)&0
+				\end{array}\right)=\left(\begin{array}{@{}cc|c@{}}
+				1&-1&0\\-1&1&0
+				\end{array}\right)&&
+			\end{flalign*}
+			Auch ohne das Gleichungssystem zu lösen sehen wir direkt, dass eine Lösung existiert, wenn die erste Komponente gleich minus der zweiten ist. Damit ist unser Eigenraum bestimmt:
+			\begin{flalign*}
+				\text{Eig}(A|0,5)=\left\{\begin{pmatrix}
+				x\\y
+				\end{pmatrix}\in\mathbb{R}^2\middle| x=-y\right\}=\text{ span}\left(\left\{\begin{pmatrix}
+				1\\-1
+				\end{pmatrix}\right\}\right)&&
+			\end{flalign*}
+			Die Eigenvektoren zu verschiedenen Eigenwerten sind immer linear unabhängig. Das folgt daraus, dass die Eigenräume von verschiedenen Eingenwert nur den Nullvektor im Schnitt haben:
+			\begin{flalign*}
+				\lambda_1\neq\lambda_2\Rightarrow\text{ Eig}(A,\lambda_1)\cap\text{Eig}(A,\lambda_2)=\{\vec{0}\}&&
+			\end{flalign*}
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}

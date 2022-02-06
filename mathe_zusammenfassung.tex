@@ -3076,8 +3076,9 @@
 			1
 			\end{array}\right),\lambda\in\mathbb{R}
 			\right\}&&
-\			\end{flalign*}
-			Wir können auch anhand des Matrixranges\index{Rang} von $A$ feststellen, wie es um die Lösbarkeit eines LGS $Ax=b$ steht.
+			\end{flalign*}
+			\hrule\vspace{1.5em}
+			\noindent Wir können auch anhand des Matrixranges\index{Rang} von $A$ feststellen, wie es um die Lösbarkeit eines LGS $Ax=b$ steht.
 			\begin{itemize}
 				\item Wenn rank$A=m$ ist, dann ist $Ax=b$ lösbar.
 				\item Wenn rank$A=n$ ist, dann hat $Ax=b$ höchstens eine Lösung.
@@ -3120,6 +3121,51 @@
 			\text{(II)}^{\prime} \\
 			\text{(III)}^{\prime}=\text{(III)}-\frac{2}{7}\cdot\text{(II)}^{\prime}
 			\end{array}&&
+			\end{flalign*}
+			\hrule\vspace{1.5em}
+			\noindent Anhand der Determinante und des Matrixranges können wir auch feststellen, wie viele Lösungen ein LGS hat, welches parameterabhängig ist. Zunächst können wir anhand der Determinante feststellen, für welche Parameter das LGS eindeutig lösbar ist. Es gilt nämlich für $Ax=b$ mit einer $n\times n$-Matrix:
+			\begin{flalign*}
+				\det(A)\neq 0\Leftrightarrow A\text{ ist regulär}\Leftrightarrow\text{rank}(A)=n\Leftrightarrow A\text{ ist eindeutig lösbar}&&
+			\end{flalign*}
+			Für quadratische Matrizen sind nämlich folgende Aussagen äquivalent:
+			\begin{itemize}
+				\item $A$ ist invertierbar
+				\item rank$A=n$
+				\item ker$A=\{\vec{0}\}$
+			\end{itemize}
+			Betrachten wir das LGS $Ax=b$ mit 
+			\begin{flalign*}
+				A=\begin{pmatrix}
+				a-2&4\\9&3a
+				\end{pmatrix}\hspace{5em}b=\begin{pmatrix}
+				9\\a
+				\end{pmatrix}&&
+			\end{flalign*}
+			Der erste Schritt ist vollkommen unabhängig von $b$. Wir gucken für welche Werte die Determinante Null wird:
+			\begin{flalign*}
+				\det(A)=0=&(a-2)\cdot 3a-36\\
+				\Leftrightarrow 0=&3a^2-6a-36\\
+				\Leftrightarrow 0=&a^2-2a-12\\
+				\stackrel{\text{p-q}}{\Rightarrow}x_\pm=&1\pm\sqrt{13}&&
+			\end{flalign*}
+			Damit ist dass LGS eindeutig lösbar für alle $a$ außer $a=1+\sqrt{13}$ oder $a=1-\sqrt{13}$. Da $A$ quadratisch ist, ist das System für diese beiden Werte nicht lösbar, denn rank$A\neq n$ impliziert allgemein rank$A\neq n$ und $A\neq m$ für eine quadratische $m\times n$ Matrix mit $m=n$. Wir können aber auch zeigen, dass das nicht funktionieren kann mithilfe von Gauß:
+			\begin{flalign*}
+				&\left(\begin{array}{@{}cc|c@{}}
+				a-2&4&9\\
+				9&3a&a
+				\end{array}\right)\\
+				&Z_2\to Z_2-\frac{9}{a-2}Z_1\\
+				&\left(\begin{array}{@{}cc|c@{}}
+				a-2&4&9\\
+				90&3a-\frac{36}{a-2}&a-\frac{81}{a-2}
+				\end{array}\right)&&
+			\end{flalign*}
+			Setzen wir jetzt $x_+$ oder $x_-$ ein, erhalten wir für beide ein nicht lösbares LGS:
+			\begin{flalign*}
+			\left(\begin{array}{@{}cc|c@{}}
+			-1\pm\sqrt{13}&4&9\\
+			0&0&-\frac{23+23\sqrt{13}}{4}
+			\end{array}\right)&&
 			\end{flalign*}
 \pagebreak
 	\section{Geometrie}

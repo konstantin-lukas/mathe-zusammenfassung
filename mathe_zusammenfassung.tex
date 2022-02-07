@@ -1603,6 +1603,7 @@
 			\end{pmatrix}v =\vec{0}&&
 			\end{flalign*}
 			Nun ist ein $\lambda$ genau dann Eigenwert von $A$, wenn die \highlight{subsubsec:determinanten}{Determinante} von $A-\lambda I_n$ gleich Null ist. Das liegt daran, dass wir ja gerade ein Lösung für die Gleichung $(A-\lambda I_n)v=\vec{0}$ finden wollen und nicht den Nullvektor betrachten. Das heißt ein Vektor kann durch die Transformation mit der Matrix $A-\lambda I_n$ nur zum Nullvektor werden, wenn diese Transformation die Dimension reduziert, z.B. für den $\mathbb{R}^2$, indem alles auf eine Gerade gequetscht wird.\lb
+			Die Determinante von $A-\lambda I_n$ bezeichnen wir als charakteristisches Polynom\index{Charakteristisches Polynom}. Für eine Matrix $A\in K^{n\times n}$ handelt es sich dabei um ein Polynom $n$-ten Grades. Wir bezeichnen das charakteristische Polynom von $A$ mit $\chi_A(\lambda)=\det(A-\lambda I_n)$. Die Nullstellen dieses Polynoms sind die Eigenwerte der Matrix $A$.\lb
 			Gehen wir also weiter in dem Beispiel:
 			\begin{flalign*}
 				\begin{vmatrix}
@@ -1650,7 +1651,13 @@
 					U^{-1}AU=\text{diag}(\lambda_1,\dots,\lambda_n)&&
 				\end{flalign*}
 			\end{tcolorbox}
-			Eine Basis ist außerdem immer diagonalisierbar, wenn es für $K^n$ eine Basis nur aus den Eigenvektoren von $A$ gibt.
+			\noindent Eine Basis ist außerdem immer diagonalisierbar, wenn es für $K^n$ eine Basis nur aus den Eigenvektoren von $A$ gibt.\lb
+			Zwischen $A\in K^{n\times n}$ und $B=U^{-1}AU$ ändert sich das charakteristische Polynom nicht. Es gilt:
+			\begin{flalign*}
+				\forall\lambda\in K:\chi_A(\lambda)=\chi_B(\lambda)&&
+			\end{flalign*} 
+			\hrule\vspace{1.5em}
+			\noindent Die Dimension eines Eigenraumes nennen wir die geometrische Vielfachheit\index{Geometrische Vielfachheit}. Speziell nennen wir die Vielfachheit einer Nullstelle $\lambda$ des charakteristischen Polynoms\index{Charakteristisches Polynom} $\chi_A$ algebraische Vielfachheit des Eigenwertes $\lambda$. Die geometrische Vielfachheit eines Eigenwertes ist höchstens so groß, wie seine algebraische Vielfachheit\index{Algebraische Vielfachheit}.
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}

@@ -109,9 +109,13 @@
 \indexentry{Skalar|hyperpage}{23}
 \indexentry{Eigenvektor|hyperpage}{23}
 \indexentry{Eigenwert|hyperpage}{23}
+\indexentry{Charakteristisches Polynom|hyperpage}{25}
 \indexentry{Spektrum|hyperpage}{25}
 \indexentry{Eigenräumen|hyperpage}{25}
 \indexentry{Diagonalisierbarkeit|hyperpage}{25}
+\indexentry{Geometrische Vielfachheit|hyperpage}{26}
+\indexentry{Charakteristisches Polynom|hyperpage}{26}
+\indexentry{Algebraische Vielfachheit|hyperpage}{26}
 \indexentry{Mengensystem|hyperpage}{26}
 \indexentry{Potenzmenge|hyperpage}{26}
 \indexentry{Grundmenge|hyperpage}{26}
@@ -122,7 +126,7 @@
 \indexentry{Neutrales Element|hyperpage}{27}
 \indexentry{Inverses Element|hyperpage}{27}
 \indexentry{Invertierbar|hyperpage}{27}
-\indexentry{Abgeschlossenheit|hyperpage}{27}
+\indexentry{Abgeschlossenheit|hyperpage}{28}
 \indexentry{Gruppe|hyperpage}{28}
 \indexentry{Abelsche Gruppe|hyperpage}{28}
 \indexentry{Halbgruppe|hyperpage}{28}
@@ -137,54 +141,54 @@
 \indexentry{Körper|hyperpage}{30}
 \indexentry{Innere Verknüpfung|hyperpage}{30}
 \indexentry{Äußere Verknüpfung|hyperpage}{30}
-\indexentry{Unterraum|hyperpage}{30}
-\indexentry{Abgeschlossenheit|hyperpage}{30}
-\indexentry{Vektorraum|hyperpage}{30}
-\indexentry{System|hyperpage}{30}
-\indexentry{Direkte Summe|hyperpage}{30}
-\indexentry{Komplement|hyperpage}{30}
+\indexentry{Unterraum|hyperpage}{31}
+\indexentry{Abgeschlossenheit|hyperpage}{31}
+\indexentry{Vektorraum|hyperpage}{31}
+\indexentry{System|hyperpage}{31}
+\indexentry{Direkte Summe|hyperpage}{31}
+\indexentry{Komplement|hyperpage}{31}
 \indexentry{Skalar|hyperpage}{31}
 \indexentry{Linearkombination|hyperpage}{31}
 \indexentry{Lineare Hülle|hyperpage}{31}
 \indexentry{Spann|hyperpage}{31}
-\indexentry{Lineare Hülle|hyperpage}{31}
-\indexentry{Erzeugendensystem|hyperpage}{31}
-\indexentry{Basis|hyperpage}{31}
-\indexentry{Standardbasis|hyperpage}{31}
-\indexentry{Kanonische Basis|hyperpage}{31}
-\indexentry{Dimension|hyperpage}{31}
-\indexentry{Endlich erzeugt|hyperpage}{31}
-\indexentry{Unendlich erzeugt|hyperpage}{31}
-\indexentry{Lineare Abhängigkeit|hyperpage}{31}
+\indexentry{Lineare Hülle|hyperpage}{32}
+\indexentry{Erzeugendensystem|hyperpage}{32}
+\indexentry{Basis|hyperpage}{32}
+\indexentry{Standardbasis|hyperpage}{32}
+\indexentry{Kanonische Basis|hyperpage}{32}
+\indexentry{Dimension|hyperpage}{32}
+\indexentry{Endlich erzeugt|hyperpage}{32}
+\indexentry{Unendlich erzeugt|hyperpage}{32}
+\indexentry{Lineare Abhängigkeit|hyperpage}{32}
 \indexentry{Lineare Abhängigkeit|hyperpage}{32}
 \indexentry{Euklidischer Vektorraum|hyperpage}{32}
 \indexentry{Unitärer Vektorraum|hyperpage}{32}
 \indexentry{Skalarprodukt|hyperpage}{32}
-\indexentry{Linearität|hyperpage}{32}
-\indexentry{Symmetrie|hyperpage}{32}
-\indexentry{Positive Definitheit|hyperpage}{32}
-\indexentry{Kanonisches Skalarprodukt|hyperpage}{32}
-\indexentry{Orthogonal|hyperpage}{32}
+\indexentry{Linearität|hyperpage}{33}
+\indexentry{Symmetrie|hyperpage}{33}
+\indexentry{Positive Definitheit|hyperpage}{33}
+\indexentry{Kanonisches Skalarprodukt|hyperpage}{33}
+\indexentry{Orthogonal|hyperpage}{33}
 \indexentry{Norm|hyperpage}{33}
 \indexentry{Definitheit|hyperpage}{33}
 \indexentry{Absolute Homogenität|hyperpage}{33}
 \indexentry{Subadditivität|hyperpage}{33}
-\indexentry{Euklidische Norm|hyperpage}{33}
+\indexentry{Euklidische Norm|hyperpage}{34}
 \indexentry{Cauchy-Schwarz'sche Ungleichung|hyperpage}{34}
-\indexentry{Orthogonal|hyperpage}{34}
+\indexentry{Orthogonal|hyperpage}{35}
 \indexentry{Orthogonales Komplement|hyperpage}{35}
 \indexentry{Orthonormalbasis|hyperpage}{35}
 \indexentry{Gram-Schmidtsches Orthogonalisierungsverf.|hyperpage}{36}
 \indexentry{Orthogonalprojektion|hyperpage}{37}
-\indexentry{Komplexe Zahlen|hyperpage}{37}
-\indexentry{Realteil|hyperpage}{37}
-\indexentry{Imaginärteil|hyperpage}{37}
-\indexentry{Imaginäre Einheit|hyperpage}{37}
-\indexentry{Imaginäre Zahl|hyperpage}{37}
-\indexentry{Gaußsche Zahlenebene|hyperpage}{37}
+\indexentry{Komplexe Zahlen|hyperpage}{38}
+\indexentry{Realteil|hyperpage}{38}
+\indexentry{Imaginärteil|hyperpage}{38}
+\indexentry{Imaginäre Einheit|hyperpage}{38}
+\indexentry{Imaginäre Zahl|hyperpage}{38}
+\indexentry{Gaußsche Zahlenebene|hyperpage}{38}
 \indexentry{Kartesische Form|hyperpage}{38}
 \indexentry{Komplexe Konjugation|hyperpage}{38}
-\indexentry{Äquivalenzumformung|hyperpage}{38}
+\indexentry{Äquivalenzumformung|hyperpage}{39}
 \indexentry{Kartesische Form|hyperpage}{39}
 \indexentry{Polarform|hyperpage}{39}
 \indexentry{Argument|hyperpage}{39}

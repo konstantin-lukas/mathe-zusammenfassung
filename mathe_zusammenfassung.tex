@@ -1657,7 +1657,12 @@
 				\forall\lambda\in K:\chi_A(\lambda)=\chi_B(\lambda)&&
 			\end{flalign*} 
 			\hrule\vspace{1.5em}
-			\noindent Die Dimension eines Eigenraumes nennen wir die geometrische Vielfachheit\index{Geometrische Vielfachheit}. Speziell nennen wir die Vielfachheit einer Nullstelle $\lambda$ des charakteristischen Polynoms\index{Charakteristisches Polynom} $\chi_A$ algebraische Vielfachheit des Eigenwertes $\lambda$. Die geometrische Vielfachheit eines Eigenwertes ist höchstens so groß, wie seine algebraische Vielfachheit\index{Algebraische Vielfachheit}.
+			\noindent Die Dimension eines Eigenraumes nennen wir die \textbf{geometrische Vielfachheit}\index{Geometrische Vielfachheit}.\lb
+			Jedes komplexe Polynom vom Grad $n$ lässt sich mithilfe seiner $r\le n$ Nullstellen $x_1,\dots,x_r\in\mathbb{C}$ folgendermaßen darstellen:
+			\begin{flalign*}
+				P(x)=\prod^r_{i=1}(x-x_i)^{m_i}&&
+			\end{flalign*}
+			Die Zahl $m_i$ nennen wir dabei die Vielfachheit\index{Vielfachheit} der Nullstelle $x_i$. Die Vielfachheiten der Nullstellen des charakteristischen Polynoms\index{Charakteristisches Polynom} (also der Eigenwerte) nennen wir \textbf{algebraische Vielfachheiten}\index{Algebraische Vielfachheit}.
 	\subsection{Kartesisches Produkt}
 		Hat man ein Zahlenpaar, wie eine 2D-Koordinate $(x;y)$, so spricht man von einem geordneten Paar, denn die Reihenfolge der Zahlen ist relevant. Wenn man zwei Mengen $A$ und $B$ hat, dann nennt man die Menge aller möglichen Paare $(x,y)$ mit $x$ aus $A$ und $y$ aus $B$ das kartesische Produkt der Mengen $A$ und $B$. Die entsprechende Notation dafür ist $A\times B$. Wenn $A$ und $B$ gleich sind, schreibt man stattdessen auch $A^2$. Obwohl hier von einem Produkt die Rede ist, ist es nicht egal, wie herum man die Faktoren schreibt. $A\times B$ ist nicht das Gleiche, wie $B\times A$.
 		\begin{center}

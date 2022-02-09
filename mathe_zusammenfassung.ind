@@ -26,7 +26,7 @@
   \item Argument, \hyperpage{39}, \hyperpage{42}, \hyperpage{79}, 
 		\hyperpage{97}
   \item Arkustangens, \hyperpage{82}
-  \item Assoziativ, \hyperpage{27}
+  \item Assoziativ, \hyperpage{28}
   \item Ausklammern, \hyperpage{90}, \hyperpage{92}
   \item Aussage, \hyperpage{84}, \hyperpage{121}
   \item Ausschließen, \hyperpage{89}
@@ -172,14 +172,14 @@
 		\hyperpage{106}
   \item Grenzwert, \hyperpage{102}, \hyperpage{104, 105}, 
 		\hyperpage{107}
-  \item Große Vereinigung, \hyperpage{26}
-  \item Großer Durchschnitt, \hyperpage{26}
+  \item Große Vereinigung, \hyperpage{27}
+  \item Großer Durchschnitt, \hyperpage{27}
   \item Grundfläche, \hyperpage{65, 66}
   \item Grundflächenumfang, \hyperpage{65}
-  \item Grundmenge, \hyperpage{26}, \hyperpage{124}, 
+  \item Grundmenge, \hyperpage{27}, \hyperpage{124}, 
 		\hyperpage{126--129}
   \item Grundseite, \hyperpage{64}
-  \item Gruppe, \hyperpage{28}
+  \item Gruppe, \hyperpage{28, 29}
   \item Größter gemeinsamer Teiler, \hyperpage{44}
 
   \indexspace
@@ -217,8 +217,8 @@
   \item Integrieren, \hyperpage{114}
   \item Intervall, \hyperpage{51}, \hyperpage{80}, \hyperpage{118}
   \item Inverse, \hyperpage{17}
-  \item Inverses Element, \hyperpage{27}
-  \item Invertierbar, \hyperpage{17}, \hyperpage{27}
+  \item Inverses Element, \hyperpage{28}
+  \item Invertierbar, \hyperpage{17}, \hyperpage{28}
   \item Irrationale Zahl, \hyperpage{6}
   \item Isomorphismus, \hyperpage{12}
 
@@ -235,7 +235,7 @@
   \item Koeffizientenmatrix, \hyperpage{60}
   \item Kombination, \hyperpage{124}
   \item Kombinatorik, \hyperpage{124}
-  \item Kommutativ, \hyperpage{27}, \hyperpage{29}
+  \item Kommutativ, \hyperpage{28, 29}
   \item Komplement, \hyperpage{5}, \hyperpage{31}
   \item Komplexe Konjugation, \hyperpage{38}
   \item Komplexe Zahlen, \hyperpage{38}
@@ -314,7 +314,7 @@
   \item Negativ Definit, \hyperpage{19}
   \item Negativ Semidefinit, \hyperpage{19}
   \item Nenner, \hyperpage{53}, \hyperpage{93, 94}
-  \item Neutrales Element, \hyperpage{27}
+  \item Neutrales Element, \hyperpage{28}
   \item Newtonverfahren, \hyperpage{81}
   \item Nilpotent, \hyperpage{19}
   \item Norm, \hyperpage{33}
@@ -520,6 +520,7 @@
   \item Vergleichbar, \hyperpage{11}
   \item Vergleichszeichen, \hyperpage{51}
   \item Verkettung, \hyperpage{97}
+  \item Vielfachheit, \hyperpage{26}
   \item Vollständige Induktion, \hyperpage{123}
   \item Volumen, \hyperpage{65, 66}
   \item Vorzeichen, \hyperpage{53}, \hyperpage{81}

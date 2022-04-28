@@ -25,7 +25,7 @@
 \usepackage{tabularx}
 \renewcommand\tabularxcolumn[1]{m{#1}}
 \usepackage{tikz}
-\usetikzlibrary{calc,shapes,arrows,trees,positioning,fit,automata}
+\usetikzlibrary{calc,shapes,arrows,trees,positioning,fit,automata,shadows,backgrounds,shapes.geometric}
 \usepackage{array}
 \usepackage[most]{tcolorbox}
 \usepackage[hidelinks]{hyperref}
@@ -318,7 +318,7 @@
 	\end{tcolorbox}
 	 \noindent Die Potenzmenge\index{Potenzmenge} einer Menge $M=\{1;2\}$ beinhaltet alle möglichen Teilmengen von $M$: $\mathfrak{P}(M)=\{\emptyset;\{1\};\{2\};\{1;2\}\}$.\newline\newline
 	 Das Komplement\index{Komplement} einer Menge $M$ in einem Universum\index{Universum} $U$ enthält alle Elemente, die nicht in $M$ sind, aber im Universum $U$ existieren. Sind das Universum z.B. die natürlichen Zahlen, so gilt: $M^C=\bar M=\mathbb{N}\setminus M$.\newline\newline
-	 Eine Menge heißt abzählbar\index{Abzählbar}, wenn sie entweder endlich ist oder man eine bijektive Abbildung zu den natürlichen Zahlen erzeugen kann. Die Menge $\{1,2,3,4\}$ wäre z.B. abzählbar\index{Abzählbar}, weil sie endlich ist, aber auch folgende Menge ist abzählbar: $\{x\in\mathbb{N}\mid\exists y\in\mathbb{N}: x=2y\}$. Das ist die Menge der geraden Zahlen. Intuitiv würde man sagen, diese Menge müsste halb so mächtig sein, wie die natürlichen Zahlen. Das ist jedoch nicht der Fall, da ich von jeder natürlichen Zahl durch Verdopplung auf die nächste gerade Zahl abbilden kann. So eine Menge heißt speziell abzählbar unendlich\index{Abzählbar unendlich}. Ist eine Menge hingegen nicht abzählbar, wie z.B. die reellen Zahlen, dann heißt sie überabzählbar unendlich\index{Überabzählbar unendlich}. Die Mächtigkeit der natürlichen Zahlen wir übrigens mit Aleph Null angegeben: $\vert\mathbb{N}\vert=\aleph_0$.
+	 Eine Menge $M$ heißt abzählbar\index{Abzählbar}, wenn sie entweder endlich ist oder man eine surjektive Abbildung $f:\mathbb{N}\to M$ von den natürlichen Zahlen erzeugen kann. Alternativ kann man auch eine bijektive Abbildung zu den natürlichen Zahlen suchen. Die Menge $\{1,2,3,4\}$ wäre z.B. abzählbar\index{Abzählbar}, weil sie endlich ist, aber auch folgende Menge ist abzählbar: $\{x\in\mathbb{N}\mid\exists y\in\mathbb{N}: x=2y\}$. Das ist die Menge der geraden Zahlen. Intuitiv würde man sagen, diese Menge müsste halb so mächtig sein, wie die natürlichen Zahlen. Das ist jedoch nicht der Fall, da ich von jeder natürlichen Zahl durch Verdopplung auf die nächste gerade Zahl abbilden kann. So eine Menge heißt speziell abzählbar unendlich\index{Abzählbar unendlich}. Ist eine Menge hingegen nicht abzählbar, wie z.B. die reellen Zahlen, dann heißt sie überabzählbar unendlich\index{Überabzählbar unendlich}. Die Mächtigkeit der natürlichen Zahlen wir übrigens mit Aleph Null angegeben: $\vert\mathbb{N}\vert=\aleph_0$.
 	\subsection{Zahlenbereiche}
 	\index{Mengen}
 		\begin{center}
@@ -2478,11 +2478,12 @@
 		\begin{flalign*}
 		\vert -a \vert = \vert a \vert&&
 		\end{flalign*}
-	\subsection{Binomische Formeln}
-	\label{sec:binomischeformeln}\index{Binomische Formel}
-	$(a+b)^2 = a^2 + 2ab + b^2$ \newline\newline
-	$(a-b)^2 = a^2 - 2ab + b^2$ \newline\newline
-	$(a+b)(a-b) = a^2 - b^2$
+	\subsection{Binomischer Lehrsatz}
+	In der einfachsten Anwendung gibt uns der binomische Lehrsatz die allgemein bekannten binomischen Formeln.\lb$(a+b)^2 = a^2 + 2ab + b^2$ \newline\newline$(a-b)^2 = a^2 - 2ab + b^2$ \newline\newline$(a+b)(a-b) = a^2 - b^2$\lbb Es ist allerdings auch möglich solche Binome mit höheren Potenzen einfach auszumultiplizieren. Dafür nutzen wir folgende Formel:
+	\label{sec:binomischeformeln}\index{Binomische Formel}\index{Binomischer Lehrsatz}
+	\begin{flalign*}
+		(x+y)^n=\sum^n_{k=0}\genfrac{(}{)}{0pt}{}{n}{k}\cdot x^{n-k}\cdot y^k&&
+	\end{flalign*}
 	\subsection{Euklidischer Algorithmus}
 		Der euklidische Algorithmus\index{Euklidischer Algorithmus} findet den größten gemeinsamen Teiler\index{Größter gemeinsamer Teiler} zweier Zahlen. Das eignet sich ausgezeichnet dazu, Brüche zu kürzen\index{Kürzen}. Der vorletzte Rest, also bevor $R = 0$ eintritt, ist das Ergebnis.
 		\begin{flalign*}
@@ -5393,7 +5394,59 @@
 			\end{tabularx}
 			\egroup
 		\end{center}
-		Die Kombinatorik hilft uns herauszufinden, wie viele Möglichkeiten es für Anordnungen gibt. Dabei unterscheidet man verschiedene Arten von Modellen. Im Großen und Ganzen gibt es drei Arten. Die Erste ist die Permutation\index{Permutation}. Dabei untersucht man die komplette Grundmenge. Wenn man nur eine Teilmenge untersucht, gibt es noch mal eine Unterscheidung. Wenn die Reihenfolge in der Teilmenge wichtig ist, spricht man von Variation\index{Variation}, ansonsten von Kombination\index{Kombination}. Für diese drei Fälle gibt es jeweils zwei Möglichkeiten zur Berechnung der Anzahl der Möglichkeiten, je nachdem ob Elemente mehrfach auftreten oder nicht.
+		Um die Binomialkoeffizienten einfach im Kopf zu errechnen, gibt es das Pascalsche Dreieck\index{Pascalsches Dreieck}. Man kann den Binomialkoeffizienten $n$ über $k$ einfach ablesen, indem man in der $n$-ten Zeile, die $k$-te Zelle liest. Dabei fängt man bei $0$ an zu zählen. So ist z.B. $6$ über $4$, $15$.
+		\begin{center}
+			\begin{tikzpicture}[y=7.5mm,x=8.66mm]
+			% some colors
+			\colorlet{even}{gray}
+			\colorlet{odd}{orange!100!black}
+			\colorlet{links}{red!70!black}
+			\colorlet{back}{yellow!20!white}
+			% some styles
+			\tikzset{
+				box/.style={
+					regular polygon,
+					regular polygon sides=6,
+					minimum size=10mm,
+					inner sep=0mm,
+					outer sep=0mm,
+					text centered,
+					font=\small\bfseries\sffamily,
+					text=#1!50!black,
+					draw=#1,
+					line width=.25mm,
+					rotate=30,
+				},
+				link/.style={black,  shorten >=2mm, shorten <=2mm, line width=1mm},
+			}
+			% Pascal's triangle
+			% row #0 => value is 1
+			\node[box=even] (p-0-0) at (0,0) {\rotatebox{-30}{1}};
+			\foreach \row in {1,...,7} {
+				% col #0 =&gt; value is 1
+				\node[box=even] (p-\row-0) at (-\row/2,-\row) {\rotatebox{-30}{1}};
+				\pgfmathsetmacro{\myvalue}{1};
+				\foreach \col in {1,...,\row} {
+					% iterative formula : val = precval * (row-col+1)/col
+					% (+ 0.5 to bypass rounding errors)
+					\pgfmathtruncatemacro{\myvalue}{\myvalue*((\row-\col+1)/\col)+0.5};
+					\global\let\myvalue=\myvalue
+					% position of each value
+					\coordinate (pos) at (-\row/2+\col,-\row);
+					% odd color for odd value and even color for even value
+					\pgfmathtruncatemacro{\rest}{mod(\myvalue,2)}
+					\node[box=even] (p-\row-\col) at (pos) {\rotatebox{-30}{\myvalue}};
+				}
+			}
+			
+			\end{tikzpicture}
+		\end{center}
+		Man kann dieses Dreieck auch sehr einfach selbst zeichnen. Dafür zeichnet man zunächst den Rand, indem man alle Zellen an der Seite mit $1$ füllt. Alle anderen Zellen ergeben sich dann aus den beiden Zellen, die direkt über ihr liegen. Daraus ergibt sich die Gleichung
+		\begin{flalign*}
+			\genfrac{(}{)}{0pt}{}{n}{k}+\genfrac{(}{)}{0pt}{}{n}{k+1}=\genfrac{(}{)}{0pt}{}{n+1}{k+1}&&
+		\end{flalign*}
+		\hrule\vspace{1em}
+		\noindent Die Kombinatorik hilft uns herauszufinden, wie viele Möglichkeiten es für Anordnungen gibt. Dabei unterscheidet man verschiedene Arten von Modellen. Im Großen und Ganzen gibt es drei Arten. Die Erste ist die Permutation\index{Permutation}. Dabei untersucht man die komplette Grundmenge. Wenn man nur eine Teilmenge untersucht, gibt es noch mal eine Unterscheidung. Wenn die Reihenfolge in der Teilmenge wichtig ist, spricht man von Variation\index{Variation}, ansonsten von Kombination\index{Kombination}. Für diese drei Fälle gibt es jeweils zwei Möglichkeiten zur Berechnung der Anzahl der Möglichkeiten, je nachdem ob Elemente mehrfach auftreten oder nicht.
 		\begin{center}
 			\bgroup
 			\tikzstyle{decision} = [rectangle, draw=red, fill=red!20,

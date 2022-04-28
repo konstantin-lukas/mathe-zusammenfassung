@@ -48,9 +48,9 @@
   \item Bijektiv, \hyperpage{8, 9}, \hyperpage{81}
   \item Bild, \hyperpage{12}
   \item Binomialkoeffizient, \hyperpage{126}, \hyperpage{129}
-  \item Binomialverteilung, \hyperpage{130}
-  \item Binomische Formel, \hyperpage{45}, \hyperpage{47}, 
-		\hyperpage{92}
+  \item Binomialverteilung, \hyperpage{131}
+  \item Binomische Formel, \hyperpage{46, 47}, \hyperpage{92}
+  \item Binomischer Lehrsatz, \hyperpage{46}
   \item Binäre Relation, \hyperpage{10}
   \item Bogenlänge, \hyperpage{65}
   \item Bogenmaß, \hyperpage{97}
@@ -87,7 +87,7 @@
   \item Direkte Summe, \hyperpage{31}
   \item Direkter Beweis, \hyperpage{124}
   \item Disjunktion, \hyperpage{123}
-  \item Diskret, \hyperpage{135}
+  \item Diskret, \hyperpage{136}
   \item Diskriminante, \hyperpage{45}
   \item Dividend, \hyperpage{44}
   \item Division, \hyperpage{49}
@@ -113,12 +113,12 @@
   \item Ereignis, \hyperpage{126}
   \item Ergebnis, \hyperpage{85, 86}, \hyperpage{93, 94}, 
 		\hyperpage{107, 108}, \hyperpage{126}
-  \item Erwartungswert, \hyperpage{135, 136}
+  \item Erwartungswert, \hyperpage{136}
   \item Erweiterbar, \hyperpage{106}
   \item Erweiterte Koeffizientenmatrix, \hyperpage{61}
   \item Erzeugendensystem, \hyperpage{32}
   \item Euklidische Norm, \hyperpage{34}
-  \item Euklidischer Algorithmus, \hyperpage{45}
+  \item Euklidischer Algorithmus, \hyperpage{46}
   \item Euklidischer Vektorraum, \hyperpage{33}
   \item Exponent, \hyperpage{90}, \hyperpage{93}, \hyperpage{96}, 
 		\hyperpage{100}
@@ -177,10 +177,10 @@
   \item Grundfläche, \hyperpage{66, 67}
   \item Grundflächenumfang, \hyperpage{66}
   \item Grundmenge, \hyperpage{27}, \hyperpage{126}, 
-		\hyperpage{128--131}
+		\hyperpage{128--130}, \hyperpage{132}
   \item Grundseite, \hyperpage{65}
   \item Gruppe, \hyperpage{29}
-  \item Größter gemeinsamer Teiler, \hyperpage{45}
+  \item Größter gemeinsamer Teiler, \hyperpage{46}
 
   \indexspace
 
@@ -192,7 +192,7 @@
   \item Homogen, \hyperpage{57}
   \item Homogenität, \hyperpage{12}
   \item Homomorphismus, \hyperpage{12}
-  \item Hypergeometrische Verteilung, \hyperpage{130, 131}
+  \item Hypergeometrische Verteilung, \hyperpage{131}
   \item Hypotenuse, \hyperpage{64}, \hyperpage{68}
   \item Hypotenusenabschnitt, \hyperpage{64}
   \item Höhe, \hyperpage{65--67}
@@ -233,7 +233,7 @@
   \item Kern, \hyperpage{12}
   \item Koeffizient, \hyperpage{60}, \hyperpage{89}
   \item Koeffizientenmatrix, \hyperpage{61}
-  \item Kombination, \hyperpage{126}
+  \item Kombination, \hyperpage{127}
   \item Kombinatorik, \hyperpage{126}
   \item Kommutativ, \hyperpage{28}, \hyperpage{30}
   \item Komplement, \hyperpage{5}, \hyperpage{31}
@@ -258,7 +258,7 @@
   \item Krümmungsverhalten, \hyperpage{110}
   \item Kurvendiskussion, \hyperpage{107}
   \item Körper, \hyperpage{31}
-  \item Kürzen, \hyperpage{45}
+  \item Kürzen, \hyperpage{46}
 
   \indexspace
 
@@ -354,7 +354,8 @@
   \item Parameterform, \hyperpage{71, 72}
   \item Partielle Ordnung, \hyperpage{11}
   \item Partition, \hyperpage{11}
-  \item Permutation, \hyperpage{126}
+  \item Pascalsches Dreieck, \hyperpage{126}
+  \item Permutation, \hyperpage{127}
   \item Permutationsmatrix, \hyperpage{19}
   \item Pfeilklasse, \hyperpage{68}
   \item Polarform, \hyperpage{40}
@@ -412,7 +413,7 @@
   \item Regulär, \hyperpage{18}
   \item Relation, \hyperpage{10}
   \item Repräsentant, \hyperpage{6}, \hyperpage{11}, \hyperpage{49}
-  \item Repräsentantenunabhängig, \hyperpage{6}
+  \item Repräsentantenunabhängig, \hyperpage{7}
   \item Rest, \hyperpage{49}
   \item Restklasse, \hyperpage{49}
   \item Restriktion, \hyperpage{10}
@@ -424,9 +425,9 @@
   \indexspace
 
   \item Sarrussche Regel, \hyperpage{22}
-  \item Satz der totalen Wahrscheinlichkeit, \hyperpage{132}
+  \item Satz der totalen Wahrscheinlichkeit, \hyperpage{133}
   \item Satz des Pythagoras, \hyperpage{70}
-  \item Satz von Bayes, \hyperpage{133}
+  \item Satz von Bayes, \hyperpage{134}
   \item Satz von de Moivre, \hyperpage{41}
   \item Satz von Viëta, \hyperpage{51}
   \item Scheinlösung, \hyperpage{85}
@@ -450,10 +451,10 @@
   \item Spektrum, \hyperpage{25}
   \item Spurpunkt, \hyperpage{72}
   \item Stammfunktion, \hyperpage{116}
-  \item Standardabweichung, \hyperpage{137}
+  \item Standardabweichung, \hyperpage{137, 138}
   \item Standardbasis, \hyperpage{32}
   \item Steigung, \hyperpage{101}
-  \item Stetig, \hyperpage{104}, \hyperpage{135}
+  \item Stetig, \hyperpage{104}, \hyperpage{136}
   \item Stetige Erweiterung, \hyperpage{105}
   \item Streng, \hyperpage{80}
   \item Streuung, \hyperpage{137}
@@ -493,7 +494,7 @@
   \item Umkehrbar, \hyperpage{9}
   \item Umkehrfunktion, \hyperpage{121}
   \item Umstellen, \hyperpage{52}, \hyperpage{57}, \hyperpage{107}, 
-		\hyperpage{109}, \hyperpage{112}, \hyperpage{136}
+		\hyperpage{109}, \hyperpage{112}, \hyperpage{137}
   \item Unbeschränkt, \hyperpage{121}
   \item Unbestimmtes Integral, \hyperpage{115}
   \item Uneigentliches Integral, \hyperpage{121}
@@ -509,8 +510,8 @@
   \indexspace
 
   \item Variable, \hyperpage{97}
-  \item Varianz, \hyperpage{137}
-  \item Variation, \hyperpage{126}
+  \item Varianz, \hyperpage{137, 138}
+  \item Variation, \hyperpage{127}
   \item Vektor, \hyperpage{79}
   \item Vektoraddition, \hyperpage{77}
   \item Vektorprodukt, \hyperpage{70}

@@ -23,7 +23,7 @@
 \indexentry{Zielbereich|hyperpage}{6}
 \indexentry{Wohldefiniert|hyperpage}{6}
 \indexentry{Repräsentant|hyperpage}{6}
-\indexentry{Repräsentantenunabhängig|hyperpage}{6}
+\indexentry{Repräsentantenunabhängig|hyperpage}{7}
 \indexentry{Identität|hyperpage}{7}
 \indexentry{Injektiv|hyperpage}{8}
 \indexentry{Surjektiv|hyperpage}{8}
@@ -210,10 +210,11 @@
 \indexentry{Halboffenes Intervall|hyperpage}{45}
 \indexentry{Rechtsoffen|hyperpage}{45}
 \indexentry{Linksoffen|hyperpage}{45}
-\indexentry{Binomische Formel|hyperpage}{45}
-\indexentry{Euklidischer Algorithmus|hyperpage}{45}
-\indexentry{Größter gemeinsamer Teiler|hyperpage}{45}
-\indexentry{Kürzen|hyperpage}{45}
+\indexentry{Binomische Formel|hyperpage}{46}
+\indexentry{Binomischer Lehrsatz|hyperpage}{46}
+\indexentry{Euklidischer Algorithmus|hyperpage}{46}
+\indexentry{Größter gemeinsamer Teiler|hyperpage}{46}
+\indexentry{Kürzen|hyperpage}{46}
 \indexentry{Potenzgesetz|hyperpage}{46}
 \indexentry{Rationale Zahl|hyperpage}{46}
 \indexentry{Wurzelgesetz|hyperpage}{47}
@@ -750,40 +751,41 @@
 \indexentry{Kombinatorik|hyperpage}{126}
 \indexentry{Fakultät|hyperpage}{126}
 \indexentry{Binomialkoeffizient|hyperpage}{126}
-\indexentry{Permutation|hyperpage}{126}
-\indexentry{Variation|hyperpage}{126}
-\indexentry{Kombination|hyperpage}{126}
+\indexentry{Pascalsches Dreieck|hyperpage}{126}
+\indexentry{Permutation|hyperpage}{127}
+\indexentry{Variation|hyperpage}{127}
+\indexentry{Kombination|hyperpage}{127}
 \indexentry{Fakultät|hyperpage}{127}
 \indexentry{Mächtigkeit|hyperpage}{127}
 \indexentry{Grundmenge|hyperpage}{128}
 \indexentry{Grundmenge|hyperpage}{128}
-\indexentry{Grundmenge|hyperpage}{128}
+\indexentry{Grundmenge|hyperpage}{129}
 \indexentry{Grundmenge|hyperpage}{129}
 \indexentry{Teilmenge|hyperpage}{129}
 \indexentry{Grundmenge|hyperpage}{129}
 \indexentry{Binomialkoeffizient|hyperpage}{129}
 \indexentry{Grundmenge|hyperpage}{130}
 \indexentry{Lotto|hyperpage}{130}
-\indexentry{Binomialverteilung|hyperpage}{130}
-\indexentry{Hypergeometrische Verteilung|hyperpage}{130}
+\indexentry{Binomialverteilung|hyperpage}{131}
 \indexentry{Hypergeometrische Verteilung|hyperpage}{131}
-\indexentry{Grundmenge|hyperpage}{131}
-\indexentry{Satz der totalen Wahrscheinlichkeit|hyperpage}{132}
-\indexentry{Satz von Bayes|hyperpage}{133}
-\indexentry{Satz von Bayes|hyperpage}{133}
+\indexentry{Hypergeometrische Verteilung|hyperpage}{131}
+\indexentry{Grundmenge|hyperpage}{132}
+\indexentry{Satz der totalen Wahrscheinlichkeit|hyperpage}{133}
+\indexentry{Satz von Bayes|hyperpage}{134}
+\indexentry{Satz von Bayes|hyperpage}{134}
 \indexentry{Zufallsvariable|hyperpage}{135}
-\indexentry{Stetig|hyperpage}{135}
-\indexentry{Diskret|hyperpage}{135}
-\indexentry{Erwartungswert|hyperpage}{135}
+\indexentry{Stetig|hyperpage}{136}
+\indexentry{Diskret|hyperpage}{136}
+\indexentry{Erwartungswert|hyperpage}{136}
 \indexentry{Erwartungswert|hyperpage}{136}
 \indexentry{Wertetabelle|hyperpage}{136}
-\indexentry{Umstellen|hyperpage}{136}
+\indexentry{Umstellen|hyperpage}{137}
 \indexentry{Varianz|hyperpage}{137}
 \indexentry{Standardabweichung|hyperpage}{137}
 \indexentry{Varianz|hyperpage}{137}
 \indexentry{Standardabweichung|hyperpage}{137}
 \indexentry{Streuung|hyperpage}{137}
 \indexentry{Mittelwert|hyperpage}{137}
-\indexentry{Varianz|hyperpage}{137}
-\indexentry{Varianz|hyperpage}{137}
-\indexentry{Standardabweichung|hyperpage}{137}
+\indexentry{Varianz|hyperpage}{138}
+\indexentry{Varianz|hyperpage}{138}
+\indexentry{Standardabweichung|hyperpage}{138}

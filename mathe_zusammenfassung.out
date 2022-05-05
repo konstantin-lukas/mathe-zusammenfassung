@@ -146,17 +146,18 @@
 \BOOKMARK [3][-]{subsubsection.13.1.1}{Direkter Beweis}{subsection.13.1}% 146
 \BOOKMARK [3][-]{subsubsection.13.1.2}{Indirekter Beweis und Beweis durch Kontraposition}{subsection.13.1}% 147
 \BOOKMARK [3][-]{subsubsection.13.1.3}{Vollst\344ndige Induktion}{subsection.13.1}% 148
-\BOOKMARK [1][-]{section.14}{Stochastik}{}% 149
-\BOOKMARK [2][-]{subsection.14.1}{Kombinatorik}{section.14}% 150
-\BOOKMARK [3][-]{subsubsection.14.1.1}{Permutation mit Wiederholung}{subsection.14.1}% 151
-\BOOKMARK [3][-]{subsubsection.14.1.2}{Permutation ohne Wiederholung}{subsection.14.1}% 152
-\BOOKMARK [3][-]{subsubsection.14.1.3}{Variation mit Wiederholung}{subsection.14.1}% 153
-\BOOKMARK [3][-]{subsubsection.14.1.4}{Variation ohne Wiederholung}{subsection.14.1}% 154
-\BOOKMARK [3][-]{subsubsection.14.1.5}{Kombination mit Wiederholung}{subsection.14.1}% 155
-\BOOKMARK [3][-]{subsubsection.14.1.6}{Kombination ohne Wiederholung}{subsection.14.1}% 156
-\BOOKMARK [2][-]{subsection.14.2}{Diskrete Wahrscheinlichkeitsverteilungen}{section.14}% 157
-\BOOKMARK [3][-]{subsubsection.14.2.1}{Binomialverteilung}{subsection.14.2}% 158
-\BOOKMARK [3][-]{subsubsection.14.2.2}{Hypergeometrische Verteilung}{subsection.14.2}% 159
-\BOOKMARK [2][-]{subsection.14.3}{Bedingte Wahrscheinlichkeit}{section.14}% 160
-\BOOKMARK [2][-]{subsection.14.4}{Diskrete Zufallsvariablen}{section.14}% 161
-\BOOKMARK [3][-]{subsubsection.14.4.1}{Erwartungswert, Varianz und Standardabweichung}{subsection.14.4}% 162
+\BOOKMARK [3][-]{subsubsection.13.1.4}{Supremum/Infimum beweisen}{subsection.13.1}% 149
+\BOOKMARK [1][-]{section.14}{Stochastik}{}% 150
+\BOOKMARK [2][-]{subsection.14.1}{Kombinatorik}{section.14}% 151
+\BOOKMARK [3][-]{subsubsection.14.1.1}{Permutation mit Wiederholung}{subsection.14.1}% 152
+\BOOKMARK [3][-]{subsubsection.14.1.2}{Permutation ohne Wiederholung}{subsection.14.1}% 153
+\BOOKMARK [3][-]{subsubsection.14.1.3}{Variation mit Wiederholung}{subsection.14.1}% 154
+\BOOKMARK [3][-]{subsubsection.14.1.4}{Variation ohne Wiederholung}{subsection.14.1}% 155
+\BOOKMARK [3][-]{subsubsection.14.1.5}{Kombination mit Wiederholung}{subsection.14.1}% 156
+\BOOKMARK [3][-]{subsubsection.14.1.6}{Kombination ohne Wiederholung}{subsection.14.1}% 157
+\BOOKMARK [2][-]{subsection.14.2}{Diskrete Wahrscheinlichkeitsverteilungen}{section.14}% 158
+\BOOKMARK [3][-]{subsubsection.14.2.1}{Binomialverteilung}{subsection.14.2}% 159
+\BOOKMARK [3][-]{subsubsection.14.2.2}{Hypergeometrische Verteilung}{subsection.14.2}% 160
+\BOOKMARK [2][-]{subsection.14.3}{Bedingte Wahrscheinlichkeit}{section.14}% 161
+\BOOKMARK [2][-]{subsection.14.4}{Diskrete Zufallsvariablen}{section.14}% 162
+\BOOKMARK [3][-]{subsubsection.14.4.1}{Erwartungswert, Varianz und Standardabweichung}{subsection.14.4}% 163

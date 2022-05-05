@@ -1,571 +1,579 @@
 \begin{theindex}
 
   \item Abbildung, \hyperpage{6}
-  \item Abbildungsmatrix, \hyperpage{15}
-  \item Abelsche Gruppe, \hyperpage{29}
-  \item Abgeschlossenes Intervall, \hyperpage{45}, \hyperpage{53}
-  \item Abgeschlossenheit, \hyperpage{28}, \hyperpage{31}
-  \item Ableitung, \hyperpage{80}, \hyperpage{82}, \hyperpage{100}, 
-		\hyperpage{102}, \hyperpage{107}, \hyperpage{109}, 
-		\hyperpage{111}, \hyperpage{120}
-  \item Ableitungsregel, \hyperpage{100}, \hyperpage{102}
-  \item Absolute Homogenität, \hyperpage{34}
-  \item Abstand, \hyperpage{67}
-  \item Abszisse, \hyperpage{80}, \hyperpage{98}
+  \item Abbildungsmatrix, \hyperpage{16}
+  \item Abelsche Gruppe, \hyperpage{30}
+  \item Abgeschlossenes Intervall, \hyperpage{46}, \hyperpage{54}
+  \item Abgeschlossenheit, \hyperpage{29}, \hyperpage{32}
+  \item Ableitung, \hyperpage{81}, \hyperpage{83}, \hyperpage{101}, 
+		\hyperpage{103}, \hyperpage{108}, \hyperpage{110}, 
+		\hyperpage{112}, \hyperpage{121}
+  \item Ableitungsregel, \hyperpage{101}, \hyperpage{103}
+  \item Absolute Homogenität, \hyperpage{35}
+  \item Abstand, \hyperpage{68}
+  \item Abszisse, \hyperpage{81}, \hyperpage{99}
   \item Abzählbar, \hyperpage{5}
   \item Abzählbar unendlich, \hyperpage{6}
-  \item Achsenschnittpunkt, \hyperpage{108}
-  \item Achsensymmetrisch, \hyperpage{82}
-  \item Addition, \hyperpage{13}
-  \item Additionsverfahren, \hyperpage{59}
-  \item Additivität, \hyperpage{12}
+  \item Achsenschnittpunkt, \hyperpage{109}
+  \item Achsensymmetrisch, \hyperpage{83}
+  \item Addition, \hyperpage{15}
+  \item Additionsverfahren, \hyperpage{60}
+  \item Additivität, \hyperpage{13}
   \item Adjazenzmatrix, \hyperpage{10}
-  \item Algebraische Vielfachheit, \hyperpage{26}
-  \item Annähern, \hyperpage{82}, \hyperpage{94}
-  \item Anstieg, \hyperpage{100}, \hyperpage{106}
-  \item Argument, \hyperpage{40}, \hyperpage{43}, \hyperpage{80}, 
-		\hyperpage{98}
-  \item Arkustangens, \hyperpage{83}
-  \item Assoziativ, \hyperpage{28}
-  \item Ausklammern, \hyperpage{91}, \hyperpage{93}
-  \item Aussage, \hyperpage{85}, \hyperpage{123}
-  \item Ausschließen, \hyperpage{90}
-  \item Automorphismus, \hyperpage{12}
+  \item Algebraische Vielfachheit, \hyperpage{27}
+  \item Annähern, \hyperpage{83}, \hyperpage{95}
+  \item Anstieg, \hyperpage{101}, \hyperpage{107}
+  \item Argument, \hyperpage{41}, \hyperpage{44}, \hyperpage{81}, 
+		\hyperpage{99}
+  \item Arkustangens, \hyperpage{84}
+  \item Assoziativ, \hyperpage{29}
+  \item Ausklammern, \hyperpage{92}, \hyperpage{94}
+  \item Aussage, \hyperpage{86}, \hyperpage{124}
+  \item Ausschließen, \hyperpage{91}
+  \item Automorphismus, \hyperpage{13}
 
   \indexspace
 
-  \item Basis, \hyperpage{32}, \hyperpage{96}
-  \item Basiswechselmatrix, \hyperpage{17}
-  \item Behebbar, \hyperpage{105}
-  \item Bestimmtes Integral, \hyperpage{115}
-  \item Betrag, \hyperpage{79}, \hyperpage{86}, \hyperpage{88}
-  \item Betragsfunktion, \hyperpage{86}
-  \item Betragsgleichung, \hyperpage{86, 87}
-  \item Betragsstrich, \hyperpage{87}
-  \item Betragsungleichung, \hyperpage{53}
-  \item Beweis, \hyperpage{79}
-  \item Beweis durch Kontraposition, \hyperpage{124}
-  \item Bijektiv, \hyperpage{8, 9}, \hyperpage{81}
-  \item Bild, \hyperpage{12}
-  \item Binomialkoeffizient, \hyperpage{126}, \hyperpage{129}
-  \item Binomialverteilung, \hyperpage{131}
-  \item Binomische Formel, \hyperpage{46, 47}, \hyperpage{92}
-  \item Binomischer Lehrsatz, \hyperpage{46}
+  \item Basis, \hyperpage{33}, \hyperpage{97}
+  \item Basiswechselmatrix, \hyperpage{18}
+  \item Behebbar, \hyperpage{106}
+  \item Bestimmtes Integral, \hyperpage{116}
+  \item Betrag, \hyperpage{80}, \hyperpage{87}, \hyperpage{89}
+  \item Betragsfunktion, \hyperpage{87}
+  \item Betragsgleichung, \hyperpage{87, 88}
+  \item Betragsstrich, \hyperpage{88}
+  \item Betragsungleichung, \hyperpage{54}
+  \item Beweis, \hyperpage{80}
+  \item Beweis durch Kontraposition, \hyperpage{125}
+  \item Bijektiv, \hyperpage{8, 9}, \hyperpage{82}
+  \item Bild, \hyperpage{13}
+  \item Binomialkoeffizient, \hyperpage{128}, \hyperpage{131}
+  \item Binomialverteilung, \hyperpage{133}
+  \item Binomische Formel, \hyperpage{47, 48}, \hyperpage{93}
+  \item Binomischer Lehrsatz, \hyperpage{47}
   \item Binäre Relation, \hyperpage{10}
-  \item Bogenlänge, \hyperpage{65}
-  \item Bogenmaß, \hyperpage{97}
-  \item Bruch, \hyperpage{84}, \hyperpage{94}
+  \item Bogenlänge, \hyperpage{66}
+  \item Bogenmaß, \hyperpage{98}
+  \item Bruch, \hyperpage{85}, \hyperpage{95}
 
   \indexspace
 
-  \item Cauchy-Schwarz'sche Ungleichung, \hyperpage{35}
-  \item Charakteristisches Polynom, \hyperpage{25, 26}
-  \item Cramersche Regeln, \hyperpage{23}
+  \item Cauchy-Schwarz'sche Ungleichung, \hyperpage{36}
+  \item Charakteristisches Polynom, \hyperpage{26, 27}
+  \item Cramersche Regeln, \hyperpage{24}
 
   \indexspace
 
-  \item Darstellungsmatrix, \hyperpage{15}
-  \item Defekt, \hyperpage{12}
-  \item Definitheit, \hyperpage{34}
-  \item Definitionsbereich, \hyperpage{6}, \hyperpage{81, 82}, 
-		\hyperpage{84, 85}, \hyperpage{105}
-  \item Definitionslücke, \hyperpage{95}, \hyperpage{105}
-  \item Dekadischer Logarithmus, \hyperpage{48}
-  \item Determinante, \hyperpage{21}
-  \item Diagonale, \hyperpage{13}
-  \item Diagonalisierbarkeit, \hyperpage{26}
-  \item Diagonalmatrix, \hyperpage{19}
-  \item Differential, \hyperpage{118}
-  \item Differentialquotient, \hyperpage{100}
+  \item Darstellungsmatrix, \hyperpage{16}
+  \item Defekt, \hyperpage{13}
+  \item Definitheit, \hyperpage{35}
+  \item Definitionsbereich, \hyperpage{6}, \hyperpage{82, 83}, 
+		\hyperpage{85, 86}, \hyperpage{106}
+  \item Definitionslücke, \hyperpage{96}, \hyperpage{106}
+  \item Dekadischer Logarithmus, \hyperpage{49}
+  \item Determinante, \hyperpage{22}
+  \item Diagonale, \hyperpage{14}
+  \item Diagonalisierbarkeit, \hyperpage{27}
+  \item Diagonalmatrix, \hyperpage{20}
+  \item Differential, \hyperpage{119}
+  \item Differentialquotient, \hyperpage{101}
   \item Differenz, \hyperpage{5}
-  \item Differenzenquotient, \hyperpage{101}
-  \item Differenzfunktion, \hyperpage{119, 120}
-  \item Differenzialrechnung, \hyperpage{113}
-  \item Differenzierbar, \hyperpage{104}
-  \item Differenzieren, \hyperpage{116}
-  \item Dimension, \hyperpage{32}
-  \item Direkte Summe, \hyperpage{31}
-  \item Direkter Beweis, \hyperpage{124}
-  \item Disjunktion, \hyperpage{123}
-  \item Diskret, \hyperpage{136}
-  \item Diskriminante, \hyperpage{45}
-  \item Dividend, \hyperpage{44}
-  \item Division, \hyperpage{49}
-  \item Divisor, \hyperpage{44}, \hyperpage{93}, \hyperpage{101}
-  \item Dreieck, \hyperpage{65}
-  \item Dritte Ableitung, \hyperpage{102}
+  \item Differenzenquotient, \hyperpage{102}
+  \item Differenzfunktion, \hyperpage{120, 121}
+  \item Differenzialrechnung, \hyperpage{114}
+  \item Differenzierbar, \hyperpage{105}
+  \item Differenzieren, \hyperpage{117}
+  \item Dimension, \hyperpage{33}
+  \item Direkte Summe, \hyperpage{32}
+  \item Direkter Beweis, \hyperpage{125}
+  \item Disjunktion, \hyperpage{124}
+  \item Diskret, \hyperpage{138}
+  \item Diskriminante, \hyperpage{46}
+  \item Dividend, \hyperpage{45}
+  \item Division, \hyperpage{50}
+  \item Divisor, \hyperpage{45}, \hyperpage{94}, \hyperpage{102}
+  \item Dreieck, \hyperpage{66}
+  \item Dritte Ableitung, \hyperpage{103}
   \item Durchschnitt, \hyperpage{5}
 
   \indexspace
 
-  \item Ebenengleichung, \hyperpage{74}
-  \item Eigenräumen, \hyperpage{25}
-  \item Eigenvektor, \hyperpage{24}
-  \item Eigenwert, \hyperpage{24}
-  \item Einheitsmatrix, \hyperpage{13}
+  \item Ebenengleichung, \hyperpage{75}
+  \item Eigenräumen, \hyperpage{26}
+  \item Eigenvektor, \hyperpage{25}
+  \item Eigenwert, \hyperpage{25}
+  \item Einheitsmatrix, \hyperpage{14}
   \item Einschränkung, \hyperpage{10}
-  \item Einselement, \hyperpage{30}
-  \item Einsetzen, \hyperpage{85}, \hyperpage{89}, \hyperpage{107, 108}, 
-		\hyperpage{110}, \hyperpage{112}
-  \item Endlich erzeugt, \hyperpage{32}
-  \item Endomorphismusorphismus, \hyperpage{12}
-  \item Epimorphismus, \hyperpage{12}
-  \item Ereignis, \hyperpage{126}
-  \item Ergebnis, \hyperpage{85, 86}, \hyperpage{93, 94}, 
-		\hyperpage{107, 108}, \hyperpage{126}
-  \item Erwartungswert, \hyperpage{136}
-  \item Erweiterbar, \hyperpage{106}
-  \item Erweiterte Koeffizientenmatrix, \hyperpage{61}
-  \item Erzeugendensystem, \hyperpage{32}
-  \item Euklidische Norm, \hyperpage{34}
-  \item Euklidischer Algorithmus, \hyperpage{46}
-  \item Euklidischer Vektorraum, \hyperpage{33}
-  \item Exponent, \hyperpage{90}, \hyperpage{93}, \hyperpage{96}, 
-		\hyperpage{100}
-  \item Exponentialgleichung, \hyperpage{96}
-  \item Extremalpunkt, \hyperpage{106}
-  \item Extrempunkt, \hyperpage{109}
-  \item Extremstelle, \hyperpage{98}
+  \item Einselement, \hyperpage{31}
+  \item Einsetzen, \hyperpage{86}, \hyperpage{90}, \hyperpage{108, 109}, 
+		\hyperpage{111}, \hyperpage{113}
+  \item Endlich erzeugt, \hyperpage{33}
+  \item Endomorphismusorphismus, \hyperpage{13}
+  \item Epimorphismus, \hyperpage{13}
+  \item Ereignis, \hyperpage{128}
+  \item Ergebnis, \hyperpage{86, 87}, \hyperpage{94, 95}, 
+		\hyperpage{108, 109}, \hyperpage{128}
+  \item Erwartungswert, \hyperpage{138}
+  \item Erweiterbar, \hyperpage{107}
+  \item Erweiterte Koeffizientenmatrix, \hyperpage{62}
+  \item Erzeugendensystem, \hyperpage{33}
+  \item Euklidische Norm, \hyperpage{35}
+  \item Euklidischer Algorithmus, \hyperpage{47}
+  \item Euklidischer Vektorraum, \hyperpage{34}
+  \item Exponent, \hyperpage{91}, \hyperpage{94}, \hyperpage{97}, 
+		\hyperpage{101}
+  \item Exponentialgleichung, \hyperpage{97}
+  \item Extremalpunkt, \hyperpage{107}
+  \item Extrempunkt, \hyperpage{110}
+  \item Extremstelle, \hyperpage{99}
 
   \indexspace
 
-  \item Faktor, \hyperpage{50}
-  \item Faktorisieren, \hyperpage{50}, \hyperpage{91}
-  \item Faktormenge, \hyperpage{11}, \hyperpage{49}
-  \item Fakultät, \hyperpage{126, 127}
-  \item Fall, \hyperpage{55}, \hyperpage{60}, \hyperpage{86}, 
+  \item Faktor, \hyperpage{51}
+  \item Faktorisieren, \hyperpage{51}, \hyperpage{92}
+  \item Faktormenge, \hyperpage{12}, \hyperpage{50}
+  \item Fakultät, \hyperpage{128, 129}
+  \item Fall, \hyperpage{56}, \hyperpage{61}, \hyperpage{87}, 
+		\hyperpage{89}
+  \item Fallen, \hyperpage{81}
+  \item Fallunterscheidung, \hyperpage{54}, \hyperpage{60}, 
 		\hyperpage{88}
-  \item Fallen, \hyperpage{80}
-  \item Fallunterscheidung, \hyperpage{53}, \hyperpage{59}, 
-		\hyperpage{87}
-  \item Fläche, \hyperpage{65}, \hyperpage{112, 113}, \hyperpage{115}
-  \item Formel, \hyperpage{83}
-  \item Freier Vektor, \hyperpage{68}
-  \item Funktion, \hyperpage{80--82}, \hyperpage{87}, \hyperpage{91}, 
-		\hyperpage{95}, \hyperpage{100}, \hyperpage{102}, 
-		\hyperpage{107}
+  \item Fläche, \hyperpage{66}, \hyperpage{113, 114}, \hyperpage{116}
+  \item Formel, \hyperpage{84}
+  \item Freier Vektor, \hyperpage{69}
+  \item Funktion, \hyperpage{81--83}, \hyperpage{88}, \hyperpage{92}, 
+		\hyperpage{96}, \hyperpage{101}, \hyperpage{103}, 
+		\hyperpage{108}
 
   \indexspace
 
-  \item Ganze Zahl, \hyperpage{6}, \hyperpage{84}
-  \item Ganzrationale Funktion, \hyperpage{89}
-  \item Gauß-Verfahren, \hyperpage{59}
-  \item Gaußsche Zahlenebene, \hyperpage{38}
-  \item Gebrochenrationale Funktion, \hyperpage{94}
-  \item Gebundener Vektor, \hyperpage{68}
-  \item Gegenvektor, \hyperpage{68}
-  \item Gekürzt, \hyperpage{48}
-  \item Geometrie, \hyperpage{97}
-  \item Geometrische Vielfachheit, \hyperpage{26}
-  \item Gerade, \hyperpage{82}, \hyperpage{84}, \hyperpage{90}, 
-		\hyperpage{108}
-  \item Gerader Kegel, \hyperpage{67}
-  \item Gerader Zylinder, \hyperpage{66}
-  \item Gleichsetzen, \hyperpage{87}
-  \item Gleichung, \hyperpage{50, 51}, \hyperpage{59, 60}, 
-		\hyperpage{108}
-  \item Gleichungssystem, \hyperpage{57}, \hyperpage{75}
-  \item Global, \hyperpage{81}
-  \item Gradmaß, \hyperpage{97}
-  \item Gram-Schmidtsches Orthogonalisierungsverf., \hyperpage{37}
-  \item Graph, \hyperpage{84}, \hyperpage{86}, \hyperpage{88}, 
-		\hyperpage{107}
-  \item Grenzwert, \hyperpage{103}, \hyperpage{105, 106}, 
+  \item Ganze Zahl, \hyperpage{6}, \hyperpage{85}
+  \item Ganzrationale Funktion, \hyperpage{90}
+  \item Gauß-Verfahren, \hyperpage{60}
+  \item Gaußsche Zahlenebene, \hyperpage{39}
+  \item Gebrochenrationale Funktion, \hyperpage{95}
+  \item Gebundener Vektor, \hyperpage{69}
+  \item Gegenvektor, \hyperpage{69}
+  \item Gekürzt, \hyperpage{49}
+  \item Geometrie, \hyperpage{98}
+  \item Geometrische Vielfachheit, \hyperpage{27}
+  \item Gerade, \hyperpage{83}, \hyperpage{85}, \hyperpage{91}, 
 		\hyperpage{109}
-  \item Große Vereinigung, \hyperpage{27}
-  \item Großer Durchschnitt, \hyperpage{27}
-  \item Grundfläche, \hyperpage{66, 67}
-  \item Grundflächenumfang, \hyperpage{66}
-  \item Grundmenge, \hyperpage{27}, \hyperpage{126}, 
-		\hyperpage{128--130}, \hyperpage{132}
-  \item Grundseite, \hyperpage{65}
-  \item Gruppe, \hyperpage{29}
-  \item Größter gemeinsamer Teiler, \hyperpage{46}
+  \item Gerader Kegel, \hyperpage{68}
+  \item Gerader Zylinder, \hyperpage{67}
+  \item Gleichsetzen, \hyperpage{88}
+  \item Gleichung, \hyperpage{51, 52}, \hyperpage{60, 61}, 
+		\hyperpage{109}
+  \item Gleichungssystem, \hyperpage{58}, \hyperpage{76}
+  \item Global, \hyperpage{82}
+  \item Gradmaß, \hyperpage{98}
+  \item Gram-Schmidtsches Orthogonalisierungsverf., \hyperpage{38}
+  \item Graph, \hyperpage{85}, \hyperpage{87}, \hyperpage{89}, 
+		\hyperpage{108}
+  \item Grenzwert, \hyperpage{104}, \hyperpage{106, 107}, 
+		\hyperpage{110}
+  \item Große Vereinigung, \hyperpage{28}
+  \item Großer Durchschnitt, \hyperpage{28}
+  \item Grundfläche, \hyperpage{67, 68}
+  \item Grundflächenumfang, \hyperpage{67}
+  \item Grundmenge, \hyperpage{28}, \hyperpage{128}, 
+		\hyperpage{130--132}, \hyperpage{134}
+  \item Grundseite, \hyperpage{66}
+  \item Gruppe, \hyperpage{30}
+  \item Größter gemeinsamer Teiler, \hyperpage{47}
 
   \indexspace
 
-  \item Halbgruppe, \hyperpage{29}
-  \item Halboffenes Intervall, \hyperpage{45}
-  \item Hebbar, \hyperpage{105}
-  \item Hermitisch, \hyperpage{19}
-  \item Hinreichende Bedingung, \hyperpage{102}, \hyperpage{110, 111}
-  \item Homogen, \hyperpage{57}
-  \item Homogenität, \hyperpage{12}
-  \item Homomorphismus, \hyperpage{12}
-  \item Hypergeometrische Verteilung, \hyperpage{131}
-  \item Hypotenuse, \hyperpage{64}, \hyperpage{68}
-  \item Hypotenusenabschnitt, \hyperpage{64}
-  \item Höhe, \hyperpage{65--67}
+  \item Halbgruppe, \hyperpage{30}
+  \item Halboffenes Intervall, \hyperpage{46}
+  \item Hebbar, \hyperpage{106}
+  \item Hermitisch, \hyperpage{21}
+  \item Hinreichende Bedingung, \hyperpage{103}, \hyperpage{111, 112}
+  \item Homogen, \hyperpage{58}
+  \item Homogenität, \hyperpage{13}
+  \item Homomorphismus, \hyperpage{13}
+  \item Hypergeometrische Verteilung, \hyperpage{133}
+  \item Hypotenuse, \hyperpage{65}, \hyperpage{69}
+  \item Hypotenusenabschnitt, \hyperpage{65}
+  \item Höhe, \hyperpage{66--68}
 
   \indexspace
 
-  \item Identität, \hyperpage{7}, \hyperpage{12}, \hyperpage{17}
-  \item Identitätsmatrix, \hyperpage{13}
-  \item Imaginäre Einheit, \hyperpage{38}
-  \item Imaginäre Zahl, \hyperpage{38}
-  \item Imaginärteil, \hyperpage{38}
-  \item Implikation, \hyperpage{123}
-  \item Index, \hyperpage{13}
-  \item Indirekter Beweis, \hyperpage{124}
-  \item Inhomogen, \hyperpage{57}
+  \item Identität, \hyperpage{7}, \hyperpage{14}, \hyperpage{18}
+  \item Identitätsmatrix, \hyperpage{14}
+  \item Imaginäre Einheit, \hyperpage{39}
+  \item Imaginäre Zahl, \hyperpage{39}
+  \item Imaginärteil, \hyperpage{39}
+  \item Implikation, \hyperpage{124}
+  \item Index, \hyperpage{14}
+  \item Indirekter Beweis, \hyperpage{125}
+  \item Infimum, \hyperpage{12}, \hyperpage{127}
+  \item Inhomogen, \hyperpage{58}
   \item Injektiv, \hyperpage{8, 9}
-  \item Injektivität, \hyperpage{81}
+  \item Injektivität, \hyperpage{82}
   \item Inklusion, \hyperpage{10}
-  \item Innere Funktion, \hyperpage{98}
-  \item Innere Verknüpfung, \hyperpage{31}
-  \item Integral, \hyperpage{121}
-  \item Integrieren, \hyperpage{116}
-  \item Intervall, \hyperpage{52}, \hyperpage{81}, \hyperpage{120}
-  \item Inverse, \hyperpage{18}
-  \item Inverses Element, \hyperpage{28}
-  \item Invertierbar, \hyperpage{18}, \hyperpage{28}
+  \item Innere Funktion, \hyperpage{99}
+  \item Innere Verknüpfung, \hyperpage{32}
+  \item Integral, \hyperpage{122}
+  \item Integrieren, \hyperpage{117}
+  \item Intervall, \hyperpage{53}, \hyperpage{82}, \hyperpage{121}
+  \item Inverse, \hyperpage{19}
+  \item Inverses Element, \hyperpage{29}
+  \item Invertierbar, \hyperpage{19}, \hyperpage{29}
   \item Irrationale Zahl, \hyperpage{6}
-  \item Isomorphismus, \hyperpage{12}
+  \item Isomorphismus, \hyperpage{13}
 
   \indexspace
 
-  \item Kanonische Basis, \hyperpage{15}, \hyperpage{32}
-  \item Kanonisches Skalarprodukt, \hyperpage{33}
-  \item Kartesische Form, \hyperpage{39, 40}
-  \item Kathete, \hyperpage{64}
-  \item Kegel, \hyperpage{67}
-  \item Kehrwert, \hyperpage{44}
-  \item Kern, \hyperpage{12}
-  \item Koeffizient, \hyperpage{60}, \hyperpage{89}
-  \item Koeffizientenmatrix, \hyperpage{61}
-  \item Kombination, \hyperpage{127}
-  \item Kombinatorik, \hyperpage{126}
-  \item Kommutativ, \hyperpage{28}, \hyperpage{30}
-  \item Komplement, \hyperpage{5}, \hyperpage{31}
-  \item Komplexe Konjugation, \hyperpage{39}
-  \item Komplexe Zahlen, \hyperpage{38}
-  \item Komposition, \hyperpage{98}
-  \item Kongruenz, \hyperpage{49}
-  \item Konjunktion, \hyperpage{123}
-  \item Kontravalenz, \hyperpage{123}
-  \item Koordinate, \hyperpage{112}
-  \item Koordinatenabbildung, \hyperpage{16}
-  \item Koordinatenform, \hyperpage{71, 72}, \hyperpage{76}, 
-		\hyperpage{99}
-  \item Koordinatensystem, \hyperpage{98}
-  \item Koordinatenursprung, \hyperpage{68}
-  \item Kosinus, \hyperpage{97}
-  \item Kreis, \hyperpage{65}, \hyperpage{98}
-  \item Kreislinie, \hyperpage{67}
-  \item Kreissegment, \hyperpage{65}
-  \item Kreissektor, \hyperpage{65}
-  \item Kreuzprodukt, \hyperpage{70}
-  \item Krümmungsverhalten, \hyperpage{110}
-  \item Kurvendiskussion, \hyperpage{107}
-  \item Körper, \hyperpage{31}
-  \item Kürzen, \hyperpage{46}
+  \item Kanonische Basis, \hyperpage{16}, \hyperpage{33}
+  \item Kanonisches Skalarprodukt, \hyperpage{34}
+  \item Kartesische Form, \hyperpage{40, 41}
+  \item Kathete, \hyperpage{65}
+  \item Kegel, \hyperpage{68}
+  \item Kehrwert, \hyperpage{45}
+  \item Kern, \hyperpage{13}
+  \item Koeffizient, \hyperpage{61}, \hyperpage{90}
+  \item Koeffizientenmatrix, \hyperpage{62}
+  \item Kombination, \hyperpage{129}
+  \item Kombinatorik, \hyperpage{128}
+  \item Kommutativ, \hyperpage{29}, \hyperpage{31}
+  \item Komplement, \hyperpage{5}, \hyperpage{32}
+  \item Komplexe Konjugation, \hyperpage{40}
+  \item Komplexe Zahlen, \hyperpage{39}
+  \item Komposition, \hyperpage{99}
+  \item Kongruenz, \hyperpage{50}
+  \item Konjunktion, \hyperpage{124}
+  \item Kontravalenz, \hyperpage{124}
+  \item Koordinate, \hyperpage{113}
+  \item Koordinatenabbildung, \hyperpage{17}
+  \item Koordinatenform, \hyperpage{72, 73}, \hyperpage{77}, 
+		\hyperpage{100}
+  \item Koordinatensystem, \hyperpage{99}
+  \item Koordinatenursprung, \hyperpage{69}
+  \item Kosinus, \hyperpage{98}
+  \item Kreis, \hyperpage{66}, \hyperpage{99}
+  \item Kreislinie, \hyperpage{68}
+  \item Kreissegment, \hyperpage{66}
+  \item Kreissektor, \hyperpage{66}
+  \item Kreuzprodukt, \hyperpage{71}
+  \item Krümmungsverhalten, \hyperpage{111}
+  \item Kurvendiskussion, \hyperpage{108}
+  \item Körper, \hyperpage{32}
+  \item Kürzen, \hyperpage{47}
 
   \indexspace
 
-  \item Laplace-Experiment, \hyperpage{126}
-  \item Laplacescher Entwicklungssatz, \hyperpage{21}
-  \item Limes, \hyperpage{94}, \hyperpage{101}, \hyperpage{103}, 
-		\hyperpage{109}
-  \item Lineare Abhängigkeit, \hyperpage{32, 33}, \hyperpage{78}
-  \item Lineare Funktion, \hyperpage{106}, \hyperpage{111}
-  \item Lineare Gleichung, \hyperpage{115}
-  \item Lineare Hülle, \hyperpage{32}
-  \item Lineares Gleichungssystem, \hyperpage{59}
-  \item Linearität, \hyperpage{33}
-  \item Linearkombination, \hyperpage{32}, \hyperpage{77}
-  \item Links-Rechts-Krümmung, \hyperpage{111}
-  \item Linksoffen, \hyperpage{45}
-  \item Linksseitiger Grenzwert, \hyperpage{103--105}
-  \item Logarithmus, \hyperpage{48}, \hyperpage{96}
-  \item Logarithmusfunktion, \hyperpage{96}
-  \item Logarithmusgesetz, \hyperpage{97}
-  \item Lokal, \hyperpage{81}
-  \item Lotto, \hyperpage{130}
-  \item Lösungsmenge, \hyperpage{44}, \hyperpage{51--53}, 
-		\hyperpage{59, 60}, \hyperpage{85}, \hyperpage{88, 89}
+  \item Laplace-Experiment, \hyperpage{128}
+  \item Laplacescher Entwicklungssatz, \hyperpage{23}
+  \item Limes, \hyperpage{95}, \hyperpage{102}, \hyperpage{104}, 
+		\hyperpage{110}
+  \item Lineare Abhängigkeit, \hyperpage{33, 34}, \hyperpage{79}
+  \item Lineare Funktion, \hyperpage{107}, \hyperpage{112}
+  \item Lineare Gleichung, \hyperpage{116}
+  \item Lineare Hülle, \hyperpage{33}
+  \item Lineares Gleichungssystem, \hyperpage{60}
+  \item Linearität, \hyperpage{34}
+  \item Linearkombination, \hyperpage{33}, \hyperpage{78}
+  \item Links-Rechts-Krümmung, \hyperpage{112}
+  \item Linksoffen, \hyperpage{46}
+  \item Linksseitiger Grenzwert, \hyperpage{104--106}
+  \item Logarithmus, \hyperpage{49}, \hyperpage{97}
+  \item Logarithmusfunktion, \hyperpage{97}
+  \item Logarithmusgesetz, \hyperpage{98}
+  \item Lokal, \hyperpage{82}
+  \item Lotto, \hyperpage{132}
+  \item Lösungsmenge, \hyperpage{45}, \hyperpage{52--54}, 
+		\hyperpage{60, 61}, \hyperpage{86}, \hyperpage{89, 90}
 
   \indexspace
 
-  \item Mantelfläche, \hyperpage{66}
-  \item Matrix, \hyperpage{13}
-  \item Maximalstelle, \hyperpage{81}
+  \item Mantelfläche, \hyperpage{67}
+  \item Matrix, \hyperpage{14}
+  \item Maximal, \hyperpage{12}
+  \item Maximalstelle, \hyperpage{82}
+  \item Maximum, \hyperpage{12}
   \item Menge der natürlichen Zahlen, \hyperpage{6}
   \item Mengen, \hyperpage{6}
-  \item Mengensystem, \hyperpage{27}
-  \item Minimalstelle, \hyperpage{81}
-  \item Mittelwert, \hyperpage{137}
-  \item Monoid, \hyperpage{29}
-  \item Monom, \hyperpage{89, 90}
-  \item Monomorphismus, \hyperpage{12}
-  \item Monoton, \hyperpage{80}
-  \item Monotonieverhalten, \hyperpage{80}, \hyperpage{100}
-  \item Multilineare Abbildung, \hyperpage{21}
-  \item Multiplikation, \hyperpage{13}
-  \item Mächtigkeit, \hyperpage{5}, \hyperpage{127}
+  \item Mengensystem, \hyperpage{28}
+  \item Minimal, \hyperpage{12}
+  \item Minimalstelle, \hyperpage{82}
+  \item Mittelwert, \hyperpage{139}
+  \item Monoid, \hyperpage{30}
+  \item Monom, \hyperpage{90, 91}
+  \item Monomorphismus, \hyperpage{13}
+  \item Monoton, \hyperpage{81}
+  \item Monotonieverhalten, \hyperpage{81}, \hyperpage{101}
+  \item Multilineare Abbildung, \hyperpage{22}
+  \item Multiplikation, \hyperpage{15}
+  \item Mächtigkeit, \hyperpage{5}, \hyperpage{129}
 
   \indexspace
 
-  \item n-ter Grad, \hyperpage{90}
-  \item Nachkommastelle, \hyperpage{83}
+  \item n-ter Grad, \hyperpage{91}
+  \item Nachkommastelle, \hyperpage{84}
   \item Natürliche Zahl, \hyperpage{6}
-  \item Natürlicher Logarithmus, \hyperpage{48}
-  \item Negation, \hyperpage{123}
-  \item Negativ, \hyperpage{54}, \hyperpage{88}
-  \item Negativ Definit, \hyperpage{20}
-  \item Negativ Semidefinit, \hyperpage{20}
-  \item Nenner, \hyperpage{54}, \hyperpage{94, 95}
-  \item Neutrales Element, \hyperpage{28}
-  \item Newtonverfahren, \hyperpage{82}
-  \item Nilpotent, \hyperpage{19}
-  \item Norm, \hyperpage{34}
-  \item Normalenform, \hyperpage{72, 73}
-  \item Normalenvektor, \hyperpage{73}
-  \item Normalform, \hyperpage{44}, \hyperpage{50}
-  \item Notation, \hyperpage{48}, \hyperpage{58}, \hyperpage{104}
-  \item Notwendige Bedingung, \hyperpage{102}, \hyperpage{110}
-  \item Nullelement, \hyperpage{30}
-  \item Nullpunkt, \hyperpage{82}
-  \item Nullraum, \hyperpage{12}
-  \item Nullstelle, \hyperpage{50--53}, \hyperpage{82}, \hyperpage{90}, 
-		\hyperpage{92, 93}, \hyperpage{95, 96}, \hyperpage{98}, 
-		\hyperpage{108, 109}, \hyperpage{120}
-  \item Nullvektor, \hyperpage{68, 69}, \hyperpage{78}
+  \item Natürlicher Logarithmus, \hyperpage{49}
+  \item Negation, \hyperpage{124}
+  \item Negativ, \hyperpage{55}, \hyperpage{89}
+  \item Negativ Definit, \hyperpage{21}
+  \item Negativ Semidefinit, \hyperpage{21}
+  \item Nenner, \hyperpage{55}, \hyperpage{95, 96}
+  \item Neutrales Element, \hyperpage{29}
+  \item Newtonverfahren, \hyperpage{83}
+  \item Nilpotent, \hyperpage{21}
+  \item Norm, \hyperpage{35}
+  \item Normalenform, \hyperpage{73, 74}
+  \item Normalenvektor, \hyperpage{74}
+  \item Normalform, \hyperpage{45}, \hyperpage{51}
+  \item Notation, \hyperpage{49}, \hyperpage{59}, \hyperpage{105}
+  \item Notwendige Bedingung, \hyperpage{103}, \hyperpage{111}
+  \item Nullelement, \hyperpage{31}
+  \item Nullpunkt, \hyperpage{83}
+  \item Nullraum, \hyperpage{13}
+  \item Nullstelle, \hyperpage{51--54}, \hyperpage{83}, \hyperpage{91}, 
+		\hyperpage{93, 94}, \hyperpage{96, 97}, \hyperpage{99}, 
+		\hyperpage{109, 110}, \hyperpage{121}
+  \item Nullvektor, \hyperpage{69, 70}, \hyperpage{79}
 
   \indexspace
 
-  \item Obere Dreiecksmatrix, \hyperpage{19}
-  \item Oberfläche, \hyperpage{66, 67}
-  \item Offenes Intervall, \hyperpage{45}, \hyperpage{53}
-  \item Optimum, \hyperpage{113}
-  \item Ordinate, \hyperpage{80}, \hyperpage{98}
+  \item Obere Dreiecksmatrix, \hyperpage{20}
+  \item Obere Schranke, \hyperpage{12}, \hyperpage{127}
+  \item Oberfläche, \hyperpage{67, 68}
+  \item Offenes Intervall, \hyperpage{46}, \hyperpage{54}
+  \item Optimum, \hyperpage{114}
+  \item Ordinate, \hyperpage{81}, \hyperpage{99}
   \item Ordnungsrelation, \hyperpage{11}
-  \item Orthogonal, \hyperpage{19}, \hyperpage{33}, \hyperpage{35}, 
-		\hyperpage{69}, \hyperpage{72, 73}
-  \item Orthogonales Komplement, \hyperpage{36}
-  \item Orthogonalprojektion, \hyperpage{38}
-  \item Orthonormalbasis, \hyperpage{36}
-  \item Ortsvektor, \hyperpage{68}
+  \item Orthogonal, \hyperpage{20}, \hyperpage{34}, \hyperpage{36}, 
+		\hyperpage{70}, \hyperpage{73, 74}
+  \item Orthogonales Komplement, \hyperpage{37}
+  \item Orthogonalprojektion, \hyperpage{39}
+  \item Orthonormalbasis, \hyperpage{37}
+  \item Ortsvektor, \hyperpage{69}
 
   \indexspace
 
-  \item p-q-Formel, \hyperpage{45}, \hyperpage{51, 52}, \hyperpage{86}, 
-		\hyperpage{90}
-  \item Parameter, \hyperpage{59}
-  \item Parameterform, \hyperpage{71, 72}
+  \item p-q-Formel, \hyperpage{46}, \hyperpage{52, 53}, \hyperpage{87}, 
+		\hyperpage{91}
+  \item Parameter, \hyperpage{60}
+  \item Parameterform, \hyperpage{72, 73}
   \item Partielle Ordnung, \hyperpage{11}
-  \item Partition, \hyperpage{11}
-  \item Pascalsches Dreieck, \hyperpage{126}
-  \item Permutation, \hyperpage{127}
-  \item Permutationsmatrix, \hyperpage{19}
-  \item Pfeilklasse, \hyperpage{68}
-  \item Polarform, \hyperpage{40}
-  \item Polynom, \hyperpage{89, 90}, \hyperpage{92--94}
-  \item Polynomdivision, \hyperpage{82}, \hyperpage{92}
-  \item Polynomfunktion, \hyperpage{89}
-  \item Positiv, \hyperpage{54}, \hyperpage{84}
-  \item Positiv Definit, \hyperpage{20}
-  \item Positiv Semidefinit, \hyperpage{20}
-  \item Positive Definitheit, \hyperpage{33}
-  \item Potenz, \hyperpage{84}, \hyperpage{89, 90}, \hyperpage{93}
-  \item Potenzfunktion, \hyperpage{84}, \hyperpage{100}
-  \item Potenzgesetz, \hyperpage{42}, \hyperpage{46}, \hyperpage{97}
-  \item Potenzieren, \hyperpage{84}
-  \item Potenzmenge, \hyperpage{5}, \hyperpage{27}
-  \item Potenzrechnung, \hyperpage{48}
-  \item Prisma, \hyperpage{66}
-  \item Probe, \hyperpage{85}
-  \item Produkt, \hyperpage{50}
-  \item Produktregel, \hyperpage{117}
-  \item Projektor, \hyperpage{12}, \hyperpage{19}
-  \item Punkt, \hyperpage{101}, \hyperpage{106, 107}, \hyperpage{110}
-  \item Punktsymmetrisch, \hyperpage{82}
-  \item Pyramide, \hyperpage{66}
+  \item Partition, \hyperpage{13}
+  \item Pascalsches Dreieck, \hyperpage{128}
+  \item Permutation, \hyperpage{128}
+  \item Permutationsmatrix, \hyperpage{20}
+  \item Pfeilklasse, \hyperpage{69}
+  \item Polarform, \hyperpage{41}
+  \item Polynom, \hyperpage{90, 91}, \hyperpage{93--95}
+  \item Polynomdivision, \hyperpage{83}, \hyperpage{93}
+  \item Polynomfunktion, \hyperpage{90}
+  \item Positiv, \hyperpage{55}, \hyperpage{85}
+  \item Positiv Definit, \hyperpage{21}
+  \item Positiv Semidefinit, \hyperpage{21}
+  \item Positive Definitheit, \hyperpage{34}
+  \item Potenz, \hyperpage{85}, \hyperpage{90, 91}, \hyperpage{94}
+  \item Potenzfunktion, \hyperpage{85}, \hyperpage{101}
+  \item Potenzgesetz, \hyperpage{43}, \hyperpage{47}, \hyperpage{98}
+  \item Potenzieren, \hyperpage{85}
+  \item Potenzmenge, \hyperpage{5}, \hyperpage{28}
+  \item Potenzrechnung, \hyperpage{49}
+  \item Prisma, \hyperpage{67}
+  \item Probe, \hyperpage{86}
+  \item Produkt, \hyperpage{51}
+  \item Produktregel, \hyperpage{118}
+  \item Projektor, \hyperpage{14}, \hyperpage{20}
+  \item Punkt, \hyperpage{102}, \hyperpage{107, 108}, \hyperpage{111}
+  \item Punktsymmetrisch, \hyperpage{83}
+  \item Pyramide, \hyperpage{67}
 
   \indexspace
 
-  \item Quadrat, \hyperpage{64}
-  \item Quadratisch, \hyperpage{44}
-  \item Quadratische Ergänzung, \hyperpage{50}
-  \item Quadratische Funktion, \hyperpage{52}
-  \item Quadratische Gleichung, \hyperpage{50}
-  \item Quadratische Ungleichung, \hyperpage{52}
-  \item Quantor, \hyperpage{123}
-  \item Quotient, \hyperpage{101}
-  \item Quotientenmenge, \hyperpage{11}
+  \item Quadrat, \hyperpage{65}
+  \item Quadratisch, \hyperpage{45}
+  \item Quadratische Ergänzung, \hyperpage{51}
+  \item Quadratische Funktion, \hyperpage{53}
+  \item Quadratische Gleichung, \hyperpage{51}
+  \item Quadratische Ungleichung, \hyperpage{53}
+  \item Quantor, \hyperpage{124}
+  \item Quotient, \hyperpage{102}
+  \item Quotientenmenge, \hyperpage{12}
 
   \indexspace
 
-  \item Radikand, \hyperpage{84, 85}
-  \item Radius, \hyperpage{65--67}
-  \item Rang, \hyperpage{12}, \hyperpage{62}
-  \item Rationale Funktion, \hyperpage{94}
-  \item Rationale Zahl, \hyperpage{6}, \hyperpage{46}
-  \item Realteil, \hyperpage{38}
-  \item Rechengesetz, \hyperpage{100}
-  \item Rechenregel, \hyperpage{54}
-  \item Rechteck, \hyperpage{64}, \hyperpage{116}
-  \item Rechts-Links-Krümmung, \hyperpage{111}
-  \item Rechtsoffen, \hyperpage{45}
-  \item rechtsseitige Grenzwert, \hyperpage{103}
-  \item Rechtsseitiger Grenzwert, \hyperpage{103--105}
-  \item Rechtwinkliges Dreieck, \hyperpage{64}
-  \item Reelle Zahl, \hyperpage{6}, \hyperpage{52}, \hyperpage{84}
-  \item Regulär, \hyperpage{18}
+  \item Radikand, \hyperpage{85, 86}
+  \item Radius, \hyperpage{66--68}
+  \item Rang, \hyperpage{13}, \hyperpage{63}
+  \item Rationale Funktion, \hyperpage{95}
+  \item Rationale Zahl, \hyperpage{6}, \hyperpage{47}
+  \item Realteil, \hyperpage{39}
+  \item Rechengesetz, \hyperpage{101}
+  \item Rechenregel, \hyperpage{55}
+  \item Rechteck, \hyperpage{65}, \hyperpage{117}
+  \item Rechts-Links-Krümmung, \hyperpage{112}
+  \item Rechtsoffen, \hyperpage{46}
+  \item rechtsseitige Grenzwert, \hyperpage{104}
+  \item Rechtsseitiger Grenzwert, \hyperpage{104--106}
+  \item Rechtwinkliges Dreieck, \hyperpage{65}
+  \item Reelle Zahl, \hyperpage{6}, \hyperpage{53}, \hyperpage{85}
+  \item Regulär, \hyperpage{19}
   \item Relation, \hyperpage{10}
-  \item Repräsentant, \hyperpage{6}, \hyperpage{11}, \hyperpage{49}
+  \item Repräsentant, \hyperpage{6}, \hyperpage{12}, \hyperpage{50}
   \item Repräsentantenunabhängig, \hyperpage{7}
-  \item Rest, \hyperpage{49}
-  \item Restklasse, \hyperpage{49}
+  \item Rest, \hyperpage{50}
+  \item Restklasse, \hyperpage{50}
   \item Restriktion, \hyperpage{10}
-  \item Resubstitution, \hyperpage{51}
-  \item Richtung, \hyperpage{68}
-  \item Richtungsvektor, \hyperpage{71, 72}, \hyperpage{76}
-  \item Ring, \hyperpage{30}
+  \item Resubstitution, \hyperpage{52}
+  \item Richtung, \hyperpage{69}
+  \item Richtungsvektor, \hyperpage{72, 73}, \hyperpage{77}
+  \item Ring, \hyperpage{31}
 
   \indexspace
 
-  \item Sarrussche Regel, \hyperpage{22}
-  \item Satz der totalen Wahrscheinlichkeit, \hyperpage{133}
-  \item Satz des Pythagoras, \hyperpage{70}
-  \item Satz von Bayes, \hyperpage{134}
-  \item Satz von de Moivre, \hyperpage{41}
-  \item Satz von Viëta, \hyperpage{51}
-  \item Scheinlösung, \hyperpage{85}
-  \item Schnittgerade, \hyperpage{76}
-  \item Schnittpunkt, \hyperpage{86, 87}, \hyperpage{89}
-  \item Schnittwinkel, \hyperpage{84}
-  \item Sekante, \hyperpage{101}
-  \item Signum, \hyperpage{40}
-  \item Singulär, \hyperpage{18}
-  \item Sinus, \hyperpage{97}
-  \item Skalar, \hyperpage{12}, \hyperpage{24}, \hyperpage{32}, 
-		\hyperpage{69}, \hyperpage{71, 72}, \hyperpage{78}
-  \item Skalare Multiplikation, \hyperpage{13}
-  \item skalare Multiplikation, \hyperpage{69}
-  \item Skalarmultiplikation, \hyperpage{77}
-  \item Skalarprodukt, \hyperpage{33}, \hyperpage{69}
-  \item Spaltenrang, \hyperpage{14}
-  \item Spaltenvektor, \hyperpage{68}
-  \item Spann, \hyperpage{32}
-  \item Spannvektor, \hyperpage{72}
-  \item Spektrum, \hyperpage{25}
-  \item Spurpunkt, \hyperpage{72}
-  \item Stammfunktion, \hyperpage{116}
-  \item Standardabweichung, \hyperpage{137, 138}
-  \item Standardbasis, \hyperpage{32}
-  \item Steigung, \hyperpage{101}
-  \item Stetig, \hyperpage{104}, \hyperpage{136}
-  \item Stetige Erweiterung, \hyperpage{105}
-  \item Streng, \hyperpage{80}
-  \item Streuung, \hyperpage{137}
-  \item Strickt, \hyperpage{81}
-  \item Stufenform, \hyperpage{59}
-  \item Stützvektor, \hyperpage{71, 72}
-  \item Subadditivität, \hyperpage{34}
-  \item Substitution, \hyperpage{51}, \hyperpage{90}
-  \item Summand, \hyperpage{89}
-  \item Surjektiv, \hyperpage{8}, \hyperpage{81}
-  \item Symmetrie, \hyperpage{12}, \hyperpage{33}, \hyperpage{82}, 
-		\hyperpage{90}
-  \item Symmetrisch, \hyperpage{19}
+  \item Sarrussche Regel, \hyperpage{23}
+  \item Satz der totalen Wahrscheinlichkeit, \hyperpage{135}
+  \item Satz des Eudoxos, \hyperpage{127}
+  \item Satz des Pythagoras, \hyperpage{71}
+  \item Satz von Bayes, \hyperpage{136}
+  \item Satz von de Moivre, \hyperpage{42}
+  \item Satz von Viëta, \hyperpage{52}
+  \item Scheinlösung, \hyperpage{86}
+  \item Schnittgerade, \hyperpage{77}
+  \item Schnittpunkt, \hyperpage{87, 88}, \hyperpage{90}
+  \item Schnittwinkel, \hyperpage{85}
+  \item Sekante, \hyperpage{102}
+  \item Signum, \hyperpage{41}
+  \item Singulär, \hyperpage{19}
+  \item Sinus, \hyperpage{98}
+  \item Skalar, \hyperpage{14}, \hyperpage{25}, \hyperpage{33}, 
+		\hyperpage{70}, \hyperpage{72, 73}, \hyperpage{79}
+  \item Skalare Multiplikation, \hyperpage{15}
+  \item skalare Multiplikation, \hyperpage{70}
+  \item Skalarmultiplikation, \hyperpage{78}
+  \item Skalarprodukt, \hyperpage{34}, \hyperpage{70}
+  \item Spaltenrang, \hyperpage{15}
+  \item Spaltenvektor, \hyperpage{69}
+  \item Spann, \hyperpage{33}
+  \item Spannvektor, \hyperpage{73}
+  \item Spektrum, \hyperpage{26}
+  \item Spurpunkt, \hyperpage{73}
+  \item Stammfunktion, \hyperpage{117}
+  \item Standardabweichung, \hyperpage{139, 140}
+  \item Standardbasis, \hyperpage{33}
+  \item Steigung, \hyperpage{102}
+  \item Stetig, \hyperpage{105}, \hyperpage{138}
+  \item Stetige Erweiterung, \hyperpage{106}
+  \item Streng, \hyperpage{81}
+  \item Streuung, \hyperpage{139}
+  \item Strickt, \hyperpage{82}
+  \item Stufenform, \hyperpage{60}
+  \item Stützvektor, \hyperpage{72, 73}
+  \item Subadditivität, \hyperpage{35}
+  \item Substitution, \hyperpage{52}, \hyperpage{91}
+  \item Summand, \hyperpage{90}
+  \item Supremum, \hyperpage{127}
+  \item Surjektiv, \hyperpage{8}, \hyperpage{82}
+  \item Symmetrie, \hyperpage{14}, \hyperpage{34}, \hyperpage{83}, 
+		\hyperpage{91}
+  \item Symmetrisch, \hyperpage{20}
   \item Symmetrische Differenz, \hyperpage{5}
-  \item System, \hyperpage{31}
+  \item System, \hyperpage{32}
 
   \indexspace
 
-  \item Tangens, \hyperpage{97}
-  \item Tangente, \hyperpage{100, 101}, \hyperpage{106}
-  \item Tangentengleichung, \hyperpage{106, 107}, \hyperpage{111}
-  \item Taschenrechner, \hyperpage{97}
-  \item Tautologie, \hyperpage{123}
-  \item Teilmenge, \hyperpage{5}, \hyperpage{129}
-  \item Term, \hyperpage{48}, \hyperpage{50, 51}, \hyperpage{109}
+  \item Tangens, \hyperpage{98}
+  \item Tangente, \hyperpage{101, 102}, \hyperpage{107}
+  \item Tangentengleichung, \hyperpage{107, 108}, \hyperpage{112}
+  \item Taschenrechner, \hyperpage{98}
+  \item Tautologie, \hyperpage{124}
+  \item Teilmenge, \hyperpage{5}, \hyperpage{131}
+  \item Term, \hyperpage{49}, \hyperpage{51, 52}, \hyperpage{110}
   \item Totale Ordnung, \hyperpage{11}
-  \item Transformationsmatrix, \hyperpage{20}
-  \item Transformieren, \hyperpage{98}
-  \item Transponierte Matrix, \hyperpage{14}
-  \item Trigonometrische Funktion, \hyperpage{65}, \hyperpage{97}
-  \item Tripel, \hyperpage{30}
+  \item Transformationsmatrix, \hyperpage{21}
+  \item Transformieren, \hyperpage{99}
+  \item Transponierte Matrix, \hyperpage{16}
+  \item Trigonometrische Funktion, \hyperpage{66}, \hyperpage{98}
+  \item Tripel, \hyperpage{31}
 
   \indexspace
 
-  \item Umfang, \hyperpage{65}, \hyperpage{113}
-  \item Umformen, \hyperpage{96}, \hyperpage{100}
+  \item Umfang, \hyperpage{66}, \hyperpage{114}
+  \item Umformen, \hyperpage{97}, \hyperpage{101}
   \item Umkehrbar, \hyperpage{9}
-  \item Umkehrfunktion, \hyperpage{121}
-  \item Umstellen, \hyperpage{52}, \hyperpage{57}, \hyperpage{107}, 
-		\hyperpage{109}, \hyperpage{112}, \hyperpage{137}
-  \item Unbeschränkt, \hyperpage{121}
-  \item Unbestimmtes Integral, \hyperpage{115}
-  \item Uneigentliches Integral, \hyperpage{121}
-  \item Unendlich, \hyperpage{52}, \hyperpage{93, 94}, \hyperpage{103}
-  \item Unendlich erzeugt, \hyperpage{32}
-  \item Ungerade, \hyperpage{82}, \hyperpage{84}, \hyperpage{90}, 
-		\hyperpage{108}, \hyperpage{110}
-  \item Ungleichung, \hyperpage{52}, \hyperpage{54}, \hyperpage{79}
-  \item Unitärer Vektorraum, \hyperpage{33}
-  \item Universum, \hyperpage{5}, \hyperpage{126}
-  \item Unterraum, \hyperpage{31}
+  \item Umkehrfunktion, \hyperpage{122}
+  \item Umstellen, \hyperpage{53}, \hyperpage{58}, \hyperpage{108}, 
+		\hyperpage{110}, \hyperpage{113}, \hyperpage{139}
+  \item Unbeschränkt, \hyperpage{122}
+  \item Unbestimmtes Integral, \hyperpage{116}
+  \item Uneigentliches Integral, \hyperpage{122}
+  \item Unendlich, \hyperpage{53}, \hyperpage{94, 95}, \hyperpage{104}
+  \item Unendlich erzeugt, \hyperpage{33}
+  \item Ungerade, \hyperpage{83}, \hyperpage{85}, \hyperpage{91}, 
+		\hyperpage{109}, \hyperpage{111}
+  \item Ungleichung, \hyperpage{53}, \hyperpage{55}, \hyperpage{80}
+  \item Unitärer Vektorraum, \hyperpage{34}
+  \item Universum, \hyperpage{5}, \hyperpage{128}
+  \item Untere Schranke, \hyperpage{12}, \hyperpage{127}
+  \item Unterraum, \hyperpage{32}
 
   \indexspace
 
-  \item Variable, \hyperpage{97}
-  \item Varianz, \hyperpage{137, 138}
-  \item Variation, \hyperpage{127}
-  \item Vektor, \hyperpage{79}
-  \item Vektoraddition, \hyperpage{77}
-  \item Vektorprodukt, \hyperpage{70}
-  \item Vektorraum, \hyperpage{31}
-  \item Vereinfachen, \hyperpage{48}, \hyperpage{51}, \hyperpage{65}
+  \item Variable, \hyperpage{98}
+  \item Varianz, \hyperpage{139, 140}
+  \item Variation, \hyperpage{129}
+  \item Vektor, \hyperpage{80}
+  \item Vektoraddition, \hyperpage{78}
+  \item Vektorprodukt, \hyperpage{71}
+  \item Vektorraum, \hyperpage{32}
+  \item Vereinfachen, \hyperpage{49}, \hyperpage{52}, \hyperpage{66}
   \item Vereinigung, \hyperpage{5}
   \item Vergleichbar, \hyperpage{11}
-  \item Vergleichszeichen, \hyperpage{52}
-  \item Verkettung, \hyperpage{98}
-  \item Vielfachheit, \hyperpage{26}
-  \item Vollständige Induktion, \hyperpage{125}
-  \item Volumen, \hyperpage{66, 67}
-  \item Vorzeichen, \hyperpage{54}, \hyperpage{82}
+  \item Vergleichszeichen, \hyperpage{53}
+  \item Verkettung, \hyperpage{99}
+  \item Vielfachheit, \hyperpage{27}
+  \item Vollständige Induktion, \hyperpage{126}
+  \item Volumen, \hyperpage{67, 68}
+  \item Vorzeichen, \hyperpage{55}, \hyperpage{83}
 
   \indexspace
 
-  \item Wachsen, \hyperpage{80}
-  \item Wahrheitstafel, \hyperpage{123}
-  \item Wahrheitswert, \hyperpage{123}
-  \item Wendepunkt, \hyperpage{106}, \hyperpage{110}, \hyperpage{112}
-  \item Wendestelle, \hyperpage{111}
-  \item Wertetabelle, \hyperpage{82}, \hyperpage{120}, \hyperpage{136}
-  \item Widerspruch, \hyperpage{123}
-  \item Windschief, \hyperpage{75, 76}
-  \item Winkel, \hyperpage{65}, \hyperpage{83}
-  \item Winkelfunktion, \hyperpage{97}
+  \item Wachsen, \hyperpage{81}
+  \item Wahrheitstafel, \hyperpage{124}
+  \item Wahrheitswert, \hyperpage{124}
+  \item Wendepunkt, \hyperpage{107}, \hyperpage{111}, \hyperpage{113}
+  \item Wendestelle, \hyperpage{112}
+  \item Wertetabelle, \hyperpage{83}, \hyperpage{121}, \hyperpage{138}
+  \item Widerspruch, \hyperpage{124}
+  \item Windschief, \hyperpage{76, 77}
+  \item Winkel, \hyperpage{66}, \hyperpage{84}
+  \item Winkelfunktion, \hyperpage{98}
   \item Wohldefiniert, \hyperpage{6}
-  \item Wurzel, \hyperpage{84, 85}
-  \item Wurzelexponent, \hyperpage{84}
-  \item Wurzelfunktion, \hyperpage{84}
-  \item Wurzelgesetz, \hyperpage{47}
-  \item Wurzelgleichung, \hyperpage{84}, \hyperpage{86}
+  \item Wurzel, \hyperpage{85, 86}
+  \item Wurzelexponent, \hyperpage{85}
+  \item Wurzelfunktion, \hyperpage{85}
+  \item Wurzelgesetz, \hyperpage{48}
+  \item Wurzelgleichung, \hyperpage{85}, \hyperpage{87}
 
   \indexspace
 
-  \item Zeilenrang, \hyperpage{14}
+  \item Zeilenrang, \hyperpage{15}
   \item Zielbereich, \hyperpage{6}
-  \item Zufallsexperiment, \hyperpage{126}
-  \item Zufallsvariable, \hyperpage{135}
-  \item Zusammengesetzte Funktion, \hyperpage{106}
-  \item Zweite Ableitung, \hyperpage{102}
-  \item Zylinder, \hyperpage{66}
-  \item Zähler, \hyperpage{95}
+  \item Zufallsexperiment, \hyperpage{128}
+  \item Zufallsvariable, \hyperpage{137}
+  \item Zusammengesetzte Funktion, \hyperpage{107}
+  \item Zweite Ableitung, \hyperpage{103}
+  \item Zylinder, \hyperpage{67}
+  \item Zähler, \hyperpage{96}
 
   \indexspace
 
-  \item Äquivalenz, \hyperpage{123}
-  \item Äquivalenzklasse, \hyperpage{11}, \hyperpage{49}
-  \item Äquivalenzrelation, \hyperpage{11}, \hyperpage{49}
-  \item Äquivalenzumformung, \hyperpage{39}, \hyperpage{50}, 
-		\hyperpage{85}
-  \item Äußere Funktion, \hyperpage{98}
-  \item Äußere Verknüpfung, \hyperpage{31}
+  \item Äquivalenz, \hyperpage{124}
+  \item Äquivalenzklasse, \hyperpage{12}, \hyperpage{50}
+  \item Äquivalenzrelation, \hyperpage{11}, \hyperpage{50}
+  \item Äquivalenzumformung, \hyperpage{40}, \hyperpage{51}, 
+		\hyperpage{86}
+  \item Äußere Funktion, \hyperpage{99}
+  \item Äußere Verknüpfung, \hyperpage{32}
   \item Überabzählbar unendlich, \hyperpage{6}
-  \item Überprüfen, \hyperpage{85}, \hyperpage{88}
+  \item Überprüfen, \hyperpage{86}, \hyperpage{89}
 
 \end{theindex}

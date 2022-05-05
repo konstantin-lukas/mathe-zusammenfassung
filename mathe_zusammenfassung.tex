@@ -666,6 +666,82 @@
 			Für diese beiden Relationstypen gelten noch einige Besonderheiten:\newline\newline
 			\textbf{Ordnungsrelation}\newline
 			Wenn $aRb$ oder $bRa$ gilt, nennt man die Elemente $a$ und $b$ vergleichbar. Wenn alle Elemente miteinander vergleichbar\index{Vergleichbar} sind, dann spricht man von einer totalen Ordnung\index{Totale Ordnung}, andernfalls von einer partiellen Ordnung\index{Partielle Ordnung}. Als Tupel mit der Grundmenge $(A,R)$ sagt man auch geordnete Menge, wenn $R$ eine Ordnungsrelation ist.\newline\newline
+			Wenn man eine Halbordnung hat, wäre es aufgrund der Reflexivität und der Transitivität sehr mühsam alle Pfeile eines Digraphen einzuzeichnen. Deshalb lässt man, wenn klar ist, dass es sich um eine Halbordnung handelt, die transitiven und reflexiven Pfeile weg. Außerdem entfernt man noch die Pfeilspitzen und ordnet die Element so an, dass die unteren Elemente auf die darüber liegenden zeigen. Diese Vereinfachung nennt man Hasse Diagramm. Hier einmal eins für die Relationalstruktur $(\mathfrak{P}(\{1,2,3\}),\subseteq)$:
+			\begin{center}
+				\begin{tikzpicture}[node distance=3cm,on grid,auto] 
+				\node[circle,fill=black,inner sep=0pt,minimum size=10pt,label=below:{$\emptyset$}] (z1) {};
+				\node[circle,fill=black,inner sep=0pt,minimum size=10pt,label=below right:{$\{2\}$}] (z2) [above= 2cm of z1] {};
+				\node[circle,fill=black,inner sep=0pt,minimum size=10pt,label=left:{$\{1\}$}] (z3) [left= of z2] {};
+				\node[circle,fill=black,inner sep=0pt,minimum size=10pt,label=right:{$\{3\}$}] (z4) [right= of z2] {};
+				\node[circle,fill=black,inner sep=0pt,minimum size=10pt,label=above right:{$\{1,3\}$}] (z5) [above= 2cm of z2] {};
+				\node[circle,fill=black,inner sep=0pt,minimum size=10pt,label=left:{$\{1,2\}$}] (z6) [left= of z5] {};
+				\node[circle,fill=black,inner sep=0pt,minimum size=10pt,label=right:{$\{2,3\}$}] (z7) [right= of z5] {};
+				\node[circle,fill=black,inner sep=0pt,minimum size=10pt,label=above:{$\{1,2,3\}$}] (z8) [above= 2cm of z5] {};
+				\draw [black,line width=1pt] 
+				(z1) -- (z2)
+				(z1) -- (z3)
+				(z1) -- (z4)
+				(z2) -- (z6)
+				(z2) -- (z7)
+				(z2) -- (z7)
+				(z5) -- (z8)
+				(z6) -- (z8)
+				(z7) -- (z8)
+				(z3) -- (z5)
+				(z4) -- (z5)
+				(z3) -- (z6)
+				(z4) -- (z7)
+				;
+				\end{tikzpicture}
+			\end{center}
+			Wenn man eine Teilmenge $B\subseteq A$ und Elemente $b\in B$ und $a\in A$ betrachtet, sind folgende Begriffe wichtig, wenn es sich um eine Ordnung handelt:
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=0.25cm, enlarge bottom by=0.25cm]
+				\begin{multicols}{2}
+					\begin{flushleft}
+						\textbf{Minimal}
+						\begin{flalign*}
+						\forall b^{\prime}\in B:b^{\prime}Rb\Rightarrow b^{\prime}=b&&
+						\end{flalign*}
+						\textbf{Minimum (min B)}
+						\begin{flalign*}
+						\forall b^{\prime}\in B:bRb^{\prime}&&
+						\end{flalign*}
+						\textbf{Untere Schranken}
+						\begin{flalign*}
+						\forall b\in B:aRb&&
+						\end{flalign*}
+					\end{flushleft}
+					\begin{flushleft}
+						\textbf{Maximal}
+						\begin{flalign*}
+						\forall b^{\prime}\in B:bRb^{\prime}\Rightarrow b^{\prime}=b&&
+						\end{flalign*}
+						\textbf{Maximum (max B)}
+						\begin{flalign*}
+						\forall b^{\prime}\in B:b^{\prime}Rb&&
+						\end{flalign*}
+						\textbf{Obere Schranken}
+						\begin{flalign*}
+						\forall b\in B:bRa&&
+						\end{flalign*}
+					\end{flushleft}
+				\end{multicols}
+			\end{tcolorbox}
+			\index{Maximum}\index{Maximal}\index{Obere Schranke}\index{Infimum}\index{Minimal}\index{Untere Schranke}
+			\noindent Auf den ersten Blick würde man sagen, dass Maximum und maximal sowie Minimum und minimal gleichbedeutend sind. Dass das aber nicht der Fall ist für Ordnungen, sehen wir an einem Beispiel, wenn wir die Teilmenge $B=\{\{1,2\},\{1\},\{2\}\}$ der Grundmenge der obigen Ordnung betrachten.
+			\begin{center}
+				\bgroup
+				\def\arraystretch{1.5}
+				\begin{tabularx}{\linewidth}{|c|Y|Y|Y|Y|Y|Y|}
+					\hline
+					$B$ & min $B$ & max $B$ & maximal in $B$ & minimal in $B$ & untere Schranken & obere Schranken \\ \hline
+					$\{\{1,2\},\{1\},\{2\}\}$ & - & $\{1,2\}$ & $\{1,2\}$ & $\{1\},\{2\}$ & $\emptyset$ & $\{1,2\},\newline\{1,2,3\}$ \\ \hline
+				\end{tabularx}
+				\egroup
+			\end{center}
+			Übersetzt heißt das, dass maximale/minimale alle Elemente sind, die eben das sind. Maximum und Minimum sind die einzigen maximalen/minimalen Elemente. Gibt es da mehrere, haben wir auch kein Maximum/Minimum.\newline\newline
+			$B$ heißt beschränkt, wenn obere und untere Schranken existieren.\newline\newline
+			Besitzen die oberen/unteren Schranken ein größtes bzw. kleinstes Element, wird dieses auch als \textbf{Supremum} (größte untere Schranke) bzw. \textbf{Infimum} (kleinste obere Schranke) bezeichnet.
 			\textbf{Äquivalenzrelationen}\newline
 			Bei Äquivalenzrelationen kann man anstatt $aRb$ auch schreiben $a\sim b$. Außerdem lassen sich Äquivalenzrelationen in sogenannte Äquivalenzklassen\index{Äquivalenzklasse} einteilen. Eine Äquivalenzklasse ist eine Menge von Elementen, auf die ein beliebiger Wert abbildet. Richtig formal definiert heißt das:
 			\begin{flalign*}
@@ -5369,6 +5445,36 @@
 				\end{flalign*}
 				Wir sehen jetzt ganz klar, dass wir eine wahre Aussage haben. Jetzt haben wir gezeigt, dass unter der Voraussetzung, dass es ein $n$ gibt, dass die Aussage erfüllt, auch $n+1$ die Aussage erfüllt. Da wir am Anfang bewiesen haben, dass $n=1$ die Gleichung erfüllt, ist sie somit auch für $n=2$ erfüllt und wenn wir wissen, dass sie für $n=2$ erfüllt ist, ist sie auch für $n=3$ erfüllt und so weiter!\newline\newline
 				$q.e.d.$
+			\subsubsection{Supremum/Infimum beweisen}
+				Soll man das Supremum/Infimum einer Menge beweisen geht das in zwei Schritten. Zuerst zeigen wir, dass unser vermutetes Supremum/Infimum\index{Supremum}\index{Infimum} eine obere/untere Schranke\index{Obere Schranke}\index{Untere Schranke} für die Menge ist. Anschließend zeigt man, dass es kein Element gibt, dass größer bzw. kleiner als die gewählt Schranke ist.\lb
+				Betrachte das Beispiel: $M=\{5+\frac{2}{n}\mid \in\mathbb{N}\}$ und zeige das Supremum.\lb
+				Wir sehen natürlich, dass $7$ das Supremum ist. Wir können folgendermaßen zeigen, dass $7$ obere Schranke ist:
+				\begin{flalign*}
+					n\in\mathbb{N}\Rightarrow\;&n\ge 1\\
+					\Rightarrow\;&2n\ge 2\\
+					\Rightarrow\;&2\ge\frac{2}{n}\\
+					\Rightarrow\;&7\ge 5+\frac{2}{n}&&
+				\end{flalign*}
+				Damit muss $7$ obere Schranke sein, da alle Zahlen in der Menge kleiner gleich $7$ sind. Da die $7$ wegen $5+\frac{2}{1}$ auch in der Menge enthalten ist, muss sie das Supremum sein.\lb
+				Um jetzt weiter zu zeigen, dass $5$ untere Schranke ist, können etwas ganz ähnliches tun:
+				\begin{flalign*}
+					\forall n\in\mathbb{N}:0\le \frac{2}{n}\Rightarrow\;5\le 5+\frac{2}{n}\Rightarrow\;\forall x\in M:5\le x&&
+				\end{flalign*}
+				Um zu zeigen, dass $5$ das Infimum ist, kann man den Satz von Eudoxos benutzen.
+				\begin{center}
+					\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black]
+						\textbf{Satz von Eudoxos}\index{Satz des Eudoxos}\lb
+						$\forall x>0\;\exists n\in\mathbb{N}:\frac{1}{n}<x$
+					\end{tcolorbox}
+				\end{center}
+				Mithilfe dieser Aussage können wir jetzt einen Widerspruchsbeweis führen. Wir wollen zeigen, dass $5$ die größte untere Schranke ist. Also nehmen wir an, es gibt ein $t>5$, dass ebenfalls unterer Schranke ist.
+				\begin{flalign*}
+					t>5\Rightarrow\;&t-5>0\\
+					\Rightarrow\;&\frac{t-5}{2}>0\\
+					\stackrel{\text{Eudox.}}{\Rightarrow}\;&\frac{1}{n}<\frac{t-5}{2}\\
+					\Rightarrow\;&t>5+\frac{2}{n}&&
+				\end{flalign*}
+				Wäre $t$ untere Schranke, dann wären alle Elemente aus $M$ größer als $t$. Wir haben aber gezeigt, dass $5+\frac{2}{n}$ kleiner ist und da dieses in der Menge enthalten ist, kann $t$ keine untere Schranke sein.
 	\section{Stochastik}
 		Einem stochastischen Modell liegt zunächst die Grundmenge\index{Grundmenge} oder auch das Universum\index{Universum} $\Omega$ zu Grunde. Das ist eine Menge, die alle möglichen Ausgänge für das jeweilige Zufallsexperiment\index{Zufallsexperiment} beinhaltet. Für einen Würfelwurf wäre die Grundmenge bspw. $\Omega=\{1;2;3;4;5;6\}$. Die Elemente in $\Omega$ (groß Omega) werden mit $\omega$ (klein Omega) bezeichnet und heißen Ergebnisse\index{Ergebnis}. Jede Teilmenge von $\Omega$ wird als Ereignis\index{Ereignis} bezeichnet. Die Wahrscheinlichkeit eines Ereignisses wird mit einem $P$ für Probabilität angegeben: $P(\{\omega\})$. Wenn die Wahrscheinlichkeit aller Ergebnisse gleich ist und nur endliche viele mögliche Ergebnisse existieren, spricht man von einem Laplace-Experiment\index{Laplace-Experiment}.
 		\subsection{Kombinatorik}
@@ -5385,7 +5491,7 @@
 						\end{flalign*}
 				\end{tcolorbox}}
 				&
-				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.74cm,arc=0pt,auto outer arc,colback=white]
+				\adjustbox{valign=t}{\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=.5cm,right=.5cm, bottom=.74cm,arc=0pt,auto outer arc,colback=white,colframe=black]
 						\textbf{Binomialkoeffizient}
 						\begin{flalign*}
 						\genfrac{(}{)}{0pt}{}{n}{k}:=\frac{n!}{(n-k)!\cdot k!},&&\genfrac{(}{)}{0pt}{}{n}{0}=1&&

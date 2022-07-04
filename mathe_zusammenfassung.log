@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.24)  5 MAY 2022 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2022.5.28)  4 JUL 2022 11:53
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -1520,7 +1520,10 @@ ABD: EveryShipout initializing macros
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-)
+
+("C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg"
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
 \c@lstlisting=\count397
 
 ("C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty"
@@ -3365,10 +3368,10 @@ Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
 (rerunfilecheck)             Checksum: 84237A390D4542611F511F7D8C259D71;12330.
  ) 
 Here is how much of TeX's memory you used:
- 46491 strings out of 480790
- 1098960 string characters out of 2907040
+ 46495 strings out of 480790
+ 1099143 string characters out of 2907040
  1639546 words of memory out of 3000000
- 61040 multiletter control sequences out of 15000+200000
+ 61041 multiletter control sequences out of 15000+200000
  544108 words of font info for 71 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  66i,31n,103p,1479b,1322s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3392,7 +3395,7 @@ sy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program F
 iles/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mathe_zusammenfassung.pdf (145 pages, 1686386 bytes).
+Output written on mathe_zusammenfassung.pdf (145 pages, 1686407 bytes).
 PDF statistics:
  3725 PDF objects out of 4296 (max. 8388607)
  317 named destinations out of 1000 (max. 500000)

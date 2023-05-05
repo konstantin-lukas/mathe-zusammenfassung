@@ -158,9 +158,12 @@
 \contentsline {subsubsection}{\numberline {14.1.4}Variation ohne Wiederholung}{131}{subsubsection.14.1.4}%
 \contentsline {subsubsection}{\numberline {14.1.5}Kombination mit Wiederholung}{131}{subsubsection.14.1.5}%
 \contentsline {subsubsection}{\numberline {14.1.6}Kombination ohne Wiederholung}{132}{subsubsection.14.1.6}%
-\contentsline {subsection}{\numberline {14.2}Diskrete Wahrscheinlichkeitsverteilungen}{133}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.2}Wahrscheinlichkeitsverteilungen}{133}{subsection.14.2}%
 \contentsline {subsubsection}{\numberline {14.2.1}Binomialverteilung}{133}{subsubsection.14.2.1}%
 \contentsline {subsubsection}{\numberline {14.2.2}Hypergeometrische Verteilung}{133}{subsubsection.14.2.2}%
+\contentsline {subsubsection}{\numberline {14.2.3}Geometrische Verteilung}{134}{subsubsection.14.2.3}%
+\contentsline {subsubsection}{\numberline {14.2.4}Negative Binomialverteilung}{134}{subsubsection.14.2.4}%
+\contentsline {subsubsection}{\numberline {14.2.5}Poisson-Verteilung}{134}{subsubsection.14.2.5}%
 \contentsline {subsection}{\numberline {14.3}Bedingte Wahrscheinlichkeit}{134}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4}Diskrete Zufallsvariablen}{137}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.4}Diskrete Zufallsvariablen}{138}{subsection.14.4}%
 \contentsline {subsubsection}{\numberline {14.4.1}Erwartungswert, Varianz und Standardabweichung}{138}{subsubsection.14.4.1}%

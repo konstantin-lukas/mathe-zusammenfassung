@@ -5681,10 +5681,9 @@
 				\genfrac{(}{)}{0pt}{}{52}{2}=\frac{52!}{(52-2)!\cdot 2!}=1326&&
 				\end{flalign*}
 				Erklärung: Es sollen 2 aus 52 Personen ausgesucht werden, wobei die Reihenfolge keine Rolle spielt, da beide dieselbe Art von Stelle antreten sollen. Es ist also egal, wer Software-Entwickler Nummer 1 und wer Software-Entwickler Nummer 2 wird.
-		\subsection{Diskrete Wahrscheinlichkeitsverteilungen}
-			Mithilfe der Binomialverteilung\index{Binomialverteilung} und der hypergeometrischen Verteilung\index{Hypergeometrische Verteilung} kann man die Wahrscheinlichkeit ermitteln, bei mehrfacher Durchführung eines Experimentes das gleiche Ergebnis eine bestimmte Anzahl von Malen zu erhalten. Dabei nutzt man die Binomialverteilung für Experimente mit Zurücklegen und die hypergeometrische Verteilung für Experimente ohne.
+		\subsection{Wahrscheinlichkeitsverteilungen}
 			\subsubsection{Binomialverteilung}
-				Mithilfe der Binomialverteilung ermittelt man die Wahrscheinlichkeit, ein Ergebnis mit der Wahrscheinlichkeit $p$ bei $n$ Durchführungen eines Zufallsexperimentes mit Zurücklegen genau $k$-mal zu erhalten. Alle Wahrscheinlichkeiten addiert, ergeben am Ende wieder 1.
+				Mithilfe der Binomialverteilung\index{Binomialverteilung} ermittelt man die Wahrscheinlichkeit, ein Ergebnis mit der Wahrscheinlichkeit $p$ bei $n$ Durchführungen eines Zufallsexperimentes genau $k$-mal zu erhalten. Alle Wahrscheinlichkeiten addiert, ergeben am Ende wieder 1.
 				\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
 					\begin{tcolorbox}[boxsep=0pt,top=0cm,left=.5cm,right=.5cm, bottom=.45cm,arc=0pt,auto outer arc,colback=white,colframe=gray]
 						\begin{flalign*}
@@ -5762,6 +5761,28 @@
 					\end{tikzpicture}
 				\end{flushleft}
 			\end{tcolorbox}
+			\subsubsection{Geometrische Verteilung}
+			Die geometrische Verteilung\index{Geometrische Verteilung} ist die Wahrscheinlichkeit dafür genau $i$ Schritte zu brauchen, um den ersten Treffer für ein Ereignis mit Wahrscheinlichkeit $p$ zu erlangen.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+				\begin{flalign*}
+					P(X=i)=p(1-p)^{i-1}
+				\end{flalign*}
+			\end{tcolorbox}
+			\subsubsection{Negative Binomialverteilung}
+				Die negative Binomialverteilung\index{Negative Binomialverteilung} gibt die Wahrscheinlichkeit an, genau $m+k$ ausführungen zu brauchen, um erstmals $m$ Treffer bei einem Ereignis mit Wahrscheinlichkeit $p$ zu landen.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+			\begin{flalign*}
+				P(X=m+k)=\binom{m+k-1}{m-1}p^m(1-p)^k
+			\end{flalign*}
+			\end{tcolorbox}
+			\subsubsection{Poisson-Verteilung}
+				Bei der Poisson-Verteilung\index{Poisson-Verteilung}, sind unsere Elementarereignisse Zahlen. Sie beschreibt die Wahrscheinlichkeit, dass die Zufallsvariable die Zahl $i$ annimmt in Abhängigkeit einer mittleren Rate $\lambda$. Die mittlere Rate ist oft der Erwartungswert der Variable.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+			\begin{flalign*}
+				P(X=i)=\frac{\lambda^i}{i!}e^{-\lambda},\hspace{2em}\lambda>0
+			\end{flalign*}
+			\end{tcolorbox}
+			\noindent Wir können die Poisson-Verteilung auch benutzen, um eine Näherung für die Binomialverteilung zu erhalten, wenn wir eine sehr große Menge an Elementen betrachten, da die Poisson-Verteilung unabhängig von der Anzahl der Elemente ist.
 		\subsection{Bedingte Wahrscheinlichkeit}
 			Wir stellen uns vor, wir haben eine Grundmenge\index{Grundmenge} \includegraphics[scale=0.05]{images/busts-in-silhouette_1f465.png} von Menschen. 20\% der Leute in dieser Gruppe haben ein Auslandsjahr in einem französischsprachigen Land absolviert. Diese Teilmenge nennen wir \includegraphics[scale=0.075]{images/luggage_1f9f3.png}. Außerdem ordnen wir alle Menschen, die Französisch sprechen in der Gruppe \includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}, sodass wir zwei Teilmengen von \includegraphics[scale=0.05]{images/busts-in-silhouette_1f465.png} haben. Wir wissen weiterhin, dass ein Mensch aus der Teilgruppe \includegraphics[scale=0.075]{images/luggage_1f9f3.png} mit einer Wahrscheinlichkeit von 70\% Französisch spricht. Die Menschen, die kein Auslandsjahr gemacht haben und damit nicht in der Gruppe \includegraphics[scale=0.075]{images/luggage_1f9f3.png} sind, sprechen mit einer Wahrscheinlichkeit von 25\% Französisch.\vspace{1em}
 			\begin{center}

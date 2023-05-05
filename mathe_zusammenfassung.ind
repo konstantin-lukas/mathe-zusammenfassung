@@ -156,6 +156,7 @@
   \item Gegenvektor, \hyperpage{69}
   \item Gekürzt, \hyperpage{49}
   \item Geometrie, \hyperpage{98}
+  \item Geometrische Verteilung, \hyperpage{134}
   \item Geometrische Vielfachheit, \hyperpage{27}
   \item Gerade, \hyperpage{83}, \hyperpage{85}, \hyperpage{91}, 
 		\hyperpage{109}
@@ -317,6 +318,7 @@
   \item Negativ, \hyperpage{55}, \hyperpage{89}
   \item Negativ Definit, \hyperpage{21}
   \item Negativ Semidefinit, \hyperpage{21}
+  \item Negative Binomialverteilung, \hyperpage{134}
   \item Nenner, \hyperpage{55}, \hyperpage{95, 96}
   \item Neutrales Element, \hyperpage{29}
   \item Newtonverfahren, \hyperpage{83}
@@ -363,6 +365,7 @@
   \item Permutation, \hyperpage{128}
   \item Permutationsmatrix, \hyperpage{20}
   \item Pfeilklasse, \hyperpage{69}
+  \item Poisson-Verteilung, \hyperpage{134}
   \item Polarform, \hyperpage{41}
   \item Polynom, \hyperpage{90, 91}, \hyperpage{93--95}
   \item Polynomdivision, \hyperpage{83}, \hyperpage{93}
@@ -541,7 +544,7 @@
   \item Wahrheitswert, \hyperpage{124}
   \item Wendepunkt, \hyperpage{107}, \hyperpage{111}, \hyperpage{113}
   \item Wendestelle, \hyperpage{112}
-  \item Wertetabelle, \hyperpage{83}, \hyperpage{121}, \hyperpage{138}
+  \item Wertetabelle, \hyperpage{83}, \hyperpage{121}, \hyperpage{139}
   \item Widerspruch, \hyperpage{124}
   \item Windschief, \hyperpage{76, 77}
   \item Winkel, \hyperpage{66}, \hyperpage{84}
@@ -558,7 +561,7 @@
   \item Zeilenrang, \hyperpage{15}
   \item Zielbereich, \hyperpage{6}
   \item Zufallsexperiment, \hyperpage{128}
-  \item Zufallsvariable, \hyperpage{137}
+  \item Zufallsvariable, \hyperpage{138}
   \item Zusammengesetzte Funktion, \hyperpage{107}
   \item Zweite Ableitung, \hyperpage{103}
   \item Zylinder, \hyperpage{67}

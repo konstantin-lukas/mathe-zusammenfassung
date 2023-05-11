@@ -5681,7 +5681,127 @@
 				\genfrac{(}{)}{0pt}{}{52}{2}=\frac{52!}{(52-2)!\cdot 2!}=1326&&
 				\end{flalign*}
 				Erklärung: Es sollen 2 aus 52 Personen ausgesucht werden, wobei die Reihenfolge keine Rolle spielt, da beide dieselbe Art von Stelle antreten sollen. Es ist also egal, wer Software-Entwickler Nummer 1 und wer Software-Entwickler Nummer 2 wird.
-		\subsection{Wahrscheinlichkeitsverteilungen}
+				
+			\subsection{Diskrete Zufallsvariablen}
+			Bei Zufallsexperimenten haben wir i.d.R. eine Grundmenge $\Omega$ mit den möglichen Ergebnissen. Für einen Münzwurf z.B.: $\Omega=\{\text{Kopf},\text{Zahl}\}$. Wenn wir diesen Ergebnissen jetzt Werte zuordnen sprechen wir von einer Zufallsvariable\index{Zufallsvariable}, da diese einen Wert annimmt, der auf dem zufälligen Ausgang des Experimentes basiert. Man könnte beispielsweise sagen, bei Kopf bekommt man fünf Euro und bei Zahl verliert man fünf Euro.
+			\begin{flalign*}
+				X(\omega)=\genfrac{\{}{.}{0pt}{}{5\text{, wenn }\omega=\text{Kopf}}{-5\text{, wenn }\omega=\text{Zahl}}&&
+			\end{flalign*}
+			Eine Zufallsvariable ist eine \highlight{subsec:abbildungen}{Abbildung}, die jedem Wert aus der Grundmenge genau einen Wert aus den reellen Zahlen zuordnet. Dabei unterscheidet man zwischen diskreten und stetigen Zufallsvariablen\index{Stetig}\index{Diskret}. Diskret ist ein Zufallsvariable, wenn sie eine abzählbare Menge an Werten annehmen kann, z.B. $X:=\text{»Gewürfelte Augenzahl«}$. Stetig ist sie, wenn sie eine nicht abzählbare Menge von Werten haben kann, z.B. $X:=\text{»Körpergewicht einer beliebigen Person«}$. Dabei können reelle Zahlen mit theoretisch uneingeschränkt vielen Nachkommastellen entstehen.
+			\subsubsection{Erwartungswert, Varianz und Standardabweichung}
+			Stellen wir uns vor, wir haben das unten gezeichnete Glücksrad mit den entsprechenden Wahrscheinlichkeiten und Gewinnen und gehen davon aus, dass man 5 Euro Einsatz bezahlen muss, um zu drehen. Wir wollen jetzt wissen, ob dieses Spiel fair ist oder nicht. Dazu berechnet man den Erwartungswert\index{Erwartungswert}. Er beschreibt die Zahl, die die Zufallsvariable im Mittel annimmt. Man kann ihn sich auch als Mittelwert einer Zufallsvariable vorstellen. Das bedeutet, dass wenn der Erwartungswert genau Null ist, ein für beide Seiten faires Spiel vorliegt. Ansonsten macht die eine Seite Gewinn und die andere Verlust.
+			\begin{center}
+				\begin{tikzpicture}
+					\pie[
+					color = {
+						yellow,green!80!black,teal,green!80!black,teal,green!80!black,teal,green!80!black,teal,green!80!black}
+					]{10/15 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro}
+				\end{tikzpicture}
+			\end{center}
+			Den Erwartungswert\index{Erwartungswert} berechnet man, indem man jeden Wert der Zufallsvariable mit ihrer Wahrscheinlichkeit multipliziert und anschließend alles zusammenrechnet.
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=gray, enlarge top by=.5cm, enlarge bottom by=.5cm]
+				\textbf{Erwartungswert}
+				\begin{flalign*}
+					E(x)=\sum^n_{i=1}x_i\cdot P(X=x_i)\text{ auch mit }\mu\text{ bezeichnet}&&
+				\end{flalign*}
+				\textbf{Erwartungswert einer Binomialverteilung}
+				\begin{flalign*}
+					E(x)=np&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Dieser Sachverhalt lässt sich auch sehr gut in einer Wertetabelle\index{Wertetabelle} darstellen.
+			\begin{center}
+				\bgroup
+				\def\arraystretch{1.5}
+				\begin{tabularx}{\linewidth}{|l|@{\hspace{0.5cm}}|X|X|X|}
+					\hline
+					$x_i$ & $-4$ & $-3$ & $+10$ \\ \hline
+					$P(X=x_i)$ & $\frac{1}{2}$ & $\frac{2}{5}$ & $\frac{1}{10}$ \\ \hline
+				\end{tabularx}
+				\egroup
+			\end{center}
+			\begin{flalign*}
+				E(X)=\sum^3_{i=1}x_i\cdot P(X=x_i)=-4\cdot\frac{1}{2}-3\cdot\frac{2}{5}+10\cdot\frac{1}{10}=\dunderline{-2,2}&&
+			\end{flalign*}
+			Damit ist das Spiel nicht fair und man muss davon ausgehen, als Spieler Geld zu verlieren. Wenn man das Spiel fair machen will, muss man die obige Formel mit Null gleichsetzen und dann einen beliebigen Wert durch eine Variable ersetzen. Durch Umstellen\index{Umstellen} findet man dann eine Lösung, um das Spiel fair zu machen.
+			\begin{flalign*}
+				&-4\cdot\frac{1}{2}-3\cdot\frac{2}{5}+\frac{1}{10}x=0\\
+				\Leftrightarrow\;&\frac{1}{10}x=3,2\\
+				\Leftrightarrow\;&x=32&&
+			\end{flalign*}
+			Das Spiel wäre z.B. fair, wenn der Gewinn auf dem gelben Feld 37 Euro betragen würde. Hinweis: Als Wert haben wir zwar 32 bekommen, aber man darf nicht vergessen die 5 Euro Einsatz wieder drauf zu rechnen.\newline\newline
+			Wenn man den Erwartungswert errechnet hat, kann man auch die Varianz\index{Varianz} und die Standardabweichung\index{Standardabweichung} errechnen. Varianz\index{Varianz} und Standardabweichung\index{Standardabweichung} geben an, wie Groß die durchschnittliche Entfernung bzw. die Streuung\index{Streuung} vom Mittelwert\index{Mittelwert} ist. Zur Erinnerung: Der Mittelwert errechnet sich, indem man alle Werte addiert und durch die Anzahl aller Werte teilt und wird als $\bar{x}$ geschrieben. Für diskrete Zufallsvariablen unterscheidet sich die Rechnung ein wenig: Man rechnet hier mit dem Erwartungswert und der Wahrscheinlichkeit, da man keine Daten aus einer eigentlichen Ausführung des Experimentes hat.
+			\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=gray, enlarge top by=.5cm, enlarge bottom by=.5cm]
+				\textbf{Varianz einer Zufallsvariable}
+				\begin{flalign*}
+					V(X)=\sum^n_{i=1}(x_i-E(X))^2\cdot P(X=x_i)\text{ auch mit }\sigma^2\text{ bezeichnet}&&
+				\end{flalign*}
+				\textbf{Varianz einer Binomialverteilung}
+				\begin{flalign*}
+					V(X)=np(1-p)&&
+				\end{flalign*}
+				\textbf{Standardabweichung einer Zufallsvariable}
+				\begin{flalign*}
+					S(X)=\sqrt{V(X)}\text{ auch mit }\sigma\text{ bezeichnet}&&
+				\end{flalign*}
+			\end{tcolorbox}
+			\noindent Wenn wir diese Werte jetzt für unser Beispiel oben ausrechnen, erhalten wir Folgendes:
+			\begin{flalign*}
+				V(X)&=\sum^3_{i=1}(x_i-E(X))^2\cdot P(X=x_i)\\
+				&=(-4-(-2,2))^2\cdot\frac{1}{2}+(-3-(-2,2))^2\cdot\frac{2}{5}+(10-(-2,2))^2\cdot\frac{1}{10}\\
+				&=\dunderline{16,76}\\
+				S(X)&=\dunderline{\sqrt{16,76}}&&
+			\end{flalign*}
+			Das bedeutet, dass Ergebnisse der Zufallsvariable im Schnitt ungefähr 4 vom Erwartungswert entfernt wären, wenn man das Experiment ausführen würde. Was ist der Unterschied zwischen Varianz und Standardabweichung? Meistens errechnet man die Varianz nur, um die Standardabweichung zu kriegen. Da die Varianz\index{Varianz} immer eine quadratische Einheit beschreibt, ist es oft nicht möglich, sie mit dem Erwartungswert zu vergleichen. Wichtig zu verstehen ist nur, dass je kleiner Varianz\index{Varianz} und Standardabweichung\index{Standardabweichung} sind, desto besser beschreibt der Erwartungswert das Experiment. Hier einmal Varianz und Standardabweichung für einen sechsseitigen Würfel:
+			\begin{center}
+				\begin{tikzpicture}
+					\begin{axis}[
+						width=17cm,
+						height=5cm,
+						xmin=0, xmax=7,
+						ymin=0, ymax=0.3,
+						axis y line=center,
+						axis x line=middle,
+						ticklabel style={fill=white},
+						minor tick num=0,
+						area style,
+						xtick = {0,1,2,3,4,5,6,7},
+						xticklabels={0,1,2,3,4,5,6},
+						axis y line=middle,
+						axis x line=bottom
+						]
+						\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(0.7,1/6) (1.3,1/6)};
+						\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(1.7,1/6) (2.3,1/6)};
+						\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(2.7,1/6) (3.3,1/6)};
+						\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(3.7,1/6) (4.3,1/6)};
+						\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(4.7,1/6) (5.3,1/6)};
+						\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(5.7,1/6) (6.3,1/6)};
+						\addplot [dashed, thick, red] coordinates { (3.5,0) (3.5,0.3) };
+						\addplot [-stealth, thick, red] coordinates { (3.5,0.25) (1.792,0.25) };
+						\addplot [dashed, thick, red] coordinates { (1.792,0) (1.792,0.3) };
+						\addplot [-stealth, thick, red] coordinates { (3.5,0.25) (5.208,0.25) };
+						\addplot [dashed, thick, red] coordinates { (5.208,0) (5.208,0.3) };
+						\node [color=red, anchor=west] at (axis cs:3.5,0.2) {$E(X)=3,5$};
+						\node [color=red, anchor=east] at (axis cs:3.5,0.27) {$S(X)\approx1,71$};
+					\end{axis}
+				\end{tikzpicture}
+			\end{center}
+			\subsection{Wahrscheinlichkeits-, Verteilungs-, und Dichtefunktion}
+				Eine Wahrscheinlichkeitsfunktion (auch Wahrscheinlichkeitsmassenfunktion genannt) ist eine mathematische Funktion, die die Wahrscheinlichkeiten angibt, mit denen eine diskrete Zufallsvariable bestimmte Werte annimmt. Diese Funktion ordnet jedem möglichen Wert der Zufallsvariable eine Wahrscheinlichkeit zu, und die Summe aller Wahrscheinlichkeiten ergibt 1. Die Wahrscheinlichkeitsfunktion wird oft durch eine Tabelle oder eine Formel dargestellt. Es gibt viele verschiedene Funktionen. Allgemein gilt:
+				\begin{flalign*}
+					f(x_i)=p_i&&
+				\end{flalign*}
+				Eine Verteilungsfunktion (auch kumulative Verteilungsfunktion genannt) ist eine mathematische Funktion, die die Wahrscheinlichkeit angibt, dass eine Zufallsvariable einen bestimmten Wert oder einen kleineren Wert annimmt. Anders als die Wahrscheinlichkeitsfunktion ist die Verteilungsfunktion bei stetigen Zufallsvariablen definiert und gibt die kumulative Verteilungsfunktion an. Die Verteilungsfunktion steigt monoton an und nimmt Werte zwischen 0 und 1 an. Die Wahrscheinlichkeit, dass die Zufallsvariable einen Wert zwischen zwei bestimmten Werten annimmt, kann durch Differenzieren der Verteilungsfunktion berechnet werden. Für diskrete Zufallsvariablen mit einer Wahrscheinlichkeitsfunktion kann die Verteilungsfunktion durch die kumulative Summe der Wahrscheinlichkeiten berechnet werden. Das heißt, um die Verteilungsfunktion F(x) zu berechnen, wird die Wahrscheinlichkeitsfunktion p(x) für alle Werte kleiner oder gleich x aufsummiert. Für stetige Zufallsvariablen mit einer Dichtefunktion wird die Verteilungsfunktion durch Integration der Dichtefunktion berechnet. Das heißt, um die Verteilungsfunktion F(x) zu berechnen, wird die Dichtefunktion f(x) für alle Werte kleiner oder gleich x integriert.
+				\begin{flalign*}
+					F_X(x):=P(X\le x)=P_X((-\infty,x])&&
+				\end{flalign*}
+				Eine Dichtefunktion (auch Wahrscheinlichkeitsdichtefunktion genannt) ist eine mathematische Funktion, die die Wahrscheinlichkeitsverteilung einer stetigen (also nicht einfach nur diskreten) Zufallsvariable beschreibt. Im Gegensatz zur Wahrscheinlichkeitsfunktion bei diskreten Zufallsvariablen gibt die Dichtefunktion an, wie wahrscheinlich es ist, dass die Zufallsvariable einen bestimmten Wert annimmt, indem sie die Steigung der Funktion an diesem Wert angibt. Die Fläche unter der Dichtefunktion zwischen zwei Werten gibt die Wahrscheinlichkeit an, dass die Zufallsvariable einen Wert innerhalb dieses Intervalls annimmt.
+				\begin{flalign*}
+					P(X\le x)=F(x)=\int_{-\infty}^{x}f(t)dt&&
+				\end{flalign*}
+				Die Dichtefunktion ist die Ableitung der Verteilungsfunktion bzw. die Verteilungsfunktion ist die Dichtefunktion integriert. Die Dichtefunktion ist immer größer gleich 0 und für einen einzigen Punkt (Intervall $(a,a)$) immer 0. Deswegen gilt auch $P(X\le x)=P(X<x)$.
+				
+		\subsection{Diskrete Wahrscheinlichkeitsverteilungen}
 			\subsubsection{Binomialverteilung}
 				Mithilfe der Binomialverteilung\index{Binomialverteilung} ermittelt man die Wahrscheinlichkeit, ein Ergebnis mit der Wahrscheinlichkeit $p$ bei $n$ Durchführungen eines Zufallsexperimentes genau $k$-mal zu erhalten. Alle Wahrscheinlichkeiten addiert, ergeben am Ende wieder 1.
 				\begin{tcolorbox}[boxsep=0pt,top=.5cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
@@ -5783,6 +5903,24 @@
 			\end{flalign*}
 			\end{tcolorbox}
 			\noindent Wir können die Poisson-Verteilung auch benutzen, um eine Näherung für die Binomialverteilung zu erhalten, wenn wir eine sehr große Menge an Elementen betrachten, da die Poisson-Verteilung unabhängig von der Anzahl der Elemente ist.
+			\subsubsection{Zipf-Verteilung}
+			Bei der Zipf-Verteilung ordnen wir Wörtern entsprechend ihrer Häufigkeit einen Rang zu. Die Wahrscheinlichkeit eines Wortes ist dann ungefähr das Inverse seines Ranges.
+			\begin{tcolorbox}[boxsep=0pt,top=0cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+				\begin{flalign*}
+					P(X=k)=\frac{1}{c}\cdot k^{-s},\hspace{2em}s>1,\hspace{2em}c=\sum^\infty_{k=1}\frac{1}{k^s}
+				\end{flalign*}
+			\end{tcolorbox}
+		\subsubsection{Multinomiale Wahrscheinlichkeit}\index{Multinomiale Wahrscheinlichkeit}
+		Wenn wir ein Experiment $n$ mal wiederholen und dabei $l$ Ereignisse haben, z.B. $n$ Ziehungen von Losen und $l$ Losfarben, dann ist $B_{n_1,n_2,\dots,n_l}$ das Ereignis, dass die Ereignisse $A_1$ $n_1-mal$, $A_2$ $n_2-mal$, \dots, und $A_l$ $n_l-mal$ eintreten. Die Wahrscheinlichkeit dafür berechnen wir mit dieser Formel:
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+			\begin{flalign*}
+				P(B_{n_1,n_2,\dots,n_l})=\frac{n!}{n_1!\cdot n_2!\cdot\dots\cdot n_l!}\cdot p^{n_1}_1\cdot p^{n_2}_2\cdot\dots\cdot p^{n_l}_l
+			\end{flalign*}
+		\end{tcolorbox}
+		\noindent Dabei sind $p_i$ die Wahrscheinlichkeiten für die Ereignisse $A_i$.
+		\subsection{Diskrete Wahrscheinlichkeitsverteilungen}
+		\subsubsection{Gleichverteilung}
+		\subsubsection{Exponentialverteilung}
 		\subsection{Bedingte Wahrscheinlichkeit}
 			Wir stellen uns vor, wir haben eine Grundmenge\index{Grundmenge} \includegraphics[scale=0.05]{images/busts-in-silhouette_1f465.png} von Menschen. 20\% der Leute in dieser Gruppe haben ein Auslandsjahr in einem französischsprachigen Land absolviert. Diese Teilmenge nennen wir \includegraphics[scale=0.075]{images/luggage_1f9f3.png}. Außerdem ordnen wir alle Menschen, die Französisch sprechen in der Gruppe \includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}, sodass wir zwei Teilmengen von \includegraphics[scale=0.05]{images/busts-in-silhouette_1f465.png} haben. Wir wissen weiterhin, dass ein Mensch aus der Teilgruppe \includegraphics[scale=0.075]{images/luggage_1f9f3.png} mit einer Wahrscheinlichkeit von 70\% Französisch spricht. Die Menschen, die kein Auslandsjahr gemacht haben und damit nicht in der Gruppe \includegraphics[scale=0.075]{images/luggage_1f9f3.png} sind, sprechen mit einer Wahrscheinlichkeit von 25\% Französisch.\vspace{1em}
 			\begin{center}
@@ -5884,110 +6022,7 @@
 				\textbf{Zweiter Test}
 				\maketree{\Omega}{B}{+}{0,09}{0,91}{0,99}{0,01}{0,01}{0,99}
 			\end{tcolorbox}
-		\subsection{Diskrete Zufallsvariablen}
-			Bei Zufallsexperimenten haben wir i.d.R. eine Grundmenge $\Omega$ mit den möglichen Ergebnissen. Für einen Münzwurf z.B.: $\Omega=\{\text{Kopf},\text{Zahl}\}$. Wenn wir diesen Ergebnissen jetzt Werte zuordnen sprechen wir von einer Zufallsvariable\index{Zufallsvariable}, da diese einen Wert annimmt, der auf dem zufälligen Ausgang des Experimentes basiert. Man könnte beispielsweise sagen, bei Kopf bekommt man fünf Euro und bei Zahl verliert man fünf Euro.
-			\begin{flalign*}
-				X(\omega)=\genfrac{\{}{.}{0pt}{}{5\text{, wenn }\omega=\text{Kopf}}{-5\text{, wenn }\omega=\text{Zahl}}&&
-			\end{flalign*}
-			Eine Zufallsvariable ist eine \highlight{subsec:abbildungen}{Abbildung}, die jedem Wert aus der Grundmenge genau einen Wert aus den reellen Zahlen zuordnet. Dabei unterscheidet man zwischen diskreten und stetigen Zufallsvariablen\index{Stetig}\index{Diskret}. Diskret ist ein Zufallsvariable, wenn sie eine abzählbare Menge an Werten annehmen kann, z.B. $X:=\text{»Gewürfelte Augenzahl«}$. Stetig ist sie, wenn sie eine nicht abzählbare Menge von Werten haben kann, z.B. $X:=\text{»Körpergewicht einer beliebigen Person«}$. Dabei können reelle Zahlen mit theoretisch uneingeschränkt vielen Nachkommastellen entstehen.
-			\subsubsection{Erwartungswert, Varianz und Standardabweichung}
-				Stellen wir uns vor, wir haben das unten gezeichnete Glücksrad mit den entsprechenden Wahrscheinlichkeiten und Gewinnen und gehen davon aus, dass man 5 Euro Einsatz bezahlen muss, um zu drehen. Wir wollen jetzt wissen, ob dieses Spiel fair ist oder nicht. Dazu berechnet man den Erwartungswert\index{Erwartungswert}. Er beschreibt die Zahl, die die Zufallsvariable im Mittel annimmt. Man kann ihn sich auch als Mittelwert einer Zufallsvariable vorstellen. Das bedeutet, dass wenn der Erwartungswert genau Null ist, ein für beide Seiten faires Spiel vorliegt. Ansonsten macht die eine Seite Gewinn und die andere Verlust.
-				\begin{center}
-					\begin{tikzpicture}
-					\pie[
-					color = {
-						yellow,green!80!black,teal,green!80!black,teal,green!80!black,teal,green!80!black,teal,green!80!black}
-					]{10/15 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro,10/2 Euro,10/1 Euro}
-					\end{tikzpicture}
-				\end{center}
-				Den Erwartungswert\index{Erwartungswert} berechnet man, indem man jeden Wert der Zufallsvariable mit ihrer Wahrscheinlichkeit multipliziert und anschließend alles zusammenrechnet.
-				\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=gray, enlarge top by=.5cm, enlarge bottom by=.5cm]
-					\textbf{Erwartungswert}
-					\begin{flalign*}
-						E(x)=\sum^n_{i=1}x_i\cdot P(X=x_i)\text{ auch mit }\mu\text{ bezeichnet}&&
-					\end{flalign*}
-					\textbf{Erwartungswert einer Binomialverteilung}
-					\begin{flalign*}
-					E(x)=np&&
-					\end{flalign*}
-				\end{tcolorbox}
-				\noindent Dieser Sachverhalt lässt sich auch sehr gut in einer Wertetabelle\index{Wertetabelle} darstellen.
-				\begin{center}
-					\bgroup
-					\def\arraystretch{1.5}
-					\begin{tabularx}{\linewidth}{|l|@{\hspace{0.5cm}}|X|X|X|}
-						\hline
-						$x_i$ & $-4$ & $-3$ & $+10$ \\ \hline
-						$P(X=x_i)$ & $\frac{1}{2}$ & $\frac{2}{5}$ & $\frac{1}{10}$ \\ \hline
-					\end{tabularx}
-					\egroup
-				\end{center}
-				\begin{flalign*}
-					E(X)=\sum^3_{i=1}x_i\cdot P(X=x_i)=-4\cdot\frac{1}{2}-3\cdot\frac{2}{5}+10\cdot\frac{1}{10}=\dunderline{-2,2}&&
-				\end{flalign*}
-				Damit ist das Spiel nicht fair und man muss davon ausgehen, als Spieler Geld zu verlieren. Wenn man das Spiel fair machen will, muss man die obige Formel mit Null gleichsetzen und dann einen beliebigen Wert durch eine Variable ersetzen. Durch Umstellen\index{Umstellen} findet man dann eine Lösung, um das Spiel fair zu machen.
-				\begin{flalign*}
-					&-4\cdot\frac{1}{2}-3\cdot\frac{2}{5}+\frac{1}{10}x=0\\
-					\Leftrightarrow\;&\frac{1}{10}x=3,2\\
-					\Leftrightarrow\;&x=32&&
-				\end{flalign*}
-				Das Spiel wäre z.B. fair, wenn der Gewinn auf dem gelben Feld 37 Euro betragen würde. Hinweis: Als Wert haben wir zwar 32 bekommen, aber man darf nicht vergessen die 5 Euro Einsatz wieder drauf zu rechnen.\newline\newline
-				Wenn man den Erwartungswert errechnet hat, kann man auch die Varianz\index{Varianz} und die Standardabweichung\index{Standardabweichung} errechnen. Varianz\index{Varianz} und Standardabweichung\index{Standardabweichung} geben an, wie Groß die durchschnittliche Entfernung bzw. die Streuung\index{Streuung} vom Mittelwert\index{Mittelwert} ist. Zur Erinnerung: Der Mittelwert errechnet sich, indem man alle Werte addiert und durch die Anzahl aller Werte teilt und wird als $\bar{x}$ geschrieben. Für diskrete Zufallsvariablen unterscheidet sich die Rechnung ein wenig: Man rechnet hier mit dem Erwartungswert und der Wahrscheinlichkeit, da man keine Daten aus einer eigentlichen Ausführung des Experimentes hat.
-				\begin{tcolorbox}[boxsep=0pt,top=.75cm,left=.75cm,right=.75cm, bottom=.75cm,arc=0pt,auto outer arc,colback=white,colframe=gray, enlarge top by=.5cm, enlarge bottom by=.5cm]
-					\textbf{Varianz einer Zufallsvariable}
-					\begin{flalign*}
-					V(X)=\sum^n_{i=1}(x_i-E(X))^2\cdot P(X=x_i)\text{ auch mit }\sigma^2\text{ bezeichnet}&&
-					\end{flalign*}
-					\textbf{Varianz einer Binomialverteilung}
-					\begin{flalign*}
-					V(X)=np(1-p)&&
-					\end{flalign*}
-					\textbf{Standardabweichung einer Zufallsvariable}
-					\begin{flalign*}
-					S(X)=\sqrt{V(X)}\text{ auch mit }\sigma\text{ bezeichnet}&&
-					\end{flalign*}
-				\end{tcolorbox}
-				\noindent Wenn wir diese Werte jetzt für unser Beispiel oben ausrechnen, erhalten wir Folgendes:
-				\begin{flalign*}
-					V(X)&=\sum^3_{i=1}(x_i-E(X))^2\cdot P(X=x_i)\\
-					&=(-4-(-2,2))^2\cdot\frac{1}{2}+(-3-(-2,2))^2\cdot\frac{2}{5}+(10-(-2,2))^2\cdot\frac{1}{10}\\
-					&=\dunderline{16,76}\\
-					S(X)&=\dunderline{\sqrt{16,76}}&&
-				\end{flalign*}
-				Das bedeutet, dass Ergebnisse der Zufallsvariable im Schnitt ungefähr 4 vom Erwartungswert entfernt wären, wenn man das Experiment ausführen würde. Was ist der Unterschied zwischen Varianz und Standardabweichung? Meistens errechnet man die Varianz nur, um die Standardabweichung zu kriegen. Da die Varianz\index{Varianz} immer eine quadratische Einheit beschreibt, ist es oft nicht möglich, sie mit dem Erwartungswert zu vergleichen. Wichtig zu verstehen ist nur, dass je kleiner Varianz\index{Varianz} und Standardabweichung\index{Standardabweichung} sind, desto besser beschreibt der Erwartungswert das Experiment. Hier einmal Varianz und Standardabweichung für einen sechsseitigen Würfel:
-				\begin{center}
-					\begin{tikzpicture}
-					\begin{axis}[
-					width=17cm,
-					height=5cm,
-					xmin=0, xmax=7,
-					ymin=0, ymax=0.3,
-					axis y line=center,
-					axis x line=middle,
-					ticklabel style={fill=white},
-					minor tick num=0,
-					area style,
-					xtick = {0,1,2,3,4,5,6,7},
-					xticklabels={0,1,2,3,4,5,6},
-					axis y line=middle,
-					axis x line=bottom
-					]
-					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(0.7,1/6) (1.3,1/6)};
-					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(1.7,1/6) (2.3,1/6)};
-					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(2.7,1/6) (3.3,1/6)};
-					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(3.7,1/6) (4.3,1/6)};
-					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(4.7,1/6) (5.3,1/6)};
-					\addplot+[ybar interval,fill=blue!30,draw=blue] plot coordinates {(5.7,1/6) (6.3,1/6)};
-					\addplot [dashed, thick, red] coordinates { (3.5,0) (3.5,0.3) };
-					\addplot [-stealth, thick, red] coordinates { (3.5,0.25) (1.792,0.25) };
-					\addplot [dashed, thick, red] coordinates { (1.792,0) (1.792,0.3) };
-					\addplot [-stealth, thick, red] coordinates { (3.5,0.25) (5.208,0.25) };
-					\addplot [dashed, thick, red] coordinates { (5.208,0) (5.208,0.3) };
-					\node [color=red, anchor=west] at (axis cs:3.5,0.2) {$E(X)=3,5$};
-					\node [color=red, anchor=east] at (axis cs:3.5,0.27) {$S(X)\approx1,71$};
-					\end{axis}
-					\end{tikzpicture}
-				\end{center}
+		
 	\pagebreak
 	\iffalse
 \section{Übungsaufgaben}

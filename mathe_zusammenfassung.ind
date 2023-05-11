@@ -48,7 +48,7 @@
   \item Bijektiv, \hyperpage{8, 9}, \hyperpage{82}
   \item Bild, \hyperpage{13}
   \item Binomialkoeffizient, \hyperpage{128}, \hyperpage{131}
-  \item Binomialverteilung, \hyperpage{133}
+  \item Binomialverteilung, \hyperpage{136}
   \item Binomische Formel, \hyperpage{47, 48}, \hyperpage{93}
   \item Binomischer Lehrsatz, \hyperpage{47}
   \item Binäre Relation, \hyperpage{10}
@@ -87,7 +87,7 @@
   \item Direkte Summe, \hyperpage{32}
   \item Direkter Beweis, \hyperpage{125}
   \item Disjunktion, \hyperpage{124}
-  \item Diskret, \hyperpage{138}
+  \item Diskret, \hyperpage{133}
   \item Diskriminante, \hyperpage{46}
   \item Dividend, \hyperpage{45}
   \item Division, \hyperpage{50}
@@ -113,7 +113,7 @@
   \item Ereignis, \hyperpage{128}
   \item Ergebnis, \hyperpage{86, 87}, \hyperpage{94, 95}, 
 		\hyperpage{108, 109}, \hyperpage{128}
-  \item Erwartungswert, \hyperpage{138}
+  \item Erwartungswert, \hyperpage{133}
   \item Erweiterbar, \hyperpage{107}
   \item Erweiterte Koeffizientenmatrix, \hyperpage{62}
   \item Erzeugendensystem, \hyperpage{33}
@@ -156,7 +156,7 @@
   \item Gegenvektor, \hyperpage{69}
   \item Gekürzt, \hyperpage{49}
   \item Geometrie, \hyperpage{98}
-  \item Geometrische Verteilung, \hyperpage{134}
+  \item Geometrische Verteilung, \hyperpage{137}
   \item Geometrische Vielfachheit, \hyperpage{27}
   \item Gerade, \hyperpage{83}, \hyperpage{85}, \hyperpage{91}, 
 		\hyperpage{109}
@@ -178,7 +178,7 @@
   \item Grundfläche, \hyperpage{67, 68}
   \item Grundflächenumfang, \hyperpage{67}
   \item Grundmenge, \hyperpage{28}, \hyperpage{128}, 
-		\hyperpage{130--132}, \hyperpage{134}
+		\hyperpage{130--132}, \hyperpage{139}
   \item Grundseite, \hyperpage{66}
   \item Gruppe, \hyperpage{30}
   \item Größter gemeinsamer Teiler, \hyperpage{47}
@@ -193,7 +193,7 @@
   \item Homogen, \hyperpage{58}
   \item Homogenität, \hyperpage{13}
   \item Homomorphismus, \hyperpage{13}
-  \item Hypergeometrische Verteilung, \hyperpage{133}
+  \item Hypergeometrische Verteilung, \hyperpage{137}
   \item Hypotenuse, \hyperpage{65}, \hyperpage{69}
   \item Hypotenusenabschnitt, \hyperpage{65}
   \item Höhe, \hyperpage{66--68}
@@ -298,13 +298,14 @@
   \item Mengensystem, \hyperpage{28}
   \item Minimal, \hyperpage{12}
   \item Minimalstelle, \hyperpage{82}
-  \item Mittelwert, \hyperpage{139}
+  \item Mittelwert, \hyperpage{134}
   \item Monoid, \hyperpage{30}
   \item Monom, \hyperpage{90, 91}
   \item Monomorphismus, \hyperpage{13}
   \item Monoton, \hyperpage{81}
   \item Monotonieverhalten, \hyperpage{81}, \hyperpage{101}
   \item Multilineare Abbildung, \hyperpage{22}
+  \item Multinomiale Wahrscheinlichkeit, \hyperpage{138}
   \item Multiplikation, \hyperpage{15}
   \item Mächtigkeit, \hyperpage{5}, \hyperpage{129}
 
@@ -318,7 +319,7 @@
   \item Negativ, \hyperpage{55}, \hyperpage{89}
   \item Negativ Definit, \hyperpage{21}
   \item Negativ Semidefinit, \hyperpage{21}
-  \item Negative Binomialverteilung, \hyperpage{134}
+  \item Negative Binomialverteilung, \hyperpage{138}
   \item Nenner, \hyperpage{55}, \hyperpage{95, 96}
   \item Neutrales Element, \hyperpage{29}
   \item Newtonverfahren, \hyperpage{83}
@@ -365,7 +366,7 @@
   \item Permutation, \hyperpage{128}
   \item Permutationsmatrix, \hyperpage{20}
   \item Pfeilklasse, \hyperpage{69}
-  \item Poisson-Verteilung, \hyperpage{134}
+  \item Poisson-Verteilung, \hyperpage{138}
   \item Polarform, \hyperpage{41}
   \item Polynom, \hyperpage{90, 91}, \hyperpage{93--95}
   \item Polynomdivision, \hyperpage{83}, \hyperpage{93}
@@ -433,10 +434,10 @@
   \indexspace
 
   \item Sarrussche Regel, \hyperpage{23}
-  \item Satz der totalen Wahrscheinlichkeit, \hyperpage{135}
+  \item Satz der totalen Wahrscheinlichkeit, \hyperpage{140}
   \item Satz des Eudoxos, \hyperpage{127}
   \item Satz des Pythagoras, \hyperpage{71}
-  \item Satz von Bayes, \hyperpage{136}
+  \item Satz von Bayes, \hyperpage{141}
   \item Satz von de Moivre, \hyperpage{42}
   \item Satz von Viëta, \hyperpage{52}
   \item Scheinlösung, \hyperpage{86}
@@ -460,13 +461,13 @@
   \item Spektrum, \hyperpage{26}
   \item Spurpunkt, \hyperpage{73}
   \item Stammfunktion, \hyperpage{117}
-  \item Standardabweichung, \hyperpage{139, 140}
+  \item Standardabweichung, \hyperpage{134, 135}
   \item Standardbasis, \hyperpage{33}
   \item Steigung, \hyperpage{102}
-  \item Stetig, \hyperpage{105}, \hyperpage{138}
+  \item Stetig, \hyperpage{105}, \hyperpage{133}
   \item Stetige Erweiterung, \hyperpage{106}
   \item Streng, \hyperpage{81}
-  \item Streuung, \hyperpage{139}
+  \item Streuung, \hyperpage{134}
   \item Strickt, \hyperpage{82}
   \item Stufenform, \hyperpage{60}
   \item Stützvektor, \hyperpage{72, 73}
@@ -504,7 +505,7 @@
   \item Umkehrbar, \hyperpage{9}
   \item Umkehrfunktion, \hyperpage{122}
   \item Umstellen, \hyperpage{53}, \hyperpage{58}, \hyperpage{108}, 
-		\hyperpage{110}, \hyperpage{113}, \hyperpage{139}
+		\hyperpage{110}, \hyperpage{113}, \hyperpage{134}
   \item Unbeschränkt, \hyperpage{122}
   \item Unbestimmtes Integral, \hyperpage{116}
   \item Uneigentliches Integral, \hyperpage{122}
@@ -521,7 +522,7 @@
   \indexspace
 
   \item Variable, \hyperpage{98}
-  \item Varianz, \hyperpage{139, 140}
+  \item Varianz, \hyperpage{134, 135}
   \item Variation, \hyperpage{129}
   \item Vektor, \hyperpage{80}
   \item Vektoraddition, \hyperpage{78}
@@ -544,7 +545,7 @@
   \item Wahrheitswert, \hyperpage{124}
   \item Wendepunkt, \hyperpage{107}, \hyperpage{111}, \hyperpage{113}
   \item Wendestelle, \hyperpage{112}
-  \item Wertetabelle, \hyperpage{83}, \hyperpage{121}, \hyperpage{139}
+  \item Wertetabelle, \hyperpage{83}, \hyperpage{121}, \hyperpage{134}
   \item Widerspruch, \hyperpage{124}
   \item Windschief, \hyperpage{76, 77}
   \item Winkel, \hyperpage{66}, \hyperpage{84}
@@ -561,7 +562,7 @@
   \item Zeilenrang, \hyperpage{15}
   \item Zielbereich, \hyperpage{6}
   \item Zufallsexperiment, \hyperpage{128}
-  \item Zufallsvariable, \hyperpage{138}
+  \item Zufallsvariable, \hyperpage{133}
   \item Zusammengesetzte Funktion, \hyperpage{107}
   \item Zweite Ableitung, \hyperpage{103}
   \item Zylinder, \hyperpage{67}

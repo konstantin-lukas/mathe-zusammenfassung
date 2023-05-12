@@ -155,18 +155,19 @@
 \BOOKMARK [3][-]{subsubsection.14.1.4}{Variation ohne Wiederholung}{subsection.14.1}% 155
 \BOOKMARK [3][-]{subsubsection.14.1.5}{Kombination mit Wiederholung}{subsection.14.1}% 156
 \BOOKMARK [3][-]{subsubsection.14.1.6}{Kombination ohne Wiederholung}{subsection.14.1}% 157
-\BOOKMARK [2][-]{subsection.14.2}{Diskrete Zufallsvariablen}{section.14}% 158
-\BOOKMARK [3][-]{subsubsection.14.2.1}{Erwartungswert, Varianz und Standardabweichung}{subsection.14.2}% 159
-\BOOKMARK [2][-]{subsection.14.3}{Wahrscheinlichkeits-, Verteilungs-, und Dichtefunktion}{section.14}% 160
-\BOOKMARK [2][-]{subsection.14.4}{Diskrete Wahrscheinlichkeitsverteilungen}{section.14}% 161
-\BOOKMARK [3][-]{subsubsection.14.4.1}{Binomialverteilung}{subsection.14.4}% 162
-\BOOKMARK [3][-]{subsubsection.14.4.2}{Hypergeometrische Verteilung}{subsection.14.4}% 163
-\BOOKMARK [3][-]{subsubsection.14.4.3}{Geometrische Verteilung}{subsection.14.4}% 164
-\BOOKMARK [3][-]{subsubsection.14.4.4}{Negative Binomialverteilung}{subsection.14.4}% 165
-\BOOKMARK [3][-]{subsubsection.14.4.5}{Poisson-Verteilung}{subsection.14.4}% 166
-\BOOKMARK [3][-]{subsubsection.14.4.6}{Zipf-Verteilung}{subsection.14.4}% 167
-\BOOKMARK [3][-]{subsubsection.14.4.7}{Multinomiale Wahrscheinlichkeit}{subsection.14.4}% 168
-\BOOKMARK [2][-]{subsection.14.5}{Diskrete Wahrscheinlichkeitsverteilungen}{section.14}% 169
-\BOOKMARK [3][-]{subsubsection.14.5.1}{Gleichverteilung}{subsection.14.5}% 170
-\BOOKMARK [3][-]{subsubsection.14.5.2}{Exponentialverteilung}{subsection.14.5}% 171
-\BOOKMARK [2][-]{subsection.14.6}{Bedingte Wahrscheinlichkeit}{section.14}% 172
+\BOOKMARK [2][-]{subsection.14.2}{Zufallsvariablen}{section.14}% 158
+\BOOKMARK [3][-]{subsubsection.14.2.1}{Wahrscheinlichkeits-, Verteilungs-, und Dichtefunktion}{subsection.14.2}% 159
+\BOOKMARK [3][-]{subsubsection.14.2.2}{Erwartungswert, Varianz und Standardabweichung}{subsection.14.2}% 160
+\BOOKMARK [2][-]{subsection.14.3}{Diskrete Wahrscheinlichkeitsverteilungen}{section.14}% 161
+\BOOKMARK [3][-]{subsubsection.14.3.1}{Binomialverteilung}{subsection.14.3}% 162
+\BOOKMARK [3][-]{subsubsection.14.3.2}{Hypergeometrische Verteilung}{subsection.14.3}% 163
+\BOOKMARK [3][-]{subsubsection.14.3.3}{Geometrische Verteilung}{subsection.14.3}% 164
+\BOOKMARK [3][-]{subsubsection.14.3.4}{Negative Binomialverteilung}{subsection.14.3}% 165
+\BOOKMARK [3][-]{subsubsection.14.3.5}{Poisson-Verteilung}{subsection.14.3}% 166
+\BOOKMARK [3][-]{subsubsection.14.3.6}{Zipf-Verteilung}{subsection.14.3}% 167
+\BOOKMARK [3][-]{subsubsection.14.3.7}{Multinomiale Wahrscheinlichkeit}{subsection.14.3}% 168
+\BOOKMARK [2][-]{subsection.14.4}{Stetige Wahrscheinlichkeitsverteilungen}{section.14}% 169
+\BOOKMARK [3][-]{subsubsection.14.4.1}{Gleichverteilung}{subsection.14.4}% 170
+\BOOKMARK [3][-]{subsubsection.14.4.2}{Exponentialverteilung}{subsection.14.4}% 171
+\BOOKMARK [3][-]{subsubsection.14.4.3}{Paretoverteilung}{subsection.14.4}% 172
+\BOOKMARK [2][-]{subsection.14.5}{Bedingte Wahrscheinlichkeit}{section.14}% 173

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2022.5.28)  11 MAY 2023 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2022.5.28)  12 MAY 2023 10:55
 entering extended mode
 **./mathe_zusammenfassung.tex
 (mathe_zusammenfassung.tex
@@ -3271,110 +3271,109 @@ Underfull \hbox (badness 10000) in paragraph at lines 5676--5680
 
  []
 
-[132]
+[132] [133]
 ===== Image 'figures/mathe_zusammenfassung-figure110' is up-to-date. ======
-[133 <./figures/mathe_zusammenfassung-figure110.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 5731--5747
+[134 <./figures/mathe_zusammenfassung-figure110.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 5746--5766
 
  []
 
-[134]
+[135]
 ===== Image 'figures/mathe_zusammenfassung-figure111' is up-to-date. ======
-[135 <./figures/mathe_zusammenfassung-figure111.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure112' is up-to-date. ======
-[136]
+[136 <./figures/mathe_zusammenfassung-figure111.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure113' is up-to-date. ======
 [137 <./figures/mathe_zusammenfassung-figure112.pdf> <./figures/mathe_zusammenf
-assung-figure113.pdf>] [138]
-<images/busts-in-silhouette_1f465.png, id=2793, 240.9pt x 240.9pt>
+assung-figure113.pdf>] [138] [139]
+<images/busts-in-silhouette_1f465.png, id=2803, 240.9pt x 240.9pt>
 File: images/busts-in-silhouette_1f465.png Graphic file (type png)
 <use images/busts-in-silhouette_1f465.png>
 Package pdftex.def Info: images/busts-in-silhouette_1f465.png  used on input li
-ne 5925.
+ne 5974.
 (pdftex.def)             Requested size: 12.0457pt x 12.0457pt.
-<images/luggage_1f9f3.png, id=2794, 160.6pt x 160.6pt>
+<images/luggage_1f9f3.png, id=2804, 160.6pt x 160.6pt>
 File: images/luggage_1f9f3.png Graphic file (type png)
 <use images/luggage_1f9f3.png>
-Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 5925.
+Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 5974.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
-<images/flag-france_1f1eb-1f1f7.png, id=2796, 10.589pt x 10.589pt>
+<images/flag-france_1f1eb-1f1f7.png, id=2806, 10.589pt x 10.589pt>
 File: images/flag-france_1f1eb-1f1f7.png Graphic file (type png)
 <use images/flag-france_1f1eb-1f1f7.png>
 Package pdftex.def Info: images/flag-france_1f1eb-1f1f7.png  used on input line
- 5925.
+ 5974.
 (pdftex.def)             Requested size: 10.58896pt x 10.58896pt.
 File: images/busts-in-silhouette_1f465.png Graphic file (type png)
 <use images/busts-in-silhouette_1f465.png>
 Package pdftex.def Info: images/busts-in-silhouette_1f465.png  used on input li
-ne 5925.
+ne 5974.
 (pdftex.def)             Requested size: 12.0457pt x 12.0457pt.
 File: images/luggage_1f9f3.png Graphic file (type png)
 <use images/luggage_1f9f3.png>
-Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 5925.
+Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 5974.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
 File: images/luggage_1f9f3.png Graphic file (type png)
 <use images/luggage_1f9f3.png>
-Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 5925.
+Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 5974.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
 
 ===== Image 'figures/mathe_zusammenfassung-figure114' is up-to-date. ======
 File: images/flag-france_1f1eb-1f1f7.png Graphic file (type png)
 <use images/flag-france_1f1eb-1f1f7.png>
 Package pdftex.def Info: images/flag-france_1f1eb-1f1f7.png  used on input line
- 5979.
+ 6028.
 (pdftex.def)             Requested size: 10.58896pt x 10.58896pt.
 File: images/luggage_1f9f3.png Graphic file (type png)
 <use images/luggage_1f9f3.png>
-Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 5979.
+Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 6028.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
 File: images/flag-france_1f1eb-1f1f7.png Graphic file (type png)
 <use images/flag-france_1f1eb-1f1f7.png>
 Package pdftex.def Info: images/flag-france_1f1eb-1f1f7.png  used on input line
- 5979.
+ 6028.
 (pdftex.def)             Requested size: 10.58896pt x 10.58896pt.
 File: images/luggage_1f9f3.png Graphic file (type png)
 <use images/luggage_1f9f3.png>
-Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 5979.
+Package pdftex.def Info: images/luggage_1f9f3.png  used on input line 6028.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
 File: images/flag-france_1f1eb-1f1f7.png Graphic file (type png)
 <use images/flag-france_1f1eb-1f1f7.png>
 Package pdftex.def Info: images/flag-france_1f1eb-1f1f7.png  used on input line
- 5979.
+ 6028.
 (pdftex.def)             Requested size: 10.58896pt x 10.58896pt.
-===== Image 'figures/mathe_zusammenfassung-figure115' is up-to-date. ======
-[139 <./images/busts-in-silhouette_1f465.png> <./images/luggage_1f9f3.png> <./i
+[140 <./images/busts-in-silhouette_1f465.png> <./images/luggage_1f9f3.png> <./i
 mages/flag-france_1f1eb-1f1f7.png> <./figures/mathe_zusammenfassung-figure114.p
 df>]
+===== Image 'figures/mathe_zusammenfassung-figure115' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure116' is up-to-date. ======
-[140 <./figures/mathe_zusammenfassung-figure115.pdf> <./figures/mathe_zusammenf
+[141 <./figures/mathe_zusammenfassung-figure115.pdf> <./figures/mathe_zusammenf
 assung-figure116.pdf>]
 ===== Image 'figures/mathe_zusammenfassung-figure117' is up-to-date. ======
 ===== Image 'figures/mathe_zusammenfassung-figure118' is up-to-date. ======
-[141] [142 <./figures/mathe_zusammenfassung-figure117.pdf> <./figures/mathe_zus
-ammenfassung-figure118.pdf>] (mathe_zusammenfassung.ind [143
+[142] [143 <./figures/mathe_zusammenfassung-figure117.pdf> <./figures/mathe_zus
+ammenfassung-figure118.pdf>] (mathe_zusammenfassung.ind [144
 
 ]
-Overfull \hbox (9.9156pt too wide) in paragraph at lines 171--172
+Overfull \hbox (9.9156pt too wide) in paragraph at lines 173--174
 []\OT1/cmr/m/n/12 Gram-Schmidtsches Or-tho-go-na-li-sie-rungs-verf., []38[] 
  []
 
-[144] [145] [146] [147] [148
+[145] [146] [147] [148] [149
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6179.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6179.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6228.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6228.
  (mathe_zusammenfassung.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6179.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6179.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 6228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6228.
 
 Package rerunfilecheck Info: File `mathe_zusammenfassung.out' has not changed.
-(rerunfilecheck)             Checksum: 5009DF912C8AF185521510916858C87D;13122.
+(rerunfilecheck)             Checksum: CBEE7615069B499D746794804B807576;13201.
  ) 
 Here is how much of TeX's memory you used:
- 46522 strings out of 480790
- 1099626 string characters out of 2907040
- 1641679 words of memory out of 3000000
- 61056 multiletter control sequences out of 15000+200000
+ 46528 strings out of 480790
+ 1099737 string characters out of 2907040
+ 1641889 words of memory out of 3000000
+ 61060 multiletter control sequences out of 15000+200000
  544108 words of font info for 71 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  66i,31n,103p,1479b,1322s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3398,9 +3397,9 @@ sy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program F
 iles/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/Mi
 KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on mathe_zusammenfassung.pdf (148 pages, 1700426 bytes).
+Output written on mathe_zusammenfassung.pdf (149 pages, 1706325 bytes).
 PDF statistics:
- 3789 PDF objects out of 4296 (max. 8388607)
- 329 named destinations out of 1000 (max. 500000)
- 2143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3804 PDF objects out of 4296 (max. 8388607)
+ 331 named destinations out of 1000 (max. 500000)
+ 2151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

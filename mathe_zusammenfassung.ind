@@ -113,7 +113,7 @@
   \item Ereignis, \hyperpage{128}
   \item Ergebnis, \hyperpage{86, 87}, \hyperpage{94, 95}, 
 		\hyperpage{108, 109}, \hyperpage{128}
-  \item Erwartungswert, \hyperpage{133}
+  \item Erwartungswert, \hyperpage{134}
   \item Erweiterbar, \hyperpage{107}
   \item Erweiterte Koeffizientenmatrix, \hyperpage{62}
   \item Erzeugendensystem, \hyperpage{33}
@@ -123,6 +123,7 @@
   \item Exponent, \hyperpage{91}, \hyperpage{94}, \hyperpage{97}, 
 		\hyperpage{101}
   \item Exponentialgleichung, \hyperpage{97}
+  \item Exponentialverteilung, \hyperpage{140}
   \item Extremalpunkt, \hyperpage{107}
   \item Extrempunkt, \hyperpage{110}
   \item Extremstelle, \hyperpage{99}
@@ -156,7 +157,7 @@
   \item Gegenvektor, \hyperpage{69}
   \item Gekürzt, \hyperpage{49}
   \item Geometrie, \hyperpage{98}
-  \item Geometrische Verteilung, \hyperpage{137}
+  \item Geometrische Verteilung, \hyperpage{138}
   \item Geometrische Vielfachheit, \hyperpage{27}
   \item Gerade, \hyperpage{83}, \hyperpage{85}, \hyperpage{91}, 
 		\hyperpage{109}
@@ -166,6 +167,7 @@
   \item Gleichung, \hyperpage{51, 52}, \hyperpage{60, 61}, 
 		\hyperpage{109}
   \item Gleichungssystem, \hyperpage{58}, \hyperpage{76}
+  \item Gleichverteilung, \hyperpage{139}
   \item Global, \hyperpage{82}
   \item Gradmaß, \hyperpage{98}
   \item Gram-Schmidtsches Orthogonalisierungsverf., \hyperpage{38}
@@ -178,7 +180,7 @@
   \item Grundfläche, \hyperpage{67, 68}
   \item Grundflächenumfang, \hyperpage{67}
   \item Grundmenge, \hyperpage{28}, \hyperpage{128}, 
-		\hyperpage{130--132}, \hyperpage{139}
+		\hyperpage{130--132}, \hyperpage{140}
   \item Grundseite, \hyperpage{66}
   \item Gruppe, \hyperpage{30}
   \item Größter gemeinsamer Teiler, \hyperpage{47}
@@ -252,6 +254,7 @@
   \item Koordinatensystem, \hyperpage{99}
   \item Koordinatenursprung, \hyperpage{69}
   \item Kosinus, \hyperpage{98}
+  \item Kovarianz, \hyperpage{135}
   \item Kreis, \hyperpage{66}, \hyperpage{99}
   \item Kreislinie, \hyperpage{68}
   \item Kreissegment, \hyperpage{66}
@@ -298,14 +301,14 @@
   \item Mengensystem, \hyperpage{28}
   \item Minimal, \hyperpage{12}
   \item Minimalstelle, \hyperpage{82}
-  \item Mittelwert, \hyperpage{134}
+  \item Mittelwert, \hyperpage{135}
   \item Monoid, \hyperpage{30}
   \item Monom, \hyperpage{90, 91}
   \item Monomorphismus, \hyperpage{13}
   \item Monoton, \hyperpage{81}
   \item Monotonieverhalten, \hyperpage{81}, \hyperpage{101}
   \item Multilineare Abbildung, \hyperpage{22}
-  \item Multinomiale Wahrscheinlichkeit, \hyperpage{138}
+  \item Multinomiale Wahrscheinlichkeit, \hyperpage{139}
   \item Multiplikation, \hyperpage{15}
   \item Mächtigkeit, \hyperpage{5}, \hyperpage{129}
 
@@ -360,6 +363,7 @@
 		\hyperpage{91}
   \item Parameter, \hyperpage{60}
   \item Parameterform, \hyperpage{72, 73}
+  \item Paretoverteilung, \hyperpage{140}
   \item Partielle Ordnung, \hyperpage{11}
   \item Partition, \hyperpage{13}
   \item Pascalsches Dreieck, \hyperpage{128}
@@ -434,10 +438,10 @@
   \indexspace
 
   \item Sarrussche Regel, \hyperpage{23}
-  \item Satz der totalen Wahrscheinlichkeit, \hyperpage{140}
+  \item Satz der totalen Wahrscheinlichkeit, \hyperpage{141}
   \item Satz des Eudoxos, \hyperpage{127}
   \item Satz des Pythagoras, \hyperpage{71}
-  \item Satz von Bayes, \hyperpage{141}
+  \item Satz von Bayes, \hyperpage{142}
   \item Satz von de Moivre, \hyperpage{42}
   \item Satz von Viëta, \hyperpage{52}
   \item Scheinlösung, \hyperpage{86}
@@ -461,13 +465,13 @@
   \item Spektrum, \hyperpage{26}
   \item Spurpunkt, \hyperpage{73}
   \item Stammfunktion, \hyperpage{117}
-  \item Standardabweichung, \hyperpage{134, 135}
+  \item Standardabweichung, \hyperpage{135, 136}
   \item Standardbasis, \hyperpage{33}
   \item Steigung, \hyperpage{102}
   \item Stetig, \hyperpage{105}, \hyperpage{133}
   \item Stetige Erweiterung, \hyperpage{106}
   \item Streng, \hyperpage{81}
-  \item Streuung, \hyperpage{134}
+  \item Streuung, \hyperpage{135}
   \item Strickt, \hyperpage{82}
   \item Stufenform, \hyperpage{60}
   \item Stützvektor, \hyperpage{72, 73}
@@ -505,7 +509,7 @@
   \item Umkehrbar, \hyperpage{9}
   \item Umkehrfunktion, \hyperpage{122}
   \item Umstellen, \hyperpage{53}, \hyperpage{58}, \hyperpage{108}, 
-		\hyperpage{110}, \hyperpage{113}, \hyperpage{134}
+		\hyperpage{110}, \hyperpage{113}, \hyperpage{135}
   \item Unbeschränkt, \hyperpage{122}
   \item Unbestimmtes Integral, \hyperpage{116}
   \item Uneigentliches Integral, \hyperpage{122}
@@ -522,7 +526,7 @@
   \indexspace
 
   \item Variable, \hyperpage{98}
-  \item Varianz, \hyperpage{134, 135}
+  \item Varianz, \hyperpage{135, 136}
   \item Variation, \hyperpage{129}
   \item Vektor, \hyperpage{80}
   \item Vektoraddition, \hyperpage{78}
@@ -545,7 +549,7 @@
   \item Wahrheitswert, \hyperpage{124}
   \item Wendepunkt, \hyperpage{107}, \hyperpage{111}, \hyperpage{113}
   \item Wendestelle, \hyperpage{112}
-  \item Wertetabelle, \hyperpage{83}, \hyperpage{121}, \hyperpage{134}
+  \item Wertetabelle, \hyperpage{83}, \hyperpage{121}, \hyperpage{135}
   \item Widerspruch, \hyperpage{124}
   \item Windschief, \hyperpage{76, 77}
   \item Winkel, \hyperpage{66}, \hyperpage{84}
@@ -561,6 +565,7 @@
 
   \item Zeilenrang, \hyperpage{15}
   \item Zielbereich, \hyperpage{6}
+  \item Zipf-Verteilung, \hyperpage{138}
   \item Zufallsexperiment, \hyperpage{128}
   \item Zufallsvariable, \hyperpage{133}
   \item Zusammengesetzte Funktion, \hyperpage{107}

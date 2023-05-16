@@ -5932,6 +5932,7 @@
 		\begin{flalign*}
 			P(a<X\le b)=F(b)-F(a)=\int_{-\infty}^{b}f(t)dt-\int_{-\infty}^{a}f(t)dt=\int_{a}^{b}f(x)dx
 		\end{flalign*}
+		Die inverse Verteilungsfunktion nennen wir auch Quantilfunktion\index{Quantilfunktion} $\Phi$. Dabei ist $x=\Phi(\alpha)=F^{-1}(\alpha)$ das $\alpha$-Quantil\index{Quantil}. Andersherum ist $F(x)=\alpha$ ebenfalls das $\alpha$-Quantil. Das heißt also, das ist der Anteil der Werte, die kleiner gleich $\alpha$ sind.
 		\subsubsection{Gleichverteilung}\index{Gleichverteilung}
 		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
 			\begin{flalign*}
@@ -5969,6 +5970,30 @@
 			&\text{Verteilungsfunktion: }F(x)=1-x^{-\alpha},\hspace{2em}x>1,\hspace{2em}\alpha>0\\
 			&\text{Dichtefunktion: }f(x)=\alpha\cdot x^{-\alpha-1}&&
 		\end{flalign*}
+		\end{tcolorbox}
+		\subsubsection{Normalverteilung}\index{Normalverteilung}
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+		\begin{flalign*}
+			&\text{Verteilungsfunktion: }F(x)=\frac{1}{\sqrt{2\pi}\sigma}\int_{-\infty}^{x}e^{-\frac{1}{2}\left(\frac{t-\mu}{\sigma}\right)^2}dt\\
+			&\text{Dichtefunktion: }f(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2},\hspace{2em}\sigma>0&&
+		\end{flalign*}
+		Der Parameter $\sigma^2$ legt die Skala bzw. Streuung fest, also wie nahe bei einander die Werte verteilt sind und der Parameter $\mu$ legt die Lage der Normalverteilung fest.\lb
+		Wenn wir $\mu=0$ und $\sigma^2=1$ setzen, reden wir von einer Standard-Normalverteilung\index{Standard-Normalverteilung}.
+		\end{tcolorbox}
+		\noindent Für die Normalverteilung berechnen wir das $p$-Quantil folgendermaßen: $x_p(\mu,\sigma)=\sigma\cdot x_p(0,1)+\mu$. Das heißt, wir müssen nur das $p$-Quantil für die Standard-Normalverteilung nachgucken und die Parameter anwenden. Das heißt im Umkehrschluss, dass wir eine normalverteilte Zufallsvariable normalisieren können, indem wir $\mu$ abziehen und durch $\sigma$ teilen.
+		\subsubsection{Lognormalverteilung}\index{Lognormalverteilung}
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+		\begin{flalign*}
+			&\text{Dichtefunktion: }f(x)=\frac{1}{\sqrt{2\pi}\sigma x}e^{-\frac{1}{2}\left(\frac{\log(x)-\mu}{\sigma}\right)^2},\hspace{2em}\sigma>0&&
+		\end{flalign*}
+		\end{tcolorbox}
+		\subsubsection{Cauchyverteilung}\index{Cauchyverteilung}
+		\begin{tcolorbox}[boxsep=0pt,top=0cm,left=1cm,right=1cm, bottom=.5cm,arc=0pt,auto outer arc,colback=white,colframe=black, enlarge top by=.5cm, enlarge bottom by=.5cm]
+		\begin{flalign*}
+			&\text{Verteilungsfunktion: }F(x)=\frac{1}{\pi}\cdot\arctan(x)\\
+			&\text{Dichtefunktion: }f(x)=\frac{1}{\pi}\cdot\frac{1}{1+x^2}&&
+		\end{flalign*}
+		Für die Cauchyverteilung existiert die Varianz nicht.
 		\end{tcolorbox}
 		\subsection{Bedingte Wahrscheinlichkeit}
 			Wir stellen uns vor, wir haben eine Grundmenge\index{Grundmenge} \includegraphics[scale=0.05]{images/busts-in-silhouette_1f465.png} von Menschen. 20\% der Leute in dieser Gruppe haben ein Auslandsjahr in einem französischsprachigen Land absolviert. Diese Teilmenge nennen wir \includegraphics[scale=0.075]{images/luggage_1f9f3.png}. Außerdem ordnen wir alle Menschen, die Französisch sprechen in der Gruppe \includegraphics[scale=1]{images/flag-france_1f1eb-1f1f7.png}, sodass wir zwei Teilmengen von \includegraphics[scale=0.05]{images/busts-in-silhouette_1f465.png} haben. Wir wissen weiterhin, dass ein Mensch aus der Teilgruppe \includegraphics[scale=0.075]{images/luggage_1f9f3.png} mit einer Wahrscheinlichkeit von 70\% Französisch spricht. Die Menschen, die kein Auslandsjahr gemacht haben und damit nicht in der Gruppe \includegraphics[scale=0.075]{images/luggage_1f9f3.png} sind, sprechen mit einer Wahrscheinlichkeit von 25\% Französisch.\vspace{1em}

@@ -5702,7 +5702,9 @@
 				P(X\le x)=F(x)=\int_{-\infty}^{x}f(t)dt&&
 			\end{flalign*}
 			Die Dichtefunktion ist die Ableitung der Verteilungsfunktion bzw. die Verteilungsfunktion ist die Dichtefunktion integriert. Die Dichtefunktion ist immer größer gleich 0 und für einen einzigen Punkt (Intervall $(a,a)$) immer 0. Deswegen gilt auch $P(X\le x)=P(X<x)$.
-			\subsubsection{Erwartungswert, Varianz und Standardabweichung}
+			
+			Außerdem gibt es noch die sogenannte empirische Verteilungsfunktion\index{Empirische Verteilungsfunktion}. Diese basiert auf Messwerten (daher empirisch). Sie errechnet sich für $n$ Messungen sehr einfach mit $F_n(x)=\frac{\text{Anzahl Messungen}\le x}{n}$. Das ist nützlich, da diese gegen die richtige Verteilungsfunktion korrigiert, die wir nicht unbedingt immer kennen.
+			\subsubsection{Kenngrößen von Zufallsvariablen}
 			Stellen wir uns vor, wir haben das unten gezeichnete Glücksrad mit den entsprechenden Wahrscheinlichkeiten und Gewinnen und gehen davon aus, dass man 5 Euro Einsatz bezahlen muss, um zu drehen. Wir wollen jetzt wissen, ob dieses Spiel fair ist oder nicht. Dazu berechnet man den Erwartungswert\index{Erwartungswert}. Er beschreibt die Zahl, die die Zufallsvariable im Mittel annimmt. Man kann ihn sich auch als Mittelwert einer Zufallsvariable vorstellen. Das bedeutet, dass wenn der Erwartungswert genau Null ist, ein für beide Seiten faires Spiel vorliegt. Ansonsten macht die eine Seite Gewinn und die andere Verlust.
 			\begin{center}
 				\begin{tikzpicture}
@@ -5805,8 +5807,11 @@
 					\end{axis}
 				\end{tikzpicture}
 			\end{center}
+			\noindent Eine weitere wichtige Größe ist der Median\index{Median}, der ein Maß für die Lage einer Verteilung ist. Der Median teilt die Verteilung so in 2 Hälften, dass die Wahrscheinlichkeit einen Wert darunter zu erhalten gleich der Wahrscheinlichkeit einen Wert darüber zu erhalten ist.
 			
-				
+			Um den Median einer stetigen Zufallsvariable zu berechnen setzen, wir die Verteilungsfunktion gleich $0,5$ und lösen nach dem Wert der Variable auf. Bei einer diskreten Zufallsvariable rechnen wir die Verteilungsfunktion $P(X \le x)$ solange aus, bis wir ein $x$ finden, sodass wir $0,5$ erhalten. Dabei ist nicht gesagt, dass das möglich ist. Stattdessen gibt man oft den Bereich an, in dem der Median liegt oder bildet den Mittelwert der beiden Werte, die am nächsten an $0,5$ liegen.
+			
+			
 		\subsection{Diskrete Wahrscheinlichkeitsverteilungen}
 			\subsubsection{Binomialverteilung}
 				Mithilfe der Binomialverteilung\index{Binomialverteilung} ermittelt man die Wahrscheinlichkeit, ein Ergebnis mit der Wahrscheinlichkeit $p$ bei $n$ Durchführungen eines Zufallsexperimentes genau $k$-mal zu erhalten. Alle Wahrscheinlichkeiten addiert, ergeben am Ende wieder 1.

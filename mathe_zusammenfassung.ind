@@ -48,7 +48,7 @@
   \item Bijektiv, \hyperpage{9, 10}, \hyperpage{83}
   \item Bild, \hyperpage{14}
   \item Binomialkoeffizient, \hyperpage{129}, \hyperpage{132}
-  \item Binomialverteilung, \hyperpage{137}
+  \item Binomialverteilung, \hyperpage{138}
   \item Binomische Formel, \hyperpage{48, 49}, \hyperpage{94}
   \item Binomischer Lehrsatz, \hyperpage{48}
   \item Binäre Relation, \hyperpage{11}
@@ -108,6 +108,7 @@
   \item Einselement, \hyperpage{32}
   \item Einsetzen, \hyperpage{87}, \hyperpage{91}, \hyperpage{109, 110}, 
 		\hyperpage{112}, \hyperpage{114}
+  \item Empirische Verteilungsfunktion, \hyperpage{135}
   \item Endlich erzeugt, \hyperpage{34}
   \item Endomorphismusorphismus, \hyperpage{14}
   \item Epimorphismus, \hyperpage{14}
@@ -168,7 +169,7 @@
   \item Gleichung, \hyperpage{52, 53}, \hyperpage{61, 62}, 
 		\hyperpage{110}
   \item Gleichungssystem, \hyperpage{59}, \hyperpage{77}
-  \item Gleichverteilung, \hyperpage{140}
+  \item Gleichverteilung, \hyperpage{141}
   \item Global, \hyperpage{83}
   \item Gradmaß, \hyperpage{99}
   \item Gram-Schmidtsches Orthogonalisierungsverf., \hyperpage{39}
@@ -255,7 +256,7 @@
   \item Koordinatensystem, \hyperpage{100}
   \item Koordinatenursprung, \hyperpage{70}
   \item Kosinus, \hyperpage{99}
-  \item Kovarianz, \hyperpage{136}
+  \item Kovarianz, \hyperpage{137}
   \item Kreis, \hyperpage{67}, \hyperpage{100}
   \item Kreislinie, \hyperpage{69}
   \item Kreissegment, \hyperpage{67}
@@ -298,6 +299,7 @@
   \item Maximal, \hyperpage{13}
   \item Maximalstelle, \hyperpage{83}
   \item Maximum, \hyperpage{13}
+  \item Median, \hyperpage{137}
   \item Menge der natürlichen Zahlen, \hyperpage{7}
   \item Mengen, \hyperpage{7}
   \item Mengensystem, \hyperpage{29}
@@ -333,7 +335,7 @@
   \item Normalenform, \hyperpage{74, 75}
   \item Normalenvektor, \hyperpage{75}
   \item Normalform, \hyperpage{46}, \hyperpage{52}
-  \item Normalverteilung, \hyperpage{141}
+  \item Normalverteilung, \hyperpage{142}
   \item Notation, \hyperpage{50}, \hyperpage{60}, \hyperpage{106}
   \item Notwendige Bedingung, \hyperpage{104}, \hyperpage{112}
   \item Nullelement, \hyperpage{32}
@@ -470,7 +472,7 @@
   \item Spektrum, \hyperpage{27}
   \item Spurpunkt, \hyperpage{74}
   \item Stammfunktion, \hyperpage{118}
-  \item Standard-Normalverteilung, \hyperpage{141}
+  \item Standard-Normalverteilung, \hyperpage{142}
   \item Standardabweichung, \hyperpage{136, 137}
   \item Standardbasis, \hyperpage{34}
   \item Steigung, \hyperpage{103}
@@ -571,7 +573,7 @@
 
   \item Zeilenrang, \hyperpage{16}
   \item Zielbereich, \hyperpage{7}
-  \item Zipf-Verteilung, \hyperpage{139}
+  \item Zipf-Verteilung, \hyperpage{140}
   \item Zufallsexperiment, \hyperpage{129}
   \item Zufallsvariable, \hyperpage{134}
   \item Zusammengesetzte Funktion, \hyperpage{108}
